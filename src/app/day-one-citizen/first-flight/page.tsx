@@ -7,10 +7,17 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Your First Flight — Day One Citizen',
+  title: 'Star Citizen First Flight Guide: Take Off, Fly & Land — Day One Citizen',
   description:
-    'The complete first-flight checklist: powering on your ship, taking off from the hangar, basic flight controls, quantum travel, and landing safely.',
+    'Power on your ship, clear the hangar door, master basic flight controls, make your first quantum jump, and land without crashing. Step-by-step with exact keybinds.',
   alternates: { canonical: '/day-one-citizen/first-flight' },
+  openGraph: {
+    title: 'Star Citizen First Flight Guide: Take Off, Fly & Land',
+    description:
+      'From powering on to quantum travel and landing — the complete first-flight walkthrough for new Star Citizen players.',
+    url: '/day-one-citizen/first-flight',
+    type: 'article',
+  },
 }
 
 export default function FirstFlightPage() {

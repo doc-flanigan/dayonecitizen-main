@@ -9,8 +9,15 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'How to Buy Star Citizen — Day One Citizen',
   description:
-    'Step-by-step guide to buying Star Citizen: create your RSI account, apply a referral code for 50,000 UEC, pick a game package, and download the launcher.',
+    'Create your RSI account, apply a referral code for 50,000 free UEC, choose a game package, and download the launcher. Every step of buying Star Citizen, no shortcuts skipped.',
   alternates: { canonical: '/day-one-citizen/buying-the-game' },
+  openGraph: {
+    title: 'How to Buy Star Citizen — Step by Step',
+    description:
+      'Create an RSI account, enter a referral code for 50,000 free UEC, pick a starter package, and download the launcher. Complete walkthrough.',
+    url: '/day-one-citizen/buying-the-game',
+    type: 'article',
+  },
 }
 
 export default function BuyingTheGamePage() {

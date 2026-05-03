@@ -6,10 +6,17 @@ import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Installing Star Citizen — Day One Citizen',
+  title: 'How to Install Star Citizen — Day One Citizen',
   description:
-    'How to download and install the RSI Launcher and Star Citizen: where to install it, how much space you need, and what to expect from the first-time setup.',
+    'Download the RSI Launcher, install Star Citizen to an SSD, and get through first-time shader compilation. Covers disk space requirements (150 GB+), best install paths, and what to expect.',
   alternates: { canonical: '/day-one-citizen/install' },
+  openGraph: {
+    title: 'How to Install Star Citizen',
+    description:
+      'Download the RSI Launcher, install Star Citizen to an SSD, survive shader compilation. Disk space requirements and step-by-step install guide.',
+    url: '/day-one-citizen/install',
+    type: 'article',
+  },
 }
 
 export default function InstallPage() {

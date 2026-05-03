@@ -6,10 +6,17 @@ import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Getting from Your Hab to the Hangar — Day One Citizen',
+  title: 'How to Get to Your Ship in Star Citizen — Day One Citizen',
   description:
-    'How to navigate from your starting hab room to the spaceport hangar in each of Star Citizen\'s four major cities: Lorville, Area18, New Babbage, and Orison.',
+    'Step-by-step routes from hab to hangar in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage Welcome Hub elevators, and Orison inter-platform shuttles.',
   alternates: { canonical: '/day-one-citizen/getting-around' },
+  openGraph: {
+    title: 'How to Get to Your Ship in Star Citizen',
+    description:
+      'Hab to hangar routes in Lorville, Area18, New Babbage, and Orison — step-by-step for every starting city in Star Citizen.',
+    url: '/day-one-citizen/getting-around',
+    type: 'article',
+  },
 }
 
 export default function GettingAroundPage() {

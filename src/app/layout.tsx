@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default:
-      "dayonecitizen.com — Star Citizen for Day-One Players. Plain English, No Jargon.",
+      'Star Citizen New Player Guide — Plain English, No Jargon | dayonecitizen.com',
     template: '%s | dayonecitizen.com',
   },
   description: SITE.description,
@@ -38,14 +38,27 @@ export const metadata: Metadata = {
   keywords: [
     'Star Citizen',
     'Star Citizen for beginners',
-    'Day One Citizen',
+    'Star Citizen beginner guide',
     'Star Citizen new player guide',
-    'Star Citizen referral code',
-    'UEC',
-    'Free Fly',
-    "the 'Verse",
+    'Day One Citizen',
+    'is Star Citizen worth buying',
+    'Star Citizen system requirements',
+    'how to buy Star Citizen',
+    'Star Citizen starter ship',
+    'Aurora MR vs Mustang Alpha',
+    'how to install Star Citizen',
+    'RSI Launcher',
+    'Star Citizen PTU',
+    'Star Citizen keybinds',
+    'Star Citizen controls',
+    'Star Citizen quantum travel',
     'Star Citizen first flight',
+    'Star Citizen referral code',
+    'Star Citizen free fly event',
     'how to start Star Citizen',
+    'Star Citizen glossary',
+    'UEC',
+    "the 'Verse",
   ],
   alternates: { canonical: '/' },
   icons: {
@@ -63,7 +76,7 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     url: SITE.url,
     title:
-      "dayonecitizen.com — Star Citizen for Day-One Players. Plain English, No Jargon.",
+      'Star Citizen New Player Guide — Plain English, No Jargon | dayonecitizen.com',
     description: SITE.description,
     images: [
       {

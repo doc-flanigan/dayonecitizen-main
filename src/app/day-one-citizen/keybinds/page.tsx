@@ -6,10 +6,17 @@ import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Key Binds You Need to Know — Day One Citizen',
+  title: 'Star Citizen Keybinds for New Players — Day One Citizen',
   description:
-    'The essential Star Citizen keybinds for day one: on-foot controls, ship flight, the power triangle, and how to find the full binding map.',
+    'The Star Citizen keybinds every new player needs: on-foot movement, ship flight controls, the power triangle (1/2/3), mobiGlas, quantum travel, and how to remap controls in-game.',
   alternates: { canonical: '/day-one-citizen/keybinds' },
+  openGraph: {
+    title: 'Star Citizen Keybinds for New Players',
+    description:
+      'Essential Star Citizen controls for day one: on-foot, flight, power triangle, mobiGlas, and quantum travel. Includes a full keybind reference table.',
+    url: '/day-one-citizen/keybinds',
+    type: 'article',
+  },
 }
 
 function KeyRow({ key: k, action }: { key: string; action: string }) {

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 import { ArrowRight, Rocket, Coins, Globe2 } from 'lucide-react'
@@ -7,6 +8,23 @@ import HeroCarousel from '@/components/HeroCarousel'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import { SITE } from '@/lib/site'
+
+export const metadata: Metadata = {
+  title: {
+    absolute:
+      'Star Citizen New Player Guide — Plain English, No Jargon | dayonecitizen.com',
+  },
+  description:
+    'The complete Star Citizen guide for brand-new players. 12 step-by-step guides covering system requirements, buying the game, installing it, keybinds, navigation, and your first flight.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Star Citizen New Player Guide — Plain English, No Jargon',
+    description:
+      '12 step-by-step guides for brand-new Star Citizen players — from system requirements to your first quantum jump. No jargon, no gatekeeping.',
+    url: '/',
+    type: 'website',
+  },
+}
 
 type StartHereCard = {
   icon: typeof Rocket

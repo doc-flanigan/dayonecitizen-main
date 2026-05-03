@@ -7,22 +7,21 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title:
-    'Day One Citizen — Your First Hour in Star Citizen',
+  title: 'Star Citizen New Player Guide — Complete Step-by-Step — Day One Citizen',
   description:
-    "Star Citizen, plain English, from before you've bought the game to your first flight. System specs, pledge vs purchase, picking a starter package, the RSI launcher, key binds, getting around your first city, taking off.",
+    '12 step-by-step Star Citizen guides for brand-new players: is it worth buying, system requirements, how to buy, install, launch, get keybinds right, navigate the cities, and fly. Plain English.',
   alternates: { canonical: '/day-one-citizen' },
   openGraph: {
-    title: 'Day One Citizen — Your First Hour in Star Citizen',
+    title: 'Star Citizen New Player Guide — Complete Step-by-Step',
     description:
-      "From 'should I even buy this?' through your first take-off — every step a brand-new player needs.",
+      '12 guides from "should I buy this?" through your first quantum jump. Every step a brand-new Star Citizen player needs, plain English.',
     url: '/day-one-citizen',
     type: 'article',
   },
   twitter: {
-    title: 'Day One Citizen — Your First Hour in Star Citizen',
+    title: 'Star Citizen New Player Guide — Complete Step-by-Step',
     description:
-      "From 'should I even buy this?' through your first take-off.",
+      '12 guides from "should I buy this?" through your first quantum jump.',
     card: 'summary_large_image',
   },
 }

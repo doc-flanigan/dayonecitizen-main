@@ -6,10 +6,17 @@ import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Pledge vs Purchase — What\'s the Difference? — Day One Citizen',
+  title: 'Star Citizen Pledge vs Purchase Explained — Day One Citizen',
   description:
-    'Why Star Citizen uses the word "pledge" instead of "purchase," what you actually own, how ship insurance works, and what melting means.',
+    'Why Star Citizen says "pledge" instead of "purchase" — what crowdfunding means for your purchase, what you actually own, how LTI ship insurance works, and what melting a ship means.',
   alternates: { canonical: '/day-one-citizen/pledge-vs-purchase' },
+  openGraph: {
+    title: 'Star Citizen Pledge vs Purchase Explained',
+    description:
+      'What "pledge" means in Star Citizen, what you actually own, how LTI insurance works, and what melting a ship does.',
+    url: '/day-one-citizen/pledge-vs-purchase',
+    type: 'article',
+  },
 }
 
 export default function PledgeVsPurchasePage() {

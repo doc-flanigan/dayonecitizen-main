@@ -9,8 +9,15 @@ import { NEXT_FREE_FLY, googleCalendarUrl } from '@/data/next-free-fly'
 export const metadata: Metadata = {
   title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
   description:
-    "Star Citizen Free Fly events let you download and play the entire game free for a limited time. Track every upcoming Free Fly window, what ships are flyable, and how to make the most of it.",
+    'Star Citizen Free Fly events let you download and play the full game free for a limited time. Track upcoming windows, see what ships are flyable, and get the referral code bonus before the event ends.',
   alternates: { canonical: '/free-fly-events' },
+  openGraph: {
+    title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
+    description:
+      'Track every Star Citizen Free Fly window — upcoming dates, flyable ships, and how to get 50,000 free UEC with a referral code.',
+    url: '/free-fly-events',
+    type: 'article',
+  },
 }
 
 const HISTORY = [

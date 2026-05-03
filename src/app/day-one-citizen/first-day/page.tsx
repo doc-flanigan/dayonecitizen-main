@@ -7,10 +7,17 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: "Your First Day in the 'Verse — Day One Citizen",
+  title: 'Star Citizen First Day Guide: What to Do First — Day One Citizen',
   description:
-    'A calm, ordered list of the first ten things to do on your first day in Star Citizen — and what to ignore until later.',
+    'Ten things to do on your first day in Star Citizen, in order — from the ASOP terminal to running your first mission, collecting your first aUEC, and logging out safely.',
   alternates: { canonical: '/day-one-citizen/first-day' },
+  openGraph: {
+    title: 'Star Citizen First Day Guide: What to Do First',
+    description:
+      'Ten things to do on day one in Star Citizen, in order. From claiming your ship at the ASOP terminal to your first mission and safe logout.',
+    url: '/day-one-citizen/first-day',
+    type: 'article',
+  },
 }
 
 export default function FirstDayPage() {

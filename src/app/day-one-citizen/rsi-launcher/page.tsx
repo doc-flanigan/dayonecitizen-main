@@ -6,10 +6,17 @@ import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Using the RSI Launcher — Day One Citizen',
+  title: 'RSI Launcher Guide: Live, PTU & EPTU Explained — Day One Citizen',
   description:
-    'A guide to the RSI Launcher: the difference between Live, PTU, and EPTU builds, how to switch channels, verify files, and what to do when the launcher acts up.',
+    'What the RSI Launcher does and how to use it: Live vs PTU vs EPTU builds, how to switch channels, how to verify game files, and how to fix common launcher problems.',
   alternates: { canonical: '/day-one-citizen/rsi-launcher' },
+  openGraph: {
+    title: 'RSI Launcher Guide: Live, PTU & EPTU Explained',
+    description:
+      'How to use the RSI Launcher — Live vs PTU vs EPTU, switching channels, verifying files, and fixing common issues.',
+    url: '/day-one-citizen/rsi-launcher',
+    type: 'article',
+  },
 }
 
 export default function RsiLauncherPage() {

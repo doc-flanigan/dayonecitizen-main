@@ -6,10 +6,17 @@ import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Launching Star Citizen for the First Time — Day One Citizen',
+  title: 'Star Citizen First Launch: Character Creation & What Happens Next — Day One Citizen',
   description:
-    'Character creation, your hab room, and the first five minutes in the Verse — what to expect and what matters on day one.',
+    'What happens when you launch Star Citizen for the first time: character creation choices that matter, waking up in your hab room, and the five things to do before anything else.',
   alternates: { canonical: '/day-one-citizen/first-launch' },
+  openGraph: {
+    title: 'Star Citizen First Launch: Character Creation & What Happens Next',
+    description:
+      'Character creation, your hab room, mobiGlas basics, and the first five actions every new Star Citizen player should take.',
+    url: '/day-one-citizen/first-launch',
+    type: 'article',
+  },
 }
 
 export default function FirstLaunchPage() {

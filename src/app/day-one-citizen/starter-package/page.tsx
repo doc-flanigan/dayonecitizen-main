@@ -7,10 +7,17 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Which Starter Package Should You Buy? — Day One Citizen',
+  title: 'Star Citizen Starter Ships: Aurora MR vs Mustang Alpha — Day One Citizen',
   description:
-    'Aurora MR vs Mustang Alpha — an honest comparison of the two main Star Citizen starter ships and which one fits a brand-new player.',
+    'Aurora MR vs Mustang Alpha — a direct comparison of Star Citizen\'s two main starter ships. Which one to buy, what each includes, and which game packages to avoid.',
   alternates: { canonical: '/day-one-citizen/starter-package' },
+  openGraph: {
+    title: 'Star Citizen Starter Ships: Aurora MR vs Mustang Alpha',
+    description:
+      'Which Star Citizen starter ship should you buy? Aurora MR vs Mustang Alpha compared — specs, use cases, and our recommendation.',
+    url: '/day-one-citizen/starter-package',
+    type: 'article',
+  },
 }
 
 export default function StarterPackagePage() {

@@ -6,10 +6,17 @@ import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'System Specs and Hardware — Day One Citizen',
+  title: 'Star Citizen System Requirements 2026 — Day One Citizen',
   description:
-    'Star Citizen minimum and recommended PC specs, plus the hardware traps that kill performance: low RAM, slow storage, and outdated GPUs.',
+    'Star Citizen minimum and recommended PC specs for 2026, plus the three hardware mistakes that hurt performance most: too little RAM, a slow drive, and an underpowered GPU.',
   alternates: { canonical: '/day-one-citizen/system-specs' },
+  openGraph: {
+    title: 'Star Citizen System Requirements 2026',
+    description:
+      'Minimum and recommended PC specs for Star Citizen, and the hardware traps that kill performance for new players.',
+    url: '/day-one-citizen/system-specs',
+    type: 'article',
+  },
 }
 
 function SpecRow({ label, min, rec }: { label: string; min: string; rec: string }) {

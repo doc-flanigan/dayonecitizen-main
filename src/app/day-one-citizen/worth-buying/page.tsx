@@ -7,10 +7,17 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Is Star Citizen Worth Buying? — Day One Citizen',
+  title: 'Is Star Citizen Worth Buying in 2026? — Day One Citizen',
   description:
-    'An honest answer to the most important question before you pledge: what you actually get today, what is still unfinished, and how to try the game free before spending anything.',
+    'An honest look at Star Citizen in 2026 — what you actually get today, what is still unfinished, what the alpha caveat really means, and how to try the game free before spending anything.',
   alternates: { canonical: '/day-one-citizen/worth-buying' },
+  openGraph: {
+    title: 'Is Star Citizen Worth Buying in 2026?',
+    description:
+      'Honest assessment of Star Citizen in 2026 — what works, what is still unfinished, and how to try it free before you commit.',
+    url: '/day-one-citizen/worth-buying',
+    type: 'article',
+  },
 }
 
 export default function WorthBuyingPage() {
