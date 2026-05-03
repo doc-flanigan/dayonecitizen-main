@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Compass } from 'lucide-react'
+import { Compass, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
@@ -274,14 +274,22 @@ export default function DayOneCitizenPage() {
                   Section {s.number}
                 </p>
                 <h2 className="heading-display text-2xl sm:text-3xl">
-                  {s.title}
+                  <Link
+                    href={`/day-one-citizen/${s.id}`}
+                    className="hover:text-gold transition-colors"
+                  >
+                    {s.title}
+                  </Link>
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-starwhite/85">
                   {s.stub}
                 </p>
-                <p className="mt-3 text-xs italic text-muted">
-                  Full guide coming soon.
-                </p>
+                <Link
+                  href={`/day-one-citizen/${s.id}`}
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:text-goldDark"
+                >
+                  Read the full guide <ArrowRight size={14} aria-hidden />
+                </Link>
               </section>
             ))}
 
