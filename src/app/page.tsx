@@ -120,47 +120,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Section 3: Why dayonecitizen */}
-        <section className="border-t border-white/5 bg-starfield py-20 sm:py-24">
-          <div className="container-narrow">
-            <div className="card-surface relative overflow-hidden p-8 sm:p-12">
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-transparent" />
-              <div className="relative">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                  Why this site exists
-                </p>
-                <h2 className="heading-display text-3xl sm:text-4xl">
-                  &ldquo;What does o7 mean?&rdquo;
-                </h2>
-                <p className="mt-5 text-base leading-relaxed text-starwhite/85">
-                  When I first heard <strong>o7</strong> in a Star Citizen
-                  community channel, I had no idea what it meant. It turned out
-                  to be one of the most common questions new players ask — and
-                  one of the hardest to find a straight answer for. That moment
-                  is why I built dayonecitizen.com.
-                </p>
-                <p className="mt-4 text-base leading-relaxed text-starwhite/85">
-                  Plain-English Star Citizen for anyone who&rsquo;s curious
-                  about the &lsquo;Verse but doesn&rsquo;t know where to start.
-                  No gatekeeping. No wiki dives. Just answers.
-                </p>
-                <div className="mt-7 flex flex-wrap items-center gap-4">
-                  <Link
-                    href="/about"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-navyLight/50 px-5 py-2.5 text-sm font-semibold text-starwhite hover:border-gold/40 hover:text-gold"
-                  >
-                    Read the full story
-                  </Link>
-                  <span className="text-sm text-muted">
-                    — {SITE.author}, veteran SC backer
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4: Referral CTA banner */}
+        {/* Section 3: Referral CTA banner */}
         <section className="border-t border-white/5 bg-gradient-to-r from-navyLight via-navyLight/80 to-navy py-20 sm:py-24">
           <div className="container-wide flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
             <div className="md:max-w-2xl">
