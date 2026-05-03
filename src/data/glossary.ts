@@ -40,7 +40,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Community',
     definition:
       "Slang for the Star Citizen universe — the in-game world, lore, and community combined. 'See you in the 'Verse' is a common sign-off.",
-    also: 'Verse',
+    also: "'Verse,Verse",
   },
   {
     term: 'The Black',

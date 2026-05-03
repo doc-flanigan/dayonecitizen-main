@@ -168,7 +168,7 @@ export default function AboutPage() {
                 from someone who still remembers being new.
               </p>
               <p className="font-semibold text-gold">
-                o7. Welcome to the &lsquo;Verse.
+                o7. Welcome to <Term name="the 'Verse">the &lsquo;Verse</Term>.
               </p>
             </div>
           </section>

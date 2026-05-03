@@ -303,7 +303,8 @@ export default function DayOneCitizenPage() {
                 <Link href="/glossary" className="text-gold underline-offset-4 hover:underline">
                   glossary
                 </Link>{' '}
-                covers the jargon you&rsquo;ll meet across the &lsquo;Verse —
+                covers the jargon you&rsquo;ll meet across{' '}
+                <Term name="the 'Verse">the &lsquo;Verse</Term> —
                 plain English, no gatekeeping.
               </p>
               <div className="mt-6">
