@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Calendar, Clock, AlertCircle, Plane, Download, Wallet } from 'lucide-react'
+import { Calendar, Clock, AlertCircle, Plane, Download, Wallet, CalendarPlus } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
+import { NEXT_FREE_FLY, googleCalendarUrl } from '@/data/next-free-fly'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
@@ -93,10 +94,10 @@ export default function FreeFlyPage() {
               <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <div>
                   <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-                    <Clock size={12} aria-hidden /> Confirmed: May 14&ndash;27, 2026
+                    <Clock size={12} aria-hidden /> Confirmed: {NEXT_FREE_FLY.label}
                   </span>
                   <h2 className="heading-display mt-3 text-3xl">
-                    Drake DefenseCon — Free Fly window confirmed.
+                    {NEXT_FREE_FLY.headline}
                   </h2>
                   <p className="mt-3 max-w-xl text-sm text-muted">
                     <Term name="CIG">CIG</Term> has officially announced Drake
@@ -116,12 +117,26 @@ export default function FreeFlyPage() {
                     )
                   </p>
                 </div>
-                <div className="flex flex-col gap-2">
-                  <CTAButton variant="ghost" trackingLabel="freefly-newsletter" showIcon={false}>
-                    Notify me when it starts
-                  </CTAButton>
+                <div className="flex flex-col gap-3">
+                  <a
+                    href={googleCalendarUrl(NEXT_FREE_FLY)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-gold/40 bg-gold/10 px-5 py-3 text-sm font-semibold text-gold transition-colors hover:border-gold/70 hover:bg-gold/20"
+                  >
+                    <CalendarPlus size={16} aria-hidden />
+                    Add to Google Calendar
+                  </a>
+                  <a
+                    href="/api/calendar/free-fly"
+                    download={`${NEXT_FREE_FLY.id}.ics`}
+                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-starwhite/80 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-starwhite"
+                  >
+                    <Download size={16} aria-hidden />
+                    Download .ics
+                  </a>
                   <span className="text-center text-xs text-muted">
-                    via the weekly newsletter
+                    Apple Calendar, Outlook &amp; others
                   </span>
                 </div>
               </div>
