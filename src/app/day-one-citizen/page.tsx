@@ -79,7 +79,7 @@ const SECTIONS: Section[] = [
   {
     id: 'pledge-vs-purchase',
     number: '04',
-    title: 'Pledge vs purchase — what&rsquo;s the difference?',
+    title: 'Pledge vs purchase — what’s the difference?',
     stub: (
       <>
         Star Citizen is crowdfunded, so the community calls buying a game
@@ -158,7 +158,7 @@ const SECTIONS: Section[] = [
   {
     id: 'first-day',
     number: '10',
-    title: 'Your first day in the &lsquo;Verse',
+    title: "Your first day in the ‘Verse",
     stub: (
       <>
         What does day one actually look like? You wake up in your hab room.
@@ -295,15 +295,16 @@ export default function DayOneCitizenPage() {
 
             <section className="rounded-2xl border border-gold/20 bg-gold/5 p-8">
               <h2 className="heading-display text-2xl">
-                Want this in your inbox as it&rsquo;s written?
+                Ready to jump in?
               </h2>
               <p className="mt-3 text-sm text-starwhite/85">
-                Each section ships as it&rsquo;s ready. The{' '}
+                All twelve guides are live. Not sure about a term you ran into?
+                The{' '}
                 <Link href="/glossary" className="text-gold underline-offset-4 hover:underline">
                   glossary
                 </Link>{' '}
-                already covers most of the terms you&rsquo;ll meet along the
-                way — start there if you&rsquo;re curious.
+                covers the jargon you&rsquo;ll meet across the &lsquo;Verse —
+                plain English, no gatekeeping.
               </p>
               <div className="mt-6">
                 <CTAButton size="lg" trackingLabel="day-one-bottom-cta">
