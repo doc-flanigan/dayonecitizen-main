@@ -1,6 +1,9 @@
+'use client'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { SITE } from '@/lib/site'
+import { getRotatedReferralUrl, FALLBACK_REFERRAL_URL } from '@/lib/referral-rotator'
 
 type Variant = 'primary' | 'ghost' | 'subtle'
 type Size = 'sm' | 'md' | 'lg'
@@ -32,7 +35,7 @@ const variantClasses: Record<Variant, string> = {
 }
 
 export default function CTAButton({
-  href = SITE.referralUrl,
+  href: hrefProp,
   children,
   variant = 'primary',
   size = 'md',
@@ -41,6 +44,10 @@ export default function CTAButton({
   trackingLabel,
   showIcon = true,
 }: Props) {
+  const [referralUrl, setReferralUrl] = useState(FALLBACK_REFERRAL_URL)
+  useEffect(() => { setReferralUrl(getRotatedReferralUrl()) }, [])
+
+  const href = hrefProp ?? referralUrl
   const isExternal = external ?? href.startsWith('http')
   const label = children ?? `Get ${SITE.ueecBonus.replace(',000', 'K')}`
 
