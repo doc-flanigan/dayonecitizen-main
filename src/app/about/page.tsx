@@ -274,28 +274,8 @@ export default function AboutPage() {
             </h2>
             <div className="mt-5 space-y-4 text-sm leading-relaxed text-starwhite/85">
               <p>
-                This site contains <strong>referral links</strong> to{' '}
-                <Term name="RSI">Roberts Space Industries</Term>. If you create
-                a Star Citizen account using the{' '}
-                <Term name="Referral Code">referral code</Term> on this site,
-                you receive{' '}
-                <strong className="text-gold">50,000 UEC free</strong> on
-                signup. I (the site owner, {SITE.author}) receive a small
-                in-game bonus reward for referring you. There is no monetary
-                kickback.
+                Affiliate disclosure: This site uses Star Citizen referral links. Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
               </p>
-              <p>
-                <strong>Cost to you: zero.</strong> The bonus is from{' '}
-                <Term name="CIG">CIG</Term> to you. You&rsquo;d pay the same
-                amount whether you used my code, a friend&rsquo;s code, or no
-                code at all. If you have a friend who already plays Star
-                Citizen, use <em>their</em> code — they earned the introduction.
-              </p>
-              <div className="rounded-2xl border border-gold/20 bg-gold/5 p-4">
-                <p className="font-mono text-sm text-gold">
-                  Referral code: {SITE.referralCode}
-                </p>
-              </div>
             </div>
           </section>
 

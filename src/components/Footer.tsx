@@ -95,9 +95,7 @@ export default function Footer() {
           </p>
           <p>
             <strong className="text-starwhite/90">Affiliate disclosure.</strong>{' '}
-            This site contains referral links. If you create a Star Citizen
-            account using our referral code, the site owner ({SITE.author}) will
-            receive an in-game bonus reward at no cost to you.
+            This site uses Star Citizen referral links. Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
           </p>
           <p>
             <strong className="text-starwhite/90">Trademarks.</strong> Star
