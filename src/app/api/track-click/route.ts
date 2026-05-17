@@ -1,9 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(req: NextRequest) {
+  let body: unknown
   try {
-    const body = await req.json()
-    const { label, referralCode, page, site } = body
+    body = await req.json()
+  } catch {
+    return NextResponse.json({ ok: false }, { status: 400 })
+  }
+
+  try {
+    const { label, referralCode, page, site } = body as Record<string, unknown>
 
     if (
       typeof label !== 'string' ||
@@ -11,6 +17,11 @@ export async function POST(req: NextRequest) {
       typeof page !== 'string' ||
       typeof site !== 'string'
     ) {
+      return NextResponse.json({ ok: false }, { status: 400 })
+    }
+
+    const MAX = 200
+    if ([label, referralCode, page, site].some((v) => (v as string).length > MAX)) {
       return NextResponse.json({ ok: false }, { status: 400 })
     }
 
