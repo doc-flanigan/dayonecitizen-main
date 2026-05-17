@@ -85,7 +85,7 @@ export default function CTAButton({
   }
 
   return (
-    <Link href={href} className={classes} data-track={trackingLabel}>
+    <Link href={href} className={classes} data-track={trackingLabel} onClick={handleClick}>
       <span>{label}</span>
       {showIcon ? <ArrowUpRight size={size === 'lg' ? 20 : 16} aria-hidden /> : null}
     </Link>
