@@ -53,6 +53,21 @@ export default function CTAButton({
 
   const classes = `inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wide transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy ${sizeClasses[size]} ${variantClasses[variant]} ${className}`
 
+  const handleClick = () => {
+    const code = href.split('referral=')[1] ?? ''
+    fetch('/api/track-click', {
+      method: 'POST',
+      keepalive: true,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        label: trackingLabel ?? 'unknown',
+        referralCode: code,
+        page: window.location.pathname,
+        site: window.location.hostname,
+      }),
+    }).catch(() => {})
+  }
+
   if (isExternal) {
     return (
       <a
@@ -61,6 +76,7 @@ export default function CTAButton({
         rel="noopener noreferrer"
         className={classes}
         data-track={trackingLabel}
+        onClick={handleClick}
       >
         <span>{label}</span>
         {showIcon ? <ArrowUpRight size={size === 'lg' ? 20 : 16} aria-hidden /> : null}
