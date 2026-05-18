@@ -136,6 +136,26 @@ export const GLOSSARY: GlossaryTerm[] = [
       "What backers call buying a ship or game package. Star Citizen is crowdfunded, so you 'pledge' rather than 'purchase.' See pledgemeaning.com for more.",
   },
   {
+    term: 'Game Package',
+    category: 'Community',
+    definition:
+      "The minimum purchase to play Star Citizen permanently. Includes a starter ship, access to all current and future PU content, and 1,000 aUEC. Starter packages begin around $45 USD. Squadron 42 is sold separately. Once you own a package, there is no subscription fee — ever.",
+    also: 'Starter Package, Starter Pack',
+  },
+  {
+    term: 'Invictus Launch Week',
+    category: 'Community',
+    definition:
+      "CIG's annual Navy fleet showcase held in May. Military and Anvil ships are free to fly each day, new ships are revealed, and sales run across the catalog. Replaced by DefenseCon in 2026.",
+    also: 'Invictus',
+  },
+  {
+    term: 'DefenseCon',
+    category: 'Community',
+    definition:
+      "CIG's 2026 military fleet showcase, replacing Invictus Launch Week. Combat and defense-focused ships are spotlighted across the event window. The Anvil Ironclad made its Flight Ready debut at DefenseCon 2956.",
+  },
+  {
     term: 'Referral Code',
     category: 'Community',
     definition:
@@ -1387,6 +1407,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Technical',
     definition:
       "A status meaning the ship exists in your hangar but isn't yet flyable in the live game. CIG ships go from concept → hangar ready → flyable over time.",
+  },
+  {
+    term: 'Flight Ready',
+    category: 'Technical',
+    definition:
+      "A ship status meaning it is fully playable in the Persistent Universe. Ships progress from concept → in production → hangar ready → flight ready. During Free Fly events, all featured loaner ships are flight ready.",
+    also: 'Flyable',
   },
   {
     term: '30k',
