@@ -596,3 +596,30 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 - [ ] Click CTA **with** adblocker enabled → Sheet row appears within 5s
 - [ ] Click CTA **with** adblocker enabled → Discord embed appears in #referral-clicks
 - [ ] Click CTA **without** adblocker → same as above
+
+---
+
+## SEO
+
+**Network role:** Google authority destination hub — permanent
+**Search engine:** Google (primary), Bing
+
+**Primary keywords:**
+- "star citizen new player guide"
+- "how to start star citizen"
+- "star citizen beginner guide"
+- "star citizen tutorial"
+- "what is star citizen"
+
+**Cross-links this site must send (body copy only):**
+- → freeflyevent.com: Weekly digest + events section when Free Fly mentioned
+- → screferralreward.com: Tutorial sign-up step ("Use a referral code when you enlist")
+- → bestspacesim.com: "Why Star Citizen" comparison context
+- → o7meaning.com: Glossary entry for o7
+- → fundedgame.com: "About the Game" background section ("the highest-funded game in history")
+
+**Do not:**
+- Place cross-portfolio links in footers or link lists — editorial/body copy only
+- Target new keywords without updating `E:\Claude Code\sc-portfolio\docs\seo\keyword-research.md`
+
+**Full strategy:** `E:\Claude Code\sc-portfolio\docs\seo\README.md`
