@@ -105,6 +105,19 @@ export default function BuyingTheGamePage() {
                 Verify your email when the confirmation message arrives. Your account is not
                 active until this step is complete.
               </p>
+              <p className="text-sm mt-4">
+                When you create your account, use a referral code to get 50,000{' '}
+                <Term name="UEC">UEC</Term> free.{' '}
+                <a
+                  href="https://screferralreward.com"
+                  className="text-gold underline-offset-4 hover:underline"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  screferralreward.com
+                </a>{' '}
+                has the code and step-by-step instructions.
+              </p>
             </div>
           </section>
 

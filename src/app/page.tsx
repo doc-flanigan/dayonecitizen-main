@@ -45,6 +45,16 @@ export default function Home() {
           <Term name="CIG">Cloud Imperium Games</Term>. Pilot ships, explore
           planets, trade, fight, <Term name="Mining">mine</Term>,{' '}
           <Term name="Salvage">salvage</Term> — all in one persistent universe.
+          {' '}Star Citizen is{' '}
+          <a
+            href="https://fundedgame.com"
+            className="text-gold underline-offset-4 hover:underline"
+            target="_blank"
+            rel="noopener"
+          >
+            the highest-funded game in history
+          </a>
+          , having raised over $700 million through crowdfunding.
         </>
       ),
       href: '/glossary#term-the-verse',
