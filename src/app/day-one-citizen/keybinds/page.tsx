@@ -72,7 +72,7 @@ export default function KeybindsPage() {
                 <tbody className="px-4">
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Interact — use on doors, terminals, ship entry points, items on the ground, NPCs</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Interact — tap to use doors, terminals, ship entry points, items on the ground, NPCs. Hold on an object for extended options.</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F1</kbd></td>
@@ -105,10 +105,6 @@ export default function KeybindsPage() {
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd></td>
                     <td className="px-4 py-3 text-sm text-starwhite/85">Reload</td>
-                  </tr>
-                  <tr className="border-t border-white/5">
-                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85"><Term name="Inner Thought">Inner Thought</Term> context menu (hold F on many objects for extended options)</td>
                   </tr>
                 </tbody>
               </table>
@@ -161,16 +157,16 @@ export default function KeybindsPage() {
                     <td className="px-4 py-3 text-sm text-starwhite/85">Exit seat / enter seat</td>
                   </tr>
                   <tr className="border-t border-white/5">
-                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">G</kbd></td>
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd></td>
                     <td className="px-4 py-3 text-sm text-starwhite/85">Toggle landing gear</td>
                   </tr>
                   <tr className="border-t border-white/5">
-                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R (hold)</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Spool <Term name="Quantum Travel">quantum drive</Term></td>
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd></td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Flight ready — toggles engines on / off</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B (hold)</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Initiate <Term name="Quantum Travel">quantum travel</Term> (after spool)</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Engage <Term name="Quantum Travel">quantum travel</Term> — hold to spool and jump (set a destination first)</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">L</kbd></td>
@@ -190,41 +186,39 @@ export default function KeybindsPage() {
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">The power triangle</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">Capacitor management</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                The <Term name="Power Triangle">power triangle</Term> is one of Star
-                Citizen&rsquo;s most distinctive systems. Your ship generates a fixed amount of
-                power. You distribute that power between three systems:
+                Your ship has three capacitors that regenerate over time. You control how fast
+                each one refills by shifting regen toward whichever system you need most:
               </p>
               <ul className="list-disc space-y-2 pl-6">
-                <li><strong className="text-starwhite">Weapons (W)</strong> — more power means faster
-                  energy weapon recharge</li>
-                <li><strong className="text-starwhite">Engines (E)</strong> — more power means higher
-                  top speed and faster maneuvers</li>
-                <li><strong className="text-starwhite">Shields (S)</strong> — more power means faster
-                  shield regeneration</li>
+                <li><strong className="text-starwhite">Weapons</strong> — faster recharge for energy weapons</li>
+                <li><strong className="text-starwhite">Engines</strong> — faster refill for the thruster boost capacitor</li>
+                <li><strong className="text-starwhite">Shields</strong> — faster shield regeneration</li>
               </ul>
               <p>
-                Shift power between the three with number keys:
+                Shift regen between the three with the F-key row:
               </p>
               <ul className="list-disc space-y-2 pl-6">
-                <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">1</kbd>{' '}
-                  — push power toward weapons</li>
-                <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">2</kbd>{' '}
-                  — push power toward engines</li>
-                <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">3</kbd>{' '}
-                  — push power toward shields</li>
+                <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F5</kbd>{' '}
+                  — push regen toward weapons</li>
+                <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F6</kbd>{' '}
+                  — push regen toward engines</li>
+                <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F7</kbd>{' '}
+                  — push regen toward shields</li>
+                <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F8</kbd>{' '}
+                  — reset to balanced (equal regen across all three)</li>
               </ul>
               <p>
-                In a dogfight you might pump power to shields. Trying to run? Push to engines.
-                On a delivery run with no combat: balanced across all three is fine.
+                In a fight, push to shields to recover faster from hits. Trying to escape?
+                Push to engines so your thruster boost refills quickly. On a routine delivery
+                run, balanced across all three is fine.
               </p>
               <p>
                 The{' '}
                 <Term name="MFD">MFD</Term> (multi-function display) in your cockpit shows the
-                current power triangle as a triangular graph. Glance at it to see where your
-                power currently sits.
+                current capacitor distribution. Glance at it to see where your regen is sitting.
               </p>
             </div>
           </section>
