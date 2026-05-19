@@ -12,8 +12,8 @@ export default function GiveawayBanner() {
       >
         <Gift size={16} aria-hidden className="shrink-0" />
         <span>
-          <span className="hidden sm:inline">Star Citizen giveaway happening now — </span>
-          <span className="sm:hidden">Star Citizen giveaway — </span>
+          <span className="hidden sm:inline">A Star Citizen Game Package giveaway is happening — </span>
+          <span className="sm:hidden">Star Citizen Game Package giveaway — </span>
           enter free at freeflyevent.com
         </span>
         <ArrowUpRight size={14} aria-hidden className="shrink-0" />
