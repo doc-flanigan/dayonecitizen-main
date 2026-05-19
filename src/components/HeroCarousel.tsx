@@ -12,7 +12,7 @@ type Props = {
   ctaLabel?: string
   ctaHref?: string
   intervalMs?: number
-  images?: string[]
+  images?: { src: string; alt: string }[]
   height?: 'short' | 'tall' | 'full'
 }
 
@@ -28,7 +28,7 @@ export default function HeroCarousel({
   ctaLabel,
   ctaHref,
   intervalMs = 9000,
-  images = HERO_IMAGES,
+  images = HERO_IMAGES as { src: string; alt: string }[],
   height = 'tall',
 }: Props) {
   const [index, setIndex] = useState(0)
@@ -51,7 +51,7 @@ export default function HeroCarousel({
     >
       <AnimatePresence mode="sync">
         <motion.div
-          key={images[index]}
+          key={images[index].src}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -59,8 +59,8 @@ export default function HeroCarousel({
           className="absolute inset-0"
         >
           <Image
-            src={images[index]}
-            alt=""
+            src={images[index].src}
+            alt={images[index].alt}
             fill
             priority={index === 0}
             sizes="100vw"
@@ -106,9 +106,9 @@ export default function HeroCarousel({
       </div>
 
       <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-        {images.map((src, i) => (
+        {images.map((img, i) => (
           <button
-            key={src}
+            key={img.src}
             type="button"
             aria-label={`Go to slide ${i + 1}`}
             onClick={() => setIndex(i)}
