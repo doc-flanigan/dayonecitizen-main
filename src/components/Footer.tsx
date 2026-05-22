@@ -21,7 +21,7 @@ export default function Footer() {
           <p className="mt-4 max-w-md text-sm leading-relaxed text-muted">
             {SITE.description}
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap items-center gap-4">
             <Image
               src="/images/made-by-community.png"
               alt="Made by the Star Citizen Community — RSI Fankit"
@@ -29,6 +29,20 @@ export default function Footer() {
               height={40}
               className="opacity-90"
             />
+            <a
+              href="https://discord.gg/r5mZvDh3"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Join our Discord server"
+            >
+              <Image
+                src="/images/join-us-discord.png"
+                alt="Join us on Discord"
+                width={146}
+                height={40}
+                className="opacity-90 hover:opacity-100 transition-opacity"
+              />
+            </a>
           </div>
         </div>
 
