@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
+import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
@@ -233,6 +234,7 @@ export default function WorthBuyingPage() {
 
           <div className="border-t border-white/10 pt-10">
             <CTAButton size="lg" trackingLabel="worth-buying-cta" />
+            <DiscordCTA />
           </div>
 
           <nav className="flex items-center justify-between text-sm">

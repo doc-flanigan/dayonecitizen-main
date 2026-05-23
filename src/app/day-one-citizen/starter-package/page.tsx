@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
+import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
@@ -433,6 +434,7 @@ export default function StarterPackagePage() {
 
           <div className="border-t border-white/10 pt-10">
             <CTAButton size="lg" trackingLabel="starter-package-cta" />
+            <DiscordCTA />
           </div>
 
           <nav className="flex items-center justify-between text-sm">

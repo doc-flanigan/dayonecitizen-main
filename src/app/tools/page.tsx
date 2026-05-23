@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Wrench, ExternalLink, Star } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import CTAButton from '@/components/CTAButton'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Fleet Viewer & Tools — StarJump, Erkul & More',
@@ -212,6 +213,11 @@ export default function ToolsPage() {
               </section>
             )
           })}
+
+          {/* Referral CTA */}
+          <div className="border-t border-white/10 pt-10">
+            <CTAButton size="lg" trackingLabel="tools-cta" />
+          </div>
 
           {/* Disclaimer */}
           <section className="rounded-2xl border border-white/10 bg-navyLight/20 p-6 text-sm text-starwhite/60">
