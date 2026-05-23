@@ -7,12 +7,12 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Starter Packages: All 8 Options Under $150 Compared — Day One Citizen',
+  title: 'Star Citizen Starter Packages 2026: All 8 Options Compared — Day One Citizen',
   description:
-    'Which Star Citizen starter package should you buy? All eight game packages under $150 compared — Aurora Mk II, Cutter, Avenger Titan, Cutlass Black, and more.',
+    'Which Star Citizen starter package should you buy? All eight game packages compared — from the $45 Citizen Starter to the $125 Privateer. Includes current Warbond prices.',
   alternates: { canonical: '/day-one-citizen/starter-package' },
   openGraph: {
-    title: 'Star Citizen Starter Packages: All 8 Under $150 Compared',
+    title: 'Star Citizen Starter Packages 2026: All 8 Options Compared',
     description:
       'Eight packages. Six careers. One recommendation. Which starter pack is right for you?',
     url: '/day-one-citizen/starter-package',
@@ -38,7 +38,7 @@ export default function StarterPackagePage() {
               Which starter package should you buy?
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              There are eight game packages under $150 in the{' '}
+              There are eight game packages under $125 in the{' '}
               <Term name="RSI">RSI</Term> store. Each comes with a different
               ship built for a different career. Here is the full comparison,
               plus a clear recommendation for most new players.
@@ -68,11 +68,11 @@ export default function StarterPackagePage() {
                 </li>
               </ul>
               <p>
-                Two packages — Citizen Starter and Miner &lsquo;Keystone&rsquo; — offer a{' '}
-                <strong className="text-starwhite">Warbond price</strong>, which is a steeper
+                Some packages carry a{' '}
+                <strong className="text-starwhite">Warbond price</strong> — a steeper
                 discount available only when paying with real money. Store credit
-                cannot be used for Warbond purchases. If you are buying fresh, the
-                Warbond price is always the cheapest way in.
+                cannot be used for Warbond purchases. If you are buying fresh with no
+                existing store credit, always check for a Warbond price first.
               </p>
             </div>
           </section>
@@ -82,30 +82,38 @@ export default function StarterPackagePage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 <strong className="text-starwhite">
-                  Get the Citizen Starter Pack with the{' '}
-                  <Term name="Aurora">Aurora Mk II</Term>.
+                  If you are not sure what you want to do yet: get the Citizen Starter Pack at $45.
                 </strong>
               </p>
               <p>
-                At $45 Warbond (or $60 standard), it is the cheapest entry in the store.
-                It also includes the most bonus gear of any starter pack.
-                You get{' '}
-                <Term name="LTI">Lifetime Insurance</Term> — meaning the ship never
-                needs to be re-insured — plus a full armor set, an undersuit, and a weapon.
-                That equipment lets you play ground missions from your very first session.
+                It is the cheapest way into the game. It comes with the{' '}
+                <Term name="Aurora">Aurora Mk II</Term> — a forgiving starter ship
+                with{' '}
+                <Term name="LTI">Lifetime Insurance</Term> — plus a full armor set,
+                an undersuit, and a weapon. That kit lets you play ground missions
+                from your very first session. Learn the game first, then upgrade via
+                a <Term name="CCU">CCU</Term> later for the price difference.
               </p>
               <p>
-                The <Term name="Aurora">Aurora Mk II</Term> is made by{' '}
-                <Term name="RSI">RSI</Term>, the same in-fiction company that runs the
-                game&rsquo;s lore. It has retractable wings and a modular design that supports
-                cargo, light combat, and general exploration. It is forgiving to new pilots.
+                <strong className="text-starwhite">
+                  Looking for a deal? The Generalist &lsquo;DefenseCon&rsquo; Starter Pack is $51 at Warbond pricing (was $60).
+                </strong>
               </p>
               <p>
-                <strong className="text-starwhite">Want something with more personality?</strong>{' '}
-                The Generalist Starter Pack at $60 comes with the{' '}
-                <Term name="Cutter">Drake Cutter</Term> — a tough, compact ship
-                with four <Term name="SCU">SCU</Term> of cargo space. It has no bonus gear
-                and only six months of insurance, but it is a genuinely solid first ship.
+                Warbond means new money only — no store credit — but if you are buying
+                fresh, that is a $60 pack for $51. The &ldquo;Generalist&rdquo; ship handles
+                multiple roles rather than locking you into one career from day one.
+                Worth grabbing while the Warbond price is active.
+              </p>
+              <p>
+                <strong className="text-starwhite">
+                  Already know your career? Get the role pack that matches it.
+                </strong>
+              </p>
+              <p>
+                If you tried the Free Fly and found a gameplay loop you loved, the
+                six role packs at $75–$125 give you a purpose-built ship from day one.
+                They cost more, but you will not need to upgrade as quickly.
               </p>
             </div>
           </section>
@@ -135,23 +143,12 @@ export default function StarterPackagePage() {
                     </td>
                     <td className="px-4 py-3 text-starwhite/80">Most new players ★</td>
                   </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Generalist</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Cutter">Drake Cutter</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$60</td>
+                  <tr className="bg-gold/5">
+                    <td className="px-4 py-3 font-semibold text-starwhite">Generalist &lsquo;DefenseCon&rsquo;</td>
+                    <td className="px-4 py-3 text-starwhite/80">Generalist ship</td>
+                    <td className="px-4 py-3 text-starwhite/80">$51 WB&nbsp;/ $60</td>
                     <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Cargo + combat generalists</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Miner &lsquo;Keystone&rsquo;</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Golem">Drake Golem</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$67.50 WB&nbsp;/ $75</td>
-                    <td className="px-4 py-3 text-starwhite/80">24 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Miners</td>
+                    <td className="px-4 py-3 text-starwhite/80">Sale pick ★</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-starwhite">Salvager</td>
@@ -159,6 +156,15 @@ export default function StarterPackagePage() {
                     <td className="px-4 py-3 text-starwhite/80">$75</td>
                     <td className="px-4 py-3 text-starwhite/80">6 months</td>
                     <td className="px-4 py-3 text-starwhite/80">Salvagers</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 font-semibold text-starwhite">Miner</td>
+                    <td className="px-4 py-3 text-starwhite/80">
+                      <Term name="Golem">Drake Golem</Term>
+                    </td>
+                    <td className="px-4 py-3 text-starwhite/80">$75</td>
+                    <td className="px-4 py-3 text-starwhite/80">24 months</td>
+                    <td className="px-4 py-3 text-starwhite/80">Miners</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-starwhite">Duelist</td>
@@ -201,18 +207,18 @@ export default function StarterPackagePage() {
             </div>
             <p className="mt-3 text-xs text-muted">
               WB = Warbond price (real money only — store credit not accepted).
-              All prices in USD. ★ = our pick for first-time buyers.
+              All prices in USD. ★ = recommended picks.
             </p>
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">If you already know your career</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">The role packs in detail</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                If you have watched videos or read guides and already know the
-                career you want, the six packs below give you a purpose-built ship
-                from day one. They cost more than the Citizen Starter, but you will
-                not need to upgrade as quickly.
+                If you tried the Free Fly and found a loop you enjoyed, these
+                six packs give you a purpose-built ship from day one. They cost
+                more than the Citizen Starter, but you will not need to upgrade
+                as quickly.
               </p>
             </div>
 
@@ -220,7 +226,7 @@ export default function StarterPackagePage() {
 
               <div className="rounded-2xl border border-white/5 bg-navyLight/30 p-6">
                 <h3 className="text-lg font-semibold text-starwhite">
-                  Miner &lsquo;Keystone&rsquo; Starter Pack — $67.50 WB / $75
+                  Miner Starter Pack — $75
                 </h3>
                 <p className="mt-1 text-sm text-muted">
                   Ship: <Term name="Golem">Drake Golem</Term>
@@ -268,9 +274,9 @@ export default function StarterPackagePage() {
                   The <Term name="Avenger">Avenger Titan</Term> is a retired military
                   ship re-fitted for civilian use, with its combat hold expanded for
                   maximum cargo space. It handles delivery missions well and fights back
-                  when attacked. At the same price as the Salvager pack, the Titan is
-                  widely considered the best value ship at the $75 mark — versatile
-                  enough to try multiple careers before committing.
+                  when attacked. At the same price as the Salvager and Miner packs, the
+                  Titan is widely considered the best value ship at the $75 mark —
+                  versatile enough to try multiple careers before committing.
                 </p>
               </div>
 
@@ -342,43 +348,47 @@ export default function StarterPackagePage() {
                   <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I have no idea yet</td>
                     <td className="px-4 py-3 text-starwhite/80">
-                      Citizen Starter Pack — cheapest entry, most bonus gear,
-                      best insurance
+                      Citizen Starter Pack ($45) — cheapest entry, most bonus gear, best insurance
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-3 font-semibold text-gold">I want a deal right now</td>
+                    <td className="px-4 py-3 text-starwhite/80">
+                      Generalist &lsquo;DefenseCon&rsquo; ($51 Warbond) — $60 pack at a discount while Warbond pricing is active
                     </td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I want to fight and fly</td>
                     <td className="px-4 py-3 text-starwhite/80">
-                      Duelist (<Term name="Avenger">Avenger Titan</Term>) for value,
-                      or Privateer (<Term name="Cutlass">Cutlass Black</Term>) if budget
+                      Duelist (<Term name="Avenger">Avenger Titan</Term>, $75) for value,
+                      or Privateer (<Term name="Cutlass">Cutlass Black</Term>, $125) if budget
                       is not a concern
                     </td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I want to haul cargo</td>
                     <td className="px-4 py-3 text-starwhite/80">
-                      Hauler (<Term name="Intrepid">Intrepid</Term>) or Generalist
-                      (<Term name="Cutter">Cutter</Term>)
+                      Hauler (<Term name="Intrepid">Intrepid</Term>, $80)
                     </td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I want to mine</td>
                     <td className="px-4 py-3 text-starwhite/80">
-                      Miner &lsquo;Keystone&rsquo; (<Term name="Golem">Golem</Term>) —
+                      Miner (<Term name="Golem">Golem</Term>, $75) —
                       the only dedicated mining starter in the store
                     </td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I want to salvage wrecks</td>
                     <td className="px-4 py-3 text-starwhite/80">
-                      Salvager (RSI Salvation) — the only dedicated salvage starter
+                      Salvager (RSI Salvation, $75) — the only dedicated salvage starter
                       in the store
                     </td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I want something alien and unique</td>
                     <td className="px-4 py-3 text-starwhite/80">
-                      Outsider (<Term name="Syulen">Syulen</Term>) — Human-Xi&rsquo;an
+                      Outsider (<Term name="Syulen">Syulen</Term>, $85) — Human-Xi&rsquo;an
                       hybrid tech, unlike anything else here
                     </td>
                   </tr>
