@@ -7,7 +7,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'How to Add Friends in Star Citizen (2026 Guide) | dayonecitizen.com',
+  title: 'How to Add Friends in Star Citizen (2026 Guide)',
   description:
     'Press F1 to open mobiGlas, tap Contacts, search by RSI handle, and send a request. Step-by-step guide including party invites and crew tips.',
   alternates: { canonical: '/beyond-the-basics/adding-friends' },

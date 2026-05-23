@@ -7,7 +7,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Inventory Guide — Ship & Personal Storage (2026) | dayonecitizen.com',
+  title: 'Star Citizen Inventory Guide — Ship & Personal Storage',
   description:
     'How to open Star Citizen inventory (press I), transfer items between personal and ship storage, and move gear between stations. Storage persistence explained.',
   alternates: { canonical: '/beyond-the-basics/inventory-management' },

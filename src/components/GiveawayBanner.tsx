@@ -1,6 +1,8 @@
 import { ArrowUpRight, Gift } from 'lucide-react'
 
 export default function GiveawayBanner() {
+  if (new Date() > new Date('2026-05-28T06:00:00Z')) return null
+
   return (
     <div className="bg-gradient-to-r from-gold via-goldDark to-gold text-navy">
       <a

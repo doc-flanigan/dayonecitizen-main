@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default:
-      'Star Citizen New Player Guide — Plain English, No Jargon | dayonecitizen.com',
+      'Star Citizen New Player Guide — Plain English, No Jargon',
     template: '%s | dayonecitizen.com',
   },
   description: SITE.description,
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     url: SITE.url,
     title:
-      'Star Citizen New Player Guide — Plain English, No Jargon | dayonecitizen.com',
+      'Star Citizen New Player Guide — Plain English, No Jargon',
     description: SITE.description,
     images: [
       {

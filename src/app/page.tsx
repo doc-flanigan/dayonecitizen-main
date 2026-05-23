@@ -12,7 +12,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: {
     absolute:
-      'Star Citizen New Player Guide — Plain English, No Jargon | dayonecitizen.com',
+      'Star Citizen New Player Guide — Plain English, No Jargon',
   },
   description:
     'Star Citizen guide for brand-new players. 12 step-by-step guides: system requirements, buying, installing, keybinds, navigation, and your first flight.',

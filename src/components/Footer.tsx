@@ -109,7 +109,7 @@ export default function Footer() {
           </p>
           <p>
             <strong className="text-starwhite/90">Affiliate disclosure.</strong>{' '}
-            This site uses Star Citizen referral links. Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
+            This site uses Star Citizen referral links (code STAR-GCQJ-N6NC). Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
           </p>
           <p>
             <strong className="text-starwhite/90">Trademarks.</strong> Star

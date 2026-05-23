@@ -7,7 +7,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 
 export const metadata: Metadata = {
-  title: 'How to Form a Party in Star Citizen — Invites & Joining (2026) | dayonecitizen.com',
+  title: 'How to Form a Party in Star Citizen (2026)',
   description:
     'Press F11, open Friends tab, right-click, Invite to Party. How to send, accept, and join a party in Star Citizen so everyone lands on the same server.',
   alternates: { canonical: '/beyond-the-basics/party-management' },

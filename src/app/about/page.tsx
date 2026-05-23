@@ -32,7 +32,7 @@ const FAQ = [
 export const metadata: Metadata = {
   title: 'What Does o7 Mean? The Star Citizen Salute Explained',
   description:
-    "o7 is an emoticon salute used across Star Citizen and gaming communities. The 'o' is a head, the '7' is a raised arm. Here's everything you need to know.",
+    'Unofficial Star Citizen fan site for new players by Doc_Flanigan. Plain English, no jargon. Use referral code STAR-GCQJ-N6NC to start with 50,000 UEC free.',
   alternates: { canonical: '/about' },
   openGraph: {
     title: 'What Does o7 Mean? The Star Citizen Salute Explained',
@@ -274,7 +274,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-5 space-y-4 text-sm leading-relaxed text-starwhite/85">
               <p>
-                Affiliate disclosure: This site uses Star Citizen referral links. Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
+                Affiliate disclosure: This site uses Star Citizen referral links (code STAR-GCQJ-N6NC). Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
               </p>
             </div>
           </section>

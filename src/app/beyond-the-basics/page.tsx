@@ -6,7 +6,7 @@ import CTAButton from '@/components/CTAButton'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Beyond the Basics — Star Citizen Guides for Early Players | dayonecitizen.com',
+  title: 'Beyond the Basics — Star Citizen Guides for Early Players',
   description:
     'Seven plain-English Star Citizen guides for players past the basics: adding friends, managing inventory, finding shops, CCU upgrades, and more.',
   alternates: { canonical: '/beyond-the-basics' },

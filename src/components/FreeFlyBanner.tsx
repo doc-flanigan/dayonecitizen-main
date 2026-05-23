@@ -1,10 +1,10 @@
 'use client'
 
 import { ArrowUpRight, Rocket } from 'lucide-react'
+import { NEXT_FREE_FLY } from '../data/next-free-fly'
 
-// Update START and END for each Free Fly event
-const EVENT_START = new Date('2026-05-16T17:00:00Z')
-const EVENT_END = new Date('2026-05-28T00:00:00Z')
+const EVENT_START = new Date(NEXT_FREE_FLY.start)
+const EVENT_END = new Date(NEXT_FREE_FLY.end)
 
 const END_LABEL = EVENT_END.toLocaleDateString('en-US', {
   month: 'long',

@@ -86,11 +86,6 @@ export default function PledgeVsPurchasePage() {
                   <Term name="PU">Persistent Universe</Term> for as long as the game exists.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Access to{' '}
-                  <Term name="Squadron 42">Squadron 42</Term></strong> — permanent, but the
-                  campaign is not yet released. Your purchase locks in access when it ships.
-                </li>
-                <li>
                   <strong className="text-starwhite">Your ship(s)</strong> — stored in your
                   virtual <Term name="Hangar">hangar</Term>. You can view them in the RSI
                   account management page (VMA — Vehicle Manager) before you even log in.

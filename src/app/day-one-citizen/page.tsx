@@ -95,8 +95,7 @@ const SECTIONS: Section[] = [
     stub: (
       <>
         The cheapest packages start around $45 and include a small ship plus
-        access to both Star Citizen and{' '}
-        <Term name="Squadron 42">Squadron 42</Term>. This section compares the
+        access to Star Citizen. This section compares the
         common starter ships (Aurora MR, Mustang Alpha) and explains which is
         the best fit for a first-time player.
       </>
