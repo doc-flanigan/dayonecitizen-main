@@ -18,8 +18,7 @@ export const SITE = {
 }
 
 export const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/day-one-citizen', label: 'Day One Citizen' },
+  { href: '/day-one-citizen', label: 'Day One' },
   { href: '/glossary', label: 'Glossary' },
   { href: '/tools', label: 'Tools' },
   { href: '/free-fly-events', label: 'Free Fly Events' },
