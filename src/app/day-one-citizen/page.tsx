@@ -200,7 +200,7 @@ export default function DayOneCitizenPage() {
       <NavBar />
       <main className="bg-navy">
         <header className="border-b border-white/5 bg-gradient-to-b from-navy via-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
-          <div className="container-narrow">
+          <div className="container-wide">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
               <Compass size={14} aria-hidden /> Day One Citizen
             </p>

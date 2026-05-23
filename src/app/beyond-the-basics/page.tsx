@@ -70,7 +70,7 @@ export default function BeyondTheBasicsPage() {
       <main className="bg-navy min-h-screen">
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
-          <div className="container-narrow">
+          <div className="container-wide">
             <Link
               href="/day-one-citizen"
               className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted hover:text-gold"
