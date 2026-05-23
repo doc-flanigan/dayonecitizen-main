@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen First Launch: Character Creation & What Happens Next — Day One Citizen',
   description:
-    'What happens when you launch Star Citizen for the first time: character creation choices that matter, waking up in your hab room, and the five things to do before anything else.',
+    'Star Citizen first launch: character creation choices that matter, waking up in your hab room, and the five things to do before anything else.',
   alternates: { canonical: '/day-one-citizen/first-launch' },
   openGraph: {
     title: 'Star Citizen First Launch: Character Creation & What Happens Next',

@@ -9,7 +9,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Is Star Citizen Worth Buying in 2026? — Day One Citizen',
   description:
-    'An honest look at Star Citizen in 2026 — what you actually get today, what is still unfinished, what the alpha caveat really means, and how to try the game free before spending anything.',
+    'Honest look at Star Citizen in 2026 — what you get today, what is still unfinished, and how to try the game free before spending anything.',
   alternates: { canonical: '/day-one-citizen/worth-buying' },
   openGraph: {
     title: 'Is Star Citizen Worth Buying in 2026?',
@@ -79,12 +79,6 @@ export default function WorthBuyingPage() {
                   set in the{' '}
                   <Term name="Stanton">Stanton</Term> and{' '}
                   <Term name="Pyro">Pyro</Term> star systems.
-                </li>
-                <li>
-                  <strong className="text-starwhite">Squadron 42 access</strong> —{' '}
-                  <Term name="Squadron 42">Squadron 42</Term> is the single-player campaign. It is
-                  not yet released but is included in all standard game packages. Your purchase
-                  locks in your access when it ships.
                 </li>
                 <li>
                   <strong className="text-starwhite">A starter ship</strong> — a physical ship in

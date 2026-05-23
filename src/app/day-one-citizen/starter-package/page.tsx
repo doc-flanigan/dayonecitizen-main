@@ -9,7 +9,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen Starter Packages 2026: All 8 Options Compared — Day One Citizen',
   description:
-    'Which Star Citizen starter package should you buy? All eight game packages compared — from the $45 Citizen Starter to the $125 Privateer. Includes current Warbond prices.',
+    'Which Star Citizen starter package should you buy? All eight packages compared — $45 Citizen Starter to $125 Privateer. Includes Warbond prices.',
   alternates: { canonical: '/day-one-citizen/starter-package' },
   openGraph: {
     title: 'Star Citizen Starter Packages 2026: All 8 Options Compared',

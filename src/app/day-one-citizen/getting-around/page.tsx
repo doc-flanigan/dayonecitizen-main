@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'How to Get to Your Ship in Star Citizen — Day One Citizen',
   description:
-    'Step-by-step routes from hab to hangar in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage Welcome Hub elevators, and Orison inter-platform shuttles.',
+    'Hab to hangar routes in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage elevators, and Orison inter-platform shuttles.',
   alternates: { canonical: '/day-one-citizen/getting-around' },
   openGraph: {
     title: 'How to Get to Your Ship in Star Citizen',

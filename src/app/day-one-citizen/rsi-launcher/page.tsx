@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'RSI Launcher Guide: Live, PTU & EPTU Explained — Day One Citizen',
   description:
-    'What the RSI Launcher does and how to use it: Live vs PTU vs EPTU builds, how to switch channels, how to verify game files, and how to fix common launcher problems.',
+    'How to use the RSI Launcher: Live vs PTU vs EPTU builds, switching channels, verifying game files, and fixing common Star Citizen launcher problems.',
   alternates: { canonical: '/day-one-citizen/rsi-launcher' },
   openGraph: {
     title: 'RSI Launcher Guide: Live, PTU & EPTU Explained',

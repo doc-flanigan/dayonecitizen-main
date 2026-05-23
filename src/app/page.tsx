@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       'Star Citizen New Player Guide — Plain English, No Jargon | dayonecitizen.com',
   },
   description:
-    'The complete Star Citizen guide for brand-new players. 12 step-by-step guides covering system requirements, buying the game, installing it, keybinds, navigation, and your first flight.',
+    'Star Citizen guide for brand-new players. 12 step-by-step guides: system requirements, buying, installing, keybinds, navigation, and your first flight.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Star Citizen New Player Guide — Plain English, No Jargon',
@@ -47,7 +47,7 @@ export default function Home() {
           <Term name="Salvage">salvage</Term> — all in one persistent universe.
           {' '}Star Citizen is{' '}
           <a
-            href="https://fundedgame.com"
+            href="https://robertsspaceindustries.com/en/funding-goals"
             className="text-gold underline-offset-4 hover:underline"
             target="_blank"
             rel="noopener"

@@ -9,7 +9,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen First Day Guide: What to Do First — Day One Citizen',
   description:
-    'Ten things to do on your first day in Star Citizen, in order — from the ASOP terminal to running your first mission, collecting your first aUEC, and logging out safely.',
+    'Ten things to do on your first day in Star Citizen — from the ASOP terminal to your first mission, collecting aUEC, and logging out safely.',
   alternates: { canonical: '/day-one-citizen/first-day' },
   openGraph: {
     title: 'Star Citizen First Day Guide: What to Do First',

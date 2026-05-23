@@ -9,7 +9,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville (2026) | dayonecitizen.com',
   description:
-    'Where to buy armor, weapons, and ship parts in Star Citizen: New Babbage (Tammany & Sons), Area18 (Cubby Blast), Lorville. Full shop list with what each vendor carries.',
+    'Where to buy armor, weapons, and ship parts in Star Citizen: New Babbage, Area18 (Cubby Blast), Lorville. Full shop list with what each vendor carries.',
   alternates: { canonical: '/beyond-the-basics/shops-directory' },
   openGraph: {
     title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville (2026)',

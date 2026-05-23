@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'How to Install Star Citizen — Day One Citizen',
   description:
-    'Download the RSI Launcher, install Star Citizen to an SSD, and get through first-time shader compilation. Covers disk space requirements (150 GB+), best install paths, and what to expect.',
+    'Download the RSI Launcher, install Star Citizen to an SSD, and get through shader compilation. Disk space requirements (150 GB+) and best install paths.',
   alternates: { canonical: '/day-one-citizen/install' },
   openGraph: {
     title: 'How to Install Star Citizen',

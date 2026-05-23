@@ -10,7 +10,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'How to Buy Star Citizen — Day One Citizen',
   description:
-    'Create your RSI account, apply a referral code for 50,000 free UEC, choose a game package, and download the launcher. Every step of buying Star Citizen, no shortcuts skipped.',
+    'Create your RSI account, apply a referral code for 50,000 free UEC, choose a starter package, and download the launcher. Every step of buying Star Citizen.',
   alternates: { canonical: '/day-one-citizen/buying-the-game' },
   openGraph: {
     title: 'How to Buy Star Citizen — Step by Step',
@@ -130,8 +130,7 @@ export default function BuyingTheGamePage() {
                 or hover over <strong className="text-starwhite">Buy Star Citizen</strong> in the
                 top nav. You are looking for{' '}
                 <strong className="text-starwhite">Game Packages</strong> — these are the starter
-                options that include both Star Citizen access and{' '}
-                <Term name="Squadron 42">Squadron 42</Term>.
+                options that include Star Citizen alpha access and a starter ship.
               </p>
               <p>
                 Do not buy a standalone ship from the pledge store on day one. Standalone ships
@@ -150,20 +149,19 @@ export default function BuyingTheGamePage() {
               <ul className="list-disc space-y-2 pl-6">
                 <li>Access to the Star Citizen alpha (the live{' '}
                   <Term name="PU">Persistent Universe</Term>)</li>
-                <li>Access to <Term name="Squadron 42">Squadron 42</Term> when it releases</li>
                 <li>A starter ship with standard insurance</li>
-                <li>1,000 starting <Term name="aUEC">aUEC</Term></li>
+                <li>10,000 starting <Term name="aUEC">aUEC</Term></li>
               </ul>
               <p>
                 The two common starter ships are the{' '}
-                <Term name="Aurora">Aurora MR</Term> and the{' '}
+                <Term name="Aurora">Aurora Mk II</Term> and the{' '}
                 <Term name="Mustang">Mustang Alpha</Term>. A full comparison of these is in{' '}
                 <Link href="/day-one-citizen/starter-package" className="text-gold underline-offset-4 hover:underline">
                   Section 05: Which starter package should you buy?
                 </Link>
               </p>
               <p>
-                The short version: the Aurora MR is the more practical choice for a new player.
+                The short version: the Aurora Mk II is the more practical choice for a new player.
                 It carries cargo, which opens delivery missions immediately. The Mustang Alpha is
                 faster and more fun to fly, but carries almost nothing.
               </p>

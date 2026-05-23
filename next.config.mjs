@@ -41,6 +41,12 @@ const nextConfig = {
         destination: 'https://dayonecitizen.com/:path*',
         permanent: true,
       },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.dayonecitizen.com' }],
+        destination: 'https://dayonecitizen.com/:path*',
+        permanent: true,
+      },
       // Retired routes — keep these so old email links and search-engine
       // results don't 404 while we lean the site toward Day One Citizen.
       // Both 308 to the homepage; visitors land on a useful page.

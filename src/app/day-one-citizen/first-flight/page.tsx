@@ -9,7 +9,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen First Flight Guide: Take Off, Fly & Land — Day One Citizen',
   description:
-    'Power on your ship, clear the hangar door, master basic flight controls, make your first quantum jump, and land without crashing. Step-by-step with exact keybinds.',
+    'Power on your ship, clear the hangar, master Star Citizen flight controls, make your first quantum jump, and land. Step-by-step with exact keybinds.',
   alternates: { canonical: '/day-one-citizen/first-flight' },
   openGraph: {
     title: 'Star Citizen First Flight Guide: Take Off, Fly & Land',

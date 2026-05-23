@@ -133,7 +133,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Pledge',
     category: 'Community',
     definition:
-      "What backers call buying a ship or game package. Star Citizen is crowdfunded, so you 'pledge' rather than 'purchase.' See pledgemeaning.com for more.",
+      "What backers call buying a ship or game package. Star Citizen is crowdfunded, so you 'pledge' rather than 'purchase.'",
   },
   {
     term: 'Game Package',
@@ -965,7 +965,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Free Fly',
     category: 'Gameplay',
     definition:
-      "A promotional event where Star Citizen is free to download and play for a limited window. The best way to try the game without pledging. See freeflyevent.com for the next one.",
+      "A promotional event where Star Citizen is free to download and play for a limited window. The best way to try the game without pledging.",
   },
   {
     term: 'Hangar',

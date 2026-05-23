@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen System Requirements 2026 — Day One Citizen',
   description:
-    'Star Citizen minimum and recommended PC specs for 2026, plus the three hardware mistakes that hurt performance most: too little RAM, a slow drive, and an underpowered GPU.',
+    'Star Citizen PC specs for 2026 — minimum and recommended requirements, plus the three hardware mistakes that hurt performance most.',
   alternates: { canonical: '/day-one-citizen/system-specs' },
   openGraph: {
     title: 'Star Citizen System Requirements 2026',

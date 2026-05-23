@@ -9,7 +9,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen New Player Guide — Complete Step-by-Step — Day One Citizen',
   description:
-    '12 step-by-step Star Citizen guides for brand-new players: is it worth buying, system requirements, how to buy, install, launch, get keybinds right, navigate the cities, and fly. Plain English.',
+    '12 Star Citizen guides for brand-new players: worth buying, system specs, buying, installing, keybinds, cities, first flight. Plain English, no jargon.',
   alternates: { canonical: '/day-one-citizen' },
   openGraph: {
     title: 'Star Citizen New Player Guide — Complete Step-by-Step',

@@ -9,7 +9,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen Food, Drink & Survival Guide (2026) | dayonecitizen.com',
   description:
-    'How food, drink, and survival mechanics work in Star Citizen: what the hunger and thirst meters do, debuffs to avoid, and where to buy food and drink across New Babbage, Lorville, and Area18.',
+    'Star Citizen food, drink, and survival: hunger and thirst meters, debuffs to avoid, and where to buy food in New Babbage, Lorville, and Area18.',
   alternates: { canonical: '/beyond-the-basics/food-drink-survival' },
   openGraph: {
     title: 'Star Citizen Food, Drink & Survival Guide (2026)',

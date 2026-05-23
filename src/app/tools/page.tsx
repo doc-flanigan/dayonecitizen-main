@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Star Citizen Fleet Viewer & Tools — StarJump, Erkul & More',
   description:
-    'Star Citizen fleet viewer, DPS calculator, trade route planner, and more — the best fan-made tools for every player. Includes StarJump Fleetviewer, Erkul, and UEX Corp.',
+    'Star Citizen fleet viewer, DPS calculator, and trade route planner — the best fan-made tools for every player. StarJump, Erkul, and UEX Corp.',
   alternates: { canonical: '/tools' },
   openGraph: {
     title: 'Star Citizen Fleet Viewer & Tools — StarJump, Erkul & More',

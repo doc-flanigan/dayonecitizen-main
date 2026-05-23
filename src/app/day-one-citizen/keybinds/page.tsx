@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 export const metadata: Metadata = {
   title: 'Star Citizen Keybinds for New Players — Day One Citizen',
   description:
-    'The Star Citizen keybinds every new player needs: on-foot movement, ship flight controls, the power triangle (1/2/3), mobiGlas, quantum travel, and how to remap controls in-game.',
+    'Star Citizen keybinds for new players: on-foot, flight controls, power triangle, mobiGlas, quantum travel, and how to remap controls in-game.',
   alternates: { canonical: '/day-one-citizen/keybinds' },
   openGraph: {
     title: 'Star Citizen Keybinds for New Players',
