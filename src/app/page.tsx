@@ -157,7 +157,7 @@ export default function Home() {
               </p>
               <h2 className="heading-display text-3xl sm:text-4xl">
                 Use a referral code. Start with{' '}
-                <span className="text-gold-gradient">{SITE.ueecBonus}</span>{' '}
+                <span className="text-gold-gradient">{SITE.referralBonusUEC}</span>{' '}
                 free.
               </h2>
               <p className="mt-4 text-base text-muted">

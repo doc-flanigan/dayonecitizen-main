@@ -7,7 +7,7 @@ export const SITE = {
     process.env.NEXT_PUBLIC_REFERRAL_URL ??
     'https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC',
   referralCode: 'STAR-GCQJ-N6NC',
-  ueecBonus: '50,000 UEC',
+  referralBonusUEC: '50,000 UEC',
   // Bonus state lives in src/data/referral-bonus.ts and is maintained
   // automatically by the sc-news agent. Use isReferralBonusActive() at
   // render time to check current status.
