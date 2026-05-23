@@ -3,7 +3,7 @@ import Link from 'next/link'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Beyond the Basics — Star Citizen Guides for Early Players | dayonecitizen.com',
@@ -69,15 +69,12 @@ export default function BeyondTheBasicsPage() {
       <NavBar />
       <main className="bg-navy min-h-screen">
         {/* Hero */}
-        <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
+        <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
-            <Link
-              href="/day-one-citizen"
-              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted hover:text-gold"
-            >
-              <ArrowLeft size={12} aria-hidden /> Day One
-            </Link>
-            <h1 className="heading-display mt-6 text-3xl sm:text-5xl">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+              Guides
+            </p>
+            <h1 className="heading-display text-4xl sm:text-5xl">
               Beyond the Basics
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
