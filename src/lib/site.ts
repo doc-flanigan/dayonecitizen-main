@@ -19,6 +19,7 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { href: '/day-one-citizen', label: 'Day One' },
+  { href: '/beyond-the-basics', label: 'Beyond Basics' },
   { href: '/glossary', label: 'Glossary' },
   { href: '/tools', label: 'Tools' },
   { href: '/free-fly-events', label: 'Free Fly Events' },
