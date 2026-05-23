@@ -3,7 +3,7 @@ import Link from 'next/link'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
-import { ArrowRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Beyond the Basics — Star Citizen Guides for Early Players | dayonecitizen.com',
@@ -69,26 +69,25 @@ export default function BeyondTheBasicsPage() {
       <NavBar />
       <main className="bg-navy min-h-screen">
         {/* Hero */}
-        <section className="bg-navyLight border-b border-white/5 py-16 md:py-20">
-          <div className="container-wide px-4">
-            <nav className="text-sm text-muted mb-6" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-gold transition-colors">
-                Home
-              </Link>
-              <span className="mx-2 text-white/20">/</span>
-              <span className="text-starwhite">Beyond the Basics</span>
-            </nav>
-            <h1 className="font-orbitron text-3xl md:text-4xl font-bold text-starwhite mb-4">
+        <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
+          <div className="container-narrow">
+            <Link
+              href="/day-one-citizen"
+              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted hover:text-gold"
+            >
+              <ArrowLeft size={12} aria-hidden /> Day One
+            </Link>
+            <h1 className="heading-display mt-6 text-3xl sm:text-5xl">
               Beyond the Basics
             </h1>
-            <p className="text-muted text-lg max-w-2xl">
+            <p className="mt-4 max-w-2xl text-base text-muted">
               You have made it past your first few flights. Now comes the part where the
               verse opens up. These seven guides cover the things that confuse most
               players in their first few weeks — from adding friends to saving hundreds
               on ship upgrades.
             </p>
           </div>
-        </section>
+        </header>
 
         {/* Guide cards */}
         <section className="py-16">
