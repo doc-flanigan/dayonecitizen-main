@@ -52,10 +52,7 @@ export default function NavBar() {
 
         <ul className="hidden items-center gap-1 md:flex">
           {NAV_LINKS.map((link) => {
-            const active =
-              link.href === '/'
-                ? pathname === '/'
-                : pathname?.startsWith(link.href)
+            const active = pathname?.startsWith(link.href)
             return (
               <li key={link.href}>
                 <Link
@@ -93,10 +90,7 @@ export default function NavBar() {
         <div className="md:hidden">
           <ul className="container-wide flex flex-col gap-1 pb-4">
             {NAV_LINKS.map((link) => {
-              const active =
-                link.href === '/'
-                  ? pathname === '/'
-                  : pathname?.startsWith(link.href)
+              const active = pathname?.startsWith(link.href)
               return (
                 <li key={link.href}>
                   <Link
