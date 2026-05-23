@@ -22,7 +22,6 @@ export const NAV_LINKS = [
   { href: '/beyond-the-basics', label: 'Beyond Basics' },
   { href: '/glossary', label: 'Glossary' },
   { href: '/tools', label: 'Tools' },
-  { href: '/free-fly-events', label: 'Free Fly Events' },
   { href: '/about', label: 'About' },
 ] as const
 

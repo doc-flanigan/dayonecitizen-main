@@ -7,6 +7,7 @@ import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/site'
 import CTAButton from './CTAButton'
 import GiveawayBanner from './GiveawayBanner'
+import FreeFlyBanner from './FreeFlyBanner'
 
 export default function NavBar() {
   const pathname = usePathname()
@@ -32,6 +33,7 @@ export default function NavBar() {
           : 'bg-gradient-to-b from-navy/70 to-transparent'
       }`}
     >
+      <FreeFlyBanner />
       <GiveawayBanner />
       <nav
         className="container-wide flex h-16 items-center justify-between"
