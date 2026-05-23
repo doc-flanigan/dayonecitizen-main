@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
@@ -24,26 +25,23 @@ export default function AddingFriendsPage() {
       <NavBar />
       <main className="bg-navy min-h-screen">
         {/* Hero */}
-        <section className="bg-navyLight border-b border-white/5 py-14 md:py-18">
-          <div className="container-wide px-4">
-            <nav className="text-sm text-muted mb-6" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-gold transition-colors">Home</Link>
-              <span className="mx-2 text-white/20">/</span>
-              <Link href="/beyond-the-basics" className="hover:text-gold transition-colors">
-                Beyond the Basics
-              </Link>
-              <span className="mx-2 text-white/20">/</span>
-              <span className="text-starwhite">Adding Friends</span>
-            </nav>
-            <h1 className="font-orbitron text-3xl md:text-4xl font-bold text-starwhite mb-4">
+        <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
+          <div className="container-narrow">
+            <Link
+              href="/beyond-the-basics"
+              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted hover:text-gold"
+            >
+              <ArrowLeft size={12} aria-hidden /> Beyond the Basics
+            </Link>
+            <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               How to Add Friends in Star Citizen (2026)
             </h1>
-            <p className="text-muted text-lg max-w-2xl">
+            <p className="mt-4 max-w-2xl text-base text-muted">
               Four ways to find your friends and get playing together — from the
               RSI website all the way to tapping someone on the shoulder in the world.
             </p>
           </div>
-        </section>
+        </header>
 
         {/* Content */}
         <section className="py-14">
@@ -57,7 +55,7 @@ export default function AddingFriendsPage() {
             </p>
 
             {/* Method 1 */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Method 1 — Add via the RSI website
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -86,7 +84,7 @@ export default function AddingFriendsPage() {
             </p>
 
             {/* Method 2 */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Method 2 — Add from the main menu
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -100,7 +98,7 @@ export default function AddingFriendsPage() {
             </ol>
 
             {/* Method 3 */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Method 3 — Add in-game via{' '}
               <Term name="mobiGlas">mobiGlas</Term>
             </h2>
@@ -117,7 +115,7 @@ export default function AddingFriendsPage() {
             </ol>
 
             {/* Method 4 */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Method 4 — Add via the{' '}
               <Term name="Inner Thought">Inner Thought</Term> wheel
             </h2>
@@ -133,7 +131,7 @@ export default function AddingFriendsPage() {
             </ol>
 
             {/* Accepting */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Accepting an incoming request
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -146,7 +144,7 @@ export default function AddingFriendsPage() {
             </ul>
 
             {/* Playing together */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Playing together once you are friends
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -174,7 +172,7 @@ export default function AddingFriendsPage() {
             </p>
 
             {/* Troubleshooting */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Troubleshooting: friends list looks empty
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -212,7 +210,7 @@ export default function AddingFriendsPage() {
               your keybindings first if you have custom ones.
             </p>
 
-            <h3 className="font-orbitron text-lg font-bold text-starwhite mt-8 mb-3">
+            <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
               Friend shows offline when they are online
             </h3>
             <p className="text-starwhite/80 mb-8 leading-relaxed">

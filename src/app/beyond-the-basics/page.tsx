@@ -75,9 +75,9 @@ export default function BeyondTheBasicsPage() {
               Guides
             </p>
             <h1 className="heading-display text-4xl sm:text-5xl">
-              Beyond the Basics
+              Beyond the <span className="text-gold-gradient">Basics.</span>
             </h1>
-            <p className="mt-4 max-w-2xl text-base text-muted">
+            <p className="mt-5 max-w-2xl text-base text-muted">
               You have made it past your first few flights. Now comes the part where the
               verse opens up. These seven guides cover the things that confuse most
               players in their first few weeks — from adding friends to saving hundreds
@@ -96,7 +96,7 @@ export default function BeyondTheBasicsPage() {
                   href={`/beyond-the-basics/${guide.slug}`}
                   className="card-surface rounded-xl p-6 flex flex-col gap-3 group hover:border-gold/40 border border-white/5 transition-all duration-200"
                 >
-                  <h2 className="font-orbitron text-lg font-bold text-starwhite group-hover:text-gold transition-colors">
+                  <h2 className="font-display text-lg font-bold text-starwhite group-hover:text-gold transition-colors">
                     {guide.title}
                   </h2>
                   <p className="text-muted text-sm leading-relaxed flex-1">
@@ -114,7 +114,7 @@ export default function BeyondTheBasicsPage() {
         {/* CTA */}
         <section className="py-16 bg-navyLight border-t border-white/5">
           <div className="container-wide px-4 text-center">
-            <h2 className="font-orbitron text-2xl font-bold text-starwhite mb-3">
+            <h2 className="font-display text-2xl font-bold text-starwhite mb-3">
               Not in the verse yet?
             </h2>
             <p className="text-muted mb-8 max-w-md mx-auto">

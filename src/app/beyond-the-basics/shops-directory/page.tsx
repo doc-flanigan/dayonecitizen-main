@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
@@ -24,27 +25,24 @@ export default function ShopsDirectoryPage() {
       <NavBar />
       <main className="bg-navy min-h-screen">
         {/* Hero */}
-        <section className="bg-navyLight border-b border-white/5 py-14 md:py-18">
-          <div className="container-wide px-4">
-            <nav className="text-sm text-muted mb-6" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-gold transition-colors">Home</Link>
-              <span className="mx-2 text-white/20">/</span>
-              <Link href="/beyond-the-basics" className="hover:text-gold transition-colors">
-                Beyond the Basics
-              </Link>
-              <span className="mx-2 text-white/20">/</span>
-              <span className="text-starwhite">Shops Directory</span>
-            </nav>
-            <h1 className="font-orbitron text-3xl md:text-4xl font-bold text-starwhite mb-4">
+        <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
+          <div className="container-narrow">
+            <Link
+              href="/beyond-the-basics"
+              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted hover:text-gold"
+            >
+              <ArrowLeft size={12} aria-hidden /> Beyond the Basics
+            </Link>
+            <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Star Citizen In-Game Shops Directory (2026)
             </h1>
-            <p className="text-muted text-lg max-w-2xl">
+            <p className="mt-4 max-w-2xl text-base text-muted">
               Where to find weapons, armor, ship parts, food, and vehicles across
               the three major cities and the orbital stations in{' '}
               <Term name="Stanton">Stanton</Term>.
             </p>
           </div>
-        </section>
+        </header>
 
         {/* Content */}
         <section className="py-14">
@@ -66,7 +64,7 @@ export default function ShopsDirectoryPage() {
             </p>
 
             {/* New Babbage */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-4 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-4 mb-4">
               New Babbage — microTech (The Commons)
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -102,7 +100,7 @@ export default function ShopsDirectoryPage() {
             </ul>
 
             {/* Area18 */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Area18 — ArcCorp (The Plaza)
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -138,7 +136,7 @@ export default function ShopsDirectoryPage() {
             </ul>
 
             {/* Lorville */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Lorville — Hurston (Central Business District)
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -169,7 +167,7 @@ export default function ShopsDirectoryPage() {
             </ul>
 
             {/* Space stations */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Space stations (everywhere)
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
@@ -195,7 +193,7 @@ export default function ShopsDirectoryPage() {
             </ul>
 
             {/* Tips */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-4">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Shopping tips
             </h2>
             <ul className="list-disc pl-6 mb-8 space-y-2 text-starwhite/80">
@@ -223,7 +221,7 @@ export default function ShopsDirectoryPage() {
             </ul>
 
             {/* FAQ */}
-            <h2 className="font-orbitron text-2xl font-bold text-gold mt-10 mb-6">
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-6">
               Common questions
             </h2>
 
