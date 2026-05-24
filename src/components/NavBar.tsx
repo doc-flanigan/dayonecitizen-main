@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/site'
 import CTAButton from './CTAButton'
-import GiveawayBanner from './GiveawayBanner'
 import FreeFlyBanner from './FreeFlyBanner'
 
 export default function NavBar() {
@@ -34,7 +33,6 @@ export default function NavBar() {
       }`}
     >
       <FreeFlyBanner />
-      <GiveawayBanner />
       <nav
         className="container-wide flex h-16 items-center justify-between"
         aria-label="Primary"
