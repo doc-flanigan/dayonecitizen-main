@@ -248,7 +248,7 @@ export default function AboutPage() {
               <strong>o</strong> is a head. The <strong>7</strong> is an arm
               raised to the brow. Tilt your head sideways and you&rsquo;ll see it.
             </p>
-            <div className="mt-6 inline-flex items-center gap-6 rounded-2xl border border-gold/30 bg-gold/5 px-8 py-5">
+            <div className="mt-6 flex flex-wrap items-center gap-4 rounded-2xl border border-gold/30 bg-gold/5 px-6 py-5 sm:gap-6 sm:px-8">
               <span className="font-display text-6xl text-gold">o7</span>
               <span className="text-sm text-starwhite/80">
                 Means: hello · goodbye · respect · fly safe
