@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville',
@@ -24,6 +25,11 @@ export default function ShopsDirectoryPage() {
     <>
       <NavBar />
       <main className="bg-navy min-h-screen">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Beyond the Basics', url: '/beyond-the-basics' },
+          { name: 'Shops Directory', url: '/beyond-the-basics/shops-directory' },
+        ]} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

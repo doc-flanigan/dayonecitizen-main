@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import { NEXT_FREE_FLY, googleCalendarUrl } from '@/data/next-free-fly'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
@@ -33,6 +34,10 @@ export default function FreeFlyPage() {
     <>
       <NavBar />
       <main className="bg-navy">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Free Fly Events', url: '/free-fly-events' },
+        ]} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/30 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">

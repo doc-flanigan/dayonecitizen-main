@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen First Launch: Character Creation & What Happens Next — Day One Citizen',
@@ -24,6 +25,11 @@ export default function FirstLaunchPage() {
     <>
       <NavBar />
       <main className="bg-navy">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Day One Citizen', url: '/day-one-citizen' },
+          { name: 'First Launch', url: '/day-one-citizen/first-launch' },
+        ]} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

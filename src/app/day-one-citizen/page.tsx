@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen New Player Guide — Complete Step-by-Step — Day One Citizen',
@@ -198,6 +199,10 @@ export default function DayOneCitizenPage() {
     <>
       <NavBar />
       <main className="bg-navy">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Day One Citizen', url: '/day-one-citizen' },
+        ]} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy via-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">

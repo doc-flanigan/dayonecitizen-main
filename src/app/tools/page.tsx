@@ -3,6 +3,7 @@ import { Wrench, ExternalLink, Star } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Fleet Viewer & Tools — StarJump, Erkul & More',
@@ -118,6 +119,10 @@ export default function ToolsPage() {
     <>
       <NavBar />
       <main className="bg-navy">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Tools', url: '/tools' },
+        ]} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/30 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">

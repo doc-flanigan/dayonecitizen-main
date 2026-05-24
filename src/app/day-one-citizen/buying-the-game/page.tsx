@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'How to Buy Star Citizen — Day One Citizen',
@@ -26,6 +27,11 @@ export default function BuyingTheGamePage() {
     <>
       <NavBar />
       <main className="bg-navy">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Day One Citizen', url: '/day-one-citizen' },
+          { name: 'Buying the Game', url: '/day-one-citizen/buying-the-game' },
+        ]} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

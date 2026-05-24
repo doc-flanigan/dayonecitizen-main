@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import { ArrowRight } from 'lucide-react'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'Beyond the Basics — Star Citizen Guides for Early Players',
@@ -68,6 +69,10 @@ export default function BeyondTheBasicsPage() {
     <>
       <NavBar />
       <main className="bg-navy min-h-screen">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Beyond the Basics', url: '/beyond-the-basics' },
+        ]} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">

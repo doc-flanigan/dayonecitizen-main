@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import GlossaryClient from './GlossaryClient'
+import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Glossary — Plain English Definitions',
@@ -21,6 +22,10 @@ export default function GlossaryPage() {
     <>
       <NavBar />
       <main className="bg-navy">
+        <BreadcrumbsJsonLd items={[
+          { name: 'Home', url: '/' },
+          { name: 'Glossary', url: '/glossary' },
+        ]} />
         <GlossaryClient />
       </main>
       <Footer />
