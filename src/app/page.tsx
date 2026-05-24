@@ -54,7 +54,7 @@ export default function Home() {
           >
             the highest-funded game in history
           </a>
-          , having raised over $700 million through crowdfunding.
+          , having raised over $1 billion through crowdfunding — the most funded project of any kind, ever.
         </>
       ),
       href: '/glossary#term-the-verse',
