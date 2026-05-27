@@ -7,7 +7,7 @@ import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/site'
 import CTAButton from './CTAButton'
 import FreeFlyBanner from './FreeFlyBanner'
-import GiveawayBanner from './GiveawayBanner'
+import StarterPackBanner from './StarterPackBanner'
 
 export default function NavBar() {
   const pathname = usePathname()
@@ -34,7 +34,7 @@ export default function NavBar() {
       }`}
     >
       <FreeFlyBanner />
-      <GiveawayBanner />
+      <StarterPackBanner />
       <nav
         className="container-wide flex h-16 items-center justify-between"
         aria-label="Primary"
