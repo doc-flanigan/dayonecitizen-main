@@ -60,13 +60,15 @@ export default function Term({ name, children, className = '' }: TermProps) {
   const slug = termSlug(term.term)
   const href = `/glossary#term-${slug}`
 
-  // The wrapper uses Tailwind's `group` so the tooltip can react to either
-  // hover OR keyboard focus on the link. `peer` would also work but `group`
-  // keeps the markup simpler when the tooltip is a sibling.
+  // The wrapper uses a *named* Tailwind group (`group/term`) so the tooltip
+  // reacts to hover on THIS term only. An unnamed `group` would also fire on
+  // any ancestor `.group` (e.g. the Start Here cards), making every tooltip
+  // inside a card appear at once. Keyboard focus is handled separately via
+  // `open`.
   return (
     <span
       ref={wrapperRef}
-      className="group relative inline"
+      className="group/term relative inline"
       onMouseLeave={() => setOpen(false)}
     >
       <a
@@ -97,7 +99,7 @@ export default function Term({ name, children, className = '' }: TermProps) {
           // Visibility: CSS hover for desktop, plus keyboard-focus state via `open`
           (open
             ? 'opacity-100'
-            : 'opacity-0 group-hover:opacity-100') +
+            : 'opacity-0 group-hover/term:opacity-100') +
           ' transition-opacity duration-150 ' +
           // Hide entirely on small screens — mobile uses the link, not a tooltip
           'hidden sm:block'
