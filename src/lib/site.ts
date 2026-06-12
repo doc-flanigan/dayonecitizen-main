@@ -20,6 +20,7 @@ export const SITE = {
 export const NAV_LINKS = [
   { href: '/day-one-citizen', label: 'Day One' },
   { href: '/beyond-the-basics', label: 'Beyond Basics' },
+  { href: '/report-a-bug', label: 'Report a Bug' },
   { href: '/glossary', label: 'Glossary' },
   { href: '/tools', label: 'Tools' },
   { href: '/about', label: 'About' },

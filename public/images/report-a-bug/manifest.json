@@ -1,0 +1,269 @@
+{
+  "guide": "report-a-bug",
+  "targetDir": "public/images/report-a-bug",
+  "inbox": "inbox/report-a-bug",
+  "note": "Capture fresh shots — the Issue Council UI has been redesigned over time, so old screenshots will look wrong. Sources: LAUNCHER = RSI Launcher, WIN = Windows desktop, WEB = RSI/Issue Council site (needs a logged-in backer), GAME = in-game.",
+  "shots": [
+    {
+      "filename": "00-issue-council-home.png",
+      "page": "report-a-bug",
+      "step": "Scene-setter / what it is",
+      "source": "WEB",
+      "mustShow": "The signed-out Issue Council landing page (issue-council.robertsspaceindustries.com) with the Sign In button at top right",
+      "annotate": "circle the Sign In button",
+      "captured": false
+    },
+    {
+      "filename": "00b-ic-vs-spectrum.png",
+      "page": "report-a-bug",
+      "step": "Where it goes",
+      "source": "GRAPHIC",
+      "mustShow": "Optional two-column decision card: Bug -> Issue Council / Feedback & ideas -> Spectrum",
+      "annotate": "can be generated in-repo instead of captured",
+      "captured": false
+    },
+    {
+      "filename": "01-launcher-build-number.png",
+      "page": "gathering-evidence",
+      "step": "Find your build number",
+      "source": "LAUNCHER",
+      "mustShow": "The RSI Launcher with the version/build number visible under the LAUNCH GAME button",
+      "annotate": "circle the build number; caption 'write this down'",
+      "captured": false
+    },
+    {
+      "filename": "02-game-folder-path.png",
+      "page": "gathering-evidence",
+      "step": "Find your Game.log",
+      "source": "WIN",
+      "mustShow": "File Explorer at ...\\Roberts Space Industries\\StarCitizen\\LIVE with Game.log highlighted in the file list",
+      "annotate": "highlight the address bar and the Game.log file",
+      "captured": false
+    },
+    {
+      "filename": "03-game-log-backups.png",
+      "page": "gathering-evidence",
+      "step": "Find your Game.log",
+      "source": "WIN",
+      "mustShow": "The folder showing rolled backup logs named by build number and date",
+      "annotate": "arrow to the build-number/date naming pattern",
+      "captured": false
+    },
+    {
+      "filename": "04-run-dxdiag.png",
+      "page": "gathering-evidence",
+      "step": "Save a DxDiag report",
+      "source": "WIN",
+      "mustShow": "The Windows Run dialog (Win+R) with dxdiag typed in",
+      "annotate": "circle the OK button",
+      "captured": false
+    },
+    {
+      "filename": "05-dxdiag-saveall.png",
+      "page": "gathering-evidence",
+      "step": "Save a DxDiag report",
+      "source": "WIN",
+      "mustShow": "The DirectX Diagnostic Tool open with the Save All Information button visible",
+      "annotate": "circle Save All Information",
+      "captured": false
+    },
+    {
+      "filename": "06-dxdiag-saved.png",
+      "page": "gathering-evidence",
+      "step": "Save a DxDiag report",
+      "source": "WIN",
+      "mustShow": "The saved DxDiag.txt file sitting on the Desktop",
+      "annotate": "caption 'you'll attach this file'",
+      "captured": false
+    },
+    {
+      "filename": "07-screenshot-example.png",
+      "page": "gathering-evidence",
+      "step": "Capture a screenshot or video",
+      "source": "GAME",
+      "mustShow": "A good in-game evidence screenshot: the bug clearly visible with enough surroundings to show location",
+      "annotate": "caption what makes this a good shot",
+      "captured": false
+    },
+    {
+      "filename": "08-evidence-video-frame.png",
+      "page": "gathering-evidence",
+      "step": "Capture a screenshot or video",
+      "source": "GAME",
+      "mustShow": "A single frame from a short clip of the bug in motion",
+      "annotate": "caption 'video beats a still for movement bugs'",
+      "captured": false
+    },
+    {
+      "filename": "09-signin-redirect.png",
+      "page": "searching-the-council",
+      "step": "Sign in",
+      "source": "WEB",
+      "mustShow": "The RSI account sign-in page reached after clicking Sign In",
+      "annotate": "blur your email address",
+      "captured": false
+    },
+    {
+      "filename": "10-ic-logged-in.png",
+      "page": "searching-the-council",
+      "step": "Sign in",
+      "source": "WEB",
+      "mustShow": "The Issue Council home once signed in, with project tiles (Star Citizen / Squadron 42) visible",
+      "annotate": "circle the project you will report in",
+      "captured": false
+    },
+    {
+      "filename": "11-search-bar.png",
+      "page": "searching-the-council",
+      "step": "Search for your bug",
+      "source": "WEB",
+      "mustShow": "The Issue Council search box with a real bug keyword typed in",
+      "annotate": "circle the search box",
+      "captured": false
+    },
+    {
+      "filename": "12-search-results.png",
+      "page": "searching-the-council",
+      "step": "Search for your bug",
+      "source": "WEB",
+      "mustShow": "A list of search results on the Issue Council",
+      "annotate": "caption 'scan for your bug before filing a new one'",
+      "captured": false
+    },
+    {
+      "filename": "13-status-filter.png",
+      "page": "searching-the-council",
+      "step": "Filter by status",
+      "source": "WEB",
+      "mustShow": "The status filter open, showing Open, Confirmed, and Under Investigation options",
+      "annotate": "circle the status filter control",
+      "captured": false
+    },
+    {
+      "filename": "14-existing-report-contribute.png",
+      "page": "searching-the-council",
+      "step": "Contribute to an existing report",
+      "source": "WEB",
+      "mustShow": "An open report page with the 'I can reproduce this' / contribute control",
+      "annotate": "circle the contribute control; caption 'add to this instead of duplicating'",
+      "captured": false
+    },
+    {
+      "filename": "15-create-report-button.png",
+      "page": "filing-a-report",
+      "step": "Start a new report",
+      "source": "WEB",
+      "mustShow": "The Create / New Report button on the Issue Council",
+      "annotate": "circle the Create / New Report button",
+      "captured": false
+    },
+    {
+      "filename": "16-form-project-version-channel.png",
+      "page": "filing-a-report",
+      "step": "Set the version and channel",
+      "source": "WEB",
+      "mustShow": "The new-report form top: project, game version, and channel (LIVE/PTU) selectors",
+      "annotate": "number the project (1), version (2), and channel (3)",
+      "captured": false
+    },
+    {
+      "filename": "17-title-field.png",
+      "page": "filing-a-report",
+      "step": "Write a searchable title",
+      "source": "WEB",
+      "mustShow": "The Issue Title field with a strong, searchable example typed in",
+      "annotate": "show a strong title",
+      "captured": false
+    },
+    {
+      "filename": "18-repro-steps.png",
+      "page": "filing-a-report",
+      "step": "Write reproduction steps",
+      "source": "WEB",
+      "mustShow": "The description / steps-to-reproduce field filled with a clean numbered repro",
+      "annotate": "this is the most important shot in the guide",
+      "captured": false
+    },
+    {
+      "filename": "19-attach-evidence.png",
+      "page": "filing-a-report",
+      "step": "Attach evidence",
+      "source": "WEB",
+      "mustShow": "The attachment / upload area with a screenshot, DxDiag, and log being added",
+      "annotate": "circle the upload control",
+      "captured": false
+    },
+    {
+      "filename": "20-more-info-submit.png",
+      "page": "filing-a-report",
+      "step": "Add detail and submit",
+      "source": "WEB",
+      "mustShow": "The More info field and the Submit button",
+      "annotate": "circle the Submit button",
+      "captured": false
+    },
+    {
+      "filename": "21-report-created.png",
+      "page": "filing-a-report",
+      "step": "Confirmation",
+      "source": "WEB",
+      "mustShow": "The confirmation / freshly-created report page",
+      "annotate": "caption 'done — now help it get confirmed'",
+      "captured": false
+    },
+    {
+      "filename": "22-status-open.png",
+      "page": "after-you-file",
+      "step": "Status lifecycle",
+      "source": "WEB",
+      "mustShow": "A report showing the Open status badge",
+      "annotate": "circle the Open badge",
+      "captured": false
+    },
+    {
+      "filename": "23-status-confirmed.png",
+      "page": "after-you-file",
+      "step": "Status lifecycle",
+      "source": "WEB",
+      "mustShow": "A report showing the Confirmed status badge",
+      "annotate": "circle the Confirmed badge",
+      "captured": false
+    },
+    {
+      "filename": "24-status-investigation.png",
+      "page": "after-you-file",
+      "step": "Status lifecycle",
+      "source": "WEB",
+      "mustShow": "A report showing the Under Investigation status badge",
+      "annotate": "circle the Under Investigation badge",
+      "captured": false
+    },
+    {
+      "filename": "25-status-acknowledged.png",
+      "page": "after-you-file",
+      "step": "Status lifecycle",
+      "source": "WEB",
+      "mustShow": "A report showing the Acknowledged status badge (imported to JIRA). Use four separate reports if one cannot show all four badges.",
+      "annotate": "circle the Acknowledged badge",
+      "captured": false
+    },
+    {
+      "filename": "26-add-reproduction.png",
+      "page": "after-you-file",
+      "step": "How confirmations move a report",
+      "source": "WEB",
+      "mustShow": "The contribute / vote control on another player's report (can reuse or recrop shot 14)",
+      "annotate": "caption 'ten reproductions move a report to Confirmed'",
+      "captured": false
+    },
+    {
+      "filename": "27-lifecycle-diagram.png",
+      "page": "after-you-file",
+      "step": "Status lifecycle",
+      "source": "GRAPHIC",
+      "mustShow": "Optional left-to-right flow: Open -> Confirmed -> Under Investigation -> Acknowledged",
+      "annotate": "can be generated in-repo instead of captured",
+      "captured": false
+    }
+  ]
+}

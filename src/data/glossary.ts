@@ -1466,6 +1466,55 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "CIG dev terminology. Tier 0 means a feature exists in barebones form; Tier 1 is the polished version. You'll see references in patch notes ('salvage Tier 1' etc.).",
   },
+
+  // ─────────────── Bug Reporting / Issue Council ───────────────
+  {
+    term: 'Issue Council',
+    category: 'Community',
+    definition:
+      "The official website where backers report game bugs to the developers. Reports can be searched, confirmed by other players, and tracked. It is for bugs only — design feedback goes to Spectrum.",
+    also: 'IC',
+    lastVerified: '2026-06-01',
+  },
+  {
+    term: 'Game.log',
+    category: 'Technical',
+    definition:
+      "A text file the game writes every time you play. It records what loaded, what you did, and any errors. Developers read it to trace the cause of a bug, so it helps to attach it to a report.",
+    also: 'game log',
+    lastVerified: '2026-06-01',
+  },
+  {
+    term: 'DxDiag',
+    category: 'Technical',
+    definition:
+      "A built-in Windows tool that lists your computer's parts and drivers. Run it, save the report, and attach the file to a bug report so developers know exactly what setup the bug happened on.",
+    also: 'DirectX Diagnostic Tool',
+    lastVerified: '2026-06-01',
+  },
+  {
+    term: 'reproduction steps',
+    category: 'Technical',
+    definition:
+      "The exact actions that make a bug happen again, written as a short numbered list. Clear steps let a developer recreate the problem on their own machine, which is usually the first step to fixing it.",
+    also: 'repro,repro steps,steps to reproduce',
+    lastVerified: '2026-06-01',
+  },
+  {
+    term: 'build number',
+    category: 'Technical',
+    definition:
+      "The version code for the exact copy of the game you are running. The RSI Launcher shows it under the Launch Game button. Always include it in a bug report so developers test the right version.",
+    also: 'build,version number',
+    lastVerified: '2026-06-01',
+  },
+  {
+    term: 'JIRA',
+    category: 'Technical',
+    definition:
+      "The internal tracking tool the developers use to manage their work. When a community bug report reaches the 'Acknowledged' stage, it has been copied into JIRA as a ticket for an internal team.",
+    lastVerified: '2026-06-01',
+  },
 ]
 
 export const CATEGORIES: GlossaryCategory[] = [

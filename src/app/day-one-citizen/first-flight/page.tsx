@@ -325,6 +325,21 @@ export default function FirstFlightPage() {
             </div>
           </div>
 
+          <section>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                One last thing. Star Citizen is still in development, so your first
+                flight may include a bug — a door that will not open, an elevator
+                that never arrives, a hard crash. When that happens, the way to
+                actually help is to{' '}
+                <Link href="/report-a-bug" className="font-semibold text-gold hover:underline">
+                  report it on the Issue Council
+                </Link>
+                . Our step-by-step guide shows you how.
+              </p>
+            </div>
+          </section>
+
           <nav className="flex items-center justify-between border-t border-white/10 pt-8 text-sm">
             <Link
               href="/day-one-citizen/getting-around"

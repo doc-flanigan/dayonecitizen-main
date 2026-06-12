@@ -599,6 +599,21 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 
 ---
 
+## Screenshot Intake
+
+A no-app, reusable workflow for filing raw screenshots into a guide's image
+folder. Doc drops screenshots into `inbox/<guide>/` (e.g.
+`inbox/report-a-bug/`) and says **"sort screenshots"**. The agent reads each
+image, matches it to `public/images/<guide>/manifest.json` (the shot list +
+live checklist), shows a review table, and on confirm renames + moves each
+into `public/images/<guide>/` and flips its `captured` flag — then reports
+what is still missing. Full routine and manifest schema:
+`docs/screenshot-intake.md`. The `inbox/` folder is git-ignored; only the
+final renamed images get committed. Pages show `<ShotPlaceholder>` until the
+real image lands, then swap to a `next/image` `<Image>`.
+
+---
+
 ## SEO
 
 **Network role:** Google authority destination hub — permanent
