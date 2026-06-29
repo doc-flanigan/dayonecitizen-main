@@ -6,9 +6,10 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Food, Drink & Survival Guide (2026) | dayonecitizen.com',
+  title: 'Star Citizen Food, Drink & Survival Guide (2026)',
   description:
     'Star Citizen food, drink, and survival: hunger and thirst meters, debuffs to avoid, and where to buy food in New Babbage, Lorville, and Area18.',
   alternates: { canonical: '/beyond-the-basics/food-drink-survival' },
@@ -21,6 +22,37 @@ export const metadata: Metadata = {
 }
 
 export default function FoodDrinkSurvivalPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Can you die from hunger or thirst?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Severe hunger and severe dehydration both cause your health to drop and eventually cause you to pass out. If your bleed-out timer runs out while you are incapacitated, you will need to respawn. Keep your bars above twenty percent to avoid serious problems.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the best food to carry?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Water bottles for thirst and nutrition bars for hunger give you the best nutrition per inventory slot. Burritos are a good one-item option if you want something that helps both bars at once. Energy drinks work well in a pinch but the crash afterward makes them a bad long-term choice.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where do I check my hunger and thirst levels?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Press F1 to open the mobiGlas and navigate to the Character status tab. The blue bar is hydration (thirst), the green bar is nutrition (hunger). Both drain over time.',
+        },
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +62,13 @@ export default function FoodDrinkSurvivalPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Food, Drink & Survival', url: '/beyond-the-basics/food-drink-survival' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen Food, Drink & Survival Guide (2026)"
+          description="Star Citizen food, drink, and survival: hunger and thirst meters, debuffs to avoid, and where to buy food in New Babbage, Lorville, and Area18."
+          path="/beyond-the-basics/food-drink-survival"
+          section="Beyond the Basics"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

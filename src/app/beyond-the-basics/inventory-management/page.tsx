@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Inventory Guide — Ship & Personal Storage',
@@ -21,6 +22,70 @@ export const metadata: Metadata = {
 }
 
 export default function InventoryManagementPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'My inventory is not showing items — what do I do?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This is almost always a client sync issue — your items are still on the server. Close the inventory screen (I), wait a few seconds, and reopen it. If items are still missing, relog. The server-side data is usually intact even when the client fails to display it correctly. Check all storage locations before assuming something is lost.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What happens to my cargo if my ship is destroyed?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Cargo in the ship's hold is lost when the ship explodes. Small items in the ship's inventory panel are also typically lost. Your personal inventory — the items on your character — is safe. You keep those on respawn. High-value cargo can sometimes be salvaged from the wreck by other players.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I store items at any location?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You can store items at any location that has a storage terminal or habitation room — major cities, space stations, and some outposts. Items stay until you retrieve them. Small outposts may not have permanent storage, so check before leaving valuables there.',
+        },
+      },
+    ],
+  }
+
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to transfer items in Star Citizen',
+    description: 'Move items between your personal inventory and ship or station storage in Star Citizen.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Open the inventory screen',
+        text: 'Press I to open the inventory screen.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Get near your ship or terminal',
+        text: 'Make sure you are near your ship or storage terminal. Items can only be transferred when both inventories are physically close enough to interact with.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Drag items between panels',
+        text: 'Drag items from the left panel (personal inventory) to the right panel (ship or station) or the other direction.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Transfer a whole stack',
+        text: 'For moving a whole stack at once, right-click an item and choose Transfer all, or use the stack transfer button.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +95,14 @@ export default function InventoryManagementPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Inventory', url: '/beyond-the-basics/inventory-management' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen Inventory Guide — Ship & Personal Storage"
+          description="How to open Star Citizen inventory (press I), transfer items between personal and ship storage, and move gear between stations. Storage persistence explained."
+          path="/beyond-the-basics/inventory-management"
+          section="Beyond the Basics"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

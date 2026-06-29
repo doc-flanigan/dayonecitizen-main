@@ -6,9 +6,10 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Ship Equipment Guide (2026) | dayonecitizen.com',
+  title: 'Star Citizen Ship Equipment Guide (2026)',
   description:
     'Star Citizen ship components: power plants, coolers, quantum drives, shields, and weapons. How grades affect performance and radar signature. Updated 2026.',
   alternates: { canonical: '/beyond-the-basics/ship-equipment' },
@@ -21,6 +22,70 @@ export const metadata: Metadata = {
 }
 
 export default function ShipEquipmentPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the best component setup for combat?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'For combat: Grade A power plant (runs everything at full power), military shields (maximum hit points), and a performance cooler. Energy weapons scale well with a Grade A plant — they never run out of ammo and deal high shield damage. Test your full loadout in Arena Commander before committing to it in the Persistent Universe.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do component grades affect whether enemies can detect me?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Grade A power plants have the highest EM signal, making you easier to spot on radar. Grade C components minimize your EM and IR output. Running at full throttle or firing weapons continuously spikes your IR signature regardless of component grade — for true stealth you also need to manage your throttle and fire rate.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Should I use ballistic or energy weapons?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Energy weapons are better at stripping shields quickly. Ballistic weapons bypass shields partially and are better if you need to deal hull damage. Many experienced pilots mix the two — energy weapons for shields, ballistics for the hull once shields are down. Ammo management for ballistics is an extra consideration on longer missions.',
+        },
+      },
+    ],
+  }
+
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to swap ship components',
+    description: 'Buy and install replacement ship components in Star Citizen.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Buy replacement components',
+        text: "Buy replacement components at an equipment shop. Dumper's Depot (most orbital stations) is the easiest to reach. Omega Pro in New Babbage and Apocalypse Arms in Area18 have better selection.",
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Access the loadout',
+        text: "Go to an ASOP terminal in a spaceport or access the ship's loadout panel while on board.",
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Install the component',
+        text: 'Open the loadout screen and drag the new component into the correct slot.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Confirm the change',
+        text: 'Confirm the change. Components must match the size rating of the slot they go in — you cannot put a size three component in a size one slot.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +95,14 @@ export default function ShipEquipmentPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Ship Equipment', url: '/beyond-the-basics/ship-equipment' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen Ship Equipment Guide (2026)"
+          description="Star Citizen ship components: power plants, coolers, quantum drives, shields, and weapons. How grades affect performance and radar signature. Updated 2026."
+          path="/beyond-the-basics/ship-equipment"
+          section="Beyond the Basics"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

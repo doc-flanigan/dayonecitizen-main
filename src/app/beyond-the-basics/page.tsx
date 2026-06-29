@@ -9,7 +9,7 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 export const metadata: Metadata = {
   title: 'Beyond the Basics — Star Citizen Guides for Early Players',
   description:
-    'Seven plain-English Star Citizen guides for players past the basics: adding friends, managing inventory, finding shops, CCU upgrades, and more.',
+    'Seven plain-English Star Citizen guides for players past the basics: adding friends, managing inventory, finding in-game shops, CCU ship upgrades, and more.',
   alternates: { canonical: '/beyond-the-basics' },
   openGraph: {
     title: 'Beyond the Basics — Star Citizen Guides for Early Players',
@@ -65,6 +65,17 @@ const guides = [
 ]
 
 export default function BeyondTheBasicsPage() {
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: guides.map((guide, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: guide.title,
+      url: `https://dayonecitizen.com/beyond-the-basics/${guide.slug}`,
+    })),
+  }
+
   return (
     <>
       <NavBar />
@@ -73,6 +84,7 @@ export default function BeyondTheBasicsPage() {
           { name: 'Home', url: '/' },
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
         ]} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">

@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
   title: 'How to Form a Party in Star Citizen (2026)',
@@ -21,6 +22,51 @@ export const metadata: Metadata = {
 }
 
 export default function PartyManagementPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Invite a Friend to a Party in Star Citizen',
+    description: 'Invite a friend to a party from the in-game Friends list using the Commlink (F11).',
+    step: [
+      { '@type': 'HowToStep', position: 1, name: 'Open the Commlink', text: 'Press F11 to open the Commlink.' },
+      { '@type': 'HowToStep', position: 2, name: 'Open the Friends tab', text: 'Click the Friends (Contacts) tab.' },
+      { '@type': 'HowToStep', position: 3, name: "Right-click your friend", text: "Right-click your friend's name." },
+      { '@type': 'HowToStep', position: 4, name: 'Invite to Party', text: 'Select Invite to Party.' },
+      { '@type': 'HowToStep', position: 5, name: 'They accept', text: 'They will see the invite in their Commlink. Once they accept, you are in a party together.' },
+    ],
+  }
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'We are in a party but on different servers — how do we fix it?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Both players return to the main menu. Confirm the party is still active. The leader clicks Enter Universe, then the other player follows. If it fails again, disband and re-form the party before entering.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How many players can be in a party?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The cap has changed across updates. For practical group play, two to eight players works best. Very large parties of ten or more can occasionally have trouble being routed to the same shard.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does quantum linking work?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The party leader initiates a quantum jump. Members who are aboard the same ship or flying nearby will see a prompt to lock onto quantum link. When the leader jumps, all linked members jump together to the same destination at the same time.',
+        },
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +76,14 @@ export default function PartyManagementPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Party Management', url: '/beyond-the-basics/party-management' },
         ]} />
+        <ArticleJsonLd
+          headline="How to Form a Party in Star Citizen (2026)"
+          description="Press F11, open Friends tab, right-click, Invite to Party. How to send, accept, and join a party in Star Citizen so everyone lands on the same server."
+          path="/beyond-the-basics/party-management"
+          section="Beyond the Basics"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

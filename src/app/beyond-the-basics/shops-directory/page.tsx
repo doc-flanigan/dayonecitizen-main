@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville',
@@ -21,6 +22,37 @@ export const metadata: Metadata = {
 }
 
 export default function ShopsDirectoryPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Where is the best place to buy ship components?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Omega Pro in New Babbage has the best Grade A component selection. Dumper’s Depot at orbital stations is the most accessible since it is right near the landing pads. Apocalypse Arms in Area18 has the best ship weapons.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where can I buy ships with in-game money?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'New Deal in Lorville and Astro Armada in Area18 both sell ships for aUEC. New Deal usually has the wider selection. The in-game ship catalogue is smaller than the pledge store — not every ship is available for in-game currency.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where do I buy mining equipment?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Shubin Interstellar in New Babbage is the best one-stop shop for mining lasers, mining heads, and modules. Some orbital station refineries also stock basic mining equipment, but New Babbage has the widest selection by far.',
+        },
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +62,13 @@ export default function ShopsDirectoryPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Shops Directory', url: '/beyond-the-basics/shops-directory' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen Shop Guide — New Babbage, Area18, Lorville"
+          description="Where to buy armor, weapons, and ship parts in Star Citizen: New Babbage, Area18 (Cubby Blast), Lorville. Full shop list with what each vendor carries."
+          path="/beyond-the-basics/shops-directory"
+          section="Beyond the Basics"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

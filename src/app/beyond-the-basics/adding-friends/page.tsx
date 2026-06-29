@@ -6,11 +6,12 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
   title: 'How to Add Friends in Star Citizen (2026 Guide)',
   description:
-    'Press F1 to open mobiGlas, tap Contacts, search by RSI handle, and send a request. Step-by-step guide including party invites and crew tips.',
+    'Add friends in Star Citizen four ways — from the RSI website, the main menu, in-game with F11, or the Inner Thought wheel. Plus party invites and fixes.',
   alternates: { canonical: '/beyond-the-basics/adding-friends' },
   openGraph: {
     title: 'How to Add Friends in Star Citizen (2026 Guide)',
@@ -21,6 +22,21 @@ export const metadata: Metadata = {
 }
 
 export default function AddingFriendsPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to add a friend in Star Citizen via the RSI website',
+    description:
+      'Add a friend through the official RSI website and Spectrum, even when the game is not running.',
+    step: [
+      { '@type': 'HowToStep', position: 1, name: 'Sign in and open Spectrum', text: 'Sign in and open Spectrum.' },
+      { '@type': 'HowToStep', position: 2, name: 'Search their handle', text: "Click the search icon and type your friend's exact handle." },
+      { '@type': 'HowToStep', position: 3, name: 'Open their profile', text: 'Open their profile from the results.' },
+      { '@type': 'HowToStep', position: 4, name: 'Click Add Friend', text: 'Click Add Friend.' },
+      { '@type': 'HowToStep', position: 5, name: 'They accept', text: 'They accept the request from Spectrum or in-game. Done.' },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +46,13 @@ export default function AddingFriendsPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Adding Friends', url: '/beyond-the-basics/adding-friends' },
         ]} />
+        <ArticleJsonLd
+          headline="How to Add Friends in Star Citizen (2026 Guide)"
+          description="Add friends in Star Citizen four ways — from the RSI website, the main menu, in-game with F11, or the Inner Thought wheel. Plus party invites and fixes."
+          path="/beyond-the-basics/adding-friends"
+          section="Beyond the Basics"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

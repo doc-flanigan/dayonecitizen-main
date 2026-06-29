@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen CCU Chain Calculator & Savings Guide (2026)',
@@ -21,6 +22,85 @@ export const metadata: Metadata = {
 }
 
 export default function CCUChainsPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to build a CCU chain in Star Citizen',
+    description:
+      'Step-by-step method to build a Star Citizen CCU chain that upgrades a cheap base ship up to an expensive target ship while saving money.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Choose a base ship',
+        text: 'Pick a low-cost ship, ideally one with Lifetime Insurance from a concept sale or event. Common starter options: Tumbril Ranger CV (~$35) or Anvil C8X Pisces (~$45).',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Plan the chain',
+        text: 'Use ccugame.app to map intermediate ships from your base to your target at each price tier. The tool shows you which steps have Warbond discounts available.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Buy CCUs during events',
+        text: 'Warbond CCUs are available at IAE (November) and Invictus Launch Week (May). Buy them during those windows. Standard CCUs are available year-round and can be bought with store credit.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Do not apply any CCU until the whole chain is assembled',
+        text: 'Each application is permanent. If you apply step three before you have bought step four, you may be stuck at an intermediate ship.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Apply in sequence',
+        text: 'Once every CCU in the chain is in your hangar, apply them one at a time in order via the RSI website (My Hangar then Apply Upgrade) until you reach the target ship.',
+      },
+    ],
+  }
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Does a CCU chain preserve LTI?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Lifetime Insurance on the base ship carries through every step in the chain to the final target ship. This is one of the main reasons backers start a chain with an LTI base ship.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between a Warbond CCU and a standard CCU?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Warbond CCUs require new real money — you cannot use store credit. In return, they are sold at a significant discount (sometimes fifty to ninety percent off the price difference). Standard CCUs can be bought with store credit but have no discount. During events, Warbond CCUs sell out quickly — buy them fast and stockpile for future chains.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I use store credit for a CCU chain?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, for standard CCUs and your base ship purchase. Store credit cannot be used for Warbond CCUs — that is the trade-off for the discount.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Are there any ships I cannot CCU to?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. A small number of rare capital and limited ships — including the Drake Kraken, the Idris, and the Pioneer — cannot be obtained via a CCU. They are only available during dedicated sales or with direct store credit purchases.',
+        },
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +110,14 @@ export default function CCUChainsPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'CCU Chains', url: '/beyond-the-basics/ccu-chains' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen CCU Chain Calculator & Savings Guide (2026)"
+          description="Save hundreds on Star Citizen ship upgrades using CCU chains. Step-by-step guide to Cross-Chassis Upgrades, Warbond CCU strategies, and worked savings examples."
+          path="/beyond-the-basics/ccu-chains"
+          section="Beyond the Basics"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
