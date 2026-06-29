@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen New Player Guide — Complete Step-by-Step — Day One Citizen',
+  title: 'Star Citizen New Player Guide — Complete Step-by-Step',
   description:
     '12 Star Citizen guides for brand-new players: worth buying, system specs, buying, installing, keybinds, cities, first flight. Plain English, no jargon.',
   alternates: { canonical: '/day-one-citizen' },
@@ -195,6 +195,16 @@ const SECTIONS: Section[] = [
 ]
 
 export default function DayOneCitizenPage() {
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: SECTIONS.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: s.title,
+      url: `https://dayonecitizen.com/day-one-citizen/${s.id}`,
+    })),
+  }
   return (
     <>
       <NavBar />
@@ -203,6 +213,7 @@ export default function DayOneCitizenPage() {
           { name: 'Home', url: '/' },
           { name: 'Day One Citizen', url: '/day-one-citizen' },
         ]} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy via-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">

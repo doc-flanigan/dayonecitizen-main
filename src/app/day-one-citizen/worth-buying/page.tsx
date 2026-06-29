@@ -7,11 +7,12 @@ import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Is Star Citizen Worth Buying in 2026? — Day One Citizen',
+  title: 'Is Star Citizen Worth Buying in 2026?',
   description:
-    'Honest look at Star Citizen in 2026 — what you get today, what is still unfinished, and how to try the game free before spending anything.',
+    'Is Star Citizen worth buying in 2026? An honest look at what you get today, what is still unfinished, the common bugs, and how to try the game free first.',
   alternates: { canonical: '/day-one-citizen/worth-buying' },
   openGraph: {
     title: 'Is Star Citizen Worth Buying in 2026?',
@@ -32,6 +33,12 @@ export default function WorthBuyingPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Is It Worth Buying?', url: '/day-one-citizen/worth-buying' },
         ]} />
+        <ArticleJsonLd
+          headline="Is Star Citizen Worth Buying in 2026?"
+          description="Is Star Citizen worth buying in 2026? An honest look at what you get today, what is still unfinished, the common bugs, and how to try the game free first."
+          path="/day-one-citizen/worth-buying"
+          section="Day One Citizen"
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

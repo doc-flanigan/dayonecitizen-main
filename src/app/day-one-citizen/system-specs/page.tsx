@@ -5,11 +5,12 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen System Requirements 2026 — Day One Citizen',
+  title: 'Star Citizen System Requirements 2026',
   description:
-    'Star Citizen PC specs for 2026 — minimum and recommended requirements, plus the three hardware mistakes that hurt performance most.',
+    'Star Citizen system requirements for 2026: minimum and recommended PC specs (CPU, RAM, GPU, SSD) plus the three hardware mistakes that hurt new-player performance.',
   alternates: { canonical: '/day-one-citizen/system-specs' },
   openGraph: {
     title: 'Star Citizen System Requirements 2026',
@@ -40,6 +41,12 @@ export default function SystemSpecsPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'System Requirements', url: '/day-one-citizen/system-specs' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen System Requirements 2026"
+          description="Star Citizen system requirements for 2026: minimum and recommended PC specs (CPU, RAM, GPU, SSD) plus the three hardware mistakes that hurt new-player performance."
+          path="/day-one-citizen/system-specs"
+          section="Day One Citizen"
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

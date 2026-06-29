@@ -5,11 +5,12 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'RSI Launcher Guide: Live, PTU & EPTU Explained — Day One Citizen',
+  title: 'RSI Launcher Guide: LIVE, PTU & EPTU Explained',
   description:
-    'How to use the RSI Launcher: Live vs PTU vs EPTU builds, switching channels, verifying game files, and fixing common Star Citizen launcher problems.',
+    'How to use the RSI Launcher: LIVE vs PTU vs EPTU builds, switching channels, verifying game files, and fixing common Star Citizen launcher problems on day one.',
   alternates: { canonical: '/day-one-citizen/rsi-launcher' },
   openGraph: {
     title: 'RSI Launcher Guide: Live, PTU & EPTU Explained',
@@ -21,6 +22,20 @@ export const metadata: Metadata = {
 }
 
 export default function RsiLauncherPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to verify your Star Citizen game files in the RSI Launcher',
+    description:
+      'Verifying your game files checks every installed file against expected checksums and re-downloads anything corrupted or missing. It fixes a surprising number of issues.',
+    step: [
+      { '@type': 'HowToStep', position: 1, name: 'Open the RSI Launcher', text: 'Open the RSI Launcher.' },
+      { '@type': 'HowToStep', position: 2, name: 'Select your channel', text: 'Select the channel you play on (usually LIVE).' },
+      { '@type': 'HowToStep', position: 3, name: 'Click VERIFY', text: 'Click VERIFY.' },
+      { '@type': 'HowToStep', position: 4, name: 'Wait for the check', text: 'Wait — this can take 15 to 30 minutes as it checks every file.' },
+      { '@type': 'HowToStep', position: 5, name: 'Let files re-download', text: 'Any corrupted or missing files will be re-downloaded automatically.' },
+    ],
+  }
   return (
     <>
       <NavBar />
@@ -30,6 +45,13 @@ export default function RsiLauncherPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'RSI Launcher', url: '/day-one-citizen/rsi-launcher' },
         ]} />
+        <ArticleJsonLd
+          headline="RSI Launcher Guide: LIVE, PTU & EPTU Explained"
+          description="How to use the RSI Launcher: LIVE vs PTU vs EPTU builds, switching channels, verifying game files, and fixing common Star Citizen launcher problems on day one."
+          path="/day-one-citizen/rsi-launcher"
+          section="Day One Citizen"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

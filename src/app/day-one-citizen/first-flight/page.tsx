@@ -6,9 +6,10 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Flight Guide: Take Off, Fly & Land — Day One Citizen',
+  title: 'Star Citizen First Flight Guide: Take Off, Fly & Land',
   description:
     'Power on your ship, clear the hangar, master Star Citizen flight controls, make your first quantum jump, and land. Step-by-step with exact keybinds.',
   alternates: { canonical: '/day-one-citizen/first-flight' },
@@ -22,6 +23,52 @@ export const metadata: Metadata = {
 }
 
 export default function FirstFlightPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to take off, fly and land your ship in Star Citizen',
+    description:
+      'The complete first-flight sequence in Star Citizen, from powering on the ship to your first quantum jump and a safe landing.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Power on your ship',
+        text: 'Once seated in the cockpit, press 1 to request power from the ship’s power plant. Wait 5–10 seconds for the HUD to fully load, showing speed, shields, power triangle and target display.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Take off from the hangar',
+        text: 'Raise the landing gear with N, tap Space to lift off gently, use the mouse to face the hangar exit, then press W gently to exit at no more than 20–30 m/s. Once clear of the door frame, increase speed freely.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Fly with the basic controls',
+        text: 'Use the mouse to aim the ship (yaw and pitch), W and S for throttle, A and D for lateral strafe, Q and E to roll, Left Shift for afterburner, and Space or Left Ctrl for vertical strafe.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Make your first quantum jump',
+        text: 'Open mobiGlas with F1 and select a destination on the StarMap. Point your nose at the waypoint, hold R to spool the quantum drive until the charge circle completes, then hold B to jump. The jump ends automatically when you arrive.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Land your ship',
+        text: 'Find a landing pad and request clearance by holding F if prompted. Slow to under 50 m/s on approach, lower the landing gear with N, descend slowly with Left Ctrl, and set down on the center of the pad until the gear locks in.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Power down',
+        text: 'For a short stop, leave the engines running and hold F to exit. To power down fully, hold U for 3 seconds to cut master power; press 1 again when back in the seat to restart.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -31,6 +78,13 @@ export default function FirstFlightPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'First Flight', url: '/day-one-citizen/first-flight' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen First Flight Guide: Take Off, Fly & Land"
+          description="Power on your ship, clear the hangar, master Star Citizen flight controls, make your first quantum jump, and land. Step-by-step with exact keybinds."
+          path="/day-one-citizen/first-flight"
+          section="Day One Citizen"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

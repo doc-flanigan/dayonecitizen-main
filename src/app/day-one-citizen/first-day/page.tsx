@@ -6,11 +6,12 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Day Guide: What to Do First — Day One Citizen',
+  title: 'Star Citizen First Day Guide: What to Do First',
   description:
-    'Ten things to do on your first day in Star Citizen — from the ASOP terminal to your first mission, collecting aUEC, and logging out safely.',
+    'Ten things to do on your first day in Star Citizen, in order — from the ASOP terminal to your first delivery mission, quantum travel and a safe logout.',
   alternates: { canonical: '/day-one-citizen/first-day' },
   openGraph: {
     title: 'Star Citizen First Day Guide: What to Do First',
@@ -22,6 +23,76 @@ export const metadata: Metadata = {
 }
 
 export default function FirstDayPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'What to do on your first day in Star Citizen',
+    description:
+      'A calm, ordered list of the first ten things to do on your first day in Star Citizen, from waking up in your hab to logging out safely.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Wake up and get oriented',
+        text: 'You spawn in your hab, a small personal apartment. Press F1 to open your mobiGlas, check your wallet for your 50,000 UEC referral bonus, note your starting city, then head to the door.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Get to the spaceport',
+        text: 'Take the elevator out of the hab tower, follow transit signage to the spaceport, and look for the hangar district. Hold F on any kiosk for the Inner Thought context menu, which often has a Set Destination option.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Find the ASOP terminal and claim your ship',
+        text: 'At the spaceport, find an ASOP terminal, a vertical kiosk with a ship icon, near the hangar bay entrance. Hold F to interact, select your starter ship and choose Claim. Note the assigned hangar number and walk to that hangar door.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Board your ship',
+        text: 'Walk to your assigned hangar. The door opens automatically. Walk to the entry point, hold F, and select Enter Seat. You are now in the cockpit.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Power on and take off',
+        text: 'Press 1 to request power and wait for the HUD to populate. Toggle landing gear up with N, apply gentle upward thrust with Space to lift off, move the mouse to steer, and exit the hangar slowly so you do not clip the door or walls.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Accept a delivery mission',
+        text: 'Open mobiGlas with F1 and go to the Contracts Manager. Look for delivery missions with a package icon, select one in the Stanton system near you, and accept it. A waypoint appears on your HUD.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 7,
+        name: 'Use quantum travel to reach the destination',
+        text: 'Point your nose at the destination marker, hold R to spool the quantum drive, and when the progress bar completes and flashes, hold B to jump across the system in seconds to minutes.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 8,
+        name: 'Pick up the cargo, deliver it, get paid',
+        text: 'Land at the pickup location, lower landing gear with N before touchdown, hold F to pick up the highlighted mission item, and place it in your cargo hold. Fly to the delivery location and carry the box to the dropoff point. aUEC lands in your wallet.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 9,
+        name: 'Explore and build a routine',
+        text: 'Visit a space station, walk around a city, run a second mission now that you know the loop, and use some aUEC to buy armor or a weapon from a city retailer.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 10,
+        name: 'Log out safely',
+        text: 'Return to your ship or any location with a bed, hold F on the bed and select Bed Log for a clean save that preserves your location. If you cannot reach a bed, use the Escape menu to log out.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -31,6 +102,13 @@ export default function FirstDayPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Your First Day', url: '/day-one-citizen/first-day' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen First Day Guide: What to Do First"
+          description="Ten things to do on your first day in Star Citizen, in order — from the ASOP terminal to your first delivery mission, quantum travel and a safe logout."
+          path="/day-one-citizen/first-day"
+          section="Day One Citizen"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

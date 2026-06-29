@@ -5,9 +5,10 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Launch: Character Creation & What Happens Next — Day One Citizen',
+  title: 'Star Citizen First Launch: Character Creation & What\'s Next',
   description:
     'Star Citizen first launch: character creation choices that matter, waking up in your hab room, and the five things to do before anything else.',
   alternates: { canonical: '/day-one-citizen/first-launch' },
@@ -21,6 +22,44 @@ export const metadata: Metadata = {
 }
 
 export default function FirstLaunchPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Your first five minutes in Star Citizen',
+    description: 'The exact sequence to follow in your first few minutes after launching Star Citizen.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Open your mobiGlas',
+        text: 'Press F1 or B (check your keybinds). Your mobiGlas is the wrist-mounted computer interface — it contains your wallet, star map, contracts, contacts, and inventory. Tap through the apps to get familiar with the layout.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Check your wallet',
+        text: 'Open the money app in mobiGlas to confirm your 50,000 UEC referral bonus is there. It appears as starting credit in your account.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Look at the Contracts app',
+        text: 'This is where delivery missions, escort jobs, and bounties appear. On day one you will see basic delivery and data-running contracts. Do not accept anything yet.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Close mobiGlas',
+        text: 'Look around the hab. Find the door — it is usually obvious. Walk to it and hold F to interact and open it.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Find the elevator',
+        text: 'Just outside your hab door. Use it to reach the ground level of the city, then follow the guide on getting from your hab to the hangar.',
+      },
+    ],
+  }
   return (
     <>
       <NavBar />
@@ -30,6 +69,8 @@ export default function FirstLaunchPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'First Launch', url: '/day-one-citizen/first-launch' },
         ]} />
+        <ArticleJsonLd headline="Star Citizen First Launch: Character Creation & What's Next" description="Star Citizen first launch: character creation choices that matter, waking up in your hab room, and the five things to do before anything else." path="/day-one-citizen/first-launch" section="Day One Citizen" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

@@ -5,11 +5,12 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Pledge vs Purchase Explained — Day One Citizen',
+  title: 'Star Citizen Pledge vs Purchase Explained',
   description:
-    'Why Star Citizen says "pledge" not "purchase" — what you actually own, how LTI insurance works, and what melting a ship means.',
+    'Why Star Citizen says "pledge" not "purchase": what you actually own, how standard and LTI ship insurance work, melting for store credit, and concept ships.',
   alternates: { canonical: '/day-one-citizen/pledge-vs-purchase' },
   openGraph: {
     title: 'Star Citizen Pledge vs Purchase Explained',
@@ -30,6 +31,7 @@ export default function PledgeVsPurchasePage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Pledge vs. Purchase', url: '/day-one-citizen/pledge-vs-purchase' },
         ]} />
+        <ArticleJsonLd headline="Star Citizen Pledge vs Purchase Explained" description={'Why Star Citizen says "pledge" not "purchase": what you actually own, how standard and LTI ship insurance work, melting for store credit, and concept ships.'} path="/day-one-citizen/pledge-vs-purchase" section="Day One Citizen" />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

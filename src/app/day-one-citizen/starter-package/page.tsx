@@ -7,9 +7,10 @@ import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Starter Packages 2026: All 8 Options Compared — Day One Citizen',
+  title: 'Star Citizen Starter Packages 2026: All 8 Compared',
   description:
     'Which Star Citizen starter package should you buy? All eight packages compared — $45 Citizen Starter to $125 Privateer. Includes Warbond prices.',
   alternates: { canonical: '/day-one-citizen/starter-package' },
@@ -32,6 +33,7 @@ export default function StarterPackagePage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Starter Package', url: '/day-one-citizen/starter-package' },
         ]} />
+        <ArticleJsonLd headline="Star Citizen Starter Packages 2026: All 8 Compared" description="Which Star Citizen starter package should you buy? All eight packages compared — $45 Citizen Starter to $125 Privateer. Includes Warbond prices." path="/day-one-citizen/starter-package" section="Day One Citizen" />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

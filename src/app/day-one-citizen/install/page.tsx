@@ -5,9 +5,10 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'How to Install Star Citizen — Day One Citizen',
+  title: 'How to Install Star Citizen',
   description:
     'Download the RSI Launcher, install Star Citizen to an SSD, and get through shader compilation. Disk space requirements (150 GB+) and best install paths.',
   alternates: { canonical: '/day-one-citizen/install' },
@@ -21,6 +22,45 @@ export const metadata: Metadata = {
 }
 
 export default function InstallPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Install Star Citizen',
+    description: 'Download the RSI Launcher, install Star Citizen to an SSD, and get through the first launch.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Download the RSI Launcher installer',
+        text: 'Log into your account at robertsspaceindustries.com and open your Library. Click the Download button next to Star Citizen to download the RSI Launcher installer, a small Windows executable around 20 MB. This file installs the Launcher itself, not the game.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Install the launcher',
+        text: 'Run the installer as you would any Windows application and allow the User Account Control prompt. The installer sets up the RSI Launcher application, which manages the game download, updates, and launch. The Launcher itself is small; the game files are stored separately.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Choose your install location',
+        text: 'When you start the game download, the Launcher asks where to install Star Citizen. Install to an SSD, not an HDD. You need 150 GB of free space minimum. Prefer a non-system drive. Change the path via the Settings gear icon and the Library Folder option.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Start the download',
+        text: 'Click INSTALL in the Launcher to begin the download of around 100 GB. On a 100 Mbps connection this takes roughly 2 to 3 hours. The download can be paused and resumed, so you do not need to finish it in one session. Start it well in advance of when you want to play.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Allow firewall prompts',
+        text: 'During install and on first launch, Windows Firewall asks whether to allow the RSI Launcher and Star Citizen network access. Allow both on public and private networks, since Star Citizen is online-only. If you use third-party firewall or antivirus software, add exceptions for RSI Launcher.exe and StarCitizen.exe.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -30,6 +70,13 @@ export default function InstallPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Installing the Game', url: '/day-one-citizen/install' },
         ]} />
+        <ArticleJsonLd
+          headline="How to Install Star Citizen"
+          description="Download the RSI Launcher, install Star Citizen to an SSD, and get through shader compilation. Disk space requirements (150 GB+) and best install paths."
+          path="/day-one-citizen/install"
+          section="Day One Citizen"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

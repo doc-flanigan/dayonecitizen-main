@@ -5,9 +5,10 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Keybinds for New Players — Day One Citizen',
+  title: 'Star Citizen Keybinds for New Players',
   description:
     'Star Citizen keybinds for new players: on-foot, flight controls, power triangle, mobiGlas, quantum travel, and how to remap controls in-game.',
   alternates: { canonical: '/day-one-citizen/keybinds' },
@@ -43,6 +44,12 @@ export default function KeybindsPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Keybinds', url: '/day-one-citizen/keybinds' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen Keybinds for New Players"
+          description="Star Citizen keybinds for new players: on-foot, flight controls, power triangle, mobiGlas, quantum travel, and how to remap controls in-game."
+          path="/day-one-citizen/keybinds"
+          section="Day One Citizen"
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

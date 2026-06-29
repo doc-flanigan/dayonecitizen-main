@@ -7,9 +7,10 @@ import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'How to Buy Star Citizen — Day One Citizen',
+  title: 'How to Buy Star Citizen',
   description:
     'Create your RSI account, apply a referral code for 50,000 free UEC, choose a starter package, and download the launcher. Every step of buying Star Citizen.',
   alternates: { canonical: '/day-one-citizen/buying-the-game' },
@@ -23,6 +24,44 @@ export const metadata: Metadata = {
 }
 
 export default function BuyingTheGamePage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Buy Star Citizen',
+    description: 'Create your RSI account, apply a referral code for free UEC, choose a starter package, check out, and download the launcher.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Create your RSI account',
+        text: 'Go to robertsspaceindustries.com and click Enlist Now or Create Account. Fill in your email, password, and handle, and enter the referral code in the referral code field. Verify your email when the confirmation message arrives.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Navigate to the store',
+        text: 'Once logged in, go to robertsspaceindustries.com/store or hover over Buy Star Citizen in the top nav. Look for Game Packages, which include Star Citizen alpha access and a starter ship. Do not buy a standalone ship, as those do not include game access.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Choose your package',
+        text: 'The cheapest game packages start around $45 USD and include access to the Star Citizen alpha, a starter ship with standard insurance, and 10,000 starting aUEC. The two common starter ships are the Aurora Mk II and the Mustang Alpha.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Checkout',
+        text: 'Add the package to your cart and proceed to checkout. RSI accepts major credit and debit cards, PayPal, and some regional payment methods. After payment you receive a confirmation email and your account is upgraded immediately.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Download the launcher',
+        text: 'Log into your RSI account and go to your Library. Click Download to get the RSI Launcher installer, then run it to install the launcher. The launcher then downloads the actual game, which can take several hours.',
+      },
+    ],
+  }
   return (
     <>
       <NavBar />
@@ -32,6 +71,13 @@ export default function BuyingTheGamePage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Buying the Game', url: '/day-one-citizen/buying-the-game' },
         ]} />
+        <ArticleJsonLd
+          headline="How to Buy Star Citizen"
+          description="Create your RSI account, apply a referral code for 50,000 free UEC, choose a starter package, and download the launcher. Every step of buying Star Citizen."
+          path="/day-one-citizen/buying-the-game"
+          section="Day One Citizen"
+        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link

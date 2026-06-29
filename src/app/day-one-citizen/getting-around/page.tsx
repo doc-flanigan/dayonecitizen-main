@@ -5,9 +5,10 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
-  title: 'How to Get to Your Ship in Star Citizen — Day One Citizen',
+  title: 'How to Get to Your Ship in Star Citizen',
   description:
     'Hab to hangar routes in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage elevators, and Orison inter-platform shuttles.',
   alternates: { canonical: '/day-one-citizen/getting-around' },
@@ -30,6 +31,12 @@ export default function GettingAroundPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Getting Around', url: '/day-one-citizen/getting-around' },
         ]} />
+        <ArticleJsonLd
+          headline="How to Get to Your Ship in Star Citizen"
+          description="Hab to hangar routes in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage elevators, and Orison inter-platform shuttles."
+          path="/day-one-citizen/getting-around"
+          section="Day One Citizen"
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
