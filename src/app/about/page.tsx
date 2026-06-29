@@ -33,7 +33,7 @@ const FAQ = [
 export const metadata: Metadata = {
   title: 'What Does o7 Mean? The Star Citizen Salute Explained',
   description:
-    'Unofficial Star Citizen fan site for new players by Doc_Flanigan. Plain English, no jargon. Use referral code STAR-GCQJ-N6NC to start with 50,000 UEC free.',
+    "What does o7 mean? It's the Star Citizen salute: 'o' is a head, '7' a raised arm. Plus why Doc_Flanigan built this plain-English fan site for new players.",
   alternates: { canonical: '/about' },
   openGraph: {
     title: 'What Does o7 Mean? The Star Citizen Salute Explained',

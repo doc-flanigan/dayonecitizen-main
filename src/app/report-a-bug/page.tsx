@@ -13,7 +13,7 @@ import { OFFICIAL_SOURCES, COMMUNITY_SOURCES } from '@/data/report-a-bug-sources
 export const metadata: Metadata = {
   title: 'How to Report a Star Citizen Bug — The Issue Council Guide',
   description:
-    'A plain-English, step-by-step guide to the Star Citizen Issue Council: what it is, who can use it, how to gather evidence, search, and file a bug report developers can act on.',
+    'A plain-English, step-by-step guide to the Star Citizen Issue Council: gather evidence, search for duplicates, file a clear bug report, and track it to the developers.',
   alternates: { canonical: '/report-a-bug' },
   openGraph: {
     title: 'How to Report a Star Citizen Bug — The Issue Council Guide',

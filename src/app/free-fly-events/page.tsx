@@ -6,11 +6,12 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import { NEXT_FREE_FLY, googleCalendarUrl } from '@/data/next-free-fly'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
   description:
-    'Star Citizen Free Fly events let you play the full game free. Track upcoming windows, flyable ships, and get the referral code bonus before the event ends.',
+    'Star Citizen Free Fly events let you play the full game free for days. Track upcoming windows, flyable ships, and grab 50,000 free UEC with a referral code.',
   alternates: { canonical: '/free-fly-events' },
   openGraph: {
     title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
@@ -38,6 +39,12 @@ export default function FreeFlyPage() {
           { name: 'Home', url: '/' },
           { name: 'Free Fly Events', url: '/free-fly-events' },
         ]} />
+        <ArticleJsonLd
+          headline="Star Citizen Free Fly Events — Play Free, No Purchase Needed"
+          description="Star Citizen Free Fly events let you play the full game free for days. Track upcoming windows, flyable ships, and grab 50,000 free UEC with a referral code."
+          path="/free-fly-events"
+          section="Free Fly Events"
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/30 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">

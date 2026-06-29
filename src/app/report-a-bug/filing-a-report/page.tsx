@@ -7,12 +7,13 @@ import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
 import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
   title: 'How to File a Star Citizen Issue Council Bug Report (Step by Step)',
   description:
-    'Choose the right project, version, and channel, write a searchable title and clear reproduction steps, and attach your evidence — a complete walkthrough of filing a bug.',
+    'Filing a Star Citizen bug report step by step: pick the right version and channel, write a searchable title, list clear reproduction steps, and attach your evidence.',
   alternates: { canonical: '/report-a-bug/filing-a-report' },
   openGraph: {
     title: 'Filing a Star Citizen Bug Report',
@@ -24,6 +25,46 @@ export const metadata: Metadata = {
 }
 
 export default function FilingAReportPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to file a Star Citizen Issue Council bug report',
+    description:
+      'Filing a Star Citizen bug report step by step: pick the right version and channel, write a searchable title, list clear reproduction steps, and attach your evidence.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Start a new report',
+        text: 'From the project page, select the button to create a new report. You will see a form with a few fields.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Set the version and channel',
+        text: 'Pick the correct game version using your build number, and the channel you were on — whether you were on the live game or the test build, the PTU. This tells developers where to look.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Write a searchable title',
+        text: 'Other players find your report by its title when they search. A vague title hides your bug; a clear one helps others find and confirm it.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Write clear reproduction steps',
+        text: 'Reproduction steps are the exact actions that make the bug happen, as a short numbered list. Include where you were and what you were doing, so a developer can follow along.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Attach your evidence and add detail',
+        text: 'Add the screenshot or video, your DxDiag report, and your Game.log if the form accepts it. Use the More info field to add anything else useful, then submit.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -34,6 +75,16 @@ export default function FilingAReportPage() {
             { name: 'Report a Bug', url: '/report-a-bug' },
             { name: 'Filing a Report', url: '/report-a-bug/filing-a-report' },
           ]}
+        />
+        <ArticleJsonLd
+          headline="How to File a Star Citizen Issue Council Bug Report (Step by Step)"
+          description="Filing a Star Citizen bug report step by step: pick the right version and channel, write a searchable title, list clear reproduction steps, and attach your evidence."
+          path="/report-a-bug/filing-a-report"
+          section="Report a Bug"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

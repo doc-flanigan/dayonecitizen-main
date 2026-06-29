@@ -7,12 +7,13 @@ import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
 import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
   title: 'Search the Star Citizen Issue Council Before You Report a Bug',
   description:
-    'How to sign in to the Star Citizen Issue Council, search for your bug, filter by status, and add to an existing report instead of creating a duplicate.',
+    'Sign in to the Star Citizen Issue Council, search for your bug, filter results by status, and add to an existing report instead of filing a duplicate one.',
   alternates: { canonical: '/report-a-bug/searching-the-council' },
   openGraph: {
     title: 'Searching the Star Citizen Issue Council',
@@ -24,6 +25,34 @@ export const metadata: Metadata = {
 }
 
 export default function SearchingTheCouncilPage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Search the Star Citizen Issue Council before reporting a bug',
+    description:
+      'Sign in to the Star Citizen Issue Council, search for your bug, filter results by status, and add to an existing report instead of filing a duplicate one.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Sign in',
+        text: 'Go to the Issue Council site and select Sign In at the top right. It sends you to the main RSI site to log in, then brings you back. Once you are in, choose the project your bug belongs to, such as Star Citizen.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Search for your bug',
+        text: 'Use the search box and a few plain keywords that describe the problem, such as the place, ship, or screen where it happened plus what went wrong. Try a second search with different words before you decide your bug is not there.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Filter by status, then contribute',
+        text: 'Filter reports by status; the useful ones are Open, Confirmed, and Under Investigation. Found your bug? Open the report, confirm you can reproduce it, add a comment with any missing detail, and attach your own evidence.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -37,6 +66,16 @@ export default function SearchingTheCouncilPage() {
               url: '/report-a-bug/searching-the-council',
             },
           ]}
+        />
+        <ArticleJsonLd
+          headline="Search the Star Citizen Issue Council Before You Report a Bug"
+          description="Sign in to the Star Citizen Issue Council, search for your bug, filter results by status, and add to an existing report instead of filing a duplicate one."
+          path="/report-a-bug/searching-the-council"
+          section="Report a Bug"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

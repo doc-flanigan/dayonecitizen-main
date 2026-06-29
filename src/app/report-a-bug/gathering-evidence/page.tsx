@@ -7,12 +7,13 @@ import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
 import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Bug Report Evidence: Build Number, Game.log & DxDiag',
   description:
-    'How to find your Star Citizen build number, locate the Game.log file, save a DxDiag report, and capture a screenshot or video — everything you need before filing a bug.',
+    'Find your Star Citizen build number, locate the Game.log file, save a DxDiag report, and capture a screenshot or video before you file a bug report.',
   alternates: { canonical: '/report-a-bug/gathering-evidence' },
   openGraph: {
     title: 'Gathering Evidence for a Star Citizen Bug Report',
@@ -24,6 +25,40 @@ export const metadata: Metadata = {
 }
 
 export default function GatheringEvidencePage() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Gather evidence for a Star Citizen bug report',
+    description:
+      'Collect the four things developers need before you file a Star Citizen bug report: your build number, the Game.log file, a DxDiag report, and a screenshot or video.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Find your build number',
+        text: 'Open the RSI Launcher. The version is shown under the big Launch Game button. Write it down, or keep the Launcher open so you can copy it later.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Find your Game.log file',
+        text: 'Find Game.log in your install folder. The default path is ...\\Roberts Space Industries\\StarCitizen\\LIVE\\Game.log. Replace LIVE with PTU if your bug happened on the test build. Copy the file somewhere easy to find, like your Desktop, so you can attach it later.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Save a DxDiag report',
+        text: 'Press the Windows key and R together to open the Run box. Type dxdiag and select OK. Wait for the bar at the bottom to fill, then select Save All Information and save the file somewhere easy, like your Desktop.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Capture a screenshot or short video',
+        text: 'For a still image, press Win + PrtScn to save a screenshot to your Pictures folder. For anything involving movement or timing, use the Windows Game Bar (Win + G) to record a short clip, then upload it somewhere public and link it in your report.',
+      },
+    ],
+  }
+
   return (
     <>
       <NavBar />
@@ -37,6 +72,16 @@ export default function GatheringEvidencePage() {
               url: '/report-a-bug/gathering-evidence',
             },
           ]}
+        />
+        <ArticleJsonLd
+          headline="Star Citizen Bug Report Evidence: Build Number, Game.log & DxDiag"
+          description="Find your Star Citizen build number, locate the Game.log file, save a DxDiag report, and capture a screenshot or video before you file a bug report."
+          path="/report-a-bug/gathering-evidence"
+          section="Report a Bug"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

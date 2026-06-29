@@ -115,6 +115,17 @@ const TOOLS: Tool[] = [
 const CATEGORIES = ['Ships & Combat', 'Trading & Economy', 'Exploration & Mining', 'Reference']
 
 export default function ToolsPage() {
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: [FEATURED, ...TOOLS].map((tool, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: tool.name,
+      url: tool.url,
+    })),
+  }
+
   return (
     <>
       <NavBar />
@@ -123,6 +134,7 @@ export default function ToolsPage() {
           { name: 'Home', url: '/' },
           { name: 'Tools', url: '/tools' },
         ]} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/30 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">

@@ -8,12 +8,13 @@ import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
 import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import ArticleJsonLd from '@/components/ArticleJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
   title: 'After You File: Star Citizen Issue Council Statuses & Voting',
   description:
-    'What Open, Confirmed, Under Investigation, and Acknowledged mean on the Star Citizen Issue Council, how community confirmations move a report, and how to keep helping.',
+    'What Open, Confirmed, Under Investigation, and Acknowledged mean on the Star Citizen Issue Council, and how community confirmations push a bug toward a fix.',
   alternates: { canonical: '/report-a-bug/after-you-file' },
   openGraph: {
     title: 'After You File a Star Citizen Bug Report',
@@ -58,6 +59,12 @@ export default function AfterYouFilePage() {
             { name: 'Report a Bug', url: '/report-a-bug' },
             { name: 'After You File', url: '/report-a-bug/after-you-file' },
           ]}
+        />
+        <ArticleJsonLd
+          headline="After You File: Star Citizen Issue Council Statuses & Voting"
+          description="What Open, Confirmed, Under Investigation, and Acknowledged mean on the Star Citizen Issue Council, and how community confirmations push a bug toward a fix."
+          path="/report-a-bug/after-you-file"
+          section="Report a Bug"
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
