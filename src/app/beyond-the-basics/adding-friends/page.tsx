@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Add Friends in Star Citizen (2026 Guide)',
     description:
-      'Press F1 to open mobiGlas, tap Contacts, search by RSI handle, and send a request. Step-by-step guide including party invites and crew tips.',
+      'Add friends in Star Citizen four ways — from the RSI website, the main menu, in-game with F11, or the Inner Thought wheel. Plus party invites and fixes.',
     url: '/beyond-the-basics/adding-friends',
   },
 }
