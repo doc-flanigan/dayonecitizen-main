@@ -638,3 +638,41 @@ real image lands, then swap to a `next/image` `<Image>`.
 - Target new keywords without updating `E:\Claude Code\sc-portfolio\docs\seo\keyword-research.md`
 
 **Full strategy:** `E:\Claude Code\sc-portfolio\docs\seo\README.md`
+
+---
+
+## SEO & GEO
+
+**Network role:** HUB / authority destination. Every satellite in the portfolio
+(StarCitizenHelp, BestSpaceSim, FreeFlyEvent, IHeldTheLine, …) 301s and cross-links
+*into* this domain. Authority consolidates here. This is the long-term asset — invest.
+**Search engines:** Google (primary) + AI answer engines (ChatGPT, Copilot, Perplexity,
+Google AI Overviews, Claude).
+
+**STATUS: Optimize aggressively.** New keyword targeting, new content, topical depth,
+and citation-building are all in scope — the opposite of the satellite posture.
+
+**Targeting:**
+- Own "how to start / new player Star Citizen" intent broadly; build clusters, not one-offs.
+- Earn and defend featured snippets and AI citations; refresh evergreen guides on a schedule.
+
+**Cross-links:**
+- RECEIVE links from satellites. Do NOT link out to satellite domains (don't bleed
+  authority back out of the hub).
+- Internal-link generously between hub guides.
+- Convert via RSI referral STAR-GCQJ-N6NC (50K UEC signup bonus).   <!-- confirm code -->
+
+**GEO / AI citation — do all of these:**
+- Full JSON-LD on content pages: Article/TechArticle (real author + Organization
+  publisher + datePublished/dateModified + mainEntityOfPage), FAQPage where a visible
+  FAQ exists, HowTo for step sequences, BreadcrumbList.
+- Maintain /llms.txt generated from the content source (not hand-edited).
+- Keep robots.txt open to GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot,
+  PerplexityBot, Google-Extended, CCBot, Bingbot; reference the sitemap.
+- Strong E-E-A-T: consistent author identity, visible "updated" dates, answer-led
+  copy (TL;DR + FAQ) that AI engines can lift verbatim.
+
+**Do not:**
+- Link out to satellite domains.
+- Let pages ship without a single descriptive H1, a 150–160 char meta description,
+  or a canonical.
