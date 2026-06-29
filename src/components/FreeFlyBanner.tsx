@@ -1,6 +1,7 @@
 'use client'
 
-import { ArrowUpRight, Rocket } from 'lucide-react'
+import Link from 'next/link'
+import { Rocket } from 'lucide-react'
 import { NEXT_FREE_FLY } from '../data/next-free-fly'
 
 const EVENT_START = new Date(NEXT_FREE_FLY.start)
@@ -18,10 +19,8 @@ export default function FreeFlyBanner() {
 
   return (
     <div style={{ backgroundColor: '#ff5500' }} className="text-white">
-      <a
-        href="https://freeflyevent.com"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        href="/free-fly-events"
         className="container-wide flex items-center justify-center gap-2 px-4 py-2 text-center text-xs font-semibold tracking-wide hover:underline sm:text-sm"
         data-track="free-fly-banner"
       >
@@ -31,10 +30,9 @@ export default function FreeFlyBanner() {
             Star Citizen Free Fly is live — play free until {END_LABEL}, no purchase needed.{' '}
           </span>
           <span className="sm:hidden">Free Fly live — play Star Citizen free until {END_LABEL}. </span>
-          Details at freeflyevent.com
+          See the details
         </span>
-        <ArrowUpRight size={14} aria-hidden className="shrink-0" />
-      </a>
+      </Link>
     </div>
   )
 }

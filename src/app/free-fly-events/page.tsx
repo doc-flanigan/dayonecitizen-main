@@ -292,18 +292,6 @@ export default function FreeFlyPage() {
                 </div>
               </div>
             </div>
-            <p className="text-sm mt-4 text-starwhite/80">
-              For live event status and countdowns,{' '}
-              <a
-                href="https://freeflyevent.com"
-                className="text-gold underline-offset-4 hover:underline"
-                target="_blank"
-                rel="noopener"
-              >
-                freeflyevent.com
-              </a>{' '}
-              tracks every Star Citizen Free Fly event with real-time status.
-            </p>
           </div>
         </section>
 
