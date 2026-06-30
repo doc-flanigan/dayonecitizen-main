@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Ship Equipment Guide (2026) | dayonecitizen.com',
+  title: 'Star Citizen Ship Equipment Guide (2026)',
   description:
     'Star Citizen ship components: power plants, coolers, quantum drives, shields, and weapons. How grades affect performance and radar signature. Updated 2026.',
   alternates: { canonical: '/beyond-the-basics/ship-equipment' },
