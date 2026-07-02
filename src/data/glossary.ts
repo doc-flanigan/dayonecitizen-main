@@ -58,7 +58,17 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Concierge',
     category: 'Community',
     definition:
-      "Top-tier backer status. Players who have pledged at least $1,000 USD lifetime get a Concierge badge, early access to certain sales, and perks like priority support. A status symbol.",
+      "Backer status for players who have pledged at least $1,000 USD lifetime — officially called the Chairman's Club. Perks include priority support, early access to certain sales, an extra Buyback Token each quarter, and tier rewards as spending milestones are reached. Gifted pledges don't count toward the total.",
+    also: "Chairman's Club",
+    lastVerified: '2026-07-01',
+  },
+  {
+    term: "Chairman's Club",
+    category: 'Community',
+    definition:
+      "The official name of the Concierge program, with levels based on lifetime pledge total: High Admiral ($1,000), Grand Admiral ($2,500), Space Marshal ($5,000), Wing Commander ($10,000), Praetorian ($15,000), and Legatus Navium ($25,000). Each level unlocks additional rewards, from exclusive in-game items up to Executive Edition ships at the top tiers.",
+    also: 'Concierge',
+    lastVerified: '2026-07-01',
   },
   {
     term: 'Whale',
@@ -266,7 +276,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Buyback Token',
     category: 'Currency',
     definition:
-      "Lets you re-buy a melted pledge with cash. Each account gets one free Buyback per quarter; more cost a few dollars each. Useful when you melt a ship and regret it.",
+      "Lets you re-buy a melted pledge using store credit. Every account gets one token per quarter, and Concierge members get one additional token each quarter. Extra tokens cannot be purchased. Buying back with new money doesn't need a token — the token is only for spending store credit.",
+    lastVerified: '2026-07-01',
   },
   {
     term: 'CCU',
