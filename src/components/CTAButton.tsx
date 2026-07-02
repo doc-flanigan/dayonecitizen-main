@@ -27,11 +27,11 @@ const sizeClasses: Record<Size, string> = {
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    'bg-gold text-navy hover:bg-goldDark hover:text-navy shadow-[0_8px_30px_-12px_rgba(240,192,64,0.6)] hover:shadow-[0_12px_36px_-12px_rgba(240,192,64,0.85)]',
+    'btn-sheen bg-gradient-to-b from-[#ffd27a] via-gold to-goldDark text-navy hover:from-[#ffdd96] hover:via-[#ffc95c] hover:to-goldDark shadow-[0_10px_34px_-12px_rgba(245,185,66,0.65),inset_0_1px_0_rgba(255,255,255,0.5)] hover:shadow-[0_14px_44px_-12px_rgba(245,185,66,0.9),inset_0_1px_0_rgba(255,255,255,0.55)] hover:-translate-y-0.5 active:translate-y-0',
   ghost:
-    'border border-gold/60 text-gold hover:bg-gold/10 hover:border-gold',
+    'border border-gold/60 text-gold hover:bg-gold/10 hover:border-gold hover:-translate-y-0.5 active:translate-y-0',
   subtle:
-    'bg-navyLight text-starwhite hover:bg-navyLight/70 border border-white/5',
+    'bg-navyLight text-starwhite hover:bg-navyLight/70 border border-white/10 hover:border-white/20',
 }
 
 export default function CTAButton({
@@ -51,7 +51,7 @@ export default function CTAButton({
   const isExternal = external ?? href.startsWith('http')
   const label = children ?? `Get ${SITE.referralBonusUEC.replace(',000', 'K')}`
 
-  const classes = `inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wide transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy ${sizeClasses[size]} ${variantClasses[variant]} ${className}`
+  const classes = `group inline-flex items-center justify-center gap-2 rounded-xl font-display font-bold tracking-wide transition-all duration-300 ease-spring focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy ${sizeClasses[size]} ${variantClasses[variant]} ${className}`
 
   const handleClick = () => {
     const code = href.split('referral=')[1] ?? ''
@@ -84,7 +84,7 @@ export default function CTAButton({
         onClick={handleClick}
       >
         <span>{label}</span>
-        {showIcon ? <ArrowUpRight size={size === 'lg' ? 20 : 16} aria-hidden /> : null}
+        {showIcon ? <ArrowUpRight size={size === 'lg' ? 20 : 16} aria-hidden className="transition-transform duration-300 ease-spring group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /> : null}
       </a>
     )
   }
@@ -92,7 +92,7 @@ export default function CTAButton({
   return (
     <Link href={href} className={classes} data-track={trackingLabel} onClick={handleClick}>
       <span>{label}</span>
-      {showIcon ? <ArrowUpRight size={size === 'lg' ? 20 : 16} aria-hidden /> : null}
+      {showIcon ? <ArrowUpRight size={size === 'lg' ? 20 : 16} aria-hidden className="transition-transform duration-300 ease-spring group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /> : null}
     </Link>
   )
 }

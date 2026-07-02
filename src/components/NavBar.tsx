@@ -29,8 +29,8 @@ export default function NavBar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled || open
-          ? 'border-b border-white/5 bg-navy/85 backdrop-blur-md'
-          : 'bg-gradient-to-b from-navy/70 to-transparent'
+          ? 'border-b border-gold/10 bg-navy/80 shadow-[0_12px_40px_-20px_rgba(0,0,0,0.9)] backdrop-blur-xl'
+          : 'bg-gradient-to-b from-navy/80 to-transparent'
       }`}
     >
       <FreeFlyBanner />
@@ -41,15 +41,17 @@ export default function NavBar() {
       >
         <Link
           href="/"
-          className="flex items-center gap-2 text-lg font-bold tracking-tight"
+          className="group flex items-center gap-2.5 text-lg font-bold tracking-tight"
         >
           <span
-            className="rounded-md bg-gold px-2 py-1 font-display text-navy"
+            className="rounded-lg bg-gradient-to-b from-[#ffd27a] via-gold to-goldDark px-2 py-1 font-display font-extrabold text-navy shadow-[0_4px_16px_-6px_rgba(245,185,66,0.7)] transition-transform duration-300 ease-spring group-hover:-translate-y-0.5"
             aria-label="DOC — Day One Citizen"
           >
             DOC
           </span>
-          <span className="hidden sm:inline text-starwhite">dayonecitizen.com</span>
+          <span className="hidden font-display text-base font-semibold text-starwhite sm:inline">
+            dayonecitizen<span className="text-gold">.com</span>
+          </span>
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
@@ -59,10 +61,10 @@ export default function NavBar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
+                  className={`relative px-3 py-2 text-sm font-medium transition-colors after:absolute after:inset-x-3 after:-bottom-0.5 after:h-[2px] after:rounded-full after:bg-gradient-to-r after:from-ember after:to-gold after:transition-transform after:duration-300 after:ease-spring after:content-[''] ${
                     active
-                      ? 'bg-navyLight text-gold'
-                      : 'text-starwhite/80 hover:bg-navyLight hover:text-starwhite'
+                      ? 'text-gold after:scale-x-100'
+                      : 'text-starwhite/75 after:origin-left after:scale-x-0 hover:text-starwhite hover:after:scale-x-100'
                   }`}
                 >
                   {link.label}
@@ -97,8 +99,10 @@ export default function NavBar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`block rounded-md px-3 py-2 text-base font-medium ${
-                      active ? 'bg-navyLight text-gold' : 'text-starwhite/85 hover:bg-navyLight'
+                    className={`block rounded-lg border-l-2 px-3 py-2 text-base font-medium transition-colors ${
+                      active
+                        ? 'border-gold bg-navyLight/80 text-gold'
+                        : 'border-transparent text-starwhite/85 hover:border-gold/40 hover:bg-navyLight/60'
                     }`}
                   >
                     {link.label}

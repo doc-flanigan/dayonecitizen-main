@@ -107,17 +107,16 @@ export default function Home() {
         {/* Section 2: Start Here */}
         <section
           id="start-here"
-          className="border-t border-white/5 bg-navy py-20 sm:py-28"
+          className="relative border-t border-white/5 bg-starfield py-20 sm:py-28"
         >
-          <div className="container-wide">
-            <div className="mb-12 max-w-2xl">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                Start Here
-              </p>
-              <h2 className="heading-display text-3xl sm:text-4xl">
+          <div className="glow-horizon absolute inset-x-0 top-0 h-40" aria-hidden />
+          <div className="container-wide relative">
+            <div className="mb-14 max-w-2xl">
+              <p className="eyebrow mb-4">Start Here</p>
+              <h2 className="heading-display text-3xl sm:text-5xl">
                 New to the &lsquo;Verse?
               </h2>
-              <p className="mt-4 text-base text-muted">
+              <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
                 Three questions every new Star Citizen player asks first. Plain
                 English. No 200-page wiki rabbit hole.
               </p>
@@ -127,9 +126,9 @@ export default function Home() {
               {startHere.map(({ icon: Icon, title, body, href, cta }) => (
                 <article
                   key={title}
-                  className="card-surface group flex flex-col p-7 transition-all hover:-translate-y-1 hover:border-gold/40 hover:ring-gold"
+                  className="card-surface group flex flex-col p-7 transition-all duration-300 ease-spring hover:-translate-y-1.5 hover:ring-gold"
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gold/15 text-gold">
+                  <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-gold/25 to-ember/10 text-gold shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] transition-transform duration-300 ease-spring group-hover:scale-110">
                     <Icon size={22} aria-hidden />
                   </div>
                   <h3 className="heading-display text-xl">{title}</h3>
@@ -138,9 +137,14 @@ export default function Home() {
                   </p>
                   <Link
                     href={href}
-                    className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:text-goldDark"
+                    className="mt-6 inline-flex items-center gap-1.5 font-mono text-sm font-bold text-gold transition-colors hover:text-ember"
                   >
-                    {cta} <ArrowRight size={14} aria-hidden />
+                    {cta}{' '}
+                    <ArrowRight
+                      size={14}
+                      aria-hidden
+                      className="transition-transform duration-300 ease-spring group-hover:translate-x-1"
+                    />
                   </Link>
                 </article>
               ))}
@@ -149,12 +153,15 @@ export default function Home() {
         </section>
 
         {/* Section 3: Referral CTA banner */}
-        <section className="border-t border-white/5 bg-gradient-to-r from-navyLight via-navyLight/80 to-navy py-20 sm:py-24">
-          <div className="container-wide flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <section className="relative overflow-hidden border-t border-gold/15 bg-gradient-to-b from-navyLight/70 to-navy py-20 sm:py-24">
+          <div
+            className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent"
+            aria-hidden
+          />
+          <div className="glow-horizon absolute inset-x-0 top-0 h-48" aria-hidden />
+          <div className="container-wide relative flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
             <div className="md:max-w-2xl">
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                Ready to jump in?
-              </p>
+              <p className="eyebrow mb-4">Ready to jump in?</p>
               <h2 className="heading-display text-3xl sm:text-4xl">
                 Use a referral code. Start with{' '}
                 <span className="text-gold-gradient">{SITE.referralBonusUEC}</span>{' '}
@@ -168,7 +175,7 @@ export default function Home() {
                 grinding for two evenings. The code below is mine — no extra
                 cost to you.
               </p>
-              <p className="mt-2 font-mono text-sm text-gold">
+              <p className="mt-4 inline-block rounded-lg border border-gold/30 bg-navy/70 px-4 py-2 font-mono text-sm font-bold tracking-widest text-gold shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
                 {SITE.referralCode}
               </p>
             </div>
