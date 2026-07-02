@@ -1,22 +1,32 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Orbitron } from 'next/font/google'
+import { Bricolage_Grotesque, Instrument_Sans, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SITE } from '@/lib/site'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import CookieBanner from '@/components/CookieBanner'
 import './globals.css'
 
-const inter = Inter({
+// Typography system — "flight manual for an adventure":
+//  - Instrument Sans: friendly, crisp body copy for long tutorial reading
+//  - Bricolage Grotesque: characterful display face for headings
+//  - Space Mono: retro-NASA mono for step numbers, eyebrows, and codes
+const instrumentSans = Instrument_Sans({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-sans',
 })
 
-const orbitron = Orbitron({
+const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-orbitron',
-  weight: ['500', '600', '700', '800'],
+  variable: '--font-display',
+})
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-mono',
+  weight: ['400', '700'],
 })
 
 export const viewport: Viewport = {
@@ -134,7 +144,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${orbitron.variable}`}
+      className={`${instrumentSans.variable} ${bricolage.variable} ${spaceMono.variable}`}
       suppressHydrationWarning
     >
       <body className="bg-navy text-starwhite antialiased">

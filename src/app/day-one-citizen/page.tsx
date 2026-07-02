@@ -203,12 +203,16 @@ export default function DayOneCitizenPage() {
           { name: 'Home', url: '/' },
           { name: 'Day One Citizen', url: '/day-one-citizen' },
         ]} />
-        <header className="border-b border-white/5 bg-gradient-to-b from-navy via-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
-          <div className="container-wide">
-            <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+        <header className="relative border-b border-white/5 bg-starfield pb-16 pt-32 sm:pt-40">
+          <div
+            className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
+            aria-hidden
+          />
+          <div className="container-wide relative">
+            <p className="eyebrow mb-4">
               <Compass size={14} aria-hidden /> Day One Citizen
             </p>
-            <h1 className="heading-display text-4xl sm:text-5xl">
+            <h1 className="heading-display text-4xl sm:text-6xl">
               Your first hour in <span className="text-gold-gradient">the &lsquo;Verse</span>.
             </h1>
             <p className="mt-5 max-w-2xl text-base text-muted">
@@ -251,9 +255,7 @@ export default function DayOneCitizenPage() {
               className="hidden lg:block"
               aria-label="Table of contents"
             >
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                On this page
-              </p>
+              <p className="eyebrow mb-4">On this page</p>
               <ol className="space-y-2 text-sm">
                 {SECTIONS.map((s) => (
                   <li key={s.id}>
@@ -270,10 +272,21 @@ export default function DayOneCitizenPage() {
             </nav>
           </aside>
 
-          <article className="space-y-14">
+          <article className="step-rail relative space-y-16">
             {SECTIONS.map((s) => (
-              <section key={s.id} id={s.id} className="scroll-mt-24">
-                <p className="mb-2 font-mono text-xs text-gold">
+              <section
+                key={s.id}
+                id={s.id}
+                className="group relative scroll-mt-24 pl-16 sm:pl-20"
+              >
+                {/* flight-plan step node */}
+                <span
+                  className="absolute left-0 top-0 flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 bg-navy font-mono text-sm font-bold text-gold shadow-[0_0_20px_-6px_rgba(245,185,66,0.6)] transition-all duration-300 ease-spring group-hover:border-gold group-hover:shadow-[0_0_26px_-6px_rgba(245,185,66,0.9)]"
+                  aria-hidden
+                >
+                  {s.number}
+                </span>
+                <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-muted">
                   Section {s.number}
                 </p>
                 <h2 className="heading-display text-2xl sm:text-3xl">
@@ -289,14 +302,20 @@ export default function DayOneCitizenPage() {
                 </p>
                 <Link
                   href={`/day-one-citizen/${s.id}`}
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:text-goldDark"
+                  className="mt-4 inline-flex items-center gap-1.5 font-mono text-sm font-bold text-gold transition-colors hover:text-ember"
                 >
-                  Read the full guide <ArrowRight size={14} aria-hidden />
+                  Read the full guide{' '}
+                  <ArrowRight
+                    size={14}
+                    aria-hidden
+                    className="transition-transform duration-300 ease-spring group-hover:translate-x-1"
+                  />
                 </Link>
               </section>
             ))}
 
-            <section className="rounded-2xl border border-gold/20 bg-gold/5 p-8">
+            <section className="card-surface relative overflow-hidden p-8">
+              <div className="glow-horizon absolute inset-x-0 top-0 h-24" aria-hidden />
               <h2 className="heading-display text-2xl">
                 Ready to jump in?
               </h2>

@@ -67,8 +67,21 @@ export default function HeroCarousel({
             className="object-cover animate-slow-pan"
             onLoad={() => setIsLoaded(true)}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/55 to-navy/25" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/20 to-transparent" />
+          {/* dawn horizon glow along the bottom seam */}
+          <div
+            className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy to-transparent"
+            aria-hidden
+          />
+          <div
+            className="absolute inset-x-0 bottom-0 h-56"
+            style={{
+              background:
+                'radial-gradient(60% 100% at 50% 100%, rgba(245,185,66,0.14), rgba(255,142,94,0.05) 55%, transparent 100%)',
+            }}
+            aria-hidden
+          />
         </motion.div>
       </AnimatePresence>
 
@@ -78,19 +91,20 @@ export default function HeroCarousel({
 
       <div className="container-wide relative z-10 flex h-full flex-col justify-end pb-16 pt-32 sm:pb-24 sm:pt-40">
         <div className="max-w-3xl">
-          <p className="mb-3 inline-block rounded-full border border-gold/40 bg-navy/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+          <p className="mb-4 inline-flex items-center gap-2 rounded-lg border border-gold/35 bg-navy/70 px-4 py-1.5 font-mono text-xs font-bold uppercase tracking-[0.28em] text-gold backdrop-blur-sm animate-fade-up opacity-0 [animation-delay:100ms]">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-aurora shadow-[0_0_8px_rgba(111,227,193,0.9)]" aria-hidden />
             o7 citizen
           </p>
-          <h1 className="heading-display text-3xl leading-tight sm:text-5xl lg:text-6xl">
+          <h1 className="heading-display text-4xl leading-[1.05] sm:text-6xl lg:text-7xl animate-fade-up opacity-0 [animation-delay:220ms]">
             {title}
           </h1>
           {subtitle ? (
-            <p className="mt-5 max-w-2xl text-base text-starwhite/85 sm:text-lg">
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-starwhite/85 sm:text-lg animate-fade-up opacity-0 [animation-delay:360ms]">
               {subtitle}
             </p>
           ) : null}
           {ctaLabel ? (
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-up opacity-0 [animation-delay:480ms]">
               <CTAButton href={ctaHref} size="lg" trackingLabel="hero-primary">
                 {ctaLabel}
               </CTAButton>
@@ -112,8 +126,10 @@ export default function HeroCarousel({
             type="button"
             aria-label={`Go to slide ${i + 1}`}
             onClick={() => setIndex(i)}
-            className={`h-1.5 rounded-full transition-all ${
-              i === index ? 'w-8 bg-gold' : 'w-3 bg-starwhite/40 hover:bg-starwhite/70'
+            className={`h-1 rounded-full transition-all duration-300 ease-spring ${
+              i === index
+                ? 'w-10 bg-gradient-to-r from-ember to-gold shadow-[0_0_10px_rgba(245,185,66,0.6)]'
+                : 'w-4 bg-starwhite/30 hover:bg-starwhite/60'
             }`}
           />
         ))}
