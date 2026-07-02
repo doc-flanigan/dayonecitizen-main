@@ -1,0 +1,39 @@
+# Day One Citizen
+
+> Plain-English guide to Star Citizen for brand-new players — buying the game, checking your PC can run it, installing it, learning the controls, and getting through your first flight, all with no jargon and no gatekeeping. Written by veteran backer Doc_Flanigan for someone who has never even seen the game. Unofficial fan site; not affiliated with or endorsed by Cloud Imperium Games or Roberts Space Industries.
+
+## Pages
+
+- [Overview](https://dayonecitizen.com/): Start here — what Star Citizen is, what the 'Verse and UEC mean, and where to begin.
+- [Day One Citizen Guide](https://dayonecitizen.com/day-one-citizen): The core twelve-part walkthrough, from "is it worth buying?" to your first quantum jump.
+- [Is Star Citizen Worth Buying?](https://dayonecitizen.com/day-one-citizen/worth-buying): An honest look at whether the game is right for you before you spend anything.
+- [System Requirements](https://dayonecitizen.com/day-one-citizen/system-specs): Whether your PC can run Star Citizen, in plain terms.
+- [Buying the Game](https://dayonecitizen.com/day-one-citizen/buying-the-game): How to buy Star Citizen and what a starter package includes.
+- [Pledge vs. Purchase](https://dayonecitizen.com/day-one-citizen/pledge-vs-purchase): Why buying is called "pledging" and what that means for you.
+- [Choosing a Starter Package](https://dayonecitizen.com/day-one-citizen/starter-package): Comparing the cheapest ways to get into the game, including Aurora MR vs Mustang Alpha.
+- [Installing the Game](https://dayonecitizen.com/day-one-citizen/install): Step-by-step install walkthrough.
+- [The RSI Launcher](https://dayonecitizen.com/day-one-citizen/rsi-launcher): Setting up and using the official launcher.
+- [First Launch](https://dayonecitizen.com/day-one-citizen/first-launch): What to expect the first time the game loads.
+- [Keybinds & Controls](https://dayonecitizen.com/day-one-citizen/keybinds): The keyboard and mouse controls you actually need on day one.
+- [Your First Day](https://dayonecitizen.com/day-one-citizen/first-day): What to do once you spawn in for the first time.
+- [Getting Around](https://dayonecitizen.com/day-one-citizen/getting-around): Moving through stations, cities, and space as a new player.
+- [Your First Flight](https://dayonecitizen.com/day-one-citizen/first-flight): Taking off, flying, and making your first quantum jump.
+- [Beyond the Basics](https://dayonecitizen.com/beyond-the-basics): Next-step guides once you are past your first flight — friends, food and survival, inventory, shops, ship equipment, and CCU chains.
+- [Report a Bug](https://dayonecitizen.com/report-a-bug): How to gather evidence, search the Issue Council, file a report, and follow up.
+- [Free Fly Events](https://dayonecitizen.com/free-fly-events): When Star Citizen is free to try, how to join, and what you can do during a Free Fly.
+- [Glossary](https://dayonecitizen.com/glossary): Plain-English definitions of Star Citizen terms, acronyms, and 'Verse slang.
+- [Tools](https://dayonecitizen.com/tools): Handy references and utilities for new players.
+- [About](https://dayonecitizen.com/about): Why this site exists, the referral disclosure, and what "unofficial fan site" means here.
+
+## Key facts
+
+- Star Citizen is an always-online sci-fi sandbox built by Cloud Imperium Games; players pilot ships, explore planets, trade, fight, mine, and salvage in one persistent universe.
+- Star Citizen is the highest-funded game in crowdfunding history, having raised over $1 billion.
+- New accounts that enlist with a referral code start with a 50,000 UEC (United Earth Credits) in-game bonus.
+- This site's core content is a twelve-part "Day One Citizen" walkthrough covering everything from system requirements to a new player's first flight.
+- The site launched as o7citizen.com and was renamed to dayonecitizen.com in April 2026; the old domain still redirects to it.
+
+## Related
+
+- [freeflyevent.com](https://freeflyevent.com): Star Citizen Free Fly event tracker — when the game is free to try and how to get in.
+- [iheldtheline.com](https://iheldtheline.com): Squadron 42 release-date tracking, developer news, and FAQ.
