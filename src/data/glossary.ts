@@ -677,8 +677,16 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'MPUV',
     category: 'Ships',
     definition:
-      "Argo's small utility shuttle — nicknamed the 'Mule.' Variants handle cargo, crew transfers, and tractor work. No weapons, no frills; a flying delivery vehicle for port operations.",
-    also: 'Mule, MPUV Cargo, MPUV Personnel, MPUV Tractor',
+      "Argo's small utility shuttle. Variants handle cargo, crew transfers, and tractor work. No weapons, no frills; a flying delivery vehicle for port operations. Not to be confused with the Drake Mule, a ground vehicle.",
+    also: 'MPUV Cargo, MPUV Personnel, MPUV Tractor',
+    lastVerified: '2026-07-01',
+  },
+  {
+    term: 'Mule',
+    category: 'Ships',
+    definition:
+      "Drake's compact utility ground vehicle for cargo handling — a rugged little loader with a tractor beam for moving crates around outposts and hangars. Made by Drake, not Argo; a different vehicle from the Argo MPUV shuttle.",
+    lastVerified: '2026-07-01',
   },
   {
     term: 'RAFT',
