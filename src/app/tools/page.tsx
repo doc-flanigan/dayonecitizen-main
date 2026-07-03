@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Wrench, ExternalLink, Star } from 'lucide-react'
+import Term from '@/components/Term'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
@@ -143,42 +145,102 @@ export default function ToolsPage() {
 
         <div className="container-wide py-16 space-y-20">
 
-          {/* Featured tool */}
+          {/* Featured guide: CCU Game */}
           <section>
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-              Featured Tool
+              Featured Guide
             </p>
-            <a
-              href={FEATURED.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block rounded-2xl border border-gold/30 bg-gradient-to-br from-gold/10 to-navyLight/40 p-8 transition-colors hover:border-gold/60 hover:bg-gold/10 sm:p-10"
-            >
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-3 mb-3">
-                    <Star size={18} className="text-gold flex-shrink-0" aria-hidden />
-                    <span className="rounded-full border border-gold/40 bg-gold/10 px-3 py-0.5 text-xs font-semibold text-gold">
-                      {FEATURED.badge}
-                    </span>
-                  </div>
-                  <h2 className="heading-display text-2xl sm:text-3xl text-starwhite group-hover:text-gold transition-colors">
-                    {FEATURED.name}
-                    <ExternalLink
-                      size={18}
-                      className="ml-2 inline-block opacity-50 group-hover:opacity-100 transition-opacity"
-                      aria-hidden
+            <div className="rounded-2xl border border-gold/30 bg-gradient-to-br from-gold/10 to-navyLight/40 p-8 sm:p-10">
+              <h2 className="heading-display text-2xl sm:text-3xl text-starwhite">
+                Plan ship upgrades with CCU Game
+              </h2>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-starwhite/85">
+                A <Term name="CCU">CCU</Term> lets you move from one ship to a pricier one by
+                paying only the price difference. Chaining several together can cut a
+                ship&apos;s real cost in half.{' '}
+                <a
+                  href="https://ccugame.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold underline underline-offset-2 hover:text-goldDark"
+                >
+                  CCU Game
+                </a>{' '}
+                is the free calculator we recommend for building those chains. It also manages
+                your <Term name="Hangar">hangar</Term> — import your RSI account and it shows
+                every ship and upgrade you own, plus anything you can{' '}
+                <Term name="Buyback Token">buy back</Term>.
+              </p>
+
+              <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2 items-start">
+                <div>
+                  <a
+                    href="/images/tools-ccu-chain-example.jpg"
+                    target="_blank"
+                    rel="noopener"
+                    className="block overflow-hidden rounded-xl border border-white/10 transition-opacity hover:opacity-90"
+                    title="Open the full-size screenshot"
+                  >
+                    <Image
+                      src="/images/tools-ccu-chain-example.jpg"
+                      alt="CCU Game chain builder with six numbered, color-coded regions showing a nine-step upgrade chain from a Gladius fighter to a Corsair, costing $65 against a $250 retail price."
+                      width={1054}
+                      height={1125}
+                      unoptimized
+                      className="w-full h-auto"
+                      sizes="(max-width: 1024px) 100vw, 520px"
                     />
-                  </h2>
-                  <p className="mt-4 max-w-3xl text-base leading-relaxed text-starwhite/85">
-                    {FEATURED.description}
+                  </a>
+                  <p className="mt-2 text-center text-xs text-starwhite/50">
+                    Small text? <span className="text-gold">Click the image</span> to open it full
+                    size.
                   </p>
                 </div>
+
+                <div className="space-y-3 text-sm leading-relaxed text-starwhite/80">
+                  {[
+                    { n: 1, color: 'bg-[#38bdf8]', label: 'The header card', body: 'The target ship — a Corsair, a large multi-crew ship. It shows the $65 chain cost against the $250 retail price, and 120 months of insurance.' },
+                    { n: 2, color: 'bg-[#a78bfa]', label: 'From / To', body: 'Every upgrade step in the chain, applied top to bottom.' },
+                    { n: 3, color: 'bg-[#fb923c]', label: 'Origin', body: 'Where each step comes from. Store means buy it now. Buyback means re-purchase something you returned. Hangar means you already own it.' },
+                    { n: 4, color: 'bg-[#eab308]', label: 'Item MSRP vs Item Pledge', body: 'Full price against what you actually pay. One $70 step here cost only $5 during a past sale.' },
+                    { n: 5, color: 'bg-[#fb7185]', label: 'Ship Melt / Ship MSRP', body: "The ship's return value and retail value at every step of the climb." },
+                    { n: 6, color: 'bg-[#34d399]', label: 'The bottom line', body: 'Finishing this chain needs $50 — $30 in store credit and $20 in new money.' },
+                  ].map(({ n, color, label, body }) => (
+                    <div key={n} className="flex items-start gap-2.5">
+                      <span className={`${color} mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-[11px] font-bold text-navy`}>{n}</span>
+                      <div>
+                        <strong className="text-starwhite">{label}</strong> — {body}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <p className="mt-5 text-sm font-semibold text-gold group-hover:text-goldDark">
-                Open StarJump Fleetviewer →
+
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                {[
+                  'Import your hangar so CCU Game knows what you already own.',
+                  'Pick a target ship. The cheapest chain is built for you automatically.',
+                  'Buy the discounted steps during sales. They never expire.',
+                  'Apply the chain in order on the RSI website. Each step is permanent.',
+                ].map((step, i) => (
+                  <div key={step} className="flex items-start gap-3">
+                    <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gold/20 text-xs font-bold text-gold">{i + 1}</span>
+                    <p className="text-sm leading-relaxed text-starwhite/80">{step}</p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-7">
+                <a
+                  href="https://ccugame.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-gold hover:text-goldDark"
+                >
+                  Open CCU Game →
+                </a>
               </p>
-            </a>
+            </div>
           </section>
 
           {/* Tool categories */}
@@ -218,6 +280,44 @@ export default function ToolsPage() {
               </section>
             )
           })}
+
+          {/* Essential tool: StarJump */}
+          <section>
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+              Essential Tool
+            </p>
+            <a
+              href={FEATURED.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-2xl border border-gold/30 bg-gradient-to-br from-gold/10 to-navyLight/40 p-8 transition-colors hover:border-gold/60 hover:bg-gold/10 sm:p-10"
+            >
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-3 mb-3">
+                    <Star size={18} className="text-gold flex-shrink-0" aria-hidden />
+                    <span className="rounded-full border border-gold/40 bg-gold/10 px-3 py-0.5 text-xs font-semibold text-gold">
+                      {FEATURED.badge}
+                    </span>
+                  </div>
+                  <h2 className="heading-display text-2xl sm:text-3xl text-starwhite group-hover:text-gold transition-colors">
+                    {FEATURED.name}
+                    <ExternalLink
+                      size={18}
+                      className="ml-2 inline-block opacity-50 group-hover:opacity-100 transition-opacity"
+                      aria-hidden
+                    />
+                  </h2>
+                  <p className="mt-4 max-w-3xl text-base leading-relaxed text-starwhite/85">
+                    {FEATURED.description}
+                  </p>
+                </div>
+              </div>
+              <p className="mt-5 text-sm font-semibold text-gold group-hover:text-goldDark">
+                Open StarJump Fleetviewer →
+              </p>
+            </a>
+          </section>
 
           {/* Referral CTA */}
           <div className="border-t border-white/10 pt-10">
