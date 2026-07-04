@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Calendar, Clock, AlertCircle, Plane, Download, Wallet, CalendarPlus } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import { NEXT_FREE_FLY, googleCalendarUrl } from '@/data/next-free-fly'
@@ -308,6 +309,7 @@ export default function FreeFlyPage() {
         </section>
 
       </main>
+      <PageSources route="/free-fly-events" />
       <Footer />
     </>
   )

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
@@ -317,6 +318,7 @@ export default function RedeemCodesPage() {
           </div>
         </section>
       </main>
+      <PageSources route="/beyond-the-basics/redeem-codes" />
       <Footer />
     </>
   )

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import PageSources from '@/components/PageSources'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
@@ -538,6 +539,7 @@ export default function SystemSpecsPage() {
           </nav>
         </div>
       </main>
+      <PageSources route="/day-one-citizen/system-specs" />
       <Footer />
     </>
   )

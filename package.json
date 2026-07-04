@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "indexnow": "node scripts/indexnow.mjs",
+    "gen-sources": "node ../docs/claims/gen-sources.mjs dayonecitizen.com src/data/page-sources.generated.json",
     "postbuild": "node scripts/indexnow.mjs || true"
   },
   "dependencies": {

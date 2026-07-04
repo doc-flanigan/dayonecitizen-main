@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import PageSources from '@/components/PageSources'
 import GlossaryClient from './GlossaryClient'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
@@ -28,6 +29,7 @@ export default function GlossaryPage() {
         ]} />
         <GlossaryClient />
       </main>
+      <PageSources route="/glossary" />
       <Footer />
     </>
   )

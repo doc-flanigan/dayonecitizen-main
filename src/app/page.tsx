@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 import { ArrowRight, Rocket, Coins, Globe2 } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import PageSources from '@/components/PageSources'
 import HeroCarousel from '@/components/HeroCarousel'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
@@ -190,6 +191,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <PageSources route="/" />
       <Footer />
     </>
   )
