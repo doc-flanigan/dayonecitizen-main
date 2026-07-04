@@ -17,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/beyond-the-basics/shops-directory', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/beyond-the-basics/ship-equipment', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/beyond-the-basics/inventory-management', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/beyond-the-basics/redeem-codes', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/beyond-the-basics/quantum-travel', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/tools', changeFrequency: 'monthly', priority: 0.7 },
     { url: '/report-a-bug', changeFrequency: 'monthly', priority: 0.9 },
     { url: '/report-a-bug/gathering-evidence', changeFrequency: 'monthly', priority: 0.8 },

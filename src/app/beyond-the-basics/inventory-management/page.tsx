@@ -177,7 +177,7 @@ export default function InventoryManagementPage() {
               </li>
               <li>
                 <strong className="text-starwhite">Know your cargo capacity.</strong>{' '}
-                One <Term name="SCU">SCU</Term> is roughly two cubic metres. Check
+                One <Term name="SCU">SCU</Term> is 1.95 cubic metres — just under two. Check
                 your ship&apos;s hold size before buying trade goods — overfilling is
                 a common mistake.
               </li>

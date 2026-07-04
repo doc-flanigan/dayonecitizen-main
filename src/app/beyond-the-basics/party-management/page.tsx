@@ -54,6 +54,14 @@ export default function PartyManagementPage() {
           <div className="container-wide px-4 max-w-3xl">
 
             <p className="text-starwhite/80 mb-4 leading-relaxed">
+              To form a party in Star Citizen, press <strong className="text-starwhite">F11</strong>,
+              open the Friends tab, right-click your friend&apos;s name, and choose{' '}
+              <strong className="text-starwhite">Invite to Party</strong>. Once everyone
+              accepts, the party leader clicks Enter Universe from the main menu and the
+              whole group lands on the same server together.
+            </p>
+
+            <p className="text-starwhite/80 mb-4 leading-relaxed">
               Before you can invite someone to a party, you need to be friends in the game.
               If you have not added them yet, see the{' '}
               <Link
