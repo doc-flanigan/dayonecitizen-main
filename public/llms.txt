@@ -18,7 +18,9 @@
 - [Your First Day](https://dayonecitizen.com/day-one-citizen/first-day): What to do once you spawn in for the first time.
 - [Getting Around](https://dayonecitizen.com/day-one-citizen/getting-around): Moving through stations, cities, and space as a new player.
 - [Your First Flight](https://dayonecitizen.com/day-one-citizen/first-flight): Taking off, flying, and making your first quantum jump.
-- [Beyond the Basics](https://dayonecitizen.com/beyond-the-basics): Next-step guides once you are past your first flight — friends, food and survival, inventory, shops, ship equipment, and CCU chains.
+- [Beyond the Basics](https://dayonecitizen.com/beyond-the-basics): Next-step guides once you are past your first flight — friends, food and survival, inventory, shops, ship equipment, CCU chains, redeem codes, and quantum travel.
+- [Redeem Codes & Referral Bonus](https://dayonecitizen.com/beyond-the-basics/redeem-codes): What codes exist in Star Citizen, how referral codes work, and how to start with 50,000 UEC.
+- [How to Quantum Travel](https://dayonecitizen.com/beyond-the-basics/quantum-travel): Spooling the quantum drive, picking a destination, and making your first long-distance jump.
 - [Report a Bug](https://dayonecitizen.com/report-a-bug): How to gather evidence, search the Issue Council, file a report, and follow up.
 - [Free Fly Events](https://dayonecitizen.com/free-fly-events): When Star Citizen is free to try, how to join, and what you can do during a Free Fly.
 - [Glossary](https://dayonecitizen.com/glossary): Plain-English definitions of Star Citizen terms, acronyms, and 'Verse slang.

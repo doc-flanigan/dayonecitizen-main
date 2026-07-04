@@ -9,17 +9,23 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 export const metadata: Metadata = {
   title: 'Beyond the Basics — Star Citizen Guides for Early Players',
   description:
-    'Seven plain-English Star Citizen guides for players past the basics: adding friends, managing inventory, finding shops, CCU upgrades, and more.',
+    'Nine plain-English Star Citizen guides for players past the basics: quantum travel, adding friends, redeem codes, CCU upgrades, and more.',
   alternates: { canonical: '/beyond-the-basics' },
   openGraph: {
     title: 'Beyond the Basics — Star Citizen Guides for Early Players',
     description:
-      'Seven plain-English Star Citizen guides for players who have got the basics down: adding friends, managing inventory, finding shops, CCU upgrades, and more.',
+      'Nine plain-English Star Citizen guides for players who have got the basics down: quantum travel, adding friends, redeem codes, CCU upgrades, and more.',
     url: '/beyond-the-basics',
   },
 }
 
 const guides = [
+  {
+    slug: 'quantum-travel',
+    title: 'How to Quantum Travel',
+    description:
+      'Hold B to spool your quantum drive, click a destination marker, then press B again to jump. Every step explained — plus the Starmap, fuel, and interdiction.',
+  },
   {
     slug: 'adding-friends',
     title: 'How to Add Friends',
@@ -62,6 +68,12 @@ const guides = [
     description:
       'Personal inventory, ship cargo hold, and local storage — how to move items between them, what persists between sessions, and why you should unload before an insurance claim.',
   },
+  {
+    slug: 'redeem-codes',
+    title: 'Redeem Codes & Referral Codes',
+    description:
+      'The codes that actually work in Star Citizen — where to enter a referral code for 50,000 UEC, how promo codes work, and how to spot the fake code lists.',
+  },
 ]
 
 export default function BeyondTheBasicsPage() {
@@ -84,7 +96,7 @@ export default function BeyondTheBasicsPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-base text-muted">
               You have made it past your first few flights. Now comes the part where the
-              verse opens up. These seven guides cover the things that confuse most
+              verse opens up. These nine guides cover the things that confuse most
               players in their first few weeks — from adding friends to saving hundreds
               on ship upgrades.
             </p>
