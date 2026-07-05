@@ -7,6 +7,7 @@ import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
   title: 'Is Star Citizen Worth Buying in 2026? — Day One Citizen',
@@ -22,6 +23,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is Star Citizen worth buying in 2026?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, at the entry price, if you enjoy open-world space simulators and can tolerate alpha software — no other game does what Star Citizen does at its scale. No, if you expect a finished, polished product that works reliably every session. The game has been in open development since 2012 and is still an alpha.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does Star Citizen cost?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A starter Game Package costs from $45 on the RSI store. It is a one-time purchase with no subscription, and includes alpha access and a starter ship.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you try Star Citizen before buying it?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Several times a year CIG runs Free Fly events, when anyone with a free RSI account can play the live game at no cost. Events typically run one to two weeks, usually around Invictus in May and IAE in November.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you lose your ships when Star Citizen wipes?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Ships and anything else bought with real money are never wiped. Periodic wipes only reset earned in-game currency (aUEC), inventory items, and progress.',
+      },
+    },
+  ],
+}
+
 export default function WorthBuyingPage() {
   return (
     <>
@@ -32,6 +74,10 @@ export default function WorthBuyingPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Is It Worth Buying?', url: '/day-one-citizen/worth-buying' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -56,6 +102,11 @@ export default function WorthBuyingPage() {
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">The short answer</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                <strong className="text-starwhite">Yes — at the entry price — if you
+                enjoy open-world space sims and can tolerate alpha software. No — if
+                you expect a finished game.</strong>
+              </p>
               <p>
                 If you enjoy open-world space simulators — the kind where you can mine asteroids,
                 run cargo between planets, hunt bounties, crew a multi-person ship with friends, or
@@ -208,7 +259,14 @@ export default function WorthBuyingPage() {
                 Check <Link href="/free-fly-events" className="text-gold underline-offset-4 hover:underline">
                   the current Free Fly schedule
                 </Link>{' '}
-                to see if one is active or upcoming before you spend anything.
+                to see if one is active or upcoming before you spend anything.{' '}
+                <a
+                  href="https://freeflyevent.com"
+                  className="text-gold underline-offset-4 hover:underline"
+                >
+                  freeflyevent.com
+                </a>{' '}
+                tracks the next event window and how to join, day by day.
               </p>
             </div>
           </section>
@@ -238,6 +296,41 @@ export default function WorthBuyingPage() {
             </div>
           </section>
 
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How much does Star Citizen cost?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  A starter game package costs from $45 on the official RSI store.
+                  One-time purchase, no subscription. It includes alpha access and
+                  a starter ship.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Can you try it before buying?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Yes — during Free Fly events, several times a year, with a free
+                  RSI account. Events typically run one to two weeks, usually
+                  around Invictus in May and IAE in November.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Do you lose your ships in a wipe?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  No. Anything bought with real money is never wiped. Wipes only
+                  reset earned in-game currency, inventory, and progress.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <div className="border-t border-white/10 pt-10">
             <CTAButton size="lg" trackingLabel="worth-buying-cta" />
             <DiscordCTA />
@@ -258,6 +351,8 @@ export default function WorthBuyingPage() {
             </Link>
           </nav>
         </div>
+
+        <PageSources route="/day-one-citizen/worth-buying" />
       </main>
       <Footer />
     </>

@@ -7,6 +7,7 @@ import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Starter Packages 2026: All 8 Options Compared — Day One Citizen',
@@ -22,6 +23,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the best starter package in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For most new players: the Citizen Starter Pack at $45. It is the cheapest way into the game and comes with the Aurora Mk II — a forgiving starter ship with Lifetime Insurance — plus a full armor set, an undersuit, and a weapon. Learn the game first, then upgrade later via a CCU for the price difference.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much is a Star Citizen starter package?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Starter game packages begin at $45, and there are eight packages under $125, each built around a different career ship. Some carry a Warbond price — a steeper discount available only when paying with new money rather than store credit.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does every Star Citizen game package include?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Every game package includes the Star Citizen digital download, full access to the live Persistent Universe alpha, a starter ship with at least six months of hull insurance, a self-land hangar, and 10,000 starting UEC.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is Warbond pricing in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A Warbond price is a discount that applies only when you pay with real money — store credit cannot be used. If you are buying fresh with no existing store credit, always check for a Warbond version of the package first.',
+      },
+    },
+  ],
+}
+
 export default function StarterPackagePage() {
   return (
     <>
@@ -32,6 +74,10 @@ export default function StarterPackagePage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Starter Package', url: '/day-one-citizen/starter-package' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -54,6 +100,17 @@ export default function StarterPackagePage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+
+          <section>
+            <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">
+              <strong className="text-starwhite">Not sure what you want to do
+              yet? Get the Citizen Starter Pack at $45.</strong>{' '}
+              It is the cheapest way in, with the{' '}
+              <Term name="Aurora">Aurora Mk II</Term> and{' '}
+              <Term name="LTI">Lifetime Insurance</Term>. The full comparison
+              below covers all eight packages if you already know your career.
+            </p>
+          </section>
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">What every package includes</h2>
@@ -438,6 +495,53 @@ export default function StarterPackagePage() {
             </div>
           </section>
 
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What is the best starter package?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  For most new players, the Citizen Starter Pack at $45 — the
+                  cheapest way in, with the Aurora Mk II, Lifetime Insurance,
+                  and a full armor kit. Upgrade later via a CCU for the price
+                  difference.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How much does a starter package cost?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Packages start at $45, and all eight options in this guide are
+                  under $125. Check for a Warbond price if you are paying with
+                  new money — it is usually the better deal.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What does every package include?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  The game download, full access to the live alpha, a starter
+                  ship with at least six months of hull insurance, a self-land
+                  hangar, and 10,000 starting UEC.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What does Warbond mean?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  A discount that applies only when paying with real money —
+                  store credit cannot be used. Buying fresh? Always check for a
+                  Warbond version first.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <div className="border-t border-white/10 pt-10">
             <CTAButton size="lg" trackingLabel="starter-package-cta" />
             <DiscordCTA />
@@ -458,6 +562,8 @@ export default function StarterPackagePage() {
             </Link>
           </nav>
         </div>
+
+        <PageSources route="/day-one-citizen/starter-package" />
       </main>
       <Footer />
     </>

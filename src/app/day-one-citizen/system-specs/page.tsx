@@ -115,12 +115,13 @@ export default function SystemSpecsPage() {
               System specs and hardware
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Star Citizen&rsquo;s official minimum requirements are a quad-core CPU with AVX2
-              support (Intel i7 Haswell / AMD Ryzen 5 1600 or equivalent), 16 GB of RAM, a GPU
-              with 4 GB of VRAM (GTX 1060 / RX 580 range), an SSD with 100 GB free, and
-              Windows 10 or 11 64-bit. For a genuinely smooth experience in 2026, the
-              recommended specs are 32 GB of RAM, an RTX 3070 / RX 6700 XT or better, and an
-              NVMe SSD.
+              <strong className="text-starwhite">Star Citizen&rsquo;s official minimum
+              requirements are a quad-core CPU with AVX2 support (Intel i7 Haswell / AMD
+              Ryzen 5 1600 or equivalent), 16 GB of RAM, a GPU with 4 GB of VRAM (GTX
+              1060 / RX 580 range), an SSD with 100 GB free, and Windows 10 or 11
+              64-bit.</strong>{' '}
+              For a genuinely smooth experience in 2026, the recommended specs are
+              32 GB of RAM, an RTX 3070 / RX 6700 XT or better, and an NVMe SSD.
             </p>
           </div>
         </header>

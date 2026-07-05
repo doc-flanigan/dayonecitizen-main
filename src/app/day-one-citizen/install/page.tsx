@@ -20,6 +20,39 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How big is the Star Citizen download?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Around 100 GB for the game itself, downloaded through the RSI Launcher. Plan for 150 GB of free SSD space — the game uses extra scratch space beyond the install.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you install Star Citizen on a hard drive (HDD)?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No — install on an SSD. On a spinning hard drive the game is nearly unplayable because asset streaming is too slow. An NVMe SSD is the recommended option.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why does the first launch of Star Citizen take so long?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The game pre-compiles shaders on first launch — a one-time build of the rendering pipeline for your hardware. It can take 20 to 60 minutes depending on your CPU and GPU, with a progress bar. Let it finish; it also reruns after major patches that change the rendering system.',
+      },
+    },
+  ],
+}
+
 export default function InstallPage() {
   return (
     <>
@@ -30,6 +63,10 @@ export default function InstallPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Installing the Game', url: '/day-one-citizen/install' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -51,6 +88,16 @@ export default function InstallPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+
+          <section>
+            <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">
+              <strong className="text-starwhite">The short version: download the
+              RSI Launcher from your account Library, install it on an SSD, and
+              let it pull down the game — around 100 GB.</strong>{' '}
+              Keep 150 GB free for scratch space. The five steps below cover
+              every prompt you will see along the way.
+            </p>
+          </section>
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Step 1 — Download the RSI Launcher installer</h2>
@@ -213,6 +260,42 @@ export default function InstallPage() {
                   Section 07: Using the RSI Launcher
                 </Link>.
               </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How big is the download?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Around 100 GB through the RSI Launcher. Keep 150 GB free on
+                  your SSD — the game uses extra scratch space beyond the
+                  install itself.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Can I install on a regular hard drive?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  No. On an HDD the game is nearly unplayable — asset streaming
+                  is too slow on spinning media. Use an SSD; NVMe is best.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Why does the first launch take so long?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  The game pre-compiles shaders the first time you launch — a
+                  one-time build for your hardware that can take 20–60 minutes,
+                  with a progress bar. Let it finish. It reruns after major
+                  patches that change the rendering system.
+                </p>
+              </div>
             </div>
           </section>
 

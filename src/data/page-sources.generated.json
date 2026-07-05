@@ -33,6 +33,16 @@
         ]
       }
     ],
+    "/day-one-citizen/starter-package": [
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
+      }
+    ],
     "/day-one-citizen/system-specs": [
       {
         "id": "sc-minimum-system-requirements",
@@ -40,6 +50,34 @@
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements"
+        ]
+      }
+    ],
+    "/day-one-citizen/worth-buying": [
+      {
+        "id": "freefly-event-based-not-always-on",
+        "claim": "Free Fly access is event-based, not always-on — CIG runs scheduled windows a few times per year (typically Invictus/DefenseCon in May and IAE in November); outside an event, playing requires a Game Package.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+        ]
+      },
+      {
+        "id": "freefly-no-purchase-required",
+        "claim": "Free Fly events are free to play for anyone with a free RSI account — no purchase required during the event window.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
