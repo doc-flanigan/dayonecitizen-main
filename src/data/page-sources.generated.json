@@ -22,6 +22,17 @@
         ]
       }
     ],
+    "/beyond-the-basics/shops-directory": [
+      {
+        "id": "ships-earnable-in-game-auec",
+        "claim": "Ships purchased with real money (pledges) are also earnable in-game using aUEC, per CIG's no-pay-to-win policy — though not every ship currently sold in the pledge store is yet purchasable in an in-game shop.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/16444523494423-Daily-Life-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360011409454-Buying-Ships-with-aUEC"
+        ]
+      }
+    ],
     "/day-one-citizen/system-specs": [
       {
         "id": "sc-minimum-system-requirements",

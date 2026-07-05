@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville',
@@ -20,6 +21,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Where is the best place to buy ship components in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Omega Pro in New Babbage has the best Grade A component selection. Dumper's Depot at orbital stations is the most accessible since it is right near the landing pads. Apocalypse Arms in Area18 has the best ship weapons.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where can I buy ships with in-game money in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'New Deal in Lorville and Astro Armada in Area18 both sell ships for aUEC, the in-game currency. New Deal usually has the wider selection. The in-game ship catalogue is smaller than the pledge store — not every ship is available for in-game currency yet.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where do I buy mining equipment in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Shubin Interstellar in New Babbage is the best one-stop shop for mining lasers, mining heads, and modules. Some orbital station refineries also stock basic mining equipment, but New Babbage has the widest selection by far.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where do I buy weapons and armor in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Cubby Blast in Area18 has the widest personal weapon selection in Stanton — ballistic rifles, energy weapons, shotguns, and pistols, plus armor. Hurston Security Depot in Lorville sells some of the highest protection-rated armor sets in the game, though some items require Hurston faction standing.',
+      },
+    },
+  ],
+}
+
 export default function ShopsDirectoryPage() {
   return (
     <>
@@ -30,6 +72,10 @@ export default function ShopsDirectoryPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Shops Directory', url: '/beyond-the-basics/shops-directory' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
@@ -53,6 +99,15 @@ export default function ShopsDirectoryPage() {
         {/* Content */}
         <section className="py-14">
           <div className="container-wide px-4 max-w-3xl">
+
+            <p className="text-starwhite/80 mb-6 leading-relaxed">
+              <strong className="text-starwhite">The short answer:</strong> Cubby
+              Blast in Area18 has the widest personal weapon selection. Hurston
+              Security Depot in Lorville sells the best armor. Shubin Interstellar
+              in New Babbage covers mining gear. Buy ships with earned{' '}
+              <Term name="aUEC">aUEC</Term> at New Deal in Lorville or Astro
+              Armada in Area18.
+            </p>
 
             <p className="text-starwhite/80 mb-8 leading-relaxed">
               Shopping in Star Citizen is location-specific. The same item can cost ten
@@ -258,6 +313,19 @@ export default function ShopsDirectoryPage() {
 
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
+                  Where do I buy weapons and armor?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Cubby Blast in Area18 has the widest personal weapon selection
+                  in Stanton, plus armor. Hurston Security Depot in Lorville
+                  sells some of the highest protection-rated armor sets in the
+                  game — though some items require Hurston faction standing
+                  first.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
                   Where do I buy mining equipment?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
@@ -301,6 +369,8 @@ export default function ShopsDirectoryPage() {
             </CTAButton>
           </div>
         </section>
+
+        <PageSources route="/beyond-the-basics/shops-directory" />
       </main>
       <Footer />
     </>

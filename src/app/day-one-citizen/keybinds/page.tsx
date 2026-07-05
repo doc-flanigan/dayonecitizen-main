@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are the most important keybinds in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Six keybinds matter most on day one: F to interact with doors, terminals, and items; F1 to open mobiGlas; I to open your inventory; R in the pilot seat to make your ship flight ready; N to toggle landing gear; and holding B to start quantum travel. Star Citizen has hundreds of bindings, but a new player only needs about fifteen in the first session.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you change keybinds in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Press Escape to open the main menu, select Key Bindings, then click any binding and press the new key combination. Before making extensive changes, use the Export function to save your current bindings as a profile so you can restore the defaults.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does Star Citizen support a joystick or HOTAS?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Star Citizen has native support for joysticks and flight sticks, with a separate section in the keybind menu for joystick axes and buttons. For a first session, keyboard and mouse is the most reliable way to learn the controls.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you turn your ship engines on in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sit in the pilot seat and press R. This is called "flight ready" — it powers the ship and its engines in one step. Press N to raise the landing gear once you are in the air.',
+      },
+    },
+  ],
+}
+
 function KeyRow({ key: k, action }: { key: string; action: string }) {
   return (
     <tr className="border-t border-white/5">
@@ -43,6 +84,10 @@ export default function KeybindsPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Keybinds', url: '/day-one-citizen/keybinds' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -64,6 +109,25 @@ export default function KeybindsPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+
+          <section>
+            <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">
+              <strong className="text-starwhite">Six keybinds matter most on day
+              one.</strong>{' '}
+              Press <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd> to
+              interact, <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F1</kbd> to
+              open <Term name="mobiGlas">mobiGlas</Term>, and{' '}
+              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">I</kbd> to
+              open your inventory. In a ship,{' '}
+              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd> makes
+              you flight ready,{' '}
+              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd> toggles
+              landing gear, and holding{' '}
+              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd> starts{' '}
+              <Term name="Quantum Travel">quantum travel</Term>. The full tables
+              below cover the rest.
+            </p>
+          </section>
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">On-foot controls</h2>
@@ -253,6 +317,53 @@ export default function KeybindsPage() {
                 buttons. Many dedicated sim pilots use a full HOTAS setup. For day one,
                 keyboard and mouse is the most reliable way to learn the controls.
               </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What are the most important keybinds in Star Citizen?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Six on day one: F to interact, F1 for{' '}
+                  <Term name="mobiGlas">mobiGlas</Term>, I for inventory, R for
+                  flight ready, N for landing gear, and B (held) for quantum
+                  travel. Everything else can wait until you need it.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How do you change keybinds?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Press Escape, select Key Bindings, click any binding, and press
+                  the new keys. Export your bindings first so you can restore the
+                  defaults if something goes wrong.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Does Star Citizen support a joystick or HOTAS?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Yes — native support, with a separate keybind section for
+                  joystick axes and buttons. For day one, keyboard and mouse is
+                  the most reliable way to learn.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How do you turn your ship engines on?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Sit in the pilot seat and press R. That one key — flight ready —
+                  powers the ship and its engines. Press N to raise the landing
+                  gear once you are airborne.
+                </p>
+              </div>
             </div>
           </section>
 
