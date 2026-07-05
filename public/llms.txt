@@ -19,6 +19,13 @@
 - [Getting Around](https://dayonecitizen.com/day-one-citizen/getting-around): Moving through stations, cities, and space as a new player.
 - [Your First Flight](https://dayonecitizen.com/day-one-citizen/first-flight): Taking off, flying, and making your first quantum jump.
 - [Beyond the Basics](https://dayonecitizen.com/beyond-the-basics): Next-step guides once you are past your first flight — friends, food and survival, inventory, shops, ship equipment, CCU chains, redeem codes, and quantum travel.
+- [Adding Friends](https://dayonecitizen.com/beyond-the-basics/adding-friends): How to add friends in Star Citizen, join a party, and play together.
+- [Food, Drink & Survival](https://dayonecitizen.com/beyond-the-basics/food-drink-survival): Why your character needs to eat and drink, and how to stay healthy.
+- [Inventory Management](https://dayonecitizen.com/beyond-the-basics/inventory-management): How local inventory, personal inventory, and ship storage actually work.
+- [Party Management](https://dayonecitizen.com/beyond-the-basics/party-management): Creating a party, inviting friends, and staying together in the 'Verse.
+- [In-Game Shops Directory](https://dayonecitizen.com/beyond-the-basics/shops-directory): Where to buy ships, weapons, armor, and components in-game, city by city.
+- [Ship Equipment](https://dayonecitizen.com/beyond-the-basics/ship-equipment): Upgrading your ship's weapons, shields, and components as a new player.
+- [CCU Chains](https://dayonecitizen.com/beyond-the-basics/ccu-chains): What a CCU is, how upgrade chains work, and whether they are worth it.
 - [Redeem Codes & Referral Bonus](https://dayonecitizen.com/beyond-the-basics/redeem-codes): What codes exist in Star Citizen, how referral codes work, and how to start with 50,000 UEC.
 - [How to Quantum Travel](https://dayonecitizen.com/beyond-the-basics/quantum-travel): Spooling the quantum drive, picking a destination, and making your first long-distance jump.
 - [Report a Bug](https://dayonecitizen.com/report-a-bug): How to gather evidence, search the Issue Council, file a report, and follow up.
