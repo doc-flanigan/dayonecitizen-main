@@ -46,3 +46,4 @@
 
 - [freeflyevent.com](https://freeflyevent.com): Star Citizen Free Fly event tracker — when the game is free to try and how to get in.
 - [iheldtheline.com](https://iheldtheline.com): Squadron 42 release-date tracking, developer news, and FAQ.
+- [42ndsquadron.com](https://42ndsquadron.com): Lore archive for the 42nd Squadron — the UEE Navy unit the player joins in Squadron 42.
