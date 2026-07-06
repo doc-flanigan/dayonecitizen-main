@@ -73,9 +73,11 @@ export default function NavBar() {
             )
           })}
           <li className="ml-2">
-            <CTAButton size="sm" trackingLabel="nav-cta">
-              Get 50K UEC
-            </CTAButton>
+            <CTAButton
+              size="sm"
+              trackingLabel="nav-cta"
+              variants={{ a: 'Get 50K UEC', b: 'Free 50K UEC' }}
+            />
           </li>
         </ul>
 
