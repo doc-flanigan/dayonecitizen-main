@@ -10,7 +10,7 @@
  * Never throws / always exits 0 so it can never break a deploy.
  */
 
-const KEY = '1f937507869e28cb04d21eaffbe38b09';
+const KEY = 'bf4f03170f12e3ab3fc1f4b8b00ec994';
 const FALLBACK_HOST = 'https://dayonecitizen.com';
 
 function resolveBase() {
