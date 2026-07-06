@@ -29,7 +29,7 @@ export default function NotFound() {
             >
               Back to base
             </Link>
-            <CTAButton href="/glossary" variant="ghost" showIcon={false}>
+            <CTAButton href="/glossary" variant="ghost" showIcon={false} trackingLabel="404-glossary-cta">
               Open the glossary
             </CTAButton>
           </div>

@@ -1,5 +1,5 @@
 ﻿'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { SITE } from '@/lib/site'
@@ -53,6 +53,42 @@ export default function CTAButton({
 
   const classes = `group inline-flex items-center justify-center gap-2 rounded-xl font-display font-bold tracking-wide transition-all duration-300 ease-spring focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy ${sizeClasses[size]} ${variantClasses[variant]} ${className}`
 
+  const linkRef = useRef<HTMLAnchorElement>(null)
+  const impressionFired = useRef(false)
+
+  useEffect(() => {
+    const el = linkRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (impressionFired.current) return
+        if (!entries.some((entry) => entry.isIntersecting)) return
+        impressionFired.current = true
+        observer.disconnect()
+        const code = href.split('referral=')[1] ?? ''
+        fetch('/api/log', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            label: `impression:${trackingLabel ?? 'unknown'}`,
+            referralCode: code,
+            page: window.location.pathname,
+            site: window.location.hostname,
+          }),
+        }).catch(() => {})
+        ;(window as any).gtag?.('event', 'cta_impression', {
+          cta_label: trackingLabel ?? 'unknown',
+          referral_code: code,
+          page_path: window.location.pathname,
+          site: window.location.hostname,
+        })
+      },
+      { threshold: 0.5 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [href, trackingLabel])
+
   const handleClick = () => {
     const code = href.split('referral=')[1] ?? ''
     fetch('/api/log', {
@@ -76,6 +112,7 @@ export default function CTAButton({
   if (isExternal) {
     return (
       <a
+        ref={linkRef}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
@@ -90,7 +127,7 @@ export default function CTAButton({
   }
 
   return (
-    <Link href={href} className={classes} data-track={trackingLabel} onClick={handleClick}>
+    <Link ref={linkRef} href={href} className={classes} data-track={trackingLabel} onClick={handleClick}>
       <span>{label}</span>
       {showIcon ? <ArrowUpRight size={size === 'lg' ? 20 : 16} aria-hidden className="transition-transform duration-300 ease-spring group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /> : null}
     </Link>
