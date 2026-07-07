@@ -129,6 +129,40 @@
           "https://robertsspaceindustries.com/en/referral-program"
         ]
       }
+    ],
+    "/referral-code": [
+      {
+        "id": "referral-bonus-no-purchase-required",
+        "claim": "Claiming the 50,000 UEC enlistment bonus requires no purchase — creating the free RSI account with a referral code is enough; the bonus stays on the account permanently.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program"
+        ]
+      },
+      {
+        "id": "referral-code-24h-window",
+        "claim": "A referral code must be applied at account signup or within ~24 hours in account settings — it cannot be added after that window.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program"
+        ]
+      },
+      {
+        "id": "referral-enlistment-bonus-50k-uec",
+        "claim": "New RSI accounts created with a referral code receive a 50,000 UEC enlistment bonus.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program"
+        ]
+      },
+      {
+        "id": "referral-recruitment-point-40-usd",
+        "claim": "A referrer earns a Recruitment Point only after their recruit spends at least $40 USD on a Star Citizen game package; this is separate from — and does not reduce — the recruit's 50,000 UEC enlistment bonus.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ"
+        ]
+      }
     ]
   }
 }
