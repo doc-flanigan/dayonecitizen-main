@@ -179,6 +179,14 @@ export default function Home() {
               <p className="mt-4 inline-block rounded-lg border border-gold/30 bg-navy/70 px-4 py-2 font-mono text-sm font-bold tracking-widest text-gold shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
                 {SITE.referralCode}
               </p>
+              <p className="mt-3 text-sm text-muted">
+                <Link
+                  href="/referral-code"
+                  className="text-gold underline-offset-4 hover:underline"
+                >
+                  How to use the referral code &amp; claim your 50,000 UEC
+                </Link>
+              </p>
             </div>
             <div className="flex flex-col gap-3">
               <CTAButton size="lg" trackingLabel="home-bottom-cta">

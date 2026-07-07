@@ -78,6 +78,14 @@ export default function Footer() {
           </h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
+              <Link
+                href="/referral-code"
+                className="text-starwhite/80 hover:text-gold"
+              >
+                Referral Code
+              </Link>
+            </li>
+            <li>
               <a
                 href={SITE.referralUrl}
                 target="_blank"

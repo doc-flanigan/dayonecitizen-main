@@ -253,7 +253,11 @@ export default function WorthBuyingPage() {
               <p>
                 Free Fly events typically run 10–14 days. You get access to a selection of{' '}
                 <Term name="Loaner Ship">loaner ships</Term> and the full game. If you decide to
-                buy during the event, your referral bonus carries over to your paid account.
+                buy during the event, your{' '}
+                <Link href="/referral-code" className="text-gold underline-offset-4 hover:underline">
+                  referral bonus
+                </Link>{' '}
+                carries over to your paid account.
               </p>
               <p>
                 Check <Link href="/free-fly-events" className="text-gold underline-offset-4 hover:underline">
