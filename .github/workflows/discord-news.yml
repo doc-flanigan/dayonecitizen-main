@@ -1,0 +1,60 @@
+name: discord news heartbeat
+
+# Posts plain-English Star Citizen news summaries to the Day One Citizen
+# Discord #announcements channel. Daily at 23:30 UTC (CIG's publishing
+# window is 15:00-22:00 UTC, mode 20:00). See scripts/discord-news.mjs.
+#
+# State (.github/discord-news-state.json) lives on the unprotected
+# `discord-news-state` branch because main requires PRs — the workflow
+# fetches it before running and force-pushes it back after.
+
+on:
+  schedule:
+    - cron: "30 23 * * *"
+  workflow_dispatch:
+    inputs:
+      max_posts:
+        description: "Max items to post this run"
+        required: false
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discord-news
+  cancel-in-progress: false
+
+jobs:
+  post-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Load state from state branch
+        run: |
+          if git fetch origin discord-news-state 2>/dev/null; then
+            git checkout FETCH_HEAD -- .github/discord-news-state.json || echo "state branch has no state file"
+          else
+            echo "no state branch yet — first run seeds the newest items"
+          fi
+
+      - name: Post new comm-links to Discord
+        env:
+          DISCORD_NEWS_WEBHOOK_URL: ${{ secrets.DISCORD_NEWS_WEBHOOK_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_POSTS: ${{ github.event.inputs.max_posts || '3' }}
+        run: node scripts/discord-news.mjs
+
+      - name: Save state to state branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B discord-news-state
+          git add -f .github/discord-news-state.json
+          git commit -m "chore: discord-news state" || { echo "no state change"; exit 0; }
+          git push -f origin discord-news-state
