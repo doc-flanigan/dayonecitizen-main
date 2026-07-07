@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Keybinds for New Players — Day One Citizen',
@@ -382,6 +383,8 @@ export default function KeybindsPage() {
             </Link>
           </nav>
         </div>
+
+        <PageSources route="/day-one-citizen/keybinds" />
       </main>
       <Footer />
     </>

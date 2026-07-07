@@ -33,6 +33,26 @@
         ]
       }
     ],
+    "/day-one-citizen/keybinds": [
+      {
+        "id": "keybinds-core-defaults",
+        "claim": "By default in Star Citizen, F is the interaction key, F1 opens the mobiGlas, N raises and lowers landing gear, and B (in the pilot seat) switches the ship's Master Mode to NAV for quantum travel.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      },
+      {
+        "id": "keybinds-rebindable-profiles",
+        "claim": "Star Citizen's controls are fully rebindable in-game through the Options / Keybindings menu, with native support for joysticks, HOTAS, and other peripherals; custom binding profiles can be exported and imported.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360000134267-Set-up-keybindings-for-your-peripherals",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360000183328-Create-export-and-import-custom-profiles"
+        ]
+      }
+    ],
     "/day-one-citizen/starter-package": [
       {
         "id": "starter-package-from-45-usd",
