@@ -124,6 +124,15 @@ export default function ShopsDirectoryPage() {
               something expensive.
             </p>
 
+            <p className="mb-8">
+              <Link
+                href="/quick-reference"
+                className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-4 py-1.5 text-sm font-semibold text-gold transition-colors hover:bg-gold/10"
+              >
+                In a hurry? Open the one-page cheat sheet &rarr;
+              </Link>
+            </p>
+
             {/* New Babbage */}
             <h2 className="font-display text-2xl font-bold text-gold mt-4 mb-4">
               New Babbage — microTech (The Commons)
