@@ -38,17 +38,18 @@ export default function Footer() {
               className="opacity-90"
             />
             <a
-              href="https://discord.gg/r5mZvDh3"
+              href="https://discord.gg/vHjvDxHQP2"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Join our Discord server"
+              className="group/discord inline-block"
             >
               <Image
                 src="/images/join-us-discord.png"
                 alt="Join us on Discord"
-                width={146}
-                height={40}
-                className="opacity-90 hover:opacity-100 transition-opacity"
+                width={219}
+                height={60}
+                className="transition-transform duration-300 ease-spring group-hover/discord:-translate-y-0.5 group-hover/discord:drop-shadow-[0_4px_16px_rgba(88,101,242,0.45)]"
               />
             </a>
           </div>
