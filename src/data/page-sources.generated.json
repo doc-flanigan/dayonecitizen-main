@@ -130,6 +130,26 @@
         ]
       }
     ],
+    "/quick-reference": [
+      {
+        "id": "keybinds-core-defaults",
+        "claim": "By default in Star Citizen, F is the interaction key, F1 opens the mobiGlas, N raises and lowers landing gear, and B (in the pilot seat) switches the ship's Master Mode to NAV for quantum travel.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      },
+      {
+        "id": "ships-earnable-in-game-auec",
+        "claim": "Ships purchased with real money (pledges) are also earnable in-game using aUEC, per CIG's no-pay-to-win policy — though not every ship currently sold in the pledge store is yet purchasable in an in-game shop.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/16444523494423-Daily-Life-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360011409454-Buying-Ships-with-aUEC"
+        ]
+      }
+    ],
     "/referral-code": [
       {
         "id": "referral-bonus-no-purchase-required",

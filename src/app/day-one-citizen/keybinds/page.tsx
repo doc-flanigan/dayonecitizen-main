@@ -128,6 +128,14 @@ export default function KeybindsPage() {
               <Term name="Quantum Travel">quantum travel</Term>. The full tables
               below cover the rest.
             </p>
+            <p className="mt-4">
+              <Link
+                href="/quick-reference"
+                className="inline-flex items-center gap-2 rounded-full border border-gold/40 px-4 py-1.5 text-sm font-semibold text-gold transition-colors hover:bg-gold/10"
+              >
+                On your phone? Open the one-page cheat sheet &rarr;
+              </Link>
+            </p>
           </section>
 
           <section>

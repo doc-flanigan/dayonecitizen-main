@@ -32,6 +32,7 @@
 - [Free Fly Events](https://dayonecitizen.com/free-fly-events): When Star Citizen is free to try, how to join, and what you can do during a Free Fly.
 - [Star Citizen Referral Code](https://dayonecitizen.com/referral-code): The referral code STAR-GCQJ-N6NC, exactly where to enter it during RSI signup, and how the free 50,000 UEC bonus works — no purchase required.
 - [Glossary](https://dayonecitizen.com/glossary): Plain-English definitions of Star Citizen terms, acronyms, and 'Verse slang.
+- [Quick Reference](https://dayonecitizen.com/quick-reference): Mobile cheat sheet — the essential keybinds (on foot, ship flight, capacitors) and which Stanton shop sells weapons, armor, components, mining gear, and ships.
 - [Tools](https://dayonecitizen.com/tools): Handy references and utilities for new players.
 - [About](https://dayonecitizen.com/about): Why this site exists, the referral disclosure, and what "unofficial fan site" means here.
 

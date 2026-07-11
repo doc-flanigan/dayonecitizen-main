@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Wrench, ExternalLink, Star } from 'lucide-react'
 import Term from '@/components/Term'
 import NavBar from '@/components/NavBar'
@@ -144,6 +145,30 @@ export default function ToolsPage() {
         </header>
 
         <div className="container-wide py-16 space-y-20">
+
+          {/* In-house quick reference */}
+          <section className="rounded-2xl border border-white/10 bg-navyLight/40 p-6 sm:p-8">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+                  From this site
+                </p>
+                <h2 className="heading-display mt-2 text-xl sm:text-2xl">
+                  Quick Reference — keybinds &amp; shops on one page
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm text-muted">
+                  The keybinds that matter and which shop sells what, built for
+                  your phone. No tabs to juggle mid-session.
+                </p>
+              </div>
+              <Link
+                href="/quick-reference"
+                className="rounded-full border border-gold/40 px-5 py-2 text-sm font-semibold text-gold transition-colors hover:bg-gold/10"
+              >
+                Open the cheat sheet &rarr;
+              </Link>
+            </div>
+          </section>
 
           {/* Featured guide: CCU Game */}
           <section>
