@@ -64,6 +64,7 @@ async function summarize(item, fullText) {
     'for someone who has never played the game. Plain English only - no',
     'gaming jargon, no abbreviations without explanation, sentences under',
     '25 words. Do not editorialize; state what was announced.',
+    'Output only the summary sentences - no headings, labels, or preamble.',
     '',
     `Title: ${item.title}`,
     fullText ? `Content: ${fullText}` : '(No article text available - summarize from the title alone, conservatively.)',
@@ -87,7 +88,12 @@ async function summarize(item, fullText) {
       return '';
     }
     const json = await res.json();
-    return (json.content?.[0]?.text || '').trim();
+    // Strip any leading markdown heading (e.g. "# Summary") — Discord renders
+    // it as oversized text at the top of the embed.
+    return (json.content?.[0]?.text || '')
+      .trim()
+      .replace(/^#{1,6}\s*[^\n]*\n+/, '')
+      .trim();
   } catch (e) {
     console.error(`Haiku call failed for "${item.title}": ${e.message}`);
     return '';
