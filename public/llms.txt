@@ -7,6 +7,7 @@
 - [Overview](https://dayonecitizen.com/): Start here — what Star Citizen is, what the 'Verse and UEC mean, and where to begin.
 - [Day One Citizen Guide](https://dayonecitizen.com/day-one-citizen): The core twelve-part walkthrough, from "is it worth buying?" to your first quantum jump.
 - [Is Star Citizen Worth Buying?](https://dayonecitizen.com/day-one-citizen/worth-buying): An honest look at whether the game is right for you before you spend anything.
+- [Is Star Citizen on Steam?](https://dayonecitizen.com/day-one-citizen/is-star-citizen-on-steam): No — it is sold only at robertsspaceindustries.com for Windows PC; consoles, Game Pass, and Steam Deck answered honestly.
 - [System Requirements](https://dayonecitizen.com/day-one-citizen/system-specs): Whether your PC can run Star Citizen, in plain terms.
 - [Buying the Game](https://dayonecitizen.com/day-one-citizen/buying-the-game): How to buy Star Citizen and what a starter package includes.
 - [Pledge vs. Purchase](https://dayonecitizen.com/day-one-citizen/pledge-vs-purchase): Why buying is called "pledging" and what that means for you.

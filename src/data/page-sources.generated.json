@@ -33,6 +33,38 @@
         ]
       }
     ],
+    "/day-one-citizen/buying-the-game": [
+      {
+        "id": "sc-pc-only-rsi-launcher",
+        "claim": "Star Citizen is available only for Windows PC through the RSI Launcher, purchased directly from robertsspaceindustries.com — it is not sold on Steam, Epic, or GOG, and does not run on PlayStation, Xbox, or Game Pass (as of July 2026).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements",
+          "https://robertsspaceindustries.com/download"
+        ]
+      }
+    ],
+    "/day-one-citizen/first-ship": [
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
+      }
+    ],
+    "/day-one-citizen/is-star-citizen-on-steam": [
+      {
+        "id": "sc-pc-only-rsi-launcher",
+        "claim": "Star Citizen is available only for Windows PC through the RSI Launcher, purchased directly from robertsspaceindustries.com — it is not sold on Steam, Epic, or GOG, and does not run on PlayStation, Xbox, or Game Pass (as of July 2026).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements",
+          "https://robertsspaceindustries.com/download"
+        ]
+      }
+    ],
     "/day-one-citizen/keybinds": [
       {
         "id": "keybinds-core-defaults",
@@ -50,6 +82,26 @@
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360000134267-Set-up-keybindings-for-your-peripherals",
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360000183328-Create-export-and-import-custom-profiles"
+        ]
+      }
+    ],
+    "/day-one-citizen/next-wipe": [
+      {
+        "id": "auec-temporary-wipes-possible",
+        "claim": "aUEC (Alpha UEC) is a temporary testing currency that can be changed or reset during alpha; losing aUEC never affects the UEC or pledge-store purchases on an RSI account. Patch notes state per-patch whether aUEC carries over (Long Term Persistence), and CIG says it generally tries to avoid wipes.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
+        ]
+      }
+    ],
+    "/day-one-citizen/ships-real-money": [
+      {
+        "id": "referral-enlistment-bonus-50k-uec",
+        "claim": "New RSI accounts created with a referral code receive a 50,000 UEC enlistment bonus.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program"
         ]
       }
     ],
@@ -74,6 +126,14 @@
       }
     ],
     "/day-one-citizen/worth-buying": [
+      {
+        "id": "auec-temporary-wipes-possible",
+        "claim": "aUEC (Alpha UEC) is a temporary testing currency that can be changed or reset during alpha; losing aUEC never affects the UEC or pledge-store purchases on an RSI account. Patch notes state per-patch whether aUEC carries over (Long Term Persistence), and CIG says it generally tries to avoid wipes.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
+        ]
+      },
       {
         "id": "freefly-event-based-not-always-on",
         "claim": "Free Fly access is event-based, not always-on — CIG runs scheduled windows a few times per year (typically Invictus/DefenseCon in May and IAE in November); outside an event, playing requires a Game Package.",
@@ -151,6 +211,15 @@
       }
     ],
     "/referral-code": [
+      {
+        "id": "no-official-coupon-codes",
+        "claim": "RSI's official referral-program pages document exactly one signup bonus — the referral code's 50,000 UEC; no coupon, promo, or percent-off code system for Star Citizen game packages is documented there.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ"
+        ]
+      },
       {
         "id": "referral-bonus-no-purchase-required",
         "claim": "Claiming the 50,000 UEC enlistment bonus requires no purchase — creating the free RSI account with a referral code is enough; the bonus stays on the account permanently.",

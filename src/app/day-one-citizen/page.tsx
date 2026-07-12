@@ -194,6 +194,23 @@ const SECTIONS: Section[] = [
   },
 ]
 
+// Standalone quick-answer pages — pre-purchase questions that sit alongside
+// the numbered twelve-section walkthrough rather than inside it.
+type QuickAnswer = {
+  id: string
+  question: string
+  answer: string
+}
+
+const QUICK_ANSWERS: QuickAnswer[] = [
+  {
+    id: 'is-star-citizen-on-steam',
+    question: 'Is Star Citizen on Steam?',
+    answer:
+      'No — and not on consoles or Game Pass either. Where the game is actually sold, plus the honest Steam Deck answer.',
+  },
+]
+
 // FAQPage structured data — mirrors the visible "Common questions" section so
 // this page can earn rich results and AI answer-engine citations.
 const faqJsonLd = {
@@ -350,6 +367,30 @@ export default function DayOneCitizenPage() {
                 </Link>
               </section>
             ))}
+
+            <section>
+              <h2 className="heading-display text-2xl sm:text-3xl">Quick answers before you buy</h2>
+              <p className="mt-4 text-base leading-relaxed text-starwhite/85">
+                The questions people search before spending anything, each with
+                a straight answer on its own page.
+              </p>
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                {QUICK_ANSWERS.map((q) => (
+                  <Link
+                    key={q.id}
+                    href={`/day-one-citizen/${q.id}`}
+                    className="card-surface group rounded-lg border border-white/5 p-5 transition-colors hover:border-gold/40"
+                  >
+                    <h3 className="font-semibold text-starwhite group-hover:text-gold">
+                      {q.question}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-starwhite/70">
+                      {q.answer}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
 
             <section>
               <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>

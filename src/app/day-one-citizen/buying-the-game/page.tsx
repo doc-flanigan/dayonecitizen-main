@@ -196,6 +196,13 @@ export default function BuyingTheGamePage() {
                 do not include game access — they are add-ons for players who already own the
                 base game. You need a game package first.
               </p>
+              <p>
+                And do not go looking for it on Steam — the game is not sold there, or on any
+                console. The full platform rundown is in{' '}
+                <Link href="/day-one-citizen/is-star-citizen-on-steam" className="text-gold underline-offset-4 hover:underline">
+                  Is Star Citizen on Steam?
+                </Link>
+              </p>
             </div>
           </section>
 
