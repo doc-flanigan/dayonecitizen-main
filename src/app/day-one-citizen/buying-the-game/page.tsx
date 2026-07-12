@@ -284,10 +284,14 @@ export default function BuyingTheGamePage() {
               <p>
                 If you entered a <Term name="Referral Code">referral code</Term> at sign-up,
                 your 50,000 <Term name="UEC">UEC</Term> bonus is credited to your account. This
-                appears in your wallet in-game as a starting balance. It does not expire — it
-                waits for you in your account until the next major{' '}
-                <Term name="Wipe">wipe</Term>, after which it is reset alongside all other
-                earned funds (but your pledged ships and items are never wiped).
+                appears in your wallet in-game as a starting balance. It does not expire — and
+                because it is account UEC rather than earned{' '}
+                <Term name="aUEC">aUEC</Term>, a{' '}
+                <Term name="Wipe">wipe</Term> never touches it. Your pledged ships and items
+                are never wiped either. The full survives-vs-resets breakdown is in{' '}
+                <Link href="/day-one-citizen/next-wipe" className="text-gold underline-offset-4 hover:underline">
+                  when is the next wipe?
+                </Link>
               </p>
               <p>
                 50,000 <Term name="UEC">UEC</Term> on day one buys you starter armor sets,

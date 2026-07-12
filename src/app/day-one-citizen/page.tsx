@@ -221,6 +221,12 @@ const QUICK_ANSWERS: QuickAnswer[] = [
     answer:
       'The Aurora Mk II from the $45 pack, for most new players. Compared honestly with the Mustang Alpha, plus the upgrade path.',
   },
+  {
+    id: 'next-wipe',
+    question: 'When is the next wipe?',
+    answer:
+      'No wipe is currently announced. What a wipe actually touches — and why everything you paid for always survives.',
+  },
 ]
 
 // FAQPage structured data — mirrors the visible "Common questions" section so

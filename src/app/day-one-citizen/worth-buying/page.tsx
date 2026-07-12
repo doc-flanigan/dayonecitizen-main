@@ -224,7 +224,10 @@ export default function WorthBuyingPage() {
                   <Term name="Wipe">wipes</Term></strong> — periodically,{' '}
                   <Term name="CIG">CIG</Term> resets all player{' '}
                   <Term name="aUEC">aUEC</Term>, inventory, and progress. Your ships and pledges
-                  are never wiped — only earned in-game currency and items.
+                  are never wiped — only earned in-game currency and items.{' '}
+                  <Link href="/day-one-citizen/next-wipe" className="text-gold underline-offset-4 hover:underline">
+                    Exactly what survives a wipe is covered here
+                  </Link>.
                 </li>
                 <li>
                   <strong className="text-starwhite">Bugs</strong> — this is alpha software. You
