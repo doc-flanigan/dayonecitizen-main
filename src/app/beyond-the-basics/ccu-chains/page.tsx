@@ -150,6 +150,11 @@ export default function CCUChainsPage() {
               ships along the way. Instead of buying a $250 ship outright, you might
               buy a $45 starter ship and then five or six CCUs, each covering a small
               price jump. The total cost can be significantly lower than the full price.
+              If you are still choosing that starting hull,{' '}
+              <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">
+                the first-ship guide
+              </Link>{' '}
+              covers the usual entry point.
             </p>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
               The savings come from <strong className="text-starwhite">Warbond CCUs</strong>.

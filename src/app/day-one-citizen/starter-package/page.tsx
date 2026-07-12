@@ -156,7 +156,11 @@ export default function StarterPackagePage() {
                 <Term name="LTI">Lifetime Insurance</Term> — plus a full armor set,
                 an undersuit, and a weapon. That kit lets you play ground missions
                 from your very first session. Learn the game first, then upgrade via
-                a <Term name="CCU">CCU</Term> later for the price difference.
+                a <Term name="CCU">CCU</Term> later for the price difference.{' '}
+                <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">
+                  Why the Aurora is the right first ship
+                </Link>{' '}
+                gets its own honest write-up.
               </p>
               <p>
                 <strong className="text-starwhite">

@@ -215,6 +215,12 @@ const QUICK_ANSWERS: QuickAnswer[] = [
     answer:
       'No. One $45 package is the only required purchase — every other ship can be rented or bought in-game with earned aUEC.',
   },
+  {
+    id: 'first-ship',
+    question: 'What should your first ship be?',
+    answer:
+      'The Aurora Mk II from the $45 pack, for most new players. Compared honestly with the Mustang Alpha, plus the upgrade path.',
+  },
 ]
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
