@@ -40,6 +40,16 @@
 - [Tools](https://dayonecitizen.com/tools): Handy references and utilities for new players.
 - [About](https://dayonecitizen.com/about): Why this site exists, the referral disclosure, and what "unofficial fan site" means here.
 
+## German pages (Deutsch)
+
+- [Star Citizen kaufen](https://dayonecitizen.com/de/star-citizen-kaufen): Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar, keine Keys, kein Steam. Schritt-für-Schritt-Kaufanleitung auf Deutsch.
+- [Lohnt sich Star Citizen 2026?](https://dayonecitizen.com/de/lohnt-sich-star-citizen): Die ehrliche Antwort — ja zum Einstiegspreis für Fans offener Weltraum-Sandboxes, nein für alle, die ein fertiges Spiel erwarten.
+- [Welches Starterpaket?](https://dayonecitizen.com/de/starterpaket): Die Empfehlung für neue Spieler — das Citizen Starter Pack für 45 US-Dollar mit der Aurora Mk II, plus der CCU-Upgrade-Pfad erklärt.
+- [Ist Star Citizen auf Steam?](https://dayonecitizen.com/de/star-citizen-auf-steam): Nein — nicht auf Steam, PS5, Xbox oder im Game Pass. Nur Windows-PC, verkauft direkt über robertsspaceindustries.com.
+- [Musst du Schiffe für Echtgeld kaufen?](https://dayonecitizen.com/de/echtgeld-schiffe): Nein — ein 45-US-Dollar-Paket genügt; alle Schiffe können im Spiel mit aUEC erspielt werden. Mit ehrlicher Pay-to-win-Einordnung.
+- [Gibt es Star Citizen auf Deutsch?](https://dayonecitizen.com/de/auf-deutsch): Offiziell nur Englisch — deutsche Texte gibt es nur über inoffizielle Community-Sprachdateien; auch RSI-Website und Anmeldung sind englisch.
+- [Empfehlungscode (Deutsch)](https://dayonecitizen.com/de/referral-code): Der Empfehlungscode STAR-GCQJ-N6NC bringt 50.000 UEC Startguthaben ohne Kauf — mit deutscher Schritt-für-Schritt-Anleitung durch die englische RSI-Anmeldung.
+
 ## Key facts
 
 - Star Citizen is an always-online sci-fi sandbox built by Cloud Imperium Games; players pilot ships, explore planets, trade, fight, mine, and salvage in one persistent universe.

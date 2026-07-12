@@ -43,6 +43,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/day-one-citizen/first-day', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/getting-around', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/first-flight', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/de/star-citizen-kaufen', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/de/lohnt-sich-star-citizen', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/de/starterpaket', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/de/star-citizen-auf-steam', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/de/echtgeld-schiffe', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/de/auf-deutsch', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/de/referral-code', changeFrequency: 'monthly', priority: 0.85 },
   ] as const
 
   return routes.map((r) => ({

@@ -498,6 +498,14 @@ characters, none repeating:
 | Weekly-update referral card (bonus active) | `Claim the bonus` |
 | Weekly-update bottom | `Try Star Citizen` |
 | Free-fly bottom | `Begin with a boost` |
+| /de/star-citizen-kaufen bottom | `Direkt bei RSI kaufen` |
+| /de/lohnt-sich-star-citizen bottom | `Hol dir den Vorsprung` |
+| /de/starterpaket bottom | `Starte in der Aurora` |
+| /de/star-citizen-auf-steam bottom | `Jetzt kostenlos anmelden` |
+| /de/echtgeld-schiffe bottom | `50.000 UEC sichern` |
+| /de/auf-deutsch bottom | `Starte im Verse` |
+| /de/referral-code hero | `Mit Startguthaben starten` |
+| /de/referral-code bottom | `Sichere dir 50.000 UEC` |
 
 The homepage hero **does not** have a CTA button — info-first,
 referral second. New CTAs added to the site should pick a fresh
