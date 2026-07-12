@@ -13,7 +13,14 @@ export const metadata: Metadata = {
   title: 'Is Star Citizen Worth Buying in 2026? — Day One Citizen',
   description:
     'Honest look at Star Citizen in 2026 — what you get today, what is still unfinished, and how to try the game free before spending anything.',
-  alternates: { canonical: '/day-one-citizen/worth-buying' },
+  alternates: {
+    canonical: '/day-one-citizen/worth-buying',
+    languages: {
+      en: '/day-one-citizen/worth-buying',
+      de: '/de/lohnt-sich-star-citizen',
+      'x-default': '/day-one-citizen/worth-buying',
+    },
+  },
   openGraph: {
     title: 'Is Star Citizen Worth Buying in 2026?',
     description:
@@ -93,6 +100,16 @@ export default function WorthBuyingPage() {
             <p className="mt-4 max-w-2xl text-base text-muted">
               An honest answer — not a sales pitch. What you are actually paying for today,
               what is still missing, and how to try the game for free before spending anything.
+            </p>
+            <p className="mt-3 text-sm">
+              <Link
+                href="/de/lohnt-sich-star-citizen"
+                hrefLang="de"
+                lang="de"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Diese Seite auf Deutsch →
+              </Link>
             </p>
           </div>
         </header>

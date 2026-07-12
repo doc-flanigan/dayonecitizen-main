@@ -29,7 +29,14 @@ const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program
 export const metadata: Metadata = {
   title: 'Star Citizen Referral Code 2026 — STAR-GCQJ-N6NC for 50,000 UEC Free',
   description: `Use Star Citizen referral code STAR-GCQJ-N6NC for a free 50,000 UEC bonus — no purchase needed. Verified working ${VERIFIED_MONTH}, re-checked monthly.`,
-  alternates: { canonical: '/referral-code' },
+  alternates: {
+    canonical: '/referral-code',
+    languages: {
+      en: '/referral-code',
+      de: '/de/referral-code',
+      'x-default': '/referral-code',
+    },
+  },
   openGraph: {
     title: 'Star Citizen Referral Code — STAR-GCQJ-N6NC (50,000 UEC Free)',
     description:
@@ -169,6 +176,16 @@ export default function ReferralCodePage() {
               filled in. This is a referral link. When you enlist with this code
               you get the full 50,000 UEC bonus; the referrer may earn a small
               reward too. Your bonus is never reduced.
+            </p>
+            <p className="mt-3 text-sm">
+              <Link
+                href="/de/referral-code"
+                hrefLang="de"
+                lang="de"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Diese Seite auf Deutsch →
+              </Link>
             </p>
           </div>
         </header>

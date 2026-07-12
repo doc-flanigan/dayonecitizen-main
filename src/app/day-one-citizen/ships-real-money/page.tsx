@@ -14,7 +14,14 @@ export const metadata: Metadata = {
   title: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
   description:
     'No — one $45 game package is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC. Here is how that works.',
-  alternates: { canonical: '/day-one-citizen/ships-real-money' },
+  alternates: {
+    canonical: '/day-one-citizen/ships-real-money',
+    languages: {
+      en: '/day-one-citizen/ships-real-money',
+      de: '/de/echtgeld-schiffe',
+      'x-default': '/day-one-citizen/ships-real-money',
+    },
+  },
   openGraph: {
     title: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
     description:
@@ -117,6 +124,16 @@ export default function ShipsRealMoneyPage() {
                 {SITE.author}
               </Link>
               , a veteran Star Citizen backer.
+            </p>
+            <p className="mt-3 text-sm">
+              <Link
+                href="/de/echtgeld-schiffe"
+                hrefLang="de"
+                lang="de"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Diese Seite auf Deutsch →
+              </Link>
             </p>
           </div>
         </header>

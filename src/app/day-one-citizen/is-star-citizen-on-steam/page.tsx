@@ -14,7 +14,14 @@ export const metadata: Metadata = {
   title: 'Is Star Citizen on Steam? No — Here Is Where to Get It',
   description:
     'Star Citizen is not on Steam, PS5, Xbox, or Game Pass. It is sold only at robertsspaceindustries.com for Windows PC. Here is the two-minute buying path.',
-  alternates: { canonical: '/day-one-citizen/is-star-citizen-on-steam' },
+  alternates: {
+    canonical: '/day-one-citizen/is-star-citizen-on-steam',
+    languages: {
+      en: '/day-one-citizen/is-star-citizen-on-steam',
+      de: '/de/star-citizen-auf-steam',
+      'x-default': '/day-one-citizen/is-star-citizen-on-steam',
+    },
+  },
   openGraph: {
     title: 'Is Star Citizen on Steam?',
     description:
@@ -125,6 +132,16 @@ export default function IsStarCitizenOnSteamPage() {
                 {SITE.author}
               </Link>
               , a veteran Star Citizen backer.
+            </p>
+            <p className="mt-3 text-sm">
+              <Link
+                href="/de/star-citizen-auf-steam"
+                hrefLang="de"
+                lang="de"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Diese Seite auf Deutsch →
+              </Link>
             </p>
           </div>
         </header>

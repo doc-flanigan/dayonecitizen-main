@@ -13,7 +13,14 @@ export const metadata: Metadata = {
   title: 'How to Buy Star Citizen — Day One Citizen',
   description:
     'Create your RSI account, apply a referral code for 50,000 free UEC, choose a starter package, and download the launcher. Every step of buying Star Citizen.',
-  alternates: { canonical: '/day-one-citizen/buying-the-game' },
+  alternates: {
+    canonical: '/day-one-citizen/buying-the-game',
+    languages: {
+      en: '/day-one-citizen/buying-the-game',
+      de: '/de/star-citizen-kaufen',
+      'x-default': '/day-one-citizen/buying-the-game',
+    },
+  },
   openGraph: {
     title: 'How to Buy Star Citizen — Step by Step',
     description:
@@ -103,6 +110,16 @@ export default function BuyingTheGamePage() {
               <Term name="RSI">robertsspaceindustries.com</Term> — not Steam, not Epic, not
               anywhere else. Here is the exact process, including the one step most new players
               miss that costs them 50,000 free credits.
+            </p>
+            <p className="mt-3 text-sm">
+              <Link
+                href="/de/star-citizen-kaufen"
+                hrefLang="de"
+                lang="de"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Diese Seite auf Deutsch →
+              </Link>
             </p>
           </div>
         </header>

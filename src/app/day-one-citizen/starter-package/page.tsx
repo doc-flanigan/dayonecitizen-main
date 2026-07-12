@@ -13,7 +13,14 @@ export const metadata: Metadata = {
   title: 'Star Citizen Starter Packages 2026: All 8 Options Compared — Day One Citizen',
   description:
     'Which Star Citizen starter package should you buy? All eight packages compared — $45 Citizen Starter to $125 Privateer. Includes Warbond prices.',
-  alternates: { canonical: '/day-one-citizen/starter-package' },
+  alternates: {
+    canonical: '/day-one-citizen/starter-package',
+    languages: {
+      en: '/day-one-citizen/starter-package',
+      de: '/de/starterpaket',
+      'x-default': '/day-one-citizen/starter-package',
+    },
+  },
   openGraph: {
     title: 'Star Citizen Starter Packages 2026: All 8 Options Compared',
     description:
@@ -95,6 +102,16 @@ export default function StarterPackagePage() {
               <Term name="RSI">RSI</Term> store. Each comes with a different
               ship built for a different career. Here is the full comparison,
               plus a clear recommendation for most new players.
+            </p>
+            <p className="mt-3 text-sm">
+              <Link
+                href="/de/starterpaket"
+                hrefLang="de"
+                lang="de"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Diese Seite auf Deutsch →
+              </Link>
             </p>
           </div>
         </header>
