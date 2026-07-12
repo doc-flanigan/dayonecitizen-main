@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/report-a-bug/filing-a-report', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/report-a-bug/after-you-file', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/is-star-citizen-on-steam', changeFrequency: 'monthly', priority: 0.85 },
+    { url: '/day-one-citizen/ships-real-money', changeFrequency: 'monthly', priority: 0.85 },
     { url: '/day-one-citizen/worth-buying', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/system-specs', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/buying-the-game', changeFrequency: 'monthly', priority: 0.8 },

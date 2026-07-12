@@ -484,7 +484,10 @@ export default function StarterPackagePage() {
                 <li>
                   Ships can be bought in-game with earned{' '}
                   <Term name="aUEC">aUEC</Term>. The in-game ship market gives access
-                  to most working ships without spending more real money.
+                  to most working ships without spending more real money —{' '}
+                  <Link href="/day-one-citizen/ships-real-money" className="text-gold underline-offset-4 hover:underline">
+                    how earning ships works is covered here
+                  </Link>.
                 </li>
                 <li>
                   Standalone ship purchases do not include game access. Do not

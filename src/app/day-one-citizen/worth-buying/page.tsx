@@ -150,6 +150,13 @@ export default function WorthBuyingPage() {
                 funds development. You receive early access as a thank-you, not a finished game as
                 a product.
               </p>
+              <p>
+                That one package is also the only required spend.{' '}
+                <Link href="/day-one-citizen/ships-real-money" className="text-gold underline-offset-4 hover:underline">
+                  Every other ship can be earned in-game
+                </Link>{' '}
+                — the expensive store listings are optional pledges, not a paywall.
+              </p>
             </div>
           </section>
 

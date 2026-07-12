@@ -209,6 +209,12 @@ const QUICK_ANSWERS: QuickAnswer[] = [
     answer:
       'No — and not on consoles or Game Pass either. Where the game is actually sold, plus the honest Steam Deck answer.',
   },
+  {
+    id: 'ships-real-money',
+    question: 'Do you have to buy ships with real money?',
+    answer:
+      'No. One $45 package is the only required purchase — every other ship can be rented or bought in-game with earned aUEC.',
+  },
 ]
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
