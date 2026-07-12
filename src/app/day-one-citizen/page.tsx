@@ -194,6 +194,39 @@ const SECTIONS: Section[] = [
   },
 ]
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does the Day One Citizen guide cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Twelve short sections covering Star Citizen in plain English, in order — from “should I even buy this?” through your first take-off. It is written for someone who has never opened the launcher, with no jargon and no assumptions about what you already know.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What order should I read the sections in?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The twelve sections are numbered and ordered, starting with whether Star Citizen is worth buying and ending with your first flight. Read them end to end, or skip ahead to the section you need via the table of contents.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does the guide take to read?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'About thirty minutes end to end. Each section is short, and the table of contents lets you jump straight to the step you are on.',
+      },
+    },
+  ],
+}
+
 export default function DayOneCitizenPage() {
   return (
     <>
@@ -203,6 +236,10 @@ export default function DayOneCitizenPage() {
           { name: 'Home', url: '/' },
           { name: 'Day One Citizen', url: '/day-one-citizen' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="relative border-b border-white/5 bg-starfield pb-16 pt-32 sm:pt-40">
           <div
             className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
@@ -313,6 +350,46 @@ export default function DayOneCitizenPage() {
                 </Link>
               </section>
             ))}
+
+            <section>
+              <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+              <div className="mt-6 space-y-6">
+                <div className="card-surface rounded-lg p-5 border border-white/5">
+                  <h3 className="font-semibold text-starwhite mb-2">
+                    What does the Day One Citizen guide cover?
+                  </h3>
+                  <p className="text-starwhite/70 text-sm leading-relaxed">
+                    Twelve short sections covering Star Citizen in plain English,
+                    in order — from &laquo;should I even buy this?&raquo; through
+                    your first take-off. It is written for someone who has never
+                    opened the launcher, with no jargon and no assumptions about
+                    what you already know.
+                  </p>
+                </div>
+
+                <div className="card-surface rounded-lg p-5 border border-white/5">
+                  <h3 className="font-semibold text-starwhite mb-2">
+                    What order should I read the sections in?
+                  </h3>
+                  <p className="text-starwhite/70 text-sm leading-relaxed">
+                    The twelve sections are numbered and ordered, starting with
+                    whether Star Citizen is worth buying and ending with your first
+                    flight. Read them end to end, or skip ahead to the section you
+                    need via the table of contents.
+                  </p>
+                </div>
+
+                <div className="card-surface rounded-lg p-5 border border-white/5">
+                  <h3 className="font-semibold text-starwhite mb-2">
+                    How long does the guide take to read?
+                  </h3>
+                  <p className="text-starwhite/70 text-sm leading-relaxed">
+                    About thirty minutes end to end. Each section is short, and the
+                    table of contents lets you jump straight to the step you are on.
+                  </p>
+                </div>
+              </div>
+            </section>
 
             <section className="card-surface relative overflow-hidden p-8">
               <div className="glow-horizon absolute inset-x-0 top-0 h-24" aria-hidden />

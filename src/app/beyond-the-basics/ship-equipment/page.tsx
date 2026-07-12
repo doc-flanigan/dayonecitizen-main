@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are ship components in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Every ship in Star Citizen is made up of interchangeable parts. The stock components that come with a ship are fine to start with, but swapping them out lets you tune the ship for combat, stealth, cargo hauling, or long-range exploration.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the best component setup for combat?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For combat: Grade A power plant (runs everything at full power), military shields (maximum hit points), and a performance cooler. Energy weapons scale well with a Grade A plant — they never run out of ammo and deal high shield damage. Test your full loadout in Arena Commander before committing to it in the Persistent Universe.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do component grades affect whether enemies can detect me?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Grade A power plants have the highest EM signal, making you easier to spot on radar. Grade C components minimize your EM and IR output. Running at full throttle or firing weapons continuously spikes your IR signature regardless of component grade — for true stealth you also need to manage your throttle and fire rate.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Should I use ballistic or energy weapons?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Energy weapons are better at stripping shields quickly. Ballistic weapons bypass shields partially and are better if you need to deal hull damage. Many experienced pilots mix the two — energy weapons for shields, ballistics for the hull once shields are down. Ammo management for ballistics is an extra consideration on longer missions.',
+      },
+    },
+  ],
+}
+
 export default function ShipEquipmentPage() {
   return (
     <>
@@ -30,6 +71,10 @@ export default function ShipEquipmentPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Ship Equipment', url: '/beyond-the-basics/ship-equipment' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

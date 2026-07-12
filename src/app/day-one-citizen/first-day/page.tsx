@@ -21,6 +21,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What should you do first on day one in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Wake up in your hab, open your mobiGlas with F1, and check your wallet. Then get to the spaceport, claim your starter ship at an ASOP terminal, and board it in your assigned hangar.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you claim your ship in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'At the spaceport, find an ASOP terminal — a vertical kiosk with a ship icon near the hangar bay entrance. Hold F to interact, select your starter ship, and choose Claim. The terminal assigns you a hangar number.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is a good first mission for a new player?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A delivery mission. Open the Contracts Manager in your mobiGlas and pick a delivery that collects from and delivers to locations on the same planet or moon. A waypoint appears on your HUD pointing toward the pickup location.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What should you ignore on your first day?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Put off mining, salvage, combat bounties, pirate zones like GrimHEX, and joining an Org. Mining and salvage need ships you do not have yet, and combat bounties will punish a new pilot.',
+      },
+    },
+  ],
+}
+
 export default function FirstDayPage() {
   return (
     <>
@@ -31,6 +72,10 @@ export default function FirstDayPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Your First Day', url: '/day-one-citizen/first-day' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -381,6 +426,61 @@ export default function FirstDayPage() {
                   bearings first.
                 </li>
               </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What should you do first on day one?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Wake up in your <Term name="Hab">hab</Term>, open your{' '}
+                  <Term name="mobiGlas">mobiGlas</Term> with F1, and check your
+                  wallet. Then get to the spaceport, claim your starter ship at an{' '}
+                  <Term name="ASOP">ASOP terminal</Term>, and board it in your
+                  assigned hangar.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How do you claim your ship?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  At the spaceport, find an ASOP terminal — a vertical kiosk with a
+                  ship icon near the hangar bay entrance. Hold F to interact, select
+                  your starter ship, and choose Claim. The terminal assigns you a
+                  hangar number.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What is a good first mission for a new player?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  A delivery mission. Open the Contracts Manager in your mobiGlas
+                  and pick a delivery that collects from and delivers to locations
+                  on the same planet or moon. A waypoint appears on your HUD
+                  pointing toward the pickup location.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What should you ignore on your first day?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Put off <Term name="Mining">mining</Term>,{' '}
+                  <Term name="Salvage">salvage</Term>, combat bounties, pirate zones
+                  like <Term name="GrimHEX">GrimHEX</Term>, and joining an{' '}
+                  <Term name="Org">Org</Term>. Mining and salvage need ships you do
+                  not have yet, and combat bounties will punish a new pilot.
+                </p>
+              </div>
             </div>
           </section>
 

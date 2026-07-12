@@ -20,6 +20,55 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is a CCU in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A Cross-Chassis Upgrade (CCU) is a token sold through the RSI pledge store that transforms one ship into another. You pay only the price difference between the two ships — not the full cost of the target ship.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does a CCU chain preserve LTI?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Lifetime Insurance on the base ship carries through every step in the chain to the final target ship. This is one of the main reasons backers start a chain with an LTI base ship.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between a Warbond CCU and a standard CCU?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Warbond CCUs require new real money — you cannot use store credit. In return, they are sold at a significant discount (sometimes fifty to ninety percent off the price difference). Standard CCUs can be bought with store credit but have no discount. During events, Warbond CCUs sell out quickly — buy them fast and stockpile for future chains.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I use store credit for a CCU chain?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, for standard CCUs and your base ship purchase. Store credit cannot be used for Warbond CCUs — that is the trade-off for the discount.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are there any ships I cannot CCU to?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. A small number of rare capital and limited ships — including the Drake Kraken, the Idris, and the Pioneer — cannot be obtained via a CCU. They are only available during dedicated sales or with direct store credit purchases.',
+      },
+    },
+  ],
+}
+
 export default function CCUChainsPage() {
   return (
     <>
@@ -30,6 +79,10 @@ export default function CCUChainsPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'CCU Chains', url: '/beyond-the-basics/ccu-chains' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

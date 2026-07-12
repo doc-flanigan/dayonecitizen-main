@@ -27,6 +27,39 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Start Here" question cards so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'An always-online sci-fi sandbox built by Cloud Imperium Games. Pilot ships, explore planets, trade, fight, mine, and salvage — all in one persistent universe. Star Citizen is the highest-funded game in history, having raised over $1 billion through crowdfunding.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the ’Verse?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Slang for the Star Citizen universe — the lore, the in-game world, and the community combined. When someone says “see you in the ’Verse,” they mean it.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is UEC?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'United Earth Credits — the in-game money in Star Citizen. New accounts that use a referral code start with 50,000 UEC free, enough to buy gear and your first weapons.',
+      },
+    },
+  ],
+}
+
 type StartHereCard = {
   icon: typeof Rocket
   title: string
@@ -94,6 +127,10 @@ export default function Home() {
     <>
       <NavBar />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <HeroCarousel
           title={
             <>

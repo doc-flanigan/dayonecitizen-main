@@ -21,6 +21,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do you take off in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Press 1 to power on the ship and wait for the HUD to load. Press N to raise the landing gear, tap Space to lift off gently, then exit the hangar slowly — no more than 20–30 m/s. Clipping the door frame at speed destroys ships.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does quantum travel work?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Open the StarMap in your mobiGlas and select a destination. Point your nose at the waypoint, hold R to spool the quantum drive, then hold B to jump. The jump ends automatically when you reach the destination.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why will my quantum drive not spool?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Check three things: do you have a destination selected, are you in a quantum-safe area (not inside a hangar or gravity well), and is your quantum drive online in the power panel?',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you land a ship in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Find a landing pad, slow down well in advance, and approach at under 50 m/s. Press N to lower the landing gear before touchdown, descend slowly with Left Ctrl, and aim for the center of the pad.',
+      },
+    },
+  ],
+}
+
 export default function FirstFlightPage() {
   return (
     <>
@@ -31,6 +72,10 @@ export default function FirstFlightPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'First Flight', url: '/day-one-citizen/first-flight' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -337,6 +382,58 @@ export default function FirstFlightPage() {
                 </Link>
                 . Our step-by-step guide shows you how.
               </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How do you take off in Star Citizen?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Press 1 to power on the ship and wait for the HUD to load. Press N
+                  to raise the landing gear, tap Space to lift off gently, then exit
+                  the hangar slowly — no more than 20&ndash;30 m/s. Clipping the
+                  door frame at speed destroys ships.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How does quantum travel work?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Open the StarMap in your <Term name="mobiGlas">mobiGlas</Term> and
+                  select a destination. Point your nose at the waypoint, hold R to
+                  spool the quantum drive, then hold B to jump. The jump ends
+                  automatically when you reach the destination.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Why will my quantum drive not spool?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Check three things: do you have a destination selected, are you in
+                  a quantum-safe area (not inside a hangar or gravity well), and is
+                  your quantum drive online in the power panel?
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How do you land a ship?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Find a <Term name="Landing Pad">landing pad</Term>, slow down well
+                  in advance, and approach at under 50 m/s. Press N to lower the
+                  landing gear before touchdown, descend slowly with Left Ctrl, and
+                  aim for the center of the pad.
+                </p>
+              </div>
             </div>
           </section>
 

@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do you get from your hab to your ship in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Take the elevator down from your hab tower, follow city signage or transit to the spaceport, and claim your ship at an ASOP terminal near the hangar bays. Lorville uses a transit rail, Area18 is walkable, New Babbage connects through the Welcome Hub, and Orison uses inter-platform shuttles.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What should you do if you get lost in a city?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Hold F on any kiosk, map board, or information terminal to open the Inner Thought menu. The Set Destination option places a navigation marker on your HUD. If you are completely lost, press Escape and use the Respawn option to reset to your hab.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Which Star Citizen city is easiest to navigate?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Area18 is compact and the easiest city to navigate on foot — the walk from the hab district is shorter than in any other city. Lorville is the largest and most complex, using an automated transit rail between districts.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you need to holster weapons in cities?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Lorville has strict weapon restrictions in residential and commercial areas, and most spaceports have a security checkpoint before the hangar area. Walk through at normal speed with weapons holstered.',
+      },
+    },
+  ],
+}
+
 export default function GettingAroundPage() {
   return (
     <>
@@ -30,6 +71,10 @@ export default function GettingAroundPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Getting Around', url: '/day-one-citizen/getting-around' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -238,6 +283,64 @@ export default function GettingAroundPage() {
                   (your <Term name="Hab">hab</Term>). Start the route again from there.
                 </li>
               </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How do you get from your hab to your ship?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Take the elevator down from your <Term name="Hab">hab</Term>{' '}
+                  tower, follow city signage or transit to the spaceport, and claim
+                  your ship at an <Term name="ASOP">ASOP terminal</Term> near the
+                  hangar bays. <Term name="Lorville">Lorville</Term> uses a transit
+                  rail, <Term name="Area18">Area18</Term> is walkable,{' '}
+                  <Term name="New Babbage">New Babbage</Term> connects through the{' '}
+                  <Term name="Welcome Hub">Welcome Hub</Term>, and{' '}
+                  <Term name="Orison">Orison</Term> uses inter-platform shuttles.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What should you do if you get lost in a city?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Hold F on any kiosk, map board, or information terminal to open
+                  the <Term name="Inner Thought">Inner Thought</Term> menu. The Set
+                  Destination option places a navigation marker on your HUD. If you
+                  are completely lost, press Escape and use the Respawn option to
+                  reset to your hab.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Which city is easiest to navigate?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Area18 is compact and the easiest city to navigate on foot — the
+                  walk from the hab district is shorter than in any other city.
+                  Lorville is the largest and most complex, using an automated
+                  transit rail between districts.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Do you need to holster weapons in cities?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Yes. Lorville has strict weapon restrictions in residential and
+                  commercial areas, and most spaceports have a security checkpoint
+                  before the hangar area. Walk through at normal speed with weapons
+                  holstered.
+                </p>
+              </div>
             </div>
           </section>
 

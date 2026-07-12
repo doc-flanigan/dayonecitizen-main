@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What happens when you launch Star Citizen for the first time?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You go through character creation first — your pilot name and your appearance. You then spawn in a hab, a small personal apartment in one of Stanton’s four major cities: Lorville, Area18, New Babbage, or Orison.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does character appearance affect gameplay in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Almost nothing in the appearance menu affects gameplay. Hair, face structure, and skin tone are cosmetic only. You can adjust your appearance later at in-game medical facilities and barber shops. Pick something and move on.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you change your pilot name later?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Your in-game pilot name defaults to your RSI account handle. Names can be changed through RSI account management, but it is not instant. Treat the name as persistent and choose something you are happy with.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you log out of Star Citizen safely?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Find a bed — in your hab, on your ship, or at any rest location. Hold F on the bed and select Bed Log. A bedlog preserves your character’s location and inventory state. A standard logout from the Escape menu returns you to your spawn point instead.',
+      },
+    },
+  ],
+}
+
 export default function FirstLaunchPage() {
   return (
     <>
@@ -30,6 +71,10 @@ export default function FirstLaunchPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'First Launch', url: '/day-one-citizen/first-launch' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -227,6 +272,60 @@ export default function FirstLaunchPage() {
                 standard logout that returns your character to their spawn point. Bedlogging
                 preserves location; standard logout does not.
               </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What happens when you launch Star Citizen for the first time?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  You go through character creation first — your pilot name and your
+                  appearance. You then spawn in a <Term name="Hab">hab</Term>, a small
+                  personal apartment in one of{' '}
+                  <Term name="Stanton">Stanton&rsquo;s</Term> four major cities.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Does character appearance affect gameplay?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Almost nothing in the appearance menu affects gameplay. Hair, face
+                  structure, and skin tone are cosmetic only. You can adjust your
+                  appearance later at in-game medical facilities and barber shops.
+                  Pick something and move on.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Can you change your pilot name later?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Your in-game pilot name defaults to your{' '}
+                  <Term name="RSI">RSI</Term> account handle. Names can be changed
+                  through RSI account management, but it is not instant. Treat the
+                  name as persistent and choose something you are happy with.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  How do you log out safely?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Find a bed — in your hab, on your ship, or at any rest location.
+                  Hold F on the bed and select Bed Log. A{' '}
+                  <Term name="Bedlogging">bedlog</Term> preserves your
+                  character&rsquo;s location and inventory state. A standard logout
+                  from the Escape menu returns you to your spawn point instead.
+                </p>
+              </div>
             </div>
           </section>
 
