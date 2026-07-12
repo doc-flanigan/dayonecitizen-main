@@ -32,7 +32,6 @@ export default function CopyCode({
           site: window.location.hostname,
         }),
       }).catch(() => {})
-      ;(window as any).gtag?.('event', 'referral_code_copy', { referral_code: code })
     } catch {
       /* clipboard unavailable (older browser / no permission) — the code is
          still visible and selectable, so this degrades gracefully */

@@ -21,6 +21,55 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are the best Star Citizen tools?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Five community tools cover most needs: StarJump Fleetviewer (hangar.link) for comparing ship sizes in 3D, Erkul (erkul.games) for ship loadouts and damage-per-second math, SC Trade Tools for trade route planning, UEX Corp for live commodity prices, and CCU Game for finding the cheapest ship upgrade path. All are free, fan-made, and run in the browser.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is Erkul in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Erkul (erkul.games) is a free ship loadout calculator. Pick any ship, configure its weapons and components, and it shows damage per second, shield regeneration, power draw, and quantum range — before you spend in-game currency on parts.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the best Star Citizen fleet viewer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'StarJump Fleetviewer (hangar.link) is the community favourite. It renders every flyable and concept ship in high-resolution 3D so you can build a fleet, compare ship sizes side by side, and share the result with other players.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are Star Citizen fan tools free to use?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Every tool listed here — fleet viewers, trade planners, mining calculators, item finders — is free and built by the community. None are affiliated with Cloud Imperium Games, and accuracy depends on their volunteer maintainers keeping up with game updates.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What tool finds the cheapest ship upgrade path?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'CCU Game (ccugame.app). A Cross-Chassis Upgrade lets you move from one ship to a pricier one by paying only the difference. CCU Game chains those upgrades together automatically and shows the lowest-cost route to the ship you want, including discounted steps from past sales.',
+      },
+    },
+  ],
+}
+
 type Tool = {
   name: string
   description: string
@@ -126,6 +175,10 @@ export default function ToolsPage() {
           { name: 'Home', url: '/' },
           { name: 'Tools', url: '/tools' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/30 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
@@ -145,6 +198,19 @@ export default function ToolsPage() {
         </header>
 
         <div className="container-wide py-16 space-y-20">
+
+          <section>
+            <p className="max-w-3xl text-base leading-relaxed text-starwhite/85">
+              <strong className="text-starwhite">Five tools cover most of what a
+              new player needs.</strong>{' '}
+              StarJump Fleetviewer compares ship sizes in 3D. Erkul calculates
+              ship loadouts and damage per second. SC Trade Tools plans trade
+              routes. UEX Corp tracks live commodity prices. CCU Game finds the
+              cheapest upgrade path between ships using{' '}
+              <Term name="CCU">CCUs</Term>. Every tool on this page is free,
+              browser-based, and built by the community.
+            </p>
+          </section>
 
           {/* In-house quick reference */}
           <section className="rounded-2xl border border-white/10 bg-navyLight/40 p-6 sm:p-8">
@@ -342,6 +408,55 @@ export default function ToolsPage() {
                 Open StarJump Fleetviewer →
               </p>
             </a>
+          </section>
+
+          {/* Common questions */}
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What are the best Star Citizen tools?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Five cover most needs: StarJump Fleetviewer for ship sizes,
+                  Erkul for loadouts, SC Trade Tools for trade routes, UEX Corp
+                  for commodity prices, and CCU Game for upgrade paths. All
+                  free, all browser-based.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What is Erkul?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  A free ship loadout calculator at erkul.games. Pick a ship,
+                  configure weapons and components, and see damage per second,
+                  shield regeneration, power draw, and quantum range before you
+                  spend in-game currency on parts.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What is the best fleet viewer?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  StarJump Fleetviewer at hangar.link. It renders every flyable
+                  and concept ship in 3D so you can compare sizes side by side
+                  and share your fleet with other players.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Are these tools free?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Yes — every tool here is free and community-built. None are
+                  affiliated with Cloud Imperium Games, and accuracy depends on
+                  volunteer maintainers keeping pace with game updates.
+                </p>
+              </div>
+            </div>
           </section>
 
           {/* Referral CTA */}

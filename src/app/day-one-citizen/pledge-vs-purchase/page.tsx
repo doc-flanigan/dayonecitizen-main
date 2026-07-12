@@ -20,6 +20,55 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does "pledge" mean in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Star Citizen began as a 2012 Kickstarter campaign, and the crowdfunding model never stopped. "Pledge" means you are financially supporting ongoing development rather than buying a finished product. Functionally it works like a purchase — money leaves your card, a ship and game access arrive in your account — but you are a backer, not a customer of a completed game.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you actually own the ships you pledge for?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You permanently keep alpha access and the ships in your account — pledged ships survive even full character wipes. But Star Citizen is a live service, so Cloud Imperium Games can rebalance and adjust ship stats as development continues. You own the entitlement, not a frozen version of the ship.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is LTI (Lifetime Insurance) in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'LTI is ship insurance that never expires. Standard insurance lets you recover a destroyed ship after a waiting period; LTI removes any expiry on that coverage. For a small starter ship the practical difference is minimal — LTI matters more on expensive capital ships where insurance costs are higher.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does melting a ship mean?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Melting exchanges a pledged ship or package for RSI store credit equal to its value. The credit never expires and can be spent on anything in the RSI store, but it does not convert back to real money.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is a concept ship?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A concept ship is sold before it exists in the game — the sale funds development of the design. Buyers get a loaner ship of a similar role until the concept becomes flight ready, which can take months or years. New players should stick to flight-ready ships.',
+      },
+    },
+  ],
+}
+
 export default function PledgeVsPurchasePage() {
   return (
     <>
@@ -30,6 +79,10 @@ export default function PledgeVsPurchasePage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'Pledge vs. Purchase', url: '/day-one-citizen/pledge-vs-purchase' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -197,6 +250,52 @@ export default function PledgeVsPurchasePage() {
                 ships are for experienced players who want to fund something they believe in and
                 can wait months or years for delivery.
               </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What does &ldquo;pledge&rdquo; mean?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  You are funding ongoing development, not buying a finished
+                  game. It works like a purchase — money out, ship and access
+                  in — but the word reflects the crowdfunding model that has
+                  run since 2012.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Do you actually own your ships?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Pledged ships stay in your account permanently and survive
+                  full character <Term name="Wipe">wipes</Term>. But the game
+                  is a live service — <Term name="CIG">CIG</Term> can adjust
+                  ship stats as development continues.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What is LTI, in one sentence?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Insurance that never expires — a minor perk on a small
+                  starter ship, a meaningful one on expensive capital ships.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What does melting do?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Turns a pledge back into RSI store credit at full value. The
+                  credit never expires but never converts back to real money.
+                </p>
+              </div>
             </div>
           </section>
 

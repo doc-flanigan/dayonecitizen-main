@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from 'next'
 import { Bricolage_Grotesque, Instrument_Sans, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SITE } from '@/lib/site'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
-import CookieBanner from '@/components/CookieBanner'
 import './globals.css'
 
 // Typography system — "flight manual for an adventure":
@@ -149,8 +147,6 @@ export default function RootLayout({
     >
       <body className="bg-navy text-starwhite antialiased">
         {children}
-        <CookieBanner />
-        <GoogleAnalytics />
         <Analytics />
         <script
           type="application/ld+json"

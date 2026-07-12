@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the difference between LIVE, PTU, and EPTU in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'LIVE is the stable, publicly released version where most players are — the one new players should use. PTU (Public Test Universe) runs an upcoming patch before release: progress is copied from LIVE but does not carry back, and bugs are expected. EPTU is the earliest, least stable test channel, sometimes limited to invited testers, and safe to ignore as a new player.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does playing on the PTU affect your LIVE progress?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Your characters and progress are copied from LIVE to PTU at the start of a test wave, but nothing you do on PTU carries back to LIVE. PTU also installs as a separate copy of the game, so it never overwrites your LIVE installation.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you verify game files in the RSI Launcher?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Open the RSI Launcher, select the channel you play on (usually LIVE), and click VERIFY. The check takes fifteen to thirty minutes and automatically re-downloads any corrupted or missing files. Verify first whenever the game crashes repeatedly or breaks after an update.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does switching to PTU download the whole game again?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes — each channel is a full separate installation of roughly 100 GB. Most players keep only LIVE installed and download PTU temporarily during major test phases.',
+      },
+    },
+  ],
+}
+
 export default function RsiLauncherPage() {
   return (
     <>
@@ -30,6 +71,10 @@ export default function RsiLauncherPage() {
           { name: 'Day One Citizen', url: '/day-one-citizen' },
           { name: 'RSI Launcher', url: '/day-one-citizen/rsi-launcher' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -215,6 +260,44 @@ export default function RsiLauncherPage() {
                   keeping up with frequent patch cycles automatically.
                 </li>
               </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
+            <div className="mt-6 space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  LIVE vs PTU vs EPTU — which one do you play?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  <Term name="Live">LIVE</Term>. It is the stable release with
+                  the most players. <Term name="PTU">PTU</Term> tests the next
+                  patch; <Term name="EPTU">EPTU</Term> tests the patch before
+                  it is even ready for PTU. Both are for bug hunting.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Does PTU touch your LIVE progress?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  No. Progress copies from LIVE into PTU at the start of a
+                  test wave and never carries back. PTU installs as a separate
+                  copy of the game.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Game misbehaving after an update?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Select your channel in the Launcher and click VERIFY. It
+                  checks every file and re-downloads anything corrupted —
+                  fifteen to thirty minutes, and it fixes a surprising number
+                  of issues.
+                </p>
+              </div>
             </div>
           </section>
 
