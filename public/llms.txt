@@ -14,7 +14,7 @@
 - [System Requirements](https://dayonecitizen.com/day-one-citizen/system-specs): Whether your PC can run Star Citizen, in plain terms.
 - [Buying the Game](https://dayonecitizen.com/day-one-citizen/buying-the-game): How to buy Star Citizen and what a starter package includes.
 - [Pledge vs. Purchase](https://dayonecitizen.com/day-one-citizen/pledge-vs-purchase): Why buying is called "pledging" and what that means for you.
-- [Choosing a Starter Package](https://dayonecitizen.com/day-one-citizen/starter-package): Comparing the cheapest ways to get into the game, including Aurora MR vs Mustang Alpha.
+- [Choosing a Starter Package](https://dayonecitizen.com/day-one-citizen/starter-package): Comparing the cheapest ways to get into the game, including Aurora Mk II vs Mustang Alpha.
 - [Installing the Game](https://dayonecitizen.com/day-one-citizen/install): Step-by-step install walkthrough.
 - [The RSI Launcher](https://dayonecitizen.com/day-one-citizen/rsi-launcher): Setting up and using the official launcher.
 - [First Launch](https://dayonecitizen.com/day-one-citizen/first-launch): What to expect the first time the game loads.

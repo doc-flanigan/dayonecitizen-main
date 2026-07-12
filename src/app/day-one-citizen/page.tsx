@@ -96,9 +96,9 @@ const SECTIONS: Section[] = [
     stub: (
       <>
         The cheapest packages start around $45 and include a small ship plus
-        access to Star Citizen. This section compares the
-        common starter ships (Aurora MR, Mustang Alpha) and explains which is
-        the best fit for a first-time player.
+        access to Star Citizen. This section compares all the current
+        packages — the $45 pack comes with the Aurora Mk II — and explains
+        which is the best fit for a first-time player.
       </>
     ),
   },
@@ -110,8 +110,8 @@ const SECTIONS: Section[] = [
       <>
         After you&rsquo;ve pledged, you download a small installer from{' '}
         robertsspaceindustries.com that pulls down the actual launcher. This
-        section covers the install paths, disk space requirements (90+ GB),
-        and the firewall prompts you&rsquo;ll see along the way.
+        section covers the install paths, disk space requirements (150 GB of
+        free SSD space), and the firewall prompts you&rsquo;ll see along the way.
       </>
     ),
   },

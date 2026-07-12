@@ -7,6 +7,7 @@ import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
   title: 'How to Buy Star Citizen — Day One Citizen',
@@ -41,7 +42,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The cheapest game packages start around $45 USD. A package includes access to the Star Citizen alpha, a starter ship (typically the Aurora Mk II or Mustang Alpha) with standard insurance, and 10,000 starting aUEC.',
+        text: 'The cheapest game packages start around $45 USD. A package includes access to the Star Citizen alpha, a starter ship with insurance — the current $45 Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting aUEC.',
       },
     },
     {
@@ -219,9 +220,10 @@ export default function BuyingTheGamePage() {
                 <li>10,000 starting <Term name="aUEC">aUEC</Term></li>
               </ul>
               <p>
-                The two common starter ships are the{' '}
-                <Term name="Aurora">Aurora Mk II</Term> and the{' '}
-                <Term name="Mustang">Mustang Alpha</Term>. A full comparison of these is in{' '}
+                The current $45 pack comes with the{' '}
+                <Term name="Aurora">Aurora Mk II</Term>. Its long-running alternate, the{' '}
+                <Term name="Mustang">Mustang Alpha</Term>, now appears mainly in older and
+                occasional promotional packages. A full comparison of all the packages is in{' '}
                 <Link href="/day-one-citizen/starter-package" className="text-gold underline-offset-4 hover:underline">
                   Section 05: Which starter package should you buy?
                 </Link>
@@ -229,7 +231,11 @@ export default function BuyingTheGamePage() {
               <p>
                 The short version: the Aurora Mk II is the more practical choice for a new player.
                 It carries cargo, which opens delivery missions immediately. The Mustang Alpha is
-                faster and more fun to fly, but carries almost nothing.
+                faster and more fun to fly, but carries almost nothing.{' '}
+                <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">
+                  The first-ship guide
+                </Link>{' '}
+                walks through that choice honestly.
               </p>
             </div>
           </section>
@@ -321,9 +327,9 @@ export default function BuyingTheGamePage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   The cheapest game packages start around $45 USD. That
-                  includes alpha access, a starter ship with standard
-                  insurance, and 10,000 starting{' '}
-                  <Term name="aUEC">aUEC</Term>.
+                  includes alpha access, a starter ship with insurance — the
+                  current $45 pack comes with the Aurora Mk II — and 10,000
+                  starting <Term name="aUEC">aUEC</Term>.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
@@ -370,6 +376,8 @@ export default function BuyingTheGamePage() {
             </Link>
           </nav>
         </div>
+
+        <PageSources route="/day-one-citizen/buying-the-game" />
       </main>
       <Footer />
     </>
