@@ -12,6 +12,11 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
 import { REFERRAL_BONUS, isReferralBonusActive } from '@/data/referral-bonus'
+import {
+  VERIFIED_DISPLAY,
+  VERIFIED_MONTH,
+  VERIFICATION_LOG,
+} from '@/data/verification'
 
 // Re-render daily so the promo section and any expired bonus shut off on
 // their own, matching the referral-bonus.ts auto-expiry contract.
@@ -23,8 +28,7 @@ const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program
 
 export const metadata: Metadata = {
   title: 'Star Citizen Referral Code 2026 — STAR-GCQJ-N6NC for 50,000 UEC Free',
-  description:
-    'Use Star Citizen referral code STAR-GCQJ-N6NC for a free 50,000 UEC bonus — no purchase needed. Verified working July 2026, re-checked monthly.',
+  description: `Use Star Citizen referral code STAR-GCQJ-N6NC for a free 50,000 UEC bonus — no purchase needed. Verified working ${VERIFIED_MONTH}, re-checked monthly.`,
   alternates: { canonical: '/referral-code' },
   openGraph: {
     title: 'Star Citizen Referral Code — STAR-GCQJ-N6NC (50,000 UEC Free)',
@@ -86,7 +90,7 @@ const faqJsonLd = {
       name: 'Is STAR-GCQJ-N6NC verified and still working?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. The code was checked on the live RSI enlist page on July 11, 2026 — the signup panel showed "Referral code successfully applied!" with the referrer named. It is re-checked monthly, and this page keeps a dated verification log.',
+        text: `Yes. The code was checked on the live RSI enlist page on ${VERIFIED_DISPLAY} — the signup panel showed "Referral code successfully applied!" with the referrer named. It is re-checked monthly, and this page keeps a dated verification log.`,
       },
     },
     {
@@ -157,8 +161,8 @@ export default function ReferralCodePage() {
               </CTAButton>
             </div>
             <p className="mt-4 max-w-2xl text-sm font-semibold text-gold">
-              Verified working July 11, 2026 — checked on the live RSI signup
-              page. Re-checked monthly; the dated log is below.
+              Verified working {VERIFIED_DISPLAY} — checked on the live RSI
+              signup page. Re-checked monthly; the dated log is below.
             </p>
             <p className="mt-3 max-w-2xl text-xs leading-relaxed text-muted">
               The gold button opens the RSI signup page with the code already
@@ -359,29 +363,23 @@ export default function ReferralCodePage() {
                 RSI page.
               </p>
               <ul className="space-y-4">
-                <li className="card-surface rounded-lg border border-white/5 p-5 text-sm leading-relaxed">
-                  <strong className="text-starwhite">July 11, 2026</strong> —
-                  STAR-GCQJ-N6NC entered on the live RSI enlist page. The panel
-                  showed &ldquo;You&rsquo;ve been referred by: Doc Flanigan&rdquo;
-                  and &ldquo;Referral code successfully applied!&rdquo;
-                </li>
-                <li className="card-surface rounded-lg border border-white/5 p-5 text-sm leading-relaxed">
-                  <strong className="text-starwhite">July 7, 2026</strong> — bonus
-                  mechanics re-checked: the 50,000 UEC lands on a free account,
-                  and only the referrer&rsquo;s separate reward involves a $40
-                  purchase.{' '}
-                  <SourceLink href={REFERRAL_FAQ}>
-                    Official RSI Referral Program FAQ
-                  </SourceLink>
-                </li>
-                <li className="card-surface rounded-lg border border-white/5 p-5 text-sm leading-relaxed">
-                  <strong className="text-starwhite">July 3, 2026</strong> — the
-                  twenty-four-hour grace window for adding a code after signup
-                  confirmed.{' '}
-                  <SourceLink href={REFERRAL_PROGRAM}>
-                    Official RSI Referral Program page
-                  </SourceLink>
-                </li>
+                {VERIFICATION_LOG.slice(0, 6).map((entry) => (
+                  <li
+                    key={entry.display + entry.text.slice(0, 20)}
+                    className="card-surface rounded-lg border border-white/5 p-5 text-sm leading-relaxed"
+                  >
+                    <strong className="text-starwhite">{entry.display}</strong>{' '}
+                    — {entry.text}
+                    {entry.source ? (
+                      <>
+                        {' '}
+                        <SourceLink href={entry.source.href}>
+                          {entry.source.label}
+                        </SourceLink>
+                      </>
+                    ) : null}
+                  </li>
+                ))}
               </ul>
               <p className="text-sm text-muted">
                 The code is re-checked monthly, and after any major change to the
@@ -433,9 +431,10 @@ export default function ReferralCodePage() {
                   Is the code still working?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Yes — checked on the live RSI signup page on July 11, 2026,
-                  with the &ldquo;successfully applied&rdquo; confirmation
-                  showing. See the verification log above.
+                  Yes — checked on the live RSI signup page on{' '}
+                  {VERIFIED_DISPLAY}, with the &ldquo;successfully
+                  applied&rdquo; confirmation showing. See the verification log
+                  above.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
