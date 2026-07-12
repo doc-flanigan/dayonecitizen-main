@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do you transfer items in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Press I to open the inventory screen while near your ship or a storage terminal — inventories can only transfer when they are physically close. Drag items between the personal panel and the ship or station panel, or right-click and choose Transfer All to move a whole stack.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'My inventory is not showing items — what do I do?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'This is almost always a client sync issue — your items are still on the server. Close the inventory screen (I), wait a few seconds, and reopen it. If items are still missing, relog. The server-side data is usually intact even when the client fails to display it correctly. Check all storage locations before assuming something is lost.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What happens to my cargo if my ship is destroyed?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Cargo in the ship’s hold is lost when the ship explodes, and small items in the ship’s inventory panel are typically lost too. Your personal inventory — the items on your character — is safe, and you keep those on respawn. High-value cargo can sometimes be salvaged from the wreck by other players.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I store items at any location in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You can store items at any location with a storage terminal or habitation room — major cities, space stations, and some outposts. Items stay until you retrieve them. Small outposts may not have permanent storage, so check before leaving valuables there.',
+      },
+    },
+  ],
+}
+
 export default function InventoryManagementPage() {
   return (
     <>
@@ -30,6 +71,10 @@ export default function InventoryManagementPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Inventory', url: '/beyond-the-basics/inventory-management' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

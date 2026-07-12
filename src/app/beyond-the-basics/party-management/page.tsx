@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do you form a party in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Press F11 to open the Commlink, click the Friends (Contacts) tab, right-click your friend’s name, and select Invite to Party. Once everyone accepts, the party leader clicks Enter Universe from the main menu and the whole group lands on the same server together.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'We are in a party but on different servers — how do we fix it?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Both players return to the main menu. Confirm the party is still active. The leader clicks Enter Universe, then the other player follows. If it fails again, disband and re-form the party before entering.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many players can be in a party?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The cap has changed across updates. For practical group play, two to eight players works best. Very large parties of ten or more can occasionally have trouble being routed to the same shard.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does quantum linking work?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The party leader initiates a quantum jump. Members who are aboard the same ship or flying nearby will see a prompt to lock onto quantum link. When the leader jumps, all linked members jump together to the same destination at the same time.',
+      },
+    },
+  ],
+}
+
 export default function PartyManagementPage() {
   return (
     <>
@@ -30,6 +71,10 @@ export default function PartyManagementPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Party Management', url: '/beyond-the-basics/party-management' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

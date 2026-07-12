@@ -20,6 +20,47 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible "Common questions" section so
+// this page can earn rich results and AI answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do you add a friend in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Four ways: on Spectrum (the official RSI forum), search the player’s handle and click Add Friend; from the game’s main menu, use the + Add Friend button in the Friends panel; in-game, press F11 to open the Commlink, find them in Global Chat’s Members tab, and choose Send Friend Request; or, if they are standing next to you, hold F for the Inner Thought wheel, aim at them, and select Add Contact.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where do you accept a friend request in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'In any of three places: on Spectrum under your avatar menu → Settings → Friends; in the main menu’s Friends panel, where pending requests sit above accepted contacts; or in-game via F11 → Contacts tab, with pending requests at the top.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you need a player’s handle to add them?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Only from a distance. Spectrum, main-menu, and Commlink requests need the exact handle. If the player is standing within a few metres of you in the world, hold F to open the Inner Thought wheel, aim at them, and select Add Contact — no handle required.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why are my friend and I not on the same server?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Being friends does not put you on the same server shard — Star Citizen splits players across parallel copies of the universe. Form a party before anyone enters the universe: press F11, right-click your friend’s name in the Contacts tab, and choose Invite to Party. When the party leader clicks Enter Universe, the game routes everyone to the same shard.',
+      },
+    },
+  ],
+}
+
 export default function AddingFriendsPage() {
   return (
     <>
@@ -30,6 +71,10 @@ export default function AddingFriendsPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Adding Friends', url: '/beyond-the-basics/adding-friends' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
@@ -224,6 +269,48 @@ export default function AddingFriendsPage() {
               text) that your friend is in the game, send the party invite anyway —
               invites are delivered even when the status indicator says offline.
             </p>
+
+            {/* FAQ */}
+            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-6">
+              Common questions
+            </h2>
+
+            <div className="space-y-6">
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What is the fastest way to add a friend?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  In-game: press F11, open Global Chat, click the Members tab,
+                  click their name, and choose Send Friend Request. Standing
+                  next to them? Hold F and select Add Contact — no handle
+                  needed.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Where do friend requests show up?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Three places: Spectrum (avatar menu &rarr; Settings &rarr;
+                  Friends), the main menu&rsquo;s Friends panel, and in-game
+                  under F11 &rarr; Contacts. Accept from whichever is easiest.
+                </p>
+              </div>
+
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  We are friends — why are we not in the same universe?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Friends are not automatically placed on the same server
+                  shard. Form a party first (F11 &rarr; right-click their name
+                  &rarr; Invite to Party), then have the party leader enter the
+                  universe. The game routes everyone to the same shard.
+                </p>
+              </div>
+            </div>
 
             {/* Navigation */}
             <div className="mt-12 pt-8 border-t border-white/10">
