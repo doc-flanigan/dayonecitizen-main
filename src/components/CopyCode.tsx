@@ -10,9 +10,15 @@ import { Copy, Check } from 'lucide-react'
 export default function CopyCode({
   code,
   trackingLabel = 'referral-code-copy',
+  copyLabel = 'Copy',
+  copiedLabel = 'Copied',
 }: {
   code: string
   trackingLabel?: string
+  /** Visible label next to the copy icon (override for localized pages). */
+  copyLabel?: string
+  /** Visible label shown after a successful copy (override for localized pages). */
+  copiedLabel?: string
 }) {
   const [copied, setCopied] = useState(false)
 
@@ -48,11 +54,11 @@ export default function CopyCode({
       <span>{code}</span>
       {copied ? (
         <span className="inline-flex items-center gap-1 text-sm text-green-400">
-          <Check size={16} aria-hidden /> Copied
+          <Check size={16} aria-hidden /> {copiedLabel}
         </span>
       ) : (
         <span className="inline-flex items-center gap-1 text-sm text-starwhite/70 group-hover:text-gold">
-          <Copy size={16} aria-hidden /> Copy
+          <Copy size={16} aria-hidden /> {copyLabel}
         </span>
       )}
     </button>
