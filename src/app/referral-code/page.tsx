@@ -11,6 +11,11 @@ import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
+import { REFERRAL_BONUS, isReferralBonusActive } from '@/data/referral-bonus'
+
+// Re-render daily so the promo section and any expired bonus shut off on
+// their own, matching the referral-bonus.ts auto-expiry contract.
+export const revalidate = 86400
 
 const REFERRAL_FAQ =
   'https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ'
@@ -19,7 +24,7 @@ const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program
 export const metadata: Metadata = {
   title: 'Star Citizen Referral Code 2026 — STAR-GCQJ-N6NC for 50,000 UEC Free',
   description:
-    "Use Star Citizen referral code STAR-GCQJ-N6NC when you create your RSI account to get a free 50,000 UEC bonus. Here's the code and exactly where to enter it.",
+    'Use Star Citizen referral code STAR-GCQJ-N6NC for a free 50,000 UEC bonus — no purchase needed. Verified working July 2026, re-checked monthly.',
   alternates: { canonical: '/referral-code' },
   openGraph: {
     title: 'Star Citizen Referral Code — STAR-GCQJ-N6NC (50,000 UEC Free)',
@@ -76,6 +81,30 @@ const faqJsonLd = {
         text: 'The bonus is 50,000 UEC — the persistent United Earth Credits used in the game — added to your account when you enlist with a referral code.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Is STAR-GCQJ-N6NC verified and still working?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. The code was checked on the live RSI enlist page on July 11, 2026 — the signup panel showed "Referral code successfully applied!" with the referrer named. It is re-checked monthly, and this page keeps a dated verification log.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are there Star Citizen promo codes or coupon codes?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Not for discounts. RSI's official program pages describe only the referral bonus — 50,000 UEC on a new account. The 'discount code' listings on coupon aggregator sites have no official RSI source.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does the referral bonus apply to Squadron 42?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The referral code is applied to your RSI account, and the 50,000 UEC bonus is spent inside Star Citizen. Squadron 42 is a separate single-player game on the same account, so the bonus does not change the campaign itself.',
+      },
+    },
   ],
 }
 
@@ -127,10 +156,15 @@ export default function ReferralCodePage() {
                 Use my code &amp; get 50K UEC
               </CTAButton>
             </div>
-            <p className="mt-4 max-w-2xl text-xs leading-relaxed text-muted">
-              This is a referral link. When you enlist with this code you get the
-              full 50,000 UEC bonus; the referrer may earn a small reward too. Your
-              bonus is never reduced.
+            <p className="mt-4 max-w-2xl text-sm font-semibold text-gold">
+              Verified working July 11, 2026 — checked on the live RSI signup
+              page. Re-checked monthly; the dated log is below.
+            </p>
+            <p className="mt-3 max-w-2xl text-xs leading-relaxed text-muted">
+              The gold button opens the RSI signup page with the code already
+              filled in. This is a referral link. When you enlist with this code
+              you get the full 50,000 UEC bonus; the referrer may earn a small
+              reward too. Your bonus is never reduced.
             </p>
           </div>
         </header>
@@ -273,6 +307,90 @@ export default function ReferralCodePage() {
           </section>
 
           <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">
+              Any bonus event running right now?
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              {isReferralBonusActive() ? (
+                <div className="rounded-2xl border border-gold/40 bg-gold/10 p-6">
+                  <p>
+                    <strong className="text-gold">
+                      Yes — a limited-time referral bonus is live:
+                    </strong>{' '}
+                    {REFERRAL_BONUS.itemName}
+                    {REFERRAL_BONUS.itemDescription
+                      ? ` — ${REFERRAL_BONUS.itemDescription}`
+                      : ''}
+                    . It runs from {REFERRAL_BONUS.startsAt} to{' '}
+                    {REFERRAL_BONUS.endsAt}, on top of the standard 50,000 UEC.{' '}
+                    <SourceLink href={REFERRAL_BONUS.sourceUrl}>
+                      {REFERRAL_BONUS.sourceLabel}
+                    </SourceLink>
+                  </p>
+                </div>
+              ) : (
+                <p>
+                  Not at the moment — this page checks daily. During some events,
+                  such as{' '}
+                  <Term name="Free Fly">Free Fly</Term> weeks, RSI adds
+                  limited-time rewards on top of the standard bonus. When one is
+                  live, it appears here. The 50,000 UEC bonus itself is always
+                  available. Event windows are tracked at{' '}
+                  <a
+                    href="https://freeflyevent.com"
+                    className="text-gold underline-offset-4 hover:underline"
+                  >
+                    freeflyevent.com
+                  </a>
+                  .
+                </p>
+              )}
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">
+              Verification log
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                Most code pages ask you to take their word for it. This one keeps
+                receipts — each entry below is a real check against an official
+                RSI page.
+              </p>
+              <ul className="space-y-4">
+                <li className="card-surface rounded-lg border border-white/5 p-5 text-sm leading-relaxed">
+                  <strong className="text-starwhite">July 11, 2026</strong> —
+                  STAR-GCQJ-N6NC entered on the live RSI enlist page. The panel
+                  showed &ldquo;You&rsquo;ve been referred by: Doc Flanigan&rdquo;
+                  and &ldquo;Referral code successfully applied!&rdquo;
+                </li>
+                <li className="card-surface rounded-lg border border-white/5 p-5 text-sm leading-relaxed">
+                  <strong className="text-starwhite">July 7, 2026</strong> — bonus
+                  mechanics re-checked: the 50,000 UEC lands on a free account,
+                  and only the referrer&rsquo;s separate reward involves a $40
+                  purchase.{' '}
+                  <SourceLink href={REFERRAL_FAQ}>
+                    Official RSI Referral Program FAQ
+                  </SourceLink>
+                </li>
+                <li className="card-surface rounded-lg border border-white/5 p-5 text-sm leading-relaxed">
+                  <strong className="text-starwhite">July 3, 2026</strong> — the
+                  twenty-four-hour grace window for adding a code after signup
+                  confirmed.{' '}
+                  <SourceLink href={REFERRAL_PROGRAM}>
+                    Official RSI Referral Program page
+                  </SourceLink>
+                </li>
+              </ul>
+              <p className="text-sm text-muted">
+                The code is re-checked monthly, and after any major change to the
+                RSI signup page.
+              </p>
+            </div>
+          </section>
+
+          <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
             <div className="mt-6 space-y-6">
               <div className="card-surface rounded-lg border border-white/5 p-5">
@@ -308,6 +426,38 @@ export default function ReferralCodePage() {
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   50,000 UEC — the persistent United Earth Credits you spend in the
                   game.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  Is the code still working?
+                </h3>
+                <p className="text-sm leading-relaxed text-starwhite/70">
+                  Yes — checked on the live RSI signup page on July 11, 2026,
+                  with the &ldquo;successfully applied&rdquo; confirmation
+                  showing. See the verification log above.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  What about promo or coupon codes?
+                </h3>
+                <p className="text-sm leading-relaxed text-starwhite/70">
+                  RSI&rsquo;s program pages describe only the referral bonus.
+                  &ldquo;Discount code&rdquo; listings on coupon sites have no
+                  official RSI source — the referral code is the one that pays.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  Does it apply to Squadron 42?
+                </h3>
+                <p className="text-sm leading-relaxed text-starwhite/70">
+                  The code goes on your RSI account, and the 50,000 UEC is spent
+                  inside Star Citizen.{' '}
+                  <Term name="Squadron 42">Squadron 42</Term> is a separate
+                  single-player game on the same account, so the bonus does not
+                  change the campaign.
                 </p>
               </div>
             </div>
