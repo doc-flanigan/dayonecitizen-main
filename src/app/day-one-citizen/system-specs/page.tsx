@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: 'What are the minimum system requirements for Star Citizen in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The official minimum requirements for Star Citizen are: Windows 10 or 11 (64-bit), a quad-core CPU with AVX/AVX2/FMA3 support (Intel i7 Haswell 4th gen or later, AMD Ryzen 5 equivalent), 16 GB RAM, a GPU with 4 GB VRAM and Vulkan 1.2 support (GTX 1060 / RX 580 range), an SSD with 100 GB+ free space, and a broadband internet connection. An NVMe SSD is strongly recommended even though not listed as a hard requirement.',
+        text: 'The official minimum requirements for Star Citizen are: Windows 10 with the latest Service Pack, a quad-core CPU with AVX/AVX2/FMA3 support (Intel i7 Haswell 4th generation or later, or AMD Excavator or newer), a DirectX 11.1-capable GPU with 4 GB VRAM, 16 GB RAM, and an SSD with 150 GB or more of free space. The SSD is a listed requirement, not a suggestion.',
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: 'What are the recommended system requirements for Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For a smooth Star Citizen experience in 2026, the recommended specs are: Windows 10 or 11 (64-bit), Intel Core i7-12700K or AMD Ryzen 7 5800X3D CPU, NVIDIA RTX 3080 or AMD RX 6800 XT GPU with 8+ GB VRAM, 32 GB RAM, and a PCIe NVMe SSD. These specs deliver 60+ FPS in most situations at medium-high graphics settings.',
+        text: 'The official recommended specs are: Windows 11, an Intel i7 or AMD Ryzen 5 or better, a DirectX 12-capable GPU with 8 GB VRAM, 32 GB RAM, and an SSD with 150 GB or more free. Players commonly report that an NVMe SSD and a stronger GPU (RTX 3070 class or better) are what actually deliver smooth results in cities.',
       },
     },
     {
@@ -53,10 +53,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Is an SSD required for Star Citizen?',
+      name: 'Do I need an SSD for Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'An SSD is not technically required but is effectively essential. Star Citizen streams world data in real time as you move through the game. On an HDD, loading into a city can take 5–10 minutes and world streaming stutters severely. A SATA SSD is acceptable; an NVMe SSD provides the best experience with fast, smooth loading.',
+        text: 'Yes. The official requirements list an SSD with 150 GB or more of free space — it is a hard requirement, not a suggestion, because the game streams world data constantly. A SATA SSD works; an NVMe SSD gives the best loading experience. Note the CPU has a hard floor too: without AVX, AVX2, and FMA3 support, very old CPUs will not launch the game at all.',
       },
     },
     {
@@ -116,12 +116,12 @@ export default function SystemSpecsPage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
               <strong className="text-starwhite">Star Citizen&rsquo;s official minimum
-              requirements are a quad-core CPU with AVX2 support (Intel i7 Haswell / AMD
-              Ryzen 5 1600 or equivalent), 16 GB of RAM, a GPU with 4 GB of VRAM (GTX
-              1060 / RX 580 range), an SSD with 100 GB free, and Windows 10 or 11
-              64-bit.</strong>{' '}
-              For a genuinely smooth experience in 2026, the recommended specs are
-              32 GB of RAM, an RTX 3070 / RX 6700 XT or better, and an NVMe SSD.
+              requirements are Windows 10 (latest Service Pack), a quad-core CPU with
+              AVX, AVX2, and FMA3 support (Intel i7 Haswell / AMD Excavator or newer),
+              a DirectX 11.1 GPU with 4 GB of VRAM, 16 GB of RAM, and an SSD with
+              150 GB or more free.</strong>{' '}
+              The official recommended specs are Windows 11, an Intel i7 / AMD Ryzen 5
+              or better, a DirectX 12 GPU with 8 GB of VRAM, and 32 GB of RAM.
             </p>
           </div>
         </header>
@@ -156,33 +156,33 @@ export default function SystemSpecsPage() {
                 <tbody className="px-4">
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">OS</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">Windows 10 or 11, 64-bit (latest Service Pack)</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">Windows 10 or 11, 64-bit</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">Windows 10, 64-bit (latest Service Pack)</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">Windows 11</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">CPU</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">Quad-core with AVX, AVX2 &amp; FMA3 — Intel i7 Haswell (4th gen) or later / AMD Ryzen 5 1600 or equivalent</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">Intel i7-12700K / AMD Ryzen 7 5800X3D or better</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">Quad-core with AVX, AVX2 &amp; FMA3 — Intel i7 Haswell (4th gen) or later / AMD Excavator or newer</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">Intel i7 / AMD Ryzen 5 or better</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">RAM</td>
                     <td className="px-4 py-3 text-sm text-starwhite/80">16 GB</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">32 GB DDR4 or DDR5</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">32 GB</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">GPU</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">GTX 1060 / RX 580 or equivalent — DirectX 11.1 and Vulkan 1.2 required</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">RTX 3070 or RTX 3080 / RX 6700 XT or RX 6800 XT</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">DirectX 11.1-capable GPU</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">DirectX 12-capable GPU</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">VRAM</td>
                     <td className="px-4 py-3 text-sm text-starwhite/80">4 GB</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">8 GB minimum; 12 GB+ preferred at higher resolutions</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">8 GB</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">Storage</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">SSD with 100 GB free (NTFS), plus 10 GB for the pagefile</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">NVMe SSD (PCIe Gen 3 or Gen 4, 3,000 MB/s+ reads)</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">SSD with 150+ GB free — an SSD is required, not suggested</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">SSD with 150+ GB free</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">Network</td>
@@ -201,7 +201,7 @@ export default function SystemSpecsPage() {
             </p>
             <div className="mt-6 rounded-2xl border border-white/5 bg-navyLight/40 p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-                High-end / future-proof (2026)
+                High-end / future-proof (2026) — community build advice, not official specs
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-starwhite/80">
                 <li><strong className="text-starwhite">CPU:</strong> Intel Core i9-13900K / i9-14900K or AMD Ryzen 9 7950X3D</li>
@@ -213,17 +213,20 @@ export default function SystemSpecsPage() {
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">What the specs mean in practice</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">Official minimums vs what players actually report</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 Star Citizen is not like most games. It is an always-online, streamed universe
                 rendering entire cities, planetary atmospheres, and persistent player actions
-                at the same time. The demands are unusual even for high-end hardware.
+                at the same time. The demands are unusual even for high-end hardware. The
+                official table above is what CIG publishes — the frame rates below come from
+                community reports and player benchmarks, not from CIG.
               </p>
 
               <h3 className="mt-8 text-xl font-bold text-starwhite">At minimum specs</h3>
               <p>
-                You will get into the game. Expect 20–30 FPS in populated city areas like{' '}
+                You will get into the game — but honestly, not smoothly. Players on
+                minimum-spec machines commonly report 20–30 FPS in populated city areas like{' '}
                 <Term name="Lorville">Lorville</Term> and <Term name="Area18">Area18</Term>,
                 and 40–60 FPS in open space or quieter locations. Everything will be set to
                 Low or Medium graphics. Loading into a city takes noticeably longer, and frame
@@ -231,12 +234,13 @@ export default function SystemSpecsPage() {
                 at times.
               </p>
 
-              <h3 className="mt-8 text-xl font-bold text-starwhite">At recommended specs</h3>
+              <h3 className="mt-8 text-xl font-bold text-starwhite">At recommended specs and above</h3>
               <p>
-                This is where the game starts feeling like the experience CIG intends. You
-                will hold 50–70 FPS in most situations at medium-high settings, and cities
-                load cleanly. With an RTX 3080 or equivalent, you can push settings higher and
-                use upscaling (DLSS, FSR) for extra headroom.
+                This is where the game starts feeling like the experience CIG intends.
+                Players report holding 50–70 FPS in most situations at medium-high settings,
+                with cities loading cleanly. Community build advice consistently goes beyond
+                the official recommendation: an RTX 3070 / RX 6700 XT class GPU or better,
+                and an NVMe SSD, with upscaling (DLSS, FSR) for extra headroom.
               </p>
 
               <h3 className="mt-8 text-xl font-bold text-starwhite">High-end and above</h3>
@@ -276,9 +280,10 @@ export default function SystemSpecsPage() {
                 32 GB stick if you have the choice.
               </p>
 
-              <h3 className="mt-8 text-xl font-bold text-starwhite">2. Storage — SSD is not optional</h3>
+              <h3 className="mt-8 text-xl font-bold text-starwhite">2. Storage — an SSD is required</h3>
               <p>
-                Do not install Star Citizen on a spinning hard drive (HDD). The game streams
+                An SSD with 150 GB or more of free space is on the official requirements
+                list — it is not a suggestion. The game streams
                 world data in real time as you fly or walk — the planet you are landing on is
                 pulled from storage constantly as you move through it. On an HDD, loading into
                 a city can take 5–10 minutes, <Term name="Quantum Travel">quantum travel</Term>{' '}
@@ -322,8 +327,9 @@ export default function SystemSpecsPage() {
               <p>
                 Star Citizen is a large install and grows with each major update. As of
                 mid-2026, expect a download of roughly 80–120 GB (compressed) and an installed
-                size of 100–130+ GB on disk. <Term name="RSI">RSI</Term> recommends 100 GB of
-                minimum free space, plus an extra 10 GB for the Windows pagefile. A 250 GB
+                size of 100–130+ GB on disk. <Term name="RSI">RSI</Term>&rsquo;s official
+                requirement is an SSD with at least 150 GB of free space — the game uses
+                scratch space beyond the install itself. A 250 GB
                 dedicated drive works; 500 GB is more comfortable. You download the free RSI
                 Launcher from robertsspaceindustries.com, and it handles all updates from
                 there.
@@ -450,6 +456,15 @@ export default function SystemSpecsPage() {
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Will it run on your machine?</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <h3 className="mt-8 text-xl font-bold text-starwhite">Do I need an SSD?</h3>
+              <p>
+                Yes. The official requirements list an SSD with 150 GB or more of free
+                space — it is a hard requirement, not a suggestion, because the game streams
+                world data constantly. A SATA SSD works; an NVMe SSD gives the best loading
+                experience. Note the CPU has a hard floor too: without AVX, AVX2, and FMA3
+                support, very old CPUs will not launch the game at all.
+              </p>
+
               <h3 className="mt-8 text-xl font-bold text-starwhite">Can I run Star Citizen on a laptop?</h3>
               <p>
                 Yes, but it depends heavily on the laptop. A gaming laptop with a dedicated

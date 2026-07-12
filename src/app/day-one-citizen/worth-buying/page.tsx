@@ -289,7 +289,7 @@ export default function WorthBuyingPage() {
             <h2 className="heading-display text-2xl sm:text-3xl">Questions to ask yourself</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <ul className="list-disc space-y-3 pl-6">
-                <li>Do you have at least 100 GB of SSD space free?</li>
+                <li>Do you have at least 150 GB of SSD space free?</li>
                 <li>Can you tolerate occasional crashes and progress loss without rage-quitting?</li>
                 <li>Do you enjoy open-ended games where you set your own goals?</li>
                 <li>
