@@ -236,6 +236,31 @@ export default function ToolsPage() {
             </div>
           </section>
 
+          {/* In-house fact check */}
+          <section className="rounded-2xl border border-white/10 bg-navyLight/40 p-6 sm:p-8">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+                  From this site
+                </p>
+                <h2 className="heading-display mt-2 text-xl sm:text-2xl">
+                  Fact Check — is that Star Citizen claim actually true?
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm text-muted">
+                  A searchable ledger of claims about the game — wipes, the
+                  referral bonus, funding, events — each verified against an
+                  official Cloud Imperium source, with the date we last checked.
+                </p>
+              </div>
+              <Link
+                href="/fact-check"
+                className="rounded-full border border-gold/40 px-5 py-2 text-sm font-semibold text-gold transition-colors hover:bg-gold/10"
+              >
+                Search the fact check &rarr;
+              </Link>
+            </div>
+          </section>
+
           {/* Featured guide: CCU Game */}
           <section>
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
