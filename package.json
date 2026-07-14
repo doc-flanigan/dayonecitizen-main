@@ -9,6 +9,7 @@
     "lint": "next lint",
     "indexnow": "node scripts/indexnow.mjs",
     "gen-sources": "node ../docs/claims/gen-sources.mjs dayonecitizen.com src/data/page-sources.generated.json",
+    "sync-claims": "node scripts/sync-claims.mjs",
     "postbuild": "node scripts/indexnow.mjs || true"
   },
   "dependencies": {
