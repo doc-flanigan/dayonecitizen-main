@@ -1,0 +1,60 @@
+# Fact-check request queue — Discord-approved, agent-verified, PR-gated.
+#
+# Doc reacts ✅ on an intake embed in #fact-check-requests → this workflow
+# (next scheduled run, or Run workflow for immediately) verifies the claim
+# against official CIG sources via Claude Code headless, upserts the claims
+# ledger (sc-portfolio-docs), regenerates src/data/claims.json, opens a PR
+# here, and replies to the Discord message with the verdict (🚀 = done,
+# ⚠️ = failed; remove the ⚠️ reaction to retry).
+#
+# Required secrets (repo → Settings → Secrets → Actions):
+#   ANTHROPIC_API_KEY   already present (sc-news watch)
+#   DISCORD_BOT_TOKEN   bot with View Channel / Read Message History /
+#                       Send Messages / Add Reactions in #fact-check-requests
+#   DOCS_PUSH_PAT       fine-grained PAT, contents:write on sc-portfolio-docs
+
+name: fact-check queue
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: fact-check-queue
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+        with:
+          path: dayonecitizen-main
+
+      - name: Checkout claims ledger (sc-portfolio-docs)
+        uses: actions/checkout@v4
+        with:
+          repository: doc-flanigan/sc-portfolio-docs
+          token: ${{ secrets.DOCS_PUSH_PAT }}
+          path: docs
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Process approved requests
+        run: node dayonecitizen-main/scripts/fact-check-queue.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
