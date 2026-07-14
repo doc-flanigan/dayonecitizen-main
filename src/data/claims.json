@@ -38,6 +38,16 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "ccu-pay-price-difference",
+      "claim": "A Ship Upgrade / Cross-Chassis Upgrade (CCU) changes a pledge to a higher-value ship; the CCU item is priced at the gap between the two ships, not the full price of the new ship.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010056848-Ship-Upgrades-CCUs",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013194987-Pledges-FAQ"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
       "id": "citizencon-2955-digital-direct",
       "claim": "CitizenCon 2955 (October 2025) was held as a fully digital ~2-hour showcase called 'CitizenCon Direct', streamed free on Twitch and YouTube on October 11, 2025 — not as an in-person convention.",
       "status": "verified",
@@ -274,6 +284,15 @@
       "lastVerified": "2026-07-11"
     },
     {
+      "id": "no-official-vr-support",
+      "claim": "Star Citizen does not officially support VR headsets; no CIG comm-link or RSI knowledge-base article documents VR as a supported input/display mode in the live game.",
+      "status": "unverifiable",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/12801-Chris-Visits-Oculus"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
       "id": "nyx-system-live-alpha-4-4",
       "claim": "The Nyx star system went live in Star Citizen with Alpha 4.4 (November 2025), announced at CitizenCon Direct 2955.",
       "status": "verified",
@@ -281,6 +300,15 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/20864-Alpha-44-Welcome-To-Nyx"
       ],
       "lastVerified": "2026-07-04"
+    },
+    {
+      "id": "pyro-system-live-alpha-4-0",
+      "claim": "The Pyro star system went live in Star Citizen with Alpha 4.0 (the '4.0 Preview', December 2024/January 2025).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
+      ],
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "randomizers-stale-bonus-amounts",
@@ -391,6 +419,25 @@
         "https://robertsspaceindustries.com/en/funding-goals"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "server-meshing-static-live-dynamic-dev",
+      "claim": "Static server meshing (multiple servers stitched into a shared region) has been live since Alpha 4.0 (Jan 2025); dynamic server meshing, which merges/splits shards into a single unified universe, is still in development.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/SCW/20360-API",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/18397-Server-Meshing-And-Persistent-Streaming-Q-A"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "ship-pledge-includes-term-hull-insurance",
+      "claim": "Every ship pledge/game package includes hull-replacement insurance for a stated term (typically 2-12 months); pledges made before Nov 26, 2012 carry Lifetime Insurance (LTI) instead.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/SCW/14282-API"
+      ],
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "ships-earnable-in-game-auec",
@@ -616,7 +663,7 @@
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
       ],
-      "lastVerified": "2026-07-05"
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "sq42-vertical-slice-dec-2017",
@@ -628,6 +675,16 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "starengine-cryengine-lumberyard-lineage",
+      "claim": "Star Citizen runs on StarEngine, CIG's current name for its heavily modified engine, descended from CryEngine (licensed 2012-2016) via Amazon Lumberyard (adopted 2016).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/citcon-featured-content/20262-CitizenCon-2954-Recap",
+        "https://robertsspaceindustries.com/comm-link/SCW/15660-API"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
       "id": "starter-package-from-45-usd",
       "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
       "status": "verified",
@@ -635,6 +692,16 @@
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "three-systems-live-stanton-pyro-nyx",
+      "claim": "Three star systems are live in the current Star Citizen alpha: Stanton (original), Pyro (added Alpha 4.0), and Nyx (added Alpha 4.4).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20864-Alpha-44-Welcome-To-Nyx",
+        "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
+      ],
+      "lastVerified": "2026-07-14"
     }
   ]
 }
