@@ -300,7 +300,7 @@ export default function LohntSichStarCitizenPage() {
                   <strong className="text-starwhite">Wer entscheidet:</strong>{' '}
                   die Patch Notes der jeweiligen Version. CIG kündigt dort an,
                   was übernommen wird (Stichwort „Long Term Persistence“). Ob
-                  die nächste Version — Alpha 4.9, erwartet etwa im August —
+                  die nächste Version — Alpha 4.9, laut CIG noch im Juli 2026 erwartet —
                   einen Wipe bringt, ist derzeit nicht angekündigt.
                 </li>
               </ul>
