@@ -254,6 +254,16 @@
       "lastVerified": "2026-07-06"
     },
     {
+      "id": "lti-excludes-modifications-and-cargo",
+      "claim": "Lifetime Insurance (LTI) covers only ship hull replacement; it does not cover modifications, upgrades/customizations, or cargo, which require separate risk-rated insurance policies.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/faq/Insurance-FAQ",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/12820-Insurance-FAQ-And-Update"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
       "id": "no-official-coupon-codes",
       "claim": "RSI's official referral-program pages document exactly one signup bonus — the referral code's 50,000 UEC; no coupon, promo, or percent-off code system for Star Citizen game packages is documented there.",
       "status": "verified",
