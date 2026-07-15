@@ -277,7 +277,11 @@ export default function NextWipePage() {
                   progress carries over in the patch notes of each update, and
                   says it generally tries to avoid wipes. Some players expect
                   one alongside Alpha 4.9, but that is community expectation —
-                  not an announcement.
+                  not an announcement. Heard a wipe rumor? Check it against our{' '}
+                  <Link href="/fact-check" className="text-gold underline-offset-4 hover:underline">
+                    Star Citizen fact-check ledger
+                  </Link>{' '}
+                  — every claim there is sourced to CIG.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
