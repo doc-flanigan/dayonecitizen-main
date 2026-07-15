@@ -274,6 +274,15 @@
       "lastVerified": "2026-07-14"
     },
     {
+      "id": "no-mech-suits-announced",
+      "claim": "CIG has not officially announced or confirmed piloted mech suits (bipedal mechs/exosuit combat vehicles) as a Star Citizen vehicle type",
+      "status": "unverifiable",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-links"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "no-official-coupon-codes",
       "claim": "RSI's official referral-program pages document exactly one signup bonus — the referral code's 50,000 UEC; no coupon, promo, or percent-off code system for Star Citizen game packages is documented there.",
       "status": "verified",
