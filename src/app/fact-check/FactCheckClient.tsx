@@ -69,9 +69,20 @@ export default function FactCheckClient({
   const [sentClaim, setSentClaim] = useState('')
 
   const filtered = useMemo(() => {
-    // Word-AND matching: every word of the query must appear somewhere in the
-    // claim text or id, so natural questions like "star citizen wipe" match.
-    const words = query.toLowerCase().trim().split(/\s+/).filter(Boolean)
+    // Word-AND matching with stopwords: every meaningful word of the query must
+    // appear in the claim text or id. "star citizen" and question filler are
+    // dropped so "does star citizen wipe your ships" matches the wipe claim.
+    const STOP = new Set([
+      'star', 'citizen', 'citizens', 'sc', 'game', 'the', 'a', 'an', 'is', 'are',
+      'was', 'were', 'be', 'do', 'does', 'did', 'can', 'could', 'will', 'would',
+      'have', 'has', 'had', 'in', 'on', 'of', 'to', 'for', 'with', 'my', 'your',
+      'you', 'i', 'it', 'its', 'this', 'that', 'there', 'what', 'when', 'why',
+      'how', 'who', 'which', 'and', 'or', 'not', 'no', 'yes', 'really', 'actually',
+    ])
+    const raw = query.toLowerCase().trim().split(/\s+/).filter(Boolean)
+    const meaningful = raw.filter((w) => !STOP.has(w))
+    // if the query is ONLY stopwords ("star citizen"), fall back to raw words
+    const words = meaningful.length ? meaningful : raw
     return claims
       .filter((c) => !statusFilter || c.status === statusFilter)
       .filter((c) => {
