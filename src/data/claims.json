@@ -227,6 +227,16 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "everything-earnable-in-game-overgeneralization",
+      "claim": "CIG's stated goal is that most (not literally all) pledge-store items — ships plus flair/cosmetics — become earnable in-game via play, with named exceptions (e.g. certain exclusive digital-event items, subscriber flair inside its 3-month exclusivity window, and one-time ship-concept-sale exclusive paints like the Odin Founders Club); see ships-earnable-in-game-auec for the ships-specific version of this claim.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/19385-August-2023-Subscriber-Promotions",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21133-Anvil-Odin"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "foundation-festival-2026-expected",
       "claim": "Foundation Festival — CIG's annual new-player/community onboarding event, which in 2025 included a Free Fly and guide-mentorship activities — is expected by gaming press to return around mid-July 2026. CIG has not yet published a 2026 comm-link.",
       "status": "unverifiable",
