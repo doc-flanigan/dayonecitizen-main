@@ -16,13 +16,33 @@ const STATUS_META: Record<string, { label: string; dot: string; text: string }> 
   refuted: { label: 'False', dot: 'bg-red-400', text: 'text-red-400' },
 }
 
+// Derive a human title from a comm-link/Spectrum slug so multiple sources on
+// one claim are distinguishable ("RSI: Argo ATLS", not three identical labels).
+function slugTitle(pathname: string): string {
+  const seg = pathname.split('/').filter(Boolean).pop() || ''
+  const words = seg
+    .replace(/^\d+-/, '')
+    .split('-')
+    .filter((w) => w && !/^\d{5,}$/.test(w))
+    .slice(0, 6)
+  if (!words.length || (words.length === 1 && words[0].toLowerCase() === 'api')) return ''
+  return words.map((w) => (w.length <= 3 ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1))).join(' ')
+}
+
 function sourceLabel(url: string): string {
   try {
     const u = new URL(url)
     if (u.hostname.startsWith('support.')) return 'RSI Support'
     if (u.hostname.includes('gamespress')) return 'CIG press release'
     if (u.hostname.includes('robertsspaceindustries')) {
-      if (u.pathname.includes('/comm-link/')) return 'Official RSI announcement'
+      if (u.pathname.includes('/comm-link/')) {
+        const t = slugTitle(u.pathname)
+        return t ? `RSI: ${t}` : 'Official RSI announcement'
+      }
+      if (u.pathname.includes('/spectrum/')) {
+        const t = slugTitle(u.pathname)
+        return t ? `CIG staff: ${t}` : 'CIG staff post'
+      }
       if (u.pathname.includes('referral')) return 'RSI referral page'
       if (u.pathname.includes('funding')) return 'RSI funding tracker'
       return 'RSI official page'
@@ -49,20 +69,31 @@ export default function FactCheckClient({
   const [sentClaim, setSentClaim] = useState('')
 
   const filtered = useMemo(() => {
-    const q = query.toLowerCase().trim()
+    // Word-AND matching: every word of the query must appear somewhere in the
+    // claim text or id, so natural questions like "star citizen wipe" match.
+    const words = query.toLowerCase().trim().split(/\s+/).filter(Boolean)
     return claims
       .filter((c) => !statusFilter || c.status === statusFilter)
-      .filter(
-        (c) =>
-          !q ||
-          c.claim.toLowerCase().includes(q) ||
-          c.id.toLowerCase().includes(q)
-      )
+      .filter((c) => {
+        if (!words.length) return true
+        const hay = (c.claim + ' ' + c.id.replace(/-/g, ' ')).toLowerCase()
+        return words.every((w) => hay.includes(w))
+      })
       .sort((a, b) => (b.lastVerified || '').localeCompare(a.lastVerified || ''))
   }, [claims, query, statusFilter])
 
+  const [copiedId, setCopiedId] = useState('')
+
+  function copyLink(id: string) {
+    const url = `${window.location.origin}/fact-check#${id}`
+    navigator.clipboard?.writeText(url).then(() => {
+      setCopiedId(id)
+      setTimeout(() => setCopiedId(''), 1600)
+    })
+  }
+
   async function submitClaim(text: string) {
-    const claim = text.trim()
+    const claim = text.trim().slice(0, 300)
     if (!claim || requestState === 'sending') return
     setRequestState('sending')
     try {
@@ -91,6 +122,7 @@ export default function FactCheckClient({
     <button
       key={label}
       onClick={() => setStatusFilter(value === statusFilter ? null : value)}
+      aria-pressed={statusFilter === value}
       className={`rounded-full border px-3 py-1 text-xs transition-colors ${
         statusFilter === value
           ? 'border-gold text-gold'
@@ -180,9 +212,19 @@ export default function FactCheckClient({
                 <span className={`text-xs font-semibold uppercase tracking-wide ${meta.text}`}>
                   {meta.label}
                 </span>
-                {c.lastVerified && (
-                  <span className="ml-auto text-xs text-muted">checked {c.lastVerified}</span>
-                )}
+                <span className="ml-auto flex items-center gap-3">
+                  {c.lastVerified && (
+                    <span className="text-xs text-muted">checked {c.lastVerified}</span>
+                  )}
+                  <button
+                    onClick={() => copyLink(c.id)}
+                    title="Copy a direct link to this claim"
+                    aria-label={`Copy link to claim: ${c.claim.slice(0, 60)}`}
+                    className="text-xs text-muted transition-colors hover:text-gold"
+                  >
+                    {copiedId === c.id ? 'copied ✓' : '🔗 copy link'}
+                  </button>
+                </span>
               </div>
               <p className="mt-2 text-sm leading-relaxed text-starwhite/90">{c.claim}</p>
               {c.sources.length > 0 && (
