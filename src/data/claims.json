@@ -497,6 +497,17 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "players-cannot-yet-build-bases",
+      "claim": "Players can currently craft and build their own bases in Star Citizen.",
+      "status": "refuted",
+      "sources": [
+        "https://www.youtube.com/watch?v=AmwKD_flLmw",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/cnou-pioneer-update",
+        "https://www.youtube.com/watch?v=qeVq9O9BtvY"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "pledge-items-require-registration-not-automatic",
       "claim": "Pledge-store items are not automatically registered or guaranteed recoverable; per the Alpha 4.8 Vehicle Insurance and Item Bricking update, ANY item (pledge-store origin or found/looted) must be manually registered — imprinted into a saved ASOP loadout snapshot — to be recoverable after loss, and un-imprinted pledge-store vehicle items were explicitly lost and unrecoverable at 4.8 launch (a freight-elevator stopgap and a fuller 4.9 item kiosk were added afterward).",
       "status": "verified",
