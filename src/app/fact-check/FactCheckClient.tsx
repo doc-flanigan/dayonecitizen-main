@@ -46,6 +46,7 @@ export default function FactCheckClient({
   const [requestState, setRequestState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const [requestText, setRequestText] = useState('')
   const [honeypot, setHoneypot] = useState('')
+  const [sentClaim, setSentClaim] = useState('')
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim()
@@ -60,19 +61,30 @@ export default function FactCheckClient({
       .sort((a, b) => (b.lastVerified || '').localeCompare(a.lastVerified || ''))
   }, [claims, query, statusFilter])
 
-  async function submitRequest() {
-    if (!requestText.trim() || requestState === 'sending') return
+  async function submitClaim(text: string) {
+    const claim = text.trim()
+    if (!claim || requestState === 'sending') return
     setRequestState('sending')
     try {
       const res = await fetch('/api/claim-request', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ claim: requestText.trim(), website: honeypot }),
+        body: JSON.stringify({ claim, website: honeypot }),
       })
-      setRequestState(res.ok ? 'sent' : 'error')
+      if (res.ok) {
+        setRequestState('sent')
+        setSentClaim(claim)
+      } else {
+        setRequestState('error')
+      }
     } catch {
       setRequestState('error')
     }
+  }
+
+  function editFirst() {
+    setRequestText(query.trim())
+    document.getElementById('request-a-fact-check')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
 
   const chip = (value: string | null, label: string, count?: number) => (
@@ -98,7 +110,10 @@ export default function FactCheckClient({
       <div className="flex flex-wrap items-center gap-3">
         <input
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => {
+            setQuery(e.target.value)
+            if (requestState === 'sent' || requestState === 'error') setRequestState('idle')
+          }}
           placeholder="Search a claim — try 'referral', 'wipe', 'billion', 'Squadron 42'…"
           className="w-full rounded-lg border border-white/10 bg-navyLight/60 px-4 py-3 text-sm text-starwhite placeholder:text-muted focus:border-gold/50 focus:outline-none sm:flex-1"
           aria-label="Search fact-checked claims"
@@ -114,6 +129,42 @@ export default function FactCheckClient({
       <p className="mt-4 text-xs text-muted">
         {filtered.length} of {claims.length} claims · ledger snapshot {generated}
       </p>
+
+      {filtered.length === 0 && query.trim() && (
+        <div className="mt-4 rounded-lg border border-gold/30 bg-navyLight/40 p-5 text-center">
+          {requestState === 'sent' && sentClaim === query.trim() ? (
+            <p className="text-sm leading-relaxed text-starwhite/85">
+              ✅ Sent — we will check &ldquo;{sentClaim}&rdquo; against official sources and
+              publish the verdict here within a few days.
+            </p>
+          ) : (
+            <>
+              <p className="text-sm text-starwhite/85">
+                No claims match <span className="text-starwhite">&ldquo;{query.trim()}&rdquo;</span>{' '}
+                yet.
+              </p>
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+                <button
+                  onClick={() => submitClaim(query)}
+                  disabled={requestState === 'sending'}
+                  className="rounded-lg bg-gold px-4 py-2 text-sm font-semibold text-navy transition-opacity hover:opacity-90 disabled:opacity-40"
+                >
+                  {requestState === 'sending' ? 'Sending…' : 'Request a fact-check on this'}
+                </button>
+                <button
+                  onClick={editFirst}
+                  className="rounded-lg border border-white/15 px-4 py-2 text-sm text-starwhite/85 transition-colors hover:border-white/30"
+                >
+                  Edit it first
+                </button>
+              </div>
+              {requestState === 'error' && (
+                <p className="mt-3 text-xs text-red-400">Something went wrong — please try again.</p>
+              )}
+            </>
+          )}
+        </div>
+      )}
 
       <div className="mt-4 space-y-3">
         {filtered.map((c) => {
@@ -154,7 +205,10 @@ export default function FactCheckClient({
         })}
       </div>
 
-      <div className="mt-10 rounded-lg border border-gold/20 bg-navyLight/40 p-5">
+      <div
+        id="request-a-fact-check"
+        className="mt-10 rounded-lg border border-gold/20 bg-navyLight/40 p-5 scroll-mt-24"
+      >
         <h2 className="heading-display text-xl">Checking a claim we have not covered?</h2>
         {requestState === 'sent' ? (
           <p className="mt-3 text-sm leading-relaxed text-starwhite/85">
@@ -188,7 +242,7 @@ export default function FactCheckClient({
             />
             <div className="mt-3 flex items-center gap-3">
               <button
-                onClick={submitRequest}
+                onClick={() => submitClaim(requestText)}
                 disabled={requestState === 'sending' || !requestText.trim()}
                 className="rounded-lg bg-gold px-4 py-2 text-sm font-semibold text-navy transition-opacity hover:opacity-90 disabled:opacity-40"
               >
