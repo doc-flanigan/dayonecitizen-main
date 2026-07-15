@@ -83,14 +83,24 @@ export default function FactCheckClient({
     const meaningful = raw.filter((w) => !STOP.has(w))
     // if the query is ONLY stopwords ("star citizen"), fall back to raw words
     const words = meaningful.length ? meaningful : raw
+    // Scored matching: a claim qualifies when at least half the meaningful
+    // words hit ("does SC wipe your ships" → wipe claims), ranked by how many
+    // hit, then by recency. Single-word queries behave like plain search.
+    const need = Math.max(1, Math.ceil(words.length / 2))
     return claims
       .filter((c) => !statusFilter || c.status === statusFilter)
-      .filter((c) => {
-        if (!words.length) return true
+      .map((c) => {
+        if (!words.length) return { c, hits: 0 }
         const hay = (c.claim + ' ' + c.id.replace(/-/g, ' ')).toLowerCase()
-        return words.every((w) => hay.includes(w))
+        return { c, hits: words.filter((w) => hay.includes(w)).length }
       })
-      .sort((a, b) => (b.lastVerified || '').localeCompare(a.lastVerified || ''))
+      .filter((x) => !words.length || x.hits >= need)
+      .sort(
+        (a, b) =>
+          b.hits - a.hits ||
+          (b.c.lastVerified || '').localeCompare(a.c.lastVerified || '')
+      )
+      .map((x) => x.c)
   }, [claims, query, statusFilter])
 
   const [copiedId, setCopiedId] = useState('')
