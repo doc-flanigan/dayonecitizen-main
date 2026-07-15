@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14",
+  "generated": "2026-07-15",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -285,10 +285,11 @@
     },
     {
       "id": "no-official-vr-support",
-      "claim": "Star Citizen does not officially support VR headsets; no CIG comm-link or RSI knowledge-base article documents VR as a supported input/display mode in the live game.",
-      "status": "unverifiable",
+      "claim": "Star Citizen does not officially support VR headsets.",
+      "status": "refuted",
       "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/12801-Chris-Visits-Oculus"
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-vr-support-experimental-release",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/star-citizen-vr-support-experimental-release-alpha/9029809"
       ],
       "lastVerified": "2026-07-14"
     },
@@ -367,7 +368,7 @@
     {
       "id": "rsi-website-no-german-locale",
       "claim": "robertsspaceindustries.com does not serve a functional German (or French) locale — /de/ and /fr/ paths 302-redirect to the /en/ equivalent; the site (store, comm-links, enlist/account-creation flow) is English-only.",
-      "status": "refuted",
+      "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/en/referral-program"
       ],
@@ -385,12 +386,13 @@
     {
       "id": "sc-german-ingame-localization-unofficial",
       "claim": "As of mid-2026, Star Citizen's live game client has no official CIG-shipped German in-game localization (menus/UI/subtitles); German is available only via unofficial community translation files, not a CIG feature.",
-      "status": "refuted",
+      "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/comm-link/SCW/20087-API",
-        "https://robertsspaceindustries.com/en/comm-link/transmission/12760-Poll-Additional-Stretch-Goals"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/12760-Poll-Additional-Stretch-Goals",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-community-localization-update"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "sc-minimum-system-requirements",
@@ -700,6 +702,16 @@
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/20864-Alpha-44-Welcome-To-Nyx",
         "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "vr-experimental-support-since-4-5",
+      "claim": "Star Citizen has official experimental VR support: CIG introduced it in Alpha 4.5 PTU (December 2025) and has kept improving it since (e.g. world-space interaction prompts and VR crosshair in Alpha 4.8); CIG labels the feature experimental.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-vr-support-experimental-release",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/star-citizen-vr-support-experimental-release-alpha/9029809"
       ],
       "lastVerified": "2026-07-14"
     }
