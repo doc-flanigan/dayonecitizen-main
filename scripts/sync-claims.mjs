@@ -6,8 +6,8 @@
 //
 //   npm run sync-claims
 //
-// Public fields only: id, claim, status, sources, lastVerified. The ledger's
-// usage maps and body notes are internal and deliberately excluded.
+// Public fields only: id, claim, status, correction, sources, lastVerified.
+// The ledger's usage maps and body notes are internal and deliberately excluded.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -25,7 +25,7 @@ if (!fs.existsSync(LEDGER)) {
 function parseClaimFile(txt) {
   const fm = txt.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!fm) return null;
-  const out = { id: '', claim: '', status: '', sources: [], lastVerified: '' };
+  const out = { id: '', claim: '', status: '', correction: '', sources: [], lastVerified: '' };
   let listKey = null;
   for (const line of fm[1].split(/\r?\n/)) {
     const item = line.match(/^\s+-\s+(.*)$/);
@@ -35,10 +35,11 @@ function parseClaimFile(txt) {
     const [, key, val] = kv;
     if (key === 'sources' || key === 'usage') { listKey = key === 'sources' ? 'sources' : null; continue; }
     listKey = null;
-    if (['id', 'claim', 'status', 'lastVerified'].includes(key)) {
+    if (['id', 'claim', 'status', 'correction', 'lastVerified'].includes(key)) {
       out[key] = val.replace(/^"(.*)"$/, '$1').trim();
     }
   }
+  if (!out.correction) delete out.correction;
   return out;
 }
 

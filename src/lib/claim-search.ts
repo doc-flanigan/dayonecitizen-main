@@ -8,6 +8,8 @@ export type Claim = {
   status: string
   sources: string[]
   lastVerified: string
+  // For refuted entries: the accurate statement, shown inline under the myth.
+  correction?: string
 }
 
 // Word-AND matching with stopwords: every meaningful word of the query must
@@ -33,7 +35,7 @@ export function searchClaims(query: string, claims: Claim[]): Claim[] {
   return claims
     .map((c) => {
       if (!words.length) return { c, hits: 0 }
-      const hay = (c.claim + ' ' + c.id.replace(/-/g, ' ')).toLowerCase()
+      const hay = (c.claim + ' ' + (c.correction || '') + ' ' + c.id.replace(/-/g, ' ')).toLowerCase()
       return { c, hits: words.filter((w) => hay.includes(w)).length }
     })
     .filter((x) => !words.length || x.hits >= need)
