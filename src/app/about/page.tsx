@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Check, X } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -125,6 +126,22 @@ export default function AboutPage() {
                 enormous, rust-red planet behind it. My first taste of the scale of this
                 game was enough to give me goosebumps.
               </p>
+              <figure className="my-8">
+                <Image
+                  src="/images/about/port-olisar-crusader.jpg"
+                  alt="Port Olisar space station orbiting the gas giant Crusader in Star Citizen"
+                  width={1920}
+                  height={1080}
+                  className="rounded-lg border border-white/10"
+                  sizes="(max-width: 768px) 100vw, 768px"
+                />
+                <figcaption className="mt-3 text-center text-xs text-muted">
+                  Port Olisar above Crusader — the view from my first confused
+                  hour in the &lsquo;Verse. The station was decommissioned in
+                  2024, but this is where day one happened for a decade of new
+                  citizens. o7
+                </figcaption>
+              </figure>
               <p>
                 While I was trying to figure out how to close my rear ramp, a{' '}
                 <Term name="Constellation">Constellation</Term> — a ship easily five times
