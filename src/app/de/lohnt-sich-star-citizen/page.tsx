@@ -58,7 +58,7 @@ const faqJsonLd = {
       name: 'Verliere ich bei einem Wipe alles?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe.',
+        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.9 (15. Juli 2026) hat den Fortschritt laut Patch Notes behalten.',
       },
     },
     {
@@ -233,8 +233,9 @@ export default function LohntSichStarCitizenPage() {
                 </li>
               </ul>
               <p>
-                Zum aktuellen Stand: Die Version Alpha 4.8.3 läuft seit dem
-                1. Juli 2026 auf den Live-Servern.
+                Zum aktuellen Stand: Die Version Alpha 4.9 läuft seit dem
+                15. Juli 2026 auf den Live-Servern — ohne Wipe, der
+                Spielfortschritt wurde übernommen.
               </p>
             </div>
           </section>
@@ -299,9 +300,10 @@ export default function LohntSichStarCitizenPage() {
                 <li>
                   <strong className="text-starwhite">Wer entscheidet:</strong>{' '}
                   die Patch Notes der jeweiligen Version. CIG kündigt dort an,
-                  was übernommen wird (Stichwort „Long Term Persistence“). Ob
-                  die nächste Version — Alpha 4.9, laut CIG noch im Juli 2026 erwartet —
-                  einen Wipe bringt, ist derzeit nicht angekündigt.
+                  was übernommen wird (Stichwort „Long Term Persistence“). Das
+                  aktuelle Update Alpha 4.9 (15. Juli 2026) brachte keinen
+                  Wipe — die Patch Notes bestätigen, dass der Fortschritt
+                  erhalten blieb.
                 </li>
               </ul>
             </div>
@@ -364,7 +366,9 @@ export default function LohntSichStarCitizenPage() {
                   Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und
                   Fortschritt zurück. Echtgeld-Käufe und Account-UEC (auch das
                   50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es
-                  mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe.
+                  mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe — das
+                  aktuelle Update Alpha 4.9 (15. Juli 2026) hat den Fortschritt
+                  behalten.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15",
+  "generated": "2026-07-16",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -145,14 +145,14 @@
       "lastVerified": "2026-07-05"
     },
     {
-      "id": "current-alpha-version-4-8-3",
-      "claim": "The current live Star Citizen build is Alpha 4.8 (patch 4.8.3, Return of Xenothreat); Alpha 4.9 is announced as arriving in July 2026, not yet live.",
+      "id": "current-alpha-version-4-9-0",
+      "claim": "The current live Star Citizen build is Alpha 4.9.0 (Frontier Tensions), released July 15, 2026; Long Term Persistence was Preserved — the update did not wipe saved progress.",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/comm-link/transmission/21206-Star-Citizen-Alpha-483",
-        "https://robertsspaceindustries.com/en/comm-link/transmission/21248-This-Week-In-Star-Citizen"
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-9-live-release-notes",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21220-Alpha-49-Frontier-Tensions"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-15"
     },
     {
       "id": "event-defensecon-2956",

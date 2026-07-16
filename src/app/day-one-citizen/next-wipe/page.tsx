@@ -35,7 +35,7 @@ const faqJsonLd = {
       name: 'When is the next Star Citizen wipe?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No wipe is currently announced. CIG states whether saved progress carries over in the patch notes of each update, and says it generally tries to avoid wipes. Some players expect one alongside Alpha 4.9, but that is community expectation — not an announcement.',
+        text: 'No wipe is currently announced. The latest update, Alpha 4.9 (July 15, 2026), did not wipe — its patch notes state Long Term Persistence was preserved, so saved progress carried over. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
       },
     },
     {
@@ -64,10 +64,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Will Alpha 4.9 wipe Star Citizen progress?',
+      name: 'Did Alpha 4.9 wipe Star Citizen progress?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nobody knows yet — CIG has not announced whether Alpha 4.9 includes a wipe. Whether a given patch wipes is only confirmed when its patch notes say so. Any prediction you read before then is community expectation, not official information.',
+        text: 'No. Alpha 4.9 released on July 15, 2026 with no wipe — the official patch notes state Long Term Persistence was preserved, so earned aUEC and in-game items carried over. The last full wipe came with Alpha 4.8 in May 2026.',
       },
     },
   ],
@@ -244,10 +244,12 @@ export default function NextWipePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">So — when is the next one?</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Unknown. As of July 2026, CIG has not announced a wipe for any
-                upcoming update. Parts of the community expect the next major update,
-                Alpha 4.9, to bring one — but that is expectation, not information.
-                Nothing is confirmed until the 4.9 patch notes say so.
+                Not announced. The latest major update, Alpha 4.9, arrived on
+                July 15, 2026 <em>without</em> a wipe — its patch notes state
+                that Long Term Persistence was preserved, so earned aUEC and
+                in-game items carried over. As of July 2026, no wipe is
+                announced for any upcoming update. The last full wipe came with
+                Alpha 4.8 in May 2026.
               </p>
               <p>
                 Practical advice: play as if your aUEC is temporary, because it is.
@@ -273,11 +275,11 @@ export default function NextWipePage() {
                   When is the next Star Citizen wipe?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  No wipe is currently announced. CIG states whether saved
-                  progress carries over in the patch notes of each update, and
-                  says it generally tries to avoid wipes. Some players expect
-                  one alongside Alpha 4.9, but that is community expectation —
-                  not an announcement. Heard a wipe rumor? Check it against our{' '}
+                  No wipe is currently announced. The latest update, Alpha 4.9
+                  (July 15, 2026), preserved saved progress — no wipe. CIG
+                  states whether progress carries over in the patch notes of
+                  each update, and says it generally tries to avoid wipes.
+                  Heard a wipe rumor? Check it against our{' '}
                   <Link href="/fact-check" className="text-gold underline-offset-4 hover:underline">
                     Star Citizen fact-check ledger
                   </Link>{' '}
@@ -320,14 +322,13 @@ export default function NextWipePage() {
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  Will Alpha 4.9 wipe progress?
+                  Did Alpha 4.9 wipe progress?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Nobody knows yet — CIG has not announced whether Alpha 4.9
-                  includes a wipe. Whether a given patch wipes is only
-                  confirmed when its patch notes say so. Any prediction you
-                  read before then is community expectation, not official
-                  information.
+                  No. Alpha 4.9 released on July 15, 2026 with no wipe — the
+                  official patch notes state Long Term Persistence was
+                  preserved, so earned aUEC and in-game items carried over.
+                  The last full wipe came with Alpha 4.8 in May 2026.
                 </p>
               </div>
             </div>
