@@ -363,7 +363,7 @@ export default function WorthBuyingPage() {
           </section>
 
           <div className="border-t border-white/10 pt-10">
-            <CTAButton size="lg" trackingLabel="worth-buying-cta" />
+            <CTAButton size="lg" href="/referral-code" trackingLabel="worth-buying-cta" />
             <DiscordCTA />
           </div>
 

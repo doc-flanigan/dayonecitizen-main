@@ -374,7 +374,7 @@ export default function BuyingTheGamePage() {
           </section>
 
           <div className="border-t border-white/10 pt-10">
-            <CTAButton size="lg" trackingLabel="buying-the-game-cta" />
+            <CTAButton size="lg" href="/referral-code" trackingLabel="buying-the-game-cta" />
             <DiscordCTA />
           </div>
 
