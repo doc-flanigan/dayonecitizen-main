@@ -213,13 +213,13 @@ export default function ToolsPage() {
           </section>
 
           {/* In-house quick reference */}
-          <section className="rounded-2xl border border-white/10 bg-navyLight/40 p-6 sm:p-8">
+          <section className="rounded-2xl border border-gold/20 border-l-4 border-l-gold bg-navyLight/40 p-6 shadow-[0_0_30px_-14px_rgba(240,192,64,0.35)] sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                  From this site
+                <p className="inline-flex items-center rounded-full bg-gold px-3 py-1 text-[11px] font-bold uppercase tracking-[0.15em] text-navy">
+                  Built by DayOneCitizen
                 </p>
-                <h2 className="heading-display mt-2 text-xl sm:text-2xl">
+                <h2 className="heading-display mt-3 text-xl sm:text-2xl">
                   Quick Reference — keybinds &amp; shops on one page
                 </h2>
                 <p className="mt-2 max-w-2xl text-sm text-muted">
@@ -237,19 +237,21 @@ export default function ToolsPage() {
           </section>
 
           {/* In-house fact check */}
-          <section className="rounded-2xl border border-white/10 bg-navyLight/40 p-6 sm:p-8">
+          <section className="rounded-2xl border border-gold/20 border-l-4 border-l-gold bg-navyLight/40 p-6 shadow-[0_0_30px_-14px_rgba(240,192,64,0.35)] sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                  From this site
+                <p className="inline-flex items-center rounded-full bg-gold px-3 py-1 text-[11px] font-bold uppercase tracking-[0.15em] text-navy">
+                  Built by DayOneCitizen
                 </p>
-                <h2 className="heading-display mt-2 text-xl sm:text-2xl">
+                <h2 className="heading-display mt-3 text-xl sm:text-2xl">
                   Fact Check — is that Star Citizen claim actually true?
                 </h2>
                 <p className="mt-2 max-w-2xl text-sm text-muted">
                   A searchable ledger of claims about the game — wipes, the
                   referral bonus, funding, events — each verified against an
                   official Cloud Imperium source, with the date we last checked.
+                  Also answers as the <code className="rounded bg-white/5 px-1.5 py-0.5 text-xs text-gold">/factcheck</code>{' '}
+                  command in our Discord.
                 </p>
               </div>
               <Link
