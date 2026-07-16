@@ -488,7 +488,7 @@ export default function ToolsPage() {
 
           {/* Referral CTA */}
           <div className="border-t border-white/10 pt-10">
-            <CTAButton size="lg" trackingLabel="tools-cta" />
+            <CTAButton size="lg" href="/referral-code" trackingLabel="tools-cta" />
           </div>
 
           {/* Disclaimer */}

@@ -226,7 +226,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-3">
-              <CTAButton size="lg" trackingLabel="home-bottom-cta">
+              <CTAButton size="lg" href="/referral-code" trackingLabel="home-bottom-cta">
                 Start with 50K UEC
               </CTAButton>
               <span className="text-center text-xs text-muted">

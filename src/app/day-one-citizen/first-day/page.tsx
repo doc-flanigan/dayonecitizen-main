@@ -485,7 +485,7 @@ export default function FirstDayPage() {
           </section>
 
           <div className="border-t border-white/10 pt-10">
-            <CTAButton size="lg" trackingLabel="first-day-cta" />
+            <CTAButton size="lg" href="/referral-code" trackingLabel="first-day-cta" />
           </div>
 
           <nav className="flex items-center justify-between text-sm">
