@@ -215,6 +215,12 @@ export default function FactCheckClient({
                 </span>
               </div>
               <p className="mt-2 text-sm leading-relaxed text-starwhite/90">{c.claim}</p>
+              {c.correction && (
+                <p className="mt-2 rounded-md border-l-2 border-green-400/60 bg-green-400/5 px-3 py-2 text-sm leading-relaxed text-starwhite/85">
+                  <span className="font-semibold text-green-400">What&rsquo;s actually true:</span>{' '}
+                  {c.correction}
+                </p>
+              )}
               {c.sources.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
                   {c.sources.map((s) => (

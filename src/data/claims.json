@@ -20,18 +20,6 @@
       "lastVerified": "2026-07-15"
     },
     {
-      "id": "argo-atls-power-suit-family",
-      "claim": "Star Citizen has an officially released piloted power suit — the Argo ATLS exo-frame (cargo loading, added Alpha 3.24.1, September 2024), with the ATLS GEO mining variant and the weaponized ATLS IKTI / GEO IKTI combat variants (2025).",
-      "status": "verified",
-      "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/20114-Argo-ATLS",
-        "https://robertsspaceindustries.com/en/comm-link/engineering/20159-Q-A-Argo-ATLS",
-        "https://robertsspaceindustries.com/en/comm-link/transmission/20433-Argo-ATLS-GEO",
-        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/argo-atls-coming-to-alpha-3-24-2-in-game-shops"
-      ],
-      "lastVerified": "2026-07-14"
-    },
-    {
       "id": "auec-temporary-wipes-possible",
       "claim": "aUEC (Alpha UEC) is a temporary testing currency that can be changed or reset during alpha; losing aUEC never affects the UEC or pledge-store purchases on an RSI account. Patch notes state per-patch whether aUEC carries over (Long Term Persistence), and CIG says it generally tries to avoid wipes.",
       "status": "verified",
@@ -47,16 +35,6 @@
       "sources": [
         "https://robertsspaceindustries.com/comm-link/transmission/20449-RSI-Aurora-Mk-II",
         "https://robertsspaceindustries.com/en/comm-link/engineering/21063-Q-A-RSI-Aurora"
-      ],
-      "lastVerified": "2026-07-15"
-    },
-    {
-      "id": "base-building-citizencon-2954-not-yet-live",
-      "claim": "Base building (player-constructed structures on land claims) was announced and demonstrated at CitizenCon 2954 (October 2024) and remains in active development, not yet live in the current alpha as of mid-2026.",
-      "status": "verified",
-      "sources": [
-        "https://www.youtube.com/watch?v=WLLLtaM0Jf0",
-        "https://www.youtube.com/watch?v=_n9bXJnkgBQ"
       ],
       "lastVerified": "2026-07-15"
     },
@@ -414,15 +392,7 @@
       "id": "misc-raptor-not-real-ship",
       "claim": "The MISC Raptor is not a real ship — it was only ever an April Fools joke.",
       "status": "refuted",
-      "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/20643-Introducing-The-New-Referral-Program"
-      ],
-      "lastVerified": "2026-07-15"
-    },
-    {
-      "id": "misc-raptor-referral-reward",
-      "claim": "The MISC Raptor is a real Star Citizen vehicle: introduced as an April Fools joke (April 2024), CIG later made it a legendary reward on the revamped referral program ladder — explicitly stating 'no, it's not an April Fools' joke.' It is still in development, to be delivered at a later date.",
-      "status": "verified",
+      "correction": "The MISC Raptor is a real Star Citizen vehicle: introduced as an April Fools joke (April 2024), CIG later made it a legendary reward on the revamped referral program ladder — explicitly stating 'no, it's not an April Fools' joke.' It is still in development, to be delivered at a later date.",
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/20643-Introducing-The-New-Referral-Program",
         "https://robertsspaceindustries.com/en/comm-link/transmission/19819-MISC-Raptor"
@@ -433,9 +403,12 @@
       "id": "no-mech-suits-announced",
       "claim": "Star Citizen has no mech suits.",
       "status": "refuted",
+      "correction": "Star Citizen has an officially released piloted power suit — the Argo ATLS exo-frame (cargo loading, added Alpha 3.24.1, September 2024), with the ATLS GEO mining variant and the weaponized ATLS IKTI / GEO IKTI combat variants (2025). CIG's vocabulary is 'power suit' / 'exo-frame'; no large war-mech vehicle class is announced.",
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/20114-Argo-ATLS",
-        "https://robertsspaceindustries.com/en/comm-link/engineering/20159-Q-A-Argo-ATLS"
+        "https://robertsspaceindustries.com/en/comm-link/engineering/20159-Q-A-Argo-ATLS",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20433-Argo-ATLS-GEO",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/argo-atls-coming-to-alpha-3-24-2-in-game-shops"
       ],
       "lastVerified": "2026-07-15"
     },
@@ -453,6 +426,7 @@
       "id": "no-official-vr-support",
       "claim": "Star Citizen does not officially support VR headsets.",
       "status": "refuted",
+      "correction": "Star Citizen has official experimental VR support: CIG introduced it in Alpha 4.5 PTU (December 2025) and has kept improving it since (e.g. world-space interaction prompts and VR crosshair in Alpha 4.8); CIG labels the feature experimental.",
       "sources": [
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-vr-support-experimental-release",
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/star-citizen-vr-support-experimental-release-alpha/9029809"
@@ -472,15 +446,7 @@
       "id": "odin-not-last-concept-sale-ever",
       "claim": "CIG announced that the Anvil Odin is the last concept-only ship sale ever, permanently retiring concept sales and 'closing out the final remaining vehicle stretch goals.'",
       "status": "refuted",
-      "sources": [
-        "https://www.youtube.com/watch?v=CFoQp6wRjPo"
-      ],
-      "lastVerified": "2026-07-15"
-    },
-    {
-      "id": "odin-only-concept-sale-of-2026",
-      "claim": "On the DefenseCon 2956 Showcase stream, CIG said the Anvil Odin is the only concept ship sale of 2026 ('we didn't do any last year at all... this is the only one we're doing this year') — CIG has not announced a permanent end to concept ship sales.",
-      "status": "verified",
+      "correction": "On the DefenseCon 2956 Showcase stream, CIG said the Anvil Odin is the only concept ship sale of 2026 ('we didn't do any last year at all... this is the only one we're doing this year') — CIG has not announced a permanent end to concept ship sales.",
       "sources": [
         "https://www.youtube.com/watch?v=CFoQp6wRjPo"
       ],
@@ -500,6 +466,7 @@
       "id": "players-cannot-yet-build-bases",
       "claim": "Players can currently craft and build their own bases in Star Citizen.",
       "status": "refuted",
+      "correction": "Base building (player-constructed structures on land claims) was announced and demonstrated at CitizenCon 2954 (October 2024) and remains in active development, not yet live in the current alpha as of mid-2026; Crafting T0 (Alpha 4.7) covers personal armor and weapons only.",
       "sources": [
         "https://www.youtube.com/watch?v=AmwKD_flLmw",
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/cnou-pioneer-update",
@@ -965,16 +932,6 @@
         "https://robertsspaceindustries.com/en/comm-link/engineering/16292-Q-A-UEE-Land-Claim-Licenses"
       ],
       "lastVerified": "2026-07-15"
-    },
-    {
-      "id": "vr-experimental-support-since-4-5",
-      "claim": "Star Citizen has official experimental VR support: CIG introduced it in Alpha 4.5 PTU (December 2025) and has kept improving it since (e.g. world-space interaction prompts and VR crosshair in Alpha 4.8); CIG labels the feature experimental.",
-      "status": "verified",
-      "sources": [
-        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-vr-support-experimental-release",
-        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/star-citizen-vr-support-experimental-release-alpha/9029809"
-      ],
-      "lastVerified": "2026-07-14"
     }
   ]
 }

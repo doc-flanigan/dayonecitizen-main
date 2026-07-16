@@ -114,9 +114,14 @@ export async function POST(req: NextRequest) {
             title: `${STATUS_EMOJI[c.status] || '❓'} ${STATUS_LABEL[c.status] || c.status}`,
             description: truncate(c.claim, 250),
             color: c.status === 'verified' ? 0x4ade80 : c.status === 'refuted' ? 0xf87171 : 0xf0c040,
-            fields: c.sources?.length
-              ? [{ name: 'Source', value: truncate(c.sources[0], 200), inline: false }]
-              : [],
+            fields: [
+              ...(c.correction
+                ? [{ name: "✅ What's actually true", value: truncate(c.correction, 500), inline: false }]
+                : []),
+              ...(c.sources?.length
+                ? [{ name: 'Source', value: truncate(c.sources[0], 200), inline: false }]
+                : []),
+            ],
             footer: { text: `Last verified ${c.lastVerified || 'n/a'} · full ledger: ${PAGE_URL}` },
           })),
         },
