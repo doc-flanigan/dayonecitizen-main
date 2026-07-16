@@ -219,7 +219,8 @@ export default function AboutPage() {
                 </li>
                 <li>
                   <strong className="text-starwhite">Free.</strong> The site,
-                  the glossary, all of it.
+                  the guides, the glossary, the quick reference, the
+                  fact-check ledger — all of it.
                 </li>
               </ul>
             </div>
