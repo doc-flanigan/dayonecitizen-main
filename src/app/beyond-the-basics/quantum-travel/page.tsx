@@ -65,6 +65,11 @@ export default function QuantumTravelPage() {
               <Term name="Pyro">Pyro</Term> star systems.
             </p>
 
+            <p className="mb-6 text-xs text-muted">
+              Page reviewed July 18, 2026. The steps below match the current
+              Alpha 4.x controls.
+            </p>
+
             {/* Prerequisites */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Before you can jump
