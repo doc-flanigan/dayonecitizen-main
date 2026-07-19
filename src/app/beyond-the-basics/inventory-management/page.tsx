@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'How to open Star Citizen inventory (press I), transfer items between personal and ship storage, and move gear between stations. Storage persistence explained.',
   alternates: { canonical: '/beyond-the-basics/inventory-management' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Inventory Guide — Ship & Personal Storage (2026)',
     description:
       'How to open Star Citizen inventory (press I), transfer items between personal and ship storage, and move gear between stations. Storage persistence explained.',

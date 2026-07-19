@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'How to use the RSI Launcher: Live vs PTU vs EPTU builds, switching channels, verifying game files, and fixing common Star Citizen launcher problems.',
   alternates: { canonical: '/day-one-citizen/rsi-launcher' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'RSI Launcher Guide: Live, PTU & EPTU Explained',
     description:
       'How to use the RSI Launcher — Live vs PTU vs EPTU, switching channels, verifying files, and fixing common issues.',

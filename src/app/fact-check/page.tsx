@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Search fact-checked Star Citizen claims — referral bonus amounts, wipes, funding, events, Squadron 42 — each verified against official Cloud Imperium sources with dates.',
   alternates: { canonical: '/fact-check' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Fact Check — Verified Claims With Official Sources',
     description:
       'A public ledger of fact-checked Star Citizen claims, each verified against official Cloud Imperium sources. Free for creators to search and cite.',

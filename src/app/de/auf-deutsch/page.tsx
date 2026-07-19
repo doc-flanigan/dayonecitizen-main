@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Gibt es Star Citizen auf Deutsch? Der ehrliche Stand 2026',
     description:
       'Offiziell nur Englisch — deutsche Texte gibt es nur über inoffizielle Community-Sprachdateien. Was das für dich heißt, ehrlich erklärt.',

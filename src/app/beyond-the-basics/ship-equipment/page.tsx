@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Star Citizen ship components: power plants, coolers, quantum drives, shields, and weapons. How grades affect performance and radar signature. Updated 2026.',
   alternates: { canonical: '/beyond-the-basics/ship-equipment' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Ship Equipment Guide (2026)',
     description:
       'Ship components in Star Citizen explained: power plants, coolers, quantum drives, shields, and weapons. How grades affect performance and radar signature.',

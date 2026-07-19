@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Lohnt sich Star Citizen 2026? Die ehrliche Antwort',
     description:
       'Ja, wenn du offene Weltraumspiele liebst und eine Alpha verkraftest. Nein, wenn du ein fertiges Spiel erwartest. Ehrlich, ohne Verkaufsdruck.',

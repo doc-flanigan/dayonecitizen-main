@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Ten things to do on your first day in Star Citizen — from the ASOP terminal to your first mission, collecting aUEC, and logging out safely.',
   alternates: { canonical: '/day-one-citizen/first-day' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen First Day Guide: What to Do First',
     description:
       'Ten things to do on day one in Star Citizen, in order. From claiming your ship at the ASOP terminal to your first mission and safe logout.',

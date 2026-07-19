@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     'What Open, Confirmed, Under Investigation, and Acknowledged mean on the Star Citizen Issue Council, how community confirmations move a report, and how to keep helping.',
   alternates: { canonical: '/report-a-bug/after-you-file' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'After You File a Star Citizen Bug Report',
     description:
       'The Issue Council status lifecycle explained — Open, Confirmed, Under Investigation, Acknowledged — and how your confirmations push reports toward a fix.',

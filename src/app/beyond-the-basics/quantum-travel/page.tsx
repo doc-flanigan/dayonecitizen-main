@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Hold B to spool your quantum drive, click a destination marker to lock on, then press B again to jump. A step-by-step guide for brand-new pilots.',
   alternates: { canonical: '/beyond-the-basics/quantum-travel' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
     description:
       'Hold B to spool your quantum drive, click a destination marker to lock on, then press B again to jump. A step-by-step guide for brand-new pilots.',

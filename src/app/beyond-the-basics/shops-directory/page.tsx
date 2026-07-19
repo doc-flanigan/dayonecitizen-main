@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     'Where to buy armor, weapons, and ship parts in Star Citizen: New Babbage, Area18 (Cubby Blast), Lorville. Full shop list with what each vendor carries.',
   alternates: { canonical: '/beyond-the-basics/shops-directory' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville (2026)',
     description:
       'Where to buy armor, weapons, and ship parts in Star Citizen. Full shop list for every major city and space station in Stanton.',

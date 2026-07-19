@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Star Citizen first launch: character creation choices that matter, waking up in your hab room, and the five things to do before anything else.',
   alternates: { canonical: '/day-one-citizen/first-launch' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen First Launch: Character Creation & What Happens Next',
     description:
       'Character creation, your hab room, mobiGlas basics, and the first five actions every new Star Citizen player should take.',

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Is Star Citizen Worth Buying in 2026?',
     description:
       'Honest assessment of Star Citizen in 2026 — what works, what is still unfinished, and how to try it free before you commit.',

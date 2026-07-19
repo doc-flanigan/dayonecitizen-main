@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Power on your ship, clear the hangar, master Star Citizen flight controls, make your first quantum jump, and land. Step-by-step with exact keybinds.',
   alternates: { canonical: '/day-one-citizen/first-flight' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen First Flight Guide: Take Off, Fly & Land',
     description:
       'From powering on to quantum travel and landing — the complete first-flight walkthrough for new Star Citizen players.',

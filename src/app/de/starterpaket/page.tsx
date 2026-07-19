@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Welches Star Citizen Starterpaket? Aurora oder Mustang (2026)',
     description:
       'Die klare Empfehlung: das 45-US-Dollar-Starterpaket mit der Aurora Mk II. Klein anfangen ist nie ein Fehler — dank CCU-Upgrades.',

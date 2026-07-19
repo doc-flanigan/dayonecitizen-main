@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     'The best first ship in Star Citizen for most new players is the Aurora Mk II from the $45 pack. Aurora vs Mustang Alpha compared, plus the upgrade path.',
   alternates: { canonical: '/day-one-citizen/first-ship' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen First Ship — Which Starter Ship to Fly First',
     description:
       'Aurora Mk II vs Mustang Alpha, honestly compared — and why your first ship matters less than you think once CCUs and aUEC enter the picture.',

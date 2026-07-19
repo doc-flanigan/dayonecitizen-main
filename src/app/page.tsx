@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     'Star Citizen guide for brand-new players. 12 step-by-step guides: system requirements, buying, installing, keybinds, navigation, and your first flight.',
   alternates: { canonical: '/' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen New Player Guide — Plain English, No Jargon',
     description:
       '12 step-by-step guides for brand-new Star Citizen players — from system requirements to your first quantum jump. No jargon, no gatekeeping.',

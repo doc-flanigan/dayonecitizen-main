@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Hab to hangar routes in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage elevators, and Orison inter-platform shuttles.',
   alternates: { canonical: '/day-one-citizen/getting-around' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'How to Get to Your Ship in Star Citizen',
     description:
       'Hab to hangar routes in Lorville, Area18, New Babbage, and Orison — step-by-step for every starting city in Star Citizen.',

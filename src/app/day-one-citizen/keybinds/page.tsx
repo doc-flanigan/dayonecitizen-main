@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Star Citizen keybinds for new players: on-foot, flight controls, power triangle, mobiGlas, quantum travel, and how to remap controls in-game.',
   alternates: { canonical: '/day-one-citizen/keybinds' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Keybinds for New Players',
     description:
       'Essential Star Citizen controls for day one: on-foot, flight, power triangle, mobiGlas, and quantum travel. Includes a full keybind reference table.',

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Download the RSI Launcher, install Star Citizen to an SSD, and get through shader compilation. Disk space requirements (150 GB+) and best install paths.',
   alternates: { canonical: '/day-one-citizen/install' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'How to Install Star Citizen',
     description:
       'Download the RSI Launcher, install Star Citizen to an SSD, survive shader compilation. Disk space requirements and step-by-step install guide.',

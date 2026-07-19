@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
     description:
       'No. One $45 package is the only required purchase — every other ship can be rented or bought in-game with earned aUEC. The honest breakdown.',

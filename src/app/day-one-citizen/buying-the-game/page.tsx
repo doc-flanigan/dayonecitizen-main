@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'How to Buy Star Citizen — Step by Step',
     description:
       'Create an RSI account, enter a referral code for 50,000 free UEC, pick a starter package, and download the launcher. Complete walkthrough.',

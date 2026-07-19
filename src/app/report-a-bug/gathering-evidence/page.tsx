@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     'How to find your Star Citizen build number, locate the Game.log file, save a DxDiag report, and capture a screenshot or video — everything you need before filing a bug.',
   alternates: { canonical: '/report-a-bug/gathering-evidence' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Gathering Evidence for a Star Citizen Bug Report',
     description:
       'Find your build number, Game.log, and DxDiag report, and capture a screenshot or video — the five-minute prep that makes a bug report developers can act on.',

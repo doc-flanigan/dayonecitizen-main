@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     'Star Citizen fleet viewer, DPS calculator, and trade route planner — the best fan-made tools for every player. StarJump, Erkul, and UEX Corp.',
   alternates: { canonical: '/tools' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Fleet Viewer & Tools — StarJump, Erkul & More',
     description:
       'Star Citizen fleet viewer, DPS calculator, trade routes, and more — the best fan-made tools including StarJump, Erkul, and UEX Corp.',

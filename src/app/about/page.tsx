@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     'Unofficial Star Citizen fan site for new players by Doc_Flanigan. Plain English, no jargon. Use referral code STAR-GCQJ-N6NC to start with 50,000 UEC free.',
   alternates: { canonical: '/about' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'What Does o7 Mean? The Star Citizen Salute Explained',
     description:
       "o7 is an emoticon salute. The 'o' is a head, the '7' is a raised arm. Originated in EVE Online, now used across all of sci-fi gaming.",

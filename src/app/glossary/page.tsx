@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     "New to Star Citizen? Plain-English definitions of every term, acronym, and piece of 'Verse slang you'll encounter. 150+ terms, searchable by category.",
   alternates: { canonical: '/glossary' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Glossary — Plain English Definitions',
     description:
       "Definitions of every Star Citizen term you'll encounter as a new player. Search and filter, A through Z.",

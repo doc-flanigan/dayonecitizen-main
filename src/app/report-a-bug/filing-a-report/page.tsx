@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     'Choose the right project, version, and channel, write a searchable title and clear reproduction steps, and attach your evidence — a complete walkthrough of filing a bug.',
   alternates: { canonical: '/report-a-bug/filing-a-report' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Filing a Star Citizen Bug Report',
     description:
       'Project, version, channel, title, reproduction steps, evidence — the complete walkthrough of filing a report the developers can reproduce.',

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     'Star Citizen Free Fly events let you play the full game free. Track upcoming windows, flyable ships, and get the referral code bonus before the event ends.',
   alternates: { canonical: '/free-fly-events' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
     description:
       'Track every Star Citizen Free Fly window — upcoming dates, flyable ships, and how to get 50,000 free UEC with a referral code.',

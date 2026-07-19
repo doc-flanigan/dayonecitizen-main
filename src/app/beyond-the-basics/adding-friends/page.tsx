@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Press F1 to open mobiGlas, tap Contacts, search by RSI handle, and send a request. Step-by-step guide including party invites and crew tips.',
   alternates: { canonical: '/beyond-the-basics/adding-friends' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'How to Add Friends in Star Citizen (2026 Guide)',
     description:
       'Press F1 to open mobiGlas, tap Contacts, search by RSI handle, and send a request. Step-by-step guide including party invites and crew tips.',

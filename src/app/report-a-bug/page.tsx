@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     'A plain-English, step-by-step guide to the Star Citizen Issue Council: what it is, who can use it, how to gather evidence, search, and file a bug report developers can act on.',
   alternates: { canonical: '/report-a-bug' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'How to Report a Star Citizen Bug — The Issue Council Guide',
     description:
       'What the Issue Council is, who can use it, and how to file a Star Citizen bug report developers can actually reproduce and fix. Step by step, in plain English.',

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Why Star Citizen says "pledge" not "purchase" — what you actually own, how LTI insurance works, and what melting a ship means.',
   alternates: { canonical: '/day-one-citizen/pledge-vs-purchase' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Pledge vs Purchase Explained',
     description:
       'What "pledge" means in Star Citizen, what you actually own, how LTI insurance works, and what melting a ship does.',

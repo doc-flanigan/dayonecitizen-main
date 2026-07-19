@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Save hundreds on Star Citizen ship upgrades using CCU chains. Step-by-step guide to Cross-Chassis Upgrades, Warbond CCU strategies, and worked savings examples.',
   alternates: { canonical: '/beyond-the-basics/ccu-chains' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen CCU Chain Calculator & Savings Guide (2026)',
     description:
       'Save hundreds on Star Citizen ship upgrades using CCU chains. Step-by-step guide to Cross-Chassis Upgrades, Warbond CCU strategies, and worked savings examples.',

@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     'How to sign in to the Star Citizen Issue Council, search for your bug, filter by status, and add to an existing report instead of creating a duplicate.',
   alternates: { canonical: '/report-a-bug/searching-the-council' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Searching the Star Citizen Issue Council',
     description:
       'Sign in, search for your bug, filter by status, and contribute to an existing report instead of making a duplicate — the step most people skip.',

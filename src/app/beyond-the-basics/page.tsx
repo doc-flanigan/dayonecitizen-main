@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     'Nine plain-English Star Citizen guides for players past the basics: quantum travel, adding friends, redeem codes, CCU upgrades, and more.',
   alternates: { canonical: '/beyond-the-basics' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Beyond the Basics — Star Citizen Guides for Early Players',
     description:
       'Nine plain-English Star Citizen guides for players who have got the basics down: quantum travel, adding friends, redeem codes, CCU upgrades, and more.',

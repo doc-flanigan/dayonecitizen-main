@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     'No Star Citizen wipe is currently announced. Real-money purchases and account UEC always survive; aUEC and in-game items are temporary alpha progress.',
   alternates: { canonical: '/day-one-citizen/next-wipe' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'When Is the Next Star Citizen Wipe?',
     description:
       'No wipe is currently announced. Exactly what survives a wipe (everything you paid for) and what resets (aUEC and in-game progress), in plain English.',

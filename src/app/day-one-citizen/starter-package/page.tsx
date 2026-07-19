@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Starter Packages 2026: All 8 Options Compared',
     description:
       'Eight packages. Six careers. One recommendation. Which starter pack is right for you?',

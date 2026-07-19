@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     'One mobile-friendly cheat sheet: the Star Citizen keybinds that matter on day one, capacitor keys, and exactly which shop sells weapons, armor, components, mining gear, and ships.',
   alternates: { canonical: '/quick-reference' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Quick Reference — Keybinds & Shops Cheat Sheet',
     description:
       'The keybinds you need and the shop that sells what you want, on one fast mobile page. From dayonecitizen.com.',

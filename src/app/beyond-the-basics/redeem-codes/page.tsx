@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     'Referral codes give new Star Citizen accounts 50,000 UEC. Promo codes come from CIG events. Where to enter each one — and how to spot the fake code lists.',
   alternates: { canonical: '/beyond-the-basics/redeem-codes' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Redeem Codes 2026 — Referral Code & Rewards',
     description:
       'Referral codes give new Star Citizen accounts 50,000 UEC. Promo codes come from CIG events. Where to enter each one — and how to spot the fake code lists.',

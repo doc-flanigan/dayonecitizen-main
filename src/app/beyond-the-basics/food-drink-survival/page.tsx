@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Star Citizen food, drink, and survival: hunger and thirst meters, debuffs to avoid, and where to buy food in New Babbage, Lorville, and Area18.',
   alternates: { canonical: '/beyond-the-basics/food-drink-survival' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Food, Drink & Survival Guide (2026)',
     description:
       'How food, drink, and survival mechanics work in Star Citizen: what the hunger and thirst meters do, debuffs to avoid, and where to buy food and drink.',

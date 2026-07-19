@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Musst du in Star Citizen Schiffe für Echtgeld kaufen? Nein.',
     description:
       'Ein 45-US-Dollar-Paket genügt. Alle anderen Schiffe kannst du im Spiel erspielen — mit aUEC. Die ehrliche Antwort, inklusive Pay-to-win-Debatte.',

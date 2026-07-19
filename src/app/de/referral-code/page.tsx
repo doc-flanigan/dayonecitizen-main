@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Empfehlungscode — STAR-GCQJ-N6NC (50.000 UEC)',
     description:
       'Gib den Empfehlungscode STAR-GCQJ-N6NC bei der Kontoerstellung ein und starte mit 50.000 UEC Startguthaben — ohne Kaufpflicht. Deutsche Anleitung.',

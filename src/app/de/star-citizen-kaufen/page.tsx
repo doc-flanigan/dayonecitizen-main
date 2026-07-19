@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
     description:
       'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar. Keine Keys, kein Steam. Die deutsche Schritt-für-Schritt-Anleitung.',

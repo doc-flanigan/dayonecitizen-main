@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     'Star Citizen minimum and recommended PC specs for 2026 — CPU, GPU, RAM, VRAM, storage, and the NVMe SSD you really need, plus what performance to expect.',
   alternates: { canonical: '/day-one-citizen/system-specs' },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen System Requirements 2026 — Full PC Specs',
     description:
       'Minimum and recommended PC specs for Star Citizen in 2026, what they mean in practice, and the hardware traps that kill performance for new players.',

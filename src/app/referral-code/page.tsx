@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Referral Code — STAR-GCQJ-N6NC (50,000 UEC Free)',
     description:
       'The Star Citizen referral code is STAR-GCQJ-N6NC. Enter it when you create your free RSI account to start with a 50,000 UEC bonus. No purchase required.',

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    images: ['/images/brand/og-image.png'],
     title: 'Ist Star Citizen auf Steam?',
     description:
       'Nein — Star Citizen wird nur auf robertsspaceindustries.com verkauft und läuft nur auf Windows-PC. Konsolen, Game Pass und Steam Deck ehrlich beantwortet.',
