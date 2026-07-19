@@ -11,7 +11,7 @@ import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
+  title: 'Star Citizen Ships — Real Money Optional',
   description:
     'No — one $45 game package is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC. Here is how that works.',
   alternates: {

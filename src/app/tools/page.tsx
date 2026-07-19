@@ -9,7 +9,7 @@ import CTAButton from '@/components/CTAButton'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Fleet Viewer & Tools — StarJump, Erkul & More',
+  title: 'Star Citizen Tools — Fleet Viewer & More',
   description:
     'Star Citizen fleet viewer, DPS calculator, and trade route planner — the best fan-made tools for every player. StarJump, Erkul, and UEX Corp.',
   alternates: { canonical: '/tools' },

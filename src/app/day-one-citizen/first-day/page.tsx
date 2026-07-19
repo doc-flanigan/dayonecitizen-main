@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Day Guide: What to Do First — Day One Citizen',
+  title: 'Star Citizen First Day — What to Do First',
   description:
     'Ten things to do on your first day in Star Citizen — from the ASOP terminal to your first mission, collecting aUEC, and logging out safely.',
   alternates: { canonical: '/day-one-citizen/first-day' },

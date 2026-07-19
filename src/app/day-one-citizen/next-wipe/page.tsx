@@ -11,7 +11,7 @@ import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'When Is the Next Star Citizen Wipe? What Survives, What Resets',
+  title: 'When Is the Next Star Citizen Wipe?',
   description:
     'No Star Citizen wipe is currently announced. Real-money purchases and account UEC always survive; aUEC and in-game items are temporary alpha progress.',
   alternates: { canonical: '/day-one-citizen/next-wipe' },

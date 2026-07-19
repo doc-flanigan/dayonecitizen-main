@@ -7,7 +7,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'How to Get to Your Ship in Star Citizen — Day One Citizen',
+  title: 'How to Get to Your Ship in Star Citizen',
   description:
     'Hab to hangar routes in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage elevators, and Orison inter-platform shuttles.',
   alternates: { canonical: '/day-one-citizen/getting-around' },

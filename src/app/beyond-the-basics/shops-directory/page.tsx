@@ -9,7 +9,7 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville',
+  title: 'Star Citizen Shops — New Babbage & Area18',
   description:
     'Where to buy armor, weapons, and ship parts in Star Citizen: New Babbage, Area18 (Cubby Blast), Lorville. Full shop list with what each vendor carries.',
   alternates: { canonical: '/beyond-the-basics/shops-directory' },

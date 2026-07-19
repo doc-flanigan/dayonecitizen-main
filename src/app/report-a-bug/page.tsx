@@ -11,9 +11,9 @@ import { SITE } from '@/lib/site'
 import { OFFICIAL_SOURCES, COMMUNITY_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
-  title: 'How to Report a Star Citizen Bug — The Issue Council Guide',
+  title: 'Report a Star Citizen Bug — Issue Council',
   description:
-    'A plain-English, step-by-step guide to the Star Citizen Issue Council: what it is, who can use it, how to gather evidence, search, and file a bug report developers can act on.',
+    'Plain-English guide to the Star Citizen Issue Council: gather evidence, search existing reports, and file a bug developers can act on.',
   alternates: { canonical: '/report-a-bug' },
   openGraph: {
     images: ['/images/brand/og-image.png'],

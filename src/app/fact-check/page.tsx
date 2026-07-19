@@ -7,9 +7,9 @@ import claimsData from '@/data/claims.json'
 import FactCheckClient from './FactCheckClient'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Fact Check — Verified Claims With Official Sources',
+  title: 'Star Citizen Fact Check — Official Sources',
   description:
-    'Search fact-checked Star Citizen claims — referral bonus amounts, wipes, funding, events, Squadron 42 — each verified against official Cloud Imperium sources with dates.',
+    'Search fact-checked Star Citizen claims — referral bonuses, wipes, funding, Squadron 42 — verified against official CIG sources.',
   alternates: { canonical: '/fact-check' },
   openGraph: {
     images: ['/images/brand/og-image.png'],

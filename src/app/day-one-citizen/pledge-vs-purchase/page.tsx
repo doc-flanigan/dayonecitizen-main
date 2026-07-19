@@ -7,7 +7,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Pledge vs Purchase Explained — Day One Citizen',
+  title: 'Star Citizen Pledge vs Purchase Explained',
   description:
     'Why Star Citizen says "pledge" not "purchase" — what you actually own, how LTI insurance works, and what melting a ship means.',
   alternates: { canonical: '/day-one-citizen/pledge-vs-purchase' },

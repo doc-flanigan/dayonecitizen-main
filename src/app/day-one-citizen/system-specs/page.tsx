@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen System Requirements 2026 — Full PC Specs',
+  title: 'Star Citizen System Requirements 2026',
   description:
     'Star Citizen minimum and recommended PC specs for 2026 — CPU, GPU, RAM, VRAM, storage, and the NVMe SSD you really need, plus what performance to expect.',
   alternates: { canonical: '/day-one-citizen/system-specs' },

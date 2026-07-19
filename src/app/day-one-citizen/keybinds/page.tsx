@@ -8,7 +8,7 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Keybinds for New Players — Day One Citizen',
+  title: 'Star Citizen Keybinds for New Players',
   description:
     'Star Citizen keybinds for new players: on-foot, flight controls, power triangle, mobiGlas, quantum travel, and how to remap controls in-game.',
   alternates: { canonical: '/day-one-citizen/keybinds' },

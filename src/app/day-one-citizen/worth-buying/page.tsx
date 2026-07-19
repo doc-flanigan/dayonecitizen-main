@@ -10,7 +10,7 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
-  title: 'Is Star Citizen Worth Buying in 2026? — Day One Citizen',
+  title: 'Is Star Citizen Worth Buying in 2026?',
   description:
     'Honest look at Star Citizen in 2026 — what you get today, what is still unfinished, and how to try the game free before spending anything.',
   alternates: {

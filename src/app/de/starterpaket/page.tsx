@@ -9,7 +9,7 @@ import MehrAufDeutsch from '@/components/de/MehrAufDeutsch'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Welches Star Citizen Starterpaket? Aurora oder Mustang (2026)',
+  title: 'Starterpaket: Aurora oder Mustang? (2026)',
   description:
     'Für die meisten neuen Spieler: das Citizen Starter Pack für 45 US-Dollar mit der Aurora Mk II. Warum das reicht — und wie der CCU-Upgrade-Pfad funktioniert.',
   alternates: {

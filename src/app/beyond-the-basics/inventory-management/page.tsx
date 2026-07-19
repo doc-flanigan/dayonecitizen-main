@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Inventory Guide — Ship & Personal Storage',
+  title: 'Star Citizen Inventory Guide (2026)',
   description:
     'How to open Star Citizen inventory (press I), transfer items between personal and ship storage, and move gear between stations. Storage persistence explained.',
   alternates: { canonical: '/beyond-the-basics/inventory-management' },

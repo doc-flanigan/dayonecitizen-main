@@ -10,7 +10,7 @@ import MehrAufDeutsch from '@/components/de/MehrAufDeutsch'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Gibt es Star Citizen auf Deutsch? Der ehrliche Stand 2026',
+  title: 'Gibt es Star Citizen auf Deutsch? (2026)',
   description:
     'Nein, offiziell nicht: Star Citizen unterstützt nur Englisch. Deutsch gibt es nur über Community-Sprachdateien. Der ehrliche Stand 2026 für deutsche Spieler.',
   alternates: {

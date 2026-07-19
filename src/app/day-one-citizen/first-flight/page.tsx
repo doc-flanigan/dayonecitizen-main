@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Flight Guide: Take Off, Fly & Land — Day One Citizen',
+  title: 'Star Citizen First Flight — Take Off & Land',
   description:
     'Power on your ship, clear the hangar, master Star Citizen flight controls, make your first quantum jump, and land. Step-by-step with exact keybinds.',
   alternates: { canonical: '/day-one-citizen/first-flight' },

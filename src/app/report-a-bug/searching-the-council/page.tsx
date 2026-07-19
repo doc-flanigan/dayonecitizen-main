@@ -10,7 +10,7 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
-  title: 'Search the Star Citizen Issue Council Before You Report a Bug',
+  title: 'Search the Issue Council Before Reporting',
   description:
     'How to sign in to the Star Citizen Issue Council, search for your bug, filter by status, and add to an existing report instead of creating a duplicate.',
   alternates: { canonical: '/report-a-bug/searching-the-council' },

@@ -10,7 +10,7 @@ import MehrAufDeutsch from '@/components/de/MehrAufDeutsch'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Musst du in Star Citizen Schiffe für Echtgeld kaufen? Nein.',
+  title: 'Star Citizen Schiffe für Echtgeld? Nein.',
   description:
     'Nein — ein Spielpaket für 45 US-Dollar ist der einzige nötige Kauf. Alle Schiffe können im Spiel erspielt werden. Plus: die ehrliche Pay-to-win-Antwort.',
   alternates: {

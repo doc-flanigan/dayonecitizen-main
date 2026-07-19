@@ -10,7 +10,7 @@ import MehrAufDeutsch from '@/components/de/MehrAufDeutsch'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
+  title: 'Star Citizen kaufen 2026 — Preis & Tipps',
   description:
     'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar, keine Keys, kein Steam. So kaufst du es Schritt für Schritt.',
   alternates: {

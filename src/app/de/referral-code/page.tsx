@@ -31,7 +31,7 @@ const REFERRAL_FAQ =
 const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Empfehlungscode: 50.000 UEC Startguthaben sichern',
+  title: 'Star Citizen Empfehlungscode — 50.000 UEC',
   description: `Der Star Citizen Empfehlungscode ist STAR-GCQJ-N6NC — 50.000 UEC Startguthaben ohne Kauf. Mit deutscher Anleitung durch die englische RSI-Anmeldung.`,
   alternates: {
     canonical: '/de/referral-code',

@@ -11,7 +11,7 @@ import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Ship — Which Starter Ship to Fly First',
+  title: 'Star Citizen First Ship — Aurora or Mustang?',
   description:
     'The best first ship in Star Citizen for most new players is the Aurora Mk II from the $45 pack. Aurora vs Mustang Alpha compared, plus the upgrade path.',
   alternates: { canonical: '/day-one-citizen/first-ship' },

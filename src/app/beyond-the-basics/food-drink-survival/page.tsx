@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Food, Drink & Survival Guide (2026)',
+  title: 'Star Citizen Food & Drink Guide (2026)',
   description:
     'Star Citizen food, drink, and survival: hunger and thirst meters, debuffs to avoid, and where to buy food in New Babbage, Lorville, and Area18.',
   alternates: { canonical: '/beyond-the-basics/food-drink-survival' },

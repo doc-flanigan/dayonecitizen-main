@@ -10,9 +10,9 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
-  title: 'How to File a Star Citizen Issue Council Bug Report (Step by Step)',
+  title: 'File a Star Citizen Bug Report, Step by Step',
   description:
-    'Choose the right project, version, and channel, write a searchable title and clear reproduction steps, and attach your evidence — a complete walkthrough of filing a bug.',
+    'Choose the right project, version, and channel, write a searchable title and clear reproduction steps, and attach evidence.',
   alternates: { canonical: '/report-a-bug/filing-a-report' },
   openGraph: {
     images: ['/images/brand/og-image.png'],

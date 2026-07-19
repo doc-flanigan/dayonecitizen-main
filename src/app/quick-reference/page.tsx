@@ -9,9 +9,9 @@ import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Quick Reference — Keybinds & Where to Buy Everything',
+  title: 'Star Citizen Quick Reference Card',
   description:
-    'One mobile-friendly cheat sheet: the Star Citizen keybinds that matter on day one, capacitor keys, and exactly which shop sells weapons, armor, components, mining gear, and ships.',
+    'One mobile cheat sheet: day-one Star Citizen keybinds, capacitor keys, and which shop sells weapons, armor, components, and ships.',
   alternates: { canonical: '/quick-reference' },
   openGraph: {
     images: ['/images/brand/og-image.png'],

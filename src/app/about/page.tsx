@@ -32,7 +32,7 @@ const FAQ = [
 ]
 
 export const metadata: Metadata = {
-  title: 'What Does o7 Mean? The Star Citizen Salute Explained',
+  title: 'What Does o7 Mean? The Star Citizen Salute',
   description:
     'Unofficial Star Citizen fan site for new players by Doc_Flanigan. Plain English, no jargon. Use referral code STAR-GCQJ-N6NC to start with 50,000 UEC free.',
   alternates: { canonical: '/about' },

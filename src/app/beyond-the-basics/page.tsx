@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Beyond the Basics — Star Citizen Guides for Early Players',
+  title: 'Star Citizen Guides — Beyond the Basics',
   description:
     'Nine plain-English Star Citizen guides for players past the basics: quantum travel, adding friends, redeem codes, CCU upgrades, and more.',
   alternates: { canonical: '/beyond-the-basics' },

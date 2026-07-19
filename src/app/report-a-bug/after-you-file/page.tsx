@@ -11,9 +11,9 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
-  title: 'After You File: Star Citizen Issue Council Statuses & Voting',
+  title: 'Issue Council Statuses & Voting Explained',
   description:
-    'What Open, Confirmed, Under Investigation, and Acknowledged mean on the Star Citizen Issue Council, how community confirmations move a report, and how to keep helping.',
+    'What Open, Confirmed, Under Investigation, and Acknowledged mean on the Issue Council — and how community confirmations move a report.',
   alternates: { canonical: '/report-a-bug/after-you-file' },
   openGraph: {
     images: ['/images/brand/og-image.png'],

@@ -7,7 +7,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'RSI Launcher Guide: Live, PTU & EPTU Explained — Day One Citizen',
+  title: 'RSI Launcher Guide — Live, PTU & EPTU',
   description:
     'How to use the RSI Launcher: Live vs PTU vs EPTU builds, switching channels, verifying game files, and fixing common Star Citizen launcher problems.',
   alternates: { canonical: '/day-one-citizen/rsi-launcher' },

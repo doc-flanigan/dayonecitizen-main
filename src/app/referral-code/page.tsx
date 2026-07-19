@@ -27,7 +27,7 @@ const REFERRAL_FAQ =
 const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Referral Code 2026 — STAR-GCQJ-N6NC for 50,000 UEC Free',
+  title: 'Star Citizen Referral Code — 50,000 UEC Free',
   description: `Use Star Citizen referral code STAR-GCQJ-N6NC for a free 50,000 UEC bonus — no purchase needed. Verified working ${VERIFIED_MONTH}, re-checked monthly.`,
   alternates: {
     canonical: '/referral-code',

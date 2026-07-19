@@ -8,7 +8,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen CCU Chain Calculator & Savings Guide (2026)',
+  title: 'Star Citizen CCU Chain Calculator (2026)',
   description:
     'Save hundreds on Star Citizen ship upgrades using CCU chains. Step-by-step guide to Cross-Chassis Upgrades, Warbond CCU strategies, and worked savings examples.',
   alternates: { canonical: '/beyond-the-basics/ccu-chains' },

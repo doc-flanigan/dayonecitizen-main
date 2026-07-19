@@ -10,9 +10,9 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Bug Report Evidence: Build Number, Game.log & DxDiag',
+  title: 'Star Citizen Bug Evidence: Game.log & DxDiag',
   description:
-    'How to find your Star Citizen build number, locate the Game.log file, save a DxDiag report, and capture a screenshot or video — everything you need before filing a bug.',
+    'Find your Star Citizen build number, locate Game.log, save a DxDiag report, and capture a screenshot or video before filing a bug.',
   alternates: { canonical: '/report-a-bug/gathering-evidence' },
   openGraph: {
     images: ['/images/brand/og-image.png'],

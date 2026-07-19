@@ -9,7 +9,7 @@ import { NEXT_FREE_FLY, googleCalendarUrl } from '@/data/next-free-fly'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
+  title: 'Star Citizen Free Fly Events — Play Free',
   description:
     'Star Citizen Free Fly events let you play the full game free. Track upcoming windows, flyable ships, and get the referral code bonus before the event ends.',
   alternates: { canonical: '/free-fly-events' },

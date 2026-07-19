@@ -11,7 +11,7 @@ import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Is Star Citizen on Steam? No — Here Is Where to Get It',
+  title: 'Is Star Citizen on Steam? Where to Get It',
   description:
     'Star Citizen is not on Steam, PS5, Xbox, or Game Pass. It is sold only at robertsspaceindustries.com for Windows PC. Here is the two-minute buying path.',
   alternates: {
