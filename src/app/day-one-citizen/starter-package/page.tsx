@@ -567,7 +567,7 @@ export default function StarterPackagePage() {
           </section>
 
           <div className="border-t border-white/10 pt-10">
-            <CTAButton size="lg" trackingLabel="starter-package-cta" />
+            <CTAButton size="lg" href="/referral-code" trackingLabel="starter-package-cta" />
             <DiscordCTA />
           </div>
 

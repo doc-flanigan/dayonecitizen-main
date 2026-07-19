@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/beyond-the-basics/redeem-codes', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/beyond-the-basics/quantum-travel', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/tools', changeFrequency: 'monthly', priority: 0.7 },
+    { url: '/fact-check', changeFrequency: 'weekly', priority: 0.9 },
     { url: '/report-a-bug', changeFrequency: 'monthly', priority: 0.9 },
     { url: '/report-a-bug/gathering-evidence', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/report-a-bug/searching-the-council', changeFrequency: 'monthly', priority: 0.8 },

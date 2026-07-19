@@ -38,6 +38,7 @@
 - [Glossary](https://dayonecitizen.com/glossary): Plain-English definitions of Star Citizen terms, acronyms, and 'Verse slang.
 - [Quick Reference](https://dayonecitizen.com/quick-reference): Mobile cheat sheet — the essential keybinds (on foot, ship flight, capacitors) and which Stanton shop sells weapons, armor, components, mining gear, and ships.
 - [Tools](https://dayonecitizen.com/tools): Handy references and utilities for new players.
+- [Fact Check](https://dayonecitizen.com/fact-check): Searchable ledger of fact-checked Star Citizen claims — referral bonus, wipes, funding, events, Squadron 42 — each with a verdict, an official Cloud Imperium source, and the date last verified. Free for creators to cite.
 - [About](https://dayonecitizen.com/about): Why this site exists, the referral disclosure, and what "unofficial fan site" means here.
 
 ## German pages (Deutsch)

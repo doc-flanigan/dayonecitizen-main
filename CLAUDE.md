@@ -511,6 +511,15 @@ The homepage hero **does not** have a CTA button — info-first,
 referral second. New CTAs added to the site should pick a fresh
 short label, not reuse one of the above.
 
+**Destination rule (Doc, 2026-07-16):** any CTA whose entire label is
+the bare 50K-UEC promise ("Get 50K UEC", "Free 50K UEC", "Start with
+50K UEC", or the no-children default label) must link to
+`/referral-code`, NOT the RSI enlist URL — RSI's /enlist bounces
+signed-in players to the homepage, which existing players read as a
+bait link. Labels with self-qualifying context ("Use my code", "Get
+the new-player bonus") and CTAs inside referral explainer content may
+still link direct to enlist.
+
 ### Required secrets and environment variables
 
 **GitHub repo** → Settings → Secrets and variables → Actions:

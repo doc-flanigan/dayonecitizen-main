@@ -366,7 +366,7 @@ export default function FirstFlightPage() {
               free <Term name="UEC">UEC</Term>. o7, pilot.
             </p>
             <div className="mt-6">
-              <CTAButton size="lg" trackingLabel="first-flight-cta" />
+              <CTAButton size="lg" href="/referral-code" trackingLabel="first-flight-cta" />
             </div>
           </div>
 
