@@ -422,7 +422,15 @@ export default function ReferralCodePage() {
                 <h3 className="mb-2 font-semibold text-starwhite">Is it free?</h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Yes — the 50,000 UEC bonus lands on a free account. No purchase is
-                  required, and the bonus stays on your account for good.
+                  required, and the bonus stays on your account for good. This and
+                  every referral fact here is tracked in our{' '}
+                  <Link
+                    href="/fact-check"
+                    className="text-gold underline-offset-4 hover:underline"
+                  >
+                    fact-check ledger
+                  </Link>{' '}
+                  with official sources.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

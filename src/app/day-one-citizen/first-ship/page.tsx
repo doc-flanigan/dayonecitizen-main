@@ -137,6 +137,10 @@ export default function FirstShipPage() {
                 It is not the fastest ship, or the prettiest. It is the one that lets
                 you earn money, learn the game, and lose nothing when you outgrow it.
               </p>
+              <p className="text-xs text-muted">
+                Page reviewed July 18, 2026. The comparison below reflects the
+                current pledge-store starter packs.
+              </p>
             </div>
           </section>
 

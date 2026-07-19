@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14",
+  "generated": "2026-07-16",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -11,6 +11,15 @@
       "lastVerified": "2026-07-05"
     },
     {
+      "id": "anvil-odin-founders-club-sale-may-2026",
+      "claim": "The Anvil Odin battlecruiser concept sold May 24-25, 2026 (DefenseCon 2956) in six timed waves restricted to 'Odin Founders Club' members only, one per account; the specific warbond/store-credit price figures circulating on fan sites and social media are not confirmed in any CIG comm-link or reachable via the JS-rendered RSI store page.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21133-Anvil-Odin"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "auec-temporary-wipes-possible",
       "claim": "aUEC (Alpha UEC) is a temporary testing currency that can be changed or reset during alpha; losing aUEC never affects the UEC or pledge-store purchases on an RSI account. Patch notes state per-patch whether aUEC carries over (Long Term Persistence), and CIG says it generally tries to avoid wipes.",
       "status": "verified",
@@ -18,6 +27,16 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "aurora-mk2-launch-alpha-4-7",
+      "claim": "The reworked RSI Aurora Mk II launched in Alpha 4.7 (March 2026) as a modernized starter ship with rear-mounted swappable external modules (Cargo, Combat), VTOL fans on its lower wings, and a bed for logging out, replacing the Mk I as RSI's flagship starter.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/transmission/20449-RSI-Aurora-Mk-II",
+        "https://robertsspaceindustries.com/en/comm-link/engineering/21063-Q-A-RSI-Aurora"
+      ],
+      "lastVerified": "2026-07-15"
     },
     {
       "id": "bishop-speech-cinematic-2015",
@@ -38,6 +57,35 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "ccu-pay-price-difference",
+      "claim": "A Ship Upgrade / Cross-Chassis Upgrade (CCU) changes a pledge to a higher-value ship; the CCU item is priced at the gap between the two ships, not the full price of the new ship.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010056848-Ship-Upgrades-CCUs",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013194987-Pledges-FAQ"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "chris-roberts-wing-commander-freelancer",
+      "claim": "Chris Roberts created the Wing Commander series at Origin Systems (starting 1990) and later Freelancer (via Digital Anvil, 2003) before founding Cloud Imperium Games in 2012.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/12665-Meet-Chris-Roberts",
+        "https://robertsspaceindustries.com/comm-link/SCW/13880-API"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "citizencon-2026-not-held",
+      "claim": "CIG will not hold a CitizenCon event in 2026 in any form (in-person, digital, or Direct), a decision driven by the team's focus on shipping remaining Star Citizen 2026 content and Squadron 42.",
+      "status": "verified",
+      "sources": [
+        "https://www.youtube.com/watch?v=SsOtI2dtvBc"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "citizencon-2955-digital-direct",
       "claim": "CitizenCon 2955 (October 2025) was held as a fully digital ~2-hour showcase called 'CitizenCon Direct', streamed free on Twitch and YouTube on October 11, 2025 — not as an in-person convention.",
       "status": "verified",
@@ -45,6 +93,25 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/20722-CitizenCon-Direct-Watch-Parties-2025"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "concierge-1000-usd-threshold",
+      "claim": "Concierge (Chairman's Club) status is reached at $1,000 or more in lifetime pledge-store spend on a single RSI account.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360002542733-Concierge-Levels-and-Rewards"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "crafting-t0-live-alpha-4-7",
+      "claim": "Crafting T0 went live with Alpha 4.7 (March 2026): item fabricators produce FPS gear (armor and weapons) from blueprints earned via contracts and materials gathered in the 'verse, with resource quality affecting crafted-item stats; ship components are not yet part of the system.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/transmission/21038-Alpha-47-Welcome-To-The-Rock",
+        "https://robertsspaceindustries.com/comm-link/transmission/21089-This-Week-In-Star-Citizen"
+      ],
+      "lastVerified": "2026-07-15"
     },
     {
       "id": "crowdfunding-launch-vs-alpha-start",
@@ -56,14 +123,14 @@
       "lastVerified": "2026-07-05"
     },
     {
-      "id": "current-alpha-version-4-8-3",
-      "claim": "The current live Star Citizen build is Alpha 4.8 (patch 4.8.3, Return of Xenothreat); Alpha 4.9 is announced as arriving in July 2026, not yet live.",
+      "id": "current-alpha-version-4-9-0",
+      "claim": "The current live Star Citizen build is Alpha 4.9.0 (Frontier Tensions), released July 15, 2026; Long Term Persistence was Preserved — the update did not wipe saved progress.",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/comm-link/transmission/21206-Star-Citizen-Alpha-483",
-        "https://robertsspaceindustries.com/en/comm-link/transmission/21248-This-Week-In-Star-Citizen"
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-9-live-release-notes",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21220-Alpha-49-Frontier-Tensions"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-15"
     },
     {
       "id": "event-defensecon-2956",
@@ -138,6 +205,16 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "everything-earnable-in-game-overgeneralization",
+      "claim": "CIG's stated goal is that most (not literally all) pledge-store items — ships plus flair/cosmetics — become earnable in-game via play, with named exceptions (e.g. certain exclusive digital-event items, subscriber flair inside its 3-month exclusivity window, and one-time ship-concept-sale exclusive paints like the Odin Founders Club); see ships-earnable-in-game-auec for the ships-specific version of this claim.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/19385-August-2023-Subscriber-Promotions",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21133-Anvil-Odin"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "foundation-festival-2026-expected",
       "claim": "Foundation Festival — CIG's annual new-player/community onboarding event, which in 2025 included a Free Fly and guide-mentorship activities — is expected by gaming press to return around mid-July 2026. CIG has not yet published a 2026 comm-link.",
       "status": "unverifiable",
@@ -178,6 +255,26 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "funding-2012-campaign-6-2-million",
+      "claim": "The original 2012 Star Citizen crowdfunding campaign (Kickstarter + RSI site pledges combined) raised a total of about $6.2 million by the time it closed in November 2012.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/SCW/13738-API",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/12764-1-Million-Dollars-On-Kickstarter"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "funding-guinness-world-record",
+      "claim": "Star Citizen is recognized by Guinness World Records as the largest crowdfunded project (and largest crowdfunded video game) in history, a distinction CIG first announced in September 2014.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/14184-Letter-From-The-Chairman",
+        "https://robertsspaceindustries.com/comm-link/SCW/16389-API"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "funding-most-crowdfunded-project",
       "claim": "Star Citizen is the most crowdfunded project (game or otherwise) in history.",
       "status": "unverifiable",
@@ -194,6 +291,25 @@
         "https://robertsspaceindustries.com/en/funding-goals"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "invictus-2026-replaced-by-defensecon-2956",
+      "claim": "Invictus Launch Week did not run as a standalone UEE capital-ship event in May 2026; in-lore the UEEN fleet was pulled back to Sol, and Drake Interplanetary stepped up to host Drake DefenseCon 2956 (14-27 May 2026) as the Free Fly event in its place.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21173-This-Week-In-Star-Citizen"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "item-recovery-t0-landing-zone-still-loses-backpack",
+      "claim": "Item Recovery (T0, introduced Alpha 4.1) lets players respawn with their exact equipped loadout (armor, weapons, attached utilities) minus backpack/pocket contents, which stay lootable on the corpse; this applies at ship medbeds AND landing zone respawns alike — dying in a landing zone does NOT recover backpack/pocket contents.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-1-ptu-patch-notes-2"
+      ],
+      "lastVerified": "2026-07-15"
     },
     {
       "id": "keybinds-core-defaults",
@@ -214,6 +330,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360000183328-Create-export-and-import-custom-profiles"
       ],
       "lastVerified": "2026-07-06"
+    },
+    {
+      "id": "legatus-pack-price-tier",
+      "claim": "A top-tier 'Legatus' pledge package exists on the RSI store, gated to high-spend Concierge backers.",
+      "status": "unverifiable",
+      "sources": [
+        "https://robertsspaceindustries.com/en/pledge"
+      ],
+      "lastVerified": "2026-07-15"
     },
     {
       "id": "lore-odin-coil-debris-field",
@@ -254,6 +379,40 @@
       "lastVerified": "2026-07-06"
     },
     {
+      "id": "lti-excludes-modifications-and-cargo",
+      "claim": "Lifetime Insurance (LTI) covers only ship hull replacement; it does not cover modifications, upgrades/customizations, or cargo, which require separate risk-rated insurance policies.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/faq/Insurance-FAQ",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/12820-Insurance-FAQ-And-Update"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "misc-raptor-not-real-ship",
+      "claim": "The MISC Raptor is not a real ship — it was only ever an April Fools joke.",
+      "status": "refuted",
+      "correction": "The MISC Raptor is a real Star Citizen vehicle: introduced as an April Fools joke (April 2024), CIG later made it a legendary reward on the revamped referral program ladder — explicitly stating 'no, it's not an April Fools' joke.' It is still in development, to be delivered at a later date.",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20643-Introducing-The-New-Referral-Program",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/19819-MISC-Raptor"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "no-mech-suits-announced",
+      "claim": "Star Citizen has no mech suits.",
+      "status": "refuted",
+      "correction": "Star Citizen has an officially released piloted power suit — the Argo ATLS exo-frame (cargo loading, added Alpha 3.24.1, September 2024), with the ATLS GEO mining variant and the weaponized ATLS IKTI / GEO IKTI combat variants (2025). CIG's vocabulary is 'power suit' / 'exo-frame'; no large war-mech vehicle class is announced.",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20114-Argo-ATLS",
+        "https://robertsspaceindustries.com/en/comm-link/engineering/20159-Q-A-Argo-ATLS",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20433-Argo-ATLS-GEO",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/argo-atls-coming-to-alpha-3-24-2-in-game-shops"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "no-official-coupon-codes",
       "claim": "RSI's official referral-program pages document exactly one signup bonus — the referral code's 50,000 UEC; no coupon, promo, or percent-off code system for Star Citizen game packages is documented there.",
       "status": "verified",
@@ -264,6 +423,17 @@
       "lastVerified": "2026-07-11"
     },
     {
+      "id": "no-official-vr-support",
+      "claim": "Star Citizen does not officially support VR headsets.",
+      "status": "refuted",
+      "correction": "Star Citizen has official experimental VR support: CIG introduced it in Alpha 4.5 PTU (December 2025) and has kept improving it since (e.g. world-space interaction prompts and VR crosshair in Alpha 4.8); CIG labels the feature experimental.",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-vr-support-experimental-release",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/star-citizen-vr-support-experimental-release-alpha/9029809"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
       "id": "nyx-system-live-alpha-4-4",
       "claim": "The Nyx star system went live in Star Citizen with Alpha 4.4 (November 2025), announced at CitizenCon Direct 2955.",
       "status": "verified",
@@ -271,6 +441,66 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/20864-Alpha-44-Welcome-To-Nyx"
       ],
       "lastVerified": "2026-07-04"
+    },
+    {
+      "id": "odin-not-last-concept-sale-ever",
+      "claim": "CIG announced that the Anvil Odin is the last concept-only ship sale ever, permanently retiring concept sales and 'closing out the final remaining vehicle stretch goals.'",
+      "status": "refuted",
+      "correction": "On the DefenseCon 2956 Showcase stream, CIG said the Anvil Odin is the only concept ship sale of 2026 ('we didn't do any last year at all... this is the only one we're doing this year') — CIG has not announced a permanent end to concept ship sales.",
+      "sources": [
+        "https://www.youtube.com/watch?v=CFoQp6wRjPo"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "pes-live-alpha-3-18",
+      "claim": "Persistent Entity Streaming (PES) went live in Alpha 3.18 (March 2023), the core tech that makes dynamic object/item state persist server-side and underpins Server Meshing.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link//19126-Star-Citizen-Alpha-3180",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/19848-Letter-From-The-Chairman"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "players-cannot-yet-build-bases",
+      "claim": "Players can currently craft and build their own bases in Star Citizen.",
+      "status": "refuted",
+      "correction": "Base building (player-constructed structures on land claims) was announced and demonstrated at CitizenCon 2954 (October 2024) and remains in active development, not yet live in the current alpha as of mid-2026; Crafting T0 (Alpha 4.7) covers personal armor and weapons only.",
+      "sources": [
+        "https://www.youtube.com/watch?v=AmwKD_flLmw",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/cnou-pioneer-update",
+        "https://www.youtube.com/watch?v=qeVq9O9BtvY"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "pledge-items-require-registration-not-automatic",
+      "claim": "Pledge-store items are not automatically registered or guaranteed recoverable; per the Alpha 4.8 Vehicle Insurance and Item Bricking update, ANY item (pledge-store origin or found/looted) must be manually registered — imprinted into a saved ASOP loadout snapshot — to be recoverable after loss, and un-imprinted pledge-store vehicle items were explicitly lost and unrecoverable at 4.8 launch (a freight-elevator stopgap and a fuller 4.9 item kiosk were added afterward).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/alpha-4-8-vehicle-insurance-and-item-bricking-upda",
+        "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21168-Star-Citizen-Alpha-48"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "pyro-lawless-no-uee-law-enforcement",
+      "claim": "Pyro is officially a lawless frontier system with no UEE law-enforcement presence, per CIG's own description.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20341-Alpha-40-Destination-Pyro"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "pyro-system-live-alpha-4-0",
+      "claim": "The Pyro star system went live in Star Citizen with Alpha 4.0 (the '4.0 Preview', December 2024/January 2025).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
+      ],
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "randomizers-stale-bonus-amounts",
@@ -329,7 +559,7 @@
     {
       "id": "rsi-website-no-german-locale",
       "claim": "robertsspaceindustries.com does not serve a functional German (or French) locale — /de/ and /fr/ paths 302-redirect to the /en/ equivalent; the site (store, comm-links, enlist/account-creation flow) is English-only.",
-      "status": "refuted",
+      "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/en/referral-program"
       ],
@@ -345,14 +575,24 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "sc-1-0-not-100-star-systems",
+      "claim": "CIG confirmed at CitizenCon 2954 (Oct 2024) that Star Citizen 1.0 will not launch with the original 2012 stretch-goal target of 100 star systems; no specific 1.0 system count has been officially given.",
+      "status": "verified",
+      "sources": [
+        "https://www.youtube.com/watch?v=WkMD3ZfDZus"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
       "id": "sc-german-ingame-localization-unofficial",
       "claim": "As of mid-2026, Star Citizen's live game client has no official CIG-shipped German in-game localization (menus/UI/subtitles); German is available only via unofficial community translation files, not a CIG feature.",
-      "status": "refuted",
+      "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/comm-link/SCW/20087-API",
-        "https://robertsspaceindustries.com/en/comm-link/transmission/12760-Poll-Additional-Stretch-Goals"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/12760-Poll-Additional-Stretch-Goals",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-community-localization-update"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "sc-minimum-system-requirements",
@@ -381,6 +621,34 @@
         "https://robertsspaceindustries.com/en/funding-goals"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "server-meshing-static-live-dynamic-dev",
+      "claim": "Static server meshing (multiple servers stitched into a shared region) has been live since Alpha 4.0 (Jan 2025); dynamic server meshing, which merges/splits shards into a single unified universe, is still in development.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/SCW/20360-API",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/18397-Server-Meshing-And-Persistent-Streaming-Q-A"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "ship-insurance-claim-replaces-destroyed-hull",
+      "claim": "A destroyed pledged/purchased ship is not permanently lost — the owner can file an in-game insurance claim at an ASOP terminal to receive a replacement hull, subject to a wait timer that can be reduced via an expedited-processing option.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/16043-Monthly-Studio-Report-July-2017"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "ship-pledge-includes-term-hull-insurance",
+      "claim": "Every ship pledge/game package includes hull-replacement insurance for a stated term (typically 2-12 months); pledges made before Nov 26, 2012 carry Lifetime Insurance (LTI) instead.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/SCW/14282-API"
+      ],
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "ships-earnable-in-game-auec",
@@ -606,7 +874,7 @@
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
       ],
-      "lastVerified": "2026-07-05"
+      "lastVerified": "2026-07-14"
     },
     {
       "id": "sq42-vertical-slice-dec-2017",
@@ -618,6 +886,16 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "starengine-cryengine-lumberyard-lineage",
+      "claim": "Star Citizen runs on StarEngine, CIG's current name for its heavily modified engine, descended from CryEngine (licensed 2012-2016) via Amazon Lumberyard (adopted 2016).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/citcon-featured-content/20262-CitizenCon-2954-Recap",
+        "https://robertsspaceindustries.com/comm-link/SCW/15660-API"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
       "id": "starter-package-from-45-usd",
       "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
       "status": "verified",
@@ -625,6 +903,35 @@
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "three-systems-live-stanton-pyro-nyx",
+      "claim": "Three star systems are live in the current Star Citizen alpha: Stanton (original), Pyro (added Alpha 4.0), and Nyx (added Alpha 4.4).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20864-Alpha-44-Welcome-To-Nyx",
+        "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
+      ],
+      "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "turbulent-joins-cig-2023",
+      "claim": "Turbulent, the Montreal studio that built the RSI web platform, officially joined/merged with Cloud Imperium Games in July 2023 (CIG's own announcement uses 'merge'/'join,' not 'acquired').",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/19378-Turbulent-Joins-Cloud-Imperium-Games"
+      ],
+      "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "uee-land-claim-licenses-2017-not-live",
+      "claim": "CIG sold UEE Land Claim Licenses (a $50 4km x 4km Lot Parcel and a $100 8km x 8km Estate Parcel) during the November 2017 Anniversary Sale via official comm-link; the land-claiming gameplay itself is still in development and not live in the current build.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/16278-UEE-Land-Claim-Licenses",
+        "https://robertsspaceindustries.com/en/comm-link/engineering/16292-Q-A-UEE-Land-Claim-Licenses"
+      ],
+      "lastVerified": "2026-07-15"
     }
   ]
 }

@@ -26,6 +26,41 @@ const RATING: Record<string, string> = {
   unverifiable: 'Unproven',
 }
 
+// Mirrors the visible "How this page works" section 1:1 (site rule: schema
+// must match visible content).
+const FAQ = [
+  {
+    q: 'How are these Star Citizen claims verified?',
+    a: 'Every claim is checked against official Cloud Imperium sources only — the RSI website, official announcement posts (Comm-Links), and posts by CIG staff on the official Spectrum forum. Never community wikis, press articles, or Reddit. Each entry links its source and shows the date it was last checked.',
+  },
+  {
+    q: 'What do the verdicts mean?',
+    a: 'Verified means an official source supports the claim. False means an official source contradicts it. Unverifiable means no official source confirms or denies it — for some questions, that absence is itself the answer.',
+  },
+  {
+    q: 'Can I cite or share this page?',
+    a: 'Yes, freely. Every claim card has a copy-link button that gives you a direct link to that exact claim, and the official sources are linked on each card so you can cite Cloud Imperium directly as well.',
+  },
+  {
+    q: 'What happens when a verdict turns out to be wrong?',
+    a: 'It gets corrected in public, not deleted. The wrong claim is marked False with the official source that disproved it, and the corrected fact is published alongside it. Recent examples: VR support and the Argo ATLS power suit, both corrected within hours.',
+  },
+  {
+    q: 'How do I get a claim fact-checked?',
+    a: 'Search for it above. If nothing matches, one click submits it for verification against official sources — no email or account needed. Verdicts are usually published within a few days.',
+  },
+]
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
 const claimReviewJsonLd = claimsData.claims.map((c) => ({
   '@context': 'https://schema.org',
   '@type': 'ClaimReview',
@@ -63,6 +98,10 @@ export default function FactCheckPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(claimReviewJsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <p className="font-mono text-xs text-gold">Free reference for players and creators</p>
@@ -91,6 +130,18 @@ export default function FactCheckPage() {
 
         <div className="container-narrow py-12">
           <FactCheckClient claims={claimsData.claims} generated={claimsData.generated} />
+
+          <section className="mt-16">
+            <h2 className="heading-display text-2xl sm:text-3xl">How this page works</h2>
+            <div className="mt-5 space-y-6">
+              {FAQ.map((f) => (
+                <div key={f.q}>
+                  <h3 className="text-base font-semibold text-starwhite">{f.q}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-starwhite/80">{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
       <Footer />

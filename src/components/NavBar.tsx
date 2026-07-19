@@ -73,8 +73,11 @@ export default function NavBar() {
             )
           })}
           <li className="ml-2">
+            {/* Bare 50K labels route to /referral-code (explains new-account
+                eligibility) — RSI's /enlist bounces signed-in players. */}
             <CTAButton
               size="sm"
+              href="/referral-code"
               trackingLabel="nav-cta"
               variants={{ a: 'Get 50K UEC', b: 'Free 50K UEC' }}
             />
@@ -113,7 +116,7 @@ export default function NavBar() {
               )
             })}
             <li className="pt-2">
-              <CTAButton className="w-full" trackingLabel="nav-cta-mobile">
+              <CTAButton className="w-full" href="/referral-code" trackingLabel="nav-cta-mobile">
                 Get 50K UEC
               </CTAButton>
             </li>
