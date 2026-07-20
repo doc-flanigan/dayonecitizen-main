@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft, ArrowRight, AlertCircle } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -308,6 +309,30 @@ export default function StarCitizenKaufenPage() {
                   Zeit ein: Das Spiel selbst ist über 100 GB groß.
                 </li>
               </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-started-pledge-store-starter-packs-menu.jpg"
+                  alt="Das aufgeklappte STORE-Menü auf der RSI-Website mit dem Eintrag Starter Packs in der Navigation."
+                  width={1200}
+                  height={654}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  Schritt 2: Das STORE-Menü auf der RSI-Website — hier findest du die Starter Packs.
+                </figcaption>
+              </figure>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-started-rsi-download-button-top-nav.jpg"
+                  alt="Der DOWNLOAD-Button in der oberen Navigation der RSI-Website."
+                  width={1200}
+                  height={164}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  Schritt 5: Über den DOWNLOAD-Button auf der RSI-Website lädst du den RSI Launcher herunter.
+                </figcaption>
+              </figure>
             </div>
           </section>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -131,6 +132,18 @@ export default function CCUChainsPage() {
               for that pair would cost $30. The original ship is gone and you now own
               the new one.
             </p>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/ccu-chains-pledge-store-ccu-available.jpg"
+                alt="The RSI pledge store upgrade page listing available Cross-Chassis Upgrades with their price differences."
+                width={1200}
+                height={801}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                CCUs in the pledge store — each one covers the price difference between two ships.
+              </figcaption>
+            </figure>
             <div className="card-surface rounded-lg p-5 border border-white/5 mb-8">
               <p className="font-semibold text-starwhite mb-3">Key rules about CCUs</p>
               <ul className="space-y-2 text-starwhite/80 text-sm">
@@ -216,6 +229,18 @@ export default function CCUChainsPage() {
                 reach the target ship.
               </li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-6">
+              <Image
+                src="/images/guides/ccu-chains-rsi-hangar-apply-ccu.jpg"
+                alt="The My Hangar page on the RSI website with an upgrade selected and the Apply Upgrade option shown."
+                width={813}
+                height={513}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                Applying a CCU from My Hangar — work through the chain one upgrade at a time.
+              </figcaption>
+            </figure>
             <p className="text-muted text-sm mb-8">
               Prices and available CCUs change with every event. Always check
               ccugame.app for a current chain before buying — do not rely on a chain

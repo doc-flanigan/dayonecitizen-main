@@ -5,13 +5,13 @@
   "note": "Capture fresh shots — the Issue Council UI has been redesigned over time, so old screenshots will look wrong. Sources: LAUNCHER = RSI Launcher, WIN = Windows desktop, WEB = RSI/Issue Council site (needs a logged-in backer), GAME = in-game.",
   "shots": [
     {
-      "filename": "00-issue-council-home.png",
+      "filename": "issue-council-home.jpg",
       "page": "report-a-bug",
       "step": "Scene-setter / what it is",
       "source": "WEB",
       "mustShow": "The signed-out Issue Council landing page (issue-council.robertsspaceindustries.com) with the Sign In button at top right",
       "annotate": "circle the Sign In button",
-      "captured": false
+      "captured": true
     },
     {
       "filename": "00b-ic-vs-spectrum.png",
@@ -113,13 +113,13 @@
       "captured": false
     },
     {
-      "filename": "11-search-bar.png",
+      "filename": "issue-council-project-search.jpg",
       "page": "searching-the-council",
       "step": "Search for your bug",
       "source": "WEB",
       "mustShow": "The Issue Council search box with a real bug keyword typed in",
       "annotate": "circle the search box",
-      "captured": false
+      "captured": true
     },
     {
       "filename": "12-search-results.png",

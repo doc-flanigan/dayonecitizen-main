@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -171,6 +172,32 @@ export default function FirstShipPage() {
                   early money. As a first ship, fun loses to practical.
                 </li>
               </ul>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <figure className="overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/ships/aurora-mr.jpg"
+                    alt="The RSI Aurora MR starter ship."
+                    width={1820}
+                    height={1024}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    The RSI Aurora — the practical starter.
+                  </figcaption>
+                </figure>
+                <figure className="overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/ships/mustang-alpha.jpg"
+                    alt="The Consolidated Outland Mustang Alpha starter ship."
+                    width={1820}
+                    height={1024}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    The Mustang Alpha — the fun alternate.
+                  </figcaption>
+                </figure>
+              </div>
               <p>
                 Today the choice mostly makes itself: the current $45 Citizen Starter
                 Pack comes with the Aurora Mk II. The Mustang Alpha is the

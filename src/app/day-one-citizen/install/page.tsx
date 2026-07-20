@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -173,6 +174,18 @@ export default function InstallPage() {
                 <strong className="text-starwhite">Library Folder</strong> option that lets you
                 point to any drive.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/launcher/rsi-launcher-settings-storage-library.jpg"
+                  alt="RSI Launcher Settings open on the Storage section, showing the Library install path where game files are stored."
+                  width={1059}
+                  height={1272}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The Storage settings in the RSI Launcher — this is where you point the install at your SSD.
+                </figcaption>
+              </figure>
             </div>
           </section>
 
@@ -188,6 +201,18 @@ export default function InstallPage() {
                 <li>50 Mbps connection: approximately 4–5 hours</li>
                 <li>25 Mbps connection: approximately 8–10 hours</li>
               </ul>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/launcher/rsi-launcher-home-update-game.jpg"
+                  alt="The RSI Launcher home screen with a Star Citizen download in progress, showing the progress bar and update controls."
+                  width={1052}
+                  height={866}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  A game download in progress on the RSI Launcher home screen.
+                </figcaption>
+              </figure>
               <p>
                 The download can be paused and resumed. You do not need to complete it in one
                 session. The Launcher shows download progress and speed.
@@ -254,6 +279,18 @@ export default function InstallPage() {
                 <Term name="EPTU">EPTU</Term>). Each is a separate download. On a fresh install,
                 only the <Term name="Live">Live</Term> version is downloaded.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/launcher/rsi-launcher-settings-games-verify.jpg"
+                  alt="RSI Launcher Settings open on the Games section, showing the installed game files location and the Verify button for repairing files."
+                  width={1046}
+                  height={1274}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The Games settings in the RSI Launcher — each installed build lives here, with a Verify option to repair game files.
+                </figcaption>
+              </figure>
               <p>
                 Play on <Term name="Live">Live</Term> for your first sessions. Full details on
                 these environments are in{' '}

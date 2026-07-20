@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -120,11 +121,18 @@ export default function SearchingTheCouncilPage() {
                 problem. Try the name of the place, ship, or screen where it
                 happened, plus what went wrong.
               </p>
-              <ShotPlaceholder
-                file="11-search-bar.png"
-                caption="The Issue Council search box with a real bug keyword typed in"
-                annotate="circle the search box"
-              />
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/report-a-bug/issue-council-project-search.jpg"
+                  alt="An Issue Council project page with the search bar at the top, pinned confirmed issues, and the list of recently opened reports below."
+                  width={1195}
+                  height={1262}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The project page — search here first, and scan the pinned confirmed issues.
+                </figcaption>
+              </figure>
               <p>
                 Read the results carefully. Try a second search with different
                 words before you decide your bug is not there. Wording varies, so

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -110,6 +111,18 @@ export default function InventoryManagementPage() {
                 reclaim — the claim destroys whatever is left inside.
               </p>
             </div>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/inventory-management-full-screen.jpg"
+                alt="The full inventory screen with the character's personal inventory panel on one side and an external storage panel on the other."
+                width={1200}
+                height={672}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The inventory screen — personal items on one side, ship or station storage on the other.
+              </figcaption>
+            </figure>
 
             {/* Inventory types */}
             <h2 className="font-display text-2xl font-bold text-gold mt-6 mb-4">
@@ -172,6 +185,18 @@ export default function InventoryManagementPage() {
                 stack transfer button.
               </li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/inventory-management-drag-transfer.jpg"
+                alt="An item being dragged from the personal inventory panel into an adjacent storage inventory on the inventory screen."
+                width={974}
+                height={862}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                Drag an item from one panel to the other to transfer it.
+              </figcaption>
+            </figure>
 
             {/* Persistence */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">

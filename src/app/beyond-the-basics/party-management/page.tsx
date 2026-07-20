@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -145,6 +146,18 @@ export default function PartyManagementPage() {
               <li>Select <strong className="text-starwhite">Invite to Party</strong>.</li>
               <li>They will see the invite in their Commlink. Once they accept, you are in a party together.</li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/party-management-f11-friends-invite.jpg"
+                alt="The F11 Commlink friends screen with a contact's context menu open, showing the Invite to Party option."
+                width={1200}
+                height={678}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                Right-click a friend in the F11 screen and choose Invite to Party.
+              </figcaption>
+            </figure>
 
             {/* Method 2 */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">

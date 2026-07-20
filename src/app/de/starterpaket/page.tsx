@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -198,6 +199,32 @@ export default function StarterpaketPage() {
                   45-US-Dollar-Paket kommt mit der Aurora.
                 </li>
               </ul>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <figure className="overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/ships/aurora-mr.jpg"
+                    alt="Das RSI-Aurora-MR-Starterschiff."
+                    width={1820}
+                    height={1024}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    Die RSI Aurora — die praktische Wahl.
+                  </figcaption>
+                </figure>
+                <figure className="overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/ships/mustang-alpha.jpg"
+                    alt="Das Consolidated-Outland-Mustang-Alpha-Starterschiff."
+                    width={1820}
+                    height={1024}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    Die Mustang Alpha — die spaßige Alternative.
+                  </figcaption>
+                </figure>
+              </div>
               <p>
                 Unsere Empfehlung deckt sich mit der{' '}
                 <Link

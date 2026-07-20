@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft, ArrowRight, AlertCircle } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -180,6 +181,18 @@ export default function BuyingTheGamePage() {
                   here. This is the only reliable window.
                 </li>
               </ul>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/referral/rsi-signup-referral-code-field.jpg"
+                  alt="Star Citizen RSI signup form with the Referral Code field highlighted, showing code STAR-GCQJ-N6NC successfully applied."
+                  width={1200}
+                  height={1069}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The Referral Code field on the RSI enlist page, with the code applied.
+                </figcaption>
+              </figure>
               <p>
                 Verify your email when the confirmation message arrives. Your account is not
                 active until this step is complete.
@@ -210,6 +223,18 @@ export default function BuyingTheGamePage() {
                 <strong className="text-starwhite">Game Packages</strong> — these are the starter
                 options that include Star Citizen alpha access and a starter ship.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-started-pledge-store-starter-packs-menu.jpg"
+                  alt="The STORE menu on the RSI website expanded, with the Starter Packs entry visible in the navigation."
+                  width={1200}
+                  height={654}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The STORE menu on the RSI website — Starter Packs is where new players begin.
+                </figcaption>
+              </figure>
               <p>
                 Do not buy a standalone ship from the pledge store on day one. Standalone ships
                 do not include game access — they are add-ons for players who already own the
@@ -237,6 +262,18 @@ export default function BuyingTheGamePage() {
                 <li>A starter ship with standard insurance</li>
                 <li>10,000 starting <Term name="aUEC">aUEC</Term></li>
               </ul>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-started-game-package-starter-packs-list.jpg"
+                  alt="Grid of Star Citizen game packages on the RSI pledge store, showing the starter pack options side by side."
+                  width={1200}
+                  height={561}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The game package listing on the pledge store — every option here includes game access.
+                </figcaption>
+              </figure>
               <p>
                 The current $45 pack comes with the{' '}
                 <Term name="Aurora">Aurora Mk II</Term>. Its long-running alternate, the{' '}
@@ -267,6 +304,18 @@ export default function BuyingTheGamePage() {
                 some regional payment methods. The checkout is standard — billing address,
                 payment details, order confirmation.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg"
+                  alt="The Citizen Starter Pack product page on the pledge store with its Add to Cart button."
+                  width={952}
+                  height={468}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  Adding a starter pack to your cart on the pledge store.
+                </figcaption>
+              </figure>
               <p>
                 After payment you will receive a confirmation email. Your account will be
                 upgraded immediately — no need to wait for any physical item (there is none).
@@ -286,6 +335,18 @@ export default function BuyingTheGamePage() {
                 listed. Click <strong className="text-starwhite">Download</strong> to get the
                 RSI Launcher installer — a small executable file (around 20 MB).
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-started-rsi-download-button-top-nav.jpg"
+                  alt="The DOWNLOAD button in the top navigation of the RSI website."
+                  width={1200}
+                  height={164}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The DOWNLOAD button in the RSI site navigation — this gets you the launcher installer.
+                </figcaption>
+              </figure>
               <p>
                 Run the installer to install the RSI Launcher on your PC. The Launcher then
                 downloads the actual game — this is where the 100 GB+ comes from. Start this

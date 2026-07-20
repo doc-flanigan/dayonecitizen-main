@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -130,10 +131,34 @@ export default function AddingFriendsPage() {
               <li>Click <strong className="text-starwhite">Add Friend</strong>.</li>
               <li>They accept the request from Spectrum or in-game. Done.</li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 max-w-md mx-auto mb-6">
+              <Image
+                src="/images/guides/sc-add-friend-spectrum-search.jpg"
+                alt="Spectrum search results for a player handle, showing the matching player profile ready to open and send a friend request."
+                width={606}
+                height={723}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                Searching a handle on Spectrum — open the profile and click Add Friend.
+              </figcaption>
+            </figure>
             <p className="text-muted text-sm mb-8">
               Pending requests live under your avatar menu &rarr; Settings &rarr; Friends.
               You can cancel an outgoing request from there too.
             </p>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/sc-add-friend-pending-requests.jpg"
+                alt="The Friends settings page listing pending outgoing friend requests, each with a cancel option."
+                width={1200}
+                height={370}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                Pending requests wait here until your friend accepts — you can cancel one too.
+              </figcaption>
+            </figure>
 
             {/* Method 2 */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
@@ -148,6 +173,18 @@ export default function AddingFriendsPage() {
               <li>Type the player&apos;s handle and confirm.</li>
               <li>The request goes out the same way as a Spectrum request.</li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 max-w-md mx-auto mb-8">
+              <Image
+                src="/images/guides/sc-add-friend-main-menu-bar.jpg"
+                alt="The Friends panel on the Star Citizen main menu with the Add Friend button at the top and the contacts list below."
+                width={420}
+                height={541}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The main-menu Friends panel — the + Add Friend button sits at the top.
+              </figcaption>
+            </figure>
 
             {/* Method 3 */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
@@ -165,6 +202,18 @@ export default function AddingFriendsPage() {
               <li>Click the <strong className="text-starwhite">Members</strong> tab on the right — it lists everyone in the channel right now.</li>
               <li>Click on a player&apos;s name and choose <strong className="text-starwhite">Send Friend Request</strong>.</li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/sc-add-friend-server-player-list.jpg"
+                alt="The in-game Commlink chat window with the Members list open, showing every player on the server and the option to send a friend request."
+                width={1200}
+                height={611}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The Members tab lists everyone in the channel — click a name to send a request.
+              </figcaption>
+            </figure>
 
             {/* Method 4 */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
@@ -181,6 +230,18 @@ export default function AddingFriendsPage() {
               <li>Aim at them and select <strong className="text-starwhite">Add Contact</strong>.</li>
               <li>The request goes out the normal way from there.</li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/sc-add-friend-personal-inner-thought.jpg"
+                alt="A first-person view of another player with the Inner Thought interaction wheel open, highlighting the Add Contact option."
+                width={1200}
+                height={809}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                Hold F while looking at a nearby player and pick Add Contact — no handle needed.
+              </figcaption>
+            </figure>
 
             {/* Accepting */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
@@ -194,6 +255,18 @@ export default function AddingFriendsPage() {
               <li><strong className="text-starwhite">Main menu:</strong> the Friends panel shows pending requests above your accepted contacts.</li>
               <li><strong className="text-starwhite">In-game:</strong> press F11 &rarr; Contacts tab &rarr; pending requests at the top.</li>
             </ul>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/sc-add-friend-incoming-request.jpg"
+                alt="An incoming friend request shown in the contacts list with accept and decline buttons next to the sender's handle."
+                width={1173}
+                height={618}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                An incoming request — accept it from whichever screen you see first.
+              </figcaption>
+            </figure>
 
             {/* Playing together */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">

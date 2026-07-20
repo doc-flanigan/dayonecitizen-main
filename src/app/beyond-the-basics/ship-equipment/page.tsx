@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -264,6 +265,18 @@ export default function ShipEquipmentPage() {
               <li><strong className="text-starwhite">Shields:</strong> More power speeds up how fast your shields recharge.</li>
               <li><strong className="text-starwhite">Engines:</strong> More power increases your top speed.</li>
             </ul>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/ship-equipment-power-triangle-mfd.jpg"
+                alt="A cockpit multi-function display showing the power triangle, with power split between weapons, shields, and engines."
+                width={1200}
+                height={665}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The power triangle on a cockpit display — shift power between weapons, shields, and engines.
+              </figcaption>
+            </figure>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
               Shifting power dynamically during a fight gives experienced pilots an edge.
               When chasing an enemy, push power to engines. When being fired on, push
@@ -294,6 +307,18 @@ export default function ShipEquipmentPage() {
                 they go in — you cannot put a size three component in a size one slot.
               </li>
             </ol>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/ship-equipment-loadout-screen-components.jpg"
+                alt="The ship loadout screen showing component slots for power plant, coolers, shields, and quantum drive with the installed parts listed."
+                width={1200}
+                height={637}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The loadout screen — drag a new component into its matching slot to install it.
+              </figcaption>
+            </figure>
 
             {/* FAQ */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-6">

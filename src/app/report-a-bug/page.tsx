@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Search, FileText, ClipboardList, Activity } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -201,6 +202,18 @@ export default function ReportABugPage() {
                 shared logbook of everything that is broken, with the evidence
                 gathered in one place so the team can investigate.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/report-a-bug/issue-council-home.jpg"
+                  alt="The Issue Council landing page with its Welcome Citizen header and project cards for Star Citizen, the Launcher, and the RSI Website."
+                  width={997}
+                  height={914}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The Issue Council landing page with its project cards.
+                </figcaption>
+              </figure>
               <p>
                 It is for bugs only. Ideas about balance, design, or new features
                 belong on <Term name="Spectrum">Spectrum</Term>, the official Star

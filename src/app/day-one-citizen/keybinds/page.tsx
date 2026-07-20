@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -315,6 +316,18 @@ export default function KeybindsPage() {
                 <li>Select <strong className="text-starwhite">Key Bindings</strong></li>
                 <li>Browse categories: On Foot, Flight, Mining, etc.</li>
               </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/keybinds-options-keybindings-screen.jpg"
+                  alt="The in-game options menu on the Keybindings screen, showing binding categories and individual key assignments."
+                  width={1200}
+                  height={670}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The Keybindings screen in the in-game options menu.
+                </figcaption>
+              </figure>
               <p>
                 You can change any binding by clicking it and pressing the new key combination.
                 Before making extensive changes, use the{' '}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -113,6 +114,18 @@ export default function FoodDrinkSurvivalPage() {
               status tab. If either bar is below about half, eat or drink before heading
               out on a long mission.
             </p>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/food-drink-character-status-bars.jpg"
+                alt="The mobiGlas character status screen showing the blue hydration bar and green nutrition bar for the player character."
+                width={1200}
+                height={693}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The character status screen — blue is hydration, green is nutrition.
+              </figcaption>
+            </figure>
 
             {/* Thirst effects */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
@@ -198,6 +211,18 @@ export default function FoodDrinkSurvivalPage() {
               Outposts usually have at least one vending machine, but they can run out of
               stock. Stock up at a city before heading somewhere remote.
             </p>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-6">
+              <Image
+                src="/images/guides/food-drink-vending-machine-station.jpg"
+                alt="A vending machine at a space station common area stocked with drinks and snacks for purchase."
+                width={1200}
+                height={708}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                A station vending machine — the quickest place to restock before a mission.
+              </figcaption>
+            </figure>
             <ul className="list-disc pl-6 mb-4 space-y-2 text-starwhite/80">
               <li>
                 <strong className="text-starwhite">Space stations:</strong> Vending

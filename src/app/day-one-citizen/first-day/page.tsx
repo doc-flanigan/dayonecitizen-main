@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -266,6 +267,18 @@ export default function FirstDayPage() {
                       delivers to locations on the same planet or moon you are near. Accept it.
                       A waypoint appears on your HUD pointing toward the pickup location.
                     </p>
+                    <figure className="overflow-hidden rounded-2xl border border-white/10">
+                      <Image
+                        src="/images/guides/first-days-mobiglas-mission-manager.jpg"
+                        alt="The in-game mobiGlas Mission Manager screen showing a list of available contracts with mission details and an accept option."
+                        width={1200}
+                        height={669}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                        The mobiGlas Mission Manager, where you browse and accept contracts.
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>

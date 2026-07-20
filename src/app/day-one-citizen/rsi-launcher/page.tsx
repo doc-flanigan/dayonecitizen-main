@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -131,6 +132,18 @@ export default function RsiLauncherPage() {
                   and re-downloads any corrupted or missing files.
                 </li>
               </ul>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/launcher/rsi-launcher-home-launch-ready.jpg"
+                  alt="The RSI Launcher home screen with the game installed and the large LAUNCH GAME button ready, alongside the channel selector and patch notes area."
+                  width={1051}
+                  height={768}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The RSI Launcher home screen with the game ready to launch.
+                </figcaption>
+              </figure>
             </div>
           </section>
 
@@ -212,6 +225,18 @@ export default function RsiLauncherPage() {
                 prompt you to download it — this is a full additional copy of the game (another
                 ~100 GB).
               </p>
+              <figure className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/launcher/rsi-launcher-environment-dropdown-live-ptu.jpg"
+                  alt="The RSI Launcher environment dropdown open, showing LIVE and PTU as selectable channels."
+                  width={329}
+                  height={354}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The channel dropdown in the RSI Launcher — LIVE and PTU.
+                </figcaption>
+              </figure>
               <p>
                 You can have multiple channels installed simultaneously if you have the storage
                 space. Most players only keep <Term name="Live">LIVE</Term> installed and download
@@ -234,6 +259,18 @@ export default function RsiLauncherPage() {
                 <li>Wait — this can take 15–30 minutes as it checks every file</li>
                 <li>Any corrupted or missing files will be re-downloaded automatically</li>
               </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/launcher/rsi-launcher-settings-games-verify.jpg"
+                  alt="The RSI Launcher settings screen on the Games section, showing the installed game with its Verify option for repairing game files."
+                  width={1046}
+                  height={1274}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The Verify option in the RSI Launcher&rsquo;s settings, under Games.
+                </figcaption>
+              </figure>
               <p>
                 Verify is the fix for a surprising number of issues. If the game was working
                 and then suddenly is not after an update, verify first before deeper
@@ -261,6 +298,18 @@ export default function RsiLauncherPage() {
                   keeping up with frequent patch cycles automatically.
                 </li>
               </ul>
+              <figure className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/launcher/rsi-launcher-menu.jpg"
+                  alt="The RSI Launcher menu open, listing entries including Settings and Issue Council."
+                  width={193}
+                  height={357}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The RSI Launcher menu — Settings lives here.
+                </figcaption>
+              </figure>
             </div>
           </section>
 
