@@ -313,6 +313,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Budget manufacturer known for the Mustang starter ship and the Nomad multi-role. Built for accessibility — the working-class alternative to Origin's luxury line.",
     also: 'CO',
+    lastVerified: '2026-07-20',
   },
   {
     term: 'Gatac Manufacture',
@@ -455,6 +456,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake's heavy cargo hauler — modular, ugly, beloved. Carries tons of SCU and a small fighter inside. The classic pirate ship.",
+    lastVerified: '2026-07-20',
   },
   {
     term: 'Freelancer',
@@ -473,6 +475,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Anvil's premier exploration ship — long-range, jumppoint-survey-ready, has a Pisces snub, a med bay, a rover bay, and a hangar. The 'home in space.'",
+    lastVerified: '2026-07-20',
   },
   {
     term: '890 Jump',
@@ -509,6 +512,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Massive UEE Navy carrier. NPC-only — players can't own one. The setpiece ship of Squadron 42.",
+    lastVerified: '2026-07-20',
   },
   {
     term: 'Hull',
@@ -570,6 +574,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Anvil ground anti-air vehicle — quad missile launcher on an 8-wheeled chassis. Used to deny airspace during ground engagements. Sometimes lumped under the 'tonk' label.",
+    lastVerified: '2026-07-20',
   },
   {
     term: 'Pisces',
@@ -766,6 +771,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake's scrappy light dogfighter — cheap, fast, and loaded with more weapons than a ship its size has any right to carry. Fragile, but what it lacks in armor it makes up for in aggression.",
+    lastVerified: '2026-07-20',
   },
   {
     term: 'Corsair',
