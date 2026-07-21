@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/site'
-import CTAButton from './CTAButton'
+import CTAButton, { getCtaVariant } from './CTAButton'
 import FreeFlyBanner from './FreeFlyBanner'
 import StarterPackBanner from './StarterPackBanner'
 
@@ -13,6 +13,13 @@ export default function NavBar() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  // Styling A/B (2026-07-20): copy is identical on both arms; variant b adds
+  // the pulse treatment. The earlier copy test ended inconclusive at 0.1% CTR.
+  const [ctaStyle, setCtaStyle] = useState<'a' | 'b'>('a')
+
+  useEffect(() => {
+    setCtaStyle(getCtaVariant())
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -79,7 +86,8 @@ export default function NavBar() {
               size="sm"
               href="/referral-code"
               trackingLabel="nav-cta"
-              variants={{ a: 'Get 50K UEC', b: 'Free 50K UEC' }}
+              variants={{ a: 'Get 50K UEC', b: 'Get 50K UEC' }}
+              className={ctaStyle === 'b' ? 'nav-cta-pulse' : ''}
             />
           </li>
         </ul>
