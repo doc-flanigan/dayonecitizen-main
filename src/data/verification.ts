@@ -3,8 +3,8 @@
 // the portfolio root (monthly ritual) — avoid hand-editing dates unless the
 // script is unavailable.
 
-export const VERIFIED_ON = '2026-07-12'
-export const VERIFIED_DISPLAY = 'July 12, 2026'
+export const VERIFIED_ON = '2026-07-22'
+export const VERIFIED_DISPLAY = 'July 21, 2026'
 export const VERIFIED_MONTH = 'July 2026'
 
 export type VerificationEntry = {
@@ -15,6 +15,10 @@ export type VerificationEntry = {
 
 export const VERIFICATION_LOG: VerificationEntry[] = [
   // __VERIFY_LOG_INSERT__ (newest first — the verify script prepends here)
+  {
+    display: 'July 21, 2026',
+    text: 'STAR-GCQJ-N6NC entered on the live RSI enlist page. The panel showed “You’ve been referred by: Doc Flanigan” and “Referral code successfully applied!” (manual check in a real browser)',
+  },
   {
     display: 'July 12, 2026',
     text: 'STAR-GCQJ-N6NC entered on the live RSI enlist page. The panel showed “You’ve been referred by: Doc Flanigan” and “Referral code successfully applied!” (automated check)',
