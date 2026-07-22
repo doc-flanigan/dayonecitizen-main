@@ -3,7 +3,7 @@
 // the portfolio root (monthly ritual) — avoid hand-editing dates unless the
 // script is unavailable.
 
-export const VERIFIED_ON = '2026-07-22'
+export const VERIFIED_ON = '2026-07-21'
 export const VERIFIED_DISPLAY = 'July 21, 2026'
 export const VERIFIED_MONTH = 'July 2026'
 
