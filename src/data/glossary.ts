@@ -263,7 +263,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Store Credit',
     category: 'Currency',
     definition:
-      "Real-money credit on your RSI account, earned by melting pledges. Spendable on any pledge in the store, refunds back to your account, never expires.",
+      "RSI-account credit (not real money), earned by melting pledges. Spendable on any pledge in the store, never expires — but per the RSI Terms of Service it can't be converted back to cash.",
   },
   {
     term: 'Melt',
