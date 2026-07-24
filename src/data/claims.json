@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16",
+  "generated": "2026-07-24",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -389,6 +389,15 @@
       "lastVerified": "2026-07-14"
     },
     {
+      "id": "melt-returns-store-credit-not-cash",
+      "claim": "Melting a pledge converts it to RSI Store Credit, not a real-money refund; Store Credits obtained by converting Pledge Items are not refundable in real life currency and can only be spent on Pledge Items in the RSI store.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/tos"
+      ],
+      "lastVerified": "2026-07-24"
+    },
+    {
       "id": "misc-raptor-not-real-ship",
       "claim": "The MISC Raptor is not a real ship — it was only ever an April Fools joke.",
       "status": "refuted",
@@ -431,7 +440,7 @@
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-vr-support-experimental-release",
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/star-citizen-vr-support-experimental-release-alpha/9029809"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-16"
     },
     {
       "id": "nyx-system-live-alpha-4-4",
@@ -483,6 +492,15 @@
         "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21168-Star-Citizen-Alpha-48"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "pledge-refund-30-day-withdrawal-period",
+      "claim": "Star Citizen pledges are refundable in real money only within a 30-day no-questions-asked Withdrawal Period from receiving access to the Pledge Item; after that period, earned Pledge Funds are non-refundable except if CIG ceases development and fails to deliver.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/tos"
+      ],
+      "lastVerified": "2026-07-24"
     },
     {
       "id": "pyro-lawless-no-uee-law-enforcement",
