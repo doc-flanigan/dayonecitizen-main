@@ -163,7 +163,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'DefenseCon',
     category: 'Community',
     definition:
-      "CIG's 2026 military fleet showcase, replacing Invictus Launch Week. Combat and defense-focused ships are spotlighted across the event window. The Anvil Ironclad made its Flight Ready debut at DefenseCon 2956.",
+      "CIG's 2026 military fleet showcase, replacing Invictus Launch Week. Hosted by Drake Interplanetary, DefenseCon 2956 ran May 14–27, 2026 as a Free Fly, with combat and defense-focused ships rentable across the event window.",
   },
   {
     term: 'Referral Code',
