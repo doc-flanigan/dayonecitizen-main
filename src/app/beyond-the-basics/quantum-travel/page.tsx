@@ -10,13 +10,13 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 export const metadata: Metadata = {
   title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
   description:
-    'Hold B to spool your quantum drive, click a destination marker to lock on, then press B again to jump. A step-by-step guide for brand-new pilots.',
+    'Press B for NAV mode, middle-click to cycle into QT mode, set a route on the Starmap, and let the drive auto-calibrate before you jump. A step-by-step guide for brand-new pilots.',
   alternates: { canonical: '/beyond-the-basics/quantum-travel' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
     description:
-      'Hold B to spool your quantum drive, click a destination marker to lock on, then press B again to jump. A step-by-step guide for brand-new pilots.',
+      'Press B for NAV mode, middle-click to cycle into QT mode, set a route on the Starmap, and let the drive auto-calibrate before you jump. A step-by-step guide for brand-new pilots.',
     url: '/beyond-the-basics/quantum-travel',
   },
 }
@@ -44,10 +44,10 @@ export default function QuantumTravelPage() {
               How to Quantum Travel in Star Citizen
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Hold <strong className="text-starwhite">B</strong> in the pilot seat to
-              spool your quantum drive and show destination markers. Aim at a marker,
-              click to lock it, wait for the spool bar to fill, then press{' '}
-              <strong className="text-starwhite">B</strong> again to jump.
+              Press <strong className="text-starwhite">B</strong> in the pilot seat to
+              switch to NAV mode, then middle-click to cycle into QT mode. Set a route
+              on the Starmap, point at the marker, and the drive auto-calibrates — then
+              left-click to jump.
             </p>
           </div>
         </header>
@@ -108,9 +108,9 @@ export default function QuantumTravelPage() {
               </li>
             </ul>
             <p className="text-muted text-sm mb-8">
-              Quick tip: your ship&apos;s power triangle affects spool time. Sending
-              power toward Engines charges the quantum drive faster. Find the power
-              controls in your keybindings under Options &rarr; Flight.
+              Quick tip: your ship&apos;s power triangle affects calibration time.
+              Sending power toward Engines calibrates the quantum drive faster. Find
+              the power controls in your keybindings under Options &rarr; Flight.
             </p>
 
             {/* Step by step */}
@@ -129,41 +129,44 @@ export default function QuantumTravelPage() {
                 close.
               </li>
               <li>
-                <strong className="text-starwhite">Hold B to spool and show markers.</strong>{' '}
-                Holding <strong className="text-starwhite">B</strong> starts spooling
-                the quantum drive. Nearby destinations appear as purple diamond markers
-                floating in space around you. Turn your view to see them all.
+                <strong className="text-starwhite">Press B to switch to NAV mode.</strong>{' '}
+                A single press of <strong className="text-starwhite">B</strong> — not a
+                hold — sets your ship&apos;s Master Mode to NAV. Nearby destinations
+                appear as purple diamond markers floating in space around you. Turn
+                your view to see them all.
               </li>
               <li>
-                <strong className="text-starwhite">Aim at a marker and click to lock on.</strong>{' '}
-                Point your ship&apos;s nose (or crosshair) at your chosen marker and
-                left-click. The marker highlights, and your HUD shows the destination
-                name and estimated travel time.
+                <strong className="text-starwhite">Middle-click to cycle into QT mode.</strong>{' '}
+                Click your <strong className="text-starwhite">Middle Mouse Button</strong>{' '}
+                to cycle your Operating Mode to QT. Aim your ship&apos;s nose (or
+                crosshair) at your chosen marker. The marker highlights, and your HUD
+                shows the destination name and estimated travel time.
               </li>
               <li>
-                <strong className="text-starwhite">Wait for the spool bar to fill.</strong>{' '}
-                The circular indicator on your HUD fills as the drive charges. This
-                takes about five to fifteen seconds, depending on your ship, its drive,
-                and your power settings. Do not release{' '}
-                <strong className="text-starwhite">B</strong> while it charges.
+                <strong className="text-starwhite">Let the drive auto-calibrate.</strong>{' '}
+                Keep pointed at the marker and the quantum drive calibrates on its own —
+                no button hold required. This takes about five to fifteen seconds,
+                depending on your ship, its drive, and your power settings.
               </li>
               <li>
-                <strong className="text-starwhite">Press B again to jump.</strong>{' '}
-                When the &ldquo;QUANTUM READY&rdquo; prompt appears, press{' '}
-                <strong className="text-starwhite">B</strong>. Your ship shoots forward
-                into the famous blue quantum tunnel.
+                <strong className="text-starwhite">Left-click to jump.</strong>{' '}
+                When calibration finishes and the &ldquo;QUANTUM READY&rdquo; prompt
+                appears, click your{' '}
+                <strong className="text-starwhite">Left Mouse Button</strong>. Your ship
+                shoots forward into the famous blue quantum tunnel.
               </li>
               <li>
                 <strong className="text-starwhite">Arrive.</strong> Your ship slows down
-                automatically near the destination. You drop back into normal space
-                close to your target and fly the rest of the way yourself.
+                and the jump ends automatically near the destination. For planetside
+                destinations you arrive about thirty kilometres above or near the
+                surface location, then fly the rest of the way yourself.
               </li>
             </ol>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
-              That is the whole loop: hold{' '}
-              <strong className="text-starwhite">B</strong> &rarr; aim at a marker
-              &rarr; click to lock &rarr; wait for the spool &rarr; press{' '}
-              <strong className="text-starwhite">B</strong> to jump.
+              That is the whole loop: press{' '}
+              <strong className="text-starwhite">B</strong> for NAV mode &rarr;
+              middle-click for QT mode &rarr; aim at a marker &rarr; let it calibrate
+              &rarr; left-click to jump.
             </p>
 
             {/* Starmap */}
@@ -186,8 +189,8 @@ export default function QuantumTravelPage() {
                 field, then click it.
               </li>
               <li>
-                Click <strong className="text-starwhite">Set Destination</strong> in
-                the panel that appears. If the trip needs several hops, the Starmap
+                Click <strong className="text-starwhite">Route to this Location</strong>{' '}
+                in the panel that appears. If the trip needs several hops, the Starmap
                 plots the whole route for you.
               </li>
               <li>
@@ -195,8 +198,8 @@ export default function QuantumTravelPage() {
                 (or press <strong className="text-starwhite">Escape</strong>).
               </li>
               <li>
-                Your first waypoint now appears as a marker in space. Spool and jump
-                as normal. When you arrive, the next leg of the route cues up
+                Your first waypoint now appears as a marker in space. Switch to QT mode
+                and jump as normal. When you arrive, the next leg of the route cues up
                 automatically.
               </li>
             </ol>
@@ -228,17 +231,17 @@ export default function QuantumTravelPage() {
 
             {/* Tips */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
-              Tips: spool faster, manage fuel, plan your time
+              Tips: calibrate faster, manage fuel, plan your time
             </h2>
 
             <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
-              Speed up your spool
+              Speed up calibration
             </h3>
             <ul className="list-disc pl-6 mb-6 space-y-2 text-starwhite/80">
               <li>
                 <strong className="text-starwhite">Send power to Engines.</strong> The
                 power triangle in your ship controls where energy goes. More power to
-                Engines means a faster-charging quantum drive.
+                Engines means a faster-calibrating quantum drive.
               </li>
               <li>
                 <strong className="text-starwhite">Turn off shields and weapons.</strong>{' '}
@@ -247,7 +250,7 @@ export default function QuantumTravelPage() {
               </li>
               <li>
                 <strong className="text-starwhite">Upgrade the drive itself.</strong> A
-                better quantum drive spools faster, holds more fuel, and can allow
+                better quantum drive calibrates faster, holds more fuel, and can allow
                 longer jumps. Component shops at major stations sell them.
               </li>
             </ul>
@@ -296,12 +299,17 @@ export default function QuantumTravelPage() {
             </h2>
 
             <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
-              The drive will not spool
+              The drive will not calibrate
             </h3>
             <ol className="list-decimal pl-6 mb-6 space-y-2 text-starwhite/80">
               <li>
                 <strong className="text-starwhite">Check your seat.</strong> Only the
                 pilot can start a jump.
+              </li>
+              <li>
+                <strong className="text-starwhite">Check your Operating Mode.</strong>{' '}
+                You need to be in NAV mode (press <strong className="text-starwhite">B</strong>)
+                and QT mode (middle-click) before the drive will calibrate.
               </li>
               <li>
                 <strong className="text-starwhite">Check for a Restricted Area message.</strong>{' '}
@@ -315,13 +323,13 @@ export default function QuantumTravelPage() {
               </li>
               <li>
                 <strong className="text-starwhite">Check your fuel.</strong> An empty
-                quantum tank prevents spooling. Refuel at a Cry-Astro station or
+                quantum tank prevents calibration. Refuel at a Cry-Astro station or
                 landing zone.
               </li>
             </ol>
 
             <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
-              No markers appear when I hold B
+              No markers appear in NAV mode
             </h3>
             <ul className="list-disc pl-6 mb-6 space-y-2 text-starwhite/80">
               <li>
@@ -334,7 +342,8 @@ export default function QuantumTravelPage() {
               </li>
               <li>
                 Confirm <strong className="text-starwhite">B</strong> is still mapped
-                to &ldquo;Hold Quantum Travel&rdquo; in the Options keybindings.
+                to &ldquo;Switch to NAV Mode&rdquo; in the Options keybindings, not the
+                older &ldquo;Hold Quantum Travel&rdquo; bind.
               </li>
             </ul>
 
@@ -352,10 +361,9 @@ export default function QuantumTravelPage() {
               I arrived at the wrong place
             </h3>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
-              Read the destination name on your HUD before you press{' '}
-              <strong className="text-starwhite">B</strong> to jump. Some markers have
-              similar names — several stations can orbit the same planet. Use the
-              Starmap when you need precision.
+              Read the destination name on your HUD before you click to jump. Some
+              markers have similar names — several stations can orbit the same planet.
+              Use the Starmap when you need precision.
             </p>
 
             {/* Interdiction */}
@@ -386,7 +394,7 @@ export default function QuantumTravelPage() {
               <li>
                 <strong className="text-starwhite">Or flee.</strong> Boost away at full
                 thrust. The snare weakens with distance, and once you are clear you can
-                hold <strong className="text-starwhite">B</strong> and jump out.
+                switch to QT mode and jump out.
               </li>
               <li>
                 <strong className="text-starwhite">Or comply,</strong> if you must. NPC
