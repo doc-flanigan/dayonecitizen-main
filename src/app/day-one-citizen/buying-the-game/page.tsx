@@ -200,14 +200,12 @@ export default function BuyingTheGamePage() {
               <p className="text-sm mt-4">
                 When you create your account, use a referral code to get 50,000{' '}
                 <Term name="UEC">UEC</Term> free.{' '}
-                <a
-                  href="https://screferralreward.com"
+                <Link
+                  href="/referral-code"
                   className="text-gold underline-offset-4 hover:underline"
-                  target="_blank"
-                  rel="noopener"
                 >
-                  screferralreward.com
-                </a>{' '}
+                  Our referral code page
+                </Link>{' '}
                 has the code and step-by-step instructions.
               </p>
             </div>

@@ -645,7 +645,9 @@ real image lands, then swap to a `next/image` `<Image>`.
 
 **Cross-links this site must send (body copy only):**
 - → freeflyevent.com: Weekly digest + events section when Free Fly mentioned
-- → screferralreward.com: Tutorial sign-up step ("Use a referral code when you enlist")
+- ~~→ screferralreward.com~~ — domain killed 2026-07-27 (301s to
+  `/referral-code` on this site). Tutorial sign-up step now links
+  internally to `/referral-code` instead of an external domain.
 - → bestspacesim.com: "Why Star Citizen" comparison context
 - → o7meaning.com: Glossary entry for o7
 - → fundedgame.com: "About the Game" background section ("the highest-funded game in history")
