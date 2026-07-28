@@ -297,11 +297,12 @@ export default function FirstDayPage() {
                       <Term name="Quantum Travel">quantum travel</Term> to get there fast.
                     </p>
                     <p>
-                      With your destination targeted (it appears as a waypoint), hold{' '}
-                      <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd>{' '}
-                      to spool the quantum drive. A circular progress bar appears in your HUD.
-                      When it completes and flashes, hold{' '}
+                      Press{' '}
                       <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd>{' '}
+                      to switch to NAV mode, then middle-click to cycle into QT mode with
+                      your destination targeted (it appears as a waypoint). Point your nose
+                      at it and the quantum drive auto-calibrates — a circular indicator
+                      appears in your HUD. When it completes, left-click{' '}
                       to jump. The ship accelerates dramatically and you are transported across
                       the system in seconds to minutes depending on the distance.
                     </p>
