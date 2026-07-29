@@ -57,6 +57,15 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "caterpillar-standalone-pledge-330-usd",
+      "claim": "The Drake Caterpillar standalone pledge costs $330 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Caterpillar"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "ccu-pay-price-difference",
       "claim": "A Ship Upgrade / Cross-Chassis Upgrade (CCU) changes a pledge to a higher-value ship; the CCU item is priced at the gap between the two ships, not the full price of the new ship.",
       "status": "verified",
@@ -633,6 +642,15 @@
       "lastVerified": "2026-07-11"
     },
     {
+      "id": "razor-misc-racing-ship",
+      "claim": "Razor is a racing-focused ship manufactured by MISC.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Razor"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "referral-bonus-no-purchase-required",
       "claim": "Claiming the 50,000 UEC enlistment bonus requires no purchase — creating the free RSI account with a referral code is enough; the bonus stays on the account permanently.",
       "status": "verified",
@@ -1175,6 +1193,15 @@
         "https://robertsspaceindustries.com/en/comm-link/engineering/16292-Q-A-UEE-Land-Claim-Licenses"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "valkyrie-troop-transport-capacity",
+      "claim": "The Anvil Valkyrie is a military dropship designed to safely deliver and extract up to twenty fully-outfitted, armed soldiers as well as vehicles from hostile locations.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Valkyrie"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "vulkan-cpu-performance-better",
