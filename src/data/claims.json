@@ -57,6 +57,15 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "caterpillar-standalone-pledge-330-usd",
+      "claim": "The Drake Caterpillar standalone pledge costs $330 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Caterpillar"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "ccu-pay-price-difference",
       "claim": "A Ship Upgrade / Cross-Chassis Upgrade (CCU) changes a pledge to a higher-value ship; the CCU item is priced at the gap between the two ships, not the full price of the new ship.",
       "status": "verified",
@@ -160,6 +169,17 @@
       "lastVerified": "2026-07-27"
     },
     {
+      "id": "event-foundation-festival-2026",
+      "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "event-iae-2952",
       "claim": "Intergalactic Aerospace Expo 2952 ran as a Free Fly event 18–30 November 2022 (UTC).",
       "status": "verified",
@@ -234,13 +254,14 @@
     },
     {
       "id": "foundation-festival-2026-expected",
-      "claim": "Foundation Festival 2026 launches July 29, 2026, per CIG's official Twitch Drops comm-link. A referral mechanic (recruit a new player, earn a free Argo ATLS) is teased for the event but full terms are not yet published. No Free Fly component and no festival end date have been officially confirmed as of this check.",
-      "status": "verified",
+      "claim": "SUPERSEDED 2026-07-29 by event-foundation-festival-2026: CIG confirmed the Foundation Festival 2026 Free Fly (Jul 29 – Aug 10) in Comm-Link 21211 and published full referral-bonus terms in Comm-Link 21225. The pre-announcement claim below no longer reflects official state.",
+      "status": "superseded",
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
-        "https://robertsspaceindustries.com/en/comm-link/transmission/20622-Foundation-Festival-2025"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus"
       ],
-      "lastVerified": "2026-07-27"
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "freefly-event-based-not-always-on",
@@ -631,6 +652,16 @@
         "https://robertsspaceindustries.com/en/referral-program"
       ],
       "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "razor-mirai-racing-ship",
+      "claim": "The Razor is a racing-focused ship manufactured by Mirai, a subsidiary brand of MISC.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/ships/razor/Razor",
+        "https://api.star-citizen.wiki/api/v2/vehicles/Razor"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "referral-bonus-no-purchase-required",
@@ -1175,6 +1206,15 @@
         "https://robertsspaceindustries.com/en/comm-link/engineering/16292-Q-A-UEE-Land-Claim-Licenses"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "valkyrie-troop-transport-capacity",
+      "claim": "The Anvil Valkyrie is a military dropship designed to safely deliver and extract up to twenty fully-outfitted, armed soldiers as well as vehicles from hostile locations.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Valkyrie"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "vulkan-cpu-performance-better",

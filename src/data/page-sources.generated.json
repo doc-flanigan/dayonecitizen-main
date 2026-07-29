@@ -12,6 +12,26 @@
         ]
       }
     ],
+    "/beyond-the-basics": [
+      {
+        "id": "quantum-travel-sequence",
+        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      }
+    ],
+    "/beyond-the-basics/quantum-travel": [
+      {
+        "id": "quantum-travel-sequence",
+        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      }
+    ],
     "/beyond-the-basics/redeem-codes": [
       {
         "id": "referral-enlistment-bonus-50k-uec",
@@ -41,6 +61,26 @@
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements",
           "https://robertsspaceindustries.com/download"
+        ]
+      }
+    ],
+    "/day-one-citizen/first-day": [
+      {
+        "id": "quantum-travel-sequence",
+        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      }
+    ],
+    "/day-one-citizen/first-flight": [
+      {
+        "id": "quantum-travel-sequence",
+        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
         ]
       }
     ],
@@ -82,6 +122,14 @@
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360000134267-Set-up-keybindings-for-your-peripherals",
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360000183328-Create-export-and-import-custom-profiles"
+        ]
+      },
+      {
+        "id": "quantum-travel-sequence",
+        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
         ]
       }
     ],
@@ -377,6 +425,22 @@
         ]
       },
       {
+        "id": "included-vessels-loaner-system",
+        "claim": "Included vessels (secondary craft like snub fighters and rovers) are handled through the loaner system — they cannot be listed in pledges, reclaimed, or upgraded independently; access them in-game via mobiGlas and ASOP panels.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+        ]
+      },
+      {
+        "id": "included-vessels-lost-on-parent-upgrade",
+        "claim": "Upgrading away from a parent ship or reclaiming it removes player access to all included vessels tied to that parent; included vessels cannot be separated from their parent ship.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+        ]
+      },
+      {
         "id": "invictus-2026-replaced-by-defensecon-2956",
         "claim": "Invictus Launch Week did not run as a standalone UEE capital-ship event in May 2026; in-lore the UEEN fleet was pulled back to Sol, and Drake Interplanetary stepped up to host Drake DefenseCon 2956 (14-27 May 2026) as the Free Fly event in its place.",
         "status": "verified",
@@ -391,6 +455,14 @@
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-1-ptu-patch-notes-2"
+        ]
+      },
+      {
+        "id": "loaner-vessels-do-not-stack",
+        "claim": "Loaner vessels do not stack — if a player owns multiple parent ships that grant the same secondary craft, they receive only one copy of that vessel, not one per parent.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
         ]
       },
       {
@@ -446,11 +518,103 @@
         ]
       },
       {
+        "id": "ship-customizer-300-series-exclusive",
+        "claim": "Ship Customizer is currently exclusive to Origin Jumpworks 300 series ships, but may be rolled out to other manufacturers in the future.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+        ]
+      },
+      {
+        "id": "ship-customizer-future-in-verse-changes",
+        "claim": "In the future, players will be able to change ship customizations in-game within the 'verse, rather than only during the initial pledge.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+        ]
+      },
+      {
+        "id": "ship-customizer-insurance-preserves",
+        "claim": "Insurance claims on customized ships restore them with all customizations and personal equipment loadouts intact.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+        ]
+      },
+      {
+        "id": "ship-customizer-one-time-per-ship",
+        "claim": "Ship Customizer can only be used once per ship; customizations are permanent unless the ship is reclaimed and repurchased.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+        ]
+      },
+      {
+        "id": "ship-customizer-store-credit-purchase",
+        "claim": "Ship customizations can be purchased using Store Credit, not just real money.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+        ]
+      },
+      {
+        "id": "ship-customizer-upgrade-removes",
+        "claim": "Ship customizations are removed when a ship is upgraded to a different variant; the customization value is returned as store credit.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+        ]
+      },
+      {
+        "id": "ship-name-character-limits",
+        "claim": "Ship names have a 32-character limit and must use ASCII characters only (letters, numbers, spaces, dashes) with no consecutive spaces/dashes and no leading or trailing spaces/dashes",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+        ]
+      },
+      {
+        "id": "ship-name-unique-per-model",
+        "claim": "Ship names are unique per model and variants — two players cannot both name their 600i the same name, though they can both name a 600i and a 890 Jump the same name (different models)",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+        ]
+      },
+      {
+        "id": "ship-naming-triggers-redelivery",
+        "claim": "Naming or renaming a ship causes it to be re-delivered, which destroys all items, customization, and cargo aboard — players must remove everything before naming",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+        ]
+      },
+      {
         "id": "ship-pledge-includes-term-hull-insurance",
         "claim": "Every ship pledge/game package includes hull-replacement insurance for a stated term (typically 2-12 months); pledges made before Nov 26, 2012 carry Lifetime Insurance (LTI) instead.",
         "status": "verified",
         "sources": [
-          "https://robertsspaceindustries.com/comm-link/SCW/14282-API"
+          "https://robertsspaceindustries.com/comm-link/SCW/14282-API",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
+        ]
+      },
+      {
+        "id": "ship-reclaim-buyback-resets-serial",
+        "claim": "Reclaiming a ship and buying it back via the buyback tool assigns a new sequential serial number; players who want to keep their original serial number should not reclaim the ship.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/20472245812503-Ship-and-Vehicle-Serial-Numbers"
+        ]
+      },
+      {
+        "id": "ship-serial-numbers-not-customizable",
+        "claim": "Ship serial numbers are automatically assigned when acquired and cannot be customized manually.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/20472245812503-Ship-and-Vehicle-Serial-Numbers"
         ]
       },
       {
@@ -490,12 +654,13 @@
         ]
       },
       {
-        "id": "foundation-festival-2026-expected",
-        "claim": "Foundation Festival 2026 launches July 29, 2026, per CIG's official Twitch Drops comm-link. A referral mechanic (recruit a new player, earn a free Argo ATLS) is teased for the event but full terms are not yet published. No Free Fly component and no festival end date have been officially confirmed as of this check.",
+        "id": "event-foundation-festival-2026",
+        "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
         "status": "verified",
         "sources": [
-          "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
-          "https://robertsspaceindustries.com/en/comm-link/transmission/20622-Foundation-Festival-2025"
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026"
         ]
       },
       {
@@ -526,6 +691,16 @@
         ]
       }
     ],
+    "/llms": [
+      {
+        "id": "quantum-travel-sequence",
+        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      }
+    ],
     "/quick-reference": [
       {
         "id": "keybinds-core-defaults",
@@ -533,6 +708,14 @@
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      },
+      {
+        "id": "quantum-travel-sequence",
+        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "status": "verified",
+        "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
         ]
       },
