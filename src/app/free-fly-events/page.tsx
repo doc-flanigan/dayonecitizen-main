@@ -120,8 +120,11 @@ export default function FreeFlyPage() {
                   </strong>
                   , anyone can download and play the full game for free with
                   five ships to try — no <Term name="Pledge">pledge</Term>{' '}
-                  required. CIG hasn&rsquo;t named the five ships yet; its
-                  announcement promises a full rundown soon. (
+                  required. The five ships: RSI Aurora Mk II (a starter ship),
+                  Drake Cutter (small cargo), Drake Golem (
+                  <Term name="Mining">mining</Term>), Crusader Intrepid (a
+                  one-person courier), and RSI Salvation (
+                  <Term name="Salvage">salvage</Term>). (
                   <a
                     href="https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026"
                     target="_blank"
@@ -174,8 +177,9 @@ export default function FreeFlyPage() {
                   <>
                     <Term name="CIG">CIG</Term>&rsquo;s community event is
                     running right now, and this one does include a Free Fly:
-                    play free with five ships from July 29 through August 10
-                    (ship names not yet announced). (
+                    play free from July 29 through August 10 with five ships —
+                    RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader
+                    Intrepid, and RSI Salvation. (
                     <a
                       href="https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026"
                       target="_blank"
