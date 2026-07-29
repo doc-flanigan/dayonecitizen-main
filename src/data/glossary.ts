@@ -876,7 +876,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Starfarer',
     category: 'Ships',
     definition:
-      "MISC large fuel tanker — scoop hydrogen from gas giants, refine it on board, and sell it to ships that need refueling in space. The Gemini variant adds military-grade armor for dangerous territory.",
+      "MISC large fuel tanker — takes in hydrogen from open space, refines it on board, and sells it to ships that need refueling in space. The Gemini variant adds military-grade armor for dangerous territory.",
     also: 'Starfarer Gemini',
   },
   {
