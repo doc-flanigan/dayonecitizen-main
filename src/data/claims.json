@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24",
+  "generated": "2026-07-29",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -64,7 +64,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115010056848-Ship-Upgrades-CCUs",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013194987-Pledges-FAQ"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "chris-roberts-wing-commander-freelancer",
@@ -75,6 +75,15 @@
         "https://robertsspaceindustries.com/comm-link/SCW/13880-API"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "cig-tsr-upscaling-non-nvidia",
+      "claim": "CIG-TSR upscaling is the recommended option for non-NVIDIA graphics cards in Star Citizen",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "citizencon-2026-not-held",
@@ -133,13 +142,22 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "dlss-recommended-nvidia-cards",
+      "claim": "DLSS upscaling is recommended for NVIDIA graphics cards in Star Citizen",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "event-defensecon-2956",
       "claim": "DefenseCon 2956 ran as a Free Fly event 14–27 May 2026 (UTC).",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About"
       ],
-      "lastVerified": "2026-07-04"
+      "lastVerified": "2026-07-27"
     },
     {
       "id": "event-iae-2952",
@@ -216,13 +234,13 @@
     },
     {
       "id": "foundation-festival-2026-expected",
-      "claim": "Foundation Festival — CIG's annual new-player/community onboarding event, which in 2025 included a Free Fly and guide-mentorship activities — is expected by gaming press to return around mid-July 2026. CIG has not yet published a 2026 comm-link.",
-      "status": "unverifiable",
+      "claim": "Foundation Festival 2026 launches July 29, 2026, per CIG's official Twitch Drops comm-link. A referral mechanic (recruit a new player, earn a free Argo ATLS) is teased for the event but full terms are not yet published. No Free Fly component and no festival end date have been officially confirmed as of this check.",
+      "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/20622-Foundation-Festival-2025",
-        "https://www.techpowerup.com/338558/star-citizens-foundation-festival-returns-with-free-fly-event-new-referral-program-and-more"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20622-Foundation-Festival-2025"
       ],
-      "lastVerified": "2026-07-13"
+      "lastVerified": "2026-07-27"
     },
     {
       "id": "freefly-event-based-not-always-on",
@@ -293,6 +311,24 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "included-vessels-loaner-system",
+      "claim": "Included vessels (secondary craft like snub fighters and rovers) are handled through the loaner system — they cannot be listed in pledges, reclaimed, or upgraded independently; access them in-game via mobiGlas and ASOP panels.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "included-vessels-lost-on-parent-upgrade",
+      "claim": "Upgrading away from a parent ship or reclaiming it removes player access to all included vessels tied to that parent; included vessels cannot be separated from their parent ship.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "invictus-2026-replaced-by-defensecon-2956",
       "claim": "Invictus Launch Week did not run as a standalone UEE capital-ship event in May 2026; in-lore the UEEN fleet was pulled back to Sol, and Drake Interplanetary stepped up to host Drake DefenseCon 2956 (14-27 May 2026) as the Free Fly event in its place.",
       "status": "verified",
@@ -341,6 +377,15 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "loaner-vessels-do-not-stack",
+      "claim": "Loaner vessels do not stack — if a player owns multiple parent ships that grant the same secondary craft, they receive only one copy of that vessel, not one per parent.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "lore-odin-coil-debris-field",
       "claim": "In official lore, the Coil (the Odin I Cluster) is thought to be the debris of Odin's destroyed first planet — a seemingly unending cloud of planetary fragments, minerals, and electromagnetic energy surges whose deadly 'arc charges' destroy ships; it is mined only in temporarily safe pockets, hosts a Shubin Interstellar station, and its labyrinthine tunnels are a long-standing pirate hiding spot.",
       "status": "verified",
@@ -379,6 +424,15 @@
       "lastVerified": "2026-07-06"
     },
     {
+      "id": "lti-cannot-be-added-on-request",
+      "claim": "Lifetime Insurance (LTI) is offered rarely on specific pledges and promotions (such as Kickstarter pledges, Concept Sales, and high-value pledges like the Idris); RSI Support cannot add LTI to pledges upon customer request.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "lti-excludes-modifications-and-cargo",
       "claim": "Lifetime Insurance (LTI) covers only ship hull replacement; it does not cover modifications, upgrades/customizations, or cargo, which require separate risk-rated insurance policies.",
       "status": "verified",
@@ -386,7 +440,47 @@
         "https://robertsspaceindustries.com/en/faq/Insurance-FAQ",
         "https://robertsspaceindustries.com/en/comm-link/transmission/12820-Insurance-FAQ-And-Update"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "medical-cmt-controls-right-mouse-f-key",
+      "claim": "To use the Curelife Medical Tool (CMT): hold Right Mouse Button to raise it, hold F to open the tool screen, aim the tool at a player/body part for diagnostics, and press B to use it on yourself.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20750-Medical-Gameplay-Guide"
+      ],
+      "lastVerified": "2026-07-28"
+    },
+    {
+      "id": "medical-current-tool-curelife-medical-tool",
+      "claim": "The current official handheld medical treatment/revival tool in Star Citizen is the Curelife Medical Tool (CMT); the RSI Knowledge Base's current tools table lists only Medical Pens, Multitool (LifeGuard attachment), and the Curelife Medical Tool — 'Med Gun' does not appear as a current tool name, though CIG's own May 2026 comm-link uses 'Curelife Medical Gun' once informally and 2021 patch notes used 'medgun'.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20047-Medical-Guide"
+      ],
+      "lastVerified": "2026-07-28"
+    },
+    {
+      "id": "medical-incapacitation-timer-duration-unspecified",
+      "claim": "An incapacitated player has a fixed 5-15 minute bleed-out window before death.",
+      "status": "unverifiable",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20750-Medical-Gameplay-Guide"
+      ],
+      "lastVerified": "2026-07-28"
+    },
+    {
+      "id": "medical-medpen-hemozal-self-heal-revive",
+      "claim": "The MedPen (Hemozal) heals HP damage and bleeding, can be self-administered, and can revive an incapacitated player.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20047-Medical-Guide"
+      ],
+      "lastVerified": "2026-07-28"
     },
     {
       "id": "melt-returns-store-credit-not-cash",
@@ -396,6 +490,54 @@
         "https://robertsspaceindustries.com/tos"
       ],
       "lastVerified": "2026-07-24"
+    },
+    {
+      "id": "merchandise-address-frozen-shipping-status",
+      "claim": "RSI Support cannot change a physical merchandise order's shipping address once the order reaches 'Shipping' status, but can amend pending orders.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115009970528-Tracking-Physical-Merchandise-Orders",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "merchandise-delivery-4-14-days",
+      "claim": "Physical merchandise delivery typically takes 4-14 business days after the shipping confirmation email is received.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115009970528-Tracking-Physical-Merchandise-Orders",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "merchandise-in-stock-24hr-ship",
+      "claim": "In-stock physical merchandise items typically ship within 24 hours, with exceptions for holidays, weekends, and pre-order items.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115009970528-Tracking-Physical-Merchandise-Orders",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "merchandise-limited-shipping-countries",
+      "claim": "Physical merchandise can only be shipped to a limited list of supported countries including Australia, Canada, most EU nations, UK, US, Japan, Korea, New Zealand, and Israel; RSI Support can advise if your location is supported.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "merchandise-store-credit-not-accepted",
+      "claim": "Physical merchandise items cannot be purchased using Store Credit; only digital items and pledges accept Store Credit.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "misc-raptor-not-real-ship",
@@ -519,6 +661,15 @@
         "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
       ],
       "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "quantum-travel-sequence",
+      "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+      ],
+      "lastVerified": "2026-07-28"
     },
     {
       "id": "randomizers-stale-bonus-amounts",
@@ -651,22 +802,144 @@
       "lastVerified": "2026-07-14"
     },
     {
+      "id": "ship-customizer-300-series-exclusive",
+      "claim": "Ship Customizer is currently exclusive to Origin Jumpworks 300 series ships, but may be rolled out to other manufacturers in the future.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-future-in-verse-changes",
+      "claim": "In the future, players will be able to change ship customizations in-game within the 'verse, rather than only during the initial pledge.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-insurance-preserves",
+      "claim": "Insurance claims on customized ships restore them with all customizations and personal equipment loadouts intact.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-one-time-per-ship",
+      "claim": "Ship Customizer can only be used once per ship; customizations are permanent unless the ship is reclaimed and repurchased.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-store-credit-purchase",
+      "claim": "Ship customizations can be purchased using Store Credit, not just real money.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-upgrade-removes",
+      "claim": "Ship customizations are removed when a ship is upgraded to a different variant; the customization value is returned as store credit.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-insurance-claim-filing-costs-auec",
+      "claim": "Filing an insurance claim for a destroyed or stolen ship incurs an aUEC (in-game currency) cost; filing a claim can also function as a workaround to resolve certain ship-related bugs.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "ship-insurance-claim-replaces-destroyed-hull",
       "claim": "A destroyed pledged/purchased ship is not permanently lost — the owner can file an in-game insurance claim at an ASOP terminal to receive a replacement hull, subject to a wait timer that can be reduced via an expedited-processing option.",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/16043-Monthly-Studio-Report-July-2017"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/16043-Monthly-Studio-Report-July-2017",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
       ],
-      "lastVerified": "2026-07-15"
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-loadout-insurance-separate-purchase",
+      "claim": "Players can purchase loadout insurance separately on a per-ship basis to insure custom-equipped weapons, modules, and other equipment; without loadout insurance, non-standard equipment is lost when filing an insurance claim.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-name-character-limits",
+      "claim": "Ship names have a 32-character limit and must use ASCII characters only (letters, numbers, spaces, dashes) with no consecutive spaces/dashes and no leading or trailing spaces/dashes",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-name-unique-per-model",
+      "claim": "Ship names are unique per model and variants — two players cannot both name their 600i the same name, though they can both name a 600i and a 890 Jump the same name (different models)",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-naming-triggers-redelivery",
+      "claim": "Naming or renaming a ship causes it to be re-delivered, which destroys all items, customization, and cargo aboard — players must remove everything before naming",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "ship-pledge-includes-term-hull-insurance",
       "claim": "Every ship pledge/game package includes hull-replacement insurance for a stated term (typically 2-12 months); pledges made before Nov 26, 2012 carry Lifetime Insurance (LTI) instead.",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/comm-link/SCW/14282-API"
+        "https://robertsspaceindustries.com/comm-link/SCW/14282-API",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-reclaim-buyback-resets-serial",
+      "claim": "Reclaiming a ship and buying it back via the buyback tool assigns a new sequential serial number; players who want to keep their original serial number should not reclaim the ship.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/20472245812503-Ship-and-Vehicle-Serial-Numbers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-serial-numbers-not-customizable",
+      "claim": "Ship serial numbers are automatically assigned when acquired and cannot be customized manually.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/20472245812503-Ship-and-Vehicle-Serial-Numbers"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "ships-earnable-in-game-auec",
@@ -923,6 +1196,33 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "subscriber-coupon-centurion-10-percent-max-50",
+      "claim": "Centurion subscribers receive a 10% discount coupon (max 0 discount) distributed after every 12 months of accumulated subscription time.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013374428-Subscriber-Discount-Coupons"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "subscriber-coupon-imperator-20-percent-max-100",
+      "claim": "Imperator Prime subscribers receive a 20% discount coupon (max 00 discount) distributed after every 6 months of accumulated subscription time (changed from 12 months as of November 2023).",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013374428-Subscriber-Discount-Coupons"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "subscriber-coupon-one-time-use-non-recoverable",
+      "claim": "Subscriber discount coupons are one-time use only; RSI Support does not recover or re-apply used coupons regardless of pledge refund, reclaim, or gift status.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013374428-Subscriber-Discount-Coupons"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "three-systems-live-stanton-pyro-nyx",
       "claim": "Three star systems are live in the current Star Citizen alpha: Stanton (original), Pyro (added Alpha 4.0), and Nyx (added Alpha 4.4).",
       "status": "verified",
@@ -950,6 +1250,15 @@
         "https://robertsspaceindustries.com/en/comm-link/engineering/16292-Q-A-UEE-Land-Claim-Licenses"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "vulkan-cpu-performance-better",
+      "claim": "Vulkan API provides better CPU performance than DirectX in Star Citizen",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
+      ],
+      "lastVerified": "2026-07-29"
     }
   ]
 }
