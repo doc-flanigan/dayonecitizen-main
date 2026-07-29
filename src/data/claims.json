@@ -492,54 +492,6 @@
       "lastVerified": "2026-07-24"
     },
     {
-      "id": "merchandise-address-frozen-shipping-status",
-      "claim": "RSI Support cannot change a physical merchandise order's shipping address once the order reaches 'Shipping' status, but can amend pending orders.",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115009970528-Tracking-Physical-Merchandise-Orders",
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
-      ],
-      "lastVerified": "2026-07-29"
-    },
-    {
-      "id": "merchandise-delivery-4-14-days",
-      "claim": "Physical merchandise delivery typically takes 4-14 business days after the shipping confirmation email is received.",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115009970528-Tracking-Physical-Merchandise-Orders",
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
-      ],
-      "lastVerified": "2026-07-29"
-    },
-    {
-      "id": "merchandise-in-stock-24hr-ship",
-      "claim": "In-stock physical merchandise items typically ship within 24 hours, with exceptions for holidays, weekends, and pre-order items.",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115009970528-Tracking-Physical-Merchandise-Orders",
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
-      ],
-      "lastVerified": "2026-07-29"
-    },
-    {
-      "id": "merchandise-limited-shipping-countries",
-      "claim": "Physical merchandise can only be shipped to a limited list of supported countries including Australia, Canada, most EU nations, UK, US, Japan, Korea, New Zealand, and Israel; RSI Support can advise if your location is supported.",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
-      ],
-      "lastVerified": "2026-07-29"
-    },
-    {
-      "id": "merchandise-store-credit-not-accepted",
-      "claim": "Physical merchandise items cannot be purchased using Store Credit; only digital items and pledges accept Store Credit.",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004156074-Physical-Merchandise-FAQ"
-      ],
-      "lastVerified": "2026-07-29"
-    },
-    {
       "id": "misc-raptor-not-real-ship",
       "claim": "The MISC Raptor is not a real ship — it was only ever an April Fools joke.",
       "status": "refuted",
@@ -1194,33 +1146,6 @@
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
       "lastVerified": "2026-07-12"
-    },
-    {
-      "id": "subscriber-coupon-centurion-10-percent-max-50",
-      "claim": "Centurion subscribers receive a 10% discount coupon (max 0 discount) distributed after every 12 months of accumulated subscription time.",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013374428-Subscriber-Discount-Coupons"
-      ],
-      "lastVerified": "2026-07-29"
-    },
-    {
-      "id": "subscriber-coupon-imperator-20-percent-max-100",
-      "claim": "Imperator Prime subscribers receive a 20% discount coupon (max 00 discount) distributed after every 6 months of accumulated subscription time (changed from 12 months as of November 2023).",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013374428-Subscriber-Discount-Coupons"
-      ],
-      "lastVerified": "2026-07-29"
-    },
-    {
-      "id": "subscriber-coupon-one-time-use-non-recoverable",
-      "claim": "Subscriber discount coupons are one-time use only; RSI Support does not recover or re-apply used coupons regardless of pledge refund, reclaim, or gift status.",
-      "status": "verified",
-      "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013374428-Subscriber-Discount-Coupons"
-      ],
-      "lastVerified": "2026-07-29"
     },
     {
       "id": "three-systems-live-stanton-pyro-nyx",
