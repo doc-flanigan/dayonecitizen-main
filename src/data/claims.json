@@ -119,7 +119,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360002542733-Concierge-Levels-and-Rewards"
       ],
-      "lastVerified": "2026-07-15"
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "crafting-t0-live-alpha-4-7",
@@ -333,6 +333,24 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "guide-system-category-limit",
+      "claim": "Star Citizen guides should select 9 or fewer teaching categories; selecting more than 10 topics causes a system issue that prevents switching to available/active guide state.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360038526034-Guide-System"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "guide-system-requirements",
+      "claim": "To become a Star Citizen guide and access the Guide Hub, you must have an active RSI Account and a Game Package.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360038526034-Guide-System"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "included-vessels-loaner-system",
       "claim": "Included vessels (secondary craft like snub fighters and rovers) are handled through the loaner system — they cannot be listed in pledges, reclaimed, or upgraded independently; access them in-game via mobiGlas and ASOP panels.",
       "status": "verified",
@@ -525,6 +543,15 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "no-free-trial-only-freefly",
+      "claim": "Star Citizen does not offer a free trial; only Free Fly Events allow free temporary access",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4412777637271-Does-Star-Citizen-offer-a-free-trial"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "no-mech-suits-announced",
       "claim": "Star Citizen has no mech suits.",
       "status": "refuted",
@@ -576,6 +603,33 @@
         "https://www.youtube.com/watch?v=CFoQp6wRjPo"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "org-create-requires-not-member",
+      "claim": "To create an organization, a player must not be a member of any organization",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "org-join-limit-10",
+      "claim": "Players can be members of up to 10 organizations simultaneously",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "org-spectrum-id-immutable",
+      "claim": "Organization Spectrum ID (SID) cannot be changed once set",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "pes-live-alpha-3-18",
