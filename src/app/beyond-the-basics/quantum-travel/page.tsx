@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
+import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
@@ -21,6 +22,56 @@ export const metadata: Metadata = {
   },
 }
 
+// FAQPage structured data — mirrors the visible step-by-step and
+// troubleshooting sections so this page can earn rich results and AI
+// answer-engine citations.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do you quantum travel in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Press B in the pilot seat to switch to NAV mode, then middle-click to cycle into QT mode. Aim at a destination marker, let the drive auto-calibrate for five to fifteen seconds, then left-click to jump. For far-away destinations, press F2 to open the Starmap and set a route first.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why will my quantum drive not calibrate?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Check five things: you are in the pilot seat, you are in NAV mode (press B) and QT mode (middle-click), you are clear of restricted areas around stations and planets, the quantum drive component is not damaged, and you have quantum fuel. Any one of these blocks calibration.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I refuel quantum fuel in Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Quantum fuel sits in its own tank, separate from the hydrogen fuel that feeds your thrusters. Refuel at any Cry-Astro service station or at the major landing zones — Area18, Lorville, New Babbage, and Orison.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does quantum travel take?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Short hops around one planet take thirty seconds to a few minutes. Crossing the Stanton system takes several minutes, and long multi-hop routes can take ten to twenty minutes or more in total. Your ship flies itself during a jump.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is quantum interdiction?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Interdiction is when another player or NPC forces your ship out of quantum travel with a Quantum Snare, dropping you into normal space next to the attacker. You can fight back, boost away until the snare weakens and jump out, or comply with the attacker’s demands.',
+      },
+    },
+  ],
+}
+
 export default function QuantumTravelPage() {
   return (
     <>
@@ -31,6 +82,10 @@ export default function QuantumTravelPage() {
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
           { name: 'Quantum Travel', url: '/beyond-the-basics/quantum-travel' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
@@ -70,6 +125,22 @@ export default function QuantumTravelPage() {
               Page reviewed July 18, 2026. The steps below match the current
               Alpha 4.x controls.
             </p>
+
+            <div className="mb-8 rounded-lg border border-gold/30 bg-gold/5 p-4 text-sm text-starwhite/80 leading-relaxed">
+              Playing during the <Term name="Free Fly">Free Fly</Term>? Star
+              Citizen is free to try from July 29 through August 10, 2026 —{' '}
+              <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026">
+                official RSI blog post
+              </SourceLink>
+              . The full event guide lives at{' '}
+              <a
+                href="https://freeflyevent.com/foundation-festival-2026"
+                className="text-gold hover:underline"
+              >
+                freeflyevent.com
+              </a>
+              .
+            </div>
 
             {/* Prerequisites */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
