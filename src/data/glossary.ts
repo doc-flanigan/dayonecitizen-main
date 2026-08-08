@@ -368,6 +368,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Older military manufacturer — the Avenger, Gladius, Vanguard, and Reclaimer. Aegis ships have a worn, military-surplus look.",
+    lastVerified: '2026-07-27',
   },
   {
     term: 'Crusader Industries',
@@ -380,6 +381,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Industrial utility manufacturer — the MPUV ('the Argo'), MOLE mining ship, RAFT cargo hauler, and SRV recovery vehicle. Boxy and purposeful.",
+    lastVerified: '2026-07-27',
   },
   {
     term: 'Tumbril',
@@ -407,6 +409,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "The smallest, cheapest starter ship from RSI. Cramped but capable of light cargo, basic combat, and short hauls. A common first ship for new backers.",
     also: 'Aurora MR, Aurora LN, Aurora CL, Aurora ES',
+    lastVerified: '2026-07-27',
   },
   {
     term: 'Mustang',
@@ -433,6 +436,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Aegis multi-role light fighter — Titan (cargo), Stalker (bounty hunting cell), Warlock (EMP). Punches above its weight class for the price.",
     also: 'Avenger Titan, Avenger Stalker, Avenger Warlock',
+    lastVerified: '2026-07-27',
   },
   {
     term: 'Vanguard',
@@ -1260,6 +1264,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Stanton III — an entire planet covered in ArcCorp's industrial sprawl. Home of Area18. Two moons: Lyria and Wala.",
+    lastVerified: '2026-07-27',
   },
   {
     term: 'microTech',
@@ -1383,6 +1388,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Underground combat compounds on planet surfaces filled with NPC enemies. Mission targets include hostage rescues, bounties, and cargo recovery.",
+    lastVerified: '2026-07-27',
   },
   {
     term: 'Derelict',
