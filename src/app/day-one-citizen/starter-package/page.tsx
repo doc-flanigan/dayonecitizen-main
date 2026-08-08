@@ -12,7 +12,7 @@ import PageSources from '@/components/PageSources'
 export const metadata: Metadata = {
   title: 'Star Citizen Starter Packages 2026 Compared',
   description:
-    'Which Star Citizen starter package should you buy? All eight packages compared — $45 Citizen Starter to $125 Privateer. Includes Warbond prices.',
+    'Which Star Citizen starter package should you buy? All seven packages compared — $45 Citizen Starter to $125 Privateer.',
   alternates: {
     canonical: '/day-one-citizen/starter-package',
     languages: {
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Star Citizen Starter Packages 2026: All 8 Options Compared',
+    title: 'Star Citizen Starter Packages 2026: All 7 Options Compared',
     description:
-      'Eight packages. Six careers. One recommendation. Which starter pack is right for you?',
+      'Seven packages. Six careers. One recommendation. Which starter pack is right for you?',
     url: '/day-one-citizen/starter-package',
     type: 'article',
   },
@@ -50,7 +50,7 @@ const faqJsonLd = {
       name: 'How much is a Star Citizen starter package?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Starter game packages begin at $45, and there are eight packages under $125, each built around a different career ship. Some carry a Warbond price — a steeper discount available only when paying with new money rather than store credit.',
+        text: 'Starter game packages begin at $45, and there are seven packages under $125, each built around a different career ship. During sale events some carry a Warbond price — a steeper discount available only when paying with new money rather than store credit.',
       },
     },
     {
@@ -99,7 +99,7 @@ export default function StarterPackagePage() {
               Which starter package should you buy?
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              There are eight game packages under $125 in the{' '}
+              There are seven game packages under $125 in the{' '}
               <Term name="RSI">RSI</Term> store. Each comes with a different
               ship built for a different career. Here is the full comparison,
               plus a clear recommendation for most new players.
@@ -126,7 +126,7 @@ export default function StarterPackagePage() {
               It is the cheapest way in, with the{' '}
               <Term name="Aurora">Aurora Mk II</Term> and{' '}
               <Term name="LTI">Lifetime Insurance</Term>. The full comparison
-              below covers all eight packages if you already know your career.
+              below covers all seven packages if you already know your career.
             </p>
           </section>
 
@@ -150,11 +150,12 @@ export default function StarterPackagePage() {
                 </li>
               </ul>
               <p>
-                Some packages carry a{' '}
+                During sale events, some packages carry a{' '}
                 <strong className="text-starwhite">Warbond price</strong> — a steeper
                 discount available only when paying with real money. Store credit
-                cannot be used for Warbond purchases. If you are buying fresh with no
-                existing store credit, always check for a Warbond price first.
+                cannot be used for Warbond purchases. Warbond discounts are
+                short-lived — they usually end with the event, so treat any
+                Warbond figure you see as temporary.
               </p>
             </div>
           </section>
@@ -182,17 +183,6 @@ export default function StarterPackagePage() {
               </p>
               <p>
                 <strong className="text-starwhite">
-                  Looking for a deal? The Generalist &lsquo;DefenseCon&rsquo; Starter Pack is $51 at Warbond pricing (was $60).
-                </strong>
-              </p>
-              <p>
-                Warbond means new money only — no store credit — but if you are buying
-                fresh, that is a $60 pack for $51. The &ldquo;Generalist&rdquo; ship handles
-                multiple roles rather than locking you into one career from day one.
-                Worth grabbing while the Warbond price is active.
-              </p>
-              <p>
-                <strong className="text-starwhite">
                   Already know your career? Get the role pack that matches it.
                 </strong>
               </p>
@@ -205,7 +195,7 @@ export default function StarterPackagePage() {
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">All eight packages at a glance</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">All seven packages at a glance</h2>
             <div className="mt-5 overflow-x-auto rounded-2xl border border-white/5">
               <table className="w-full text-sm">
                 <thead>
@@ -223,18 +213,11 @@ export default function StarterPackagePage() {
                     <td className="px-4 py-3 text-starwhite/80">
                       <Term name="Aurora">Aurora Mk II</Term>
                     </td>
-                    <td className="px-4 py-3 text-starwhite/80">$45 WB&nbsp;/ $60</td>
+                    <td className="px-4 py-3 text-starwhite/80">$45</td>
                     <td className="px-4 py-3 text-starwhite/80">
                       <Term name="LTI">Lifetime</Term>
                     </td>
                     <td className="px-4 py-3 text-starwhite/80">Most new players ★</td>
-                  </tr>
-                  <tr className="bg-gold/5">
-                    <td className="px-4 py-3 font-semibold text-starwhite">Generalist &lsquo;DefenseCon&rsquo;</td>
-                    <td className="px-4 py-3 text-starwhite/80">Generalist ship</td>
-                    <td className="px-4 py-3 text-starwhite/80">$51 WB&nbsp;/ $60</td>
-                    <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Sale pick ★</td>
                   </tr>
                   <tr>
                     <td className="px-4 py-3 font-semibold text-starwhite">Salvager</td>
@@ -292,8 +275,7 @@ export default function StarterPackagePage() {
               </table>
             </div>
             <p className="mt-3 text-xs text-muted">
-              WB = Warbond price (real money only — store credit not accepted).
-              All prices in USD. ★ = recommended picks.
+              All prices in USD. ★ = recommended pick.
             </p>
           </section>
 
@@ -438,12 +420,6 @@ export default function StarterPackagePage() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="px-4 py-3 font-semibold text-gold">I want a deal right now</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      Generalist &lsquo;DefenseCon&rsquo; ($51 Warbond) — $60 pack at a discount while Warbond pricing is active
-                    </td>
-                  </tr>
-                  <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I want to fight and fly</td>
                     <td className="px-4 py-3 text-starwhite/80">
                       Duelist (<Term name="Avenger">Avenger Titan</Term>, $75) for value,
@@ -539,9 +515,9 @@ export default function StarterPackagePage() {
                   How much does a starter package cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Packages start at $45, and all eight options in this guide are
-                  under $125. Check for a Warbond price if you are paying with
-                  new money — it is usually the better deal.
+                  Packages start at $45, and all seven options in this guide are
+                  under $125. During sale events, check for a Warbond price if
+                  you are paying with new money — it is usually the better deal.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

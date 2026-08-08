@@ -32,7 +32,7 @@ const DAY_ONE_KEYS = [
   { k: 'I', action: 'Open inventory' },
   { k: 'R', action: 'Flight ready — turns ship engines on' },
   { k: 'N', action: 'Toggle landing gear' },
-  { k: 'B (hold)', action: 'Engage quantum travel' },
+  { k: 'B', action: 'Switch to NAV mode — first step of quantum travel' },
 ]
 
 const ON_FOOT_KEYS = [
@@ -56,7 +56,7 @@ const FLIGHT_KEYS = [
   { k: 'Left Shift', action: 'Afterburner (boost)' },
   { k: 'R', action: 'Flight ready — engines on / off' },
   { k: 'N', action: 'Toggle landing gear' },
-  { k: 'B (hold)', action: 'Quantum travel — hold to spool and jump' },
+  { k: 'B', action: 'NAV mode, then middle-click for QT mode — drive auto-calibrates, left-click to jump' },
   { k: 'Tab', action: 'Cycle targets' },
   { k: 'L', action: 'Toggle ship lights' },
   { k: 'F', action: 'Exit / enter seat' },
@@ -256,7 +256,8 @@ export default function QuickReferencePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">Ship flight</h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
               Mouse aims. Keyboard handles throttle, strafe, and roll. Set a
-              destination before holding <Kbd>B</Kbd> for{' '}
+              destination, then press <Kbd>B</Kbd> for NAV mode and middle-click
+              for QT mode to begin{' '}
               <Term name="Quantum Travel">quantum travel</Term>.
             </p>
             <div className="mt-5">

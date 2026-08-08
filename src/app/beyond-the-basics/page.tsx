@@ -25,7 +25,7 @@ const guides = [
     slug: 'quantum-travel',
     title: 'How to Quantum Travel',
     description:
-      'Hold B to spool your quantum drive, click a destination marker, then press B again to jump. Every step explained — plus the Starmap, fuel, and interdiction.',
+      'Press B for NAV mode, middle-click for QT mode, then let the drive auto-calibrate before you jump. Every step explained — plus the Starmap, fuel, and interdiction.',
   },
   {
     slug: 'adding-friends',

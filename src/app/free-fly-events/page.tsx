@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { Calendar, Clock, AlertCircle, Plane, Download, Wallet, CalendarPlus } from 'lucide-react'
+import { Calendar, Clock, AlertCircle, Plane, Download, Wallet } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
-import { NEXT_FREE_FLY, googleCalendarUrl } from '@/data/next-free-fly'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
@@ -24,6 +23,7 @@ export const metadata: Metadata = {
 }
 
 const HISTORY = [
+  { date: 'May 2026', name: 'Drake DefenseCon 2956', length: '14 days', ships: '100+ ships via 48-hour rentals' },
   { date: 'Nov 2025', name: 'IAE 2025 Free Fly', length: '12 days', ships: 'Every ship in the game' },
   { date: 'May 2025', name: 'Invictus Launch Week', length: '10 days', ships: 'All military ships flyable' },
   { date: 'Mar 2025', name: 'Spring Free Fly', length: '7 days', ships: 'Starter + popular trade ships' },
@@ -105,54 +105,49 @@ export default function FreeFlyPage() {
           <div className="container-wide">
             <div className="card-surface relative overflow-hidden p-8 sm:p-10">
               <div className="absolute right-0 top-0 h-48 w-48 -translate-y-12 translate-x-16 rounded-full bg-gold/15 blur-3xl" />
-              <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-                <div>
-                  <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-                    <Clock size={12} aria-hidden /> Confirmed: {NEXT_FREE_FLY.label}
-                  </span>
-                  <h2 className="heading-display mt-3 text-3xl">
-                    {NEXT_FREE_FLY.headline}
-                  </h2>
-                  <p className="mt-3 max-w-xl text-sm text-muted">
-                    <Term name="CIG">CIG</Term> has officially announced Drake
-                    DefenseCon — the 2026 rebrand of the annual military-themed
-                    event previously called Invictus Launch Week. The free-to-play
-                    window runs <strong className="text-starwhite">May 14 through
-                    May 27, 2026</strong>, hosted in-fiction at Area18 on{' '}
-                    <Term name="ArcCorp">ArcCorp</Term>. (
-                    <a
-                      href="https://robertsspaceindustries.com/en/comm-link/transmission/21134-Countdown-To-DefenseCon"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gold underline-offset-4 hover:underline"
-                    >
-                      Official RSI blog post
-                    </a>
-                    )
-                  </p>
-                </div>
-                <div className="flex flex-col gap-3">
+              <div className="relative">
+                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                  <Clock size={12} aria-hidden /> Free Fly live right now
+                </span>
+                <h2 className="heading-display mt-3 text-3xl">
+                  Play Star Citizen free through August 10.
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm text-muted">
+                  Foundation Festival 2026, <Term name="CIG">CIG</Term>&rsquo;s
+                  community event, is running right now. From{' '}
+                  <strong className="text-starwhite">
+                    July 29 through August 10, 2026
+                  </strong>
+                  , anyone can download and play the full game for free with
+                  five ships to try — no <Term name="Pledge">pledge</Term>{' '}
+                  required. The five ships: RSI Aurora Mk II (a starter ship),
+                  Drake Cutter (small cargo), Drake Golem (
+                  <Term name="Mining">mining</Term>), Crusader Intrepid (a
+                  one-person courier), and RSI Salvation (
+                  <Term name="Salvage">salvage</Term>). (
                   <a
-                    href={googleCalendarUrl(NEXT_FREE_FLY)}
+                    href="https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-gold/40 bg-gold/10 px-5 py-3 text-sm font-semibold text-gold transition-colors hover:border-gold/70 hover:bg-gold/20"
+                    className="text-gold underline-offset-4 hover:underline"
                   >
-                    <CalendarPlus size={16} aria-hidden />
-                    Add to Google Calendar
+                    Official RSI blog post
                   </a>
+                  ) A referral promotion runs a little longer, until August 12:
+                  sign up with a <Term name="Referral Code">referral code</Term>{' '}
+                  and you get 50,000 <Term name="UEC">UEC</Term> free — and if
+                  you later buy a starter pack, CIG adds a full kit of starter
+                  gear on top. (
                   <a
-                    href="/api/calendar/free-fly"
-                    download={`${NEXT_FREE_FLY.id}.ics`}
-                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-starwhite/80 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-starwhite"
+                    href="https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold underline-offset-4 hover:underline"
                   >
-                    <Download size={16} aria-hidden />
-                    Download .ics
+                    Official RSI blog post
                   </a>
-                  <span className="text-center text-xs text-muted">
-                    Apple Calendar, Outlook &amp; others
-                  </span>
-                </div>
+                  )
+                </p>
               </div>
             </div>
           </div>
@@ -168,48 +163,65 @@ export default function FreeFlyPage() {
               The next likely Free Fly windows
             </h2>
             <p className="mt-4 max-w-2xl text-sm text-muted">
-              The May 2026 window is officially confirmed by{' '}
-              <Term name="CIG">CIG</Term>. The summer and fall entries below
-              follow a predictable annual pattern but have not yet been
-              announced — treat them as best-guess targets and check back for
-              confirmation.
+              One window is live right now, and one more is expected later in
+              the year. Treat anything not confirmed by{' '}
+              <Term name="CIG">CIG</Term> as a best guess and check back for
+              updates.
             </p>
 
             <ol className="mt-10 space-y-4">
               <TimelineItem
-                date="May 14–27, 2026"
-                name="Drake DefenseCon (confirmed)"
+                date="July 29 – Aug 10, 2026"
+                name="Foundation Festival 2026 Free Fly (live now)"
                 detail={
                   <>
-                    The 2026 rebrand of the annual military-themed event
-                    previously known as Invictus Launch Week. <Term name="CIG">CIG</Term>{' '}
-                    confirmed the dates and a fourteen-day Free Fly window in
-                    the &ldquo;Countdown to DefenseCon&rdquo; announcement.
-                    Combat ships from <Term name="Aegis">Aegis</Term>,{' '}
-                    <Term name="Anvil">Anvil</Term>, and{' '}
-                    <Term name="Drake">Drake</Term> typically rotate as
-                    flyables.
+                    <Term name="CIG">CIG</Term>&rsquo;s community event is
+                    running right now, and this one does include a Free Fly:
+                    play free from July 29 through August 10 with five ships —
+                    RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader
+                    Intrepid, and RSI Salvation. (
+                    <a
+                      href="https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gold underline-offset-4 hover:underline"
+                    >
+                      Official RSI blog post
+                    </a>
+                    ) Two side promotions run through August 12: rewards for
+                    watching streams on Twitch, a live-streaming site, and a
+                    referral bonus — the player who recruits a friend earns a
+                    free <Term name="Argo">Argo</Term> ATLS, a one-person
+                    cargo-lifting machine, and the new player earns a kit of
+                    starter gear. Both gear rewards require the new player to
+                    buy a starter pack; the 50,000{' '}
+                    <Term name="UEC">UEC</Term> referral bonus stays free
+                    either way. (
+                    <a
+                      href="https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gold underline-offset-4 hover:underline"
+                    >
+                      Official RSI blog post
+                    </a>
+                    )
                   </>
                 }
-                badge="Confirmed"
-              />
-              <TimelineItem
-                date="Aug 2026"
-                name="Foundation Festival (possible)"
-                detail={
-                  <>
-                    Newer summer event focused on industrial gameplay —{' '}
-                    <Term name="Mining">mining</Term>,{' '}
-                    <Term name="Salvage">salvage</Term>, hauling. Loaner ships
-                    often skew industrial.
-                  </>
-                }
-                badge="Possible"
+                badge="Live now"
               />
               <TimelineItem
                 date="Nov 2026"
-                name="IAE 2026 (predicted)"
-                detail="The biggest event of the year. Every flyable ship is free for at least one day during the rotation. 12–14 days."
+                name="IAE 2956 (predicted)"
+                detail={
+                  <>
+                    The biggest event of the year — the{' '}
+                    <Term name="IAE">IAE</Term> ship show held every November.
+                    Every flyable ship is free for at least one day during the
+                    rotation, usually across twelve to fourteen days. CIG has
+                    not announced 2026 dates yet.
+                  </>
+                }
                 badge="Predicted"
               />
             </ol>

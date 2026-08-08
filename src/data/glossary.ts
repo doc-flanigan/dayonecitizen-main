@@ -163,7 +163,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'DefenseCon',
     category: 'Community',
     definition:
-      "CIG's 2026 military fleet showcase, replacing Invictus Launch Week. Combat and defense-focused ships are spotlighted across the event window. The Anvil Ironclad made its Flight Ready debut at DefenseCon 2956.",
+      "CIG's 2026 military fleet showcase, replacing Invictus Launch Week. Hosted by Drake Interplanetary, DefenseCon 2956 ran May 14–27, 2026 as a Free Fly, with combat and defense-focused ships rentable across the event window.",
   },
   {
     term: 'Referral Code',
@@ -880,7 +880,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Starfarer',
     category: 'Ships',
     definition:
-      "MISC large fuel tanker — scoop hydrogen from gas giants, refine it on board, and sell it to ships that need refueling in space. The Gemini variant adds military-grade armor for dangerous territory.",
+      "MISC large fuel tanker — takes in hydrogen from open space, refines it on board, and sells it to ships that need refueling in space. The Gemini variant adds military-grade armor for dangerous territory.",
     also: 'Starfarer Gemini',
   },
   {

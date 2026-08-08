@@ -15,6 +15,14 @@
 //   🚀 (bot)      done — never reprocessed
 //   ⚠️ (bot)      failed — never retried automatically; remove the ⚠️ to re-queue
 //
+// Two intake types, distinguished by embed title:
+//   "📥 Fact-check request …" — visitor-submitted claim (webhook), embed
+//     description is the claim text; verified against official sources.
+//   "📥 Ledger gap …" — posted by sc-portfolio's source-watch bot when a
+//     watched official page changed and no ledger claim cites it; embed
+//     description is the URL. The agent reads the page, extracts durable
+//     player-facing facts, and adds ledger entries citing it.
+//
 // Env: DISCORD_BOT_TOKEN, ANTHROPIC_API_KEY (used by claude), GH_TOKEN,
 //      FACT_CHECK_CHANNEL_ID (optional override), MAX_PER_RUN (default 3).
 
@@ -82,10 +90,32 @@ FINISH — write ${VERDICT_FILE} (this exact path) as JSON:
 "rejected" = not a checkable factual claim. Keep summary under 300 characters. The verdict file is REQUIRED — write it even on rejection.`;
 }
 
+function buildGapPrompt(url) {
+  return `You are running the network fact-check pipeline in CI. A watched official Cloud Imperium page changed and NO claims-ledger entry cites it. Read the page, extract the durable player-facing fact(s), and add them to the ledger so future changes to this page get an automatic blast radius. Work from the current directory (workspace root).
+
+CHANGED SOURCE (official Cloud Imperium page — this URL is the claim source you will cite):
+${url}
+
+FETCHING — official Cloud Imperium only:
+- RSI Knowledge Base article: use the Zendesk API for clean text — curl -sSL "https://support.robertsspaceindustries.com/api/v2/help_center/en-us/articles/<numeric-id>.json" (numeric id is in the URL; the HTML page is a JS shell).
+- Comm-Link: curl -sSL "https://api.star-citizen.wiki/api/comm-links/{id}" (full text).
+- Never cite wikis, press, Reddit, or fan sites.
+
+LEDGER (network canon) at ./docs/claims — one md file per claim, helper ./docs/claims/upsert.mjs:
+1. FIRST grep the ledger for the page's key terms: grep -ril "<terms>" docs/claims — if an existing claim already covers a fact from this page, add this URL as an additional source for it instead of duplicating (edit the claim file's sources list directly).
+2. Add AT MOST 3 new claims, and only durable, reusable, player-facing facts (policy rules, limits, costs, how a mechanic works). Skip trivia, UI walkthrough steps, and anything likely to churn:
+   node docs/claims/upsert.mjs add <new-kebab-id> --claim "<canonical one-sentence claim>" --status verified --source "${url}" --usage "dayonecitizen.com /fact-check — public fact-check entry"
+3. If the page contains nothing durable or player-facing, do NOT touch the ledger — that is a valid outcome.
+
+FINISH — write ${VERDICT_FILE} (this exact path) as JSON:
+{"verdict":"verified|rejected","summary":"<one plain-English sentence: what was ledgered, or why nothing was>","sourceUrl":"${url}","ledgerChanged":true|false}
+"rejected" = nothing on the page worth ledgering. Keep summary under 300 characters. The verdict file is REQUIRED — write it even when nothing was added.`;
+}
+
 async function main() {
   const messages = await discord('GET', `/channels/${CHANNEL}/messages?limit=50`);
   const queue = messages
-    .filter((m) => m.webhook_id && m.embeds?.[0]?.title?.startsWith('📥'))
+    .filter((m) => (m.webhook_id || m.author?.bot) && m.embeds?.[0]?.title?.startsWith('📥'))
     .filter((m) => {
       const r = m.reactions || [];
       const approved = r.some((x) => x.emoji.name === '✅');
@@ -109,12 +139,21 @@ async function main() {
   const shipped = [];
 
   for (const m of queue) {
+    const isGap = m.embeds[0].title.includes('Ledger gap');
     const claim = (m.embeds[0].description || '').slice(0, 300);
-    console.log(`\n— Processing ${m.id}: ${claim.slice(0, 80)}`);
+    if (isGap && !/^https:\/\/([a-z0-9-]+\.)*robertsspaceindustries\.com\/\S+$/i.test(claim.trim())) {
+      // Gap descriptions are interpolated into the prompt as a URL — only
+      // accept clean official-domain URLs; anything else fails closed.
+      console.log(`\n— Skipping ${m.id}: gap intake description is not an RSI URL`);
+      await react(m.id, '⚠️');
+      await reply(m.id, '⚠️ Ledger-gap intake rejected — description must be a single robertsspaceindustries.com URL.');
+      continue;
+    }
+    console.log(`\n— Processing ${m.id}${isGap ? ' [ledger gap]' : ''}: ${claim.slice(0, 80)}`);
     fs.rmSync(VERDICT_FILE, { force: true });
 
     try {
-      execFileSync('claude', ['-p', buildPrompt(claim), '--allowedTools', 'Bash,Read,Write,Grep,Glob'], {
+      execFileSync('claude', ['-p', isGap ? buildGapPrompt(claim.trim()) : buildPrompt(claim), '--allowedTools', 'Bash,Read,Write,Grep,Glob'], {
         cwd: ROOT,
         stdio: ['ignore', 'inherit', 'inherit'],
         timeout: 10 * 60 * 1000,

@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: 'How does quantum travel work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Open the StarMap in your mobiGlas and select a destination. Point your nose at the waypoint, hold R to spool the quantum drive, then hold B to jump. The jump ends automatically when you reach the destination.',
+        text: 'Press B to switch to NAV mode, then middle-click to cycle into QT mode. Open the StarMap in your mobiGlas and select a destination, then point your nose at the waypoint — the quantum drive auto-calibrates. Left-click to jump. The jump ends automatically when you reach the destination.',
       },
     },
     {
@@ -406,9 +406,10 @@ export default function FirstFlightPage() {
                   How does quantum travel work?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Open the StarMap in your <Term name="mobiGlas">mobiGlas</Term> and
-                  select a destination. Point your nose at the waypoint, hold R to
-                  spool the quantum drive, then hold B to jump. The jump ends
+                  Press B to switch to NAV mode, then middle-click to cycle into QT
+                  mode. Open the StarMap in your <Term name="mobiGlas">mobiGlas</Term> and
+                  select a destination, then point your nose at the waypoint — the
+                  quantum drive auto-calibrates. Left-click to jump. The jump ends
                   automatically when you reach the destination.
                 </p>
               </div>

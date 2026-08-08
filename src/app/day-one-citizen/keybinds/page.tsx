@@ -34,7 +34,7 @@ const faqJsonLd = {
       name: 'What are the most important keybinds in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Six keybinds matter most on day one: F to interact with doors, terminals, and items; F1 to open mobiGlas; I to open your inventory; R in the pilot seat to make your ship flight ready; N to toggle landing gear; and holding B to start quantum travel. Star Citizen has hundreds of bindings, but a new player only needs about fifteen in the first session.',
+        text: 'Six keybinds matter most on day one: F to interact with doors, terminals, and items; F1 to open mobiGlas; I to open your inventory; R in the pilot seat to make your ship flight ready; N to toggle landing gear; and B to switch to NAV mode, the first step of quantum travel. Star Citizen has hundreds of bindings, but a new player only needs about fifteen in the first session.',
       },
     },
     {
@@ -125,8 +125,9 @@ export default function KeybindsPage() {
               <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd> makes
               you flight ready,{' '}
               <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd> toggles
-              landing gear, and holding{' '}
-              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd> starts{' '}
+              landing gear, and{' '}
+              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd> switches
+              your Master Mode to NAV — the first step of{' '}
               <Term name="Quantum Travel">quantum travel</Term>. The full tables
               below cover the rest.
             </p>
@@ -246,8 +247,8 @@ export default function KeybindsPage() {
                     <td className="px-4 py-3 text-sm text-starwhite/85">Flight ready — toggles engines on / off</td>
                   </tr>
                   <tr className="border-t border-white/5">
-                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B (hold)</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Engage <Term name="Quantum Travel">quantum travel</Term> — hold to spool and jump (set a destination first)</td>
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd></td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Switch to NAV mode — first step of <Term name="Quantum Travel">quantum travel</Term> (middle-click for QT mode, aim at a destination, drive auto-calibrates, left-click to jump)</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">L</kbd></td>
@@ -353,8 +354,9 @@ export default function KeybindsPage() {
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Six on day one: F to interact, F1 for{' '}
                   <Term name="mobiGlas">mobiGlas</Term>, I for inventory, R for
-                  flight ready, N for landing gear, and B (held) for quantum
-                  travel. Everything else can wait until you need it.
+                  flight ready, N for landing gear, and B to switch to NAV mode —
+                  the first step of quantum travel. Everything else can wait until
+                  you need it.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

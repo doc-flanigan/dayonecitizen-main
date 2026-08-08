@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24",
+  "generated": "2026-07-29",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -57,6 +57,15 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "caterpillar-standalone-pledge-330-usd",
+      "claim": "The Drake Caterpillar standalone pledge costs $330 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Caterpillar"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "ccu-pay-price-difference",
       "claim": "A Ship Upgrade / Cross-Chassis Upgrade (CCU) changes a pledge to a higher-value ship; the CCU item is priced at the gap between the two ships, not the full price of the new ship.",
       "status": "verified",
@@ -64,7 +73,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115010056848-Ship-Upgrades-CCUs",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013194987-Pledges-FAQ"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "chris-roberts-wing-commander-freelancer",
@@ -75,6 +84,15 @@
         "https://robertsspaceindustries.com/comm-link/SCW/13880-API"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "cig-tsr-upscaling-non-nvidia",
+      "claim": "CIG-TSR upscaling is the recommended option for non-NVIDIA graphics cards in Star Citizen",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "citizencon-2026-not-held",
@@ -101,7 +119,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360002542733-Concierge-Levels-and-Rewards"
       ],
-      "lastVerified": "2026-07-15"
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "crafting-t0-live-alpha-4-7",
@@ -133,13 +151,34 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "dlss-recommended-nvidia-cards",
+      "claim": "DLSS upscaling is recommended for NVIDIA graphics cards in Star Citizen",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "event-defensecon-2956",
       "claim": "DefenseCon 2956 ran as a Free Fly event 14–27 May 2026 (UTC).",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About"
       ],
-      "lastVerified": "2026-07-04"
+      "lastVerified": "2026-07-27"
+    },
+    {
+      "id": "event-foundation-festival-2026",
+      "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly (RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader Intrepid, RSI Salvation) and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360037529633-Welcome-to-the-Star-Citizen-Free-Fly-Event"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "event-iae-2952",
@@ -216,13 +255,14 @@
     },
     {
       "id": "foundation-festival-2026-expected",
-      "claim": "Foundation Festival — CIG's annual new-player/community onboarding event, which in 2025 included a Free Fly and guide-mentorship activities — is expected by gaming press to return around mid-July 2026. CIG has not yet published a 2026 comm-link.",
-      "status": "unverifiable",
+      "claim": "SUPERSEDED 2026-07-29 by event-foundation-festival-2026: CIG confirmed the Foundation Festival 2026 Free Fly (Jul 29 – Aug 10) in Comm-Link 21211 and published full referral-bonus terms in Comm-Link 21225. The pre-announcement claim below no longer reflects official state.",
+      "status": "superseded",
       "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/20622-Foundation-Festival-2025",
-        "https://www.techpowerup.com/338558/star-citizens-foundation-festival-returns-with-free-fly-event-new-referral-program-and-more"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus"
       ],
-      "lastVerified": "2026-07-13"
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "freefly-event-based-not-always-on",
@@ -293,6 +333,42 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "guide-system-category-limit",
+      "claim": "Star Citizen guides should select 9 or fewer teaching categories; selecting more than 10 topics causes a system issue that prevents switching to available/active guide state.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360038526034-Guide-System"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "guide-system-requirements",
+      "claim": "To become a Star Citizen guide and access the Guide Hub, you must have an active RSI Account and a Game Package.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360038526034-Guide-System"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "included-vessels-loaner-system",
+      "claim": "Included vessels (secondary craft like snub fighters and rovers) are handled through the loaner system — they cannot be listed in pledges, reclaimed, or upgraded independently; access them in-game via mobiGlas and ASOP panels.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "included-vessels-lost-on-parent-upgrade",
+      "claim": "Upgrading away from a parent ship or reclaiming it removes player access to all included vessels tied to that parent; included vessels cannot be separated from their parent ship.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "invictus-2026-replaced-by-defensecon-2956",
       "claim": "Invictus Launch Week did not run as a standalone UEE capital-ship event in May 2026; in-lore the UEEN fleet was pulled back to Sol, and Drake Interplanetary stepped up to host Drake DefenseCon 2956 (14-27 May 2026) as the Free Fly event in its place.",
       "status": "verified",
@@ -341,6 +417,15 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "loaner-vessels-do-not-stack",
+      "claim": "Loaner vessels do not stack — if a player owns multiple parent ships that grant the same secondary craft, they receive only one copy of that vessel, not one per parent.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "lore-odin-coil-debris-field",
       "claim": "In official lore, the Coil (the Odin I Cluster) is thought to be the debris of Odin's destroyed first planet — a seemingly unending cloud of planetary fragments, minerals, and electromagnetic energy surges whose deadly 'arc charges' destroy ships; it is mined only in temporarily safe pockets, hosts a Shubin Interstellar station, and its labyrinthine tunnels are a long-standing pirate hiding spot.",
       "status": "verified",
@@ -379,6 +464,15 @@
       "lastVerified": "2026-07-06"
     },
     {
+      "id": "lti-cannot-be-added-on-request",
+      "claim": "Lifetime Insurance (LTI) is offered rarely on specific pledges and promotions (such as Kickstarter pledges, Concept Sales, and high-value pledges like the Idris); RSI Support cannot add LTI to pledges upon customer request.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "lti-excludes-modifications-and-cargo",
       "claim": "Lifetime Insurance (LTI) covers only ship hull replacement; it does not cover modifications, upgrades/customizations, or cargo, which require separate risk-rated insurance policies.",
       "status": "verified",
@@ -386,7 +480,47 @@
         "https://robertsspaceindustries.com/en/faq/Insurance-FAQ",
         "https://robertsspaceindustries.com/en/comm-link/transmission/12820-Insurance-FAQ-And-Update"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "medical-cmt-controls-right-mouse-f-key",
+      "claim": "To use the Curelife Medical Tool (CMT): hold Right Mouse Button to raise it, hold F to open the tool screen, aim the tool at a player/body part for diagnostics, and press B to use it on yourself.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20750-Medical-Gameplay-Guide"
+      ],
+      "lastVerified": "2026-07-28"
+    },
+    {
+      "id": "medical-current-tool-curelife-medical-tool",
+      "claim": "The current official handheld medical treatment/revival tool in Star Citizen is the Curelife Medical Tool (CMT); the RSI Knowledge Base's current tools table lists only Medical Pens, Multitool (LifeGuard attachment), and the Curelife Medical Tool — 'Med Gun' does not appear as a current tool name, though CIG's own May 2026 comm-link uses 'Curelife Medical Gun' once informally and 2021 patch notes used 'medgun'.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20047-Medical-Guide"
+      ],
+      "lastVerified": "2026-07-28"
+    },
+    {
+      "id": "medical-incapacitation-timer-duration-unspecified",
+      "claim": "An incapacitated player has a fixed 5-15 minute bleed-out window before death.",
+      "status": "unverifiable",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20750-Medical-Gameplay-Guide"
+      ],
+      "lastVerified": "2026-07-28"
+    },
+    {
+      "id": "medical-medpen-hemozal-self-heal-revive",
+      "claim": "The MedPen (Hemozal) heals HP damage and bleeding, can be self-administered, and can revive an incapacitated player.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4409996816535-Healing-and-Medical-Treatment",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20047-Medical-Guide"
+      ],
+      "lastVerified": "2026-07-28"
     },
     {
       "id": "melt-returns-store-credit-not-cash",
@@ -407,6 +541,15 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/19819-MISC-Raptor"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "no-free-trial-only-freefly",
+      "claim": "Star Citizen does not offer a free trial; only Free Fly Events allow free temporary access",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4412777637271-Does-Star-Citizen-offer-a-free-trial"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "no-mech-suits-announced",
@@ -460,6 +603,33 @@
         "https://www.youtube.com/watch?v=CFoQp6wRjPo"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "org-create-requires-not-member",
+      "claim": "To create an organization, a player must not be a member of any organization",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "org-join-limit-10",
+      "claim": "Players can be members of up to 10 organizations simultaneously",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "org-spectrum-id-immutable",
+      "claim": "Organization Spectrum ID (SID) cannot be changed once set",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "pes-live-alpha-3-18",
@@ -521,6 +691,15 @@
       "lastVerified": "2026-07-14"
     },
     {
+      "id": "quantum-travel-sequence",
+      "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+      ],
+      "lastVerified": "2026-07-28"
+    },
+    {
       "id": "randomizers-stale-bonus-amounts",
       "claim": "As of July 11, 2026, several popular Star Citizen referral randomizer sites still advertise a 5,000 UEC signup bonus, which does not match the 50,000 UEC bonus on the official RSI Referral Program page.",
       "status": "verified",
@@ -528,6 +707,16 @@
         "https://robertsspaceindustries.com/en/referral-program"
       ],
       "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "razor-mirai-racing-ship",
+      "claim": "The Razor is a racing-focused ship manufactured by Mirai, a subsidiary brand of MISC.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/ships/razor/Razor",
+        "https://api.star-citizen.wiki/api/v2/vehicles/Razor"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "referral-bonus-no-purchase-required",
@@ -651,22 +840,144 @@
       "lastVerified": "2026-07-14"
     },
     {
+      "id": "ship-customizer-300-series-exclusive",
+      "claim": "Ship Customizer is currently exclusive to Origin Jumpworks 300 series ships, but may be rolled out to other manufacturers in the future.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-future-in-verse-changes",
+      "claim": "In the future, players will be able to change ship customizations in-game within the 'verse, rather than only during the initial pledge.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-insurance-preserves",
+      "claim": "Insurance claims on customized ships restore them with all customizations and personal equipment loadouts intact.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-one-time-per-ship",
+      "claim": "Ship Customizer can only be used once per ship; customizations are permanent unless the ship is reclaimed and repurchased.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023798534-Ship-Customizer-Guide",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-store-credit-purchase",
+      "claim": "Ship customizations can be purchased using Store Credit, not just real money.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-customizer-upgrade-removes",
+      "claim": "Ship customizations are removed when a ship is upgraded to a different variant; the customization value is returned as store credit.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360023967613-Ship-Customizer-FAQ"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-insurance-claim-filing-costs-auec",
+      "claim": "Filing an insurance claim for a destroyed or stolen ship incurs an aUEC (in-game currency) cost; filing a claim can also function as a workaround to resolve certain ship-related bugs.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
       "id": "ship-insurance-claim-replaces-destroyed-hull",
       "claim": "A destroyed pledged/purchased ship is not permanently lost — the owner can file an in-game insurance claim at an ASOP terminal to receive a replacement hull, subject to a wait timer that can be reduced via an expedited-processing option.",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/16043-Monthly-Studio-Report-July-2017"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/16043-Monthly-Studio-Report-July-2017",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
       ],
-      "lastVerified": "2026-07-15"
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-loadout-insurance-separate-purchase",
+      "claim": "Players can purchase loadout insurance separately on a per-ship basis to insure custom-equipped weapons, modules, and other equipment; without loadout insurance, non-standard equipment is lost when filing an insurance claim.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-name-character-limits",
+      "claim": "Ship names have a 32-character limit and must use ASCII characters only (letters, numbers, spaces, dashes) with no consecutive spaces/dashes and no leading or trailing spaces/dashes",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-name-unique-per-model",
+      "claim": "Ship names are unique per model and variants — two players cannot both name their 600i the same name, though they can both name a 600i and a 890 Jump the same name (different models)",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-naming-triggers-redelivery",
+      "claim": "Naming or renaming a ship causes it to be re-delivered, which destroys all items, customization, and cargo aboard — players must remove everything before naming",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360019839074-Ship-Naming-Guide"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "ship-pledge-includes-term-hull-insurance",
       "claim": "Every ship pledge/game package includes hull-replacement insurance for a stated term (typically 2-12 months); pledges made before Nov 26, 2012 carry Lifetime Insurance (LTI) instead.",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/comm-link/SCW/14282-API"
+        "https://robertsspaceindustries.com/comm-link/SCW/14282-API",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs"
       ],
-      "lastVerified": "2026-07-14"
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-reclaim-buyback-resets-serial",
+      "claim": "Reclaiming a ship and buying it back via the buyback tool assigns a new sequential serial number; players who want to keep their original serial number should not reclaim the ship.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/20472245812503-Ship-and-Vehicle-Serial-Numbers"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ship-serial-numbers-not-customizable",
+      "claim": "Ship serial numbers are automatically assigned when acquired and cannot be customized manually.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/20472245812503-Ship-and-Vehicle-Serial-Numbers"
+      ],
+      "lastVerified": "2026-07-29"
     },
     {
       "id": "ships-earnable-in-game-auec",
@@ -950,6 +1261,24 @@
         "https://robertsspaceindustries.com/en/comm-link/engineering/16292-Q-A-UEE-Land-Claim-Licenses"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "valkyrie-troop-transport-capacity",
+      "claim": "The Anvil Valkyrie is a military dropship designed to safely deliver and extract up to twenty fully-outfitted, armed soldiers as well as vehicles from hostile locations.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Valkyrie"
+      ],
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "vulkan-cpu-performance-better",
+      "claim": "Vulkan API provides better CPU performance than DirectX in Star Citizen",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
+      ],
+      "lastVerified": "2026-07-29"
     }
   ]
 }
