@@ -305,7 +305,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Xi'an ship manufacturer — makes the Nox hover bike and the Khartu-al fighter. Xi'an designs are organic and alien-looking compared to anything humans build.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: 'Consolidated Outland',
@@ -636,7 +636,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Anvil's smallest, fastest combat ship. A nimble dogfighter that rewards hit-and-run tactics — just don't take too many hits. One of the most affordable dedicated fighters.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: 'F8C Lightning',
@@ -690,14 +690,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Argo's small utility shuttle. Variants handle cargo, crew transfers, and tractor work. No weapons, no frills; a flying delivery vehicle for port operations. Not to be confused with the Drake Mule, a ground vehicle.",
     also: 'MPUV Cargo, MPUV Personnel, MPUV Tractor',
-    lastVerified: '2026-07-01',
+    lastVerified: '2026-08-10',
   },
   {
     term: 'Mule',
     category: 'Ships',
     definition:
       "Drake's compact utility ground vehicle for cargo handling — a rugged little loader with a tractor beam for moving crates around outposts and hangars. Made by Drake, not Argo; a different vehicle from the Argo MPUV shuttle.",
-    lastVerified: '2026-07-01',
+    lastVerified: '2026-08-10',
   },
   {
     term: 'RAFT',
@@ -749,7 +749,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Crusader Industries single-seat heavy gunship. The Inferno carries a rotary gatling cannon that shreds fighters; the Ion carries a large laser for punching through capital ship armor. Glass cannons — huge firepower, light protection.",
     also: 'Ares Inferno, Ares Ion',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: 'Intrepid',
@@ -904,7 +904,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Origin's entry-level luxury line — the 100i (multi-role), 125a (light fighter), and 135c (light cargo). Think luxury sports car at the starter price point. Small, sleek, and stylish.",
     also: '100i, 125a, 135c',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: '300 series',
@@ -912,14 +912,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Origin's mid-range luxury line. The 300i is a flexible multi-role; the 315p adds exploration scanners; the 325a upgrades the weapons; the 350r is a dedicated racer. All look extraordinary.",
     also: '300i, 315p, 325a, 350r',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: '400i',
     category: 'Ships',
     definition:
       "Origin larger luxury explorer for solo pilots or a small crew. Includes top-tier sensors, a lounge area, and enough firepower to handle most threats encountered while exploring.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: '600i',
@@ -932,7 +932,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Origin luxury runabout designed to live inside the 600i or 890 Jump and handle short hops. The space equivalent of a personal speedboat stored on a superyacht.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: 'M50 Interceptor',
@@ -956,7 +956,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "RSI dedicated medical ship — picks up injured players, stabilizes them in flight, and gets them to a medical facility. One of the most important support ships for large org operations.",
     also: 'Apollo Medivac, Apollo Triage',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-10',
   },
   {
     term: 'Mantis',
