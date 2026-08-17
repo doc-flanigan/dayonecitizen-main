@@ -450,6 +450,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake's iconic medium ship — Black (combat/transport), Red (medical), Blue (bounty), Steel (drop-ship). One of the most popular community ships.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Caterpillar',
@@ -468,7 +469,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Constellation',
     category: 'Ships',
     definition:
-      "RSI's flagship multi-crew ship line — Andromeda (combat), Aquila (exploration), Phoenix (luxury), Taurus (cargo). Comes with a parasite snub fighter.",
+      "RSI's flagship multi-crew ship line — Andromeda (combat), Aquila (exploration), Phoenix (luxury), Taurus (cargo). Most variants include a snub fighter docking cradle.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Carrack',
@@ -481,7 +483,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: '890 Jump',
     category: 'Ships',
     definition:
-      "Origin's super-yacht — luxury VIP transport with a hangar, pool, casino, and helipad. The signature 'whale' ship and a frequent piracy target.",
+      "Origin's super-yacht — luxury VIP transport with a hangar, pool, cocktail lounge, and three-level atrium. The signature 'whale' ship and a frequent piracy target.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Hammerhead',
@@ -554,7 +557,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Cyclone',
     category: 'Ships',
     definition:
-      "Tumbril's small ground buggy. Variants: TR (turret), AA (anti-air), MT (missile turret), RC (recon), RN (light scout). Fits in most medium ship cargo bays.",
+      "Tumbril's small ground buggy. Variants: TR (turret), AA (anti-air), MT (missile turret), RC (racing), RN (reconnaissance). Fits in most medium ship cargo bays.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Nova',
@@ -1264,6 +1268,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Stanton II — a gas giant home to Crusader Industries. The floating city of Orison sits in its atmosphere. Three notable moons: Yela, Daymar, Cellin.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'ArcCorp',
@@ -1327,12 +1332,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Crusader's reddish desert moon. Site of the community-run Daymar Rally. Bunkers, shipwrecks, and lots of nothing. A new-player favorite for ground exploration.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Cellin',
     category: 'Locations',
     definition:
-      "Crusader's small grey moon. Bunkers, ROC mining sites, and several outposts. Lighter gravity makes ground vehicles drift fun.",
+      "Crusader's volcanically active moon. Bunkers, ROC mining sites, and several outposts. Extreme heat and thermal geysers create hazardous conditions.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Lyria',
@@ -1357,13 +1364,15 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Calliope',
     category: 'Locations',
     definition:
-      "microTech moon — frozen, scientific outposts, occasional bunkers. The least-populated moon in the system.",
+      "microTech moon — frozen, scientific outposts, occasional bunkers.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Clio',
     category: 'Locations',
     definition:
-      "microTech moon — small icy body, mostly used for mining and bounty pickups.",
+      "microTech moon — liquid oceans with icebergs and snowy mountains. Popular for Janalite ore mining.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Euterpe',
@@ -1401,6 +1410,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Abandoned ships drifting in space, often stripped or filled with hostiles. Salvage them, loot them, or use them as ambush sites.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Jumpgate',
