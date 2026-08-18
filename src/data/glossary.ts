@@ -988,7 +988,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Hermes',
     category: 'Ships',
     definition:
-      "RSI large passenger and cargo transport designed for moving people and goods between major locations. The space equivalent of a commercial ferry on a regular route.",
+      "RSI medium cargo hauler built for high capacity, high speed, and strong defenses. It's designed for pilots moving freight quickly and safely, not for carrying passengers.",
+    lastVerified: '2026-08-18',
   },
 
   // ─────────────── Gameplay ───────────────
