@@ -59,7 +59,7 @@ const faqJsonLd = {
       name: 'Verliere ich bei einem Wipe alles?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.9 (15. Juli 2026) hat den Fortschritt laut Patch Notes behalten.',
+        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.9 (15. Juli 2026) hat den Fortschritt laut Patch Notes behalten. Für Alpha 4.10 ist bisher kein Wipe angekündigt. Sicher ist das aber erst mit den Patch Notes zum Erscheinen.',
       },
     },
     {
@@ -238,6 +238,17 @@ export default function LohntSichStarCitizenPage() {
                 15. Juli 2026 auf den Live-Servern — ohne Wipe, der
                 Spielfortschritt wurde übernommen.
               </p>
+              <p>
+                Alpha 4.10 ist noch nicht erschienen. Die Version wird seit dem
+                23. Juli 2026 auf den Testservern geprüft. Diese Testserver
+                heißen PTU — dort kann jeder mitspielen, der sich freiwillig
+                anmeldet. CIG hat noch kein Erscheinungsdatum genannt. Das
+                Studio hat das Update bewusst zurückgehalten, um Fehler zu
+                beheben und die Leistung zu verbessern.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/21292-This-Week-In-Star-Citizen">
+                  Offizieller RSI-Beitrag vom 17. August 2026 (Englisch)
+                </SourceLink>
+              </p>
             </div>
           </section>
 
@@ -369,7 +380,8 @@ export default function LohntSichStarCitizenPage() {
                   50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es
                   mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe — das
                   aktuelle Update Alpha 4.9 (15. Juli 2026) hat den Fortschritt
-                  behalten.
+                  behalten. Für Alpha 4.10 ist bisher kein Wipe angekündigt.
+                  Sicher ist das aber erst mit den Patch Notes zum Erscheinen.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
