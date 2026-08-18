@@ -5,7 +5,6 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
-import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
@@ -126,21 +125,6 @@ export default function QuantumTravelPage() {
               Alpha 4.x controls.
             </p>
 
-            <div className="mb-8 rounded-lg border border-gold/30 bg-gold/5 p-4 text-sm text-starwhite/80 leading-relaxed">
-              Playing during the <Term name="Free Fly">Free Fly</Term>? Star
-              Citizen is free to try from July 29 through August 10, 2026 —{' '}
-              <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026">
-                official RSI blog post
-              </SourceLink>
-              . The full event guide lives at{' '}
-              <a
-                href="https://freeflyevent.com/foundation-festival-2026"
-                className="text-gold hover:underline"
-              >
-                freeflyevent.com
-              </a>
-              .
-            </div>
 
             {/* Prerequisites */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">

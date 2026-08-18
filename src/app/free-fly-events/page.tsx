@@ -6,6 +6,10 @@ import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { NEXT_FREE_FLY, getFreeFlyStatus } from '@/data/next-free-fly'
+
+// Status is time-dependent, so this page must not be frozen at build time.
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: 'Star Citizen Free Fly Events — Play Free',
@@ -32,6 +36,8 @@ const HISTORY = [
 ]
 
 export default function FreeFlyPage() {
+  const status = getFreeFlyStatus()
+  const isActive = status === 'active'
   return (
     <>
       <NavBar />
@@ -106,6 +112,27 @@ export default function FreeFlyPage() {
             <div className="card-surface relative overflow-hidden p-8 sm:p-10">
               <div className="absolute right-0 top-0 h-48 w-48 -translate-y-12 translate-x-16 rounded-full bg-gold/15 blur-3xl" />
               <div className="relative">
+                {!isActive && (
+                  <>
+                    <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted">
+                      <Clock size={12} aria-hidden /> No Free Fly running right now
+                    </span>
+                    <h2 className="heading-display mt-3 text-3xl">
+                      No Free Fly is running at the moment.
+                    </h2>
+                    <p className="mt-3 max-w-2xl text-sm text-muted">
+                      The last one, {NEXT_FREE_FLY.name}, ended on{' '}
+                      <strong className="text-starwhite">August 10, 2026</strong>.{' '}
+                      <Term name="CIG">CIG</Term> announces each window by official
+                      blog post, usually one to two weeks ahead. Nothing new has been
+                      announced yet. The 50,000 <Term name="UEC">UEC</Term>{' '}
+                      <Term name="Referral Code">referral code</Term> bonus does not
+                      depend on an event — it applies whenever you create an account.
+                    </p>
+                  </>
+                )}
+                {isActive && (
+                <>
                 <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
                   <Clock size={12} aria-hidden /> Free Fly live right now
                 </span>
@@ -148,6 +175,8 @@ export default function FreeFlyPage() {
                   </a>
                   )
                 </p>
+                </>
+                )}
               </div>
             </div>
           </div>
@@ -163,8 +192,10 @@ export default function FreeFlyPage() {
               The next likely Free Fly windows
             </h2>
             <p className="mt-4 max-w-2xl text-sm text-muted">
-              One window is live right now, and one more is expected later in
-              the year. Treat anything not confirmed by{' '}
+              {isActive
+                ? 'One window is live right now, and one more is expected later in the year.'
+                : 'Nothing is confirmed right now. One more window is generally expected later in the year.'}{' '}
+              Treat anything not confirmed by{' '}
               <Term name="CIG">CIG</Term> as a best guess and check back for
               updates.
             </p>
@@ -172,12 +203,12 @@ export default function FreeFlyPage() {
             <ol className="mt-10 space-y-4">
               <TimelineItem
                 date="July 29 – Aug 10, 2026"
-                name="Foundation Festival 2026 Free Fly (live now)"
+                name={`Foundation Festival 2026 Free Fly${isActive ? ' (live now)' : ' (ended)'}`}
                 detail={
                   <>
-                    <Term name="CIG">CIG</Term>&rsquo;s community event is
-                    running right now, and this one does include a Free Fly:
-                    play free from July 29 through August 10 with five ships —
+                    <Term name="CIG">CIG</Term>&rsquo;s community event
+                    {isActive ? ' is running right now, and this one does include a Free Fly: play' : ' ran with a Free Fly attached: players could play'}
+                    {' '}free from July 29 through August 10 with five ships —
                     RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader
                     Intrepid, and RSI Salvation. (
                     <a
