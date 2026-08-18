@@ -65,6 +65,14 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
+      name: 'Will Alpha 4.10 wipe Star Citizen progress?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Unconfirmed, and Alpha 4.10 is not out yet. It has been on the PTU test servers since July 23, 2026, with no announced release date. Every 4.10 test build lists Long Term Persistence as enabled, and no wipe has been announced. That points to progress carrying over. But CIG only confirms wipe status in the final release notes, so check those on release day.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Did Alpha 4.9 wipe Star Citizen progress?',
       acceptedAnswer: {
         '@type': 'Answer',
@@ -248,9 +256,23 @@ export default function NextWipePage() {
                 Not announced. The latest major update, Alpha 4.9, arrived on
                 July 15, 2026 <em>without</em> a wipe — its patch notes state
                 that Long Term Persistence was preserved, so earned aUEC and
-                in-game items carried over. As of July 2026, no wipe is
+                in-game items carried over. As of August 2026, no wipe is
                 announced for any upcoming update. The last full wipe came with
                 Alpha 4.8 in May 2026.
+              </p>
+              <p>
+                The next update, <strong>Alpha 4.10</strong>, is not out yet.
+                It has been on the <Term name="PTU">PTU</Term> — the opt-in
+                public test servers — since July 23, 2026. CIG has not
+                announced a release date. It says it held the update back to
+                fix key issues and improve performance first.
+              </p>
+              <p>
+                Every 4.10 test build so far lists Long Term Persistence as
+                enabled, and no wipe has been announced. That is a good sign,
+                but it is not a promise. CIG only confirms wipe status in the
+                final release notes. Treat 4.10 as unconfirmed until it
+                arrives.
               </p>
               <p>
                 Practical advice: play as if your aUEC is temporary, because it is.
@@ -319,6 +341,20 @@ export default function NextWipePage() {
                   carrying saved progress across updates. Each patch&rsquo;s
                   notes state whether LTP is enabled — when it is, your aUEC
                   and in-game items should carry over rather than reset.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Will Alpha 4.10 wipe progress?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Unconfirmed — and Alpha 4.10 is not out yet. It has been on
+                  the PTU test servers since July 23, 2026, with no announced
+                  release date. Every 4.10 test build lists Long Term
+                  Persistence as enabled, and no wipe has been announced. That
+                  points to progress carrying over. But CIG only confirms wipe
+                  status in the final release notes, so check those on release
+                  day.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
