@@ -326,12 +326,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Manufacturer of snub fighters and light ships — including the Merlin parasite fighter and the P-72 Archimedes racing snub. Specializes in small, fast craft meant to be launched from larger ships.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Mirai',
     category: 'Ships',
     definition:
       "Manufacturer known for sleek, futuristic racing and combat ships — the Razor racing line and the Guardian fighter series. High-tech aesthetic, often used in competitive racing events.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Roberts Space Industries',
@@ -339,12 +341,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "The in-fiction ship manufacturer founded by the Roberts family — and the brand under which CIG sells Star Citizen. Makes the Aurora starter ship, the Constellation, and the Polaris.",
     also: 'RSI ships',
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Origin',
     category: 'Ships',
     definition:
       "Ship manufacturer known for sleek, luxury designs — the 300i, 600i, and the famous 890 Jump. Apple-meets-spaceship aesthetic.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Anvil',
@@ -357,12 +361,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Budget, rugged manufacturer — the Cutlass, Caterpillar, Corsair. Often described as the 'pickup truck' of the 'Verse. Loved by pirates and haulers alike.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'MISC',
     category: 'Ships',
     definition:
       "Musashi Industrial and Starflight Concern — industrial manufacturer behind cargo ships like the Freelancer and Hull series, plus the Prospector miner.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Aegis',
