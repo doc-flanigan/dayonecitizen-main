@@ -7,19 +7,20 @@ import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import SourceLink from '@/components/SourceLink'
 import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'When Is the Next Star Citizen Wipe?',
   description:
-    'No Star Citizen wipe is currently announced. Real-money purchases and account UEC always survive; aUEC and in-game items are temporary alpha progress.',
+    'Alpha 4.10 arrived on August 26, 2026 with no wipe. Real-money purchases and account UEC always survive; aUEC and in-game items are temporary alpha progress.',
   alternates: { canonical: '/day-one-citizen/next-wipe' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'When Is the Next Star Citizen Wipe?',
     description:
-      'No wipe is currently announced. Exactly what survives a wipe (everything you paid for) and what resets (aUEC and in-game progress), in plain English.',
+      'Alpha 4.10 did not wipe. Exactly what survives a wipe (everything you paid for) and what resets (aUEC and in-game progress), in plain English.',
     url: '/day-one-citizen/next-wipe',
     type: 'article',
   },
@@ -36,7 +37,7 @@ const faqJsonLd = {
       name: 'When is the next Star Citizen wipe?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No wipe is currently announced. The latest update, Alpha 4.9 (July 15, 2026), did not wipe — its patch notes state Long Term Persistence was preserved, so saved progress carried over. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
+        text: 'No wipe is currently announced. The latest update, Alpha 4.10 (August 26, 2026), did not wipe — its release notes state Long Term Persistence was preserved, so saved progress carried over. Alpha 4.9 before it did not wipe either. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
       },
     },
     {
@@ -65,10 +66,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Will Alpha 4.10 wipe Star Citizen progress?',
+      name: 'Did Alpha 4.10 wipe Star Citizen progress?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Unconfirmed, and Alpha 4.10 is not out yet. It has been on the PTU test servers since July 23, 2026, with no announced release date. Every 4.10 test build lists Long Term Persistence as enabled, and no wipe has been announced. That points to progress carrying over. But CIG only confirms wipe status in the final release notes, so check those on release day.',
+        text: 'No. Alpha 4.10 — Siege of Orison — reached the live servers on August 26, 2026 with no wipe. Long Term Persistence was preserved, so earned aUEC and in-game items carried over. It had been tested on the PTU servers since July 23, 2026, and every test build listed Long Term Persistence as enabled.',
       },
     },
     {
@@ -253,26 +254,33 @@ export default function NextWipePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">So — when is the next one?</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Not announced. The latest major update, Alpha 4.9, arrived on
-                July 15, 2026 <em>without</em> a wipe — its patch notes state
-                that Long Term Persistence was preserved, so earned aUEC and
-                in-game items carried over. As of August 2026, no wipe is
-                announced for any upcoming update. The last full wipe came with
-                Alpha 4.8 in May 2026.
+                Not announced. The latest major update,{' '}
+                <strong>Alpha 4.10</strong>, arrived on August 26, 2026{' '}
+                <em>without</em> a wipe. Earned aUEC and in-game items carried
+                over.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/21242-Alpha-410-Siege-Of-Orison">
+                  Official RSI blog post
+                </SourceLink>
               </p>
               <p>
-                The next update, <strong>Alpha 4.10</strong>, is not out yet.
-                It has been on the <Term name="PTU">PTU</Term> — the opt-in
-                public test servers — since July 23, 2026. CIG has not
-                announced a release date. It says it held the update back to
-                fix key issues and improve performance first.
+                CIG calls the update &ldquo;Siege of Orison,&rdquo; after a
+                co-operative combat mission set at{' '}
+                <Term name="Orison">Orison</Term>. Its release notes list Long
+                Term Persistence as preserved.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-10-live-release-notes">
+                  Official forum post
+                </SourceLink>
               </p>
               <p>
-                Every 4.10 test build so far lists Long Term Persistence as
-                enabled, and no wipe has been announced. That is a good sign,
-                but it is not a promise. CIG only confirms wipe status in the
-                final release notes. Treat 4.10 as unconfirmed until it
-                arrives.
+                That followed about five weeks of testing. Alpha 4.10 reached
+                the <Term name="PTU">PTU</Term> — the opt-in public test
+                servers — on July 23, 2026. Every test build kept Long Term
+                Persistence enabled, and the final release matched.
+              </p>
+              <p>
+                Alpha 4.9 did not wipe either, back on July 15, 2026. No wipe
+                is announced for any update after 4.10. The last full wipe came
+                with Alpha 4.8 in May 2026.
               </p>
               <p>
                 Practical advice: play as if your aUEC is temporary, because it is.
@@ -298,10 +306,10 @@ export default function NextWipePage() {
                   When is the next Star Citizen wipe?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  No wipe is currently announced. The latest update, Alpha 4.9
-                  (July 15, 2026), preserved saved progress — no wipe. CIG
-                  states whether progress carries over in the patch notes of
-                  each update, and says it generally tries to avoid wipes.
+                  No wipe is currently announced. The latest update, Alpha
+                  4.10 (August 26, 2026), preserved saved progress — no wipe.
+                  CIG states whether progress carries over in the patch notes
+                  of each update, and says it generally tries to avoid wipes.
                   Heard a wipe rumor? Check it against our{' '}
                   <Link href="/fact-check" className="text-gold underline-offset-4 hover:underline">
                     Star Citizen fact-check ledger
@@ -345,16 +353,14 @@ export default function NextWipePage() {
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  Will Alpha 4.10 wipe progress?
+                  Did Alpha 4.10 wipe progress?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Unconfirmed — and Alpha 4.10 is not out yet. It has been on
-                  the PTU test servers since July 23, 2026, with no announced
-                  release date. Every 4.10 test build lists Long Term
-                  Persistence as enabled, and no wipe has been announced. That
-                  points to progress carrying over. But CIG only confirms wipe
-                  status in the final release notes, so check those on release
-                  day.
+                  No. Alpha 4.10 — Siege of Orison — reached the live
+                  servers on August 26, 2026 with no wipe. Long Term
+                  Persistence was preserved, so earned aUEC and in-game items
+                  carried over. It had been tested on the PTU servers since
+                  July 23, 2026.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

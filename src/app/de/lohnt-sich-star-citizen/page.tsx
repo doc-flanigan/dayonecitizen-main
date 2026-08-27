@@ -59,7 +59,7 @@ const faqJsonLd = {
       name: 'Verliere ich bei einem Wipe alles?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.9 (15. Juli 2026) hat den Fortschritt laut Patch Notes behalten. Für Alpha 4.10 ist bisher kein Wipe angekündigt. Sicher ist das aber erst mit den Patch Notes zum Erscheinen.',
+        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.10 (26. August 2026) hat den Fortschritt laut Patch Notes behalten. Für kommende Updates ist bisher kein Wipe angekündigt.',
       },
     },
     {
@@ -234,19 +234,19 @@ export default function LohntSichStarCitizenPage() {
                 </li>
               </ul>
               <p>
-                Zum aktuellen Stand: Die Version Alpha 4.9 läuft seit dem
-                15. Juli 2026 auf den Live-Servern — ohne Wipe, der
+                Zum aktuellen Stand: Die Version Alpha 4.10 läuft seit dem
+                26. August 2026 auf den Live-Servern — ohne Wipe, der
                 Spielfortschritt wurde übernommen.
               </p>
               <p>
-                Alpha 4.10 ist noch nicht erschienen. Die Version wird seit dem
-                23. Juli 2026 auf den Testservern geprüft. Diese Testserver
-                heißen PTU — dort kann jeder mitspielen, der sich freiwillig
-                anmeldet. CIG hat noch kein Erscheinungsdatum genannt. Das
-                Studio hat das Update bewusst zurückgehalten, um Fehler zu
-                beheben und die Leistung zu verbessern.{' '}
-                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/21292-This-Week-In-Star-Citizen">
-                  Offizieller RSI-Beitrag vom 17. August 2026 (Englisch)
+                Das Update trägt den Namen &bdquo;Siege of Orison&ldquo;.
+                Zuvor wurde es seit dem 23. Juli 2026 auf den Testservern
+                geprüft. Diese Testserver heißen PTU — dort kann jeder
+                mitspielen, der sich freiwillig anmeldet. Laut den Patch Notes
+                blieb die Long Term Persistence erhalten. Erspielter
+                Fortschritt wurde also übernommen.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/21242-Alpha-410-Siege-Of-Orison">
+                  Offizieller RSI-Beitrag zu Alpha 4.10 (Englisch)
                 </SourceLink>
               </p>
             </div>
@@ -313,7 +313,7 @@ export default function LohntSichStarCitizenPage() {
                   <strong className="text-starwhite">Wer entscheidet:</strong>{' '}
                   die Patch Notes der jeweiligen Version. CIG kündigt dort an,
                   was übernommen wird (Stichwort „Long Term Persistence“). Das
-                  aktuelle Update Alpha 4.9 (15. Juli 2026) brachte keinen
+                  aktuelle Update Alpha 4.10 (26. August 2026) brachte keinen
                   Wipe — die Patch Notes bestätigen, dass der Fortschritt
                   erhalten blieb.
                 </li>
@@ -379,9 +379,9 @@ export default function LohntSichStarCitizenPage() {
                   Fortschritt zurück. Echtgeld-Käufe und Account-UEC (auch das
                   50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es
                   mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe — das
-                  aktuelle Update Alpha 4.9 (15. Juli 2026) hat den Fortschritt
-                  behalten. Für Alpha 4.10 ist bisher kein Wipe angekündigt.
-                  Sicher ist das aber erst mit den Patch Notes zum Erscheinen.
+                  aktuelle Update Alpha 4.10 (26. August 2026) hat den
+                  Fortschritt behalten. Für kommende Updates ist bisher kein
+                  Wipe angekündigt.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
