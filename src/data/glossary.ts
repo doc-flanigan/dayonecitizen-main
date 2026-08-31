@@ -305,7 +305,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Xi'an ship manufacturer — makes the Nox hover bike and the Khartu-al fighter. Xi'an designs are organic and alien-looking compared to anything humans build.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Consolidated Outland',
@@ -469,6 +469,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "RSI's flagship multi-crew ship line — Andromeda (combat), Aquila (exploration), Phoenix (luxury), Taurus (cargo). Comes with a parasite snub fighter.",
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Carrack',
@@ -482,6 +483,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Origin's super-yacht — luxury VIP transport with a hangar, pool, casino, and helipad. The signature 'whale' ship and a frequent piracy target.",
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Hammerhead',
@@ -778,6 +780,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake mid-size explorer with surprisingly heavy firepower. Built for people who want to venture into unknown space without being defenseless when they get there.",
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Cutter',
@@ -785,6 +788,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Drake's entry-level ship — a tiny, boxy transport for hauling small loads on a budget. No frills, but it gets the job done. Variants include the Rambler (explorer) and Scout (recon).",
     also: 'Cutter Rambler, Cutter Scout',
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Golem',
@@ -925,7 +929,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: '600i',
     category: 'Ships',
     definition:
-      "Origin's flagship luxury superyacht — a large explorer that is essentially a flying mansion with a lounge, bar, and captain's suite. One of the most prestigious ships you can own.",
+      "Origin's luxury explorer — a large ship that is essentially a flying mansion with a lounge, bar, and captain's suite. One of the most prestigious ships you can own.",
+    lastVerified: '2026-08-31',
   },
   {
     term: '85X',
@@ -1264,6 +1269,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Stanton II — a gas giant home to Crusader Industries. The floating city of Orison sits in its atmosphere. Three notable moons: Yela, Daymar, Cellin.",
+    lastVerified: '2026-08-31',
   },
   {
     term: 'ArcCorp',
@@ -1333,6 +1339,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Crusader's small grey moon. Bunkers, ROC mining sites, and several outposts. Lighter gravity makes ground vehicles drift fun.",
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Lyria',
@@ -1357,13 +1364,15 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Calliope',
     category: 'Locations',
     definition:
-      "microTech moon — frozen, scientific outposts, occasional bunkers. The least-populated moon in the system.",
+      "microTech moon — frozen, scientific outposts, occasional bunkers.",
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Clio',
     category: 'Locations',
     definition:
-      "microTech moon — small icy body, mostly used for mining and bounty pickups.",
+      "microTech moon — small body with glaciers and liquid oceans, mostly used for mining operations.",
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Euterpe',
