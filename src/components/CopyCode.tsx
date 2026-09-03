@@ -36,6 +36,7 @@ export default function CopyCode({
           referralCode: code,
           page: window.location.pathname,
           site: window.location.hostname,
+          referrer: (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('lref')) || '',
         }),
       }).catch(() => {})
     } catch {
