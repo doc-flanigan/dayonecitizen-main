@@ -351,6 +351,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Military-grade ship manufacturer — Hornets, Carracks, the Valkyrie. Anvil ships are tough, utilitarian, and combat-focused.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Drake',
@@ -375,7 +376,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Crusader Industries',
     category: 'Ships',
     definition:
-      "Maker of the Mercury Star Runner, Ares, A1 Spirit, and the gigantic C2/A2 Hercules. Civilian-and-military-spec hardware out of Orison.",
+      "Maker of the Mercury Star Runner, Ares, A1 Spirit, and the gigantic C2/M2/A2 Hercules. Civilian-and-military-spec hardware out of Orison.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Argo',
@@ -469,6 +471,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "RSI's flagship multi-crew ship line — Andromeda (combat), Aquila (exploration), Phoenix (luxury), Taurus (cargo). Comes with a parasite snub fighter.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Carrack',
@@ -482,6 +485,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Origin's super-yacht — luxury VIP transport with a hangar, pool, casino, and helipad. The signature 'whale' ship and a frequent piracy target.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Hammerhead',
@@ -555,6 +559,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Tumbril's small ground buggy. Variants: TR (turret), AA (anti-air), MT (missile turret), RC (recon), RN (light scout). Fits in most medium ship cargo bays.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Nova',
@@ -778,6 +783,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake mid-size explorer with surprisingly heavy firepower. Built for people who want to venture into unknown space without being defenseless when they get there.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Cutter',
@@ -785,6 +791,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Drake's entry-level ship — a tiny, boxy transport for hauling small loads on a budget. No frills, but it gets the job done. Variants include the Rambler (explorer) and Scout (recon).",
     also: 'Cutter Rambler, Cutter Scout',
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Golem',
@@ -1264,6 +1271,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Stanton II — a gas giant home to Crusader Industries. The floating city of Orison sits in its atmosphere. Three notable moons: Yela, Daymar, Cellin.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'ArcCorp',
@@ -1358,12 +1366,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "microTech moon — frozen, scientific outposts, occasional bunkers. The least-populated moon in the system.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Clio',
     category: 'Locations',
     definition:
       "microTech moon — small icy body, mostly used for mining and bounty pickups.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'Euterpe',
