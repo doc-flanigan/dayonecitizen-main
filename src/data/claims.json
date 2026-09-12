@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-08",
+  "generated": "2026-08-29",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -20,6 +20,24 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "asgard-anvil-dropship-spec",
+      "claim": "The Anvil Asgard is a heavily armored vehicle-dropship designed to carry a Nova tank or multiple small ground vehicles.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Asgard"
+      ],
+      "lastVerified": "2026-08-11"
+    },
+    {
+      "id": "asgard-pledge-price-usd",
+      "claim": "The Anvil Asgard standalone pledge costs 350 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Asgard"
+      ],
+      "lastVerified": "2026-08-11"
+    },
+    {
       "id": "auec-temporary-wipes-possible",
       "claim": "aUEC (Alpha UEC) is a temporary testing currency that can be changed or reset during alpha; losing aUEC never affects the UEC or pledge-store purchases on an RSI account. Patch notes state per-patch whether aUEC carries over (Long Term Persistence), and CIG says it generally tries to avoid wipes.",
       "status": "verified",
@@ -27,6 +45,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
       ],
       "lastVerified": "2026-08-08"
+    },
+    {
+      "id": "aurora-mk2-2year-pledge-45-usd",
+      "claim": "The RSI Aurora Mk II standalone pledge with 2-Year insurance costs $45 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Aurora-Mk-II-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "aurora-mk2-launch-alpha-4-7",
@@ -57,6 +84,15 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "carrack-2year-pledge-600-usd",
+      "claim": "The Anvil Carrack 2-Year standalone pledge costs $600 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Carrack-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
       "id": "caterpillar-standalone-pledge-330-usd",
       "claim": "The Drake Caterpillar standalone pledge costs $330 USD.",
       "status": "verified",
@@ -74,6 +110,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013194987-Pledges-FAQ"
       ],
       "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "certain-pledges-not-reclaimable",
+      "claim": "Some pledges cannot be reclaimed by design: pledges locked by CIG Support, community/event/promotion rewards (e.g. CitizenCon Goodie Bags), concierge rewards, and referral rewards.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
+      ],
+      "lastVerified": "2026-08-28"
     },
     {
       "id": "chris-roberts-wing-commander-freelancer",
@@ -95,6 +140,15 @@
       "lastVerified": "2026-07-29"
     },
     {
+      "id": "citizen-starter-pack-60-usd-aurora",
+      "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
+    },
+    {
       "id": "citizencon-2026-not-held",
       "claim": "CIG will not hold a CitizenCon event in 2026 in any form (in-person, digital, or Direct), a decision driven by the team's focus on shipping remaining Star Citizen 2026 content and Squadron 42.",
       "status": "verified",
@@ -113,13 +167,31 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "clipper-2year-pledge-150-usd",
+      "claim": "The Drake Clipper standalone pledge with 2-Year insurance costs $150 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Clipper-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
       "id": "concierge-1000-usd-threshold",
       "claim": "Concierge (Chairman's Club) status is reached at $1,000 or more in lifetime pledge-store spend on a single RSI account.",
       "status": "verified",
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360002542733-Concierge-Levels-and-Rewards"
       ],
-      "lastVerified": "2026-07-29"
+      "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "corsair-2year-pledge-250-usd",
+      "claim": "The Drake Corsair standalone pledge with 2-Year insurance costs $250 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Corsair-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "crafting-t0-live-alpha-4-7",
@@ -141,6 +213,15 @@
       "lastVerified": "2026-07-05"
     },
     {
+      "id": "crusader-intrepid-single-seat-hauler",
+      "claim": "The Crusader Intrepid is a single-seat starship designed by Crusader Industries for short-range hauling and courier work.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Hauler-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
+    },
+    {
       "id": "current-alpha-version-4-9-0",
       "claim": "The current live Star Citizen build is Alpha 4.9.0 (Frontier Tensions), released July 15, 2026; Long Term Persistence was Preserved — the update did not wipe saved progress.",
       "status": "verified",
@@ -158,6 +239,24 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
       ],
       "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "drake-cutter-4-scu-cargo",
+      "claim": "The Drake Cutter has 4 SCU of cargo capacity, making it suitable for basic trading and hauling activities.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Generalist-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
+    },
+    {
+      "id": "drake-cutter-manufacturer-drake",
+      "claim": "The Drake Cutter is manufactured by Drake Interplanetary.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Generalist-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
     },
     {
       "id": "event-defensecon-2956",
@@ -333,6 +432,15 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "generalist-starter-pack-60-usd-drake-cutter",
+      "claim": "The Generalist Starter Pack ($60 USD) is a game package that includes the Drake Cutter as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Generalist-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
+    },
+    {
       "id": "guide-system-category-limit",
       "claim": "Star Citizen guides should select 9 or fewer teaching categories; selecting more than 10 topics causes a system issue that prevents switching to available/active guide state.",
       "status": "verified",
@@ -349,6 +457,42 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360038526034-Guide-System"
       ],
       "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "hardware-promotional-codes-deprecated",
+      "claim": "Hardware promotional programs (Intel Optane SSD → Aegis Sabre Raven; AMD Radeon R9/R7 → Consolidated Outland Mustang Omega) are deprecated; RSI Support no longer redeems unclaimed or expired codes from these promotions.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/42678242845591-Deprecation-of-Hardware-Promotional-Codes"
+      ],
+      "lastVerified": "2026-08-17"
+    },
+    {
+      "id": "hauler-starter-pack-80-usd-intrepid",
+      "claim": "The Hauler Starter Pack ($80 USD) is a game package that includes the Crusader Intrepid as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Hauler-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
+    },
+    {
+      "id": "hermes-2year-pledge-220-usd",
+      "claim": "The RSI Hermes standalone pledge with 2-Year insurance costs 20 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Hermes-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "hermes-medium-hauler-classification",
+      "claim": "The RSI Hermes is a medium cargo hauler built for high capacity, high speed, and high defense — not a passenger transport or ferry.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Hermes-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "included-vessels-loaner-system",
@@ -377,6 +521,24 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/21173-This-Week-In-Star-Citizen"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "ironclad-assault-2year-pledge-650-usd",
+      "claim": "The Drake Ironclad Assault 2-Year standalone pledge costs $650 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Ironclad-Assault-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "ironclad-assault-manufacturer-drake",
+      "claim": "The Drake Ironclad Assault is manufactured by Drake Interplanetary.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Ironclad-Assault-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "item-recovery-t0-landing-zone-still-loses-backpack",
@@ -408,6 +570,89 @@
       "lastVerified": "2026-07-06"
     },
     {
+      "id": "kruger-ballistic-weapons-kit-12-50-usd",
+      "claim": "The Kruger Ballistic Weapons Kit warbond add-on costs 12.50 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Ballistic-Weapons-Kit-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-ballistic-weapons-kit-alpha-wolf-stingray",
+      "claim": "The Kruger Ballistic Weapons Kit equips the Alpha Wolf or S-65 Stingray with two S4 Kruger Relentless L-21 Gatling guns.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Ballistic-Weapons-Kit-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-l21-wolf-ballistic-light-fighter",
+      "claim": "The Kruger L-21 Wolf is a ballistic-equipped light fighter",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packs/Kruger-Combat-Ship-Pack-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-l22-alpha-wolf-laser-light-fighter",
+      "claim": "The Kruger L-22 Alpha Wolf is a laser-equipped light fighter",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packs/Kruger-Combat-Ship-Pack-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-laser-weapons-kit-12-50-usd",
+      "claim": "The Kruger Laser Weapons Kit warbond add-on costs 12.50 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Laser-Weapons-Kit-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-laser-weapons-kit-wolf-equipment",
+      "claim": "The Kruger Laser Weapons Kit equips the L-21 Wolf with two S4 Kruger Axiom L-22 laser repeaters.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Laser-Weapons-Kit-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-s65-stingray-medium-fighter-transform",
+      "claim": "The Kruger S-65 Stingray is a medium fighter with seamless transforming flight modes",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/S-65-Stingray",
+        "https://robertsspaceindustries.com/pledge/Packs/Kruger-Combat-Ship-Pack-Warbond",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/S-65-Stingray-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-snub-laser-weapons-kit-4-usd",
+      "claim": "The Kruger Snub Laser Weapons Kit warbond add-on costs 4 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Snub-Laser-Weapons-Kit-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "kruger-snub-laser-weapons-kit-merlin-equipment",
+      "claim": "The Kruger Snub Laser Weapons Kit equips the P-52 Merlin with an S2 Whiptail STR-E2 laser repeater weapon.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Snub-Laser-Weapons-Kit-Warbond"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
       "id": "legatus-pack-price-tier",
       "claim": "A top-tier 'Legatus' pledge package exists on the RSI store, gated to high-spend Concierge backers.",
       "status": "unverifiable",
@@ -417,13 +662,32 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "loaner-requires-game-package",
+      "claim": "A valid game package is required for loaner ships to be granted to an account.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
       "id": "loaner-vessels-do-not-stack",
       "claim": "Loaner vessels do not stack — if a player owns multiple parent ships that grant the same secondary craft, they receive only one copy of that vessel, not one per parent.",
       "status": "verified",
       "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
       ],
       "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "loaners-not-permanent-except-included-vessels",
+      "claim": "Loaner ships are temporary — once a pledged ship becomes Flight Ready, the loaner is replaced by the purchased ship in your fleet. Only included vessels (snub fighters, rovers) designated as permanent are exceptions.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
+      ],
+      "lastVerified": "2026-08-27"
     },
     {
       "id": "lore-odin-coil-debris-field",
@@ -483,6 +747,15 @@
       "lastVerified": "2026-07-29"
     },
     {
+      "id": "m80-2year-pledge-300-usd",
+      "claim": "The Origin M80 standalone pledge with 2-Year insurance costs $300 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/M80-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
       "id": "medical-cmt-controls-right-mouse-f-key",
       "claim": "To use the Curelife Medical Tool (CMT): hold Right Mouse Button to raise it, hold F to open the tool screen, aim the tool at a player/body part for diagnostics, and press B to use it on yourself.",
       "status": "verified",
@@ -532,6 +805,24 @@
       "lastVerified": "2026-07-24"
     },
     {
+      "id": "mfa-required-pledge-reclaim",
+      "claim": "Multi-Factor Authentication (MFA) must be active on your RSI account to reclaim any pledges; attempting to reclaim without MFA enabled returns an error.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
+      ],
+      "lastVerified": "2026-08-28"
+    },
+    {
+      "id": "miner-starter-pack-75-usd-golem",
+      "claim": "The Miner Starter Pack ($75 USD) is a game package that includes the Drake Golem as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Miner-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
+    },
+    {
       "id": "misc-raptor-not-real-ship",
       "claim": "The MISC Raptor is not a real ship — it was only ever an April Fools joke.",
       "status": "refuted",
@@ -541,6 +832,24 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/19819-MISC-Raptor"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "mole-standalone-pledge-315-usd",
+      "claim": "The ARGO Mole standalone pledge with 2-Year insurance costs $315 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Mole-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "mtc-standalone-pledge-50-usd",
+      "claim": "The MTC standalone pledge with 2-Year insurance costs $50 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/MTC-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "no-free-trial-only-freefly",
@@ -632,6 +941,15 @@
       "lastVerified": "2026-07-29"
     },
     {
+      "id": "perseus-2year-pledge-800-usd",
+      "claim": "The RSI Perseus 2-Year standalone pledge costs $800 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Perseus-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
       "id": "pes-live-alpha-3-18",
       "claim": "Persistent Entity Streaming (PES) went live in Alpha 3.18 (March 2023), the core tech that makes dynamic object/item state persist server-side and underpins Server Meshing.",
       "status": "verified",
@@ -654,6 +972,15 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "pledge-24hour-reclaim-cooldown",
+      "claim": "After pledging with new money or credits, there is a 24-hour cooldown period before that pledge can be reclaimed; RSI Player Relations cannot reduce this time limit.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
+      ],
+      "lastVerified": "2026-08-28"
+    },
+    {
       "id": "pledge-items-require-registration-not-automatic",
       "claim": "Pledge-store items are not automatically registered or guaranteed recoverable; per the Alpha 4.8 Vehicle Insurance and Item Bricking update, ANY item (pledge-store origin or found/looted) must be manually registered — imprinted into a saved ASOP loadout snapshot — to be recoverable after loss, and un-imprinted pledge-store vehicle items were explicitly lost and unrecoverable at 4.8 launch (a freight-elevator stopgap and a fuller 4.9 item kiosk were added afterward).",
       "status": "verified",
@@ -664,6 +991,15 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "pledge-reclaim-buyback-possible",
+      "claim": "Reclaiming (melting) a pledge is intended to be permanent, but depending on the pledge type it can sometimes be bought back via the Pledge Buy Back tool -- not all reclaimed pledges qualify, and RSI Player Relations will not manually reverse a reclaim.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
+      ],
+      "lastVerified": "2026-08-28"
+    },
+    {
       "id": "pledge-refund-30-day-withdrawal-period",
       "claim": "Star Citizen pledges are refundable in real money only within a 30-day no-questions-asked Withdrawal Period from receiving access to the Pledge Item; after that period, earned Pledge Funds are non-refundable except if CIG ceases development and fails to deliver.",
       "status": "verified",
@@ -671,6 +1007,15 @@
         "https://robertsspaceindustries.com/tos"
       ],
       "lastVerified": "2026-07-24"
+    },
+    {
+      "id": "prowler-utility-2year-pledge-300-usd",
+      "claim": "The Esperia Prowler Utility 2-Year standalone pledge costs $300 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Prowler-Utility-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "pyro-lawless-no-uee-law-enforcement",
@@ -700,6 +1045,15 @@
       "lastVerified": "2026-07-28"
     },
     {
+      "id": "railen-2year-pledge-400-usd",
+      "claim": "The Gatac Railen 2-Year standalone pledge costs $400 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Railen-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
       "id": "randomizers-stale-bonus-amounts",
       "claim": "As of July 11, 2026, several popular Star Citizen referral randomizer sites still advertise a 5,000 UEC signup bonus, which does not match the 50,000 UEC bonus on the official RSI Referral Program page.",
       "status": "verified",
@@ -717,6 +1071,24 @@
         "https://api.star-citizen.wiki/api/v2/vehicles/Razor"
       ],
       "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "reclaimer-2year-pledge-400-usd",
+      "claim": "The Aegis Reclaimer 2-Year standalone pledge costs $400 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Reclaimer-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "reclaimer-aegis-manufacturer",
+      "claim": "The Reclaimer is manufactured by Aegis Dynamics.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Reclaimer-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "referral-bonus-no-purchase-required",
@@ -764,6 +1136,15 @@
       "lastVerified": "2026-07-07"
     },
     {
+      "id": "rsi-support-cannot-swap-loaners",
+      "claim": "RSI Support cannot swap or change loaner ships by player request — loaner assignments are determined by the Loaner Ship Matrix based on owned pledges.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
       "id": "rsi-website-no-german-locale",
       "claim": "robertsspaceindustries.com does not serve a functional German (or French) locale — /de/ and /fr/ paths 302-redirect to the /en/ equivalent; the site (store, comm-links, enlist/account-creation flow) is English-only.",
       "status": "verified",
@@ -771,6 +1152,24 @@
         "https://robertsspaceindustries.com/en/referral-program"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "s65-stingray-standalone-pledge-175-usd",
+      "claim": "The Kruger S-65 Stingray standalone pledge costs 175 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/S-65-Stingray"
+      ],
+      "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "salvager-starter-pack-75-usd-salvation",
+      "claim": "The Salvager Starter Pack ($75 USD) is a game package that includes the RSI Salvation as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Salvager-Starter-Pack"
+      ],
+      "lastVerified": "2026-08-12"
     },
     {
       "id": "sc-1-0-no-official-release-date",
@@ -988,6 +1387,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360011409454-Buying-Ships-with-aUEC"
       ],
       "lastVerified": "2026-07-05"
+    },
+    {
+      "id": "shiv-2year-pledge-150-usd",
+      "claim": "The Shiv 2-Year standalone pledge costs $150 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Shiv-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
     },
     {
       "id": "sq42-2016-window-missed",
@@ -1263,6 +1671,15 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "utv-2year-pledge-40-usd",
+      "claim": "The Greycat Industrial UTV standalone pledge with 2-Year insurance costs $40 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/UTV-2-Year"
+      ],
+      "lastVerified": "2026-08-18"
+    },
+    {
       "id": "valkyrie-troop-transport-capacity",
       "claim": "The Anvil Valkyrie is a military dropship designed to safely deliver and extract up to twenty fully-outfitted, armed soldiers as well as vehicles from hostile locations.",
       "status": "verified",
@@ -1279,6 +1696,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/37500283848983-Optimizing-Graphics-Settings"
       ],
       "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "vulture-drake-manufacturer",
+      "claim": "The Vulture is manufactured by Drake Interplanetary.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Vulture"
+      ],
+      "lastVerified": "2026-08-18"
     }
   ]
 }
