@@ -24,7 +24,8 @@
 //     player-facing facts, and adds ledger entries citing it.
 //
 // Env: DISCORD_BOT_TOKEN, ANTHROPIC_API_KEY (used by claude), GH_TOKEN,
-//      FACT_CHECK_CHANNEL_ID (optional override), MAX_PER_RUN (default 3).
+//      FACT_CHECK_CHANNEL_ID (optional override), MAX_PER_RUN (default 3),
+//      MAX_SCAN (channel messages to page back through, default 500).
 
 import { execFileSync, execSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -34,6 +35,7 @@ const API = 'https://discord.com/api/v10';
 const TOKEN = process.env.DISCORD_BOT_TOKEN;
 const CHANNEL = process.env.FACT_CHECK_CHANNEL_ID || '1526650181536190514';
 const MAX = Number(process.env.MAX_PER_RUN || 3);
+const MAX_SCAN = Number(process.env.MAX_SCAN || 500); // messages to page back through
 const ROOT = process.cwd(); // workspace root (parent of dayonecitizen-main/ and docs/)
 const SITE_DIR = path.join(ROOT, 'dayonecitizen-main');
 const DOCS_DIR = path.join(ROOT, 'docs');
@@ -112,8 +114,22 @@ FINISH — write ${VERDICT_FILE} (this exact path) as JSON:
 "rejected" = nothing on the page worth ledgering. Keep summary under 300 characters. The verdict file is REQUIRED — write it even when nothing was added.`;
 }
 
+// Page back through channel history (newest first, 100 per page) so an
+// approved intake older than the latest page is still picked up.
+async function fetchMessages(max) {
+  const out = [];
+  let before = '';
+  while (out.length < max) {
+    const page = await discord('GET', `/channels/${CHANNEL}/messages?limit=100${before ? `&before=${before}` : ''}`);
+    if (!page.length) break;
+    out.push(...page);
+    before = page[page.length - 1].id;
+  }
+  return out;
+}
+
 async function main() {
-  const messages = await discord('GET', `/channels/${CHANNEL}/messages?limit=50`);
+  const messages = await fetchMessages(MAX_SCAN);
   const queue = messages
     .filter((m) => (m.webhook_id || m.author?.bot) && m.embeds?.[0]?.title?.startsWith('📥'))
     .filter((m) => {
