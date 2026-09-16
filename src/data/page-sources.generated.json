@@ -15,17 +15,30 @@
     "/beyond-the-basics": [
       {
         "id": "quantum-travel-sequence",
-        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
         ]
       }
     ],
+    "/beyond-the-basics/inventory-management": [
+      {
+        "id": "event-foundation-festival-2026",
+        "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly (RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader Intrepid, RSI Salvation) and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360037529633-Welcome-to-the-Star-Citizen-Free-Fly-Event"
+        ]
+      }
+    ],
     "/beyond-the-basics/quantum-travel": [
       {
         "id": "quantum-travel-sequence",
-        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
@@ -67,7 +80,7 @@
     "/day-one-citizen/first-day": [
       {
         "id": "quantum-travel-sequence",
-        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
@@ -77,7 +90,7 @@
     "/day-one-citizen/first-flight": [
       {
         "id": "quantum-travel-sequence",
-        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
@@ -126,7 +139,7 @@
       },
       {
         "id": "quantum-travel-sequence",
-        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
@@ -143,8 +156,18 @@
         ]
       },
       {
+        "id": "current-alpha-version-4-10-0",
+        "claim": "The current live Star Citizen build is Alpha 4.10.0 (Siege of Orison), released August 26, 2026 as build 4.10.0-LIVE.12519617; the release notes announce no wipe and Long Term Persistence was extended rather than reset.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/comm-link/Patch-Notes/21293-Star-Citizen-Alpha-410",
+          "https://robertsspaceindustries.com/comm-link/transmission/21242-Alpha-410-Siege-Of-Orison",
+          "https://starcitizen.tools/Update:Star_Citizen_Alpha_4.10.0"
+        ]
+      },
+      {
         "id": "current-alpha-version-4-9-0",
-        "claim": "The current live Star Citizen build is Alpha 4.9.0 (Frontier Tensions), released July 15, 2026; Long Term Persistence was Preserved — the update did not wipe saved progress.",
+        "claim": "Star Citizen Alpha 4.9.0 (Frontier Tensions) was released July 15, 2026 and did not wipe saved progress — its patch notes state Long Term Persistence was Preserved. Superseded as the live build by Alpha 4.10.0 on August 26, 2026.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-9-live-release-notes",
@@ -173,6 +196,38 @@
       }
     ],
     "/day-one-citizen/starter-package": [
+      {
+        "id": "crusader-intrepid-single-seat-hauler",
+        "claim": "The Crusader Intrepid is a single-seat starship designed by Crusader Industries for short-range hauling and courier work.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Hauler-Starter-Pack"
+        ]
+      },
+      {
+        "id": "hauler-starter-pack-80-usd-intrepid",
+        "claim": "The Hauler Starter Pack ($80 USD) is a game package that includes the Crusader Intrepid as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Hauler-Starter-Pack"
+        ]
+      },
+      {
+        "id": "miner-starter-pack-75-usd-golem",
+        "claim": "The Miner Starter Pack ($75 USD) is a game package that includes the Drake Golem as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Miner-Starter-Pack"
+        ]
+      },
+      {
+        "id": "salvager-starter-pack-75-usd-salvation",
+        "claim": "The Salvager Starter Pack ($75 USD) is a game package that includes the RSI Salvation as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Salvager-Starter-Pack"
+        ]
+      },
       {
         "id": "starter-package-from-45-usd",
         "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
@@ -268,12 +323,13 @@
         ]
       },
       {
-        "id": "current-alpha-version-4-9-0",
-        "claim": "The current live Star Citizen build is Alpha 4.9.0 (Frontier Tensions), released July 15, 2026; Long Term Persistence was Preserved — the update did not wipe saved progress.",
+        "id": "current-alpha-version-4-10-0",
+        "claim": "The current live Star Citizen build is Alpha 4.10.0 (Siege of Orison), released August 26, 2026 as build 4.10.0-LIVE.12519617; the release notes announce no wipe and Long Term Persistence was extended rather than reset.",
         "status": "verified",
         "sources": [
-          "https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-9-live-release-notes",
-          "https://robertsspaceindustries.com/en/comm-link/transmission/21220-Alpha-49-Frontier-Tensions"
+          "https://robertsspaceindustries.com/comm-link/Patch-Notes/21293-Star-Citizen-Alpha-410",
+          "https://robertsspaceindustries.com/comm-link/transmission/21242-Alpha-410-Siege-Of-Orison",
+          "https://starcitizen.tools/Update:Star_Citizen_Alpha_4.10.0"
         ]
       },
       {
@@ -354,6 +410,30 @@
         ]
       },
       {
+        "id": "asgard-anvil-dropship-spec",
+        "claim": "The Anvil Asgard is a heavily armored vehicle-dropship designed to carry a Nova tank or multiple small ground vehicles.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Asgard"
+        ]
+      },
+      {
+        "id": "asgard-pledge-price-usd",
+        "claim": "The Anvil Asgard standalone pledge costs 350 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Asgard"
+        ]
+      },
+      {
+        "id": "aurora-mk2-2year-pledge-45-usd",
+        "claim": "The RSI Aurora Mk II standalone pledge with 2-Year insurance costs $45 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Aurora-Mk-II-2-Year"
+        ]
+      },
+      {
         "id": "aurora-mk2-launch-alpha-4-7",
         "claim": "The reworked RSI Aurora Mk II launched in Alpha 4.7 (March 2026) as a modernized starter ship with rear-mounted swappable external modules (Cargo, Combat), VTOL fans on its lower wings, and a bed for logging out, replacing the Mk I as RSI's flagship starter.",
         "status": "verified",
@@ -378,6 +458,14 @@
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/12665-Meet-Chris-Roberts",
           "https://robertsspaceindustries.com/comm-link/SCW/13880-API"
+        ]
+      },
+      {
+        "id": "citizen-starter-pack-60-usd-aurora",
+        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
         ]
       },
       {
@@ -425,6 +513,30 @@
         ]
       },
       {
+        "id": "guide-system-category-limit",
+        "claim": "Star Citizen guides should select 9 or fewer teaching categories; selecting more than 10 topics causes a system issue that prevents switching to available/active guide state.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360038526034-Guide-System"
+        ]
+      },
+      {
+        "id": "guide-system-requirements",
+        "claim": "To become a Star Citizen guide and access the Guide Hub, you must have an active RSI Account and a Game Package.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360038526034-Guide-System"
+        ]
+      },
+      {
+        "id": "hardware-promotional-codes-deprecated",
+        "claim": "Hardware promotional programs (Intel Optane SSD → Aegis Sabre Raven; AMD Radeon R9/R7 → Consolidated Outland Mustang Omega) are deprecated; RSI Support no longer redeems unclaimed or expired codes from these promotions.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/42678242845591-Deprecation-of-Hardware-Promotional-Codes"
+        ]
+      },
+      {
         "id": "included-vessels-loaner-system",
         "claim": "Included vessels (secondary craft like snub fighters and rovers) are handled through the loaner system — they cannot be listed in pledges, reclaimed, or upgraded independently; access them in-game via mobiGlas and ASOP panels.",
         "status": "verified",
@@ -458,11 +570,102 @@
         ]
       },
       {
+        "id": "kruger-ballistic-weapons-kit-12-50-usd",
+        "claim": "The Kruger Ballistic Weapons Kit warbond add-on costs 12.50 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Ballistic-Weapons-Kit-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-ballistic-weapons-kit-alpha-wolf-stingray",
+        "claim": "The Kruger Ballistic Weapons Kit equips the Alpha Wolf or S-65 Stingray with two S4 Kruger Relentless L-21 Gatling guns.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Ballistic-Weapons-Kit-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-l21-wolf-ballistic-light-fighter",
+        "claim": "The Kruger L-21 Wolf is a ballistic-equipped light fighter",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packs/Kruger-Combat-Ship-Pack-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-l22-alpha-wolf-laser-light-fighter",
+        "claim": "The Kruger L-22 Alpha Wolf is a laser-equipped light fighter",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packs/Kruger-Combat-Ship-Pack-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-laser-weapons-kit-12-50-usd",
+        "claim": "The Kruger Laser Weapons Kit warbond add-on costs 12.50 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Laser-Weapons-Kit-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-laser-weapons-kit-wolf-equipment",
+        "claim": "The Kruger Laser Weapons Kit equips the L-21 Wolf with two S4 Kruger Axiom L-22 laser repeaters.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Laser-Weapons-Kit-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-s65-stingray-medium-fighter-transform",
+        "claim": "The Kruger S-65 Stingray is a medium fighter with seamless transforming flight modes",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/S-65-Stingray",
+          "https://robertsspaceindustries.com/pledge/Packs/Kruger-Combat-Ship-Pack-Warbond",
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/S-65-Stingray-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-snub-laser-weapons-kit-4-usd",
+        "claim": "The Kruger Snub Laser Weapons Kit warbond add-on costs 4 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Snub-Laser-Weapons-Kit-Warbond"
+        ]
+      },
+      {
+        "id": "kruger-snub-laser-weapons-kit-merlin-equipment",
+        "claim": "The Kruger Snub Laser Weapons Kit equips the P-52 Merlin with an S2 Whiptail STR-E2 laser repeater weapon.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Add-Ons/Kruger-Snub-Laser-Weapons-Kit-Warbond"
+        ]
+      },
+      {
+        "id": "loaner-requires-game-package",
+        "claim": "A valid game package is required for loaner ships to be granted to an account.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
+        ]
+      },
+      {
         "id": "loaner-vessels-do-not-stack",
         "claim": "Loaner vessels do not stack — if a player owns multiple parent ships that grant the same secondary craft, they receive only one copy of that vessel, not one per parent.",
         "status": "verified",
         "sources": [
-          "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers"
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
+        ]
+      },
+      {
+        "id": "loaners-not-permanent-except-included-vessels",
+        "claim": "Loaner ships are temporary — once a pledged ship becomes Flight Ready, the loaner is replaced by the purchased ship in your fleet. Only included vessels (snub fighters, rovers) designated as permanent are exceptions.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
         ]
       },
       {
@@ -472,6 +675,30 @@
         "sources": [
           "https://robertsspaceindustries.com/en/faq/Insurance-FAQ",
           "https://robertsspaceindustries.com/en/comm-link/transmission/12820-Insurance-FAQ-And-Update"
+        ]
+      },
+      {
+        "id": "org-create-requires-not-member",
+        "claim": "To create an organization, a player must not be a member of any organization",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+        ]
+      },
+      {
+        "id": "org-join-limit-10",
+        "claim": "Players can be members of up to 10 organizations simultaneously",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
+        ]
+      },
+      {
+        "id": "org-spectrum-id-immutable",
+        "claim": "Organization Spectrum ID (SID) cannot be changed once set",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
         ]
       },
       {
@@ -498,6 +725,22 @@
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
+        ]
+      },
+      {
+        "id": "rsi-support-cannot-swap-loaners",
+        "claim": "RSI Support cannot swap or change loaner ships by player request — loaner assignments are determined by the Loaner Ship Matrix based on owned pledges.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
+        ]
+      },
+      {
+        "id": "s65-stingray-standalone-pledge-175-usd",
+        "claim": "The Kruger S-65 Stingray standalone pledge costs 175 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/S-65-Stingray"
         ]
       },
       {
@@ -655,12 +898,13 @@
       },
       {
         "id": "event-foundation-festival-2026",
-        "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
+        "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly (RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader Intrepid, RSI Salvation) and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
           "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus",
-          "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026"
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360037529633-Welcome-to-the-Star-Citizen-Free-Fly-Event"
         ]
       },
       {
@@ -675,11 +919,43 @@
     ],
     "/glossary": [
       {
+        "id": "carrack-2year-pledge-600-usd",
+        "claim": "The Anvil Carrack 2-Year standalone pledge costs $600 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Carrack-2-Year"
+        ]
+      },
+      {
         "id": "event-defensecon-2956",
         "claim": "DefenseCon 2956 ran as a Free Fly event 14–27 May 2026 (UTC).",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About"
+        ]
+      },
+      {
+        "id": "hermes-medium-hauler-classification",
+        "claim": "The RSI Hermes is a medium cargo hauler built for high capacity, high speed, and high defense — not a passenger transport or ferry.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Hermes-2-Year"
+        ]
+      },
+      {
+        "id": "mole-standalone-pledge-315-usd",
+        "claim": "The ARGO Mole standalone pledge with 2-Year insurance costs $315 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Mole-2-Year"
+        ]
+      },
+      {
+        "id": "railen-2year-pledge-400-usd",
+        "claim": "The Gatac Railen 2-Year standalone pledge costs $400 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Railen-2-Year"
         ]
       },
       {
@@ -689,15 +965,49 @@
         "sources": [
           "https://robertsspaceindustries.com/en/referral-program"
         ]
+      },
+      {
+        "id": "shiv-2year-pledge-150-usd",
+        "claim": "The Shiv 2-Year standalone pledge costs $150 USD.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Shiv-2-Year"
+        ]
       }
     ],
     "/llms": [
       {
         "id": "quantum-travel-sequence",
-        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      }
+    ],
+    "/party-management": [
+      {
+        "id": "event-foundation-festival-2026",
+        "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly (RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader Intrepid, RSI Salvation) and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360037529633-Welcome-to-the-Star-Citizen-Free-Fly-Event"
+        ]
+      }
+    ],
+    "/quantum-travel": [
+      {
+        "id": "event-foundation-festival-2026",
+        "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly (RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader Intrepid, RSI Salvation) and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360037529633-Welcome-to-the-Star-Citizen-Free-Fly-Event"
         ]
       }
     ],
@@ -713,7 +1023,7 @@
       },
       {
         "id": "quantum-travel-sequence",
-        "claim": "In current Star Citizen (Alpha 4.9), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+        "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
