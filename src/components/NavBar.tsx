@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from '@/lib/site'
-import CTAButton, { getCtaVariant } from './CTAButton'
+import CTAButton from './CTAButton'
 import FreeFlyBanner from './FreeFlyBanner'
 import StarterPackBanner from './StarterPackBanner'
 
@@ -13,14 +13,11 @@ export default function NavBar() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  // Styling A/B (2026-07-20): copy is identical on both arms; variant b adds
-  // the pulse treatment. The earlier copy test ended inconclusive at 0.1% CTR.
-  const [ctaStyle, setCtaStyle] = useState<'a' | 'b'>('a')
-
-  useEffect(() => {
-    setCtaStyle(getCtaVariant())
-  }, [])
-
+  // Styling A/B (2026-07-20 -> 2026-09-16) DECIDED: NULL RESULT. The pulse
+  // treatment made no difference — 0.229% CTR (9/3933) with pulse vs 0.251%
+  // (11/4384) without, p=0.84 over 8,317 impressions, CIs fully overlapping.
+  // Shipped the plain arm and removed the pulse; a styling tweak that cannot
+  // be detected at this traffic volume is not worth the code path.
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
     onScroll()
@@ -86,8 +83,6 @@ export default function NavBar() {
               size="sm"
               href="/referral-code"
               trackingLabel="nav-cta"
-              variants={{ a: 'Get 50K UEC', b: 'Get 50K UEC' }}
-              className={ctaStyle === 'b' ? 'nav-cta-pulse' : ''}
             />
           </li>
         </ul>
