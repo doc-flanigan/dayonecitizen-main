@@ -1174,6 +1174,28 @@
       "lastVerified": "2026-08-27"
     },
     {
+      "id": "sabre-raven-ex-hybrid-design",
+      "claim": "The Aegis Sabre Raven EX combines the firepower of the Sabre space superiority fighter with the stealth profile of the Raven.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX-Warbond",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX",
+        "https://robertsspaceindustries.com/comm-link/transmission/21332-Aegis-Sabre-Raven-EX"
+      ],
+      "lastVerified": "2026-09-16"
+    },
+    {
+      "id": "sabre-raven-ex-quantum-dampener",
+      "claim": "The Aegis Sabre Raven EX features a quantum dampener system that isolates enemies from their allies in combat.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX-Warbond",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX",
+        "https://robertsspaceindustries.com/comm-link/transmission/21332-Aegis-Sabre-Raven-EX"
+      ],
+      "lastVerified": "2026-09-16"
+    },
+    {
       "id": "salvager-starter-pack-75-usd-salvation",
       "claim": "The Salvager Starter Pack ($75 USD) is a game package that includes the RSI Salvation as the starter ship and full game access.",
       "status": "verified",
