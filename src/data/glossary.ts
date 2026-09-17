@@ -627,7 +627,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aegis space superiority fighter — fast, stealthy, and capable. Trades some durability for better speed compared to the Hornet. Great for pilots who prefer finesse over brute force.",
-    also: 'Sabre Comet, Sabre Firebird, Sabre Raven, Sabre Peregrine',
+    also: 'Sabre Comet, Sabre Firebird, Sabre Raven EX, Sabre Peregrine',
   },
 
   // ─────────────── Ships — Anvil Aerospace ───────────────
