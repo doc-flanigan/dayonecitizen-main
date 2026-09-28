@@ -57,21 +57,21 @@ const howToJsonLd = {
   '@type': 'HowTo',
   name: 'How to use a Star Citizen referral code',
   description:
-    'Five steps from opening the referral link to seeing the 50,000 UEC bonus on your account.',
+    'Six steps from opening the referral link to launching the game, with the 50,000 UEC bonus tied to your account.',
   step: [
     {
       '@type': 'HowToStep',
       position: 1,
       name: 'Open the link',
-      text: 'Open the referral link. The Star Citizen referral code STAR-GCQJ-N6NC fills in automatically.',
+      text: 'Open the referral link. The Star Citizen referral code STAR-GCQJ-N6NC fills in automatically and the page shows "Referral code successfully applied!"',
       image: `${SITE.url}/images/referral/rsi-referral-panel-applied-2026-09.jpg`,
     },
     {
       '@type': 'HowToStep',
       position: 2,
-      name: 'Fill in your account details',
-      text: 'Enter your account name, email, password, and date of birth. Check that the referral panel shows "Referral code successfully applied!"',
-      image: `${SITE.url}/images/referral/rsi-enlist-referral-applied-2026-09.jpg`,
+      name: 'Fill in your details and enlist',
+      text: 'Enter your account name, email, password, and date of birth, accept the Terms of Service, and press Enlist Now. The referral panel should still show the code applied.',
+      image: `${SITE.url}/images/referral/rsi-signup-referral-code-field.jpg`,
     },
     {
       '@type': 'HowToStep',
@@ -82,14 +82,23 @@ const howToJsonLd = {
     {
       '@type': 'HowToStep',
       position: 4,
-      name: 'Choose a game package, or wait for a Free Fly',
-      text: 'Buy a game package to start playing right away, or wait for a Free Fly event, when anyone can try the game for free.',
+      name: 'Add a game package to your cart',
+      text: 'Pick a game package, such as the Citizen Starter Pack, and press Checkout. Or wait for a Free Fly event, when anyone can play for free.',
+      image: `${SITE.url}/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg`,
     },
     {
       '@type': 'HowToStep',
       position: 5,
-      name: 'See your UEC on your account',
-      text: 'Check your RSI account or the pledge store wallet — the 50,000 UEC referral bonus shows up on your balance.',
+      name: 'Check out',
+      text: 'Add your billing address and press Proceed to Pay.',
+      image: `${SITE.url}/images/referral/rsi-checkout-billing-proceed-to-pay.jpg`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 6,
+      name: 'Download the RSI Launcher and play',
+      text: 'Install the RSI Launcher, sign in, and launch the game. The 50,000 UEC referral bonus is tied to your account.',
+      image: `${SITE.url}/images/launcher/rsi-launcher-home-launch-ready.jpg`,
     },
   ],
 }
@@ -283,22 +292,24 @@ export default function ReferralCodePage() {
               <div>
                 <p>
                   <strong className="text-starwhite">
-                    2. Fill in your account details.
+                    2. Fill in your details and press Enlist Now.
                   </strong>{' '}
                   Enter your account name, email, password, and date of birth.
-                  Before you submit, check that the referral panel still reads
-                  &ldquo;Referral code successfully applied!&rdquo;
+                  Tick the box to accept the terms. Before you press{' '}
+                  <strong className="text-starwhite">Enlist Now</strong>, check
+                  that the referral panel still reads &ldquo;Referral code
+                  successfully applied!&rdquo;
                 </p>
                 <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
                   <Image
-                    src="/images/referral/rsi-enlist-referral-applied-2026-09.jpg"
-                    alt="The full RSI enlist sign-up page with Account Name, Email, Password, and Date of Birth fields, and the referral panel at the bottom confirming the code applied"
-                    width={1148}
-                    height={1038}
+                    src="/images/referral/rsi-signup-referral-code-field.jpg"
+                    alt="A completed RSI sign-up form with a red arrow and dashed box on the referral panel showing code STAR-GCQJ-N6NC and 'Referral code successfully applied!', next to the Enlist Now button"
+                    width={1200}
+                    height={1069}
                     className="h-auto w-full"
                   />
                   <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                    The full RSI enlist page opened through our link, code already applied.
+                    A filled-in sign-up form. The referral panel on the left confirms the code.
                   </figcaption>
                 </figure>
               </div>
@@ -318,38 +329,75 @@ export default function ReferralCodePage() {
               <div>
                 <p>
                   <strong className="text-starwhite">
-                    4. Choose a game package, or wait for a Free Fly.
+                    4. Add a game package to your cart.
                   </strong>{' '}
-                  A free account lets you browse and hold the bonus, but you
-                  need a game package to actually play Star Citizen. The
-                  cheapest option, the Citizen Starter Pack, was on sale for
-                  $45 (25% off its $60 list price, as of September 2026). Or
-                  wait for a{' '}
-                  <Term name="Free Fly">Free Fly</Term> — a limited window
-                  when anyone can play free. The next one is expected around{' '}
+                  A free account holds the bonus, but you need a game package
+                  to actually play Star Citizen. The cheapest option, the
+                  Citizen Starter Pack, was on sale for $45 (25% off its $60
+                  list price, as of September 2026). Press{' '}
+                  <strong className="text-starwhite">Checkout</strong>. Not ready
+                  to buy? Wait for a{' '}
+                  <Term name="Free Fly">Free Fly</Term> — a limited window when
+                  anyone can play free. The next one is expected around{' '}
                   <Term name="IAE">IAE</Term> in late November, following
-                  CIG&rsquo;s usual pattern, though it has not been announced
-                  yet.
+                  CIG&rsquo;s usual pattern. It has not been announced yet.
                 </p>
-                <ShotPlaceholder
-                  file="04-choose-package-or-free-fly.jpg"
-                  caption="The RSI pledge store package picker, or the Free Fly signup banner during an event"
-                />
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg"
+                    alt="RSI store pop-up: 'Item successfully added to your cart!' showing the Citizen Starter Pack at $45.00 USD, crossed out from $60.00, with the Checkout button outlined in red"
+                    width={952}
+                    height={468}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    The Citizen Starter Pack in the cart, on sale for $45.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div>
+                <p>
+                  <strong className="text-starwhite">5. Check out.</strong>{' '}
+                  Add your billing address, then press{' '}
+                  <strong className="text-starwhite">Proceed to Pay</strong>.
+                  Sales tax may be added to the total.
+                </p>
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/referral/rsi-checkout-billing-proceed-to-pay.jpg"
+                    alt="RSI checkout, step 2 Address: red arrows from 'Add a new address' to the saved billing address card and on to the Proceed to Pay button"
+                    width={1200}
+                    height={819}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    Checkout: pick or add a billing address, then Proceed to Pay.
+                  </figcaption>
+                </figure>
               </div>
 
               <div>
                 <p>
                   <strong className="text-starwhite">
-                    5. See your UEC on your account.
+                    6. Download the RSI Launcher and play.
                   </strong>{' '}
-                  Check your RSI account or the pledge store wallet. The
-                  50,000 UEC referral bonus shows up on your balance and stays
-                  there permanently.
+                  Install the RSI Launcher, sign in with your new account, and
+                  press Launch Game. Your 50,000 UEC referral bonus is tied to
+                  your account.
                 </p>
-                <ShotPlaceholder
-                  file="05-uec-on-account.jpg"
-                  caption="The RSI account dashboard or wallet showing the UEC balance, including the referral bonus"
-                />
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/launcher/rsi-launcher-home-launch-ready.jpg"
+                    alt="The RSI Launcher home screen with Star Citizen installed and ready to launch"
+                    width={1051}
+                    height={768}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    The RSI Launcher, ready to launch the game.
+                  </figcaption>
+                </figure>
               </div>
 
               <p className="text-sm">

@@ -2,7 +2,7 @@
   "guide": "referral",
   "targetDir": "public/images/referral",
   "inbox": "inbox/referral",
-  "note": "Screenshots for the /referral-code walkthrough. Sources: WEB = RSI enlist/pledge/account pages. Steps 1-2 captured 2026-09-28 (Doc's own real signup flow). Steps 3-5 need a fresh account to capture without disrupting a real signup — batch them next time Doc (or a test persona) actually creates one.",
+  "note": "Screenshots for the /referral-code walkthrough. Steps 1,2,4,5,6 captured (2 fresh 2026-09-28 captures + annotated set reused from starcitizenhelp.com getting-started). Still needed: step 3 confirm-email shot; optional UEC-balance proof shot.",
   "shots": [
     {
       "filename": "rsi-referral-panel-applied-2026-09.jpg",
@@ -14,21 +14,12 @@
       "captured": true
     },
     {
-      "filename": "rsi-enlist-referral-applied-2026-09.jpg",
-      "page": "referral-code",
-      "step": "Step 2 — fill in your account details, confirm the referral panel",
-      "source": "WEB",
-      "mustShow": "Full RSI enlist/sign-up page opened via our referral link: Account Name, Email, Password, Date of Birth fields and Google/Twitch sign-up buttons, with the referral panel at the bottom showing 'Referral code successfully applied!'",
-      "annotate": "none",
-      "captured": true
-    },
-    {
       "filename": "rsi-signup-referral-code-field.jpg",
       "page": "referral-code",
-      "step": "Legacy close-up of the Referral Code field — superseded by the 2026-09 shots above but still reused on /day-one-citizen/buying-the-game and /beyond-the-basics/redeem-codes",
+      "step": "Step 2 - fill in your details and press Enlist Now (annotated: red arrow + dashed box on the referral panel)",
       "source": "WEB",
       "mustShow": "RSI signup form Referral Code field highlighted, code STAR-GCQJ-N6NC applied",
-      "annotate": "n/a",
+      "annotate": "red arrow from the 50,000 UEC line to a dashed box around the applied code",
       "captured": true
     },
     {
@@ -41,21 +32,39 @@
       "captured": false
     },
     {
-      "filename": "04-choose-package-or-free-fly.jpg",
+      "filename": "../guides/getting-started-add-to-cart-citizen-starter-pack.jpg",
       "page": "referral-code",
-      "step": "Step 4 — choose a game package, or wait for a Free Fly",
+      "step": "Step 4 - add a game package to your cart",
       "source": "WEB",
-      "mustShow": "The RSI pledge store package picker (e.g. the Citizen Starter Pack page) — or, during an event window, the Free Fly signup banner",
+      "mustShow": "'Item successfully added to your cart!' - Citizen Starter Pack $45.00 (was $60.00), Checkout outlined",
+      "annotate": "dashed box on Checkout",
+      "captured": true
+    },
+    {
+      "filename": "rsi-checkout-billing-proceed-to-pay.jpg",
+      "page": "referral-code",
+      "step": "Step 5 - check out",
+      "source": "WEB",
+      "mustShow": "RSI checkout step 2 Address - billing card and Proceed to Pay",
+      "annotate": "red arrows + dashed boxes (reused from starcitizenhelp.com getting-started)",
+      "captured": true
+    },
+    {
+      "filename": "../launcher/rsi-launcher-home-launch-ready.jpg",
+      "page": "referral-code",
+      "step": "Step 6 - download the RSI Launcher and play",
+      "source": "LAUNCHER",
+      "mustShow": "RSI Launcher home, game installed and ready to launch",
       "annotate": "none",
-      "captured": false
+      "captured": true
     },
     {
       "filename": "05-uec-on-account.jpg",
       "page": "referral-code",
-      "step": "Step 5 — see your UEC on your account",
+      "step": "Optional - proof shot for step 6: the RSI account page showing the 50,000 UEC referral bonus on the balance",
       "source": "WEB",
-      "mustShow": "The RSI account dashboard or pledge-store wallet showing the account's UEC balance, including the 50,000 referral bonus",
-      "annotate": "circle the UEC balance",
+      "mustShow": "RSI account summary / wallet with the UEC balance visible (blur the handle if it is a real account)",
+      "annotate": "red box around the UEC balance",
       "captured": false
     }
   ]
