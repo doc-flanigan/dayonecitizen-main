@@ -97,7 +97,8 @@ export default function FreeFlyPage() {
                 <h2 className="heading-display text-xl">What it costs</h2>
                 <p className="mt-3 text-sm leading-relaxed text-starwhite/85">
                   Nothing. If you decide to keep playing after the event, the
-                  cheapest game package is around $45 USD. Use a{' '}
+                  cheapest game package is $45 on sale ($60 list price, as of
+                  September 2026). Use a{' '}
                   <Term name="Referral Code">referral code</Term> on signup
                   for 50,000 <Term name="UEC">UEC</Term> free.
                 </p>
