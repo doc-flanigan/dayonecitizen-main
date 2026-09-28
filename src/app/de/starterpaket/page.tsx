@@ -12,7 +12,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Starterpaket: Aurora oder Mustang? (2026)',
   description:
-    'Für die meisten neuen Spieler: das Citizen Starter Pack für 45 US-Dollar mit der Aurora Mk II. Warum das reicht — und wie der CCU-Upgrade-Pfad funktioniert.',
+    'Für die meisten neuen Spieler: das Citizen Starter Pack für 60 US-Dollar mit der Aurora Mk II. Warum das reicht — und wie der CCU-Upgrade-Pfad funktioniert.',
   alternates: {
     canonical: '/de/starterpaket',
     languages: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Welches Star Citizen Starterpaket? Aurora oder Mustang (2026)',
     description:
-      'Die klare Empfehlung: das 45-US-Dollar-Starterpaket mit der Aurora Mk II. Klein anfangen ist nie ein Fehler — dank CCU-Upgrades.',
+      'Die klare Empfehlung: das 60-US-Dollar-Starterpaket mit der Aurora Mk II. Klein anfangen ist nie ein Fehler — dank CCU-Upgrades.',
     url: '/de/starterpaket',
     type: 'article',
     locale: 'de_DE',
@@ -43,7 +43,7 @@ const faqJsonLd = {
       name: 'Welches Star Citizen Starterpaket ist das beste?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Für die meisten neuen Spieler: das Citizen Starter Pack für 45 US-Dollar. Es ist der günstigste Einstieg und enthält die Aurora Mk II mit lebenslanger Versicherung, ein Rüstungsset mit Waffe und 10.000 aUEC Startgeld. Später kannst du per CCU günstig auf ein größeres Schiff aufrüsten.',
+        text: 'Für die meisten neuen Spieler: das Citizen Starter Pack für 60 US-Dollar. Es ist der günstigste Einstieg und enthält die Aurora Mk II mit lebenslanger Versicherung, ein Rüstungsset mit Waffe und 10.000 aUEC Startgeld. Später kannst du per CCU günstig auf ein größeres Schiff aufrüsten.',
       },
     },
     {
@@ -78,7 +78,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Welches Star Citizen Starterpaket? Aurora oder Mustang (2026)',
   description:
-    'Die klare Empfehlung für neue Spieler: das Citizen Starter Pack für 45 US-Dollar mit der Aurora Mk II — plus der CCU-Upgrade-Pfad erklärt.',
+    'Die klare Empfehlung für neue Spieler: das Citizen Starter Pack für 60 US-Dollar mit der Aurora Mk II — plus der CCU-Upgrade-Pfad erklärt.',
   inLanguage: 'de',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
@@ -113,7 +113,7 @@ export default function StarterpaketPage() {
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">
                 Die klare Empfehlung für die meisten neuen Spieler: das Citizen
-                Starter Pack für 45 US-Dollar mit der Aurora Mk II.
+                Starter Pack für 60 US-Dollar mit der Aurora Mk II.
               </strong>{' '}
               Es ist der günstigste Einstieg — und dank CCU-Upgrades verlierst
               du nichts, wenn du klein anfängst.
@@ -146,8 +146,8 @@ export default function StarterpaketPage() {
                 Wenn du noch nicht weißt, was du im Verse machen willst — und
                 das weiß am Anfang niemand — nimm das günstigste Paket. Das
                 Citizen Starter Pack für{' '}
-                <strong className="text-starwhite">45 US-Dollar</strong> (rund
-                48 bis 50 Euro inklusive Mehrwertsteuer) enthält:
+                <strong className="text-starwhite">60 US-Dollar</strong> (rund
+                64 bis 67 Euro inklusive Mehrwertsteuer) enthält:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Vollen Zugang zur laufenden Star-Citizen-Alpha</li>
@@ -196,7 +196,7 @@ export default function StarterpaketPage() {
                   schneller und spaßiger zu fliegen, transportiert aber fast
                   nichts. Sie taucht heute vor allem in älteren und
                   gelegentlichen Aktionspaketen auf; das reguläre
-                  45-US-Dollar-Paket kommt mit der Aurora.
+                  60-US-Dollar-Paket kommt mit der Aurora.
                 </li>
               </ul>
               <div className="grid gap-4 sm:grid-cols-2">
@@ -274,7 +274,7 @@ export default function StarterpaketPage() {
                 </li>
               </ul>
               <p>
-                Deshalb die einfache Regel: Starte mit 45 US-Dollar, lerne das
+                Deshalb die einfache Regel: Starte mit 60 US-Dollar, lerne das
                 Spiel, entscheide später. Der umgekehrte Weg — teuer einsteigen
                 und feststellen, dass dir das Schiff nicht liegt — ist der
                 teurere Fehler.
@@ -326,7 +326,7 @@ export default function StarterpaketPage() {
                   Welches Starterpaket ist das beste?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Für die meisten neuen Spieler das Citizen Starter Pack für 45
+                  Für die meisten neuen Spieler das Citizen Starter Pack für 60
                   US-Dollar — der günstigste Einstieg, mit der Aurora Mk II,
                   lebenslanger Versicherung, Rüstungsset und 10.000 aUEC.
                   Später kannst du per CCU günstig aufrüsten.

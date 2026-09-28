@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16",
+  "generated": "2026-09-28",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -146,7 +146,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "citizencon-2026-not-held",
@@ -449,7 +449,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Generalist-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "guide-system-category-limit",
@@ -485,7 +485,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Hauler-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "hermes-2year-pledge-220-usd",
@@ -831,7 +831,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Miner-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "misc-raptor-not-real-ship",
@@ -892,7 +892,7 @@
         "https://robertsspaceindustries.com/en/referral-program",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ"
       ],
-      "lastVerified": "2026-07-11"
+      "lastVerified": "2026-09-21"
     },
     {
       "id": "no-official-vr-support",
@@ -1144,7 +1144,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ"
       ],
-      "lastVerified": "2026-07-07"
+      "lastVerified": "2026-09-21"
     },
     {
       "id": "rsi-support-cannot-swap-loaners",
@@ -1174,13 +1174,44 @@
       "lastVerified": "2026-08-27"
     },
     {
+      "id": "sabre-collection-warbond-pack",
+      "claim": "The Sabre Collection Warbond pack ($775 USD) includes five Sabre variants: the base rapid-response fighter, Comet (dog-fighting), Raven EX (target-disabling), Firebird (missile-focused), and Peregrine (racing).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packs/Sabre-Collection-Warbond"
+      ],
+      "lastVerified": "2026-09-17"
+    },
+    {
+      "id": "sabre-raven-ex-hybrid-design",
+      "claim": "The Aegis Sabre Raven EX combines the firepower of the Sabre space superiority fighter with the stealth profile of the Raven.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX-Warbond",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX",
+        "https://robertsspaceindustries.com/comm-link/transmission/21332-Aegis-Sabre-Raven-EX"
+      ],
+      "lastVerified": "2026-09-16"
+    },
+    {
+      "id": "sabre-raven-ex-quantum-dampener",
+      "claim": "The Aegis Sabre Raven EX features a quantum dampener system that isolates enemies from their allies in combat.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX-Warbond",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX",
+        "https://robertsspaceindustries.com/comm-link/transmission/21332-Aegis-Sabre-Raven-EX"
+      ],
+      "lastVerified": "2026-09-16"
+    },
+    {
       "id": "salvager-starter-pack-75-usd-salvation",
       "claim": "The Salvager Starter Pack ($75 USD) is a game package that includes the RSI Salvation as the starter ship and full game access.",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Salvager-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "sc-1-0-no-official-release-date",
@@ -1218,7 +1249,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-09-23"
     },
     {
       "id": "sc-pc-only-rsi-launcher",
@@ -1228,7 +1259,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements",
         "https://robertsspaceindustries.com/download"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-09-23"
     },
     {
       "id": "sc-player-count-no-official",
@@ -1646,11 +1677,12 @@
     {
       "id": "starter-package-from-45-usd",
       "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
-      "status": "verified",
+      "status": "refuted",
+      "correction": "The cheapest current Star Citizen game packages are $60 USD (Citizen Starter Pack with the RSI Aurora Mk II, and Generalist Starter Pack with the Drake Cutter); no subscription is required to play. Other starter packs run higher (Miner and Salvager $75, Hauler $80). Prices are sometimes discounted during sales (e.g. Anniversary), but the regular entry price is $60, not $45.",
       "sources": [
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "three-systems-live-stanton-pyro-nyx",

@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen Ships — Real Money Optional',
   description:
-    'No — one $45 game package is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC. Here is how that works.',
+    'No — one $60 game package is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC. Here is how that works.',
   alternates: {
     canonical: '/day-one-citizen/ships-real-money',
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
     description:
-      'No. One $45 package is the only required purchase — every other ship can be rented or bought in-game with earned aUEC. The honest breakdown.',
+      'No. One $60 package is the only required purchase — every other ship can be rented or bought in-game with earned aUEC. The honest breakdown.',
     url: '/day-one-citizen/ships-real-money',
     type: 'article',
   },
@@ -43,7 +43,7 @@ const faqJsonLd = {
       name: 'Do you have to buy ships with real money in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. One $45 game package is the only purchase Star Citizen ever requires. It includes a starter ship, and every other ship in the game can be rented or bought with aUEC — the in-game money you earn by playing.',
+        text: 'No. One $60 game package is the only purchase Star Citizen ever requires. It includes a starter ship, and every other ship in the game can be rented or bought with aUEC — the in-game money you earn by playing.',
       },
     },
     {
@@ -78,7 +78,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
   description:
-    'No — one $45 game package is the only required purchase. Every other ship can be earned in-game with aUEC.',
+    'No — one $60 game package is the only required purchase. Every other ship can be earned in-game with aUEC.',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/ships-real-money`,
@@ -145,7 +145,7 @@ export default function ShipsRealMoneyPage() {
             <h2 className="heading-display text-2xl sm:text-3xl">The short answer</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                <strong className="text-starwhite">No. One $45 game package is the
+                <strong className="text-starwhite">No. One $60 game package is the
                 only purchase Star Citizen ever requires. Every other ship in the
                 game can be earned by playing, using{' '}
                 <Term name="aUEC">aUEC</Term> — the in-game money.</strong>
@@ -160,10 +160,10 @@ export default function ShipsRealMoneyPage() {
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">What the $45 gets you</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">What the $60 gets you</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                The $45 Citizen Starter Pack is the cheapest{' '}
+                The $60 Citizen Starter Pack is the cheapest{' '}
                 <Term name="Game Package">game package</Term>, and it is a complete
                 way to play:
               </p>
@@ -261,7 +261,7 @@ export default function ShipsRealMoneyPage() {
                 </li>
               </ul>
               <p>
-                A sensible path for a new player: buy the $45 package, play for a few
+                A sensible path for a new player: buy the $60 package, play for a few
                 weeks, and let aUEC pay for everything else. If you later decide to
                 support development with a bigger pledge, do it because you love the
                 game — not because you think you have to.
@@ -297,7 +297,7 @@ export default function ShipsRealMoneyPage() {
                   Do you have to buy ships with real money?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  No. One $45 game package is the only purchase Star Citizen
+                  No. One $60 game package is the only purchase Star Citizen
                   ever requires. It includes a starter ship, and every other
                   ship in the game can be rented or bought with aUEC — the
                   in-game money you earn by playing.

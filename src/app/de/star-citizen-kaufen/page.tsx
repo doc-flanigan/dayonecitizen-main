@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen kaufen 2026 — Preis & Tipps',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar, keine Keys, kein Steam. So kaufst du es Schritt für Schritt.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 60 US-Dollar, keine Keys, kein Steam. So kaufst du es Schritt für Schritt.',
   alternates: {
     canonical: '/de/star-citizen-kaufen',
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
     description:
-      'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar. Keine Keys, kein Steam. Die deutsche Schritt-für-Schritt-Anleitung.',
+      'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 60 US-Dollar. Keine Keys, kein Steam. Die deutsche Schritt-für-Schritt-Anleitung.',
     url: '/de/star-citizen-kaufen',
     type: 'article',
     locale: 'de_DE',
@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: 'Was kostet Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das günstigste Starterpaket ist das Citizen Starter Pack für 45 US-Dollar. RSI rechnet in US-Dollar ab; die deutsche Mehrwertsteuer kommt an der Kasse dazu — je nach Wechselkurs landest du bei rund 48 bis 50 Euro. Es ist ein Einmalkauf ohne Abo.',
+        text: 'Das günstigste Starterpaket ist das Citizen Starter Pack für 60 US-Dollar. RSI rechnet in US-Dollar ab; die deutsche Mehrwertsteuer kommt an der Kasse dazu — je nach Wechselkurs landest du bei rund 64 bis 67 Euro. Es ist ein Einmalkauf ohne Abo.',
       },
     },
     {
@@ -68,7 +68,7 @@ const faqJsonLd = {
       name: 'Was ist im Starterpaket enthalten?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das Citizen Starter Pack für 45 US-Dollar enthält den Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit lebenslanger Versicherung, ein Rüstungsset mit Waffe und 10.000 aUEC Startgeld.',
+        text: 'Das Citizen Starter Pack für 60 US-Dollar enthält den Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit lebenslanger Versicherung, ein Rüstungsset mit Waffe und 10.000 aUEC Startgeld.',
       },
     },
     {
@@ -87,7 +87,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar. Keine Keys, kein Steam.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 60 US-Dollar. Keine Keys, kein Steam.',
   inLanguage: 'de',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
@@ -123,7 +123,7 @@ export default function StarCitizenKaufenPage() {
               <strong className="text-starwhite">
                 Star Citizen kaufst du nur an einer einzigen Stelle: direkt bei
                 robertsspaceindustries.com, dem offiziellen Shop. Das günstigste
-                Starterpaket kostet 45 US-Dollar. Es gibt keine Keys — auch
+                Starterpaket kostet 60 US-Dollar. Es gibt keine Keys — auch
                 nicht bei Key-Shops.
               </strong>
             </p>
@@ -193,7 +193,7 @@ export default function StarCitizenKaufenPage() {
               <p>
                 Der günstigste Einstieg ist das{' '}
                 <strong className="text-starwhite">
-                  Citizen Starter Pack für 45 US-Dollar
+                  Citizen Starter Pack für 60 US-Dollar
                 </strong>
                 . Darin steckt alles, was du zum Spielen brauchst:
               </p>
@@ -240,10 +240,10 @@ export default function StarCitizenKaufenPage() {
                 Mehrwertsteuer auf den Netto-Preis dazu.
               </p>
               <p>
-                Aus dem 45-US-Dollar-Starterpaket werden so — je nach aktuellem
+                Aus dem 60-US-Dollar-Starterpaket werden so — je nach aktuellem
                 Wechselkurs deiner Bank —{' '}
                 <strong className="text-starwhite">
-                  rund 48 bis 50 Euro inklusive Mehrwertsteuer
+                  rund 64 bis 67 Euro inklusive Mehrwertsteuer
                 </strong>
                 . Der genaue Euro-Betrag steht erst auf deiner Abrechnung fest.
               </p>
@@ -291,7 +291,7 @@ export default function StarCitizenKaufenPage() {
                 </li>
                 <li>
                   <strong className="text-starwhite">Paket wählen.</strong>{' '}
-                  Für die meisten Neulinge: das Citizen Starter Pack für 45
+                  Für die meisten Neulinge: das Citizen Starter Pack für 60
                   US-Dollar mit der Aurora Mk II.
                 </li>
                 <li>
@@ -385,9 +385,9 @@ export default function StarCitizenKaufenPage() {
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Das günstigste Starterpaket ist das Citizen Starter Pack für
-                  45 US-Dollar. RSI rechnet in US-Dollar ab; die deutsche
+                  60 US-Dollar. RSI rechnet in US-Dollar ab; die deutsche
                   Mehrwertsteuer kommt an der Kasse dazu — je nach Wechselkurs
-                  rund 48 bis 50 Euro. Einmalkauf, kein Abo.
+                  rund 64 bis 67 Euro. Einmalkauf, kein Abo.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

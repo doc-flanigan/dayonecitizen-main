@@ -12,7 +12,7 @@ import PageSources from '@/components/PageSources'
 export const metadata: Metadata = {
   title: 'Star Citizen Starter Packages 2026 Compared',
   description:
-    'Which Star Citizen starter package should you buy? All seven packages compared — $45 Citizen Starter to $125 Privateer.',
+    'Which Star Citizen starter package should you buy? All seven packages compared — $60 Citizen Starter to $125 Privateer.',
   alternates: {
     canonical: '/day-one-citizen/starter-package',
     languages: {
@@ -42,7 +42,7 @@ const faqJsonLd = {
       name: 'What is the best starter package in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For most new players: the Citizen Starter Pack at $45. It is the cheapest way into the game and comes with the Aurora Mk II — a forgiving starter ship with Lifetime Insurance — plus a full armor set, an undersuit, and a weapon. Learn the game first, then upgrade later via a CCU for the price difference.',
+        text: 'For most new players: the Citizen Starter Pack at $60. It is the cheapest way into the game and comes with the Aurora Mk II — a forgiving starter ship with Lifetime Insurance — plus a full armor set, an undersuit, and a weapon. Learn the game first, then upgrade later via a CCU for the price difference.',
       },
     },
     {
@@ -50,7 +50,7 @@ const faqJsonLd = {
       name: 'How much is a Star Citizen starter package?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Starter game packages begin at $45, and there are seven packages under $125, each built around a different career ship. During sale events some carry a Warbond price — a steeper discount available only when paying with new money rather than store credit.',
+        text: 'Starter game packages begin at $60, and there are seven packages under $125, each built around a different career ship. During sale events some carry a Warbond price — a steeper discount available only when paying with new money rather than store credit.',
       },
     },
     {
@@ -122,7 +122,7 @@ export default function StarterPackagePage() {
           <section>
             <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">Not sure what you want to do
-              yet? Get the Citizen Starter Pack at $45.</strong>{' '}
+              yet? Get the Citizen Starter Pack at $60.</strong>{' '}
               It is the cheapest way in, with the{' '}
               <Term name="Aurora">Aurora Mk II</Term> and{' '}
               <Term name="LTI">Lifetime Insurance</Term>. The full comparison
@@ -165,7 +165,7 @@ export default function StarterPackagePage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 <strong className="text-starwhite">
-                  If you are not sure what you want to do yet: get the Citizen Starter Pack at $45.
+                  If you are not sure what you want to do yet: get the Citizen Starter Pack at $60.
                 </strong>
               </p>
               <p>
@@ -213,7 +213,7 @@ export default function StarterPackagePage() {
                     <td className="px-4 py-3 text-starwhite/80">
                       <Term name="Aurora">Aurora Mk II</Term>
                     </td>
-                    <td className="px-4 py-3 text-starwhite/80">$45</td>
+                    <td className="px-4 py-3 text-starwhite/80">$60</td>
                     <td className="px-4 py-3 text-starwhite/80">
                       <Term name="LTI">Lifetime</Term>
                     </td>
@@ -416,7 +416,7 @@ export default function StarterPackagePage() {
                   <tr>
                     <td className="px-4 py-3 font-semibold text-gold">I have no idea yet</td>
                     <td className="px-4 py-3 text-starwhite/80">
-                      Citizen Starter Pack ($45) — cheapest entry, most bonus gear, best insurance
+                      Citizen Starter Pack ($60) — cheapest entry, most bonus gear, best insurance
                     </td>
                   </tr>
                   <tr>
@@ -504,7 +504,7 @@ export default function StarterPackagePage() {
                   What is the best starter package?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  For most new players, the Citizen Starter Pack at $45 — the
+                  For most new players, the Citizen Starter Pack at $60 — the
                   cheapest way in, with the Aurora Mk II, Lifetime Insurance,
                   and a full armor kit. Upgrade later via a CCU for the price
                   difference.
@@ -515,7 +515,7 @@ export default function StarterPackagePage() {
                   How much does a starter package cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Packages start at $45, and all seven options in this guide are
+                  Packages start at $60, and all seven options in this guide are
                   under $125. During sale events, check for a Warbond price if
                   you are paying with new money — it is usually the better deal.
                 </p>

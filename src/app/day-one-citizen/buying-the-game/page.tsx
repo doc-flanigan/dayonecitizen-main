@@ -51,7 +51,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The cheapest game packages start around $45 USD. A package includes access to the Star Citizen alpha, a starter ship with insurance — the current $45 Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting aUEC.',
+        text: 'The cheapest game packages start around $60 USD. A package includes access to the Star Citizen alpha, a starter ship with insurance — the current $60 Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting aUEC.',
       },
     },
     {
@@ -252,7 +252,7 @@ export default function BuyingTheGamePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">Step 3 — Choose your package</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                The cheapest game packages start around $45 USD and include:
+                The cheapest game packages start around $60 USD and include:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Access to the Star Citizen alpha (the live{' '}
@@ -273,7 +273,7 @@ export default function BuyingTheGamePage() {
                 </figcaption>
               </figure>
               <p>
-                The current $45 pack comes with the{' '}
+                The current $60 pack comes with the{' '}
                 <Term name="Aurora">Aurora Mk II</Term>. Its long-running alternate, the{' '}
                 <Term name="Mustang">Mustang Alpha</Term>, now appears mainly in older and
                 occasional promotional packages. A full comparison of all the packages is in{' '}
@@ -403,9 +403,9 @@ export default function BuyingTheGamePage() {
                   How much does it cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  The cheapest game packages start around $45 USD. That
+                  The cheapest game packages start around $60 USD. That
                   includes alpha access, a starter ship with insurance — the
-                  current $45 pack comes with the Aurora Mk II — and 10,000
+                  current $60 pack comes with the Aurora Mk II — and 10,000
                   starting <Term name="aUEC">aUEC</Term>.
                 </p>
               </div>

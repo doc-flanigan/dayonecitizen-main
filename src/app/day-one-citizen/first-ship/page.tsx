@@ -14,7 +14,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen First Ship — Aurora or Mustang?',
   description:
-    'The best first ship in Star Citizen for most new players is the Aurora Mk II from the $45 pack. Aurora vs Mustang Alpha compared, plus the upgrade path.',
+    'The best first ship in Star Citizen for most new players is the Aurora Mk II from the $60 pack. Aurora vs Mustang Alpha compared, plus the upgrade path.',
   alternates: { canonical: '/day-one-citizen/first-ship' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
@@ -37,7 +37,7 @@ const faqJsonLd = {
       name: 'What is the best first ship in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For most new players: the Aurora Mk II, the ship in the $45 Citizen Starter Pack. It carries cargo, which opens delivery missions from your first session, and the pack includes Lifetime Insurance. Learn the game in it, then upgrade or earn other ships later.',
+        text: 'For most new players: the Aurora Mk II, the ship in the $60 Citizen Starter Pack. It carries cargo, which opens delivery missions from your first session, and the pack includes Lifetime Insurance. Learn the game in it, then upgrade or earn other ships later.',
       },
     },
     {
@@ -72,7 +72,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Star Citizen First Ship — Which Starter Ship to Fly First',
   description:
-    'The Aurora Mk II from the $45 pack is the best first ship for most new players. Aurora vs Mustang Alpha, honestly compared.',
+    'The Aurora Mk II from the $60 pack is the best first ship for most new players. Aurora vs Mustang Alpha, honestly compared.',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/first-ship`,
@@ -131,7 +131,7 @@ export default function FirstShipPage() {
               <p>
                 <strong className="text-starwhite">For most new players, your first
                 ship should be the <Term name="Aurora">Aurora Mk II</Term> — the ship
-                in the $45 Citizen Starter Pack. It carries cargo, which opens
+                in the $60 Citizen Starter Pack. It carries cargo, which opens
                 delivery missions from your first session, and it comes with{' '}
                 <Term name="LTI">Lifetime Insurance</Term>.</strong>
               </p>
@@ -199,7 +199,7 @@ export default function FirstShipPage() {
                 </figure>
               </div>
               <p>
-                Today the choice mostly makes itself: the current $45 Citizen Starter
+                Today the choice mostly makes itself: the current $60 Citizen Starter
                 Pack comes with the Aurora Mk II. The Mustang Alpha is the
                 long-running alternate, seen in older and occasional promotional
                 packages. If you are choosing between them, choose the Aurora.
@@ -236,7 +236,7 @@ export default function FirstShipPage() {
               </ul>
               <p>
                 That is why the cheapest package is the smart entry. Start in the
-                Aurora at $45, fly for a few weeks, and let the game tell you what
+                Aurora at $60, fly for a few weeks, and let the game tell you what
                 you actually enjoy. If a career hooks you, the{' '}
                 <Link href="/day-one-citizen/starter-package" className="text-gold underline-offset-4 hover:underline">
                   role packages
@@ -293,7 +293,7 @@ export default function FirstShipPage() {
                   What is the best first ship?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  For most new players: the Aurora Mk II, the ship in the $45
+                  For most new players: the Aurora Mk II, the ship in the $60
                   Citizen Starter Pack. It carries cargo, which opens delivery
                   missions from your first session, and the pack includes
                   Lifetime Insurance. Learn the game in it, then upgrade or
