@@ -36,7 +36,7 @@ const faqJsonLd = {
       name: 'When is the next Star Citizen wipe?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No wipe is currently announced. The latest update, Alpha 4.10 (August 26, 2026), did not wipe — its release notes announce no reset and extend Long Term Persistence rather than clearing it. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
+        text: 'No wipe is currently announced. The latest update, Alpha 4.10.1 (September 16, 2026), did not wipe — its release notes list Long Term Persistence as preserved. Alpha 4.10 (August 26, 2026) did not wipe either. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
       },
     },
     {
@@ -73,10 +73,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Will Alpha 4.10.1 wipe Star Citizen progress?',
+      name: 'Did Alpha 4.10.1 wipe Star Citizen progress?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Unconfirmed, and Alpha 4.10.1 is not out yet — it is on the PTU test servers, open to all waves, with no announced release date. Its test builds list Long Term Persistence as enabled and no wipe has been announced, which points to progress carrying over. But CIG only confirms wipe status in the final release notes, so check those on release day.',
+        text: 'No. Alpha 4.10.1 released on September 16, 2026 with no wipe. Its official release notes list Long Term Persistence as preserved, so earned aUEC and in-game items carried over. New accounts still start with 20,000 aUEC.',
       },
     },
     {
@@ -261,24 +261,19 @@ export default function NextWipePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">So — when is the next one?</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Not announced. The latest major update, Alpha 4.10, arrived on
-                August 26, 2026 <em>without</em> a wipe. Its release notes
-                announce no reset. Long Term Persistence was extended rather
-                than cleared. As of September 2026, no wipe is announced for
-                any upcoming update. The last full wipe came with Alpha 4.8
-                in May 2026.
+                Not announced. The latest update, Alpha 4.10.1, was released on
+                September 16, 2026 <em>without</em> a wipe. Its release notes
+                list Long Term Persistence as preserved. The bigger Alpha 4.10
+                update before it, released August 26, 2026, did not wipe
+                either. As of September 2026, no wipe is announced for any
+                upcoming update. The last full wipe came with Alpha 4.8 in
+                May 2026.
               </p>
               <p>
-                The next update, <strong>Alpha 4.10.1</strong>, is not out
-                yet. It is on the <Term name="PTU">PTU</Term> — the opt-in
-                public test servers — and open to all testing waves. CIG has
-                not announced a release date.
-              </p>
-              <p>
-                Its test builds list Long Term Persistence as enabled, and no
-                wipe has been announced. That is a good sign, but it is not a
-                promise. CIG only confirms wipe status in the final release
-                notes. Treat 4.10.1 as unconfirmed until it arrives.
+                CIG only confirms wipe status in each update&rsquo;s final
+                release notes. So when the next update reaches the{' '}
+                <Term name="PTU">PTU</Term> — the opt-in public test servers —
+                treat any wipe talk as unconfirmed until release day.
               </p>
               <p>
                 Practical advice: play as if your aUEC is temporary, because it is.
@@ -364,15 +359,13 @@ export default function NextWipePage() {
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  Will Alpha 4.10.1 wipe progress?
+                  Did Alpha 4.10.1 wipe progress?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Unconfirmed — and Alpha 4.10.1 is not out yet. It is on the
-                  PTU test servers, open to all waves, with no announced
-                  release date. Its test builds list Long Term Persistence as
-                  enabled and no wipe has been announced, which points to
-                  progress carrying over. But CIG only confirms wipe status in
-                  the final release notes, so check those on release day.
+                  No. Alpha 4.10.1 released on September 16, 2026 with no
+                  wipe. Its official release notes list Long Term Persistence
+                  as preserved, so earned aUEC and in-game items carried over.
+                  New accounts still start with 20,000 aUEC.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

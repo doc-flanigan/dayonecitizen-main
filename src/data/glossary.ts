@@ -149,7 +149,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Game Package',
     category: 'Community',
     definition:
-      "The minimum purchase to play Star Citizen permanently. Includes a starter ship, access to all current and future PU content, and 1,000 aUEC. Starter packages begin around $45 USD. Squadron 42 is sold separately. Once you own a package, there is no subscription fee — ever.",
+      "The minimum purchase to play Star Citizen permanently. Includes a starter ship, access to all current and future PU content, and 10,000 UEC. Starter packages begin at $45 on sale ($60 list price, as of September 2026). Squadron 42 is sold separately. Once you own a package, there is no subscription fee — ever.",
     also: 'Starter Package, Starter Pack',
   },
   {
@@ -305,7 +305,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Xi'an ship manufacturer — makes the Nox hover bike and the Khartu-al fighter. Xi'an designs are organic and alien-looking compared to anything humans build.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-08-31',
   },
   {
     term: 'Consolidated Outland',
@@ -326,12 +326,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Manufacturer of snub fighters and light ships — including the Merlin parasite fighter and the P-72 Archimedes racing snub. Specializes in small, fast craft meant to be launched from larger ships.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Mirai',
     category: 'Ships',
     definition:
       "Manufacturer known for sleek, futuristic racing and combat ships — the Razor racing line and the Guardian fighter series. High-tech aesthetic, often used in competitive racing events.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Roberts Space Industries',
@@ -339,30 +341,35 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "The in-fiction ship manufacturer founded by the Roberts family — and the brand under which CIG sells Star Citizen. Makes the Aurora starter ship, the Constellation, and the Polaris.",
     also: 'RSI ships',
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Origin',
     category: 'Ships',
     definition:
       "Ship manufacturer known for sleek, luxury designs — the 300i, 600i, and the famous 890 Jump. Apple-meets-spaceship aesthetic.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Anvil',
     category: 'Ships',
     definition:
       "Military-grade ship manufacturer — Hornets, Carracks, the Valkyrie. Anvil ships are tough, utilitarian, and combat-focused.",
+    lastVerified: '2026-09-21',
   },
   {
     term: 'Drake',
     category: 'Ships',
     definition:
       "Budget, rugged manufacturer — the Cutlass, Caterpillar, Corsair. Often described as the 'pickup truck' of the 'Verse. Loved by pirates and haulers alike.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'MISC',
     category: 'Ships',
     definition:
       "Musashi Industrial and Starflight Concern — industrial manufacturer behind cargo ships like the Freelancer and Hull series, plus the Prospector miner.",
+    lastVerified: '2026-08-24',
   },
   {
     term: 'Aegis',
@@ -375,7 +382,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Crusader Industries',
     category: 'Ships',
     definition:
-      "Maker of the Mercury Star Runner, Ares, A1 Spirit, and the gigantic C2/A2 Hercules. Civilian-and-military-spec hardware out of Orison.",
+      "Maker of the Mercury Star Runner, Ares, A1 Spirit, and the gigantic C2/M2/A2 Hercules. Civilian-and-military-spec hardware out of Orison.",
+    lastVerified: '2026-09-27',
   },
   {
     term: 'Argo',
@@ -450,6 +458,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake's iconic medium ship — Black (combat/transport), Red (medical), Blue (bounty), Steel (drop-ship). One of the most popular community ships.",
+    lastVerified: '2026-09-21',
   },
   {
     term: 'Caterpillar',
@@ -468,7 +477,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Constellation',
     category: 'Ships',
     definition:
-      "RSI's flagship multi-crew ship line — Andromeda (combat), Aquila (exploration), Phoenix (luxury), Taurus (cargo). Comes with a parasite snub fighter.",
+      "RSI's flagship multi-crew ship line — Andromeda (combat), Aquila (exploration), Phoenix (luxury), Taurus (cargo). Some variants come with a P-52 Merlin snub fighter.",
+    lastVerified: '2026-09-27',
   },
   {
     term: 'Carrack',
@@ -481,7 +491,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: '890 Jump',
     category: 'Ships',
     definition:
-      "Origin's super-yacht — luxury VIP transport with a hangar, pool, casino, and helipad. The signature 'whale' ship and a frequent piracy target.",
+      "Origin's super-yacht — luxury VIP transport with a hangar and a lavish, multi-deck interior. The signature 'whale' ship and a frequent piracy target.",
+    lastVerified: '2026-09-27',
   },
   {
     term: 'Hammerhead',
@@ -554,7 +565,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Cyclone',
     category: 'Ships',
     definition:
-      "Tumbril's small ground buggy. Variants: TR (turret), AA (anti-air), MT (missile turret), RC (recon), RN (light scout). Fits in most medium ship cargo bays.",
+      "Tumbril's small ground buggy. Variants: TR (turret), AA (anti-air), MT (missile turret), RC (racing), RN (reconnaissance). Fits in most medium ship cargo bays.",
+    lastVerified: '2026-09-27',
   },
   {
     term: 'Nova',
@@ -636,7 +648,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Anvil's smallest, fastest combat ship. A nimble dogfighter that rewards hit-and-run tactics — just don't take too many hits. One of the most affordable dedicated fighters.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-09-27',
   },
   {
     term: 'F8C Lightning',
@@ -690,14 +702,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Argo's small utility shuttle. Variants handle cargo, crew transfers, and tractor work. No weapons, no frills; a flying delivery vehicle for port operations. Not to be confused with the Drake Mule, a ground vehicle.",
     also: 'MPUV Cargo, MPUV Personnel, MPUV Tractor',
-    lastVerified: '2026-07-01',
+    lastVerified: '2026-09-14',
   },
   {
     term: 'Mule',
     category: 'Ships',
     definition:
       "Drake's compact utility ground vehicle for cargo handling — a rugged little loader with a tractor beam for moving crates around outposts and hangars. Made by Drake, not Argo; a different vehicle from the Argo MPUV shuttle.",
-    lastVerified: '2026-07-01',
+    lastVerified: '2026-09-27',
   },
   {
     term: 'RAFT',
@@ -717,7 +729,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Defender',
     category: 'Ships',
     definition:
-      "Banu-designed alien heavy fighter that prioritizes shields over everything else — its shield technology is considered among the best in the galaxy. Slower than human fighters but extremely hard to kill.",
+      "Banu-designed alien light fighter that prioritizes shields over everything else — its shield technology is considered among the best in the galaxy. Slower than human fighters but extremely hard to kill.",
+    lastVerified: '2026-09-27',
   },
 
   // ─────────────── Ships — Consolidated Outland ───────────────
@@ -749,7 +762,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Crusader Industries single-seat heavy gunship. The Inferno carries a rotary gatling cannon that shreds fighters; the Ion carries a large laser for punching through capital ship armor. Glass cannons — huge firepower, light protection.",
     also: 'Ares Inferno, Ares Ion',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-09-14',
   },
   {
     term: 'Intrepid',
@@ -778,6 +791,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake mid-size explorer with surprisingly heavy firepower. Built for people who want to venture into unknown space without being defenseless when they get there.",
+    lastVerified: '2026-09-21',
   },
   {
     term: 'Cutter',
@@ -785,6 +799,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Drake's entry-level ship — a tiny, boxy transport for hauling small loads on a budget. No frills, but it gets the job done. Variants include the Rambler (explorer) and Scout (recon).",
     also: 'Cutter Rambler, Cutter Scout',
+    lastVerified: '2026-09-21',
   },
   {
     term: 'Golem',
@@ -904,28 +919,29 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Origin's entry-level luxury line — the 100i (multi-role), 125a (light fighter), and 135c (light cargo). Think luxury sports car at the starter price point. Small, sleek, and stylish.",
     also: '100i, 125a, 135c',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-09-14',
   },
   {
     term: '300 series',
     category: 'Ships',
     definition:
-      "Origin's mid-range luxury line. The 300i is a flexible multi-role; the 315p adds exploration scanners; the 325a upgrades the weapons; the 350r is a dedicated racer. All look extraordinary.",
+      "Origin's mid-range luxury line. The 300i is a flexible multi-role; the 315p adds a tractor beam and scanner package; the 325a upgrades the weapons; the 350r is a dedicated racer. All look extraordinary.",
     also: '300i, 315p, 325a, 350r',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-09-27',
   },
   {
     term: '400i',
     category: 'Ships',
     definition:
       "Origin larger luxury explorer for solo pilots or a small crew. Includes top-tier sensors, a lounge area, and enough firepower to handle most threats encountered while exploring.",
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-09-14',
   },
   {
     term: '600i',
     category: 'Ships',
     definition:
-      "Origin's flagship luxury superyacht — a large explorer that is essentially a flying mansion with a lounge, bar, and captain's suite. One of the most prestigious ships you can own.",
+      "Origin's luxury explorer — a large ship that is essentially a flying mansion with a lounge, bar, and captain's suite. One of the most prestigious ships you can own.",
+    lastVerified: '2026-09-27',
   },
   {
     term: '85X',
@@ -956,7 +972,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "RSI dedicated medical ship — picks up injured players, stabilizes them in flight, and gets them to a medical facility. One of the most important support ships for large org operations.",
     also: 'Apollo Medivac, Apollo Triage',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-09-14',
   },
   {
     term: 'Mantis',
@@ -1264,6 +1280,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Stanton II — a gas giant home to Crusader Industries. The floating city of Orison sits in its atmosphere. Three notable moons: Yela, Daymar, Cellin.",
+    lastVerified: '2026-09-07',
   },
   {
     term: 'ArcCorp',
@@ -1290,7 +1307,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "The capital city of ArcCorp — Blade Runner aesthetic, cyberpunk neon, multi-story shopping. Riker Memorial Spaceport is the landing zone. Often shortened to A18.",
     also: 'A18',
-    lastVerified: '2026-07-13',
+    lastVerified: '2026-09-14',
   },
   {
     term: 'New Babbage',
@@ -1327,12 +1344,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Crusader's reddish desert moon. Site of the community-run Daymar Rally. Bunkers, shipwrecks, and lots of nothing. A new-player favorite for ground exploration.",
+    lastVerified: '2026-08-17',
   },
   {
     term: 'Cellin',
     category: 'Locations',
     definition:
-      "Crusader's small grey moon. Bunkers, ROC mining sites, and several outposts. Lighter gravity makes ground vehicles drift fun.",
+      "Crusader's volcanically active moon. Bunkers, ROC mining sites, and several outposts. Extreme heat and thermal geysers create hazardous conditions.",
+    lastVerified: '2026-09-27',
   },
   {
     term: 'Lyria',
@@ -1357,13 +1376,15 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Calliope',
     category: 'Locations',
     definition:
-      "microTech moon — frozen, scientific outposts, occasional bunkers. The least-populated moon in the system.",
+      "microTech moon — frozen, scientific outposts, occasional bunkers.",
+    lastVerified: '2026-09-27',
   },
   {
     term: 'Clio',
     category: 'Locations',
     definition:
-      "microTech moon — small icy body, mostly used for mining and bounty pickups.",
+      "microTech moon — the largest of the three moons, with liquid oceans, icebergs, and snowy mountains. Popular for mining and bounty pickups.",
+    lastVerified: '2026-09-27',
   },
   {
     term: 'Euterpe',
@@ -1401,6 +1422,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Abandoned ships drifting in space, often stripped or filled with hostiles. Salvage them, loot them, or use them as ambush sites.",
+    lastVerified: '2026-09-21',
   },
   {
     term: 'Jumpgate',

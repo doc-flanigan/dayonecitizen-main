@@ -43,7 +43,7 @@ const faqJsonLd = {
       name: 'Lohnt sich Star Citizen 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja — zum Einstiegspreis von 45 US-Dollar, wenn du offene Weltraum-Sandboxes liebst und mit Alpha-Software leben kannst. Kein anderes Spiel bietet diesen Umfang. Nein — wenn du ein fertiges, poliertes Spiel erwartest: Star Citizen ist seit 2012 in Entwicklung und immer noch eine Alpha.',
+        text: 'Ja — zum Einstiegspreis von 60 US-Dollar (im September 2026 zum Aktionspreis von 45 US-Dollar), wenn du offene Weltraum-Sandboxes liebst und mit Alpha-Software leben kannst. Kein anderes Spiel bietet diesen Umfang. Nein — wenn du ein fertiges, poliertes Spiel erwartest: Star Citizen ist seit 2012 in Entwicklung und immer noch eine Alpha.',
       },
     },
     {
@@ -51,7 +51,7 @@ const faqJsonLd = {
       name: 'Was kostet der Einstieg in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das günstigste Spielpaket ist das Citizen Starter Pack für 45 US-Dollar (rund 48 bis 50 Euro inkl. MwSt.). Einmalkauf ohne Abo, mit Alpha-Zugang, dem Starterschiff Aurora Mk II und 10.000 aUEC Startgeld.',
+        text: 'Das günstigste Spielpaket ist das Citizen Starter Pack: Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.), im September 2026 auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro) reduziert. Einmalkauf ohne Abo, mit Alpha-Zugang, dem Starterschiff Aurora Mk II und 10.000 UEC Startgeld.',
       },
     },
     {
@@ -59,7 +59,7 @@ const faqJsonLd = {
       name: 'Verliere ich bei einem Wipe alles?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.10 (26. August 2026) hat den Fortschritt behalten. Für Alpha 4.10.1 ist bisher kein Wipe angekündigt. Sicher ist das aber erst mit den Patch Notes zum Erscheinen.',
+        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.10.1 (16. September 2026) hat den Fortschritt behalten (Long Term Persistence erhalten) — genau wie schon Alpha 4.10 (26. August 2026) davor.',
       },
     },
     {
@@ -120,7 +120,8 @@ export default function LohntSichStarCitizenPage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">
-                Ja — zum Einstiegspreis von 45 US-Dollar, wenn du offene
+                Ja — zum Einstiegspreis von 60 US-Dollar (im September 2026
+                zum Aktionspreis von 45 US-Dollar), wenn du offene
                 Weltraum-Sandboxes liebst und mit einer Alpha leben kannst.
                 Nein — wenn du ein fertiges, poliertes Spiel erwartest.
               </strong>{' '}
@@ -169,17 +170,18 @@ export default function LohntSichStarCitizenPage() {
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
-              Was 45 US-Dollar dir kaufen
+              Was 60 US-Dollar dir kaufen
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Der Einstieg kostet einmalig{' '}
-                <strong className="text-starwhite">45 US-Dollar</strong> (rund
-                48 bis 50 Euro inklusive Mehrwertsteuer — RSI rechnet in
-                US-Dollar ab). Dafür bekommst du das Citizen Starter Pack:
-                Alpha-Zugang, das Starterschiff Aurora Mk II mit lebenslanger
-                Versicherung, ein Rüstungsset und 10.000 aUEC Startgeld. Kein
-                Abo, keine Folgekosten.
+                Der Einstieg kostet regulär einmalig{' '}
+                <strong className="text-starwhite">60 US-Dollar</strong> (rund
+                64 bis 67 Euro inklusive Mehrwertsteuer — RSI rechnet in
+                US-Dollar ab). Stand September 2026 gibt es das Citizen Starter
+                Pack im Angebot für 45 US-Dollar (rund 48 bis 50 Euro).
+                Enthalten sind: Alpha-Zugang, das Starterschiff Aurora Mk II
+                mit sechs Monaten Versicherung, ein Rüstungsset und 10.000 UEC
+                Startgeld. Kein Abo, keine Folgekosten.
               </p>
               <p>
                 Das ist auch der einzige Kauf, den das Spiel je verlangt. Die
@@ -234,18 +236,13 @@ export default function LohntSichStarCitizenPage() {
                 </li>
               </ul>
               <p>
-                Zum aktuellen Stand: Die Version Alpha 4.10 läuft seit dem
-                26. August 2026 auf den Live-Servern — ohne Wipe, der
-                Spielfortschritt wurde übernommen.
-              </p>
-              <p>
-                Alpha 4.10.1 ist noch nicht erschienen. Die Version wird
-                derzeit auf den Testservern geprüft. Diese Testserver heißen
-                PTU — dort kann jeder mitspielen, der sich freiwillig anmeldet.
-                Alle Testwellen sind inzwischen freigeschaltet. CIG hat noch
-                kein Erscheinungsdatum genannt.{' '}
-                <SourceLink href="https://robertsspaceindustries.com/spectrum/community/SC/forum/190048/thread/star-citizen-alpha-4-10-1-ptu-patch-notes-1">
-                  Offizielle RSI-Patch-Notes zu Alpha 4.10.1 PTU (Englisch)
+                Zum aktuellen Stand: Seit dem 16. September 2026 läuft Alpha
+                4.10.1 auf den Live-Servern — ohne Wipe, der Spielfortschritt
+                (Long Term Persistence) wurde übernommen. Schon die
+                vorherige Version, Alpha 4.10 (26. August 2026), hatte den
+                Fortschritt behalten.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101">
+                  Offizielle RSI-Patch-Notes zu Alpha 4.10.1 (Englisch)
                 </SourceLink>
               </p>
             </div>
@@ -311,10 +308,11 @@ export default function LohntSichStarCitizenPage() {
                 <li>
                   <strong className="text-starwhite">Wer entscheidet:</strong>{' '}
                   die Patch Notes der jeweiligen Version. CIG kündigt dort an,
-                  was übernommen wird (Stichwort „Long Term Persistence“). Das
-                  aktuelle Update Alpha 4.10 (26. August 2026) brachte keinen
-                  Wipe — die Patch Notes kündigen keinen Reset an, und die
-                  Long Term Persistence wurde erweitert statt gelöscht.
+                  was übernommen wird (Stichwort „Long Term Persistence”). Das
+                  aktuelle Update Alpha 4.10.1 (16. September 2026) brachte
+                  keinen Wipe, genau wie schon Alpha 4.10 (26. August 2026)
+                  davor — die Patch Notes bestätigen in beiden Fällen die
+                  erhaltene Long Term Persistence.
                 </li>
               </ul>
             </div>
@@ -353,7 +351,8 @@ export default function LohntSichStarCitizenPage() {
                   Lohnt sich Star Citizen 2026?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Ja — zum Einstiegspreis von 45 US-Dollar, wenn du offene
+                  Ja — zum Einstiegspreis von 60 US-Dollar (im September 2026
+                  zum Aktionspreis von 45 US-Dollar), wenn du offene
                   Weltraum-Sandboxes liebst und mit Alpha-Software leben kannst.
                   Nein — wenn du ein fertiges, poliertes Spiel erwartest. Das
                   Spiel ist seit 2012 in Entwicklung und immer noch eine Alpha.
@@ -364,9 +363,10 @@ export default function LohntSichStarCitizenPage() {
                   Was kostet der Einstieg?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  45 US-Dollar für das Citizen Starter Pack (rund 48 bis 50 Euro
-                  inkl. MwSt.). Einmalkauf ohne Abo — mit Alpha-Zugang, der
-                  Aurora Mk II und 10.000 aUEC Startgeld.
+                  Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.),
+                  im September 2026 zum Aktionspreis von 45 US-Dollar (rund
+                  48 bis 50 Euro). Einmalkauf ohne Abo — mit Alpha-Zugang, der
+                  Aurora Mk II und 10.000 UEC Startgeld.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
@@ -378,10 +378,9 @@ export default function LohntSichStarCitizenPage() {
                   Fortschritt zurück. Echtgeld-Käufe und Account-UEC (auch das
                   50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es
                   mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe — das
-                  aktuelle Update Alpha 4.10 (26. August 2026) hat den
-                  Fortschritt behalten. Für Alpha 4.10.1 ist bisher kein Wipe
-                  angekündigt. Sicher ist das aber erst mit den Patch Notes
-                  zum Erscheinen.
+                  aktuelle Update Alpha 4.10.1 (16. September 2026) hat den
+                  Fortschritt behalten (Long Term Persistence erhalten), genau
+                  wie schon Alpha 4.10 (26. August 2026) davor.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

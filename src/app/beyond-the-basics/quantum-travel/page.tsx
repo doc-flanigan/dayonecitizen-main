@@ -10,13 +10,13 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 export const metadata: Metadata = {
   title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
   description:
-    'Press B for NAV mode, middle-click to cycle into QT mode, set a route on the Starmap, and let the drive auto-calibrate before you jump. A step-by-step guide for brand-new pilots.',
+    'Press B for NAV mode, middle-click into QT mode, set a Starmap route, and let the drive calibrate before you jump. A step-by-step guide for new pilots.',
   alternates: { canonical: '/beyond-the-basics/quantum-travel' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
     description:
-      'Press B for NAV mode, middle-click to cycle into QT mode, set a route on the Starmap, and let the drive auto-calibrate before you jump. A step-by-step guide for brand-new pilots.',
+      'Press B for NAV mode, middle-click into QT mode, set a Starmap route, and let the drive calibrate before you jump. A step-by-step guide for new pilots.',
     url: '/beyond-the-basics/quantum-travel',
   },
 }
