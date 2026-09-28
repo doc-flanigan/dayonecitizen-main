@@ -170,11 +170,11 @@ export default function ShipsRealMoneyPage() {
               <ul className="list-disc space-y-2 pl-6">
                 <li>Full access to the live Star Citizen alpha</li>
                 <li>
-                  The <Term name="Aurora">Aurora Mk II</Term> starter ship with{' '}
-                  <Term name="LTI">Lifetime Insurance</Term>
+                  The <Term name="Aurora">Aurora Mk II</Term> starter ship with
+                  six months of hull insurance
                 </li>
                 <li>A starting armor set, undersuit, and weapon</li>
-                <li>10,000 starting <Term name="aUEC">aUEC</Term></li>
+                <li>10,000 starting <Term name="UEC">UEC</Term></li>
               </ul>
               <p>
                 Every other package is a variation on that theme with a different

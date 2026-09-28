@@ -68,7 +68,7 @@ const faqJsonLd = {
       name: 'Was ist im Starterpaket enthalten?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das Citizen Starter Pack für 60 US-Dollar enthält den Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit lebenslanger Versicherung, ein Rüstungsset mit Waffe und 10.000 aUEC Startgeld.',
+        text: 'Das Citizen Starter Pack für 60 US-Dollar enthält den Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit sechs Monaten Versicherung, ein Rüstungsset mit Waffe und 10.000 UEC Startgeld.',
       },
     },
     {
@@ -205,13 +205,14 @@ export default function StarCitizenKaufenPage() {
                 <li>
                   Das Starterschiff{' '}
                   <strong className="text-starwhite">Aurora Mk II</strong> mit
-                  lebenslanger Versicherung (im Spiel „Lifetime Insurance“ —
-                  dein Schiff wird nach einem Verlust immer kostenlos ersetzt)
+                  sechs Monaten Versicherung (im Spiel „Insurance“ — dein
+                  Schiff wird bei Verlust innerhalb dieser Frist kostenlos
+                  ersetzt)
                 </li>
                 <li>Ein Rüstungsset, ein Unteranzug und eine Waffe</li>
                 <li>
-                  10.000 aUEC Startgeld — aUEC ist die Spielwährung, die du
-                  im Spiel verdienst und ausgibst
+                  10.000 UEC Startgeld — die Kontowährung, die jeden Wipe
+                  übersteht (nicht zu verwechseln mit dem erspielten aUEC)
                 </li>
               </ul>
               <p>
@@ -407,8 +408,8 @@ export default function StarCitizenKaufenPage() {
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Zugang zur laufenden Alpha, das Starterschiff Aurora Mk II mit
-                  lebenslanger Versicherung, ein Rüstungsset mit Waffe und
-                  10.000 aUEC Startgeld.
+                  sechs Monaten Versicherung, ein Rüstungsset mit Waffe und
+                  10.000 UEC Startgeld.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

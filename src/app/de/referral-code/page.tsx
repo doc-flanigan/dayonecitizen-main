@@ -303,7 +303,7 @@ export default function ReferralCodeDePage() {
                 <strong className="text-starwhite">Account-UEC</strong> sind —
                 nicht das erspielte aUEC — überleben sie jeden Wipe. Zum
                 Vergleich: Das normale Startgeld eines Spielpakets liegt bei
-                10.000 aUEC. Der Code verfünffacht also dein Startkapital,
+                10.000 UEC. Der Code verfünffacht also dein Startkapital,
                 bevor du die erste Mission fliegst.
               </p>
             </div>

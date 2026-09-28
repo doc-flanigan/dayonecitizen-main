@@ -43,7 +43,7 @@ const faqJsonLd = {
       name: 'Welches Star Citizen Starterpaket ist das beste?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Für die meisten neuen Spieler: das Citizen Starter Pack für 60 US-Dollar. Es ist der günstigste Einstieg und enthält die Aurora Mk II mit lebenslanger Versicherung, ein Rüstungsset mit Waffe und 10.000 aUEC Startgeld. Später kannst du per CCU günstig auf ein größeres Schiff aufrüsten.',
+        text: 'Für die meisten neuen Spieler: das Citizen Starter Pack für 60 US-Dollar. Es ist der günstigste Einstieg und enthält die Aurora Mk II mit sechs Monaten Versicherung, ein Rüstungsset mit Waffe und 10.000 UEC Startgeld. Später kannst du per CCU günstig auf ein größeres Schiff aufrüsten.',
       },
     },
     {
@@ -67,7 +67,7 @@ const faqJsonLd = {
       name: 'Was enthält jedes Star Citizen Spielpaket?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Jedes Spielpaket („Game Package“) enthält den Spiel-Download, vollen Zugang zur laufenden Alpha, ein Starterschiff mit Versicherung und Startgeld in aUEC. Wichtig: Nur Spielpakete enthalten den Spielzugang — ein einzeln gekauftes Schiff reicht nicht.',
+        text: 'Jedes Spielpaket („Game Package“) enthält den Spiel-Download, vollen Zugang zur laufenden Alpha, ein Starterschiff mit Versicherung und Startgeld in UEC. Wichtig: Nur Spielpakete enthalten den Spielzugang — ein einzeln gekauftes Schiff reicht nicht.',
       },
     },
   ],
@@ -154,14 +154,14 @@ export default function StarterpaketPage() {
                 <li>
                   Die{' '}
                   <strong className="text-starwhite">Aurora Mk II</strong> als
-                  Starterschiff — mit lebenslanger Versicherung („Lifetime
-                  Insurance“: dein Schiff wird nach jedem Verlust kostenlos
-                  ersetzt)
+                  Starterschiff — mit sechs Monaten Versicherung („Insurance“:
+                  dein Schiff wird bei Verlust innerhalb dieser Frist
+                  kostenlos ersetzt)
                 </li>
                 <li>Ein Rüstungsset, einen Unteranzug und eine Waffe</li>
                 <li>
-                  10.000 aUEC Startgeld — die Spielwährung, die du im Spiel
-                  verdienst und ausgibst
+                  10.000 UEC Startgeld — die Kontowährung, die jeden Wipe
+                  übersteht (nicht zu verwechseln mit dem erspielten aUEC)
                 </li>
               </ul>
               <p>
@@ -328,7 +328,7 @@ export default function StarterpaketPage() {
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Für die meisten neuen Spieler das Citizen Starter Pack für 60
                   US-Dollar — der günstigste Einstieg, mit der Aurora Mk II,
-                  lebenslanger Versicherung, Rüstungsset und 10.000 aUEC.
+                  sechs Monaten Versicherung, Rüstungsset und 10.000 UEC.
                   Später kannst du per CCU günstig aufrüsten.
                 </p>
               </div>
@@ -359,7 +359,7 @@ export default function StarterpaketPage() {
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Den Spiel-Download, vollen Alpha-Zugang, ein Starterschiff mit
-                  Versicherung und Startgeld in aUEC. Nur Spielpakete enthalten
+                  Versicherung und Startgeld in UEC. Nur Spielpakete enthalten
                   den Spielzugang — ein einzeln gekauftes Schiff reicht nicht.
                 </p>
               </div>

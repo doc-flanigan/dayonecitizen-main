@@ -37,7 +37,7 @@ const faqJsonLd = {
       name: 'What is the best first ship in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For most new players: the Aurora Mk II, the ship in the $60 Citizen Starter Pack. It carries cargo, which opens delivery missions from your first session, and the pack includes Lifetime Insurance. Learn the game in it, then upgrade or earn other ships later.',
+        text: 'For most new players: the Aurora Mk II, the ship in the $60 Citizen Starter Pack. It carries cargo, which opens delivery missions from your first session, and the pack includes six months of hull insurance. Learn the game in it, then upgrade or earn other ships later.',
       },
     },
     {
@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: 'Do you keep your first ship forever?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, if it came from a game package or the pledge store — real-money purchases survive every wipe. The Citizen Starter Pack Aurora also carries Lifetime Insurance, so its hull insurance never expires.',
+        text: 'Yes, if it came from a game package or the pledge store — real-money purchases survive every wipe. The Citizen Starter Pack Aurora ships with six months of hull insurance; the ship itself stays yours permanently either way.',
       },
     },
   ],
@@ -132,8 +132,8 @@ export default function FirstShipPage() {
                 <strong className="text-starwhite">For most new players, your first
                 ship should be the <Term name="Aurora">Aurora Mk II</Term> — the ship
                 in the $60 Citizen Starter Pack. It carries cargo, which opens
-                delivery missions from your first session, and it comes with{' '}
-                <Term name="LTI">Lifetime Insurance</Term>.</strong>
+                delivery missions from your first session, and it comes with
+                six months of hull insurance.</strong>
               </p>
               <p>
                 It is not the fastest ship, or the prettiest. It is the one that lets
@@ -296,8 +296,8 @@ export default function FirstShipPage() {
                   For most new players: the Aurora Mk II, the ship in the $60
                   Citizen Starter Pack. It carries cargo, which opens delivery
                   missions from your first session, and the pack includes
-                  Lifetime Insurance. Learn the game in it, then upgrade or
-                  earn other ships later.
+                  six months of hull insurance. Learn the game in it, then
+                  upgrade or earn other ships later.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
@@ -330,8 +330,8 @@ export default function FirstShipPage() {
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Yes, if it came from a game package or the pledge store —
                   real-money purchases survive every wipe. The Citizen Starter
-                  Pack Aurora also carries Lifetime Insurance, so its hull
-                  insurance never expires.
+                  Pack Aurora ships with six months of hull insurance; the
+                  ship itself stays yours permanently either way.
                 </p>
               </div>
             </div>

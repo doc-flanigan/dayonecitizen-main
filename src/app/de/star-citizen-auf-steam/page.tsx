@@ -59,7 +59,7 @@ const faqJsonLd = {
       name: 'Ist Star Citizen im Xbox Game Pass?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Star Citizen ist in keinem Abo-Dienst enthalten. Der einzige Weg ins Spiel ist ein einmalig gekauftes Spielpaket von robertsspaceindustries.com, ab 45 US-Dollar.',
+        text: 'Nein. Star Citizen ist in keinem Abo-Dienst enthalten. Der einzige Weg ins Spiel ist ein einmalig gekauftes Spielpaket von robertsspaceindustries.com, ab 60 US-Dollar (im September 2026 zeitweise ab 45 US-Dollar).',
       },
     },
     {
@@ -168,7 +168,8 @@ export default function StarCitizenAufSteamPage() {
                 <Link href="/de/referral-code" className="text-gold underline-offset-4 hover:underline">
                   50.000 UEC Startguthaben
                 </Link>
-                ), ein Spielpaket ab 45 US-Dollar kaufen, RSI Launcher laden.
+                ), ein Spielpaket ab 60 US-Dollar (im September 2026
+                zeitweise ab 45 US-Dollar) kaufen, RSI Launcher laden.
                 Die deutsche Schritt-für-Schritt-Anleitung steht in{' '}
                 <Link href="/de/star-citizen-kaufen" className="text-gold underline-offset-4 hover:underline">
                   „Star Citizen kaufen“
@@ -304,7 +305,7 @@ export default function StarCitizenAufSteamPage() {
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Nein. Star Citizen ist in keinem Abo-Dienst enthalten. Der
                   einzige Weg ins Spiel ist ein einmalig gekauftes Spielpaket ab
-                  45 US-Dollar.
+                  60 US-Dollar (im September 2026 zeitweise ab 45 US-Dollar).
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

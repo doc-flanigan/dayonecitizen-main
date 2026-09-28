@@ -872,6 +872,15 @@
       "lastVerified": "2026-08-18"
     },
     {
+      "id": "new-character-starting-auec-20000",
+      "claim": "New Star Citizen characters start with 20,000 aUEC (temporary alpha in-game currency), per the Build Information block in the official Alpha 4.10.1 LIVE patch notes.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101"
+      ],
+      "lastVerified": "2026-09-28"
+    },
+    {
       "id": "no-free-trial-only-freefly",
       "claim": "Star Citizen does not offer a free trial; only Free Fly Events allow free temporary access",
       "status": "verified",

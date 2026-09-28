@@ -149,7 +149,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Game Package',
     category: 'Community',
     definition:
-      "The minimum purchase to play Star Citizen permanently. Includes a starter ship, access to all current and future PU content, and 1,000 aUEC. Starter packages begin around $60 USD. Squadron 42 is sold separately. Once you own a package, there is no subscription fee — ever.",
+      "The minimum purchase to play Star Citizen permanently. Includes a starter ship, access to all current and future PU content, and 10,000 UEC. Starter packages begin around $60 USD. Squadron 42 is sold separately. Once you own a package, there is no subscription fee — ever.",
     also: 'Starter Package, Starter Pack',
   },
   {

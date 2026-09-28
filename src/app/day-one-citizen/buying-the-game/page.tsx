@@ -51,7 +51,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The cheapest game packages start around $60 USD. A package includes access to the Star Citizen alpha, a starter ship with insurance — the current $60 Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting aUEC.',
+        text: 'The cheapest game packages start around $60 USD. A package includes access to the Star Citizen alpha, a starter ship with insurance — the current $60 Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting UEC.',
       },
     },
     {
@@ -258,7 +258,7 @@ export default function BuyingTheGamePage() {
                 <li>Access to the Star Citizen alpha (the live{' '}
                   <Term name="PU">Persistent Universe</Term>)</li>
                 <li>A starter ship with standard insurance</li>
-                <li>10,000 starting <Term name="aUEC">aUEC</Term></li>
+                <li>10,000 starting <Term name="UEC">UEC</Term></li>
               </ul>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -406,7 +406,7 @@ export default function BuyingTheGamePage() {
                   The cheapest game packages start around $60 USD. That
                   includes alpha access, a starter ship with insurance — the
                   current $60 pack comes with the Aurora Mk II — and 10,000
-                  starting <Term name="aUEC">aUEC</Term>.
+                  starting <Term name="UEC">UEC</Term>.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
