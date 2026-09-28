@@ -96,9 +96,10 @@ const SECTIONS: Section[] = [
     title: 'Which starter package should you buy?',
     stub: (
       <>
-        The cheapest packages start around $45 and include a small ship plus
-        access to Star Citizen. This section compares all the current
-        packages — the $45 pack comes with the Aurora Mk II — and explains
+        The cheapest packages start at $45 on sale, 25% off their $60 list
+        price as of September 2026, and include a small ship plus access to
+        Star Citizen. This section compares all the current packages — the
+        Citizen Starter Pack comes with the Aurora Mk II — and explains
         which is the best fit for a first-time player.
       </>
     ),
@@ -214,13 +215,13 @@ const QUICK_ANSWERS: QuickAnswer[] = [
     id: 'ships-real-money',
     question: 'Do you have to buy ships with real money?',
     answer:
-      'No. One $45 package is the only required purchase — every other ship can be rented or bought in-game with earned aUEC.',
+      'No. One package — $45 on sale, $60 list — is the only required purchase; every other ship can be rented or bought in-game with earned aUEC.',
   },
   {
     id: 'first-ship',
     question: 'What should your first ship be?',
     answer:
-      'The Aurora Mk II from the $45 pack, for most new players. Compared honestly with the Mustang Alpha, plus the upgrade path.',
+      'The Aurora Mk II from the $45-on-sale ($60 list) pack, for most new players. Compared honestly with the Mustang Alpha, plus the upgrade path.',
   },
   {
     id: 'next-wipe',
