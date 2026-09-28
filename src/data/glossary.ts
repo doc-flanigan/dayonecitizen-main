@@ -491,7 +491,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: '890 Jump',
     category: 'Ships',
     definition:
-      "Origin's super-yacht — luxury VIP transport with a hangar, pool, cocktail lounge, and three-level atrium. The signature 'whale' ship and a frequent piracy target.",
+      "Origin's super-yacht — luxury VIP transport with a hangar and a lavish, multi-deck interior. The signature 'whale' ship and a frequent piracy target.",
     lastVerified: '2026-09-27',
   },
   {
@@ -708,7 +708,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Mule',
     category: 'Ships',
     definition:
-      "Drake's compact utility ground vehicle for cargo handling — a rugged little loader with automated cargo handling for moving crates around outposts and hangars (works with external tractor beams or port equipment). Made by Drake, not Argo; a different vehicle from the Argo MPUV shuttle.",
+      "Drake's compact utility ground vehicle for cargo handling — a rugged little loader with a tractor beam for moving crates around outposts and hangars. Made by Drake, not Argo; a different vehicle from the Argo MPUV shuttle.",
     lastVerified: '2026-09-27',
   },
   {
