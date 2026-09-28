@@ -25,10 +25,19 @@
     "/beyond-the-basics/ccu-chains": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -79,24 +88,58 @@
     "/buying-the-game": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
     "/data/glossary": [
       {
-        "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
         ]
+      },
+      {
+        "id": "citizen-starter-pack-60-usd-aurora",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
       }
     ],
     "/day-one-citizen/buying-the-game": [
+      {
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
       {
         "id": "sc-pc-only-rsi-launcher",
         "claim": "Star Citizen is available only for Windows PC through the RSI Launcher, purchased directly from robertsspaceindustries.com — it is not sold on Steam, Epic, or GOG, and does not run on PlayStation, Xbox, or Game Pass (as of July 2026).",
@@ -124,6 +167,16 @@
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      }
+    ],
+    "/day-one-citizen/first-ship": [
+      {
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
         ]
       }
     ],
@@ -215,6 +268,14 @@
     ],
     "/day-one-citizen/ships-real-money": [
       {
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
         "id": "referral-enlistment-bonus-50k-uec",
         "claim": "New RSI accounts created with a referral code receive a 50,000 UEC enlistment bonus.",
         "status": "verified",
@@ -224,6 +285,14 @@
       }
     ],
     "/day-one-citizen/starter-package": [
+      {
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
       {
         "id": "crusader-intrepid-single-seat-hauler",
         "claim": "The Crusader Intrepid is a single-seat starship designed by Crusader Industries for short-range hauling and courier work.",
@@ -278,7 +347,7 @@
       },
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
@@ -300,6 +369,15 @@
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
           "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -331,6 +409,15 @@
         "sources": [
           "https://robertsspaceindustries.com/en/referral-program"
         ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
       }
     ],
     "/de/lohnt-sich-star-citizen": [
@@ -340,6 +427,14 @@
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
+        ]
+      },
+      {
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
         ]
       },
       {
@@ -361,9 +456,26 @@
           "https://robertsspaceindustries.com/en/comm-link/transmission/12760-Poll-Additional-Stretch-Goals",
           "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/star-citizen-community-localization-update"
         ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
       }
     ],
     "/de/referral-code": [
+      {
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
       {
         "id": "referral-code-24h-window",
         "claim": "A referral code must be applied at account signup or within ~24 hours in account settings — it cannot be added after that window.",
@@ -398,25 +510,68 @@
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements",
           "https://robertsspaceindustries.com/download"
         ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
       }
     ],
     "/de/star-citizen-kaufen": [
       {
-        "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "citizen-starter-pack-60-usd-aurora",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
     "/de/starterpaket": [
       {
-        "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "citizen-starter-pack-60-usd-aurora",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -443,14 +598,6 @@
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Standalone-Ships/Asgard"
-        ]
-      },
-      {
-        "id": "aurora-mk2-2year-pledge-45-usd",
-        "claim": "The RSI Aurora Mk II standalone pledge with 2-Year insurance costs $45 USD.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Standalone-Ships/Aurora-Mk-II-2-Year"
         ]
       },
       {
@@ -482,7 +629,7 @@
       },
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
@@ -918,6 +1065,15 @@
         ]
       },
       {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
+      },
+      {
         "id": "three-systems-live-stanton-pyro-nyx",
         "claim": "Three star systems are live in the current Star Citizen alpha: Stanton (original), Pyro (added Alpha 4.0), and Nyx (added Alpha 4.4).",
         "status": "verified",
@@ -938,17 +1094,26 @@
     "/first-ship": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
     "/free-fly-events": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
@@ -980,6 +1145,15 @@
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
           "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -1052,10 +1226,19 @@
     "/is-star-citizen-on-steam": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -1072,10 +1255,19 @@
     "/page": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -1179,20 +1371,38 @@
     "/ships-real-money": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
     "/starter-package": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ]

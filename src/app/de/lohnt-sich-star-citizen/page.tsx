@@ -177,8 +177,8 @@ export default function LohntSichStarCitizenPage() {
                 Der Einstieg kostet regulär einmalig{' '}
                 <strong className="text-starwhite">60 US-Dollar</strong> (rund
                 64 bis 67 Euro inklusive Mehrwertsteuer — RSI rechnet in
-                US-Dollar ab); im September 2026 lief das Citizen Starter Pack
-                zum Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro).
+                US-Dollar ab). Stand September 2026 gibt es das Citizen Starter
+                Pack im Angebot für 45 US-Dollar (rund 48 bis 50 Euro).
                 Enthalten sind: Alpha-Zugang, das Starterschiff Aurora Mk II
                 mit sechs Monaten Versicherung, ein Rüstungsset und 10.000 UEC
                 Startgeld. Kein Abo, keine Folgekosten.

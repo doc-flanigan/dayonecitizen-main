@@ -49,11 +49,11 @@
     {
       "id": "aurora-mk2-2year-pledge-45-usd",
       "claim": "The RSI Aurora Mk II standalone pledge with 2-Year insurance costs $45 USD.",
-      "status": "verified",
+      "status": "unverifiable",
       "sources": [
         "https://robertsspaceindustries.com/pledge/Standalone-Ships/Aurora-Mk-II-2-Year"
       ],
-      "lastVerified": "2026-08-18"
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "aurora-mk2-launch-alpha-4-7",
@@ -140,13 +140,22 @@
       "lastVerified": "2026-07-29"
     },
     {
-      "id": "citizen-starter-pack-60-usd-aurora",
-      "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+      "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+      "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
       ],
-      "lastVerified": "2026-09-27"
+      "lastVerified": "2026-09-28"
+    },
+    {
+      "id": "citizen-starter-pack-60-usd-aurora",
+      "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+      ],
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "citizencon-2026-not-held",
@@ -1694,13 +1703,13 @@
     },
     {
       "id": "starter-package-from-45-usd",
-      "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
-      "status": "refuted",
-      "correction": "The cheapest current Star Citizen game packages are $60 USD (Citizen Starter Pack with the RSI Aurora Mk II, and Generalist Starter Pack with the Drake Cutter); no subscription is required to play. Other starter packs run higher (Miner and Salvager $75, Hauler $80). Prices are sometimes discounted during sales (e.g. Anniversary), but the regular entry price is $60, not $45.",
+      "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+      "status": "verified",
       "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
-      "lastVerified": "2026-09-27"
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "three-systems-live-stanton-pyro-nyx",
