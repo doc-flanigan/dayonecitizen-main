@@ -18,7 +18,7 @@ export const NEXT_FREE_FLY = {
   /** Human-readable label shown on the banner */
   label: 'July 29 – August 10, 2026',
   /** Short headline used on the banner */
-  headline: 'Foundation Festival — Free Fly live now.',
+  headline: 'Foundation Festival 2026 Free Fly (July 29 – August 10, 2026).',
 }
 
 export type FreeFlyEvent = typeof NEXT_FREE_FLY

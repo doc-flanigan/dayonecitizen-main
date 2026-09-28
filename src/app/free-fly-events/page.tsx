@@ -219,15 +219,15 @@ export default function FreeFlyPage() {
                     >
                       Official RSI blog post
                     </a>
-                    ) Two side promotions run through August 12: rewards for
+                    ) Two side promotions {isActive ? 'run' : 'ran'} through August 12: rewards for
                     watching streams on Twitch, a live-streaming site, and a
-                    referral bonus — the player who recruits a friend earns a
+                    referral bonus — the player who recruited a friend earned a
                     free <Term name="Argo">Argo</Term> ATLS, a one-person
-                    cargo-lifting machine, and the new player earns a kit of
-                    starter gear. Both gear rewards require the new player to
-                    buy a starter pack; the 50,000{' '}
-                    <Term name="UEC">UEC</Term> referral bonus stays free
-                    either way. (
+                    cargo-lifting machine, and the new player earned a kit of
+                    starter gear. Both gear rewards required the new player to
+                    buy a starter pack; the standard 50,000{' '}
+                    <Term name="UEC">UEC</Term> referral bonus is free and
+                    applies year-round. (
                     <a
                       href="https://robertsspaceindustries.com/en/comm-link/transmission/21225-Foundation-Festival-2026-Referral-Bonus"
                       target="_blank"
@@ -239,7 +239,7 @@ export default function FreeFlyPage() {
                     )
                   </>
                 }
-                badge="Live now"
+                badge={isActive ? 'Live now' : 'Ended'}
               />
               <TimelineItem
                 date="Nov 2026"
