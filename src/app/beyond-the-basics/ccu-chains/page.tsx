@@ -162,7 +162,8 @@ export default function CCUChainsPage() {
               A CCU chain is a sequence of upgrades that steps from a cheap starting
               ship all the way up to an expensive target — using several intermediate
               ships along the way. Instead of buying a $250 ship outright, you might
-              buy a $60 starter ship and then five or six CCUs, each covering a small
+              buy a $45 starter pack (on sale — $60 list price, as of September
+              2026) and then five or six CCUs, each covering a small
               price jump. The total cost can be significantly lower than the full price.
               If you are still choosing that starting hull,{' '}
               <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">

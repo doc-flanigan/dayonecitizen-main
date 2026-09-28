@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen kaufen 2026 — Preis & Tipps',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 60 US-Dollar, keine Keys, kein Steam. So kaufst du es Schritt für Schritt.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis), keine Keys, kein Steam. So kaufst du es Schritt für Schritt.',
   alternates: {
     canonical: '/de/star-citizen-kaufen',
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
     description:
-      'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 60 US-Dollar. Keine Keys, kein Steam. Die deutsche Schritt-für-Schritt-Anleitung.',
+      'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis). Keine Keys, kein Steam. Die deutsche Schritt-für-Schritt-Anleitung.',
     url: '/de/star-citizen-kaufen',
     type: 'article',
     locale: 'de_DE',
@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: 'Was kostet Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das günstigste Starterpaket ist das Citizen Starter Pack für 60 US-Dollar. RSI rechnet in US-Dollar ab; die deutsche Mehrwertsteuer kommt an der Kasse dazu — je nach Wechselkurs landest du bei rund 64 bis 67 Euro. Es ist ein Einmalkauf ohne Abo.',
+        text: 'Das günstigste Starterpaket ist das Citizen Starter Pack: Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.), im September 2026 auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro) reduziert. RSI rechnet in US-Dollar ab; die deutsche Mehrwertsteuer kommt an der Kasse dazu. Es ist ein Einmalkauf ohne Abo.',
       },
     },
     {
@@ -68,7 +68,7 @@ const faqJsonLd = {
       name: 'Was ist im Starterpaket enthalten?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das Citizen Starter Pack für 60 US-Dollar enthält den Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit sechs Monaten Versicherung, ein Rüstungsset mit Waffe und 10.000 UEC Startgeld.',
+        text: 'Das Citizen Starter Pack (45 US-Dollar im Angebot, 60 US-Dollar Listenpreis) enthält den Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit sechs Monaten Versicherung, ein Rüstungsset mit Waffe und 10.000 UEC Startgeld.',
       },
     },
     {
@@ -87,7 +87,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 60 US-Dollar. Keine Keys, kein Steam.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis). Keine Keys, kein Steam.',
   inLanguage: 'de',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
@@ -123,7 +123,8 @@ export default function StarCitizenKaufenPage() {
               <strong className="text-starwhite">
                 Star Citizen kaufst du nur an einer einzigen Stelle: direkt bei
                 robertsspaceindustries.com, dem offiziellen Shop. Das günstigste
-                Starterpaket kostet 60 US-Dollar. Es gibt keine Keys — auch
+                Starterpaket kostet 45 US-Dollar im Angebot (60 US-Dollar
+                Listenpreis, Stand September 2026). Es gibt keine Keys — auch
                 nicht bei Key-Shops.
               </strong>
             </p>
@@ -193,7 +194,7 @@ export default function StarCitizenKaufenPage() {
               <p>
                 Der günstigste Einstieg ist das{' '}
                 <strong className="text-starwhite">
-                  Citizen Starter Pack für 60 US-Dollar
+                  Citizen Starter Pack, 45 US-Dollar im Angebot (60 US-Dollar Listenpreis)
                 </strong>
                 . Darin steckt alles, was du zum Spielen brauchst:
               </p>
@@ -241,12 +242,14 @@ export default function StarCitizenKaufenPage() {
                 Mehrwertsteuer auf den Netto-Preis dazu.
               </p>
               <p>
-                Aus dem 60-US-Dollar-Starterpaket werden so — je nach aktuellem
+                Zum Listenpreis von 60 US-Dollar werden so — je nach aktuellem
                 Wechselkurs deiner Bank —{' '}
                 <strong className="text-starwhite">
                   rund 64 bis 67 Euro inklusive Mehrwertsteuer
                 </strong>
-                . Der genaue Euro-Betrag steht erst auf deiner Abrechnung fest.
+                . Im September 2026 läuft eine Aktion: Das Citizen Starter
+                Pack kostet dann 45 US-Dollar, rund 48 bis 50 Euro. Der genaue
+                Euro-Betrag steht erst auf deiner Abrechnung fest.
               </p>
               <p>
                 RSI akzeptiert gängige Kredit- und Debitkarten sowie PayPal.
@@ -385,10 +388,10 @@ export default function StarCitizenKaufenPage() {
                   Was kostet Star Citizen?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Das günstigste Starterpaket ist das Citizen Starter Pack für
-                  60 US-Dollar. RSI rechnet in US-Dollar ab; die deutsche
-                  Mehrwertsteuer kommt an der Kasse dazu — je nach Wechselkurs
-                  rund 64 bis 67 Euro. Einmalkauf, kein Abo.
+                  Das günstigste Starterpaket ist das Citizen Starter Pack:
+                  Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.),
+                  im September 2026 auf einen Aktionspreis von 45 US-Dollar
+                  (rund 48 bis 50 Euro) reduziert. Einmalkauf, kein Abo.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

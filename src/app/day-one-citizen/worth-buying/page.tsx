@@ -50,7 +50,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A starter Game Package costs from $60 on the RSI store. It is a one-time purchase with no subscription, and includes alpha access and a starter ship.',
+        text: 'A starter Game Package costs from $45 on sale, 25% off its $60 list price as of September 2026, on the RSI store. It is a one-time purchase with no subscription, and includes alpha access and a starter ship.',
       },
     },
     {
@@ -336,9 +336,9 @@ export default function WorthBuyingPage() {
                   How much does Star Citizen cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  A starter game package costs from $60 on the official RSI store.
-                  One-time purchase, no subscription. It includes alpha access and
-                  a starter ship.
+                  A starter game package costs from $45 on sale ($60 list) on
+                  the official RSI store. One-time purchase, no subscription.
+                  It includes alpha access and a starter ship.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
