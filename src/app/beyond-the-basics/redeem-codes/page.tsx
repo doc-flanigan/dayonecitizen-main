@@ -8,43 +8,33 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
-const REFERRAL_URL =
-  'https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC'
-
 export const metadata: Metadata = {
-  title: 'Star Citizen Redeem & Referral Codes 2026',
+  title: 'Star Citizen Redeem Codes: Gifts & Promos (2026)',
   description:
-    'Referral codes give new Star Citizen accounts 50,000 UEC. Promo codes come from CIG events. Where to enter each one — and how to spot the fake code lists.',
+    'How to redeem Star Citizen gift codes and event promo codes from CIG giveaways: where to enter each one, and how to spot the fake code lists.',
   alternates: { canonical: '/beyond-the-basics/redeem-codes' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Star Citizen Redeem Codes 2026 — Referral Code & Rewards',
+    title: 'Star Citizen Redeem Codes: Gifts & Promos (2026)',
     description:
-      'Referral codes give new Star Citizen accounts 50,000 UEC. Promo codes come from CIG events. Where to enter each one — and how to spot the fake code lists.',
+      'How to redeem Star Citizen gift codes and event promo codes from CIG giveaways: where to enter each one, and how to spot the fake code lists.',
     url: '/beyond-the-basics/redeem-codes',
   },
 }
 
 // FAQPage structured data — mirrors the FAQ section below so this page can
-// earn rich results for "star citizen redeem codes" questions.
+// earn rich results for "star citizen redeem codes" questions. Referral
+// questions point to /referral-code instead of answering in full there.
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Can I apply a Star Citizen referral code after I already made my account?',
+      name: 'Is a referral code the same as a redeem code?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes — you have up to 24 hours after creating your account to apply a referral code. After that window closes, it cannot be added retroactively.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What do I get with the Star Citizen referral code?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '50,000 UEC applied to your account at the time of account creation.',
+        text: 'No. A referral code is entered once, at account signup, and ties a 50,000 UEC bonus to your account. See dayonecitizen.com/referral-code for the code and a step-by-step walkthrough with screenshots. Redeem codes on this page cover gifts and event promotions instead.',
       },
     },
     {
@@ -93,10 +83,10 @@ export default function RedeemCodesPage() {
               Star Citizen Redeem Codes (2026)
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Star Citizen has two real kinds of codes. A referral code, entered when
-              you create your RSI account, gives your new account 50,000 UEC in
-              starting money. CIG also releases occasional promo codes during events
-              like Free Fly weeks, entered in your account settings after signup.
+              Redeem codes in Star Citizen mostly cover two things: a game
+              package gifted to you by someone else, and promotional codes CIG
+              hands out during events like Free Fly weeks. Both are entered in
+              your account settings after you already have an RSI account.
             </p>
           </div>
         </header>
@@ -107,99 +97,55 @@ export default function RedeemCodesPage() {
 
             <p className="text-starwhite/80 mb-6 leading-relaxed">
               Star Citizen does not hand out redeem codes the way a free mobile game
-              does. The codes that actually unlock something fall into two buckets.
-              A <Term name="Referral Code">referral code</Term> rewards you for
-              signing up with a friend&apos;s code — and rewards the friend too.
-              Promo codes appear occasionally around events run by{' '}
-              <Term name="CIG">CIG</Term>, the company making the game. Most
-              &ldquo;working free Star Citizen codes&rdquo; lists you find in search
-              results are recycled or fake. Use this page as your sanity check.
+              does. The codes that actually unlock something fall into two buckets:
+              a gift code for a package someone bought you, or a promo code{' '}
+              <Term name="CIG">CIG</Term>, the company making the game, releases
+              around an event. Most &ldquo;working free Star Citizen codes&rdquo;
+              lists you find in search results are recycled or fake. Use this page
+              as your sanity check.
             </p>
 
-            {/* Referral code box */}
-            <div className="card-surface rounded-xl border border-gold/30 p-6 mb-4">
-              <p className="text-starwhite/90 mb-2">
-                <strong className="text-gold">Active referral code:</strong>{' '}
-                <code className="bg-navyLight px-1.5 py-0.5 rounded text-sm text-gold">
-                  STAR-GCQJ-N6NC
-                </code>
+            {/* Referral code callout */}
+            <div className="card-surface rounded-xl border border-gold/30 p-6 mb-8">
+              <p className="text-starwhite/90 mb-1">
+                <strong className="text-gold">Looking for a referral code?</strong>
               </p>
-              <p className="text-starwhite/90 mb-2">
-                <strong className="text-gold">Reward:</strong> 50,000{' '}
-                <Term name="UEC">UEC</Term> in starter credits, plus entry into{' '}
-                <Term name="RSI">RSI</Term>&apos;s referral reward tiers.
+              <p className="text-starwhite/80 mb-4 leading-relaxed">
+                That is a different kind of code, entered once at signup.{' '}
+                <strong className="text-starwhite">
+                  Star Citizen referral code: STAR-GCQJ-N6NC
+                </strong>{' '}
+                — get the full step-by-step walkthrough with screenshots.
               </p>
-              <p className="text-starwhite/90 mb-5">
-                <strong className="text-gold">Where to use it:</strong> the
-                &ldquo;Referral Code&rdquo; field on the RSI signup form when you
-                create your account — or use the button below, which fills it in
-                for you.
-              </p>
-              <CTAButton
-                href={REFERRAL_URL}
-                trackingLabel="beyond-basics-redeem-codes-box"
+              <Link
+                href="/referral-code"
+                className="inline-flex items-center gap-1.5 text-gold underline-offset-4 hover:underline font-semibold"
               >
-                Sign up with the code
-              </CTAButton>
+                Go to the referral code guide →
+              </Link>
             </div>
-            <p className="text-muted text-sm mb-8">
-              Disclosure: STAR-GCQJ-N6NC is this site&apos;s referral code. Using it
-              costs you nothing and gives us credit toward RSI&apos;s referral
-              rewards.
-            </p>
 
-            {/* Referral vs promo */}
+            {/* Gift vs promo */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
-              Referral codes vs. promo codes
+              Gift codes vs. promo codes
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
-              <strong className="text-starwhite">Referral codes</strong> — like{' '}
-              <code className="bg-navyLight px-1.5 py-0.5 rounded text-xs text-gold">
-                STAR-GCQJ-N6NC
-              </code>{' '}
-              — go in the <strong className="text-starwhite">Referral Code</strong>{' '}
-              field on the RSI signup form when you create your account. You can
-              apply one at signup or within twenty-four hours of creating the
-              account. After that, the window closes for good.
+              <strong className="text-starwhite">Gift codes</strong> come from a
+              game package someone else bought for you. RSI emails the code to the
+              recipient, who applies it to their own RSI account through their
+              account settings to add the package.
             </p>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
-              <strong className="text-starwhite">Promo codes</strong> are different.
-              They are entered after signup, under{' '}
+              <strong className="text-starwhite">Promo codes</strong> are
+              different. CIG issues these occasionally during events, entered
+              under{' '}
               <strong className="text-starwhite">
                 RSI Account &rarr; Settings &rarr; Apply a Promotional Code
               </strong>
-              . CIG issues these occasionally during events like Invictus Launch
-              Week — the game&apos;s yearly fleet celebration each May.
+              . Invictus Launch Week — the game&apos;s yearly fleet celebration
+              each May — is the event most likely to carry one.
             </p>
 
-            {/* Active codes */}
-            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
-              Active codes right now
-            </h2>
-            <div className="overflow-x-auto mb-4">
-              <table className="w-full text-left text-sm">
-                <thead>
-                  <tr className="border-b border-white/10 text-muted uppercase tracking-wider text-xs">
-                    <th className="py-3 pr-4">Code</th>
-                    <th className="py-3 pr-4">Type</th>
-                    <th className="py-3 pr-4">Reward</th>
-                    <th className="py-3">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-white/5 text-starwhite/80">
-                    <td className="py-3 pr-4">
-                      <code className="bg-navyLight px-1.5 py-0.5 rounded text-xs text-gold">
-                        STAR-GCQJ-N6NC
-                      </code>
-                    </td>
-                    <td className="py-3 pr-4">Referral</td>
-                    <td className="py-3 pr-4">50,000 UEC + referral tier credit</td>
-                    <td className="py-3 text-green-400">Active</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
             <p className="text-muted text-sm mb-8">
               Looking for a Pirate Week 2026 code? The{' '}
               <a
@@ -232,9 +178,12 @@ export default function RedeemCodesPage() {
             <ul className="list-disc pl-6 mb-8 space-y-2 text-starwhite/80">
               <li>
                 <strong className="text-starwhite">The referral programme.</strong>{' '}
-                Use a referral code at signup, then refer your own friends once you
-                are in. RSI&apos;s official referral tier list grants flyable ships,
-                paint finishes, and even capital-ship rewards at the top milestones.
+                Enter a code at signup to tie 50,000 UEC to your new account, then
+                refer your own friends once you are in. See our{' '}
+                <Link href="/referral-code" className="text-gold hover:underline">
+                  referral code guide
+                </Link>{' '}
+                for the full walkthrough.
               </li>
               <li>
                 <strong className="text-starwhite">
@@ -256,20 +205,16 @@ export default function RedeemCodesPage() {
             </h2>
 
             <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
-              Can I apply a referral code after I already made my account?
+              Is a referral code the same as a redeem code?
             </h3>
             <p className="text-starwhite/80 mb-6 leading-relaxed">
-              Yes — you have up to twenty-four hours after creating your account to
-              apply one. After that window closes, it cannot be added later.
-            </p>
-
-            <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
-              What do I get with the referral code?
-            </h3>
-            <p className="text-starwhite/80 mb-6 leading-relaxed">
-              50,000 UEC, applied to your account at the time of account creation.
-              UEC is the game&apos;s real spending money — enough for armor, food
-              supplies, and your first few missions.
+              No. A referral code is entered once, at account signup, and ties a{' '}
+              50,000 UEC bonus to your account.{' '}
+              <Link href="/referral-code" className="text-gold hover:underline">
+                See the referral code guide
+              </Link>{' '}
+              for the code and a step-by-step walkthrough with screenshots.
+              Redeem codes on this page cover gifts and event promotions instead.
             </p>
 
             <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
@@ -317,15 +262,15 @@ export default function RedeemCodesPage() {
         <section className="py-14 bg-navyLight border-t border-white/5">
           <div className="container-wide px-4 text-center">
             <p className="text-muted mb-6 max-w-md mx-auto">
-              Ready to create your account? Use the referral code above and start
-              with fifty thousand bonus credits.
+              New here? Use the referral code and start with fifty thousand
+              bonus credits tied to your account.
             </p>
             <CTAButton
-              href={REFERRAL_URL}
+              href="/referral-code"
               trackingLabel="beyond-basics-redeem-codes-bottom"
               size="lg"
             >
-              Claim your 50,000 UEC
+              Get the referral code
             </CTAButton>
           </div>
         </section>
