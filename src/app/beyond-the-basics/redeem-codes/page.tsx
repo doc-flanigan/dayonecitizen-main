@@ -201,7 +201,18 @@ export default function RedeemCodesPage() {
               </table>
             </div>
             <p className="text-muted text-sm mb-8">
-              Promo and event codes will be added here as RSI announces them. Found
+              Looking for a Pirate Week 2026 code? The{' '}
+              <a
+                href="https://robertsspaceindustries.com/en/comm-link/transmission/21285-Pirate-Week-2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                official RSI blog post
+              </a>{' '}
+              for Pirate Week, which began September 9, 2026, lists themed starter
+              packs, paint schemes and pirate gear. It does not include a redeem
+              code. Promo and event codes will be added here as RSI announces them. Found
               a code somewhere else? Paste it into RSI Account &rarr; Settings
               &rarr; Apply a Promotional Code — the website tells you immediately
               whether it is valid.
