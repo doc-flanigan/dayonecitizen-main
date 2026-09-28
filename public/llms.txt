@@ -30,11 +30,11 @@
 - [In-Game Shops Directory](https://dayonecitizen.com/beyond-the-basics/shops-directory): Where to buy ships, weapons, armor, and components in-game, city by city.
 - [Ship Equipment](https://dayonecitizen.com/beyond-the-basics/ship-equipment): Upgrading your ship's weapons, shields, and components as a new player.
 - [CCU Chains](https://dayonecitizen.com/beyond-the-basics/ccu-chains): What a CCU is, how upgrade chains work, and whether they are worth it.
-- [Redeem Codes & Referral Bonus](https://dayonecitizen.com/beyond-the-basics/redeem-codes): What codes exist in Star Citizen, how referral codes work, and how to start with 50,000 UEC.
+- [Redeem Codes](https://dayonecitizen.com/beyond-the-basics/redeem-codes): Gift codes and event promo codes in Star Citizen — where to enter each one, and how to spot fake code lists. Points to the referral code page for referral questions.
 - [How to Quantum Travel](https://dayonecitizen.com/beyond-the-basics/quantum-travel): Switching to NAV and QT mode, picking a destination, and making your first long-distance jump.
 - [Report a Bug](https://dayonecitizen.com/report-a-bug): How to gather evidence, search the Issue Council, file a report, and follow up.
 - [Free Fly Events](https://dayonecitizen.com/free-fly-events): When Star Citizen is free to try, how to join, and what you can do during a Free Fly.
-- [Star Citizen Referral Code](https://dayonecitizen.com/referral-code): The referral code STAR-GCQJ-N6NC, exactly where to enter it during RSI signup, and how the free 50,000 UEC bonus works — no purchase required.
+- [Star Citizen Referral Code](https://dayonecitizen.com/referral-code): The canonical page for referral-code questions. The code STAR-GCQJ-N6NC, exactly where to enter it during RSI signup, a step-by-step walkthrough with screenshots, and how the 50,000 UEC bonus is tied to your account.
 - [Glossary](https://dayonecitizen.com/glossary): Plain-English definitions of Star Citizen terms, acronyms, and 'Verse slang.
 - [Quick Reference](https://dayonecitizen.com/quick-reference): Mobile cheat sheet — the essential keybinds (on foot, ship flight, capacitors) and which Stanton shop sells weapons, armor, components, mining gear, and ships.
 - [Tools](https://dayonecitizen.com/tools): Handy references and utilities for new players.

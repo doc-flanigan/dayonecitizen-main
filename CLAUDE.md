@@ -498,6 +498,7 @@ characters, none repeating:
 | Weekly-update referral card (bonus active) | `Claim the bonus` |
 | Weekly-update bottom | `Try Star Citizen` |
 | Free-fly bottom | `Begin with a boost` |
+| Referral-code hero | `Sign up with the code applied` |
 | /de/star-citizen-kaufen bottom | `Direkt bei RSI kaufen` |
 | /de/lohnt-sich-star-citizen bottom | `Hol dir den Vorsprung` |
 | /de/starterpaket bottom | `Starte in der Aurora` |

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { Calendar, Clock, AlertCircle, Plane, Download, Wallet } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -100,7 +101,14 @@ export default function FreeFlyPage() {
                   cheapest game package is $45 on sale ($60 list price, as of
                   September 2026). Use a{' '}
                   <Term name="Referral Code">referral code</Term> on signup
-                  for 50,000 <Term name="UEC">UEC</Term> free.
+                  for 50,000 <Term name="UEC">UEC</Term> free — see the{' '}
+                  <Link
+                    href="/referral-code"
+                    className="text-gold underline-offset-4 hover:underline"
+                  >
+                    step-by-step referral code walkthrough
+                  </Link>
+                  .
                 </p>
               </div>
             </div>

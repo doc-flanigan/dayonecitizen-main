@@ -73,7 +73,14 @@ const SECTIONS: Section[] = [
         Epic store, not anywhere else. This section walks through creating an
         account, applying a <Term name="Referral Code">referral code</Term>{' '}
         for the 50,000 <Term name="UEC">UEC</Term> bonus, and finishing
-        checkout.
+        checkout. See the{' '}
+        <Link
+          href="/referral-code"
+          className="text-gold underline-offset-4 hover:underline"
+        >
+          step-by-step referral code walkthrough
+        </Link>
+        .
       </>
     ),
   },
