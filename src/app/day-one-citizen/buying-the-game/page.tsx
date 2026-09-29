@@ -171,7 +171,8 @@ export default function BuyingTheGamePage() {
                   visible identity on{' '}
                   <Term name="Spectrum">Spectrum</Term> and in community spaces. Choose something
                   you are happy with; it is not the same as your in-game pilot name (that is set
-                  at first launch).
+                  at first launch). RSI labels this box <strong className="text-starwhite">Account
+                  Name</strong>. Do not type the referral code here — it has its own field.
                 </li>
                 <li>
                   <strong className="text-starwhite">Referral code field</strong> — enter{' '}
