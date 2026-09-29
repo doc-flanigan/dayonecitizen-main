@@ -70,7 +70,7 @@ const howToJsonLd = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Fill in your details and enlist',
-      text: 'Enter your account name, email, password, and date of birth, accept the Terms of Service, and press Enlist Now. The referral panel should still show the code applied.',
+      text: 'Enter your account name, email, password, and date of birth, accept the Terms of Service, and press Enlist Now. The account name is your public name on RSI, so pick your own — do not type the referral code there. The referral panel should still show the code applied.',
       image: `${SITE.url}/images/referral/rsi-signup-referral-code-field.jpg`,
     },
     {
@@ -295,6 +295,10 @@ export default function ReferralCodePage() {
                     2. Fill in your details and press Enlist Now.
                   </strong>{' '}
                   Enter your account name, email, password, and date of birth.
+                  The <strong className="text-starwhite">Account Name</strong> is
+                  your public name on RSI, and your pilot name in the game
+                  starts as this too. Pick your own name. Do not type the
+                  referral code there — the code already sits in its own box.
                   Tick the box to accept the terms. Before you press{' '}
                   <strong className="text-starwhite">Enlist Now</strong>, check
                   that the referral panel still reads &ldquo;Referral code
