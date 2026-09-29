@@ -226,8 +226,9 @@ export default function ReferralCodeDePage() {
                 </li>
                 <li>
                   <strong className="text-starwhite">„Handle“</strong> — dein
-                  öffentlicher Benutzername in der Community. Er ist nicht dein
-                  Pilotenname im Spiel; den legst du später fest. Auf der
+                  öffentlicher Benutzername in der Community. Er wird auch
+                  standardmäßig dein Pilotenname im Spiel — wähle ihn also mit
+                  Bedacht. Ändern geht später, aber nicht sofort. Auf der
                   Anmeldeseite heißt das Feld „Account Name“. Trag hier nicht
                   den Code ein — der hat sein eigenes Feld.
                 </li>

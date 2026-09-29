@@ -169,9 +169,9 @@ export default function BuyingTheGamePage() {
                 <li>
                   <strong className="text-starwhite">Handle (username)</strong> — this is your
                   visible identity on{' '}
-                  <Term name="Spectrum">Spectrum</Term> and in community spaces. Choose something
-                  you are happy with; it is not the same as your in-game pilot name (that is set
-                  at first launch). RSI labels this box <strong className="text-starwhite">Account
+                  <Term name="Spectrum">Spectrum</Term> and in community spaces. It also becomes
+                  your in-game pilot name by default, so choose something you are happy with.
+                  Changing it later is possible but not instant. RSI labels this box <strong className="text-starwhite">Account
                   Name</strong>. Do not type the referral code here — it has its own field.
                 </li>
                 <li>
