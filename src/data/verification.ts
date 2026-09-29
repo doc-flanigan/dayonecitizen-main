@@ -1,11 +1,12 @@
 // Single source of truth for the /referral-code "Verified working" stamp
 // and the dated verification log. Updated by scripts/verify-referral.mjs in
-// the portfolio root (monthly ritual) — avoid hand-editing dates unless the
-// script is unavailable.
+// the portfolio root (monthly ritual), or by scripts/record-referral-check.mjs
+// via the "referral check" GitHub workflow — avoid hand-editing dates. That
+// workflow also opens a reminder issue when VERIFIED_ON is over 30 days old.
 
-export const VERIFIED_ON = '2026-07-24'
-export const VERIFIED_DISPLAY = 'July 24, 2026'
-export const VERIFIED_MONTH = 'July 2026'
+export const VERIFIED_ON = '2026-09-29'
+export const VERIFIED_DISPLAY = 'September 29, 2026'
+export const VERIFIED_MONTH = 'September 2026'
 
 export type VerificationEntry = {
   display: string
@@ -15,6 +16,10 @@ export type VerificationEntry = {
 
 export const VERIFICATION_LOG: VerificationEntry[] = [
   // __VERIFY_LOG_INSERT__ (newest first — the verify script prepends here)
+  {
+    display: 'September 29, 2026',
+    text: 'STAR-GCQJ-N6NC entered on the live RSI enlist page. RSI accepted it and showed the code as applied. (manual check in a real browser)',
+  },
   {
     display: 'July 24, 2026',
     text: 'STAR-GCQJ-N6NC entered on the live RSI enlist page. The panel showed “You’ve been referred by: Doc Flanigan” and “Referral code successfully applied!” (automated check)',
