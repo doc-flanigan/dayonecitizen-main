@@ -38,7 +38,7 @@ const faqJsonLd = {
       name: 'What are the most important keybinds in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Six keybinds matter most on day one: F to interact with doors, terminals, and items; F1 to open mobiGlas; I to open your inventory; R in the pilot seat to make your ship flight ready; N to toggle landing gear; and B to switch to NAV mode, the first step of quantum travel. Star Citizen has hundreds of bindings, but a new player only needs about fifteen in the first session.',
+        text: 'Six keybinds matter most on day one: F to interact with doors, terminals, and items; F1 to open mobiGlas; I to open your inventory; Right Alt + R in the pilot seat to make your ship flight ready; N to toggle landing gear; and a long press of B to cycle your master mode, which is how you reach NAV mode for quantum travel. Star Citizen has hundreds of bindings, but a new player only needs about fifteen in the first session.',
       },
     },
     {
@@ -62,7 +62,7 @@ const faqJsonLd = {
       name: 'How do you turn your ship engines on in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Sit in the pilot seat and press R. This is called "flight ready" — it powers the ship and its engines in one step. Press N to raise the landing gear once you are in the air.',
+        text: 'Sit in the pilot seat and press Right Alt + R. This is called "flight ready" — it powers the ship and its engines in one step. Plain R does something else. Press N to raise the landing gear once you are in the air.',
       },
     },
   ],
@@ -126,12 +126,13 @@ export default function KeybindsPage() {
               open <Term name="mobiGlas">mobiGlas</Term>, and{' '}
               <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">I</kbd> to
               open your inventory. In a ship,{' '}
-              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd> makes
+              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Right Alt + R</kbd> makes
               you flight ready,{' '}
               <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd> toggles
               landing gear, and{' '}
-              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd> switches
-              your Master Mode to NAV — the first step of{' '}
+              a long press of{' '}
+              <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd> cycles
+              your Master Mode. NAV is the mode you use for{' '}
               <Term name="Quantum Travel">quantum travel</Term>. The full tables
               below cover the rest.
             </p>
@@ -174,23 +175,23 @@ export default function KeybindsPage() {
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">C</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Crouch (toggle)</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Crouch (hold)</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Left Ctrl</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Prone (hold)</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Prone (tap)</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Space</kbd></td>
                     <td className="px-4 py-3 text-sm text-starwhite/85">Jump</td>
                   </tr>
                   <tr className="border-t border-white/5">
-                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">4</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Holster / draw weapon (hold)</td>
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R (hold)</kbd></td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Holster your weapon. A quick tap of R reloads instead.</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Reload</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Reload (tap)</td>
                   </tr>
                 </tbody>
               </table>
@@ -239,28 +240,36 @@ export default function KeybindsPage() {
                     <td className="px-4 py-3 text-sm text-starwhite/85">Afterburner (boost)</td>
                   </tr>
                   <tr className="border-t border-white/5">
-                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Exit seat / enter seat</td>
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Y</kbd></td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Exit your seat</td>
+                  </tr>
+                  <tr className="border-t border-white/5">
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Left Shift + U</kbd></td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Emergency exit from your seat</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd></td>
                     <td className="px-4 py-3 text-sm text-starwhite/85">Toggle landing gear</td>
                   </tr>
                   <tr className="border-t border-white/5">
-                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Flight ready — toggles engines on / off</td>
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Right Alt + R</kbd></td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Flight ready — powers your ship&apos;s systems on / off. Plain R cycles your sub-target instead.</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Switch to NAV mode — first step of <Term name="Quantum Travel">quantum travel</Term> (middle-click for QT mode, aim at a destination, drive auto-calibrates, left-click to jump)</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Hold B (long press) to cycle your Master Mode. NAV is the mode you use for <Term name="Quantum Travel">quantum travel</Term> (middle-click for QT mode, aim at a destination, drive auto-calibrates, hold left-click to jump)</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">L</kbd></td>
                     <td className="px-4 py-3 text-sm text-starwhite/85">Toggle ship lights</td>
                   </tr>
                   <tr className="border-t border-white/5">
+                    <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">T</kbd></td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Cycle targets in view</td>
+                  </tr>
+                  <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Tab</kbd></td>
-                    <td className="px-4 py-3 text-sm text-starwhite/85">Cycle targets</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/85">Radar ping (hold, then release)</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3"><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F1</kbd></td>
@@ -367,9 +376,9 @@ export default function KeybindsPage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Six on day one: F to interact, F1 for{' '}
-                  <Term name="mobiGlas">mobiGlas</Term>, I for inventory, R for
-                  flight ready, N for landing gear, and B to switch to NAV mode —
-                  the first step of quantum travel. Everything else can wait until
+                  <Term name="mobiGlas">mobiGlas</Term>, I for inventory, Right Alt + R
+                  for flight ready, N for landing gear, and a long press of B to
+                  cycle your master mode. NAV mode is the one you use for quantum travel. Everything else can wait until
                   you need it.
                 </p>
               </div>
@@ -398,8 +407,8 @@ export default function KeybindsPage() {
                   How do you turn your ship engines on?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Sit in the pilot seat and press R. That one key — flight ready —
-                  powers the ship and its engines. Press N to raise the landing
+                  Sit in the pilot seat and press Right Alt + R. That combo — flight
+                  ready — powers the ship and its engines. Press N to raise the landing
                   gear once you are airborne.
                 </p>
               </div>

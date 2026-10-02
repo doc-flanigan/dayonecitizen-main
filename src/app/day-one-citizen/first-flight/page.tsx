@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: 'How do you take off in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Press 1 to power on the ship and wait for the HUD to load. Press N to raise the landing gear, tap Space to lift off gently, then exit the hangar slowly — no more than 20–30 m/s. Clipping the door frame at speed destroys ships.',
+        text: 'Press Right Alt + R to make the ship flight ready and wait for the HUD to load. Press N to raise the landing gear, tap Space to lift off gently, then exit the hangar slowly — no more than 20–30 m/s. Clipping the door frame at speed destroys ships.',
       },
     },
     {
@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: 'How does quantum travel work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Press B to switch to NAV mode, then middle-click to cycle into QT mode. Open the StarMap in your mobiGlas and select a destination, then point your nose at the waypoint — the quantum drive auto-calibrates. Left-click to jump. The jump ends automatically when you reach the destination.',
+        text: 'Hold B (a long press) to cycle your master mode to NAV, then middle-click to cycle into QT mode. Open the StarMap in your mobiGlas and select a destination, then point your nose at the waypoint — the quantum drive auto-calibrates. Hold left-click to jump. The jump ends automatically when you reach the destination.',
       },
     },
     {
@@ -109,22 +109,15 @@ export default function FirstFlightPage() {
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
                   Press{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">1</kbd>{' '}
-                  — this requests power from the ship&rsquo;s power plant. You will hear the
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Right Alt + R</kbd>{' '}
+                  — this makes your ship flight ready and requests power from the ship&rsquo;s power plant. You will hear the
                   ship coming to life: systems initializing, engines spooling, the HUD
                   populating with information.
                 </li>
                 <li>
                   Wait for the HUD to fully load. You will see your speed indicator, shields
-                  status, power triangle, and target display appear. This takes 5–10 seconds.
-                </li>
-                <li>
-                  Optionally, press{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">2</kbd>{' '}
-                  or{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">3</kbd>{' '}
-                  to shift the <Term name="Power Triangle">power triangle</Term> toward engines
-                  or shields. For a first flight, balanced is fine.
+                  status, power levels, and target display appear. This takes 5–10 seconds.
+                  Leave the power settings alone for a first flight — the defaults are fine.
                 </li>
               </ol>
             </div>
@@ -244,15 +237,16 @@ export default function FirstFlightPage() {
                   a targeting reticule — align it with the quantum travel marker.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Spool the drive</strong> — hold{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">R</kbd>.
-                  A circular charge indicator appears on your HUD. Hold it until the circle
+                  <strong className="text-starwhite">Switch to NAV mode</strong> — hold{' '}
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd>{' '}
+                  (a long press) to cycle your master mode to NAV. Keep the marker lined up.
+                  A circular charge indicator appears on your HUD. Wait until the circle
                   completes and the display flashes, indicating ready.
                 </li>
                 <li>
                   <strong className="text-starwhite">Jump</strong> — hold{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd>{' '}
-                  to initiate quantum travel. The ship lurches forward, a tunnel effect
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Left Click</kbd>{' '}
+                  to engage the quantum drive. The ship lurches forward, a tunnel effect
                   fills your vision, and you are traveling at a meaningful fraction of the
                   speed of light. Do not touch the controls during the jump.
                 </li>
@@ -394,7 +388,7 @@ export default function FirstFlightPage() {
                   How do you take off in Star Citizen?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Press 1 to power on the ship and wait for the HUD to load. Press N
+                  Press Right Alt + R to make the ship flight ready and wait for the HUD to load. Press N
                   to raise the landing gear, tap Space to lift off gently, then exit
                   the hangar slowly — no more than 20&ndash;30 m/s. Clipping the
                   door frame at speed destroys ships.
@@ -406,10 +400,10 @@ export default function FirstFlightPage() {
                   How does quantum travel work?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Press B to switch to NAV mode, then middle-click to cycle into QT
-                  mode. Open the StarMap in your <Term name="mobiGlas">mobiGlas</Term> and
+                  Hold B (a long press) to cycle your master mode to NAV, then
+                  middle-click to cycle into QT mode. Open the StarMap in your <Term name="mobiGlas">mobiGlas</Term> and
                   select a destination, then point your nose at the waypoint — the
-                  quantum drive auto-calibrates. Left-click to jump. The jump ends
+                  quantum drive auto-calibrates. Hold left-click to jump. The jump ends
                   automatically when you reach the destination.
                 </p>
               </div>
