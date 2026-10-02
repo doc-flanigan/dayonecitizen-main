@@ -355,7 +355,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Military-grade ship manufacturer — Hornets, Carracks, the Valkyrie. Anvil ships are tough, utilitarian, and combat-focused.",
-    lastVerified: '2026-09-21',
+    lastVerified: '2026-09-28',
   },
   {
     term: 'Drake',
@@ -458,7 +458,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake's iconic medium ship — Black (combat/transport), Red (medical), Blue (bounty), Steel (drop-ship). One of the most popular community ships.",
-    lastVerified: '2026-09-21',
+    lastVerified: '2026-09-28',
   },
   {
     term: 'Caterpillar',
@@ -791,7 +791,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Drake mid-size explorer with surprisingly heavy firepower. Built for people who want to venture into unknown space without being defenseless when they get there.",
-    lastVerified: '2026-09-21',
+    lastVerified: '2026-09-28',
   },
   {
     term: 'Cutter',
@@ -799,7 +799,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Drake's entry-level ship — a tiny, boxy transport for hauling small loads on a budget. No frills, but it gets the job done. Variants include the Rambler (explorer) and Scout (recon).",
     also: 'Cutter Rambler, Cutter Scout',
-    lastVerified: '2026-09-21',
+    lastVerified: '2026-09-28',
   },
   {
     term: 'Golem',
@@ -1280,7 +1280,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Stanton II — a gas giant home to Crusader Industries. The floating city of Orison sits in its atmosphere. Three notable moons: Yela, Daymar, Cellin.",
-    lastVerified: '2026-09-07',
+    lastVerified: '2026-09-28',
   },
   {
     term: 'ArcCorp',
