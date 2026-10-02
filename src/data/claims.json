@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01",
+  "generated": "2026-10-02",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -64,6 +64,16 @@
         "https://robertsspaceindustries.com/en/comm-link/engineering/21063-Q-A-RSI-Aurora"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "backer-status-required-gifting-30-days",
+      "claim": "New RSI accounts must wait 30 days after making their first pledge and gaining Backer status before sending gifts to other players.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360042050774-Why-can-t-I-send-this-pledge-as-a-gift",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+      ],
+      "lastVerified": "2026-10-02"
     },
     {
       "id": "bishop-speech-cinematic-2015",
@@ -391,6 +401,16 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "flight-ready-default-ralt-r",
+      "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
+      "status": "verified",
+      "sources": [
+        "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
+      ],
+      "lastVerified": "2026-10-02"
+    },
+    {
       "id": "foundation-festival-2026-expected",
       "claim": "SUPERSEDED 2026-07-29 by event-foundation-festival-2026: CIG confirmed the Foundation Festival 2026 Free Fly (Jul 29 – Aug 10) in Comm-Link 21211 and published full referral-bonus terms in Comm-Link 21225. The pre-announcement claim below no longer reflects official state.",
       "status": "superseded",
@@ -533,6 +553,16 @@
       "lastVerified": "2026-08-18"
     },
     {
+      "id": "high-value-pledges-not-giftable",
+      "claim": "Pledges with a value above ,000 USD cannot be gifted or traded.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360042050774-Why-can-t-I-send-this-pledge-as-a-gift",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+      ],
+      "lastVerified": "2026-10-02"
+    },
+    {
       "id": "iae-save-the-date-timing",
       "claim": "CIG first announced IAE dates with a Spectrum 'Save the Date' post on November 7, 2024 (IAE 2954, Nov 22 – Dec 5) and November 6, 2025 (IAE 2955, Nov 20 – Dec 3).",
       "status": "verified",
@@ -550,6 +580,15 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
       ],
       "lastVerified": "2026-09-28"
+    },
+    {
+      "id": "idris-f8c-not-giftable",
+      "claim": "The Idris (all models) and F8C Lightning are never giftable, regardless of their purchase price.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+      ],
+      "lastVerified": "2026-10-02"
     },
     {
       "id": "included-vessels-loaner-system",
@@ -614,7 +653,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
       ],
-      "lastVerified": "2026-07-06"
+      "lastVerified": "2026-10-02"
     },
     {
       "id": "keybinds-rebindable-profiles",
@@ -1073,6 +1112,24 @@
         "https://robertsspaceindustries.com/tos"
       ],
       "lastVerified": "2026-07-24"
+    },
+    {
+      "id": "pledges-giftable-between-own-accounts",
+      "claim": "Players can gift pledges between their own RSI accounts using the same gifting restrictions as gifting to other players.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+      ],
+      "lastVerified": "2026-10-02"
+    },
+    {
+      "id": "pledges-giftable-once-per-pledge",
+      "claim": "Game packages and pledge items can be gifted only once per pledge, not once per account.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+      ],
+      "lastVerified": "2026-10-02"
     },
     {
       "id": "privateer-starter-pack-125-usd-cutlass-black",
@@ -1747,6 +1804,16 @@
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
       "lastVerified": "2026-09-28"
+    },
+    {
+      "id": "store-credit-pledges-cannot-be-gifted",
+      "claim": "Pledges acquired fully or partially through the use of Store Credit cannot be gifted or traded.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360042050774-Why-can-t-I-send-this-pledge-as-a-gift",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+      ],
+      "lastVerified": "2026-10-02"
     },
     {
       "id": "three-systems-live-stanton-pyro-nyx",
