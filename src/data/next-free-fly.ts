@@ -1,8 +1,9 @@
 /**
  * The next confirmed or upcoming Free Fly event.
  * Update this object whenever a new event is announced.
- * The free-fly-events page and the /api/calendar/free-fly route both derive
- * from this — no other files need editing.
+ * The free-fly-events page derives from this — no other files need editing.
+ * (The .ics feed lives on freeflyevent.com/free-fly.ics; /api/calendar/free-fly
+ * 301s there via next.config.mjs.)
  */
 export const NEXT_FREE_FLY = {
   id: 'foundation-festival-2026',
