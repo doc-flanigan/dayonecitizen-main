@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
@@ -85,7 +86,7 @@ export default function FirstFlightPage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 12</p>
+            <GuideProgress slug="first-flight" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Your first flight
             </h1>
@@ -98,6 +99,7 @@ export default function FirstFlightPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="first-flight" />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Powering on your ship</h2>

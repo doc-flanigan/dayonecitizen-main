@@ -493,7 +493,7 @@ characters, none repeating:
 |---|---|
 | NavBar (desktop + mobile) | `Get 50K UEC` |
 | Footer | `Use my code` |
-| Home bottom CTA | `Start with 50K UEC` |
+| Home bottom CTA (direct to enlist) | `Enlist with my code` |
 | o7-meaning bottom | `Use my referral code` |
 | Glossary inline | `Get the new-player bonus` |
 | Weekly-update referral card (inactive) | `Take the 50K bonus` |
@@ -510,8 +510,13 @@ characters, none repeating:
 | /de/referral-code hero | `Mit Startguthaben starten` |
 | /de/referral-code bottom | `Sichere dir 50.000 UEC` |
 
-The homepage hero **does not** have a CTA button — info-first,
-referral second. New CTAs added to the site should pick a fresh
+The homepage hero has **no referral button** — info-first, referral
+second. Its one button goes to the Day One guide (`/day-one-citizen`),
+with a small text link to `/referral-code` beside it (2026-10-02 new-player
+flow pass: single still hero image, section 01's short answer and a
+six-step path on the homepage; steps live in `src/data/day-one-steps.ts`,
+which also drives the progress strip and "Do this now" box on the twelve
+section pages — keep its facts in sync with those pages). New CTAs added to the site should pick a fresh
 short label, not reuse one of the above.
 
 **Destination rule (Doc, 2026-07-16):** any CTA whose entire label is

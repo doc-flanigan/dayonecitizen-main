@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
@@ -85,7 +86,7 @@ export default function RsiLauncherPage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 07</p>
+            <GuideProgress slug="rsi-launcher" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Using the RSI Launcher
             </h1>
@@ -99,6 +100,7 @@ export default function RsiLauncherPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="rsi-launcher" />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">The launcher interface</h2>

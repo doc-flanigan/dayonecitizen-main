@@ -26,6 +26,35 @@ export const NAV_LINKS = [
   { href: '/about', label: 'About' },
 ] as const
 
+// Primary nav (header). Built for a day-one visitor: one guide link up
+// front, everything for later folded under Guides and Reference. The flat
+// NAV_LINKS list above still feeds the footer.
+export type NavItem = { href: string; label: string; note?: string }
+export type NavGroup = { label: string; items: NavItem[] }
+
+export const NAV_PRIMARY: NavItem = { href: '/day-one-citizen', label: 'Day One Guide' }
+
+export const NAV_GROUPS: NavGroup[] = [
+  {
+    label: 'Guides',
+    items: [
+      { href: '/beyond-the-basics', label: 'Beyond the Basics', note: 'Quantum travel, friends, food, inventory' },
+      { href: '/free-fly-events', label: 'Free Fly events', note: 'Play free before you buy' },
+      { href: '/report-a-bug', label: 'Report a Bug', note: 'Filing a useful bug report' },
+    ],
+  },
+  {
+    label: 'Reference',
+    items: [
+      { href: '/glossary', label: 'Glossary', note: 'Every term, in plain English' },
+      { href: '/quick-reference', label: 'Quick Reference', note: 'Keys and shops on one page' },
+      { href: '/tools', label: 'Tools', note: 'Community-built apps' },
+      { href: '/fact-check', label: 'Fact Check', note: 'Is that claim true?' },
+      { href: '/about', label: 'About', note: 'Who writes this site' },
+    ],
+  },
+]
+
 export const HERO_IMAGES: { src: string; alt: string }[] = [
   { src: '/images/hero/hero-01.jpg', alt: 'A UEE Bengal carrier in orbit high above a planet' },
   { src: '/images/hero/hero-02.jpg', alt: 'An armored trooper overlooking a Star Citizen city skyline' },

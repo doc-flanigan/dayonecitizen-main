@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
@@ -86,7 +87,7 @@ export default function FirstDayPage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 10</p>
+            <GuideProgress slug="first-day" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Your first day in the &lsquo;Verse
             </h1>
@@ -99,6 +100,7 @@ export default function FirstDayPage() {
         </header>
 
         <div className="container-narrow space-y-12 py-16">
+          <DoThisNow slug="first-day" />
 
           <div className="space-y-8">
 
