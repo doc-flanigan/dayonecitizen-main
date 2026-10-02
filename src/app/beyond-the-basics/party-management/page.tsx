@@ -291,10 +291,10 @@ export default function PartyManagementPage() {
             <div className="mt-12 pt-8 border-t border-white/10">
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="/beyond-the-basics/ccu-chains"
+                  href="/beyond-the-basics/shops-directory"
                   className="text-gold hover:underline text-sm"
                 >
-                  Next: CCU Chains &rarr;
+                  Next: In-Game Shops Directory &rarr;
                 </Link>
                 <Link
                   href="/beyond-the-basics"

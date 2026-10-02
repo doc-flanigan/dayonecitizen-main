@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
@@ -84,7 +85,7 @@ export default function FirstLaunchPage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 08</p>
+            <GuideProgress slug="first-launch" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Launching the game for the first time
             </h1>
@@ -97,6 +98,7 @@ export default function FirstLaunchPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="first-launch" />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Character creation</h2>

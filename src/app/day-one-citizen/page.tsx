@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Compass, ArrowRight } from 'lucide-react'
+import { DAY_ONE_STEPS } from '@/data/day-one-steps'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
@@ -306,6 +307,35 @@ export default function DayOneCitizenPage() {
               the launcher. Skip ahead via the table of contents, or read end
               to end in about thirty minutes.
             </p>
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <Link
+                href="/day-one-citizen/worth-buying"
+                className="btn-sheen group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-b from-[#ffd27a] via-gold to-goldDark px-6 py-3 font-display text-base font-bold tracking-wide text-navy shadow-[0_10px_34px_-12px_rgba(245,185,66,0.65),inset_0_1px_0_rgba(255,255,255,0.5)] transition-all duration-300 ease-spring hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+              >
+                Start at section 01
+                <ArrowRight size={16} aria-hidden className="transition-transform duration-300 ease-spring group-hover:translate-x-1" />
+              </Link>
+              <Link
+                href="/referral-code"
+                className="text-sm font-medium text-starwhite/80 underline-offset-4 hover:text-gold hover:underline"
+              >
+                Ready to buy? Sign up with the 50,000 UEC code first
+              </Link>
+            </div>
+            <ol className="mt-10 flex max-w-xl gap-1" aria-label="The twelve sections">
+              {DAY_ONE_STEPS.map((step) => (
+                <li key={step.slug} className="flex-1">
+                  <a
+                    href={`#${step.slug}`}
+                    aria-label={`Section ${step.number}: ${step.title}`}
+                    title={`${step.number} · ${step.short}`}
+                    className="group block py-2"
+                  >
+                    <span className="block h-1.5 rounded-full bg-white/15 transition-colors group-hover:bg-gold" />
+                  </a>
+                </li>
+              ))}
+            </ol>
           </div>
         </header>
 

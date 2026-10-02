@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
@@ -103,7 +104,7 @@ export default function KeybindsPage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 09</p>
+            <GuideProgress slug="keybinds" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Key binds you need to know
             </h1>
@@ -116,6 +117,7 @@ export default function KeybindsPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="keybinds" />
 
           <section>
             <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">

@@ -19,8 +19,12 @@ type TermProps = {
  *   • links to /glossary#term-<slug> for the deep dive,
  *   • shows a small tooltip with the plain-English definition on hover/focus
  *     (desktop only — mobile users get the link),
- *   • exposes the definition to assistive tech via `aria-describedby` and
- *     a native `title` attribute as a baseline fallback.
+ *   • exposes the open tooltip to assistive tech via `aria-describedby`.
+ *
+ * The tooltip is mounted ONLY while open. An always-mounted (opacity-0)
+ * tooltip leaks the definition into the sentence for screen readers, text
+ * selection, copy/paste, and crawlers/AI readers — "mine Mining: extracting…"
+ * mid-clause. Closed, a term is just a link.
  *
  * If `name` does not match any glossary entry, the component renders
  * `children` as plain text and warns once in development. We never throw —
@@ -60,20 +64,18 @@ export default function Term({ name, children, className = '' }: TermProps) {
   const slug = termSlug(term.term)
   const href = `/glossary#term-${slug}`
 
-  // The wrapper uses a *named* Tailwind group (`group/term`) so the tooltip
-  // reacts to hover on THIS term only. An unnamed `group` would also fire on
-  // any ancestor `.group` (e.g. the Start Here cards), making every tooltip
-  // inside a card appear at once. Keyboard focus is handled separately via
-  // `open`.
+  // Hover and keyboard focus both drive `open`; only this term's tooltip
+  // mounts, so terms inside hover-lifted cards never open together.
   return (
     <span
       ref={wrapperRef}
-      className="group/term relative inline"
+      className="relative inline"
+      onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
       <a
         href={href}
-        aria-describedby={tooltipId}
+        aria-describedby={open ? tooltipId : undefined}
         onFocus={() => setOpen(true)}
         onBlur={() => setOpen(false)}
         className={
@@ -86,35 +88,32 @@ export default function Term({ name, children, className = '' }: TermProps) {
       >
         {children}
       </a>
-      <span
-        id={tooltipId}
-        role="tooltip"
-        className={
-          'pointer-events-none absolute left-1/2 top-full z-30 mt-2 ' +
-          '-translate-x-1/2 rounded-lg border border-gold/40 bg-navyLight ' +
-          'px-3 py-2 text-left text-xs font-normal leading-snug text-starwhite ' +
-          'shadow-lg shadow-black/40 ' +
-          // Width: clamp small so it never overflows narrow columns
-          'w-max max-w-[280px] ' +
-          // Visibility: CSS hover for desktop, plus keyboard-focus state via `open`
-          (open
-            ? 'opacity-100'
-            : 'opacity-0 group-hover/term:opacity-100') +
-          ' transition-opacity duration-150 ' +
-          // Hide entirely on small screens — mobile uses the link, not a tooltip
-          'hidden sm:block'
-        }
-      >
-        <span className="mb-1 block text-[10px] font-semibold uppercase tracking-wider text-gold">
-          {term.term}
-        </span>
-        {term.definition}
-        {/* Tiny arrow pointing back at the trigger */}
+      {open ? (
         <span
-          aria-hidden
-          className="absolute -top-1 left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-l border-t border-gold/40 bg-navyLight"
-        />
-      </span>
+          id={tooltipId}
+          role="tooltip"
+          className={
+            'pointer-events-none absolute left-1/2 top-full z-30 mt-2 ' +
+            '-translate-x-1/2 rounded-lg border border-gold/40 bg-navyLight ' +
+            'px-3 py-2 text-left text-xs font-normal leading-snug text-starwhite ' +
+            'shadow-lg shadow-black/40 ' +
+            // Width: clamp small so it never overflows narrow columns
+            'w-max max-w-[280px] ' +
+            // Hide entirely on small screens — mobile uses the link, not a tooltip
+            'hidden sm:block'
+          }
+        >
+          <span className="mb-1 block text-[10px] font-semibold uppercase tracking-wider text-gold">
+            {term.term}
+          </span>
+          {term.definition}
+          {/* Tiny arrow pointing back at the trigger */}
+          <span
+            aria-hidden
+            className="absolute -top-1 left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-l border-t border-gold/40 bg-navyLight"
+          />
+        </span>
+      ) : null}
     </span>
   )
 }

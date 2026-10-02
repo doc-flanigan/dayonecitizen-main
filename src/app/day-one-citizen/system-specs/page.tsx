@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import PageSources from '@/components/PageSources'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
@@ -111,7 +112,7 @@ export default function SystemSpecsPage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 02</p>
+            <GuideProgress slug="system-specs" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               System specs and hardware
             </h1>
@@ -128,6 +129,7 @@ export default function SystemSpecsPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="system-specs" />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Official specs at a glance</h2>

@@ -9,13 +9,13 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 export const metadata: Metadata = {
   title: 'Star Citizen Guides — Beyond the Basics',
   description:
-    'Nine plain-English Star Citizen guides for players past the basics: quantum travel, adding friends, redeem codes, CCU upgrades, and more.',
+    'Eight plain-English Star Citizen guides for players past the basics: quantum travel, adding friends, food, inventory, redeem codes, and more.',
   alternates: { canonical: '/beyond-the-basics' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'Beyond the Basics — Star Citizen Guides for Early Players',
     description:
-      'Nine plain-English Star Citizen guides for players who have got the basics down: quantum travel, adding friends, redeem codes, CCU upgrades, and more.',
+      'Eight plain-English Star Citizen guides for players who have got the basics down: quantum travel, adding friends, food, inventory, and more.',
     url: '/beyond-the-basics',
   },
 }
@@ -44,12 +44,6 @@ const guides = [
     title: 'Creating and Managing a Party',
     description:
       'How to invite friends into a party, get everyone onto the same server, share mission objectives, and crew a multi-crew ship together.',
-  },
-  {
-    slug: 'ccu-chains',
-    title: 'CCU Chains & Ship Upgrades',
-    description:
-      'A CCU lets you pay the difference between two ships to upgrade your pledge. A chain of CCUs can get you a much bigger ship for far less than full price.',
   },
   {
     slug: 'shops-directory',
@@ -97,9 +91,9 @@ export default function BeyondTheBasicsPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-base text-muted">
               You have made it past your first few flights. Now comes the part where the
-              verse opens up. These nine guides cover the things that confuse most
-              players in their first few weeks — from adding friends to saving hundreds
-              on ship upgrades.
+              verse opens up. These eight guides cover the things that confuse most
+              players in their first few weeks — from quantum travel to adding friends
+              and keeping your character fed.
             </p>
           </div>
         </header>

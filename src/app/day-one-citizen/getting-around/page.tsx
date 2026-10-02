@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
@@ -84,7 +85,7 @@ export default function GettingAroundPage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 11</p>
+            <GuideProgress slug="getting-around" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Getting from your hab to the hangar
             </h1>
@@ -97,6 +98,7 @@ export default function GettingAroundPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="getting-around" />
 
           <div className="rounded-2xl border border-white/10 bg-navyLight/20 p-6 text-sm text-starwhite/80">
             <strong className="text-starwhite">Universal tip before you start:</strong>{' '}

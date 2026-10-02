@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
@@ -94,7 +95,7 @@ export default function StarterPackagePage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 05</p>
+            <GuideProgress slug="starter-package" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Which starter package should you buy?
             </h1>
@@ -118,6 +119,7 @@ export default function StarterPackagePage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="starter-package" />
 
           <section>
             <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">

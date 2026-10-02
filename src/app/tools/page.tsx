@@ -206,10 +206,10 @@ export default function ToolsPage() {
               new player needs.</strong>{' '}
               StarJump Fleetviewer compares ship sizes in 3D. Erkul calculates
               ship loadouts and damage per second. SC Trade Tools plans trade
-              routes. UEX Corp tracks live commodity prices. CCU Game finds the
-              cheapest upgrade path between ships using{' '}
-              <Term name="CCU">CCUs</Term>. Every tool on this page is free,
-              browser-based, and built by the community.
+              routes. UEX Corp tracks live commodity prices. Once you already
+              own a ship, CCU Game finds the cheapest upgrade path to another
+              using <Term name="CCU">CCUs</Term>. Every tool on this page is
+              free, browser-based, and built by the community.
             </p>
           </section>
 
@@ -266,8 +266,19 @@ export default function ToolsPage() {
 
           {/* Featured guide: CCU Game */}
           <section>
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-              Featured Guide
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+              Already own a ship?
+            </p>
+            <p className="mb-5 max-w-3xl text-sm text-muted">
+              Skip this until you have flown your starter ship for a while. Upgrades
+              cost real money, and nothing here is needed to play.{' '}
+              <Link
+                href="/beyond-the-basics/ccu-chains"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Read our CCU chains guide first
+              </Link>
+              .
             </p>
             <div className="rounded-2xl border border-gold/30 bg-gradient-to-br from-gold/10 to-navyLight/40 p-8 sm:p-10">
               <h2 className="heading-display text-2xl sm:text-3xl text-starwhite">

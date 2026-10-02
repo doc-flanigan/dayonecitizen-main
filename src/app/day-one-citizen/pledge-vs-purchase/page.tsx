@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
@@ -92,7 +93,7 @@ export default function PledgeVsPurchasePage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 04</p>
+            <GuideProgress slug="pledge-vs-purchase" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               Pledge vs purchase — what&rsquo;s the difference?
             </h1>
@@ -106,6 +107,7 @@ export default function PledgeVsPurchasePage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="pledge-vs-purchase" />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Why the word &ldquo;pledge&rdquo; exists</h2>

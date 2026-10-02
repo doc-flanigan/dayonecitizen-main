@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { ArrowLeft, ArrowRight, AlertCircle } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
+import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
@@ -103,7 +104,7 @@ export default function BuyingTheGamePage() {
             >
               <ArrowLeft size={12} aria-hidden /> Day One Citizen
             </Link>
-            <p className="mt-5 font-mono text-xs text-gold">Section 03</p>
+            <GuideProgress slug="buying-the-game" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               How to actually buy the game
             </h1>
@@ -127,6 +128,7 @@ export default function BuyingTheGamePage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+          <DoThisNow slug="buying-the-game" />
 
           <div className="rounded-2xl border border-yellow-400/20 bg-yellow-400/5 p-6">
             <div className="flex items-start gap-3">
