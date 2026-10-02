@@ -1,0 +1,117 @@
+name: referral check
+
+# Keeps the /referral-code "Verified working" date from going stale.
+# RSI's enlist page can't be checked reliably from a CI runner, so a human
+# does the check and this workflow handles the bookkeeping:
+#
+#   schedule (daily 14:17 UTC) — reads VERIFIED_ON from
+#     src/data/verification.ts. Over 30 days old -> opens a
+#     "Referral code check due" issue (once; no duplicates). Fresh again ->
+#     closes that issue.
+#
+#   workflow_dispatch — Doc checks STAR-GCQJ-N6NC on the live RSI enlist
+#     page, then runs this with the check date (blank = today, UTC). It runs
+#     scripts/record-referral-check.mjs and opens an auto-PR that bumps the
+#     date and adds a verification-log entry. Merge it and the page updates.
+
+on:
+  schedule:
+    - cron: "17 14 * * *"
+  workflow_dispatch:
+    inputs:
+      checked_on:
+        description: "Date you confirmed the code works on the RSI enlist page (YYYY-MM-DD, blank = today UTC)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: referral-check
+  cancel-in-progress: false
+
+env:
+  MAX_AGE_DAYS: "30"
+  ISSUE_TITLE: "Referral code check due"
+
+jobs:
+  staleness:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Open or close the reminder issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          AGE=$(node scripts/record-referral-check.mjs --age)
+          echo "VERIFIED_ON is $AGE days old (limit $MAX_AGE_DAYS)."
+          OPEN=$(gh issue list --state open --search "\"$ISSUE_TITLE\" in:title" \
+            --json number,title --jq "[.[] | select(.title == \"$ISSUE_TITLE\")][0].number // empty")
+
+          if [ "$AGE" -le "$MAX_AGE_DAYS" ]; then
+            if [ -n "$OPEN" ]; then
+              gh issue close "$OPEN" --comment "Verified date is fresh again ($AGE days old). Closing."
+            fi
+            exit 0
+          fi
+
+          if [ -n "$OPEN" ]; then
+            echo "Reminder issue #$OPEN already open."
+            exit 0
+          fi
+
+          gh issue create --title "$ISSUE_TITLE" --body "$(cat <<BODY
+          The "Verified working" date on https://dayonecitizen.com/referral-code is **$AGE days old**. The page promises a monthly re-check.
+
+          **To clear this:**
+          1. Open https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC in a real browser and confirm the panel shows the code as applied.
+          2. Actions → **referral check** → Run workflow → enter the date you checked (or leave blank for today).
+          3. Merge the auto-PR it opens. This issue closes itself on the next daily run.
+
+          If the code no longer applies, do not run the workflow — fix the page copy first.
+          BODY
+          )"
+
+  record:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update verification.ts
+        env:
+          CHECKED_ON: ${{ github.event.inputs.checked_on }}
+        run: node scripts/record-referral-check.mjs "$CHECKED_ON"
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          VERIFIED=$(sed -n "s/^export const VERIFIED_DISPLAY = '\(.*\)'$/\1/p" src/data/verification.ts)
+          BRANCH="referral-check/auto-$(date -u +%Y%m%d-%H%M)"
+          git config user.name "referral-check-bot"
+          git config user.email "referral-check-bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add src/data/verification.ts
+          git commit -m "chore(referral-code): record code check — $VERIFIED"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Referral code verified — $VERIFIED" \
+            --base main \
+            --head "$BRANCH" \
+            --body "Bumps the /referral-code \"Verified working\" date to **$VERIFIED** and adds a verification-log entry (manual check in a real browser, recorded via the referral check workflow)."

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16",
+  "generated": "2026-10-01",
   "claims": [
     {
       "id": "answer-the-call-official-phrase",
@@ -49,11 +49,11 @@
     {
       "id": "aurora-mk2-2year-pledge-45-usd",
       "claim": "The RSI Aurora Mk II standalone pledge with 2-Year insurance costs $45 USD.",
-      "status": "verified",
+      "status": "unverifiable",
       "sources": [
         "https://robertsspaceindustries.com/pledge/Standalone-Ships/Aurora-Mk-II-2-Year"
       ],
-      "lastVerified": "2026-08-18"
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "aurora-mk2-launch-alpha-4-7",
@@ -118,7 +118,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-08-28"
+      "lastVerified": "2026-10-01"
     },
     {
       "id": "chris-roberts-wing-commander-freelancer",
@@ -140,13 +140,22 @@
       "lastVerified": "2026-07-29"
     },
     {
-      "id": "citizen-starter-pack-60-usd-aurora",
-      "claim": "The Citizen Starter Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+      "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+      "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-28"
+    },
+    {
+      "id": "citizen-starter-pack-60-usd-aurora",
+      "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+      ],
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "citizencon-2026-not-held",
@@ -223,7 +232,7 @@
     },
     {
       "id": "current-alpha-version-4-10-0",
-      "claim": "The current live Star Citizen build is Alpha 4.10.0 (Siege of Orison), released August 26, 2026 as build 4.10.0-LIVE.12519617; the release notes announce no wipe and Long Term Persistence was extended rather than reset.",
+      "claim": "Star Citizen Alpha 4.10.0 (Siege of Orison) was released August 26, 2026 as build 4.10.0-LIVE.12519617; the release notes announce no wipe and Long Term Persistence was extended rather than reset. Superseded as the live build by Alpha 4.10.1 on September 16, 2026.",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/comm-link/Patch-Notes/21293-Star-Citizen-Alpha-410",
@@ -231,6 +240,15 @@
         "https://starcitizen.tools/Update:Star_Citizen_Alpha_4.10.0"
       ],
       "lastVerified": "2026-09-16"
+    },
+    {
+      "id": "current-alpha-version-4-10-1",
+      "claim": "The current live Star Citizen build is Alpha 4.10.1, released September 16, 2026 as build 4.10.1-LIVE.12650677; its release notes list Long Term Persistence as preserved (no wipe), with new accounts starting on 20,000 aUEC.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101"
+      ],
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "current-alpha-version-4-9-0",
@@ -268,6 +286,15 @@
         "https://robertsspaceindustries.com/pledge/Packages/Generalist-Starter-Pack"
       ],
       "lastVerified": "2026-08-12"
+    },
+    {
+      "id": "duelist-starter-pack-75-usd-avenger-titan",
+      "claim": "The Duelist Starter Pack ($75 USD) is a game package that includes the Aegis Avenger Titan as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Duelist-Starter-Pack"
+      ],
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "event-defensecon-2956",
@@ -449,7 +476,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Generalist-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "guide-system-category-limit",
@@ -485,7 +512,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Hauler-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "hermes-2year-pledge-220-usd",
@@ -504,6 +531,25 @@
         "https://robertsspaceindustries.com/pledge/Standalone-Ships/Hermes-2-Year"
       ],
       "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "iae-save-the-date-timing",
+      "claim": "CIG first announced IAE dates with a Spectrum 'Save the Date' post on November 7, 2024 (IAE 2954, Nov 22 – Dec 5) and November 6, 2025 (IAE 2955, Nov 20 – Dec 3).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/intergalactic-aerospace-expo-2955-save-the-date"
+      ],
+      "lastVerified": "2026-09-28"
+    },
+    {
+      "id": "iae-venue-history",
+      "claim": "The Intergalactic Aerospace Expo was held at the Tobin Expo Center in New Babbage (microTech) in 2953 and 2954, and moved to Orison (Crusader) for IAE 2955; the IAE 2956 venue is unannounced.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/intergalactic-aerospace-expo-2955-save-the-date",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+      ],
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "included-vessels-loaner-system",
@@ -822,7 +868,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-08-28"
+      "lastVerified": "2026-10-01"
     },
     {
       "id": "miner-starter-pack-75-usd-golem",
@@ -831,7 +877,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Miner-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "misc-raptor-not-real-ship",
@@ -863,6 +909,15 @@
       "lastVerified": "2026-08-18"
     },
     {
+      "id": "new-character-starting-auec-20000",
+      "claim": "New Star Citizen characters start with 20,000 aUEC (temporary alpha in-game currency), per the Build Information block in the official Alpha 4.10.1 LIVE patch notes.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101"
+      ],
+      "lastVerified": "2026-09-28"
+    },
+    {
       "id": "no-free-trial-only-freefly",
       "claim": "Star Citizen does not offer a free trial; only Free Fly Events allow free temporary access",
       "status": "verified",
@@ -892,7 +947,7 @@
         "https://robertsspaceindustries.com/en/referral-program",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ"
       ],
-      "lastVerified": "2026-07-11"
+      "lastVerified": "2026-09-21"
     },
     {
       "id": "no-official-vr-support",
@@ -989,7 +1044,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-08-28"
+      "lastVerified": "2026-10-01"
     },
     {
       "id": "pledge-items-require-registration-not-automatic",
@@ -1008,7 +1063,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-08-28"
+      "lastVerified": "2026-10-01"
     },
     {
       "id": "pledge-refund-30-day-withdrawal-period",
@@ -1018,6 +1073,15 @@
         "https://robertsspaceindustries.com/tos"
       ],
       "lastVerified": "2026-07-24"
+    },
+    {
+      "id": "privateer-starter-pack-125-usd-cutlass-black",
+      "claim": "The Privateer Starter Pack ($125 USD) is a game package that includes the Drake Cutlass Black as the starter ship and full game access.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Privateer-Starter-Pack"
+      ],
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "prowler-utility-2year-pledge-300-usd",
@@ -1144,7 +1208,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ"
       ],
-      "lastVerified": "2026-07-07"
+      "lastVerified": "2026-09-21"
     },
     {
       "id": "rsi-support-cannot-swap-loaners",
@@ -1174,13 +1238,44 @@
       "lastVerified": "2026-08-27"
     },
     {
+      "id": "sabre-collection-warbond-pack",
+      "claim": "The Sabre Collection Warbond pack ($775 USD) includes five Sabre variants: the base rapid-response fighter, Comet (dog-fighting), Raven EX (target-disabling), Firebird (missile-focused), and Peregrine (racing).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packs/Sabre-Collection-Warbond"
+      ],
+      "lastVerified": "2026-09-17"
+    },
+    {
+      "id": "sabre-raven-ex-hybrid-design",
+      "claim": "The Aegis Sabre Raven EX combines the firepower of the Sabre space superiority fighter with the stealth profile of the Raven.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX-Warbond",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX",
+        "https://robertsspaceindustries.com/comm-link/transmission/21332-Aegis-Sabre-Raven-EX"
+      ],
+      "lastVerified": "2026-09-16"
+    },
+    {
+      "id": "sabre-raven-ex-quantum-dampener",
+      "claim": "The Aegis Sabre Raven EX features a quantum dampener that disables enemy quantum drives within its reach, leaving targets unable to flee.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX-Warbond",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Sabre-Raven-EX",
+        "https://robertsspaceindustries.com/comm-link/transmission/21332-Aegis-Sabre-Raven-EX"
+      ],
+      "lastVerified": "2026-09-27"
+    },
+    {
       "id": "salvager-starter-pack-75-usd-salvation",
       "claim": "The Salvager Starter Pack ($75 USD) is a game package that includes the RSI Salvation as the starter ship and full game access.",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Salvager-Starter-Pack"
       ],
-      "lastVerified": "2026-08-12"
+      "lastVerified": "2026-09-27"
     },
     {
       "id": "sc-1-0-no-official-release-date",
@@ -1218,7 +1313,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-09-23"
     },
     {
       "id": "sc-pc-only-rsi-launcher",
@@ -1228,7 +1323,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements",
         "https://robertsspaceindustries.com/download"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-09-23"
     },
     {
       "id": "sc-player-count-no-official",
@@ -1645,12 +1740,13 @@
     },
     {
       "id": "starter-package-from-45-usd",
-      "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
+      "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
       "status": "verified",
       "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
-      "lastVerified": "2026-07-12"
+      "lastVerified": "2026-09-28"
     },
     {
       "id": "three-systems-live-stanton-pyro-nyx",

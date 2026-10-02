@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import CopyCode from '@/components/CopyCode'
 import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
+import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
@@ -27,8 +28,9 @@ const REFERRAL_FAQ =
 const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Referral Code — 50,000 UEC Free',
-  description: `Use Star Citizen referral code STAR-GCQJ-N6NC for a free 50,000 UEC bonus — no purchase needed. Verified working ${VERIFIED_MONTH}, re-checked monthly.`,
+  title: 'Star Citizen Referral Code: STAR-GCQJ-N6NC',
+  description:
+    'The Star Citizen referral code is STAR-GCQJ-N6NC. This step-by-step guide with real signup screenshots shows how it ties 50,000 UEC to your account.',
   alternates: {
     canonical: '/referral-code',
     languages: {
@@ -39,12 +41,66 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Star Citizen Referral Code — STAR-GCQJ-N6NC (50,000 UEC Free)',
+    title: 'Star Citizen Referral Code: STAR-GCQJ-N6NC',
     description:
-      'The Star Citizen referral code is STAR-GCQJ-N6NC. Enter it when you create your free RSI account to start with a 50,000 UEC bonus. No purchase required.',
+      'The Star Citizen referral code is STAR-GCQJ-N6NC. Enter it when you create your RSI account to tie a 50,000 UEC bonus to it — step-by-step, with screenshots.',
     url: '/referral-code',
     type: 'article',
   },
+}
+
+// HowTo structured data — mirrors the visible walkthrough below so this page
+// can earn rich results and AI answer-engine citations for "how to use a
+// star citizen referral code".
+const howToJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to use a Star Citizen referral code',
+  description:
+    'Six steps from opening the referral link to launching the game, with the 50,000 UEC bonus tied to your account.',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Open the link',
+      text: 'Open the referral link. The Star Citizen referral code STAR-GCQJ-N6NC fills in automatically and the page shows "Referral code successfully applied!"',
+      image: `${SITE.url}/images/referral/rsi-referral-panel-applied-2026-09.jpg`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Fill in your details and enlist',
+      text: 'Enter your account name, email, password, and date of birth, accept the Terms of Service, and press Enlist Now. The account name is your public name on RSI, so pick your own — do not type the referral code there. The referral panel should still show the code applied.',
+      image: `${SITE.url}/images/referral/rsi-signup-referral-code-field.jpg`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Confirm your email',
+      text: 'Open the confirmation message RSI sends and verify your email address to activate the account.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Add a game package to your cart',
+      text: 'Pick a game package, such as the Citizen Starter Pack, and press Checkout. Or wait for a Free Fly event, when anyone can play for free.',
+      image: `${SITE.url}/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Check out',
+      text: 'Add your billing address and press Proceed to Pay.',
+      image: `${SITE.url}/images/referral/rsi-checkout-billing-proceed-to-pay.jpg`,
+    },
+    {
+      '@type': 'HowToStep',
+      position: 6,
+      name: 'Download the RSI Launcher and play',
+      text: 'Install the RSI Launcher, sign in, and launch the game. The 50,000 UEC referral bonus is tied to your account.',
+      image: `${SITE.url}/images/launcher/rsi-launcher-home-launch-ready.jpg`,
+    },
+  ],
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -58,23 +114,15 @@ const faqJsonLd = {
       name: 'What is the Star Citizen referral code?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The Star Citizen referral code is STAR-GCQJ-N6NC. Enter it in the Referral Code field when you create your RSI account to receive a 50,000 UEC bonus.',
+        text: 'The Star Citizen referral code is STAR-GCQJ-N6NC. Enter it in the Referral Code field when you create your RSI account to tie a 50,000 UEC bonus to that account.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Is the Star Citizen referral bonus free?',
+      name: 'Is a purchase needed to get the referral bonus?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. The 50,000 UEC bonus is credited when you create a free RSI account with a referral code. No purchase is required to receive it, and it stays on your account permanently.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'When do I enter the referral code?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Enter the code during account signup, in the Referral Code field. If you miss it, you can still add it in your account settings within about 24 hours of creating the account — but not after that window.',
+        text: "RSI's Referral Program FAQ says anyone who registers with a personal code automatically gets 50,000 UEC, added at account creation. The RSI signup page itself describes the same UEC as currency you earn after buying a game package. In practice, the bonus is tied to your account the moment you sign up with the code, and you need a game package to actually play Star Citizen and spend it.",
       },
     },
     {
@@ -82,15 +130,15 @@ const faqJsonLd = {
       name: 'Can I add a referral code after making my account?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Only within roughly 24 hours of creating the account, through your account settings. After that window the code can no longer be applied, so it is best to enter it at signup.',
+        text: 'Only within about twenty-four hours of creating the account, through your account settings, and there may be a delay before the bonus appears. After that window the code can no longer be applied, so it is best to enter it at signup.',
       },
     },
     {
       '@type': 'Question',
-      name: 'How much is the Star Citizen referral bonus?',
+      name: 'Can I change my referral code once it is applied?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The bonus is 50,000 UEC — the persistent United Earth Credits used in the game — added to your account when you enlist with a referral code.',
+        text: 'No — a referral code cannot be changed once an account is created. If you signed up with no code and have not bought anything yet, RSI support can close that account so you can register again with a code.',
       },
     },
     {
@@ -106,7 +154,15 @@ const faqJsonLd = {
       name: 'Are there Star Citizen promo codes or coupon codes?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Not for discounts. RSI's official program pages describe only the referral bonus — 50,000 UEC on a new account. The 'discount code' listings on coupon aggregator sites have no official RSI source.",
+        text: "Not for discounts. RSI's official program pages describe only the referral bonus — 50,000 UEC tied to a new account. The 'discount code' listings on coupon aggregator sites have no official RSI source.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does the referral code work during a Free Fly event?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. A referral code applies whenever you create an account, event or not. Free Fly windows let anyone play free for a limited time; the referral bonus is a separate, always-available part of signing up.',
       },
     },
     {
@@ -133,6 +189,10 @@ export default function ReferralCodePage() {
         />
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
 
@@ -153,8 +213,8 @@ export default function ReferralCodePage() {
                 The Star Citizen referral code is STAR-GCQJ-N6NC.
               </strong>{' '}
               Enter it when you create your free{' '}
-              <Term name="RSI">RSI</Term> account to get a{' '}
-              <Term name="UEC">50,000 UEC</Term> bonus — no purchase required.
+              <Term name="RSI">RSI</Term> account to tie a{' '}
+              <Term name="UEC">50,000 UEC</Term> bonus to that account.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -162,10 +222,10 @@ export default function ReferralCodePage() {
               <CTAButton
                 external
                 href={SITE.referralUrl}
-                trackingLabel="referral-code-hero"
+                trackingLabel="referral-code-hero-applied"
                 size="lg"
               >
-                Use my code &amp; get 50K UEC
+                Sign up with the code applied
               </CTAButton>
             </div>
             <p className="mt-4 max-w-2xl text-sm font-semibold text-gold">
@@ -175,8 +235,8 @@ export default function ReferralCodePage() {
             <p className="mt-3 max-w-2xl text-xs leading-relaxed text-muted">
               The gold button opens the RSI signup page with the code already
               filled in. This is a referral link. When you enlist with this code
-              you get the full 50,000 UEC bonus; the referrer may earn a small
-              reward too. Your bonus is never reduced.
+              your account gets the full 50,000 UEC bonus; the referrer may earn a
+              small reward too. Your bonus is never reduced.
             </p>
             <p className="mt-3 text-sm">
               <Link
@@ -194,30 +254,15 @@ export default function ReferralCodePage() {
         <div className="container-narrow space-y-16 py-16">
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
-              Where to enter the code
+              How to use a Star Citizen referral code
             </h2>
-            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
-              <p>
-                On the RSI signup page there is a{' '}
-                <strong className="text-starwhite">Referral Code</strong> field.
-                Paste the code there and you will see a &ldquo;Referral code
-                successfully applied&rdquo; confirmation, like this:
-              </p>
-              <figure className="overflow-hidden rounded-2xl border border-white/10">
-                <Image
-                  src="/images/referral/rsi-signup-referral-code-field.jpg"
-                  alt="Star Citizen RSI signup form with the Referral Code field highlighted, showing code STAR-GCQJ-N6NC successfully applied."
-                  width={1200}
-                  height={1000}
-                  className="h-auto w-full"
-                />
-                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                  The Referral Code field on the RSI enlist page, with the code applied.
-                </figcaption>
-              </figure>
-              <ol className="list-decimal space-y-3 pl-6">
-                <li>
-                  Open the{' '}
+            <div className="mt-5 space-y-10 text-base leading-relaxed text-starwhite/85">
+              <div>
+                <p>
+                  <strong className="text-starwhite">
+                    1. Open the link — the code fills in automatically.
+                  </strong>{' '}
+                  Use the button above or the{' '}
                   <a
                     href={SITE.referralUrl}
                     target="_blank"
@@ -225,25 +270,145 @@ export default function ReferralCodePage() {
                     className="text-gold underline-offset-4 hover:underline"
                   >
                     RSI enlist page
-                  </a>{' '}
-                  — this link fills the code in for you.
-                </li>
-                <li>Fill in your account name, email, and password.</li>
-                <li>
-                  Check the{' '}
+                  </a>
+                  . The{' '}
                   <strong className="text-starwhite">Referral Code</strong> field
-                  reads <strong className="text-starwhite">STAR-GCQJ-N6NC</strong>.
-                </li>
-                <li>
-                  Confirm &ldquo;Referral code successfully applied&rdquo; appears,
-                  then finish creating your account.
-                </li>
-              </ol>
-              <p>
-                Enter the code at signup if you can. If you forget, you can still
-                add it in your account settings within about{' '}
-                <strong className="text-starwhite">twenty-four hours</strong> — after
-                that window it cannot be applied.{' '}
+                  already shows <strong className="text-starwhite">STAR-GCQJ-N6NC</strong>.
+                </p>
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/referral/rsi-referral-panel-applied-2026-09.jpg"
+                    alt="Close-up of the RSI referral panel reading 'You've been referred by: Doc Flanigan @Doc_Flanigan', code STAR-GCQJ-N6NC, and 'Referral code successfully applied!'"
+                    width={1204}
+                    height={568}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    The referral panel on the RSI enlist page, with the code already applied.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div>
+                <p>
+                  <strong className="text-starwhite">
+                    2. Fill in your details and press Enlist Now.
+                  </strong>{' '}
+                  Enter your account name, email, password, and date of birth.
+                  The <strong className="text-starwhite">Account Name</strong> is
+                  your public name on RSI, and your pilot name in the game
+                  starts as this too. Pick your own name. Do not type the
+                  referral code there — the code already sits in its own box.
+                  Tick the box to accept the terms. Before you press{' '}
+                  <strong className="text-starwhite">Enlist Now</strong>, check
+                  that the referral panel still reads &ldquo;Referral code
+                  successfully applied!&rdquo;
+                </p>
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/referral/rsi-signup-referral-code-field.jpg"
+                    alt="A completed RSI sign-up form with a red arrow and dashed box on the referral panel showing code STAR-GCQJ-N6NC and 'Referral code successfully applied!', next to the Enlist Now button"
+                    width={1200}
+                    height={1069}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    A filled-in sign-up form. The referral panel on the left confirms the code.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div>
+                <p>
+                  <strong className="text-starwhite">3. Confirm your email.</strong>{' '}
+                  RSI sends a confirmation message. Your account is not active
+                  until you verify it.
+                </p>
+                <ShotPlaceholder
+                  file="03-confirm-email.jpg"
+                  caption="The RSI email-verification step after signup"
+                />
+              </div>
+
+              <div>
+                <p>
+                  <strong className="text-starwhite">
+                    4. Add a game package to your cart.
+                  </strong>{' '}
+                  A free account holds the bonus, but you need a game package
+                  to actually play Star Citizen. The cheapest option, the
+                  Citizen Starter Pack, was on sale for $45 (25% off its $60
+                  list price, as of September 2026). Press{' '}
+                  <strong className="text-starwhite">Checkout</strong>. Not ready
+                  to buy? Wait for a{' '}
+                  <Term name="Free Fly">Free Fly</Term> — a limited window when
+                  anyone can play free. The next one is expected around{' '}
+                  <Term name="IAE">IAE</Term> in late November, following
+                  CIG&rsquo;s usual pattern. It has not been announced yet.
+                </p>
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg"
+                    alt="RSI store pop-up: 'Item successfully added to your cart!' showing the Citizen Starter Pack at $45.00 USD, crossed out from $60.00, with the Checkout button outlined in red"
+                    width={952}
+                    height={468}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    The Citizen Starter Pack in the cart, on sale for $45.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div>
+                <p>
+                  <strong className="text-starwhite">5. Check out.</strong>{' '}
+                  Add your billing address, then press{' '}
+                  <strong className="text-starwhite">Proceed to Pay</strong>.
+                  Sales tax may be added to the total.
+                </p>
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/referral/rsi-checkout-billing-proceed-to-pay.jpg"
+                    alt="RSI checkout, step 2 Address: red arrows from 'Add a new address' to the saved billing address card and on to the Proceed to Pay button"
+                    width={1200}
+                    height={819}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    Checkout: pick or add a billing address, then Proceed to Pay.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div>
+                <p>
+                  <strong className="text-starwhite">
+                    6. Download the RSI Launcher and play.
+                  </strong>{' '}
+                  Install the RSI Launcher, sign in with your new account, and
+                  press Launch Game. Your 50,000 UEC referral bonus is tied to
+                  your account.
+                </p>
+                <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
+                  <Image
+                    src="/images/launcher/rsi-launcher-home-launch-ready.jpg"
+                    alt="The RSI Launcher home screen with Star Citizen installed and ready to launch"
+                    width={1051}
+                    height={768}
+                    className="h-auto w-full"
+                  />
+                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                    The RSI Launcher, ready to launch the game.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <p className="text-sm">
+                Enter the code at signup if you can. If you forget, you can
+                still add it in your account settings within about{' '}
+                <strong className="text-starwhite">twenty-four hours</strong> —
+                after that window it cannot be applied.{' '}
                 <SourceLink href={REFERRAL_FAQ}>
                   Official RSI Referral Program FAQ
                 </SourceLink>
@@ -257,24 +422,36 @@ export default function ReferralCodePage() {
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Using a referral code when you enlist gives your new account a{' '}
+                Using a referral code when you enlist ties a{' '}
                 <strong className="text-starwhite">
                   50,000 <Term name="UEC">UEC</Term> bonus
-                </strong>
-                .{' '}
+                </strong>{' '}
+                to your new account.{' '}
                 <SourceLink href={REFERRAL_PROGRAM}>
                   Official RSI Referral Program
                 </SourceLink>
               </p>
               <p>
-                <strong className="text-starwhite">
-                  You do not need to buy anything to get it.
-                </strong>{' '}
-                Creating a free account with the code is enough — the bonus is added
-                right away and stays on your account permanently.{' '}
+                RSI describes this two ways. The{' '}
                 <SourceLink href={REFERRAL_FAQ}>
                   Official RSI Referral Program FAQ
-                </SourceLink>
+                </SourceLink>{' '}
+                says the bonus is added automatically when you register with a
+                personal code — right away if you enter it at signup, or with a
+                delay if you add it later. The{' '}
+                <SourceLink href={SITE.referralUrl}>
+                  Official RSI enlist page
+                </SourceLink>{' '}
+                itself describes the same UEC as currency you earn after
+                buying a game package.
+              </p>
+              <p>
+                <strong className="text-starwhite">
+                  In plain terms: the bonus is tied to your account the moment
+                  you sign up with the code.
+                </strong>{' '}
+                You need a game package to actually play Star Citizen and
+                spend it. It stays on your account permanently either way.
               </p>
               <p>
                 One note on wording you may see elsewhere: the credits are counted in{' '}
@@ -297,13 +474,10 @@ export default function ReferralCodePage() {
                 gives the same 50,000 UEC bonus; this one is mine (Doc_Flanigan).
               </p>
               <p>
-                Here is the part people get wrong: your bonus does{' '}
-                <strong className="text-starwhite">not</strong> depend on you spending
-                money. A referrer only earns a separate &ldquo;Recruitment
-                Point&rdquo; after the person they referred spends at least{' '}
-                <strong className="text-starwhite">$40</strong> on a game package —
-                and that reward is theirs, taken from nothing you receive. Your 50,000
-                UEC is yours either way.{' '}
+                On the referrer&rsquo;s side — mine, not yours — a separate
+                &ldquo;Recruitment Point&rdquo; reward only unlocks once the
+                person referred spends at least $40 on a game package. That is
+                a reward for the referrer, not a condition on your 50,000 UEC.{' '}
                 <SourceLink href={REFERRAL_FAQ}>
                   Official RSI Referral Program FAQ
                 </SourceLink>
@@ -357,7 +531,7 @@ export default function ReferralCodePage() {
                   <Term name="Free Fly">Free Fly</Term> weeks, RSI adds
                   limited-time rewards on top of the standard bonus. When one is
                   live, it appears here. The 50,000 UEC bonus itself is always
-                  available. Event windows are tracked at{' '}
+                  available at signup. Event windows are tracked at{' '}
                   <a
                     href="https://freeflyevent.com"
                     className="text-gold underline-offset-4 hover:underline"
@@ -416,15 +590,21 @@ export default function ReferralCodePage() {
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   It is <strong className="text-starwhite">STAR-GCQJ-N6NC</strong>.
                   Enter it in the Referral Code field when you make your RSI account
-                  to get 50,000 UEC.
+                  to tie 50,000 UEC to it.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
-                <h3 className="mb-2 font-semibold text-starwhite">Is it free?</h3>
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  Is a purchase needed for the bonus?
+                </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Yes — the 50,000 UEC bonus lands on a free account. No purchase is
-                  required, and the bonus stays on your account for good. This and
-                  every referral fact here is tracked in our{' '}
+                  RSI&rsquo;s two official pages describe it two ways: the
+                  Referral Program FAQ says the bonus is added automatically
+                  when you register with a code, and the signup page frames
+                  the same UEC as currency you earn after buying a game
+                  package. The bonus is tied to your account when you sign up
+                  with the code; you need a game package to actually play and
+                  spend it. This and every referral fact here is tracked in our{' '}
                   <Link
                     href="/fact-check"
                     className="text-gold underline-offset-4 hover:underline"
@@ -436,20 +616,23 @@ export default function ReferralCodePage() {
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
                 <h3 className="mb-2 font-semibold text-starwhite">
-                  When do I enter it?
+                  Can I add it later?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  At signup, in the Referral Code field — or within about twenty-four
-                  hours in your account settings. Not after that.
+                  Only within about twenty-four hours of creating the account,
+                  in your account settings, and there may be a delay before it
+                  shows up. Not after that window.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
                 <h3 className="mb-2 font-semibold text-starwhite">
-                  How much is the bonus?
+                  Can I change the code once it is applied?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  50,000 UEC — the persistent United Earth Credits you spend in the
-                  game.
+                  No — a code cannot be swapped after account creation. If you
+                  signed up without one and have not bought anything, RSI
+                  support can close that account so you can register again
+                  with a code.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
@@ -471,6 +654,18 @@ export default function ReferralCodePage() {
                   RSI&rsquo;s program pages describe only the referral bonus.
                   &ldquo;Discount code&rdquo; listings on coupon sites have no
                   official RSI source — the referral code is the one that pays.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  Does it work during Free Fly?
+                </h3>
+                <p className="text-sm leading-relaxed text-starwhite/70">
+                  Yes. The code applies whenever you create an account, event
+                  or not.{' '}
+                  <Term name="Free Fly">Free Fly</Term> lets anyone play free
+                  for a limited window; the referral bonus is separate and
+                  always available at signup.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

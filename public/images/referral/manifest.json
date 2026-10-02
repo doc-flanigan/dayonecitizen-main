@@ -1,0 +1,71 @@
+{
+  "guide": "referral",
+  "targetDir": "public/images/referral",
+  "inbox": "inbox/referral",
+  "note": "Screenshots for the /referral-code walkthrough. Steps 1,2,4,5,6 captured (2 fresh 2026-09-28 captures + annotated set reused from starcitizenhelp.com getting-started). Still needed: step 3 confirm-email shot; optional UEC-balance proof shot.",
+  "shots": [
+    {
+      "filename": "rsi-referral-panel-applied-2026-09.jpg",
+      "page": "referral-code",
+      "step": "Step 1 — open the link, the code fills in automatically",
+      "source": "WEB",
+      "mustShow": "Close-up of the RSI enlist referral panel: 'You've been referred by: Doc Flanigan @Doc_Flanigan', code field STAR-GCQJ-N6NC, 'Referral code successfully applied!'",
+      "annotate": "none — already tightly cropped",
+      "captured": true
+    },
+    {
+      "filename": "rsi-signup-referral-code-field.jpg",
+      "page": "referral-code",
+      "step": "Step 2 - fill in your details and press Enlist Now (annotated: red arrow + dashed box on the referral panel)",
+      "source": "WEB",
+      "mustShow": "RSI signup form Referral Code field highlighted, code STAR-GCQJ-N6NC applied",
+      "annotate": "red arrow from the 50,000 UEC line to a dashed box around the applied code",
+      "captured": true
+    },
+    {
+      "filename": "03-confirm-email.jpg",
+      "page": "referral-code",
+      "step": "Step 3 — confirm your email",
+      "source": "WEB",
+      "mustShow": "The RSI 'verify your email' account state, or the confirmation email itself, right after finishing signup",
+      "annotate": "none",
+      "captured": false
+    },
+    {
+      "filename": "../guides/getting-started-add-to-cart-citizen-starter-pack.jpg",
+      "page": "referral-code",
+      "step": "Step 4 - add a game package to your cart",
+      "source": "WEB",
+      "mustShow": "'Item successfully added to your cart!' - Citizen Starter Pack $45.00 (was $60.00), Checkout outlined",
+      "annotate": "dashed box on Checkout",
+      "captured": true
+    },
+    {
+      "filename": "rsi-checkout-billing-proceed-to-pay.jpg",
+      "page": "referral-code",
+      "step": "Step 5 - check out",
+      "source": "WEB",
+      "mustShow": "RSI checkout step 2 Address - billing card and Proceed to Pay",
+      "annotate": "red arrows + dashed boxes (reused from starcitizenhelp.com getting-started)",
+      "captured": true
+    },
+    {
+      "filename": "../launcher/rsi-launcher-home-launch-ready.jpg",
+      "page": "referral-code",
+      "step": "Step 6 - download the RSI Launcher and play",
+      "source": "LAUNCHER",
+      "mustShow": "RSI Launcher home, game installed and ready to launch",
+      "annotate": "none",
+      "captured": true
+    },
+    {
+      "filename": "05-uec-on-account.jpg",
+      "page": "referral-code",
+      "step": "Optional - proof shot for step 6: the RSI account page showing the 50,000 UEC referral bonus on the balance",
+      "source": "WEB",
+      "mustShow": "RSI account summary / wallet with the UEC balance visible (blur the handle if it is a real account)",
+      "annotate": "red box around the UEC balance",
+      "captured": false
+    }
+  ]
+}

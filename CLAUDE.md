@@ -498,6 +498,7 @@ characters, none repeating:
 | Weekly-update referral card (bonus active) | `Claim the bonus` |
 | Weekly-update bottom | `Try Star Citizen` |
 | Free-fly bottom | `Begin with a boost` |
+| Referral-code hero | `Sign up with the code applied` |
 | /de/star-citizen-kaufen bottom | `Direkt bei RSI kaufen` |
 | /de/lohnt-sich-star-citizen bottom | `Hol dir den Vorsprung` |
 | /de/starterpaket bottom | `Starte in der Aurora` |
@@ -564,6 +565,7 @@ scope):
 | `src/data/updates.ts` | sc-news agent (paused) | dormant — last touched before the digest pipeline was paused |
 | ~~`src/app/weekly-update/page.tsx`~~ | sc-news agent | retired — file no longer exists; revival would recreate it |
 | `src/data/referral-bonus.ts` | sc-news agent | only when a CIG promo is detected |
+| `src/data/verification.ts` | referral-check workflow (Doc confirms) | monthly referral-code re-check; daily cron opens a reminder issue at 30+ days |
 | `.github/sc-news-state.json` | watch workflow | every successful watch run |
 | `src/data/glossary.ts` | human (Doc) for new terms; glossary-audit agent for `lastVerified` | new terms = ad hoc; audit timestamps = weekly cron + on-demand |
 | `src/lib/site.ts` | human (Doc) | rarely — referral URL, palette, author |
@@ -591,6 +593,12 @@ scope):
 - **Re-run a failed broadcast**: Actions → "sc-news draft broadcast"
   → Run workflow → leave `digest_file` blank (uses newest in
   `digests/`) or set to a specific path.
+- **Record a referral-code check**: confirm STAR-GCQJ-N6NC applies
+  on the live RSI enlist page in a real browser, then Actions →
+  "referral check" → Run workflow (date blank = today) → merge the
+  auto-PR. Updates the "Verified working" date on `/referral-code`
+  and `/de/referral-code`. A daily run opens a "Referral code check
+  due" issue once the date passes 30 days, and closes it when fresh.
 - **Light up a referral bonus manually**: edit
   `src/data/referral-bonus.ts` directly with `active: true` and
   real dates, push, merge. The chip lights up next render.

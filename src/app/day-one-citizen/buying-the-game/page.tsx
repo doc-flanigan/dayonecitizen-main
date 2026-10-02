@@ -51,7 +51,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The cheapest game packages start around $45 USD. A package includes access to the Star Citizen alpha, a starter ship with insurance — the current $45 Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting aUEC.',
+        text: 'The cheapest game packages start at $45 on sale ($60 list price, as of September 2026). A package includes access to the Star Citizen alpha, a starter ship with insurance — the Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting UEC.',
       },
     },
     {
@@ -169,9 +169,10 @@ export default function BuyingTheGamePage() {
                 <li>
                   <strong className="text-starwhite">Handle (username)</strong> — this is your
                   visible identity on{' '}
-                  <Term name="Spectrum">Spectrum</Term> and in community spaces. Choose something
-                  you are happy with; it is not the same as your in-game pilot name (that is set
-                  at first launch).
+                  <Term name="Spectrum">Spectrum</Term> and in community spaces. It also becomes
+                  your in-game pilot name by default, so choose something you are happy with.
+                  Changing it later is possible but not instant. RSI labels this box <strong className="text-starwhite">Account
+                  Name</strong>. Do not type the referral code here — it has its own field.
                 </li>
                 <li>
                   <strong className="text-starwhite">Referral code field</strong> — enter{' '}
@@ -252,13 +253,13 @@ export default function BuyingTheGamePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">Step 3 — Choose your package</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                The cheapest game packages start around $45 USD and include:
+                The cheapest game packages start at $45 on sale ($60 list) and include:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Access to the Star Citizen alpha (the live{' '}
                   <Term name="PU">Persistent Universe</Term>)</li>
                 <li>A starter ship with standard insurance</li>
-                <li>10,000 starting <Term name="aUEC">aUEC</Term></li>
+                <li>10,000 starting <Term name="UEC">UEC</Term></li>
               </ul>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -273,7 +274,7 @@ export default function BuyingTheGamePage() {
                 </figcaption>
               </figure>
               <p>
-                The current $45 pack comes with the{' '}
+                The Citizen Starter Pack comes with the{' '}
                 <Term name="Aurora">Aurora Mk II</Term>. Its long-running alternate, the{' '}
                 <Term name="Mustang">Mustang Alpha</Term>, now appears mainly in older and
                 occasional promotional packages. A full comparison of all the packages is in{' '}
@@ -403,10 +404,10 @@ export default function BuyingTheGamePage() {
                   How much does it cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  The cheapest game packages start around $45 USD. That
-                  includes alpha access, a starter ship with insurance — the
-                  current $45 pack comes with the Aurora Mk II — and 10,000
-                  starting <Term name="aUEC">aUEC</Term>.
+                  The cheapest game packages start at $45 on sale ($60 list).
+                  That includes alpha access, a starter ship with insurance —
+                  the Citizen Starter Pack comes with the Aurora Mk II — and
+                  10,000 starting <Term name="UEC">UEC</Term>.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
