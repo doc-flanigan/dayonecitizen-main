@@ -116,15 +116,8 @@ export default function FirstFlightPage() {
                 </li>
                 <li>
                   Wait for the HUD to fully load. You will see your speed indicator, shields
-                  status, power triangle, and target display appear. This takes 5–10 seconds.
-                </li>
-                <li>
-                  Optionally, press{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">2</kbd>{' '}
-                  or{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">3</kbd>{' '}
-                  to shift the <Term name="Power Triangle">power triangle</Term> toward engines
-                  or shields. For a first flight, balanced is fine.
+                  status, power levels, and target display appear. This takes 5–10 seconds.
+                  Leave the power settings alone for a first flight — the defaults are fine.
                 </li>
               </ol>
             </div>
