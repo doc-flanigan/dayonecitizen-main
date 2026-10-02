@@ -40,7 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/day-one-citizen/install', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/rsi-launcher', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/first-launch', changeFrequency: 'monthly', priority: 0.8 },
-    { url: '/day-one-citizen/keybinds', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/first-day', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/getting-around', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/day-one-citizen/first-flight', changeFrequency: 'monthly', priority: 0.8 },
