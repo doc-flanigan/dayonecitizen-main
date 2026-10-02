@@ -4,11 +4,36 @@
   "routes": {
     "/": [
       {
+        "id": "flight-ready-default-ralt-r",
+        "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
+        "status": "verified",
+        "sources": [
+          "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
+        ]
+      },
+      {
         "id": "funding-one-billion-may-2026",
         "claim": "Star Citizen crossed $1 billion in total funding raised on May 24, 2026, from over 6.5 million backer accounts.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/funding-goals"
+        ]
+      },
+      {
+        "id": "referral-enlistment-bonus-50k-uec",
+        "claim": "New RSI accounts created with a referral code receive a 50,000 UEC enlistment bonus.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program"
+        ]
+      },
+      {
+        "id": "sc-minimum-system-requirements",
+        "claim": "Star Citizen's official minimum system requirements are published in RSI support article 360042417374; site spec listings must mirror that article verbatim.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements"
         ]
       }
     ],
@@ -55,6 +80,15 @@
       }
     ],
     "/beyond-the-basics/quantum-travel": [
+      {
+        "id": "keybinds-core-defaults",
+        "claim": "By default in Star Citizen, F is the interaction key, F1 opens the mobiGlas, N raises and lowers landing gear, and B (in the pilot seat) switches the ship's Master Mode to NAV for quantum travel.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      },
       {
         "id": "quantum-travel-sequence",
         "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
@@ -141,6 +175,14 @@
         ]
       },
       {
+        "id": "referral-enlistment-bonus-50k-uec",
+        "claim": "New RSI accounts created with a referral code receive a 50,000 UEC enlistment bonus.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program"
+        ]
+      },
+      {
         "id": "sc-pc-only-rsi-launcher",
         "claim": "Star Citizen is available only for Windows PC through the RSI Launcher, purchased directly from robertsspaceindustries.com — it is not sold on Steam, Epic, or GOG, and does not run on PlayStation, Xbox, or Game Pass (as of July 2026).",
         "status": "verified",
@@ -152,6 +194,24 @@
     ],
     "/day-one-citizen/first-day": [
       {
+        "id": "flight-ready-default-ralt-r",
+        "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
+        "status": "verified",
+        "sources": [
+          "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
+        ]
+      },
+      {
+        "id": "keybinds-core-defaults",
+        "claim": "By default in Star Citizen, F is the interaction key, F1 opens the mobiGlas, N raises and lowers landing gear, and B (in the pilot seat) switches the ship's Master Mode to NAV for quantum travel.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      },
+      {
         "id": "quantum-travel-sequence",
         "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
         "status": "verified",
@@ -161,6 +221,24 @@
       }
     ],
     "/day-one-citizen/first-flight": [
+      {
+        "id": "flight-ready-default-ralt-r",
+        "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
+        "status": "verified",
+        "sources": [
+          "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
+        ]
+      },
+      {
+        "id": "keybinds-core-defaults",
+        "claim": "By default in Star Citizen, F is the interaction key, F1 opens the mobiGlas, N raises and lowers landing gear, and B (in the pilot seat) switches the ship's Master Mode to NAV for quantum travel.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
+        ]
+      },
       {
         "id": "quantum-travel-sequence",
         "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by pressing B once to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate (no hold required), then left-clicking to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
@@ -192,6 +270,15 @@
       }
     ],
     "/day-one-citizen/keybinds": [
+      {
+        "id": "flight-ready-default-ralt-r",
+        "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
+        "status": "verified",
+        "sources": [
+          "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
+        ]
+      },
       {
         "id": "keybinds-core-defaults",
         "claim": "By default in Star Citizen, F is the interaction key, F1 opens the mobiGlas, N raises and lowers landing gear, and B (in the pilot seat) switches the ship's Master Mode to NAV for quantum travel.",
@@ -302,6 +389,14 @@
         ]
       },
       {
+        "id": "duelist-starter-pack-75-usd-avenger-titan",
+        "claim": "The Duelist Starter Pack ($75 USD) is a game package that includes the Aegis Avenger Titan as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Duelist-Starter-Pack"
+        ]
+      },
+      {
         "id": "hauler-starter-pack-80-usd-intrepid",
         "claim": "The Hauler Starter Pack ($80 USD) is a game package that includes the Crusader Intrepid as the starter ship and full game access.",
         "status": "verified",
@@ -318,11 +413,28 @@
         ]
       },
       {
+        "id": "privateer-starter-pack-125-usd-cutlass-black",
+        "claim": "The Privateer Starter Pack ($125 USD) is a game package that includes the Drake Cutlass Black as the starter ship and full game access.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Privateer-Starter-Pack"
+        ]
+      },
+      {
         "id": "salvager-starter-pack-75-usd-salvation",
         "claim": "The Salvager Starter Pack ($75 USD) is a game package that includes the RSI Salvation as the starter ship and full game access.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Salvager-Starter-Pack"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
+          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -343,6 +455,14 @@
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
+        ]
+      },
+      {
+        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
+        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
         ]
       },
       {
@@ -372,12 +492,62 @@
         ]
       },
       {
+        "id": "freefly-typical-duration",
+        "claim": "A typical Free Fly event lasts roughly 10–14 days.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+        ]
+      },
+      {
+        "id": "no-free-trial-only-freefly",
+        "claim": "Star Citizen does not offer a free trial; only Free Fly Events allow free temporary access",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/4412777637271-Does-Star-Citizen-offer-a-free-trial"
+        ]
+      },
+      {
+        "id": "referral-code-24h-window",
+        "claim": "A referral code must be applied at account signup or within ~24 hours in account settings — it cannot be added after that window.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/referral-program"
+        ]
+      },
+      {
+        "id": "sc-minimum-system-requirements",
+        "claim": "Star Citizen's official minimum system requirements are published in RSI support article 360042417374; site spec listings must mirror that article verbatim.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements"
+        ]
+      },
+      {
+        "id": "sq42-separate-title-no-live-sp-mode",
+        "claim": "Squadron 42 is a separate, not-yet-released single-player title; the live Star Citizen PU has no dedicated single-player campaign mode.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
+        ]
+      },
+      {
         "id": "starter-package-from-45-usd",
         "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
           "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
+      },
+      {
+        "id": "three-systems-live-stanton-pyro-nyx",
+        "claim": "Three star systems are live in the current Star Citizen alpha: Stanton (original), Pyro (added Alpha 4.0), and Nyx (added Alpha 4.4).",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/20864-Alpha-44-Welcome-To-Nyx",
+          "https://robertsspaceindustries.com/comm-link/SCW/20360-API"
         ]
       }
     ],
@@ -1091,6 +1261,17 @@
         ]
       }
     ],
+    "/first-flight": [
+      {
+        "id": "flight-ready-default-ralt-r",
+        "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
+        "status": "verified",
+        "sources": [
+          "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
+        ]
+      }
+    ],
     "/first-ship": [
       {
         "id": "citizen-starter-pack-60-usd-aurora",
@@ -1141,6 +1322,24 @@
       {
         "id": "freefly-event-based-not-always-on",
         "claim": "Free Fly access is event-based, not always-on — CIG runs scheduled windows a few times per year (typically Invictus/DefenseCon in May and IAE in November); outside an event, playing requires a Game Package.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+        ]
+      },
+      {
+        "id": "freefly-no-purchase-required",
+        "claim": "Free Fly events are free to play for anyone with a free RSI account — no purchase required during the event window.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
+          "https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule"
+        ]
+      },
+      {
+        "id": "freefly-typical-duration",
+        "claim": "A typical Free Fly event lasts roughly 10–14 days.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/21147-DefenseCon-2956-About",
@@ -1298,6 +1497,15 @@
       }
     ],
     "/quick-reference": [
+      {
+        "id": "flight-ready-default-ralt-r",
+        "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
+        "status": "verified",
+        "sources": [
+          "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
+        ]
+      },
       {
         "id": "keybinds-core-defaults",
         "claim": "By default in Star Citizen, F is the interaction key, F1 opens the mobiGlas, N raises and lowers landing gear, and B (in the pilot seat) switches the ship's Master Mode to NAV for quantum travel.",

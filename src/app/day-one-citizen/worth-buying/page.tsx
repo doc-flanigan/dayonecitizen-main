@@ -9,6 +9,7 @@ import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
+import SourceLink from '@/components/SourceLink'
 
 export const metadata: Metadata = {
   title: 'Is Star Citizen Worth Buying in 2026?',
@@ -60,6 +61,22 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Yes. Several times a year CIG runs Free Fly events, when anyone with a free RSI account can play the live game at no cost. Events typically run one to two weeks, usually around Invictus in May and IAE in November.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is there a free trial of Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Not a standard one. The official RSI support article says the only free access comes through Free Fly events, when anyone with a free RSI account can play the live game. The best test is a Free Fly, so check when the next one is before you buy.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does a Star Citizen Game Package include Squadron 42?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Squadron 42 is a separate single-player game that has not been released yet. The live Star Citizen game has no single-player campaign mode. A starter Game Package is for Star Citizen, so check what any package lists before you buy.',
       },
     },
     {
@@ -139,6 +156,18 @@ export default function WorthBuyingPage() {
                 That is the honest context every potential <Term name="Backer">backer</Term> deserves
                 before handing over money.
               </p>
+              <p>
+                <strong className="text-starwhite">The simplest plan: try it free first, and buy only if you
+                enjoyed it.</strong> The best test is a <Term name="Free Fly">Free Fly</Term>, a
+                short window when the full game is free to play. See{' '}
+                <a
+                  href="https://freeflyevent.com/next-free-fly"
+                  className="text-gold underline-offset-4 hover:underline"
+                >
+                  when the next Free Fly is
+                </a>
+                . If you tried one and it left you cold, do not buy. The paid game is the same game.
+              </p>
             </div>
           </section>
 
@@ -146,24 +175,56 @@ export default function WorthBuyingPage() {
             <h2 className="heading-display text-2xl sm:text-3xl">What you are actually paying for</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                When you buy a game package from{' '}
-                <Term name="RSI">robertsspaceindustries.com</Term>, you receive three things:
+                When you buy a <Term name="Game Package">Game Package</Term> from{' '}
+                <Term name="RSI">robertsspaceindustries.com</Term>, you receive a few things. The
+                cheapest one, the Citizen Starter Pack, lists at $60 and was on sale for $45 as
+                of September 2026.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/pledge/game-packages">
+                  Official RSI store
+                </SourceLink>
               </p>
               <ul className="list-disc space-y-3 pl-6">
                 <li>
                   <strong className="text-starwhite">Access to the Star Citizen alpha</strong> — the
                   live{' '}
                   <Term name="PU">Persistent Universe</Term>, a shared online sandbox currently
-                  set in the{' '}
-                  <Term name="Stanton">Stanton</Term> and{' '}
-                  <Term name="Pyro">Pyro</Term> star systems.
+                  set in three star systems:{' '}
+                  <Term name="Stanton">Stanton</Term>,{' '}
+                  <Term name="Pyro">Pyro</Term> and Nyx, a newer system added in Alpha 4.4.{' '}
+                  <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/20864-Alpha-44-Welcome-To-Nyx">
+                    Official RSI blog post
+                  </SourceLink>
                 </li>
                 <li>
                   <strong className="text-starwhite">A starter ship</strong> — a physical ship in
                   your in-game{' '}
                   <Term name="Hangar">hangar</Term>, ready to fly the moment you log in.
                 </li>
+                <li>
+                  <strong className="text-starwhite">Some starting money and insurance</strong> — the
+                  Citizen Starter Pack includes 10,000 <Term name="UEC">UEC</Term> and six months of
+                  insurance on its ship.{' '}
+                  <SourceLink href="https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack">
+                    Official RSI store page
+                  </SourceLink>
+                </li>
+                <li>
+                  <strong className="text-starwhite">No subscription</strong> — you pay once. There
+                  is no monthly fee to play.{' '}
+                  <SourceLink href="https://robertsspaceindustries.com/pledge/game-packages">
+                    Official RSI store
+                  </SourceLink>
+                </li>
               </ul>
+              <p>
+                <Term name="Squadron 42">Squadron 42</Term>, the single-player story game, is a
+                separate game that is not released yet. The live game has no single-player
+                campaign. A starter pack is for Star Citizen, so check what any
+                package lists before you buy.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts">
+                  Official RSI blog post
+                </SourceLink>
+              </p>
               <p>
                 Calling it a <Term name="Pledge">pledge</Term> rather than a purchase is accurate:{' '}
                 <Term name="CIG">Cloud Imperium Games</Term> is a crowdfunded studio. Your money
@@ -241,10 +302,14 @@ export default function WorthBuyingPage() {
                 </li>
                 <li>
                   <strong className="text-starwhite">Character and progress{' '}
-                  <Term name="Wipe">wipes</Term></strong> — periodically,{' '}
-                  <Term name="CIG">CIG</Term> resets all player{' '}
-                  <Term name="aUEC">aUEC</Term>, inventory, and progress. Your ships and pledges
-                  are never wiped — only earned in-game currency and items.{' '}
+                  <Term name="Wipe">wipes</Term></strong> — sometimes{' '}
+                  <Term name="CIG">CIG</Term> resets player{' '}
+                  <Term name="aUEC">aUEC</Term>, inventory, and progress. The update notes say
+                  each time whether it happens. Your ships and pledges are never wiped — only
+                  earned in-game currency and items.{' '}
+                  <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit">
+                    Official RSI support article
+                  </SourceLink>{' '}
                   <Link href="/day-one-citizen/next-wipe" className="text-gold underline-offset-4 hover:underline">
                     Exactly what survives a wipe is covered here
                   </Link>.
@@ -258,7 +323,7 @@ export default function WorthBuyingPage() {
                 <li>
                   <strong className="text-starwhite">Performance</strong> — Star Citizen is one of
                   the most demanding PC games ever built. Even high-end hardware will not always
-                  hit 60 fps in dense cities. This improves with each major patch as{' '}
+                  hit sixty frames per second in dense cities. This improves with each major update as{' '}
                   <Term name="Server Meshing">server meshing</Term> technology matures.
                 </li>
                 <li>
@@ -274,33 +339,61 @@ export default function WorthBuyingPage() {
             <h2 className="heading-display text-2xl sm:text-3xl">Try before you buy</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                The best way to know if Star Citizen is for you is to play it first. Several times
-                a year, <Term name="CIG">CIG</Term> runs{' '}
+                The best way to know if Star Citizen is for you is to play it first. There is no
+                standard free trial. The only free access comes through Free Fly events.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/4412777637271-Does-Star-Citizen-offer-a-free-trial">
+                  Official RSI support article
+                </SourceLink>{' '}
+                Several times a year, <Term name="CIG">CIG</Term> runs{' '}
                 <Term name="Free Fly">Free Fly</Term> events — periods where anyone can create a
                 free <Term name="RSI">RSI</Term> account and log into the{' '}
                 <Term name="PU">PU</Term> without paying anything.
               </p>
               <p>
-                Free Fly events typically run 10–14 days. You get access to a selection of{' '}
+                Free Fly events typically run ten to fourteen days. You get access to a selection of{' '}
                 <Term name="Loaner Ship">loaner ships</Term> and the full game. If you decide to
                 buy during the event, your{' '}
                 <Link href="/referral-code" className="text-gold underline-offset-4 hover:underline">
                   referral bonus
                 </Link>{' '}
-                carries over to your paid account.
+                carries over to your paid account. Enter the code when you sign up, or within about
+                twenty-four hours.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/referral-program">
+                  Official RSI referral page
+                </SourceLink>
               </p>
               <p>
-                Check <Link href="/free-fly-events" className="text-gold underline-offset-4 hover:underline">
-                  the current Free Fly schedule
-                </Link>{' '}
-                to see if one is active or upcoming before you spend anything.{' '}
+                The best test is a Free Fly, so check{' '}
                 <a
-                  href="https://freeflyevent.com"
+                  href="https://freeflyevent.com/next-free-fly"
                   className="text-gold underline-offset-4 hover:underline"
                 >
-                  freeflyevent.com
+                  when the next Free Fly is
                 </a>{' '}
-                tracks the next event window and how to join, day by day.
+                before you spend anything. New to the idea? Read{' '}
+                <Link href="/free-fly-events" className="text-gold underline-offset-4 hover:underline">
+                  what a Free Fly is and how to join
+                </Link>.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">Can your PC run it?</h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                Star Citizen is very demanding. The official minimum is 16 GB of memory, and 32 GB is
+                recommended. You also need an SSD with 150 GB free.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements">
+                  Official RSI support article
+                </SourceLink>
+              </p>
+              <p>
+                Do not buy the game, or judge it, on a PC that cannot run it well. A Free Fly is a
+                free way to find out.{' '}
+                <Link href="/day-one-citizen/system-specs" className="text-gold underline-offset-4 hover:underline">
+                  The full list of parts is on the system specs page
+                </Link>.
               </p>
             </div>
           </section>
@@ -323,7 +416,7 @@ export default function WorthBuyingPage() {
                 </li>
               </ul>
               <p>
-                If most of those land on the positive side: buy it. The entry price is low enough
+                If most of those land on the positive side, and a Free Fly went well: buy it. The entry price is low enough
                 that the risk is manageable, and there is no other game in the world that offers
                 what Star Citizen does at its best.
               </p>
@@ -351,6 +444,24 @@ export default function WorthBuyingPage() {
                   Yes — during Free Fly events, several times a year, with a free
                   RSI account. Events typically run one to two weeks, usually
                   around Invictus in May and IAE in November.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Is there a free trial?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Not a standard one. The only free access is a Free Fly event, so
+                  that is the best test before you buy.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Does a Game Package include Squadron 42?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  No. Squadron 42 is a separate single-player game that is not
+                  released yet. A starter pack is for Star Citizen.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
