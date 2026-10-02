@@ -11,13 +11,13 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 export const metadata: Metadata = {
   title: 'Star Citizen Food & Drink Guide (2026)',
   description:
-    'Star Citizen food, drink, and survival: hunger and thirst meters, debuffs to avoid, and where to buy food in New Babbage, Lorville, and Area18.',
+    'Star Citizen food, drink, and survival: the Nutrition and Hydration meters, what happens when they run low, and how NDR and HEI ratings work.',
   alternates: { canonical: '/beyond-the-basics/food-drink-survival' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Food, Drink & Survival Guide (2026)',
     description:
-      'How food, drink, and survival mechanics work in Star Citizen: what the hunger and thirst meters do, debuffs to avoid, and where to buy food and drink.',
+      'How food, drink, and survival mechanics work in Star Citizen: what the Nutrition and Hydration meters do, what happens when they run low, and how food and drink ratings work.',
     url: '/beyond-the-basics/food-drink-survival',
   },
 }
@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: 'How do hunger and thirst work in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Two meters track your character’s physical state: a blue hydration bar and a green nutrition bar. Both drain slowly during normal play. Running, fighting, or spending time in extreme temperatures drains them faster.',
+        text: 'Two meters track your character’s needs: Nutrition (hunger) and Hydration (thirst). You can see them on the mobiGlas personal status screen and at the bottom-left of the HUD. Both drain over time and refill when you eat food or drink drinks.',
       },
     },
     {
@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: 'Can you die from hunger or thirst?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Severe hunger and severe dehydration both cause your health to drop and eventually cause you to pass out. If your bleed-out timer runs out while you are incapacitated, you will need to respawn. Keep your bars above twenty percent to avoid serious problems.',
+        text: 'Yes. If Nutrition or Hydration drops too low, you take damage and will eventually fall unconscious. A death caused by empty meters is logged as “Malnutrition”.',
       },
     },
     {
@@ -49,7 +49,7 @@ const faqJsonLd = {
       name: 'What is the best food to carry?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Water bottles for thirst and nutrition bars for hunger give you the best nutrition per inventory slot. Burritos are a good one-item option if you want something that helps both bars at once. Energy drinks work well in a pinch but the crash afterward makes them a bad long-term choice.',
+        text: 'Check the ratings. Food has a Nutritional Density Rating (NDR) and drinks have a Hydration Efficacy Index (HEI). Higher is better. Standard filtered water has an HEI of 80, and caffeine and alcohol lower a drink’s HEI.',
       },
     },
     {
@@ -57,7 +57,7 @@ const faqJsonLd = {
       name: 'Where do I check my hunger and thirst levels?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Press F1 to open the mobiGlas and navigate to the Character status tab. The blue bar is hydration (thirst), the green bar is nutrition (hunger). Both drain over time.',
+        text: 'Open the mobiGlas personal status screen, or look at the bottom-left of the HUD. You will see your Nutrition (hunger) and Hydration (thirst) meters. Both drain over time.',
       },
     },
   ],
@@ -90,8 +90,8 @@ export default function FoodDrinkSurvivalPage() {
               Star Citizen Food, Drink &amp; Survival Guide (2026)
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Your character gets hungry and thirsty. Here is what the bars mean, what
-              happens when you ignore them, and where to restock before a long mission.
+              Your character gets hungry and thirsty. Here is what the meters mean, what
+              happens when you ignore them, and how to read food and drink ratings.
             </p>
           </div>
         </header>
@@ -102,103 +102,73 @@ export default function FoodDrinkSurvivalPage() {
 
             <p className="text-starwhite/80 mb-6 leading-relaxed">
               Star Citizen simulates your character&apos;s basic needs. Two meters track
-              your physical state: a blue <strong className="text-starwhite">hydration</strong>{' '}
-              bar and a green <strong className="text-starwhite">nutrition</strong> bar.
-              Both drain slowly during normal play. Running, fighting, or spending time in
-              extreme temperatures drains them faster.
+              your physical state: <strong className="text-starwhite">Nutrition</strong>{' '}
+              (hunger) and <strong className="text-starwhite">Hydration</strong> (thirst).
+              Both drain over time and refill when you eat food or drink drinks.
             </p>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
-              To check them, press{' '}
-              <strong className="text-starwhite">F1</strong> to open your{' '}
-              <Term name="mobiGlas">mobiGlas</Term>, then navigate to the Character
-              status tab. If either bar is below about half, eat or drink before heading
-              out on a long mission.
+              You can see both on your <Term name="mobiGlas">mobiGlas</Term> personal
+              status screen and at the bottom-left of the HUD. If either gets too low,
+              you take damage and can fall unconscious. You must take your helmet off to
+              eat or drink.
             </p>
             <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/food-drink-character-status-bars.jpg"
-                alt="The mobiGlas character status screen showing the blue hydration bar and green nutrition bar for the player character."
+                alt="The mobiGlas character status screen showing the hydration bar and the nutrition bar for the player character."
                 width={1200}
                 height={693}
                 className="h-auto w-full"
               />
               <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                The character status screen — blue is hydration, green is nutrition.
+                The mobiGlas character status screen, showing your Hydration and Nutrition meters.
               </figcaption>
             </figure>
 
-            {/* Thirst effects */}
+            {/* Low meters */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
-              What happens when you get dehydrated
+              What happens when a meter runs low
             </h2>
-            <p className="text-starwhite/80 mb-4 leading-relaxed">
-              Dehydration happens in three stages, each worse than the last:
-            </p>
             <ul className="list-disc pl-6 mb-8 space-y-2 text-starwhite/80">
-              <li><strong className="text-starwhite">Mild:</strong> Slightly increased stamina drain. You will notice you get winded a little faster when running.</li>
-              <li><strong className="text-starwhite">Moderate:</strong> Blurred vision and an elevated heart rate indicator on your HUD. Hard to ignore.</li>
-              <li><strong className="text-starwhite">Severe:</strong> Disorientation, movement penalties, and a real risk of passing out. Do not let it get here.</li>
+              <li><strong className="text-starwhite">Too low:</strong> If Nutrition or Hydration drops too low, you take damage.</li>
+              <li><strong className="text-starwhite">Left alone:</strong> You will eventually fall unconscious.</li>
+              <li><strong className="text-starwhite">Worst case:</strong> A death caused by empty meters is logged as &ldquo;Malnutrition&rdquo;.</li>
             </ul>
 
-            {/* Hunger effects */}
+            {/* How to eat and drink */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
-              What happens when you get hungry
+              How to eat and drink
             </h2>
             <ul className="list-disc pl-6 mb-8 space-y-2 text-starwhite/80">
-              <li><strong className="text-starwhite">Mild:</strong> Stamina recovers more slowly after sprinting or fighting.</li>
-              <li><strong className="text-starwhite">Moderate:</strong> Reduced carry capacity and slower sprint recovery. You will feel sluggish.</li>
-              <li><strong className="text-starwhite">Severe:</strong> Health starts to deteriorate and you risk passing out. Another player can revive you, but it is an embarrassing way to go down.</li>
+              <li><strong className="text-starwhite">Take your helmet off:</strong> You must remove your helmet before you can eat or drink.</li>
+              <li><strong className="text-starwhite">Equip from inventory:</strong> Food is usually eaten in a single bite. Drinks can be taken in small sips or finished in one go.</li>
+              <li><strong className="text-starwhite">Do not waste it:</strong> Eating or drinking while your meters are full gives a reduced effect.</li>
             </ul>
 
-            {/* Beverages */}
+            {/* Ratings */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
-              What to drink
+              Food and drink ratings: NDR and HEI
             </h2>
             <ul className="list-disc pl-6 mb-8 space-y-2 text-starwhite/80">
               <li>
-                <strong className="text-starwhite">Water:</strong> Best hydration
-                per inventory slot. No side effects. Always carry two or three bottles.
+                <strong className="text-starwhite">Food:</strong> Most food has a
+                Nutritional Density Rating (NDR). A higher NDR means the item restores
+                more hunger.
               </li>
               <li>
-                <strong className="text-starwhite">Coffee:</strong> Hydration plus a
-                temporary stamina boost. Good for long haul runs.
+                <strong className="text-starwhite">Drinks:</strong> Most drinks have a
+                Hydration Efficacy Index (HEI). A higher HEI keeps you hydrated longer.
+                Standard filtered water has an HEI of 80.
               </li>
               <li>
-                <strong className="text-starwhite">Energy drinks:</strong> A big
-                immediate hydration and stamina boost, followed by a crash. Good for
-                emergencies, not a daily driver.
+                <strong className="text-starwhite">Caffeine and alcohol:</strong> These
+                lower a drink&apos;s HEI, so coffee and alcohol hydrate you less than
+                plain water.
               </li>
               <li>
-                <strong className="text-starwhite">Alcohol:</strong> Provides minimal
-                hydration while temporarily impairing your motor skills and vision.
-                Fun on the ground, dangerous before a fight.
-              </li>
-            </ul>
-
-            {/* Food */}
-            <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
-              What to eat
-            </h2>
-            <ul className="list-disc pl-6 mb-8 space-y-2 text-starwhite/80">
-              <li>
-                <strong className="text-starwhite">Nutrition bars:</strong> Best
-                nutrition per inventory slot. Portable, cheap, and reliable. The
-                standard survival kit item.
-              </li>
-              <li>
-                <strong className="text-starwhite">Fast food (BigBenny&apos;s and
-                similar):</strong> Good saturation and quick to eat. Available at most
-                city food courts.
-              </li>
-              <li>
-                <strong className="text-starwhite">Burritos:</strong> A solid
-                all-rounder — they fill both the hunger and hydration bars a little.
-                Widely available.
-              </li>
-              <li>
-                <strong className="text-starwhite">Specialty foods:</strong> Some
-                provide temporary bonuses, such as a small health regeneration boost or
-                resistance to temperature extremes. Worth grabbing when you see them.
+                <strong className="text-starwhite">Dietary effects:</strong> Many items
+                also carry dietary effects, such as Energizing on some drinks. Check an
+                item&apos;s effects before you use it, especially before a fight.
               </li>
             </ul>
 
@@ -207,11 +177,12 @@ export default function FoodDrinkSurvivalPage() {
               Where to find food and drink
             </h2>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
-              Every major city and space station has vending machines and food vendors.
-              Outposts usually have at least one vending machine, but they can run out of
-              stock. Stock up at a city before heading somewhere remote.
+              Food and drink are sold at shops, bars, and vending machines in landing
+              zones and stations. Look for food vendors and kiosks in the main common
+              areas. Stock up before you leave a major hub, because remote outposts may
+              have less on offer.
             </p>
-            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-6">
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/food-drink-vending-machine-station.jpg"
                 alt="A vending machine at a space station common area stocked with drinks and snacks for purchase."
@@ -220,37 +191,9 @@ export default function FoodDrinkSurvivalPage() {
                 className="h-auto w-full"
               />
               <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                A station vending machine — the quickest place to restock before a mission.
+                A station vending machine, one place to restock before a mission.
               </figcaption>
             </figure>
-            <ul className="list-disc pl-6 mb-4 space-y-2 text-starwhite/80">
-              <li>
-                <strong className="text-starwhite">Space stations:</strong> Vending
-                machines in common areas and food courts at most orbital stations
-                around{' '}<Term name="Stanton">Stanton</Term>.
-              </li>
-              <li>
-                <strong className="text-starwhite">New Babbage:</strong> Wally&apos;s
-                Bar and the Commons food court both have good selection.
-              </li>
-              <li>
-                <strong className="text-starwhite">Area18:</strong> G-Loc Bar plus
-                food stands throughout the Plaza level.
-              </li>
-              <li>
-                <strong className="text-starwhite">Lorville:</strong> Food vendors
-                throughout the Workers&apos; District.
-              </li>
-              <li>
-                <strong className="text-starwhite">Orison:</strong> Cloud View Center
-                restaurants if you are out near Crusader.
-              </li>
-            </ul>
-            <p className="text-muted text-sm mb-8">
-              Outpost prices are higher than city prices. Buy in bulk at a city and carry
-              enough to last your mission. One water bottle and two nutrition bars per
-              hour of play is a reasonable baseline.
-            </p>
 
             {/* Tips */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
@@ -258,24 +201,23 @@ export default function FoodDrinkSurvivalPage() {
             </h2>
             <ul className="list-disc pl-6 mb-8 space-y-2 text-starwhite/80">
               <li>
-                <strong className="text-starwhite">Minimum carry:</strong> Two water
-                bottles and four nutrition bars in your personal inventory before any
-                serious mission.
+                <strong className="text-starwhite">Carry some of each:</strong> Keep at
+                least one drink and one food item in your personal inventory.
               </li>
               <li>
                 <strong className="text-starwhite">Stock your ship:</strong> Before a
                 long{' '}<Term name="Cargo">cargo</Term> run or exploration session,
-                buy a stack of consumables at a city. You will pay more at an outpost.
+                buy a supply of food and drink at a city.
               </li>
               <li>
-                <strong className="text-starwhite">Do not eat and drink all at
-                once:</strong> Consuming too many items in rapid succession reduces how
-                effective each one is and can trigger negative status effects.
+                <strong className="text-starwhite">Do not eat or drink when
+                full:</strong> Consuming items while your meters are full gives a
+                reduced effect. Wait until you are hungry or thirsty.
               </li>
               <li>
-                <strong className="text-starwhite">Check your bars before every
-                mission:</strong> F1 &rarr; Character. If either bar is below half, eat
-                and drink before you leave.
+                <strong className="text-starwhite">Check your meters before every
+                mission:</strong> Look at the mobiGlas status screen or the bottom-left
+                of the HUD. If either is low, top up before you leave.
               </li>
             </ul>
 
@@ -290,10 +232,10 @@ export default function FoodDrinkSurvivalPage() {
                   Can you die from hunger or thirst?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Yes. Severe hunger and severe dehydration both cause your health to
-                  drop and eventually cause you to pass out. If your bleed-out timer
-                  runs out while you are incapacitated, you will need to respawn. Keep
-                  your bars above twenty percent to avoid serious problems.
+                  Yes. If Nutrition or Hydration drops too low, you take damage and
+                  will eventually fall unconscious. A death caused by empty meters is
+                  logged as &ldquo;Malnutrition&rdquo;. Top up before long missions if
+                  either meter is low.
                 </p>
               </div>
 
@@ -302,11 +244,9 @@ export default function FoodDrinkSurvivalPage() {
                   What is the best food to carry?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Water bottles for thirst and nutrition bars for hunger give you the
-                  best nutrition per inventory slot. Burritos are a good one-item option
-                  if you want something that helps both bars at once. Energy drinks work
-                  well in a pinch but the crash afterward makes them a bad long-term
-                  choice.
+                  Look at the ratings. Food has an NDR and drinks have an HEI. Higher is
+                  better. Standard filtered water has an HEI of 80. Caffeine and alcohol
+                  lower a drink&apos;s HEI, so plain water is a safe pick for thirst.
                 </p>
               </div>
 
@@ -315,9 +255,9 @@ export default function FoodDrinkSurvivalPage() {
                   Where do I check my hunger and thirst levels?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Press F1 to open the mobiGlas and navigate to the Character status
-                  tab. The blue bar is hydration (thirst), the green bar is nutrition
-                  (hunger). Both drain over time.
+                  Open the <Term name="mobiGlas">mobiGlas</Term> personal status screen,
+                  or look at the bottom-left of the HUD. You will see your Nutrition
+                  (hunger) and Hydration (thirst) meters. Both drain over time.
                 </p>
               </div>
             </div>
