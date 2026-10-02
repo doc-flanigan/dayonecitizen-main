@@ -43,7 +43,7 @@ export function getFreeFlyStatus(now: Date = new Date()): FreeFlyStatus {
 
 /** Format a UTC ISO string as YYYYMMDDTHHmmssZ for iCalendar */
 export function toICalDate(iso: string): string {
-  return iso.replace(/[-:]/g, '').replace('.000', '')
+  return iso.replace(/[-:]/g, '').replace(/\.\d{3}/, '')
 }
 
 /** Build a Google Calendar "Add" URL for the event */
