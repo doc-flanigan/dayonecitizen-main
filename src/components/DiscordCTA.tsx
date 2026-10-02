@@ -11,7 +11,7 @@ export function DiscordCTA() {
           href={DISCORD_URL}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: '#f0c040' }}
+          style={{ color: '#f5b942' }}
           className="underline underline-offset-4 hover:opacity-80 transition-opacity"
         >
           Join the DayOneCitizen Discord
