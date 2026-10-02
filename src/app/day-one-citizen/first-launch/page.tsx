@@ -170,9 +170,8 @@ export default function FirstLaunchPage() {
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
                   <strong className="text-starwhite">Open your <Term name="mobiGlas">mobiGlas</Term></strong>{' '}
-                  — press <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-xs">F1</kbd> or{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-xs">B</kbd> (check
-                  your keybinds). Your <Term name="mobiGlas">mobiGlas</Term> is the
+                  — press <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-xs">F1</kbd>.
+                  Your <Term name="mobiGlas">mobiGlas</Term> is the
                   wrist-mounted computer interface — it contains your wallet, star map, contracts,
                   contacts, and inventory. Tap through the apps to get familiar with the layout.
                 </li>
