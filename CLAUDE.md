@@ -261,13 +261,15 @@ Confirm SEO audit passes before proceeding.
 https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
 
 
-## Color Palette
-  --navy: #0a0e1a
-  --navy-light: #141c2e
-  --gold: #f0c040
-  --gold-dark: #c49a20
-  --starwhite: #e8eaf0
-  --muted: #8892a4
+## Color Palette ("First Launch" — source of truth: tailwind.config.ts / globals.css)
+  --navy: #070b16
+  --navy-light: #111a30
+  --gold: #f5b942
+  --gold-dark: #cf9118
+  --starwhite: #eef1f8
+  --muted: #95a1ba
+  --ember: #ff8e5e
+  --aurora: #6fe3c1
 
 ## Network Conventions
 See `E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md` for footer spec,

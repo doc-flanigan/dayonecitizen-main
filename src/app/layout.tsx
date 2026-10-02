@@ -28,7 +28,7 @@ const spaceMono = Space_Mono({
 })
 
 export const viewport: Viewport = {
-  themeColor: '#0a0e1a',
+  themeColor: '#070b16',
   width: 'device-width',
   initialScale: 1,
 }

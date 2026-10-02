@@ -4,8 +4,8 @@ Render the dayonecitizen.com brand mark in every size and aspect ratio
 the site needs across favicons, PWA icons, OpenGraph cards, and the
 common social-media platforms.
 
-The mark is the wordmark "DOC" set in Orbitron Bold gold (#f0c040) on
-the navy palette (#0a0e1a / #141c2e). DOC is both the brand initials
+The mark is the wordmark "DOC" set in Orbitron Bold gold (#f5b942) on
+the "First Launch" navy palette (#070b16 / #111a30). DOC is both the brand initials
 (Day One Citizen) and Doc_Flanigan's in-game handle — same single mark
 for both meanings.
 
@@ -49,12 +49,12 @@ SITE_OUT = ROOT / "public" / "images" / "brand"
 SOCIAL_OUT = ROOT / "assets" / "brand"
 
 # Palette — kept in sync with tailwind.config.ts.
-NAVY = (10, 14, 26)          # #0a0e1a
-NAVY_LIGHT = (20, 28, 46)    # #141c2e
-GOLD = (240, 192, 64)        # #f0c040
-GOLD_DARK = (196, 154, 32)   # #c49a20
-STARWHITE = (232, 234, 240)  # #e8eaf0
-MUTED = (136, 146, 164)      # #8892a4
+NAVY = (7, 11, 22)           # #070b16
+NAVY_LIGHT = (17, 26, 48)    # #111a30
+GOLD = (245, 185, 66)        # #f5b942
+GOLD_DARK = (207, 145, 24)   # #cf9118
+STARWHITE = (238, 241, 248)  # #eef1f8
+MUTED = (149, 161, 186)      # #95a1ba
 
 # Single subcopy used everywhere a banner needs a tagline, so OG,
 # Twitter, X header, and YouTube all read consistently.
