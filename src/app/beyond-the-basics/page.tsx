@@ -25,7 +25,7 @@ const guides = [
     slug: 'quantum-travel',
     title: 'How to Quantum Travel',
     description:
-      'Press B for NAV mode, middle-click for QT mode, then let the drive auto-calibrate before you jump. Every step explained — plus the Starmap, fuel, and interdiction.',
+      'Hold B for NAV mode, middle-click for QT mode, then let the drive auto-calibrate before you jump. Every step explained — plus the Starmap, fuel, and interdiction.',
   },
   {
     slug: 'adding-friends',

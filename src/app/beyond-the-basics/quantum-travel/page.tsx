@@ -10,13 +10,13 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 export const metadata: Metadata = {
   title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
   description:
-    'Press B for NAV mode, middle-click into QT mode, set a Starmap route, and let the drive calibrate before you jump. A step-by-step guide for new pilots.',
+    'Hold B for NAV mode, middle-click into QT mode, set a Starmap route, and let the drive calibrate before you jump. A step-by-step guide for new pilots.',
   alternates: { canonical: '/beyond-the-basics/quantum-travel' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
     description:
-      'Press B for NAV mode, middle-click into QT mode, set a Starmap route, and let the drive calibrate before you jump. A step-by-step guide for new pilots.',
+      'Hold B for NAV mode, middle-click into QT mode, set a Starmap route, and let the drive calibrate before you jump. A step-by-step guide for new pilots.',
     url: '/beyond-the-basics/quantum-travel',
   },
 }
@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: 'How do you quantum travel in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Press B in the pilot seat to switch to NAV mode, then middle-click to cycle into QT mode. Aim at a destination marker, let the drive auto-calibrate for five to fifteen seconds, then left-click to jump. For far-away destinations, press F2 to open the Starmap and set a route first.',
+        text: 'Hold B (a long press) in the pilot seat to cycle your master mode to NAV, then middle-click to cycle into QT mode. Aim at a destination marker, let the drive auto-calibrate for five to fifteen seconds, then hold left-click to jump. For far-away destinations, press F2 to open the Starmap and set a route first.',
       },
     },
     {
@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: 'Why will my quantum drive not calibrate?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Check five things: you are in the pilot seat, you are in NAV mode (press B) and QT mode (middle-click), you are clear of restricted areas around stations and planets, the quantum drive component is not damaged, and you have quantum fuel. Any one of these blocks calibration.',
+        text: 'Check five things: you are in the pilot seat, you are in NAV mode (hold B) and QT mode (middle-click), you are clear of restricted areas around stations and planets, the quantum drive component is not damaged, and you have quantum fuel. Any one of these blocks calibration.',
       },
     },
     {
@@ -98,10 +98,10 @@ export default function QuantumTravelPage() {
               How to Quantum Travel in Star Citizen
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Press <strong className="text-starwhite">B</strong> in the pilot seat to
-              switch to NAV mode, then middle-click to cycle into QT mode. Set a route
+              Hold <strong className="text-starwhite">B</strong> in the pilot seat to
+              cycle to NAV mode, then middle-click to cycle into QT mode. Set a route
               on the Starmap, point at the marker, and the drive auto-calibrates — then
-              left-click to jump.
+              hold left-click to jump.
             </p>
           </div>
         </header>
@@ -184,9 +184,9 @@ export default function QuantumTravelPage() {
                 close.
               </li>
               <li>
-                <strong className="text-starwhite">Press B to switch to NAV mode.</strong>{' '}
-                A single press of <strong className="text-starwhite">B</strong> — not a
-                hold — sets your ship&apos;s Master Mode to NAV. Nearby destinations
+                <strong className="text-starwhite">Hold B to cycle to NAV mode.</strong>{' '}
+                A long press of <strong className="text-starwhite">B</strong> cycles
+                your ship&apos;s Master Mode. Stop when it reads NAV. Nearby destinations
                 appear as purple diamond markers floating in space around you. Turn
                 your view to see them all.
               </li>
@@ -204,9 +204,9 @@ export default function QuantumTravelPage() {
                 depending on your ship, its drive, and your power settings.
               </li>
               <li>
-                <strong className="text-starwhite">Left-click to jump.</strong>{' '}
+                <strong className="text-starwhite">Hold left-click to jump.</strong>{' '}
                 When calibration finishes and the &ldquo;QUANTUM READY&rdquo; prompt
-                appears, click your{' '}
+                appears, hold your{' '}
                 <strong className="text-starwhite">Left Mouse Button</strong>. Your ship
                 shoots forward into the famous blue quantum tunnel.
               </li>
@@ -218,10 +218,10 @@ export default function QuantumTravelPage() {
               </li>
             </ol>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
-              That is the whole loop: press{' '}
+              That is the whole loop: hold{' '}
               <strong className="text-starwhite">B</strong> for NAV mode &rarr;
               middle-click for QT mode &rarr; aim at a marker &rarr; let it calibrate
-              &rarr; left-click to jump.
+              &rarr; hold left-click to jump.
             </p>
 
             {/* Starmap */}
@@ -363,7 +363,7 @@ export default function QuantumTravelPage() {
               </li>
               <li>
                 <strong className="text-starwhite">Check your Operating Mode.</strong>{' '}
-                You need to be in NAV mode (press <strong className="text-starwhite">B</strong>)
+                You need to be in NAV mode (hold <strong className="text-starwhite">B</strong>)
                 and QT mode (middle-click) before the drive will calibrate.
               </li>
               <li>
@@ -397,8 +397,8 @@ export default function QuantumTravelPage() {
               </li>
               <li>
                 Confirm <strong className="text-starwhite">B</strong> is still mapped
-                to &ldquo;Switch to NAV Mode&rdquo; in the Options keybindings, not the
-                older &ldquo;Hold Quantum Travel&rdquo; bind.
+                to &ldquo;Cycle Master Mode (Long Press)&rdquo; in the Options keybindings.
+                Quantum travel itself uses &ldquo;Engage Quantum Drive (Hold)&rdquo; on left-click.
               </li>
             </ul>
 

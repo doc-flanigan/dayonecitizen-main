@@ -222,8 +222,8 @@ export default function FirstDayPage() {
                   <div className="mt-3 space-y-3 text-base leading-relaxed text-starwhite/85">
                     <p>
                       Your ship is unpowered. Press{' '}
-                      <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">1</kbd>{' '}
-                      to request power from the ship&rsquo;s systems. You will hear engines
+                      <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Right Alt + R</kbd>{' '}
+                      to make it flight ready and request power from the ship&rsquo;s systems. You will hear engines
                       spooling, systems coming online. Wait for the HUD to populate.
                     </p>
                     <p>
@@ -297,12 +297,12 @@ export default function FirstDayPage() {
                       <Term name="Quantum Travel">quantum travel</Term> to get there fast.
                     </p>
                     <p>
-                      Press{' '}
+                      Hold{' '}
                       <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd>{' '}
-                      to switch to NAV mode, then middle-click to cycle into QT mode with
+                      (a long press) to cycle your master mode to NAV, then middle-click to cycle into QT mode with
                       your destination targeted (it appears as a waypoint). Point your nose
                       at it and the quantum drive auto-calibrates — a circular indicator
-                      appears in your HUD. When it completes, left-click{' '}
+                      appears in your HUD. When it completes, hold left-click{' '}
                       to jump. The ship accelerates dramatically and you are transported across
                       the system in seconds to minutes depending on the distance.
                     </p>

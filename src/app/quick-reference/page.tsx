@@ -30,9 +30,9 @@ const DAY_ONE_KEYS = [
   { k: 'F', action: 'Interact with doors, terminals, ships, items' },
   { k: 'F1', action: 'Open / close mobiGlas' },
   { k: 'I', action: 'Open inventory' },
-  { k: 'R', action: 'Flight ready — turns ship engines on' },
+  { k: 'Right Alt + R', action: 'Flight ready — powers your ship on' },
   { k: 'N', action: 'Toggle landing gear' },
-  { k: 'B', action: 'Switch to NAV mode — first step of quantum travel' },
+  { k: 'B (hold)', action: 'Long press cycles your master mode — NAV is for quantum travel' },
 ]
 
 const ON_FOOT_KEYS = [
@@ -40,11 +40,11 @@ const ON_FOOT_KEYS = [
   { k: 'F1', action: 'Open / close mobiGlas' },
   { k: 'I', action: 'Open inventory' },
   { k: 'Left Shift', action: 'Sprint (hold)' },
-  { k: 'C', action: 'Crouch (toggle)' },
-  { k: 'Left Ctrl', action: 'Prone (hold)' },
+  { k: 'C', action: 'Crouch (hold)' },
+  { k: 'Left Ctrl', action: 'Prone (tap)' },
   { k: 'Space', action: 'Jump' },
-  { k: '4', action: 'Holster / draw weapon (hold)' },
-  { k: 'R', action: 'Reload' },
+  { k: 'R (hold)', action: 'Holster your weapon' },
+  { k: 'R', action: 'Reload (tap)' },
 ]
 
 const FLIGHT_KEYS = [
@@ -54,12 +54,13 @@ const FLIGHT_KEYS = [
   { k: 'Space', action: 'Strafe up' },
   { k: 'Left Ctrl', action: 'Strafe down' },
   { k: 'Left Shift', action: 'Afterburner (boost)' },
-  { k: 'R', action: 'Flight ready — engines on / off' },
+  { k: 'Right Alt + R', action: 'Flight ready — ship systems on / off' },
   { k: 'N', action: 'Toggle landing gear' },
-  { k: 'B', action: 'NAV mode, then middle-click for QT mode — drive auto-calibrates, left-click to jump' },
-  { k: 'Tab', action: 'Cycle targets' },
+  { k: 'B (hold)', action: 'Long press cycles master mode to NAV, then middle-click for QT mode — drive auto-calibrates, hold left-click to jump' },
+  { k: 'T', action: 'Cycle targets in view' },
+  { k: 'Tab (hold)', action: 'Radar ping — release to send' },
   { k: 'L', action: 'Toggle ship lights' },
-  { k: 'F', action: 'Exit / enter seat' },
+  { k: 'Y', action: 'Exit your seat' },
 ]
 
 const CAPACITOR_KEYS = [
@@ -256,7 +257,7 @@ export default function QuickReferencePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">Ship flight</h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
               Mouse aims. Keyboard handles throttle, strafe, and roll. Set a
-              destination, then press <Kbd>B</Kbd> for NAV mode and middle-click
+              destination, then hold <Kbd>B</Kbd> to cycle to NAV mode and middle-click
               for QT mode to begin{' '}
               <Term name="Quantum Travel">quantum travel</Term>.
             </p>
