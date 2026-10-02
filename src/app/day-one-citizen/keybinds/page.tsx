@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   title: 'Star Citizen Keybinds for New Players',
   description:
     'Star Citizen keybinds for new players: on-foot, flight controls, power triangle, mobiGlas, quantum travel, and how to remap controls in-game.',
-  alternates: { canonical: '/day-one-citizen/keybinds' },
+  // Cross-domain canonical: SCH's full keybind list is the network's ranking
+  // page for this topic (90d to 2026-09-28: 347 clicks vs 13 here). The two
+  // pages split the query on Google page 2, so this one defers. It stays live
+  // for the day-one chain and is left out of the sitemap.
+  alternates: { canonical: 'https://starcitizenhelp.com/game-guides/keybinds' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Keybinds for New Players',
@@ -317,6 +321,16 @@ export default function KeybindsPage() {
                 <li>Select <strong className="text-starwhite">Key Bindings</strong></li>
                 <li>Browse categories: On Foot, Flight, Mining, etc.</li>
               </ol>
+              <p>
+                Want every default binding on one page? Our sister site keeps the{' '}
+                <a
+                  href="https://starcitizenhelp.com/game-guides/keybinds"
+                  className="text-gold underline decoration-dotted hover:text-goldDark"
+                >
+                  full Star Citizen keybind list
+                </a>
+                , grouped by activity.
+              </p>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/keybinds-options-keybindings-screen.jpg"
