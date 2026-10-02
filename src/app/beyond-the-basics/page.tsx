@@ -37,7 +37,7 @@ const guides = [
     slug: 'food-drink-survival',
     title: 'Food, Drink & Survival',
     description:
-      'Your character gets hungry and thirsty. Here is what the bars mean, what debuffs to avoid, and where to buy food and water across the verse.',
+      'Your character gets hungry and thirsty. Here is what the meters mean, what happens when they run low, and how food and drink ratings work.',
   },
   {
     slug: 'party-management',
