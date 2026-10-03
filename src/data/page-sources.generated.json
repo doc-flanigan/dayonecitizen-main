@@ -374,12 +374,11 @@
     "/day-one-citizen/starter-package": [
       {
         "id": "anniversary-sale-recurring-november",
-        "claim": "CIG has held an Anniversary sale in late November since 2013, and a 2017 official post calls it 'November's recurring Anniversary sale'.",
+        "claim": "CIG has held an Anniversary sale in late November since 2013.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/transmission/13377-Anniversary-Sale-Details",
-          "https://robertsspaceindustries.com/en/comm-link/transmission/14314-Star-Citizen-Anniversary-Sale",
-          "https://robertsspaceindustries.com/comm-link/SCW/16096-API"
+          "https://robertsspaceindustries.com/en/comm-link/transmission/14314-Star-Citizen-Anniversary-Sale"
         ]
       },
       {

@@ -534,11 +534,6 @@ export default function StarterPackagePage() {
                 <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/14314-Star-Citizen-Anniversary-Sale">
                   Official RSI blog post
                 </SourceLink>{' '}
-                A 2017 post calls it &ldquo;November&rsquo;s recurring Anniversary
-                sale.&rdquo;{' '}
-                <SourceLink href="https://robertsspaceindustries.com/comm-link/SCW/16096-API">
-                  Official RSI blog post
-                </SourceLink>{' '}
                 The <Term name="IAE">Intergalactic Aerospace Expo</Term>, a ship
                 show, is also held in November. CIG has said ships and
                 merchandise return for sale at events such as IAE.{' '}
@@ -627,8 +622,8 @@ export default function StarterPackagePage() {
 
               <h3 className="pt-2 text-lg font-semibold text-starwhite">The referral code during a sale</h3>
               <p>
-                The referral code steps are the same if you sign up during a
-                sale. Enter STAR-GCQJ-N6NC when you create your account, or
+                Signing up during a sale? Use the code the usual way. Enter
+                STAR-GCQJ-N6NC when you create your account, or
                 within about twenty-four hours in your account settings. It
                 cannot be added after that.{' '}
                 <SourceLink href="https://robertsspaceindustries.com/en/referral-program">
