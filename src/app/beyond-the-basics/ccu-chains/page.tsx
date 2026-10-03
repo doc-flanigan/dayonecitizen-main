@@ -177,7 +177,7 @@ export default function CCUChainsPage() {
               new real money rather than store credit) are sold at a discount — sometimes
               fifty to ninety percent off the standard price difference — but only during
               special events like{' '}
-              <Term name="IAE">IAE</Term> or Invictus Launch Week.
+              <Term name="IAE">IAE</Term> (every November) or the May fleet event (Invictus Launch Week in past years, DefenseCon in 2026).
             </p>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
               Backers who plan ahead buy discounted Warbond CCUs at each event and
@@ -212,8 +212,8 @@ export default function CCUChainsPage() {
               </li>
               <li>
                 <strong className="text-starwhite">Buy CCUs during events.</strong>{' '}
-                Warbond CCUs are available at IAE (November) and Invictus Launch Week
-                (May). Buy them during those windows. Standard CCUs are available year-round
+                Warbond CCUs are available at IAE (November) and the May fleet event
+                (Invictus Launch Week in past years, DefenseCon in 2026). Buy them during those windows. Standard CCUs are available year-round
                 and can be bought with{' '}
                 <Term name="Store Credit">store credit</Term>.
               </li>

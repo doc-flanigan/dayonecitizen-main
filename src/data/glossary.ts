@@ -113,7 +113,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Letter from the Chairman',
     category: 'Community',
     definition:
-      "Periodic written update from Chris Roberts on direction, philosophy, and milestones. Reads like a state-of-the-game address. Watch for these ahead of CitizenCon.",
+      "Periodic written update from Chris Roberts on direction, philosophy, and milestones. Reads like a state-of-the-game address. Watch for these as big announcements approach.",
   },
   {
     term: 'Roadmap',
@@ -131,7 +131,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'CitizenCon',
     category: 'Community',
     definition:
-      "CIG's annual fan convention. The biggest event on the SC calendar — usually in October. Major reveals, demos, and the next year's direction land here.",
+      "CIG's fan convention, usually held in October, where major reveals, demos, and the next year's direction land. CIG is not holding a CitizenCon in 2026 in any form.",
   },
   {
     term: 'IAE',

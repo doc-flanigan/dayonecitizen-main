@@ -142,8 +142,8 @@ export default function RedeemCodesPage() {
               <strong className="text-starwhite">
                 RSI Account &rarr; Settings &rarr; Apply a Promotional Code
               </strong>
-              . Invictus Launch Week — the game&apos;s yearly fleet celebration
-              each May — is the event most likely to carry one.
+              . The May fleet event (Invictus Launch Week in past years,
+              DefenseCon in 2026) is the event most likely to carry one.
             </p>
 
             <p className="text-muted text-sm mb-8">
@@ -191,7 +191,7 @@ export default function RedeemCodesPage() {
                 </strong>{' '}
                 CIG runs several free-play weeks per year, where promo codes unlock
                 the full game and a rotating set of ships to try. The most reliable
-                one runs during Invictus Launch Week each May. Our{' '}
+                one runs at the May fleet event (Invictus in past years, DefenseCon in 2026). Our{' '}
                 <Link href="/free-fly-events" className="text-gold hover:underline">
                   Free Fly events page
                 </Link>{' '}
@@ -234,7 +234,7 @@ export default function RedeemCodesPage() {
             <p className="text-starwhite/80 mb-8 leading-relaxed">
               Permanent free ships are only given out at live CIG events. Think Bar
               Citizen — the community&apos;s name for an in-person meet-up — or
-              CitizenCon, the game&apos;s yearly convention. There are no promo
+              CitizenCon, the game&apos;s convention (not being held in 2026). There are no promo
               codes that grant a permanent free ship.
             </p>
 

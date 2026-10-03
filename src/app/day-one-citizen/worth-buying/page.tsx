@@ -443,7 +443,7 @@ export default function WorthBuyingPage() {
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Yes — during Free Fly events, several times a year, with a free
                   RSI account. Events typically run one to two weeks, usually
-                  around Invictus in May and IAE in November.
+                  around the May fleet event (Invictus, or DefenseCon in 2026) and IAE in November.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
