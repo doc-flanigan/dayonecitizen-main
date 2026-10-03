@@ -27,9 +27,16 @@ export const metadata: Metadata = {
   },
 }
 
+const fmtDate = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC',
+  })
+
 export default function FreeFlyPage() {
   const status = getFreeFlyStatus()
-  const isActive = status === 'active'
   return (
     <>
       <NavBar />
@@ -132,7 +139,7 @@ export default function FreeFlyPage() {
             <div className="card-surface relative overflow-hidden p-8 sm:p-10">
               <div className="absolute right-0 top-0 h-48 w-48 -translate-y-12 translate-x-16 rounded-full bg-gold/15 blur-3xl" />
               <div className="relative">
-                {!isActive && (
+                {status === 'ended' && (
                   <>
                     <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted">
                       <Clock size={12} aria-hidden /> No Free Fly running right now
@@ -166,7 +173,37 @@ export default function FreeFlyPage() {
                     </p>
                   </>
                 )}
-                {isActive && (
+                {status === 'upcoming' && (
+                  <>
+                    <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-gold">
+                      <Clock size={12} aria-hidden /> Free Fly announced
+                    </span>
+                    <h2 className="heading-display mt-3 text-3xl">
+                      {NEXT_FREE_FLY.name} is coming.
+                    </h2>
+                    <p className="mt-3 max-w-2xl text-sm text-muted">
+                      It opens on{' '}
+                      <strong className="text-starwhite">{fmtDate(NEXT_FREE_FLY.start)}</strong>{' '}
+                      and ends on{' '}
+                      <strong className="text-starwhite">{fmtDate(NEXT_FREE_FLY.end)}</strong>.
+                      Anyone can play the full game free, with no{' '}
+                      <Term name="Pledge">pledge</Term> required. Ships on offer,
+                      rules and exact times are on{' '}
+                      <a
+                        href="https://freeflyevent.com/next-free-fly"
+                        target="_blank"
+                        rel="noopener"
+                        className="text-gold underline-offset-4 hover:underline"
+                      >
+                        the Free Fly event page
+                      </a>
+                      . The 50,000 <Term name="UEC">UEC</Term>{' '}
+                      <Term name="Referral Code">referral code</Term> bonus does not
+                      depend on an event. It applies whenever you create an account.
+                    </p>
+                  </>
+                )}
+                {status === 'active' && (
                   <>
                     <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
                       <Clock size={12} aria-hidden /> Free Fly live right now
