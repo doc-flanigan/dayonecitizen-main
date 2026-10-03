@@ -1,9 +1,10 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { ArrowUpRight, Rocket } from 'lucide-react'
-import { NEXT_FREE_FLY } from '../data/next-free-fly'
+import { NEXT_FREE_FLY, getFreeFlyStatus } from '../data/next-free-fly'
+import { useServerFreeFlyActive } from './FreeFlyStatusProvider'
 
-const EVENT_START = new Date(NEXT_FREE_FLY.start)
 const EVENT_END = new Date(NEXT_FREE_FLY.end)
 
 const END_LABEL = EVENT_END.toLocaleDateString('en-US', {
@@ -13,8 +14,17 @@ const END_LABEL = EVENT_END.toLocaleDateString('en-US', {
 })
 
 export default function FreeFlyBanner() {
-  const now = new Date()
-  if (now < EVENT_START || now >= EVENT_END) return null
+  // Start from the server's answer so hydration matches the HTML. The server
+  // HTML can be up to an hour old, so re-check the clock after mount and then
+  // every minute (the page may stay open across the start or end time).
+  const [active, setActive] = useState(useServerFreeFlyActive())
+  useEffect(() => {
+    const check = () => setActive(getFreeFlyStatus() === 'active')
+    check()
+    const id = setInterval(check, 60_000)
+    return () => clearInterval(id)
+  }, [])
+  if (!active) return null
 
   return (
     <div style={{ backgroundColor: '#ff5500' }} className="text-white">

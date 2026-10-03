@@ -13,15 +13,16 @@ import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import { SITE } from '@/lib/site'
 import { REFERRAL_BONUS, isReferralBonusActive } from '@/data/referral-bonus'
+import { NEXT_FREE_FLY, getFreeFlyStatus } from '@/data/next-free-fly'
 import {
   VERIFIED_DISPLAY,
   VERIFIED_MONTH,
   VERIFICATION_LOG,
 } from '@/data/verification'
 
-// Re-render daily so the promo section and any expired bonus shut off on
-// their own, matching the referral-bonus.ts auto-expiry contract.
-export const revalidate = 86400
+// Re-render hourly so the promo section, any expired bonus and the Free Fly
+// sentence follow their data (referral-bonus.ts auto-expiry, next-free-fly.ts).
+export const revalidate = 3600
 
 const REFERRAL_FAQ =
   'https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ'
@@ -177,6 +178,7 @@ const faqJsonLd = {
 }
 
 export default function ReferralCodePage() {
+  const freeFlyStatus = getFreeFlyStatus()
   return (
     <>
       <NavBar />
@@ -342,9 +344,38 @@ export default function ReferralCodePage() {
                   <strong className="text-starwhite">Checkout</strong>. Not ready
                   to buy? Wait for a{' '}
                   <Term name="Free Fly">Free Fly</Term> — a limited window when
-                  anyone can play free. The next one is expected around{' '}
-                  <Term name="IAE">IAE</Term> in late November, following
-                  CIG&rsquo;s usual pattern. It has not been announced yet.
+                  anyone can play free.{' '}
+                  {freeFlyStatus === 'upcoming' ? (
+                    <>
+                      One is announced: {NEXT_FREE_FLY.name}, running{' '}
+                      {NEXT_FREE_FLY.label}.{' '}
+                      <Link
+                        href="/free-fly-events"
+                        className="text-gold underline-offset-4 hover:underline"
+                      >
+                        See the Free Fly details
+                      </Link>
+                      .
+                    </>
+                  ) : freeFlyStatus === 'active' ? (
+                    <>
+                      One is running right now: {NEXT_FREE_FLY.name} (
+                      {NEXT_FREE_FLY.label}).{' '}
+                      <Link
+                        href="/free-fly-events"
+                        className="text-gold underline-offset-4 hover:underline"
+                      >
+                        See how to join
+                      </Link>
+                      .
+                    </>
+                  ) : (
+                    <>
+                      The next one is expected around{' '}
+                      <Term name="IAE">IAE</Term> in late November, following
+                      CIG&rsquo;s usual pattern. It has not been announced yet.
+                    </>
+                  )}
                 </p>
                 <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
                   <Image
