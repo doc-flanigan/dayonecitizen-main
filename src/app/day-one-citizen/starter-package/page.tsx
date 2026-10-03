@@ -9,6 +9,7 @@ import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
+import SourceLink from '@/components/SourceLink'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Starter Packages 2026 Compared',
@@ -68,6 +69,22 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'A Warbond price is a discount that applies only when you pay with real money — store credit cannot be used. If you are buying fresh with no existing store credit, always check for a Warbond version of the package first.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Should I wait for a sale to buy Star Citizen?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You do not have to. Starter packs are sometimes discounted, but nobody can promise when. Buy only a starter Game Package, and skip big ships bought in sale hype. If you want to try the game first, watch for a Free Fly. The Intergalactic Aerospace Expo has had one in each of the last four years.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'When is the Star Citizen Anniversary sale?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'CIG has held an Anniversary sale in November since 2013. We have not seen official 2026 dates yet. Dates for the Intergalactic Aerospace Expo, which is also held in November, are on freeflyevent.com.',
       },
     },
   ],
@@ -496,6 +513,131 @@ export default function StarterPackagePage() {
             </div>
           </section>
 
+          <section id="sale" className="scroll-mt-24">
+            <h2 className="heading-display text-2xl sm:text-3xl">Buying during IAE or the Anniversary sale</h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                <strong className="text-starwhite">A sale is a bonus, not a deadline.</strong>{' '}
+                In 2014, CIG wrote that nothing beyond a starter package will ever
+                be necessary for the full Star Citizen experience.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/14314-Star-Citizen-Anniversary-Sale">
+                  Official RSI blog post
+                </SourceLink>{' '}
+                One starter <Term name="Game Package">Game Package</Term> is all a
+                new player needs.
+              </p>
+
+              <h3 className="pt-2 text-lg font-semibold text-starwhite">When the sale window is</h3>
+              <p>
+                Two November events matter here. CIG has held an Anniversary sale
+                in late November since 2013.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/14314-Star-Citizen-Anniversary-Sale">
+                  Official RSI blog post
+                </SourceLink>{' '}
+                The <Term name="IAE">Intergalactic Aerospace Expo</Term>, a ship
+                show, is also held in November. CIG has said ships and
+                merchandise return for sale at events such as IAE.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/18561-Spring-Merchandise-Sale">
+                  Official RSI blog post
+                </SourceLink>
+              </p>
+              <p>
+                We have not seen official dates for IAE 2956 or a 2026
+                Anniversary sale yet. Last year, CIG published the IAE 2955 dates
+                on November 6, 2025.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/intergalactic-aerospace-expo-2955-save-the-date">
+                  Official forum post
+                </SourceLink>{' '}
+                For this year&rsquo;s dates, see{' '}
+                <a
+                  href="https://freeflyevent.com/next-free-fly"
+                  className="text-gold underline-offset-4 hover:underline"
+                >
+                  when the next Free Fly is
+                </a>.
+              </p>
+
+              <h3 className="pt-2 text-lg font-semibold text-starwhite">Try it free first</h3>
+              <p>
+                IAE has run as a <Term name="Free Fly">Free Fly</Term> in each of
+                the last four years. During a Free Fly, anyone with a free RSI
+                account can play the live game. No purchase is needed.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/20861-Intergalactic-Aerospace-Expo-2955-Free-Fly-And-Manufacturer-Schedule">
+                  Official RSI blog post
+                </SourceLink>{' '}
+                The 2955 event ran from November 20 to December 3, 2025. The
+                earlier three are here:{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/20281-Intergalactic-Aerospace-Expo-2954-Free-Fly">
+                  2954
+                </SourceLink>
+                ,{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/19596-Intergalactic-Aerospace-Expo-2953-Free-Fly">
+                  2953
+                </SourceLink>
+                , and{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/18975-Intergalactic-Aerospace-Expo-2952-Free-Fly">
+                  2952
+                </SourceLink>
+                . No one can promise a Free Fly this year, so check before you buy.
+              </p>
+
+              <h3 className="pt-2 text-lg font-semibold text-starwhite">What to buy, and what to skip</h3>
+              <p>
+                If you buy, buy only a starter Game Package. The Citizen Starter
+                Pack lists at $60 and was on sale for $45 as of September 2026.
+                It comes with the <Term name="Aurora">Aurora Mk II</Term>, six
+                months of ship insurance, and 10,000 <Term name="UEC">UEC</Term>.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack">
+                  Official RSI store page
+                </SourceLink>{' '}
+                Starter packs do get discounted at times. We cannot say when, or
+                by how much, so check the RSI store for today&rsquo;s price.
+              </p>
+              <p>Here is what to skip while you are new:</p>
+              <ul className="list-disc space-y-3 pl-6">
+                <li>
+                  <strong className="text-starwhite">A big ship bought in sale hype.</strong>{' '}
+                  You do not know yet which career you will enjoy. Play first,
+                  then decide.{' '}
+                  <Link href="/day-one-citizen/ships-real-money" className="text-gold underline-offset-4 hover:underline">
+                    How earning ships works
+                  </Link>{' '}
+                  is covered here.
+                </li>
+                <li>
+                  <strong className="text-starwhite">Upgrades before you know what you like.</strong>{' '}
+                  A <Term name="CCU">CCU</Term> is priced at the gap between two
+                  ships, so it can wait until you know which ship you want.{' '}
+                  <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/115010056848-Ship-Upgrades-CCUs">
+                    Official RSI support article
+                  </SourceLink>
+                </li>
+              </ul>
+              <p>
+                Still unsure the game is for you? Read{' '}
+                <Link href="/day-one-citizen/worth-buying" className="text-gold underline-offset-4 hover:underline">
+                  whether Star Citizen is worth buying
+                </Link>.
+              </p>
+
+              <h3 className="pt-2 text-lg font-semibold text-starwhite">The referral code during a sale</h3>
+              <p>
+                Signing up during a sale? Use the code the usual way. Enter
+                STAR-GCQJ-N6NC when you create your account, or
+                within about twenty-four hours in your account settings. It
+                cannot be added after that.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/referral-program">
+                  Official RSI referral page
+                </SourceLink>{' '}
+                New accounts created with a code receive 50,000 UEC. The{' '}
+                <Link href="/referral-code" className="text-gold underline-offset-4 hover:underline">
+                  referral code page
+                </Link>{' '}
+                has the full steps.
+              </p>
+            </div>
+          </section>
+
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
             <div className="mt-6 space-y-6">
@@ -539,6 +681,38 @@ export default function StarterPackagePage() {
                   A discount that applies only when paying with real money —
                   store credit cannot be used. Buying fresh? Always check for a
                   Warbond version first.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Should I wait for a sale to buy Star Citizen?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  You do not have to. Starter packs are sometimes discounted,
+                  but nobody can promise when. Buy only a starter Game Package,
+                  and skip big ships bought in sale hype. If you want to try the
+                  game first, watch for a Free Fly. The Intergalactic Aerospace
+                  Expo has had one in each of the last four years.{' '}
+                  <a href="#sale" className="text-gold underline-offset-4 hover:underline">
+                    More on buying during a sale
+                  </a>
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  When is the Star Citizen Anniversary sale?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  CIG has held an Anniversary sale in November since 2013. We
+                  have not seen official 2026 dates yet. Dates for the
+                  Intergalactic Aerospace Expo, which is also held in November,
+                  are on{' '}
+                  <a
+                    href="https://freeflyevent.com/next-free-fly"
+                    className="text-gold underline-offset-4 hover:underline"
+                  >
+                    freeflyevent.com
+                  </a>.
                 </p>
               </div>
             </div>

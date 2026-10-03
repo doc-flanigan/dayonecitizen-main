@@ -375,6 +375,12 @@ export default function WorthBuyingPage() {
                   what a Free Fly is and how to join
                 </Link>.
               </p>
+              <p>
+                Thinking of buying during the November sales? See{' '}
+                <Link href="/day-one-citizen/starter-package#sale" className="text-gold underline-offset-4 hover:underline">
+                  what to buy and what to skip during IAE or the Anniversary sale
+                </Link>.
+              </p>
             </div>
           </section>
 
