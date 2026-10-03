@@ -2,7 +2,14 @@ import type { Metadata, Viewport } from 'next'
 import { Bricolage_Grotesque, Instrument_Sans, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SITE } from '@/lib/site'
+import FreeFlyStatusProvider from '@/components/FreeFlyStatusProvider'
+import { getFreeFlyStatus } from '@/data/next-free-fly'
 import './globals.css'
+
+// Every page shows the Free Fly banner, and its server HTML depends on the clock.
+// Segment `revalidate` resolves to the lowest value across layout and page, so
+// this caps staleness at one hour for every route that does not set a shorter one.
+export const revalidate = 3600
 
 // Typography system — "flight manual for an adventure":
 //  - Instrument Sans: friendly, crisp body copy for long tutorial reading
@@ -152,7 +159,9 @@ export default function RootLayout({
               "try{(function(){if(sessionStorage.getItem('lref'))return;var v,qs=new URLSearchParams(location.search),u=qs.get('utm_source')||qs.get('ref');if(u){v='param:'+u;}else if(document.referrer){var rh=document.referrer.split('://')[1]||document.referrer;rh=rh.split('/')[0];if(rh.indexOf('www.')===0){rh=rh.slice(4);}var lh=location.host;if(lh.indexOf('www.')===0){lh=lh.slice(4);}v=(rh&&rh!==lh)?document.referrer.slice(0,300):'direct';}else{v='direct';}sessionStorage.setItem('lref',v);})();}catch(e){}",
           }}
         />
-        {children}
+        <FreeFlyStatusProvider active={getFreeFlyStatus() === 'active'}>
+          {children}
+        </FreeFlyStatusProvider>
         <Analytics />
         <script
           type="application/ld+json"
