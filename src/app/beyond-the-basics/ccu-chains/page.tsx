@@ -169,7 +169,10 @@ export default function CCUChainsPage() {
               <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">
                 the first-ship guide
               </Link>{' '}
-              covers the usual entry point.
+              covers the usual entry point. Starting during a November sale?{' '}
+              <Link href="/day-one-citizen/starter-package#sale" className="text-gold underline-offset-4 hover:underline">
+                Here is what to buy first and what can wait
+              </Link>.
             </p>
             <p className="text-starwhite/80 mb-4 leading-relaxed">
               The savings come from <strong className="text-starwhite">Warbond CCUs</strong>.
