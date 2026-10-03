@@ -491,11 +491,11 @@ characters, none repeating:
 
 | Location | Label |
 |---|---|
-| NavBar (desktop + mobile) | `Get 50K UEC` |
+| NavBar (desktop + mobile) | `Claim 50K UEC Bonus` (SCH's A/B winner, adopted 2026-10-02) |
 | Footer | `Use my code` |
 | Home bottom CTA (direct to enlist) | `Enlist with my code` |
 | o7-meaning bottom | `Use my referral code` |
-| Glossary inline | `Get the new-player bonus` |
+| Glossary bottom | `Get the new-player bonus` |
 | Weekly-update referral card (inactive) | `Take the 50K bonus` |
 | Weekly-update referral card (bonus active) | `Claim the bonus` |
 | Weekly-update bottom | `Try Star Citizen` |
@@ -519,9 +519,14 @@ which also drives the progress strip and "Do this now" box on the twelve
 section pages — keep its facts in sync with those pages). New CTAs added to the site should pick a fresh
 short label, not reuse one of the above.
 
+**Funnel links (2026-10-02):** on-site guide buttons that are NOT referral
+CTAs use a `funnel:` tracking label (e.g. the glossary's every-tenth-card
+`Start the Day One guide` → `/day-one-citizen`, label `funnel:glossary-guide`).
+`/api/log` writes them to the Sheet but skips the #referral-clicks Discord feed.
+
 **Destination rule (Doc, 2026-07-16):** any CTA whose entire label is
-the bare 50K-UEC promise ("Get 50K UEC", "Free 50K UEC", "Start with
-50K UEC", or the no-children default label) must link to
+the bare 50K-UEC promise ("Claim 50K UEC Bonus", "Get 50K UEC", "Free
+50K UEC", "Start with 50K UEC", or the no-children default label) must link to
 `/referral-code`, NOT the RSI enlist URL — RSI's /enlist bounces
 signed-in players to the homepage, which existing players read as a
 bait link. Labels with self-qualifying context ("Use my code", "Get
