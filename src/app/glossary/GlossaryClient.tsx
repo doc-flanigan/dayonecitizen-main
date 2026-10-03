@@ -166,10 +166,14 @@ export default function GlossaryClient() {
                             New to the &lsquo;Verse?
                           </p>
                           <p className="text-sm text-starwhite/90">
-                            Use a referral code and start with 50,000 UEC free.
+                            The Day One guide takes you from &ldquo;should I
+                            buy?&rdquo; to your first flight in twelve short steps.
                           </p>
-                          <CTAButton size="sm" trackingLabel="glossary-inline">
-                            Get the new-player bonus
+                          {/* Glossary readers are looking a word up, not ready
+                              to sign up (264 views / 0 referral clicks, 28d to
+                              2026-10-02). Send them to onboarding instead. */}
+                          <CTAButton size="sm" href="/day-one-citizen" trackingLabel="funnel:glossary-guide">
+                            Start the Day One guide
                           </CTAButton>
                         </div>
                       ) : null}
@@ -180,6 +184,20 @@ export default function GlossaryClient() {
             </section>
           ))
         )}
+
+        <section className="card-surface mt-4 flex flex-col items-start gap-3 bg-gradient-to-br from-gold/15 via-navyLight to-navy p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-gold">
+              Ready to play?
+            </p>
+            <p className="mt-1 text-sm text-starwhite/90">
+              New accounts that use a referral code start with 50,000 UEC.
+            </p>
+          </div>
+          <CTAButton size="sm" trackingLabel="glossary-bottom">
+            Get the new-player bonus
+          </CTAButton>
+        </section>
 
       </div>
     </>

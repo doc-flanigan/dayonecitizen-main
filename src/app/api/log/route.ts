@@ -148,7 +148,9 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    if (discordUrl && !label.startsWith('impression:')) {
+    // 'funnel:' labels are on-site guide links (not referral clicks): Sheet
+    // only, so #referral-clicks stays a referral feed.
+    if (discordUrl && !label.startsWith('impression:') && !label.startsWith('funnel:')) {
       const mode = discordMode(now)
       if (mode === 'send') {
         calls.push(

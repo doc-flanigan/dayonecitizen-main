@@ -149,7 +149,10 @@ export default function NavBar() {
               size="sm"
               href="/referral-code"
               trackingLabel="nav-cta"
-            />
+            >
+              {/* Copy won SCH's nav A/B test (+181% CTR, 2026-07-06 → 09-16). */}
+              Claim 50K UEC Bonus
+            </CTAButton>
           </li>
         </ul>
 
@@ -204,7 +207,7 @@ export default function NavBar() {
             ))}
             <li className="pt-2">
               <CTAButton className="w-full" href="/referral-code" trackingLabel="nav-cta-mobile">
-                Get 50K UEC
+                Claim 50K UEC Bonus
               </CTAButton>
             </li>
           </ul>
