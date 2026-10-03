@@ -6,6 +6,14 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Free Fly calendar feed moved to its owner site (2026-10-02 ownership
+      // call: freeflyevent.com owns Free Fly dates). Existing subscribers
+      // follow the 301 to the single feed built from freeflyevent's event list.
+      {
+        source: '/api/calendar/free-fly',
+        destination: 'https://freeflyevent.com/free-fly.ics',
+        permanent: true,
+      },
       // Old-brand domains -> new-brand domain, path-preserving (1:1).
       // This sends every backlink and Google ranking signal from the
       // o7citizen.com era to dayonecitizen.com, regardless of which path
