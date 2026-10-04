@@ -6,6 +6,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
+import SaleAlertCTA from '@/components/SaleAlertCTA'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
@@ -438,6 +439,8 @@ export default function BuyingTheGamePage() {
               </div>
             </div>
           </section>
+
+          <SaleAlertCTA />
 
           <div className="border-t border-white/10 pt-10">
             <CTAButton size="lg" href="/referral-code" trackingLabel="buying-the-game-cta" />
