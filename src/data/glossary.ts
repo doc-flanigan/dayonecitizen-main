@@ -403,12 +403,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Personal vehicle and utility manufacturer — the PTV (mini buggy), ROC mining vehicle, STV scout buggy, and the multi-tool. Small, useful, everywhere.",
+    lastVerified: '2026-10-05',
   },
   {
     term: 'Esperia',
     category: 'Ships',
     definition:
       "Specialty manufacturer reproducing rare alien ships for human pilots — Talon (Xi'an), Prowler (Tevarin), Glaive (Vanduul). Limited-edition pledges.",
+    lastVerified: '2026-10-05',
   },
 
   // ─────────────── Ships — Specific ───────────────
@@ -438,6 +440,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aegis light fighter — fast, agile, light on cargo. Beloved by dogfighters and the meta darling for several patches running.",
+    lastVerified: '2026-10-05',
   },
   {
     term: 'Avenger',
@@ -620,6 +623,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aegis single-seat stealth bomber. Built to sneak past enemy radar and deliver torpedoes to large targets. It carries almost no defensive weapons — the plan is that you never get spotted.",
+    lastVerified: '2026-10-05',
   },
   {
     term: 'Redeemer',
@@ -656,12 +660,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "The civilian version of the UEE military's top-tier fighter. Exceptionally powerful and fast — one of the best combat ships a player can own, with a price tag to match.",
     also: 'Lightning',
+    lastVerified: '2026-10-05',
   },
   {
     term: 'Gladiator',
     category: 'Ships',
     definition:
       "Anvil two-seat torpedo bomber. The pilot lines up the attack while a rear gunner keeps enemy fighters off their tail — classic bomber-crew teamwork.",
+    lastVerified: '2026-10-05',
   },
   {
     term: 'Hawk',
@@ -873,6 +879,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Mirai micro-fighter — barely bigger than a cockpit with engines and guns attached. Designed to be launched from a carrier ship. Too small to fly solo from port for long.",
     also: 'Fury LX, Fury MX',
+    lastVerified: '2026-10-05',
   },
   {
     term: 'Guardian',
@@ -880,6 +887,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Mirai medium fighter with a futuristic look and well-rounded stats. Balanced between speed, firepower, and shields — a solid all-rounder. Variants include the MX (electronic warfare) and QI (quick intercept).",
     also: 'Guardian MX, Guardian QI',
+    lastVerified: '2026-10-05',
   },
   {
     term: 'Razor',
