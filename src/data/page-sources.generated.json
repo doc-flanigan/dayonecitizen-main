@@ -334,6 +334,16 @@
         ]
       },
       {
+        "id": "current-alpha-version-4-10-2",
+        "claim": "The current live Star Citizen build is Alpha 4.10.2, released October 9, 2026 as build 4.10.2-LIVE.12881860; its release notes list Long Term Persistence as preserved (no wipe), with new accounts starting on 20,000 aUEC.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102",
+          "https://robertsspaceindustries.com/patch-notes",
+          "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/index.html"
+        ]
+      },
+      {
         "id": "current-alpha-version-4-9-0",
         "claim": "Star Citizen Alpha 4.9.0 (Frontier Tensions) was released July 15, 2026 and did not wipe saved progress — its patch notes state Long Term Persistence was Preserved. Superseded as the live build by Alpha 4.10.0 on August 26, 2026.",
         "status": "verified",
@@ -914,6 +924,14 @@
         ]
       },
       {
+        "id": "constellation-paint-pack-compatible-variants",
+        "claim": "Constellation paint packs are compatible with all Constellation variants.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/Paint/Constellation-Mk-IV-6-Paint-Pack"
+        ]
+      },
+      {
         "id": "crafting-t0-live-alpha-4-7",
         "claim": "Crafting T0 went live with Alpha 4.7 (March 2026): item fabricators produce FPS gear (armor and weapons) from blueprints earned via contracts and materials gathered in the 'verse, with resource quality affecting crafted-item stats; ship components are not yet part of the system.",
         "status": "verified",
@@ -1089,6 +1107,14 @@
         ]
       },
       {
+        "id": "limited-skins-permanently-lost",
+        "claim": "Limited-time offer skins that are built into a pledge (such as special Origin Celebration colors or IAE Best in Show liveries) are permanently lost if the pledge is reclaimed; these limited skins cannot be re-acquired separately and should be reconsidered before melting.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360041687954-Ship-Skins-and-Paint"
+        ]
+      },
+      {
         "id": "loaner-requires-game-package",
         "claim": "A valid game package is required for loaner ships to be granted to an account.",
         "status": "verified",
@@ -1147,12 +1173,28 @@
         ]
       },
       {
+        "id": "paint-stored-at-primary-residence",
+        "claim": "In-game paint items are stored in local inventory at the player's primary residence (the location chosen when first logging in); to apply an in-game paint to a ship, the player must travel to that location with the target ship.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360041687954-Ship-Skins-and-Paint"
+        ]
+      },
+      {
         "id": "pes-live-alpha-3-18",
         "claim": "Persistent Entity Streaming (PES) went live in Alpha 3.18 (March 2023), the core tech that makes dynamic object/item state persist server-side and underpins Server Meshing.",
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/comm-link//19126-Star-Citizen-Alpha-3180",
           "https://robertsspaceindustries.com/en/comm-link/transmission/19848-Letter-From-The-Chairman"
+        ]
+      },
+      {
+        "id": "pledge-buyback-token-quarterly-limit",
+        "claim": "Pledge buy-back tokens (allowing store-credit buybacks of melted pledges) are distributed once per quarter; players can buy back one reclaimed pledge per quarter using store credit, but can repurchase with new money anytime.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360041687954-Ship-Skins-and-Paint"
         ]
       },
       {
