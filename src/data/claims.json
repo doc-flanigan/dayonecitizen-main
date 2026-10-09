@@ -1,6 +1,16 @@
 {
-  "generated": "2026-10-02",
+  "generated": "2026-10-09",
   "claims": [
+    {
+      "id": "anniversary-sale-recurring-november",
+      "claim": "CIG has held an Anniversary sale in late November since 2013.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/13377-Anniversary-Sale-Details",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/14314-Star-Citizen-Anniversary-Sale"
+      ],
+      "lastVerified": "2026-10-03"
+    },
     {
       "id": "answer-the-call-official-phrase",
       "claim": "'Answer the call' is Squadron 42's signature recruitment line, originating in the official Squadron 42 CitizenCon trailer published by CIG on October 12, 2018 (comm-link 16801).",
@@ -156,7 +166,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
       ],
-      "lastVerified": "2026-09-28"
+      "lastVerified": "2026-10-07"
     },
     {
       "id": "citizen-starter-pack-60-usd-aurora",
@@ -165,7 +175,7 @@
       "sources": [
         "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
       ],
-      "lastVerified": "2026-09-28"
+      "lastVerified": "2026-10-07"
     },
     {
       "id": "citizencon-2026-not-held",
@@ -202,6 +212,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360002542733-Concierge-Levels-and-Rewards"
       ],
       "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "constellation-paint-pack-compatible-variants",
+      "claim": "Constellation paint packs are compatible with all Constellation variants.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Paint/Constellation-Mk-IV-6-Paint-Pack"
+      ],
+      "lastVerified": "2026-10-06"
     },
     {
       "id": "corsair-2year-pledge-250-usd",
@@ -259,6 +278,16 @@
         "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101"
       ],
       "lastVerified": "2026-09-27"
+    },
+    {
+      "id": "current-alpha-version-4-10-2",
+      "claim": "The current live Star Citizen build is Alpha 4.10.2 (build 4.10.2-live.12881860), deployed October 9, 2026; the deployment was routine maintenance with no mention of a wipe or reset.",
+      "status": "verified",
+      "sources": [
+        "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360056254754-Star-Citizen-Alpha-4-10-2-Known-Issues"
+      ],
+      "lastVerified": "2026-10-09"
     },
     {
       "id": "current-alpha-version-4-9-0",
@@ -572,6 +601,16 @@
       "lastVerified": "2026-09-28"
     },
     {
+      "id": "iae-ships-merch-return-at-events",
+      "claim": "CIG has said ships and merchandise will return for sale at later events, such as Invictus Launch Week and the Intergalactic Aerospace Expo.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/18561-Spring-Merchandise-Sale",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/18224-Alpha-314-Ships-Merch"
+      ],
+      "lastVerified": "2026-10-03"
+    },
+    {
       "id": "iae-venue-history",
       "claim": "The Intergalactic Aerospace Expo was held at the Tobin Expo Center in New Babbage (microTech) in 2953 and 2954, and moved to Orison (Crusader) for IAE 2955; the IAE 2956 venue is unannounced.",
       "status": "verified",
@@ -756,6 +795,15 @@
         "https://robertsspaceindustries.com/en/pledge"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "limited-skins-permanently-lost",
+      "claim": "Limited-time offer skins that are built into a pledge (such as special Origin Celebration colors or IAE Best in Show liveries) are permanently lost if the pledge is reclaimed; these limited skins cannot be re-acquired separately and should be reconsidered before melting.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360041687954-Ship-Skins-and-Paint"
+      ],
+      "lastVerified": "2026-10-06"
     },
     {
       "id": "loaner-requires-game-package",
@@ -1046,6 +1094,15 @@
       "lastVerified": "2026-07-29"
     },
     {
+      "id": "paint-stored-at-primary-residence",
+      "claim": "In-game paint items are stored in local inventory at the player's primary residence (the location chosen when first logging in); to apply an in-game paint to a ship, the player must travel to that location with the target ship.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360041687954-Ship-Skins-and-Paint"
+      ],
+      "lastVerified": "2026-10-06"
+    },
+    {
       "id": "perseus-2year-pledge-800-usd",
       "claim": "The RSI Perseus 2-Year standalone pledge costs $800 USD.",
       "status": "verified",
@@ -1084,6 +1141,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
       "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "pledge-buyback-token-quarterly-limit",
+      "claim": "Pledge buy-back tokens (allowing store-credit buybacks of melted pledges) are distributed once per quarter; players can buy back one reclaimed pledge per quarter using store credit, but can repurchase with new money anytime.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360041687954-Ship-Skins-and-Paint"
+      ],
+      "lastVerified": "2026-10-06"
     },
     {
       "id": "pledge-items-require-registration-not-automatic",
@@ -1742,10 +1808,13 @@
     },
     {
       "id": "sq42-manchester-playtest-oct-2026",
-      "claim": "CIG is hosting an invite-only three-day Squadron 42 hands-on event at its Manchester studio, October 9–11, 2026, communicated via private invitation emails to longtime backers.",
-      "status": "unverifiable",
-      "sources": [],
-      "lastVerified": "2026-07-13"
+      "claim": "CIG is hosting an invite-only three-day Squadron 42 event at its Manchester studio, October 9–11, 2026, for selected original backers and long-time content creators; the August 27, 2026 Letter from the Chairman confirms they will play Squadron 42 on October 9 and 10.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman",
+        "iheldtheline-site/public/images/news/sq42-playtest-invite-email-oct-2026.png (CIG invitation email, recipient redacted)"
+      ],
+      "lastVerified": "2026-10-02"
     },
     {
       "id": "sq42-monthly-reports-series",
@@ -1766,6 +1835,15 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/20745-Squadron-42-Q3-2025-Newsletter-Comm-Link"
       ],
       "lastVerified": "2026-07-06"
+    },
+    {
+      "id": "sq42-release-q2-2027",
+      "claim": "In the August 27, 2026 Letter from the Chairman, CIG moved Squadron 42 from its 2026 target to a Q2 2027 release window.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman"
+      ],
+      "lastVerified": "2026-10-03"
     },
     {
       "id": "sq42-separate-title-no-live-sp-mode",
@@ -1803,7 +1881,16 @@
         "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
         "https://robertsspaceindustries.com/pledge/game-packages"
       ],
-      "lastVerified": "2026-09-28"
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "starter-package-only-requirement-2014",
+      "claim": "In its 2014 Anniversary Sale post, CIG said purchasing additional ships is not necessary, and that nothing beyond a starter package will ever be necessary for a backer to get the full Star Citizen experience.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/14314-Star-Citizen-Anniversary-Sale"
+      ],
+      "lastVerified": "2026-10-03"
     },
     {
       "id": "store-credit-pledges-cannot-be-gifted",

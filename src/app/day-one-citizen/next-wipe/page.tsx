@@ -36,7 +36,7 @@ const faqJsonLd = {
       name: 'When is the next Star Citizen wipe?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No wipe is currently announced. The latest update, Alpha 4.10.1 (September 16, 2026), did not wipe — its release notes list Long Term Persistence as preserved. Alpha 4.10 (August 26, 2026) did not wipe either. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
+        text: 'No wipe is currently announced. The latest update, Alpha 4.10.2 (October 9, 2026), deployed without a wipe — the official deployment notice describes routine maintenance, not a reset. Alpha 4.10.1 (September 16, 2026) did not wipe either; its release notes list Long Term Persistence as preserved. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
       },
     },
     {
@@ -77,6 +77,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'No. Alpha 4.10.1 released on September 16, 2026 with no wipe. Its official release notes list Long Term Persistence as preserved, so earned aUEC and in-game items carried over. New accounts still start with 20,000 aUEC.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Did Alpha 4.10.2 wipe Star Citizen progress?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Alpha 4.10.2 deployed on October 9, 2026 as build 4.10.2-live.12881860. The official deployment notice describes routine maintenance, with no mention of a wipe or reset. New accounts still start with 20,000 aUEC.',
       },
     },
     {
@@ -261,13 +269,12 @@ export default function NextWipePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">So — when is the next one?</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Not announced. The latest update, Alpha 4.10.1, was released on
-                September 16, 2026 <em>without</em> a wipe. Its release notes
-                list Long Term Persistence as preserved. The bigger Alpha 4.10
-                update before it, released August 26, 2026, did not wipe
-                either. As of September 2026, no wipe is announced for any
-                upcoming update. The last full wipe came with Alpha 4.8 in
-                May 2026.
+                Not announced. The latest update, Alpha 4.10.2, deployed on
+                October 9, 2026 <em>without</em> a wipe. Alpha 4.10.1,
+                released September 16, 2026, did not wipe either — its
+                release notes list Long Term Persistence as preserved. As of
+                October 2026, no wipe is announced for any upcoming update.
+                The last full wipe came with Alpha 4.8 in May 2026.
               </p>
               <p>
                 CIG only confirms wipe status in each update&rsquo;s final
@@ -299,8 +306,9 @@ export default function NextWipePage() {
                   When is the next Star Citizen wipe?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  No wipe is currently announced. The latest update, Alpha 4.10
-                  (August 26, 2026), preserved saved progress — no wipe. CIG
+                  No wipe is currently announced. The latest update, Alpha
+                  4.10.2 (October 9, 2026), deployed without a wipe. Alpha
+                  4.10.1 (September 16, 2026) did not wipe either. CIG
                   states whether progress carries over in the patch notes of
                   each update, and says it generally tries to avoid wipes.
                   Heard a wipe rumor? Check it against our{' '}
@@ -366,6 +374,17 @@ export default function NextWipePage() {
                   wipe. Its official release notes list Long Term Persistence
                   as preserved, so earned aUEC and in-game items carried over.
                   New accounts still start with 20,000 aUEC.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Did Alpha 4.10.2 wipe progress?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  No. Alpha 4.10.2 deployed on October 9, 2026 as build
+                  4.10.2-live.12881860. The official deployment notice
+                  describes routine maintenance, with no mention of a wipe
+                  or reset. New accounts still start with 20,000 aUEC.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
