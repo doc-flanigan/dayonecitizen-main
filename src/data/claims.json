@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09",
+  "generated": "2026-10-10",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -1335,6 +1335,27 @@
       "lastVerified": "2026-09-21"
     },
     {
+      "id": "rsi-discovery-month-centaurus-rental",
+      "claim": "During RSI Discovery Month, every pilot who completes the in-game 'RSI Discovery Month: Rental Offer' contract receives five days of free rental access to the RSI Constellation Mk V Centaurus and the Skylark.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/alpha-4-10-2-rsi-discovery-month",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/4-10-2-live-feedback-rsi-centaurus/9168311"
+      ],
+      "lastVerified": "2026-10-10"
+    },
+    {
+      "id": "rsi-discovery-month-event",
+      "claim": "RSI Discovery Month is an in-game Star Citizen event that began with Alpha 4.10.2 on October 9, 2026, in which all pilots across Stanton can run RSI-themed contracts (defence, supply runs, salvage and lost-cargo collection) to earn rewards across four mobiGlas reward tracks — ship paints, flight blades, components, armor and weapons.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/alpha-4-10-2-rsi-discovery-month",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21334",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21350-FAQ-RSI-Discovery-Month"
+      ],
+      "lastVerified": "2026-10-09"
+    },
+    {
       "id": "rsi-support-cannot-swap-loaners",
       "claim": "RSI Support cannot swap or change loaner ships by player request — loaner assignments are determined by the Loaner Ship Matrix based on owned pledges.",
       "status": "verified",
@@ -1815,7 +1836,7 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman",
         "iheldtheline-site/public/images/news/sq42-playtest-invite-email-oct-2026.png (CIG invitation email, recipient redacted)"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-09"
     },
     {
       "id": "sq42-monthly-reports-series",
@@ -1836,6 +1857,15 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/20745-Squadron-42-Q3-2025-Newsletter-Comm-Link"
       ],
       "lastVerified": "2026-07-06"
+    },
+    {
+      "id": "sq42-release-date-announcement-after-playtest",
+      "claim": "In the August 27, 2026 Letter from the Chairman, CIG said it would make further announcements about Squadron 42's release plans during the October 9–10 backer playtest and announce a specific release date shortly afterwards.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman"
+      ],
+      "lastVerified": "2026-10-09"
     },
     {
       "id": "sq42-release-q2-2027",
