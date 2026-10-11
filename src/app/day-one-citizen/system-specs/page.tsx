@@ -446,7 +446,7 @@ export default function SystemSpecsPage() {
                 experience: use Windows 10 or 11.
               </p>
               <p>
-                The same goes for Steam Deck — there is no supported version, and community
+                The same goes for Steam Deck — there is no supported Star Citizen version, and community
                 reports describe roughly five to twenty frames per second after heavy tinkering. Consoles and
                 Game Pass are covered in{' '}
                 <Link href="/day-one-citizen/is-star-citizen-on-steam" className="text-gold underline-offset-4 hover:underline">

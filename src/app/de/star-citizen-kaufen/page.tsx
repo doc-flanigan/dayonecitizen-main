@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen kaufen 2026 — Preis & Tipps',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis), keine Keys, kein Steam. So kaufst du es Schritt für Schritt.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis), keine Keys, kein Steam für Star Citizen. So kaufst du es Schritt für Schritt.',
   alternates: {
     canonical: '/de/star-citizen-kaufen',
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
     description:
-      'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis). Keine Keys, kein Steam. Die deutsche Schritt-für-Schritt-Anleitung.',
+      'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis). Keine Keys, kein Steam für Star Citizen. Die deutsche Schritt-für-Schritt-Anleitung.',
     url: '/de/star-citizen-kaufen',
     type: 'article',
     locale: 'de_DE',
@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: 'Wo kann ich Star Citizen kaufen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Star Citizen wird ausschließlich auf robertsspaceindustries.com verkauft, der offiziellen Website des Entwicklers Cloud Imperium Games. Es gibt das Spiel nicht auf Steam, nicht bei Epic und nicht als Key bei Key-Shops.',
+        text: 'Star Citizen wird ausschließlich auf robertsspaceindustries.com verkauft, der offiziellen Website des Entwicklers Cloud Imperium Games. Es gibt das Spiel nicht auf Steam, nicht bei Epic und nicht als Key bei Key-Shops. Nur Squadron 42, das separate Einzelspieler-Spiel, hat eine Steam-Seite zum Wunschlisten.',
       },
     },
     {
@@ -87,7 +87,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis). Keine Keys, kein Steam.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis). Keine Keys, kein Steam für Star Citizen.',
   inLanguage: 'de',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
@@ -156,8 +156,10 @@ export default function StarCitizenKaufenPage() {
                 Star Citizen wird ausschließlich über{' '}
                 <strong className="text-starwhite">robertsspaceindustries.com</strong>{' '}
                 verkauft — die Website von Cloud Imperium Games (CIG), dem
-                Studio hinter dem Spiel. Nicht auf Steam. Nicht bei Epic. Nicht
-                bei GOG. Und auch nicht als Datenträger im Laden.{' '}
+                Studio hinter dem Spiel. Star Citizen gibt es nicht auf Steam, nicht bei Epic, nicht
+                bei GOG und auch nicht als Datenträger im Laden. Nur das separate
+                Einzelspieler-Spiel Squadron 42 hat eine Steam-Seite, auf der du es auf die
+                Wunschliste setzen kannst (<a href="https://iheldtheline.com/steam" className="text-gold underline-offset-4 hover:underline">Details</a>).{' '}
                 <SourceLink href="https://robertsspaceindustries.com/download">
                   Offizielle RSI-Downloadseite
                 </SourceLink>
@@ -380,7 +382,8 @@ export default function StarCitizenKaufenPage() {
                   Ausschließlich auf robertsspaceindustries.com, der offiziellen
                   Website des Entwicklers Cloud Imperium Games. Es gibt das
                   Spiel nicht auf Steam, nicht bei Epic und nicht als Key bei
-                  Key-Shops.
+                  Key-Shops. Nur Squadron 42, das separate Einzelspieler-Spiel, hat eine
+                  Steam-Seite zum Wunschlisten.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

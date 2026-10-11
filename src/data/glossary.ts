@@ -182,7 +182,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Squadron 42',
     category: 'Community',
     definition:
-      "The single-player cinematic campaign set in the same universe — a separate game with a Hollywood cast (Mark Hamill, Gary Oldman). Sold separately from Star Citizen.",
+      "The single-player cinematic campaign set in the same universe — a separate game with a Hollywood cast (Mark Hamill, Gary Oldman). Sold separately from Star Citizen. It has its own Steam page for wishlisting, with a planned release of Q2 2027.",
     also: 'SQ42',
   },
   {
