@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: 'Where can you buy Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Star Citizen is sold exclusively on robertsspaceindustries.com — it is not on Steam, Epic, or any other storefront. You create an RSI account, buy a game package from the official store, and download the RSI Launcher.',
+        text: 'Star Citizen is sold exclusively on robertsspaceindustries.com — Star Citizen is not on Steam, Epic, or any other storefront. Squadron 42, the separate single-player game, has a Steam page you can wishlist. You create an RSI account, buy a game package from the official store, and download the RSI Launcher.',
       },
     },
     {
@@ -110,8 +110,8 @@ export default function BuyingTheGamePage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
               Star Citizen is sold exclusively on{' '}
-              <Term name="RSI">robertsspaceindustries.com</Term> — not Steam, not Epic, not
-              anywhere else. Here is the exact process, including the one step most new players
+              <Term name="RSI">robertsspaceindustries.com</Term> — Star Citizen is not on Steam,
+              not on Epic, and not anywhere else. Here is the exact process, including the one step most new players
               miss that costs them 50,000 free credits.
             </p>
             <p className="mt-3 text-sm">
@@ -242,8 +242,10 @@ export default function BuyingTheGamePage() {
                 base game. You need a game package first.
               </p>
               <p>
-                And do not go looking for it on Steam — the game is not sold there, or on any
-                console. The full platform rundown is in{' '}
+                And do not go looking for Star Citizen on Steam — it is not sold there, or on any
+                console. <Term name="Squadron 42">Squadron 42</Term>, the separate single-player game,
+                does have a Steam page you can wishlist. See{' '}
+                <a href="https://iheldtheline.com/steam" className="text-gold underline-offset-4 hover:underline">its Steam details</a>. The full platform rundown is in{' '}
                 <Link href="/day-one-citizen/is-star-citizen-on-steam" className="text-gold underline-offset-4 hover:underline">
                   Is Star Citizen on Steam?
                 </Link>
@@ -397,8 +399,9 @@ export default function BuyingTheGamePage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Only on <Term name="RSI">robertsspaceindustries.com</Term> —
-                  not Steam, not Epic. You buy a game package, then download
-                  the RSI Launcher from your account library.
+                  Star Citizen is not on Steam or Epic. You buy a game package, then download
+                  the RSI Launcher from your account library. Squadron 42, the separate
+                  single-player game, has a Steam page you can wishlist.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

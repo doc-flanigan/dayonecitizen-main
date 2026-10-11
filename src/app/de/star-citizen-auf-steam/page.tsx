@@ -12,7 +12,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Ist Star Citizen auf Steam? (PS5, Xbox?)',
   description:
-    'Nein — Star Citizen gibt es nicht auf Steam, PS5, Xbox oder im Game Pass. Es läuft nur auf Windows-PC, direkt über robertsspaceindustries.com. Der Stand 2026.',
+    'Nein — Star Citizen gibt es nicht auf Steam, PS5, Xbox oder im Game Pass. Es läuft nur auf Windows-PC, direkt über robertsspaceindustries.com. Squadron 42 hat eine Steam-Wunschliste.',
   alternates: {
     canonical: '/de/star-citizen-auf-steam',
     languages: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Ist Star Citizen auf Steam?',
     description:
-      'Nein — Star Citizen wird nur auf robertsspaceindustries.com verkauft und läuft nur auf Windows-PC. Konsolen, Game Pass und Steam Deck ehrlich beantwortet.',
+      'Nein — Star Citizen wird nur auf robertsspaceindustries.com verkauft und läuft nur auf Windows-PC. Squadron 42 hat eine Steam-Seite. Konsolen, Game Pass und Steam Deck ehrlich beantwortet.',
     url: '/de/star-citizen-auf-steam',
     type: 'article',
     locale: 'de_DE',
@@ -43,7 +43,15 @@ const faqJsonLd = {
       name: 'Ist Star Citizen auf Steam?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Star Citizen wird ausschließlich auf robertsspaceindustries.com verkauft, dem offiziellen RSI-Shop. Auf Steam, im Epic Games Store oder bei GOG gibt es das Spiel nicht (Stand: Juli 2026).',
+        text: 'Nein. Star Citizen wird ausschließlich auf robertsspaceindustries.com verkauft, dem offiziellen RSI-Shop. Auf Steam, im Epic Games Store oder bei GOG gibt es das Spiel nicht (Stand: Oktober 2026). Squadron 42, das separate Einzelspieler-Spiel, hat dagegen eine Steam-Seite, auf der du es auf die Wunschliste setzen kannst.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Ist Squadron 42 auf Steam?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja, aber nur eingeschränkt. Squadron 42, das separate Einzelspieler-Spiel, hat eine offizielle Steam-Seite, die seit dem 10. Oktober 2026 online ist. Du kannst es auf die Wunschliste setzen, aber noch nicht kaufen. Geplant ist die Veröffentlichung im zweiten Quartal 2027, nur für Windows. An Star Citizen ändert das nichts.',
       },
     },
     {
@@ -75,7 +83,7 @@ const faqJsonLd = {
       name: 'Kommt Star Citizen jemals auf Steam?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Es gibt keine offiziellen Pläne für eine Steam-Version. CIG verkauft das Spiel nur über den eigenen Shop und hat keinen Wechsel angekündigt. Stand Juli 2026 ist robertsspaceindustries.com die einzige Verkaufsstelle — was in Zukunft passiert, ist offen.',
+        text: 'Es gibt keine offiziellen Pläne für eine Steam-Version von Star Citizen. CIG verkauft das Spiel nur über den eigenen Shop und hat keinen Wechsel angekündigt. Stand Oktober 2026 ist robertsspaceindustries.com die einzige Verkaufsstelle für Star Citizen — was in Zukunft passiert, ist offen.',
       },
     },
   ],
@@ -123,8 +131,10 @@ export default function StarCitizenAufSteamPage() {
                 Nein. Star Citizen gibt es nicht auf Steam — und auch nicht für
                 PS5, Xbox oder im Game Pass. Es läuft nur auf Windows-PC und
                 wird nur direkt bei robertsspaceindustries.com verkauft
-                (Stand: Juli 2026).
-              </strong>
+                (Stand: Oktober 2026).
+              </strong>{' '}
+              Das separate Einzelspieler-Spiel Squadron 42 hat dagegen eine
+              Steam-Seite — mehr dazu weiter unten.
             </p>
             <p className="mt-4 text-sm text-muted">
               von{' '}
@@ -186,6 +196,37 @@ export default function StarCitizenAufSteamPage() {
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
+              Ist Squadron 42 auf Steam?
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                <strong className="text-starwhite">
+                  Ja, aber nur als Wunschliste.
+                </strong>{' '}
+                Squadron 42 ist das Einzelspieler-Spiel mit Story vom selben
+                Studio. Es ist ein eigenes Spiel, getrennt von Star Citizen, und
+                hat eine eigene Seite auf Steam.{' '}
+                <SourceLink href="https://store.steampowered.com/app/4045720/">
+                  Offizielle Steam-Seite
+                </SourceLink>
+              </p>
+              <p>
+                Die Seite ist seit dem 10. Oktober 2026 online. Kaufen kannst du
+                das Spiel dort noch nicht. Geplant ist die Veröffentlichung im
+                zweiten Quartal 2027, nur für Windows.
+              </p>
+              <p>
+                Alle Details findest du auf der englischen Seite{' '}
+                <a href="https://iheldtheline.com/steam" className="text-gold underline-offset-4 hover:underline">
+                  iheldtheline.com/steam
+                </a>
+                .
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">
               PS5 und Xbox?
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
@@ -238,7 +279,7 @@ export default function StarCitizenAufSteamPage() {
                   Nicht in irgendeiner unterstützten Form.
                 </strong>{' '}
                 Eine offizielle Steam-Deck-Version kann es schon deshalb nicht
-                geben, weil das Spiel gar nicht auf Steam ist.
+                geben, weil Star Citizen gar nicht auf Steam ist.
               </p>
               <p>
                 Einige Spieler haben es mit Kompatibilitäts-Tools erzwungen.
@@ -260,14 +301,14 @@ export default function StarCitizenAufSteamPage() {
                 <strong className="text-starwhite">
                   keine offiziellen Pläne
                 </strong>{' '}
-                für eine Steam-Version. CIG ist ein crowdfinanziertes Studio,
+                für eine Steam-Version von Star Citizen. CIG ist ein crowdfinanziertes Studio,
                 verkauft direkt an die Spieler und hat keinen Wechsel der
                 Verkaufsplattform angekündigt.
               </p>
               <p>
                 Das ist der aktuelle Stand, keine Prophezeiung — Pläne können
-                sich ändern. Aber Stand Juli 2026 ist robertsspaceindustries.com
-                die einzige Verkaufsstelle, und der RSI Launcher der einzige Weg
+                sich ändern. Aber Stand Oktober 2026 ist robertsspaceindustries.com
+                die einzige Verkaufsstelle für Star Citizen, und der RSI Launcher der einzige Weg
                 ins Spiel.
               </p>
             </div>
@@ -283,7 +324,22 @@ export default function StarCitizenAufSteamPage() {
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Nein. Star Citizen wird ausschließlich auf
                   robertsspaceindustries.com verkauft. Auf Steam, im Epic Games
-                  Store oder bei GOG gibt es das Spiel nicht (Stand: Juli 2026).
+                  Store oder bei GOG gibt es das Spiel nicht (Stand: Oktober 2026).
+                  Squadron 42, das separate Einzelspieler-Spiel, hat dagegen eine
+                  Steam-Seite, auf der du es auf die Wunschliste setzen kannst.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  Ist Squadron 42 auf Steam?
+                </h3>
+                <p className="text-sm leading-relaxed text-starwhite/70">
+                  Ja, aber nur eingeschränkt. Squadron 42, das separate
+                  Einzelspieler-Spiel, hat eine offizielle Steam-Seite, die seit
+                  dem 10. Oktober 2026 online ist. Du kannst es auf die
+                  Wunschliste setzen, aber noch nicht kaufen. Geplant ist die
+                  Veröffentlichung im zweiten Quartal 2027, nur für Windows. An
+                  Star Citizen ändert das nichts.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
@@ -323,8 +379,9 @@ export default function StarCitizenAufSteamPage() {
                   Kommt es jemals auf Steam?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Es gibt keine offiziellen Pläne. Stand Juli 2026 ist
-                  robertsspaceindustries.com die einzige Verkaufsstelle — was in
+                  Es gibt keine offiziellen Pläne. Stand Oktober 2026 ist
+                  robertsspaceindustries.com die einzige Verkaufsstelle für
+                  Star Citizen — was in
                   Zukunft passiert, ist offen.
                 </p>
               </div>

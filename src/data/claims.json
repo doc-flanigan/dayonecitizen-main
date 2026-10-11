@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09",
+  "generated": "2026-10-11",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -1335,6 +1335,27 @@
       "lastVerified": "2026-09-21"
     },
     {
+      "id": "rsi-discovery-month-centaurus-rental",
+      "claim": "During RSI Discovery Month, every pilot who completes the in-game 'RSI Discovery Month: Rental Offer' contract receives five days of free rental access to the RSI Constellation Mk V Centaurus and the Skylark.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/alpha-4-10-2-rsi-discovery-month",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/4-10-2-live-feedback-rsi-centaurus/9168311"
+      ],
+      "lastVerified": "2026-10-10"
+    },
+    {
+      "id": "rsi-discovery-month-event",
+      "claim": "RSI Discovery Month is an in-game Star Citizen event that began with Alpha 4.10.2 on October 9, 2026, in which all pilots across Stanton can run RSI-themed contracts (defence, supply runs, salvage and lost-cargo collection) to earn rewards across four mobiGlas reward tracks — ship paints, flight blades, components, armor and weapons.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/alpha-4-10-2-rsi-discovery-month",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21334",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21350-FAQ-RSI-Discovery-Month"
+      ],
+      "lastVerified": "2026-10-09"
+    },
+    {
       "id": "rsi-support-cannot-swap-loaners",
       "claim": "RSI Support cannot swap or change loaner ships by player request — loaner assignments are determined by the Loaner Ship Matrix based on owned pledges.",
       "status": "verified",
@@ -1441,13 +1462,13 @@
     },
     {
       "id": "sc-pc-only-rsi-launcher",
-      "claim": "Star Citizen is available only for Windows PC through the RSI Launcher, purchased directly from robertsspaceindustries.com — it is not sold on Steam, Epic, or GOG, and does not run on PlayStation, Xbox, or Game Pass (as of July 2026).",
+      "claim": "Star Citizen is available only for Windows PC through the RSI Launcher, purchased directly from robertsspaceindustries.com — it is not sold on Steam, Epic, or GOG, and does not run on PlayStation, Xbox, or Game Pass (as of October 2026). Squadron 42, CIG's separate single-player game, does have a Steam page (wishlist only).",
       "status": "verified",
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042417374-Star-Citizen-Minimum-System-Requirements",
         "https://robertsspaceindustries.com/download"
       ],
-      "lastVerified": "2026-09-23"
+      "lastVerified": "2026-10-11"
     },
     {
       "id": "sc-player-count-no-official",
@@ -1815,7 +1836,7 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman",
         "iheldtheline-site/public/images/news/sq42-playtest-invite-email-oct-2026.png (CIG invitation email, recipient redacted)"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-09"
     },
     {
       "id": "sq42-monthly-reports-series",
@@ -1838,6 +1859,15 @@
       "lastVerified": "2026-07-06"
     },
     {
+      "id": "sq42-release-date-announcement-after-playtest",
+      "claim": "In the August 27, 2026 Letter from the Chairman, CIG said it would make further announcements about Squadron 42's release plans during the October 9–10 backer playtest and announce a specific release date shortly afterwards.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman"
+      ],
+      "lastVerified": "2026-10-09"
+    },
+    {
       "id": "sq42-release-q2-2027",
       "claim": "In the August 27, 2026 Letter from the Chairman, CIG moved Squadron 42 from its 2026 target to a Q2 2027 release window.",
       "status": "verified",
@@ -1854,6 +1884,26 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts"
       ],
       "lastVerified": "2026-07-14"
+    },
+    {
+      "id": "sq42-steam-minimum-requirements",
+      "claim": "Squadron 42's Steam page lists minimum requirements of Windows 11, a quad-core CPU (Intel i7 Sandy Bridge or later / AMD Bulldozer or later), 16 GB RAM, a DirectX 11.1-compatible graphics card with 8 GB VRAM, DirectX 12, and 150 GB of storage; recommended specs are not yet listed.",
+      "status": "verified",
+      "sources": [
+        "https://store.steampowered.com/app/4045720/",
+        "https://store.steampowered.com/api/appdetails?appids=4045720&cc=us&l=en"
+      ],
+      "lastVerified": "2026-10-11"
+    },
+    {
+      "id": "sq42-steam-page-wishlist",
+      "claim": "Squadron 42 has an official Steam store page (app 4045720, published by Roberts Space Industries, developed by Cloud Imperium Games) that went live on October 10, 2026; it can be wishlisted but not bought, lists a planned release of Q2 2027, Windows only, and notes support for linking a Roberts Space Industries account to a Steam account.",
+      "status": "verified",
+      "sources": [
+        "https://store.steampowered.com/app/4045720/",
+        "https://store.steampowered.com/api/appdetails?appids=4045720&cc=us&l=en"
+      ],
+      "lastVerified": "2026-10-11"
     },
     {
       "id": "sq42-vertical-slice-dec-2017",

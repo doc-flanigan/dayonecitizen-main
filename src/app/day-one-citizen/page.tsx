@@ -70,8 +70,8 @@ const SECTIONS: Section[] = [
     stub: (
       <>
         You buy through{' '}
-        <Term name="RSI">robertsspaceindustries.com</Term> — not Steam, not the
-        Epic store, not anywhere else. This section walks through creating an
+        <Term name="RSI">robertsspaceindustries.com</Term> — Star Citizen is not on
+        Steam, not on the Epic store, and not anywhere else. This section walks through creating an
         account, applying a <Term name="Referral Code">referral code</Term>{' '}
         for the 50,000 <Term name="UEC">UEC</Term> bonus, and finishing
         checkout. See the{' '}
@@ -217,7 +217,7 @@ const QUICK_ANSWERS: QuickAnswer[] = [
     id: 'is-star-citizen-on-steam',
     question: 'Is Star Citizen on Steam?',
     answer:
-      'No — and not on consoles or Game Pass either. Where the game is actually sold, plus the honest Steam Deck answer.',
+      'Star Citizen is not on Steam, consoles, or Game Pass (Squadron 42 is on Steam). Where the game is actually sold, plus the Steam Deck answer.',
   },
   {
     id: 'ships-real-money',
