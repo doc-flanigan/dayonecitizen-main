@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12",
+  "generated": "2026-10-13",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -1356,6 +1356,16 @@
       "lastVerified": "2026-10-09"
     },
     {
+      "id": "rsi-discovery-month-twitch-drops",
+      "claim": "From October 14 to 27, 2026, watching any Drops Enabled Star Citizen Twitch stream for a total of four hours unlocks the Phoenix Insignia Display for free; the Twitch account must be linked to the RSI account (Settings → Linked Accounts), and the drop is claimed on Twitch.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21341-Twitch-Drops-RSI-Discovery-Month",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21374-This-Week-In-Star-Citizen"
+      ],
+      "lastVerified": "2026-10-13"
+    },
+    {
       "id": "rsi-support-cannot-swap-loaners",
       "claim": "RSI Support cannot swap or change loaner ships by player request — loaner assignments are determined by the Loaner Ship Matrix based on owned pledges.",
       "status": "verified",
@@ -1793,6 +1803,15 @@
       "lastVerified": "2026-07-04"
     },
     {
+      "id": "sq42-download-requires-pledge-containing-game",
+      "claim": "All RSI accounts that own a pledge containing Squadron 42 will be able to download Squadron 42 once development is complete and the game is released.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360042914633-Where-can-I-download-Squadron-42"
+      ],
+      "lastVerified": "2026-10-13"
+    },
+    {
       "id": "sq42-feature-complete-oct-2023",
       "claim": "Squadron 42 was declared feature-complete in October 2023, announced at CitizenCon 2953 — all planned gameplay features implemented, project moved to polishing.",
       "status": "verified",
@@ -1839,6 +1858,15 @@
       "lastVerified": "2026-10-12"
     },
     {
+      "id": "sq42-manchester-playtest-recap-oct-2026",
+      "claim": "CIG's October 12, 2026 This Week in Star Citizen says around 140 community members attended the Squadron 42 hands-on event in Manchester; attendees played Squadron 42 for five hours, followed by an additional hour of a unique story chapter aboard an adrift Xi'an ship. CIG said photos from the event would be shared soon.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21374-This-Week-In-Star-Citizen"
+      ],
+      "lastVerified": "2026-10-13"
+    },
+    {
       "id": "sq42-monthly-reports-series",
       "claim": "Dedicated Squadron 42 Monthly Reports ran as an official comm-link series from the September 2018 edition (cross-posted November 2018, comm-link 16792) through September 2024, publishing continuously — including through 2022–2023, when it was cross-posted from the SQ42 newsletter.",
       "status": "verified",
@@ -1847,6 +1875,15 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/18547-Squadron-42-Monthly-Report-January-2022"
       ],
       "lastVerified": "2026-07-04"
+    },
+    {
+      "id": "sq42-not-available-for-download",
+      "claim": "Squadron 42 is currently in development and not available for download; access will be available only after development is complete and the game is released.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360042914633-Where-can-I-download-Squadron-42"
+      ],
+      "lastVerified": "2026-10-13"
     },
     {
       "id": "sq42-odin-primary-setting-q3-2025",
@@ -1872,9 +1909,10 @@
       "claim": "In the August 27, 2026 Letter from the Chairman, CIG moved Squadron 42 from its 2026 target to a Q2 2027 release window.",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360042914633-Where-can-I-download-Squadron-42"
       ],
-      "lastVerified": "2026-10-03"
+      "lastVerified": "2026-10-13"
     },
     {
       "id": "sq42-separate-title-no-live-sp-mode",
@@ -1900,10 +1938,11 @@
       "claim": "Squadron 42 has an official Steam store page (app 4045720, published by Roberts Space Industries, developed by Cloud Imperium Games) that went live on October 10, 2026; it can be wishlisted but not bought, lists a planned release of Q2 2027, Windows only, and notes support for linking a Roberts Space Industries account to a Steam account.",
       "status": "verified",
       "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21374-This-Week-In-Star-Citizen",
         "https://store.steampowered.com/app/4045720/",
         "https://store.steampowered.com/api/appdetails?appids=4045720&cc=us&l=en"
       ],
-      "lastVerified": "2026-10-11"
+      "lastVerified": "2026-10-13"
     },
     {
       "id": "sq42-vertical-slice-dec-2017",
