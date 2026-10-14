@@ -146,6 +146,22 @@ export default function RootLayout({
     },
   }
 
+  // Anti-mirror guard. Spam sites (747live.bet, twice so far) have copied our
+  // pages and won Google's canonical for them. If this HTML is ever rendered
+  // on a host that isn't ours, bounce the visitor — or Google's renderer — to
+  // the real page. The host is emitted as char codes so a proxy's find-and-
+  // replace of our domain can't rewrite it. The path comes from the canonical
+  // tag, since a mirror may serve one of our pages at its own homepage. The
+  // `mirror` param lets middleware log the copying host, then it strips it.
+  const ownHostCodes = JSON.stringify(
+    Array.from(new URL(SITE.url).hostname, (c) => c.charCodeAt(0))
+  )
+  const mirrorGuard =
+    `try{(function(){var h=location.hostname,o=String.fromCharCode.apply(null,${ownHostCodes});` +
+    "if(h===o||h==='localhost'||h==='127.0.0.1'||/\\.vercel\\.app$/.test(h)||/\\.translate\\.goog$/.test(h)||h==='web.archive.org')return;" +
+    "var c=document.querySelector('link[rel=canonical]'),p=location.pathname;if(c){try{p=new URL(c.href,location.href).pathname;}catch(e){}}" +
+    "location.replace('https://'+o+p+'?mirror='+encodeURIComponent(h));})();}catch(e){}"
+
   return (
     <html
       lang="en"
@@ -153,6 +169,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-navy text-starwhite antialiased">
+        <script dangerouslySetInnerHTML={{ __html: mirrorGuard }} />
         <script
           dangerouslySetInnerHTML={{
             __html:

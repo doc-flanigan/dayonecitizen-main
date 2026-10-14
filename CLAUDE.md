@@ -629,6 +629,25 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 
 > **Note:** Endpoint was renamed from `/api/track-click` → `/api/log` because adblocker filter lists (EasyPrivacy, uBlock Origin) blocked the original URL pattern client-side.
 
+### Scraper / mirror defence (added 2026-10-14)
+
+747live.bet (a casino spam site) has twice won Google's canonical for our
+pages by serving Google a copy of them (July: quantum-travel + first-ship;
+October: `/de/auf-deutsch`). Two guards:
+
+- **Anti-mirror script** (`src/app/layout.tsx`): if our HTML renders on any
+  host other than ours (allowlist: localhost, `*.vercel.app`,
+  `*.translate.goog`, web.archive.org), it redirects to the same page on
+  dayonecitizen.com with `?mirror=<host>`.
+- **Middleware logging** (`src/middleware.ts`): writes Sheet rows labelled
+  `mirror:<host>` (from the guard) and `suspect:fake-googlebot` (Googlebot
+  UA from a non-Google IP, checked against Google's published ranges via
+  `src/lib/google-crawler-ips.ts`). These rows store the **raw IP** in the
+  `ipHash` column — copy it into a Vercel Firewall deny rule.
+
+For a hijack already in Google: request indexing on the page, file a DMCA
+removal for the hijacker URL, and give the page a light dated refresh.
+
 ### TODO: Verify end-to-end on this site
 - [ ] Click CTA **with** adblocker enabled → Sheet row appears within 5s
 - [ ] Click CTA **with** adblocker enabled → Discord embed appears in #referral-clicks

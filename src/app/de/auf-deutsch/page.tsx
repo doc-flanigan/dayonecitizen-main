@@ -87,6 +87,8 @@ const articleJsonLd = {
   description:
     'Star Citizen unterstützt offiziell nur Englisch — deutsche Texte gibt es nur über inoffizielle Community-Sprachdateien. Der ehrliche Stand 2026.',
   inLanguage: 'de',
+  datePublished: '2026-07-12',
+  dateModified: '2026-10-14',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/de/auf-deutsch`,
@@ -137,6 +139,20 @@ export default function AufDeutschPage() {
         </header>
 
         <div className="container-narrow space-y-16 py-16">
+
+          <section className="card-surface rounded-lg border border-white/5 p-6">
+            <h2 className="heading-display text-xl sm:text-2xl">Auf einen Blick</h2>
+            <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed text-starwhite/85">
+              <li>Das Spiel selbst: offiziell nur Englisch, keine deutsche Sprachauswahl.</li>
+              <li>Deutsche Texte: nur über inoffizielle Sprachdateien von Fans.</li>
+              <li>Sprachausgabe: bleibt immer englisch.</li>
+              <li>RSI-Website und Anmeldung: nur auf Englisch.</li>
+              <li>Squadron 42, die Einzelspieler-Kampagne, auf Deutsch: unbestätigt.</li>
+            </ul>
+            <p className="mt-4 text-xs text-muted">
+              Seite geprüft am 14. Oktober 2026.
+            </p>
+          </section>
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
