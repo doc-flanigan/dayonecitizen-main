@@ -220,6 +220,19 @@ export default function ReportABugPage() {
                 Citizen forum. A report that does not describe a bug gets archived.{' '}
                 <SourceLink {...OFFICIAL_SOURCES.usingIssueCouncil} />
               </p>
+              <p>
+                Got kicked out with an error code instead? Look the code up first.
+                Our sister site lists{' '}
+                <a
+                  href="https://starcitizenhelp.com/game-guides/error-codes"
+                  className="text-gold underline decoration-dotted hover:text-goldDark"
+                >
+                  every Star Citizen error code with the game&rsquo;s own wording
+                </a>
+                . Many of them describe a server time-out, and the official message
+                asks you to wait a few minutes and try again. Report it here only
+                if it keeps happening.
+              </p>
             </div>
           </section>
 
