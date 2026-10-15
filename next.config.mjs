@@ -14,6 +14,13 @@ const nextConfig = {
         destination: 'https://freeflyevent.com/free-fly.ics',
         permanent: true,
       },
+      // Misspelled section slug that Google picked up from a bad link
+      // ("dayone-citizen" for "day-one-citizen"); it 404ed (GSC, 2026-10-15).
+      {
+        source: '/dayone-citizen/:path*',
+        destination: '/day-one-citizen/:path*',
+        permanent: true,
+      },
       // Old-brand domains -> new-brand domain, path-preserving (1:1).
       // This sends every backlink and Google ranking signal from the
       // o7citizen.com era to dayonecitizen.com, regardless of which path
