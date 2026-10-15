@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14",
+  "generated": "2026-10-15",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -212,6 +212,33 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360002542733-Concierge-Levels-and-Rewards"
       ],
       "lastVerified": "2026-08-29"
+    },
+    {
+      "id": "constellation-centaurus-pledge-includes-skylark-paint",
+      "claim": "Constellation Mk V Centaurus pledge includes the Skylark snub fighter and Convergence paint",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Constellation-Mk-V-Centaurus-Warbond"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "constellation-centaurus-warbond-275-usd",
+      "claim": "Constellation Mk V Centaurus warbond pledge costs 275 USD",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Constellation-Mk-V-Centaurus-Warbond"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "constellation-mk-v-centaurus-10year-pledge-300-usd",
+      "claim": "The Constellation Mk V Centaurus 10-Year standalone pledge costs $300 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Constellation-Mk-V-Centaurus-10-Year"
+      ],
+      "lastVerified": "2026-10-14"
     },
     {
       "id": "constellation-paint-pack-compatible-variants",
@@ -431,14 +458,23 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "first-flight-pack-60-usd-aurora",
+      "claim": "The First Flight Pack ($60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and 30-day trial loaner access to Drake Golem (mining), MISC Fortune (salvage), and Crusader Intrepid (cargo hauling).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Packages/Star-Citizen-First-Flight-Pack"
+      ],
+      "lastVerified": "2026-10-15"
+    },
+    {
       "id": "flight-ready-default-ralt-r",
       "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
       "status": "verified",
       "sources": [
-        "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28). Extracted with sc-portfolio tools/keybinds/.\"",
+        "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28); re-checked on sc-alpha-4.10.2 (2026-10-12), file unchanged. Extracted with sc-portfolio tools/keybinds/.\"",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-14"
     },
     {
       "id": "foundation-festival-2026-expected",
@@ -518,6 +554,15 @@
         "https://robertsspaceindustries.com/en/funding-goals"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "game-messages-official-wording",
+      "claim": "The wording of Star Citizen's in-game error codes (ui_error_message_<code>: 211 codes in Alpha 4.10.2, 183 with a real message, the rest developer placeholders) and of the curated in-game messages and hints on SCH's error-codes page is quoted verbatim from the game's English localization file for the current build.",
+      "status": "verified",
+      "sources": [
+        "\"Star Citizen game files (CIG): Data.p4k → Data/Localization/english/global.ini, keys ui_error_message_*, plus the keys listed per message in StarCitizenHelp-live src/data/game-messages.curated.json. Build sc-alpha-4.10.2 (2026-10-12). Extracted with sc-portfolio tools/datacore/cli.py extract + tools/messages/build_messages.py.\""
+      ],
+      "lastVerified": "2026-10-14"
     },
     {
       "id": "generalist-starter-pack-60-usd-drake-cutter",
@@ -693,7 +738,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-14"
     },
     {
       "id": "keybinds-rebindable-profiles",
@@ -1364,6 +1409,78 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/21374-This-Week-In-Star-Citizen"
       ],
       "lastVerified": "2026-10-13"
+    },
+    {
+      "id": "rsi-error-19000-series",
+      "claim": "19000-series errors are authentication failures between the player's PC/account and the game servers, not related to multi-factor login.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/36547864392471-Error-Code-19000-19005"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-error-30000",
+      "claim": "Star Citizen error code 30000 is RSI's general timeout message: the player lost connection to the game server (often a server crash) or timed out while connecting. RSI's suggested fixes include verifying game files, fully restarting the RSI Launcher, turning off a VPN, and deleting the USER folder in the LIVE install folder.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360053608633-Error-Code-30000"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-error-30003",
+      "claim": "RSI is still investigating error 30003; most reports point to network problems and resulting file corruption, or programs that manage internet traffic such as cFosSpeed.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360002285233-Error-Code-30003"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-error-30009-30018",
+      "claim": "Errors 30009/30018 are a login issue RSI is tracking that appears most often after logging out or crashing inside a ship or in a no-fly zone.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360038342233-Error-Code-30009-30018"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-error-30028",
+      "claim": "Error 30028 means the player was kicked for inactivity.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360052827894-Error-Code-30028"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-error-41070",
+      "claim": "Error 41070 generally means an issue with the player's character data that prevents loading into the game.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/33938335789207-Error-Code-41070"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-error-60015-40015",
+      "claim": "Error 60015 (or its 40015 variant) means the game instance the player is being placed in is not working properly; RSI's fix is to change login region before entering the Universe.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360041558213-Error-Code-60015"
+      ],
+      "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-error-65000",
+      "claim": "Error 65000 means something went wrong while loading into the Persistent Universe, usually temporary network issues.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/34409251540887-Error-Code-65000"
+      ],
+      "lastVerified": "2026-10-14"
     },
     {
       "id": "rsi-support-cannot-swap-loaners",
