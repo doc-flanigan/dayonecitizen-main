@@ -45,7 +45,7 @@ const faqJsonLd = {
       name: 'What is the best starter package in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For most new players: the Citizen Starter Pack. It is $45 on sale, 25% off its $60 list price as of September 2026. It is the cheapest way into the game and comes with the Aurora Mk II — a forgiving starter ship with six months of hull insurance — plus a full armor set, an undersuit, and a weapon. Learn the game first, then upgrade later via a CCU for the price difference.',
+        text: 'For most new players: the Citizen Starter Pack. It is $45 on sale, 25% off its $60 list price as of September 2026. It is the cheapest way into the game and comes with the Aurora Mk II — a forgiving starter ship with six months of hull insurance. Learn the game first, then upgrade later via a CCU for the price difference.',
       },
     },
     {
@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: 'What does every Star Citizen game package include?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Every game package includes the Star Citizen digital download, full access to the live Persistent Universe alpha, a starter ship with at least six months of hull insurance, a self-land hangar, and 10,000 starting UEC.',
+        text: 'Every game package includes the Star Citizen digital download, full access to the live Persistent Universe alpha, a starter ship with at least six months of hull insurance, a self-land hangar, and 10,000 UEC on your account.',
       },
     },
     {
@@ -166,8 +166,9 @@ export default function StarterPackagePage() {
                 <li>A starter ship with at least six months of hull insurance</li>
                 <li>A self-land hangar to store your ship</li>
                 <li>
-                  10,000 starting <Term name="UEC">UEC</Term> — the in-game
-                  currency you spend at shops and terminals
+                  10,000 <Term name="UEC">UEC</Term> on your account. This is
+                  separate from the <Term name="aUEC">aUEC</Term> you spend at
+                  in-game shops
                 </li>
               </ul>
               <p>
@@ -192,9 +193,7 @@ export default function StarterPackagePage() {
               <p>
                 It is the cheapest way into the game. It comes with the{' '}
                 <Term name="Aurora">Aurora Mk II</Term> — a forgiving starter ship
-                with six months of hull insurance — plus a full armor set,
-                an undersuit, and a weapon. That kit lets you play ground missions
-                from your very first session. Learn the game first, then upgrade via
+                with six months of hull insurance. Learn the game first, then upgrade via
                 a <Term name="CCU">CCU</Term> later for the price difference.{' '}
                 <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">
                   Why the Aurora is the right first ship
@@ -250,7 +249,7 @@ export default function StarterPackagePage() {
                       <Term name="Golem">Drake Golem</Term>
                     </td>
                     <td className="px-4 py-3 text-starwhite/80">$75</td>
-                    <td className="px-4 py-3 text-starwhite/80">24 months</td>
+                    <td className="px-4 py-3 text-starwhite/80">Check store page</td>
                     <td className="px-4 py-3 text-starwhite/80">Miners</td>
                   </tr>
                   <tr>
@@ -316,16 +315,12 @@ export default function StarterPackagePage() {
                 </h3>
                 <p className="mt-1 text-sm text-muted">
                   Ship: <Term name="Golem">Drake Golem</Term>
-                  &ensp;·&ensp;Insurance: 24 months
-                  &ensp;·&ensp;Starting money: 20,000 <Term name="UEC">UEC</Term>
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-starwhite/85">
                   The <Term name="Golem">Drake Golem</Term> is Drake&rsquo;s dedicated solo
                   mining ship — built to break ore in deep space and haul it back alone.
-                  This pack comes with twenty-four months of insurance, double the starting
-                  money of most other packs, a full mining-themed armor set, and a tractor
-                  beam tool. If mining is your career plan, nothing here needs to be bought
-                  separately.
+                  Check the official store page for exactly what this pack includes
+                  before you buy.
                 </p>
               </div>
 
@@ -336,7 +331,7 @@ export default function StarterPackagePage() {
                 <p className="mt-1 text-sm text-muted">
                   Ship: RSI Salvation
                   &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
+                  &ensp;·&ensp;Account money: 10,000 <Term name="UEC">UEC</Term>
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-starwhite/85">
                   The RSI Salvation — <Term name="RSI">RSI</Term>&rsquo;s purpose-built
@@ -354,7 +349,7 @@ export default function StarterPackagePage() {
                 <p className="mt-1 text-sm text-muted">
                   Ship: <Term name="Avenger">Aegis Avenger Titan</Term>
                   &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
+                  &ensp;·&ensp;Account money: 10,000 <Term name="UEC">UEC</Term>
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-starwhite/85">
                   The <Term name="Avenger">Avenger Titan</Term> is a retired military
@@ -373,7 +368,7 @@ export default function StarterPackagePage() {
                 <p className="mt-1 text-sm text-muted">
                   Ship: <Term name="Intrepid">Crusader Intrepid</Term>
                   &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
+                  &ensp;·&ensp;Account money: 10,000 <Term name="UEC">UEC</Term>
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-starwhite/85">
                   The <Term name="Intrepid">Crusader Intrepid</Term> — a single-seat
@@ -392,7 +387,7 @@ export default function StarterPackagePage() {
                 <p className="mt-1 text-sm text-muted">
                   Ship: <Term name="Syulen">Gatac Syulen</Term>
                   &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
+                  &ensp;·&ensp;Account money: 10,000 <Term name="UEC">UEC</Term>
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-starwhite/85">
                   The <Term name="Syulen">Gatac Syulen</Term> is a Human-Xi&rsquo;an hybrid
@@ -411,7 +406,7 @@ export default function StarterPackagePage() {
                 <p className="mt-1 text-sm text-muted">
                   Ship: <Term name="Cutlass">Drake Cutlass Black</Term>
                   &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
+                  &ensp;·&ensp;Account money: 10,000 <Term name="UEC">UEC</Term>
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-starwhite/85">
                   The <Term name="Cutlass">Cutlass Black</Term> is Drake&rsquo;s most
@@ -650,8 +645,8 @@ export default function StarterPackagePage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   For most new players, the Citizen Starter Pack — $45 on
-                  sale, $60 list — the cheapest way in, with the Aurora Mk II,
-                  six months of hull insurance, and a full armor kit. Upgrade
+                  sale, $60 list — the cheapest way in, with the Aurora Mk II
+                  and six months of hull insurance. Upgrade
                   later via a CCU for the price difference.
                 </p>
               </div>
@@ -673,7 +668,7 @@ export default function StarterPackagePage() {
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   The game download, full access to the live alpha, a starter
                   ship with at least six months of hull insurance, a self-land
-                  hangar, and 10,000 starting UEC.
+                  hangar, and 10,000 UEC on your account.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

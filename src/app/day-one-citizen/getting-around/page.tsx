@@ -5,18 +5,19 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
+import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
   title: 'How to Get to Your Ship in Star Citizen',
   description:
-    'Hab to hangar routes in all four Star Citizen cities: Lorville transit rail, Area18 on foot, New Babbage elevators, and Orison inter-platform shuttles.',
+    'Hab to hangar routes in all four Star Citizen cities: Lorville metro, Area18 CityFlight, New Babbage MT Metroloop, and Orison shuttles.',
   alternates: { canonical: '/day-one-citizen/getting-around' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
     title: 'How to Get to Your Ship in Star Citizen',
     description:
-      'Hab to hangar routes in Lorville, Area18, New Babbage, and Orison — step-by-step for every starting city in Star Citizen.',
+      'Hab to hangar routes in Lorville, Area18, New Babbage, and Orison, step by step for every starting city in Star Citizen.',
     url: '/day-one-citizen/getting-around',
     type: 'article',
   },
@@ -33,23 +34,23 @@ const faqJsonLd = {
       name: 'How do you get from your hab to your ship in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Take the elevator down from your hab tower, follow city signage or transit to the spaceport, and claim your ship at an ASOP terminal near the hangar bays. Lorville uses a transit rail, Area18 is walkable, New Babbage connects through the Welcome Hub, and Orison uses inter-platform shuttles.',
+        text: 'Take the elevator down to the ground floor of your hab, then ride city transit to the spaceport. Get off at the first stop and go through customs. At an ASOP terminal, select Deliver and then Retrieve, and take a hangar elevator to your ship. Lorville uses its metro, Area18 uses CityFlight, New Babbage uses the MT Metroloop, and Orison uses a shuttle and an elevator.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What should you do if you get lost in a city?',
+      name: 'Which stop do you get off at on the city train?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Hold F on any kiosk, map board, or information terminal to open the Inner Thought menu. The Set Destination option places a navigation marker on your HUD. If you are completely lost, press Escape and use the Respawn option to reset to your hab.',
+        text: 'In Lorville, Area18, and New Babbage, take the line toward the spaceport and get off at the first stop. The lines form loops, so staying on takes you past it. Orison uses a shuttle to Providence Platform instead.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Which Star Citizen city is easiest to navigate?',
+      name: 'Is there a known problem with the Lorville tram?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Area18 is compact and the easiest city to navigate on foot — the walk from the hab district is shorter than in any other city. Lorville is the largest and most complex, using an automated transit rail between districts.',
+        text: 'Yes. In Alpha 4.10.2, the tram from Metro Center to Teasa Spaceport in Lorville can throw you out of the tram and may kill you. RSI says to move well away from the doors after you board.',
       },
     },
     {
@@ -102,12 +103,12 @@ export default function GettingAroundPage() {
 
           <div className="rounded-2xl border border-white/10 bg-navyLight/20 p-6 text-sm text-starwhite/80">
             <strong className="text-starwhite">Universal tip before you start:</strong>{' '}
-            Hold{' '}
+            Press{' '}
             <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd>{' '}
-            on any kiosk, terminal, or information board to open the{' '}
-            <Term name="Inner Thought">Inner Thought</Term> context menu. Many transit stations
-            have a &ldquo;Set Destination&rdquo; option that places a navigation marker on your
-            HUD to guide you to the spaceport. Use this if you get lost.
+            to use panels, doors, and elevators. Hold it to see everything you can use
+            highlighted in green, and to open the{' '}
+            <Term name="Inner Thought">Inner Thought</Term> menu. Each route below follows
+            RSI&rsquo;s own &ldquo;Now Leaving&rdquo; guide for that city, linked in its section.
           </div>
 
           <section>
@@ -116,36 +117,44 @@ export default function GettingAroundPage() {
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Lorville is the largest and most complex city to navigate. It uses an automated
-                transit system (the Lorville Transit rail) to move between districts.
+                You wake up in the L-19 <Term name="Hab">hab</Term>. Your ship waits at Teasa
+                Spaceport. The trip uses the Lorville Rapid Transit System.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360048403313-Now-Leaving-Lorville">Official RSI guide</SourceLink>
               </p>
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
-                  From your <Term name="Hab">hab</Term>, take the elevator down to the ground
-                  floor of your hab tower. Exit the building.
+                  Find the single elevator on the upper level of your hab. Go down to the
+                  Ground Floor to get out of the building and into the city.
                 </li>
                 <li>
-                  Follow signage toward the transit system — look for rail station icons. The
-                  Lorville transit is a monorail that connects the residential district to the
-                  commercial district and the Teasa Spaceport.
+                  Head for the Metro Center, the main station of the transit system. Follow
+                  the steps down to the lines.
                 </li>
                 <li>
-                  Board the transit and select <strong className="text-starwhite">Teasa Spaceport</strong>{' '}
-                  as your stop. The transit is automated — you just ride it.
+                  Follow the signs to the{' '}
+                  <strong className="text-starwhite">Spaceport Line</strong>. The lines form
+                  loops, so get off at the <strong className="text-starwhite">first stop</strong>.
+                  Trains arrive often, so a missed one is no trouble.
                 </li>
                 <li>
-                  Exit at the spaceport. Follow signs toward the hangar district. You will pass
-                  a security checkpoint where your weapons are scanned. If you are carrying an
-                  unholstered weapon, holster it before the checkpoint.
+                  Leave the platform, head left, and go through the Customs Area. Then climb
+                  the steps to the terminal.
                 </li>
                 <li>
-                  Find the <Term name="ASOP">ASOP terminal</Term> near the hangar bay entrance.
-                  Claim your ship and proceed to your assigned hangar.
+                  At the top, the Vehicle Retrieval Consoles are on your left. These are the{' '}
+                  <Term name="ASOP">ASOP terminals</Term>. Choose your ship, select Deliver,
+                  then select Retrieve. Note which hangar it is sent to.
+                </li>
+                <li>
+                  Walk to the hangar elevators. Any elevator reaches every hangar. Pick your
+                  assigned hangar, and your ship is waiting when the doors open.
                 </li>
               </ol>
               <p className="mt-4 text-sm text-muted">
-                Note: Lorville has strict weapon restrictions in residential and commercial areas.
-                Keep weapons holstered throughout the city.
+                Known issue in Alpha 4.10.2: on the Metro Center to Teasa Spaceport tram, the
+                doors can spin and throw you out of the tram, which may kill you. RSI says to
+                move well away from the doors after you board.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360056254754">Official known issues</SourceLink>
               </p>
             </div>
           </section>
@@ -156,25 +165,36 @@ export default function GettingAroundPage() {
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Area18 is compact and the easiest city to navigate on foot. The spaceport is
-                visible from most of the district.
+                You wake up in the Adira Falls <Term name="Hab">hab</Term>. Your ship waits at
+                Riker Memorial Spaceport. You ride the AC CityFlight transit to reach it.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360047674554-Now-Leaving-Area18">Official RSI guide</SourceLink>
               </p>
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
-                  Exit your <Term name="Hab">hab</Term> via the elevator to street level.
+                  Find the single elevator in your hab&rsquo;s main corridor. Go down to the
+                  Ground Floor to reach the city.
                 </li>
                 <li>
-                  Area18&rsquo;s commercial district is dense with shops and foot traffic.
-                  Look for directional signage to the Area18 Spaceport or use{' '}
-                  <Term name="Inner Thought">Inner Thought</Term> on a kiosk to set a waypoint.
+                  Turn right and head for the ArcCorp Plaza sign. Go through the narrow alley
+                  to reach the plaza.
                 </li>
                 <li>
-                  Walk or take the automated people-mover transport toward the spaceport entrance.
-                  The walk from the hab district is shorter in Area18 than any other city.
+                  Head right and look for the AC CityFlight sign. Go down the steps and take the
+                  right-hand branch to the Spaceport platform.
                 </li>
                 <li>
-                  At the spaceport, find the <Term name="ASOP">ASOP terminal</Term> near the
-                  hangar bays. Claim your ship.
+                  Ride the train and get off at the{' '}
+                  <strong className="text-starwhite">first stop</strong>. Turn right past the
+                  waiting area and go through Customs.
+                </li>
+                <li>
+                  Just ahead are the Vehicle Retrieval Consoles, also called{' '}
+                  <Term name="ASOP">ASOP terminals</Term>. Choose your ship, select Deliver,
+                  then select Retrieve. Note your assigned hangar.
+                </li>
+                <li>
+                  Carry on to the main waiting area. The hangar elevators are on the right. Any
+                  elevator reaches every hangar. Pick yours.
                 </li>
               </ol>
             </div>
@@ -186,33 +206,41 @@ export default function GettingAroundPage() {
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                New Babbage is built in a clean, futuristic style with a large central hub —
-                the Welcome Hub — that serves as the main transit point for the city.
+                You wake up in The Nest <Term name="Hab">hab</Term>. Your ship waits at the
+                interstellar spaceport. You ride the MT Metroloop to reach it.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360048403193-Now-Leaving-New-Babbage">Official RSI guide</SourceLink>
               </p>
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
-                  From your <Term name="Hab">hab</Term>, take the elevator to the Welcome Hub
-                  level or to the street.
+                  Find the single elevator next to the smaller window in your hab&rsquo;s main
+                  corridor. Go down to the Ground Floor.
                 </li>
                 <li>
-                  Navigate to the <strong className="text-starwhite">Welcome Hub</strong> — the
-                  large central building in New Babbage. It has multiple floors with shops,
-                  services, and transit connections.
+                  Head straight across toward the MT Metroloop sign. Follow the steps all the
+                  way down to the platforms.
                 </li>
                 <li>
-                  Inside the Welcome Hub, look for the transit terminal or elevator to the
-                  Spaceport District. The Welcome Hub connects directly to the New Babbage
-                  Spaceport via elevator or transit.
+                  Turn left at the bottom for the{' '}
+                  <strong className="text-starwhite">Spaceport line</strong>. Ride the train and
+                  get off at the <strong className="text-starwhite">first stop</strong>.
                 </li>
                 <li>
-                  At the spaceport level, proceed to the hangar district. Find the{' '}
-                  <Term name="ASOP">ASOP terminal</Term> and claim your ship.
+                  Leave the platform and take any elevator up to the spaceport. You arrive at
+                  the Security Checkpoint. Go through, then up the steps to the Departure Lounges.
+                </li>
+                <li>
+                  At the top of the stairs, turn left. The Vehicle Retrieval Consoles, also called{' '}
+                  <Term name="ASOP">ASOP terminals</Term>, are on your right. Choose your ship,
+                  select Deliver, then select Retrieve.
+                </li>
+                <li>
+                  The hangar elevators surround the consoles. Pick your assigned hangar, listed
+                  under your name, and your ship is waiting when the doors open.
                 </li>
               </ol>
               <p className="mt-4 text-sm text-muted">
-                New Babbage is on microTech, a frozen world. Outside the pressurized Welcome Hub
-                and city areas, temperatures are lethal without cold-weather armor. Stay indoors
-                on your first visit.
+                New Babbage is on microTech, a frozen world. Outside the pressurized city areas,
+                temperatures are lethal without cold-weather armor. Stay indoors on your first visit.
               </p>
             </div>
           </section>
@@ -223,30 +251,45 @@ export default function GettingAroundPage() {
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Orison is unique — it is built on a series of floating platforms in the upper
-                atmosphere of the gas giant <Term name="Crusader">Crusader</Term>. Transit
-                between platforms uses inter-platform shuttles.
+                Orison is built on floating platforms in the upper atmosphere of the gas giant{' '}
+                <Term name="Crusader">Crusader</Term>. You wake up in the Green Circle{' '}
+                <Term name="Hab">hab</Term>. Your ship waits at August Dunlow Spaceport.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/32579562665239-Now-Leaving-Orison">Official RSI guide</SourceLink>
               </p>
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
-                  From your <Term name="Hab">hab</Term>, exit to the platform level.
+                  Leave your hab room and turn right to the lounge and elevators. Take the
+                  elevator down to the Green Circle Lobby.
                 </li>
                 <li>
-                  Find the shuttle terminal — usually clearly marked on the same platform as
-                  the hab district. Shuttles run continuously between platforms on a timetable.
+                  From the lobby, turn left and follow the exit signs out into Cloudview.
+                  Straight ahead and on the right is a mass transit shuttle station.
                 </li>
                 <li>
-                  Take the shuttle toward the spaceport platform. The destination will be
-                  labeled on the shuttle routes at the terminal.
+                  Take the shuttle to Providence Platform. A timer shows when the next one
+                  arrives.
                 </li>
                 <li>
-                  At the spaceport platform, navigate to the hangar bay area. The{' '}
-                  <Term name="ASOP">ASOP terminal</Term> is near the hangar entrance.
+                  At Providence Platform, follow the signs to the elevators. Call one and select
+                  August Dunlow Spaceport.
+                </li>
+                <li>
+                  Turn right and go through the security checkpoints and the Departure Lounges.
+                  Then follow the signs to the Hangars.
+                </li>
+                <li>
+                  Just outside the hangar elevators are the Vehicle Retrieval Terminals, also
+                  called <Term name="ASOP">ASOP terminals</Term>. Choose your ship, select
+                  Deliver, then select Retrieve.
+                </li>
+                <li>
+                  Take the elevator and pick the hangar your ship was assigned. Your ship is
+                  waiting when the doors open.
                 </li>
               </ol>
               <p className="mt-4 text-sm text-muted">
-                Orison is visually spectacular — the platforms hang above cloud layers with
-                sweeping views. Take a moment on your first visit to look over the edge.
+                Orison is visually spectacular. The platforms hang above cloud layers with
+                sweeping views. Take a moment on your first visit to look around.
               </p>
             </div>
           </section>
@@ -256,10 +299,9 @@ export default function GettingAroundPage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <ul className="list-disc space-y-4 pl-6">
                 <li>
-                  <strong className="text-starwhite">Use <Term name="Inner Thought">Inner Thought</Term>
-                  </strong>{' '}
-                  on every kiosk, map board, and information terminal you pass. The &ldquo;Set
-                  Destination&rdquo; option paints a path on your HUD.
+                  <strong className="text-starwhite">Hold F to see what you can use</strong> —
+                  anything you can interact with is highlighted in green.{' '}
+                  <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse">Official RSI guide</SourceLink>
                 </li>
                 <li>
                   <strong className="text-starwhite">Follow the icons</strong> — every city in
@@ -280,10 +322,8 @@ export default function GettingAroundPage() {
                   day one, you should have a clean record.
                 </li>
                 <li>
-                  <strong className="text-starwhite">If you get completely lost</strong> — press{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Escape</kbd>{' '}
-                  and use the Respawn option to reset your character to their home spawn point
-                  (your <Term name="Hab">hab</Term>). Start the route again from there.
+                  <strong className="text-starwhite">If you get lost</strong> — follow the in-game signs and markers to the
+                  spaceport. This is RSI&rsquo;s general advice.
                 </li>
               </ul>
             </div>
@@ -297,39 +337,37 @@ export default function GettingAroundPage() {
                   How do you get from your hab to your ship?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Take the elevator down from your <Term name="Hab">hab</Term>{' '}
-                  tower, follow city signage or transit to the spaceport, and claim
-                  your ship at an <Term name="ASOP">ASOP terminal</Term> near the
-                  hangar bays. <Term name="Lorville">Lorville</Term> uses a transit
-                  rail, <Term name="Area18">Area18</Term> is walkable,{' '}
-                  <Term name="New Babbage">New Babbage</Term> connects through the{' '}
-                  <Term name="Welcome Hub">Welcome Hub</Term>, and{' '}
-                  <Term name="Orison">Orison</Term> uses inter-platform shuttles.
+                  Take the elevator down to the ground floor of your{' '}
+                  <Term name="Hab">hab</Term>, then ride city transit to the spaceport. Get
+                  off at the first stop and go through customs. At an{' '}
+                  <Term name="ASOP">ASOP terminal</Term>, select Deliver and then Retrieve,
+                  and take a hangar elevator to your ship.{' '}
+                  <Term name="Lorville">Lorville</Term> uses its metro,{' '}
+                  <Term name="Area18">Area18</Term> uses CityFlight,{' '}
+                  <Term name="New Babbage">New Babbage</Term> uses the MT Metroloop, and{' '}
+                  <Term name="Orison">Orison</Term> uses a shuttle and an elevator.
                 </p>
               </div>
 
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  What should you do if you get lost in a city?
+                  Which stop do you get off at on the city train?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Hold F on any kiosk, map board, or information terminal to open
-                  the <Term name="Inner Thought">Inner Thought</Term> menu. The Set
-                  Destination option places a navigation marker on your HUD. If you
-                  are completely lost, press Escape and use the Respawn option to
-                  reset to your hab.
+                  In Lorville, Area18, and New Babbage, take the line toward the spaceport
+                  and get off at the first stop. The lines form loops, so staying on takes
+                  you past it. Orison uses a shuttle to Providence Platform instead.
                 </p>
               </div>
 
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  Which city is easiest to navigate?
+                  Is there a known problem with the Lorville tram?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Area18 is compact and the easiest city to navigate on foot — the
-                  walk from the hab district is shorter than in any other city.
-                  Lorville is the largest and most complex, using an automated
-                  transit rail between districts.
+                  Yes. In Alpha 4.10.2, the tram from Metro Center to Teasa Spaceport in
+                  Lorville can throw you out of the tram and may kill you. RSI says to move
+                  well away from the doors after you board.
                 </p>
               </div>
 

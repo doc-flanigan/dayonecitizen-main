@@ -11,7 +11,7 @@ import CTAButton from '@/components/CTAButton'
 export const metadata: Metadata = {
   title: 'Star Citizen Quick Reference Card',
   description:
-    'One mobile cheat sheet: day-one Star Citizen keybinds, capacitor keys, and which shop sells weapons, armor, components, and ships.',
+    'One mobile cheat sheet: day-one Star Citizen keybinds, power keys, and which shop sells weapons, armor, components, and ships.',
   alternates: { canonical: '/quick-reference' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
@@ -64,10 +64,10 @@ const FLIGHT_KEYS = [
 ]
 
 const CAPACITOR_KEYS = [
-  { k: 'F5', action: 'Push regen toward weapons' },
-  { k: 'F6', action: 'Push regen toward engines' },
-  { k: 'F7', action: 'Push regen toward shields' },
-  { k: 'F8', action: 'Reset to balanced' },
+  { k: 'F5', action: 'More power to weapons' },
+  { k: 'F6', action: 'More power to engines' },
+  { k: 'F7', action: 'More power to shields' },
+  { k: 'F8', action: 'Reset all three assignments' },
 ]
 
 const SHOP_LOOKUP = [
@@ -137,7 +137,7 @@ const JUMP_LINKS = [
   { href: '#day-one', label: 'Day one' },
   { href: '#on-foot', label: 'On foot' },
   { href: '#flight', label: 'Flight' },
-  { href: '#capacitors', label: 'Capacitors' },
+  { href: '#capacitors', label: 'Power keys' },
   { href: '#shops', label: 'Shops' },
 ]
 
@@ -268,14 +268,14 @@ export default function QuickReferencePage() {
 
           {/* Capacitors */}
           <section id="capacitors" className="scroll-mt-28">
-            <h2 className="heading-display text-2xl sm:text-3xl">Capacitors (F-keys)</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">Power assignments (F-keys)</h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
-              In a fight, push to shields. Escaping? Push to engines. Routine
-              flying? Leave it balanced. Your{' '}
-              <Term name="MFD">MFD</Term> shows the current split.
+              F5 to F7 move your ship&rsquo;s power toward weapons, engines or
+              shields. F8 resets them. Your{' '}
+              <Term name="MFD">MFD</Term> shows the current power split.
             </p>
             <div className="mt-5">
-              <KeyTable rows={CAPACITOR_KEYS} label="Capacitor management keybinds" />
+              <KeyTable rows={CAPACITOR_KEYS} label="Power assignment keybinds" />
             </div>
           </section>
 

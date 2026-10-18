@@ -70,7 +70,7 @@ export const DAY_ONE_STEPS: DayOneStep[] = [
     short: 'Install',
     title: 'Installing the game',
     action:
-      'Before you press INSTALL, open the launcher’s Settings and point the Library Folder at an SSD with 150 GB free.',
+      'Before you press INSTALL, open Settings from the RSI drop-down, choose Storage, and set the Default Library to an SSD with 150 GB or more free.',
     link: { href: '/day-one-citizen/rsi-launcher', label: 'Next: the RSI launcher' },
   },
   {
@@ -79,7 +79,7 @@ export const DAY_ONE_STEPS: DayOneStep[] = [
     short: 'Launcher',
     title: 'Using the RSI launcher',
     action:
-      'Play on the LIVE channel. If the game ever misbehaves, select LIVE and click VERIFY — it takes fifteen to thirty minutes.',
+      'Play on the LIVE channel. If the game ever misbehaves, open Settings from the RSI drop-down, choose Games, and click VERIFY.',
     link: { href: '/day-one-citizen/first-launch', label: 'Next: first launch' },
   },
   {
@@ -106,7 +106,7 @@ export const DAY_ONE_STEPS: DayOneStep[] = [
     short: 'First day',
     title: 'Your first day in the ‘Verse',
     action:
-      'Press F1 and check your wallet. Then head for the spaceport and call your ship at an ASOP terminal, the ship-retrieval kiosk.',
+      'Press F1 and check your wallet. Then head for the spaceport. At an ASOP terminal, the ship kiosk, choose Deliver, then Retrieve.',
     link: { href: '/day-one-citizen/getting-around', label: 'Next: hab to hangar' },
   },
   {
@@ -115,7 +115,7 @@ export const DAY_ONE_STEPS: DayOneStep[] = [
     short: 'Hab to hangar',
     title: 'Getting from your hab to the hangar',
     action:
-      'Lost? Hold F on any kiosk or map board and choose Set Destination. A marker appears on your screen.',
+      'Lost? Follow the in-game signs and markers to the spaceport. In most cities that means a short train ride.',
     link: { href: '/day-one-citizen/first-flight', label: 'Next: your first flight' },
   },
   {
@@ -124,7 +124,7 @@ export const DAY_ONE_STEPS: DayOneStep[] = [
     short: 'First flight',
     title: 'Your first flight',
     action:
-      'In the pilot seat, press Right Alt + R and wait for the screens to load. Then press N to raise the landing gear.',
+      'In the pilot seat, press Right Alt + R to power up. Hold Space to lift off, then press N to raise the landing gear once you are clear.',
     link: { href: '/beyond-the-basics/quantum-travel', label: 'Then: quantum travel' },
   },
 ]

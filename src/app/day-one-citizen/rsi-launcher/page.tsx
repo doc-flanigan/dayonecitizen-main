@@ -34,7 +34,7 @@ const faqJsonLd = {
       name: 'What is the difference between LIVE, PTU, and EPTU in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'LIVE is the stable, publicly released version where most players are — the one new players should use. PTU (Public Test Universe) runs an upcoming patch before release: progress is copied from LIVE but does not carry back, and bugs are expected. EPTU is the earliest, least stable test channel, sometimes limited to invited testers, and safe to ignore as a new player.',
+        text: 'LIVE is the stable, publicly released version where most players are — the one new players should use. PTU (Public Test Universe) runs an upcoming update before release: progress is copied from LIVE but does not carry back, and bugs are expected. EPTU is the earliest, least stable test channel, limited to invited testers, and safe to ignore as a new player.',
       },
     },
     {
@@ -50,7 +50,7 @@ const faqJsonLd = {
       name: 'How do you verify game files in the RSI Launcher?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Open the RSI Launcher, select the channel you play on (usually LIVE), and click VERIFY. The check takes fifteen to thirty minutes and automatically re-downloads any corrupted or missing files. Verify first whenever the game crashes repeatedly or breaks after an update.',
+        text: 'Open the RSI Launcher, open Settings from the RSI drop-down, choose Games, and click VERIFY for the channel you play on (usually LIVE). The check automatically re-downloads any corrupted or missing files. Verify first whenever the game crashes repeatedly or breaks after an update.',
       },
     },
     {
@@ -58,7 +58,7 @@ const faqJsonLd = {
       name: 'Does switching to PTU download the whole game again?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes — each channel is a full separate installation of roughly 100 GB. Most players keep only LIVE installed and download PTU temporarily during major test phases.',
+        text: 'Yes — each channel is a full separate installation. LIVE measures about 150 GB, and PTU is similar. Most players keep only LIVE installed and download PTU temporarily during major test phases.',
       },
     },
   ],
@@ -125,12 +125,12 @@ export default function RsiLauncherPage() {
                   what is new or fixed.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Settings gear</strong> — launcher settings
-                  including install location, VRAM allocation for shader cache, and network options.
+                  <strong className="text-starwhite">The RSI drop-down</strong> (top left) — opens
+                  Settings, where you find the install location, the Verify button, and download limits.
                 </li>
                 <li>
-                  <strong className="text-starwhite">A VERIFY button</strong> — appears when
-                  a channel is selected. Checks all installed files against expected checksums
+                  <strong className="text-starwhite">A VERIFY button</strong> — found in
+                  Settings, under Games. Checks all installed files against expected checksums
                   and re-downloads any corrupted or missing files.
                 </li>
               </ul>
@@ -175,9 +175,10 @@ export default function RsiLauncherPage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 The <Term name="PTU">Public Test Universe</Term> is a copy of the game running
-                an upcoming patch before it ships to <Term name="Live">LIVE</Term>. When a new
-                major update is in testing, <Term name="CIG">CIG</Term> opens it to all players
-                here first.
+                an upcoming update before it reaches <Term name="Live">LIVE</Term>. Access is by
+                invitation, in waves, and the PTU is not always open. You copy your account to
+                it from the RSI website first. <Term name="CIG">CIG</Term> only opens it when a
+                release candidate is ready to test.
               </p>
               <p>
                 Key differences from <Term name="Live">LIVE</Term>:
@@ -206,8 +207,8 @@ export default function RsiLauncherPage() {
               <p>
                 The <Term name="EPTU">Early Public Test Universe</Term> is even earlier than
                 PTU — it is where the most bleeding-edge builds go before broader PTU testing.
-                Access is sometimes limited to invited testers or specific{' '}
-                <Term name="Backer">backer</Term> tiers (formerly called Evocati).
+                Access is limited to invited testers, such as the Evocati, a
+                small group of selected players who work under a non-disclosure agreement.
               </p>
               <p>
                 As a new player, ignore <Term name="EPTU">EPTU</Term>. It is unstable by
@@ -225,7 +226,7 @@ export default function RsiLauncherPage() {
                 current channel (usually &ldquo;LIVE&rdquo;). Click it to see available options.
                 If you switch to a channel you have not downloaded yet, the Launcher will
                 prompt you to download it — this is a full additional copy of the game (another
-                ~100 GB).
+                large download, roughly the size of LIVE).
               </p>
               <figure className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -256,9 +257,9 @@ export default function RsiLauncherPage() {
               </p>
               <ol className="list-decimal space-y-2 pl-6">
                 <li>Open the RSI Launcher</li>
-                <li>Select the channel you play on (usually LIVE)</li>
-                <li>Click <strong className="text-starwhite">VERIFY</strong></li>
-                <li>Wait — this can take 15–30 minutes as it checks every file</li>
+                <li>Open Settings from the RSI drop-down, then choose Games</li>
+                <li>Click <strong className="text-starwhite">VERIFY</strong> for the channel you play on (usually LIVE)</li>
+                <li>Wait — this can take a while as it checks every file</li>
                 <li>Any corrupted or missing files will be re-downloaded automatically</li>
               </ol>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
@@ -290,14 +291,13 @@ export default function RsiLauncherPage() {
                   installed. Can be changed here if you need to move to a different drive.
                 </li>
                 <li>
-                  <strong className="text-starwhite">VRAM size</strong> — tells the shader
-                  compiler how much video memory your GPU has. Set this correctly (your GPU&rsquo;s
-                  actual VRAM amount) for optimal shader cache size.
+                  <strong className="text-starwhite">Download limits</strong> — the Download
+                  tab lets you cap your download speed or the number of downloads at once. The
+                  defaults are unlimited speed and the maximum number of downloads.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Background downloads</strong> — the Launcher
-                  can download updates in the background while you are not playing. Useful for
-                  keeping up with frequent patch cycles automatically.
+                  <strong className="text-starwhite">Application</strong> — controls what happens
+                  when you close the Launcher window. By default it keeps running in the background.
                 </li>
               </ul>
               <figure className="max-w-xs mx-auto overflow-hidden rounded-2xl border border-white/10">
@@ -344,9 +344,8 @@ export default function RsiLauncherPage() {
                   Game misbehaving after an update?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Select your channel in the Launcher and click VERIFY. It
-                  checks every file and re-downloads anything corrupted —
-                  fifteen to thirty minutes, and it fixes a surprising number
+                  Open Settings, choose Games, and click VERIFY. It
+                  checks every file and re-downloads anything corrupted. It fixes a surprising number
                   of issues.
                 </p>
               </div>

@@ -203,8 +203,9 @@ export default function WorthBuyingPage() {
                 </li>
                 <li>
                   <strong className="text-starwhite">Some starting money and insurance</strong> — the
-                  Citizen Starter Pack includes 10,000 <Term name="UEC">UEC</Term> and six months of
-                  insurance on its ship.{' '}
+                  Citizen Starter Pack includes 10,000 <Term name="UEC">UEC</Term> on your account
+                  and six months of insurance on its ship. That account money is separate from the{' '}
+                  <Term name="aUEC">aUEC</Term> you spend in the game.{' '}
                   <SourceLink href="https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack">
                     Official RSI store page
                   </SourceLink>
@@ -235,9 +236,10 @@ export default function WorthBuyingPage() {
               <p>
                 That one package is also the only required spend.{' '}
                 <Link href="/day-one-citizen/ships-real-money" className="text-gold underline-offset-4 hover:underline">
-                  Every other ship can be earned in-game
+                  Other ships are meant to be earnable in-game
                 </Link>{' '}
-                — the expensive store listings are optional pledges, not a paywall.
+                — that is CIG&apos;s stated goal, though not every ship is for sale in-game yet.
+                The expensive store listings are optional pledges, not a paywall.
               </p>
             </div>
           </section>
@@ -297,8 +299,8 @@ export default function WorthBuyingPage() {
                   <strong className="text-starwhite">
                     <Term name="30k">30k errors</Term>
                   </strong>{' '}
-                  — server crashes that disconnect everyone simultaneously. Named after the HTTP
-                  status code that used to appear. They happen. You will lose some in-progress
+                  — lost connections to the game server, often after a server crash. The game
+                  shows error code 30000 when it happens. They happen. You will lose some in-progress
                   work when they do.
                 </li>
                 <li>
@@ -324,8 +326,7 @@ export default function WorthBuyingPage() {
                 <li>
                   <strong className="text-starwhite">Performance</strong> — Star Citizen is one of
                   the most demanding PC games ever built. Even high-end hardware will not always
-                  hit sixty frames per second in dense cities. This improves with each major update as{' '}
-                  <Term name="Server Meshing">server meshing</Term> technology matures.
+                  hit sixty frames per second in dense cities.
                 </li>
                 <li>
                   <strong className="text-starwhite">Missing features</strong> — many planned

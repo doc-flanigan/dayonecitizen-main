@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: 'What happens when you launch Star Citizen for the first time?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You go through character creation first — your pilot name and your appearance. You then spawn in a hab, a small personal apartment in one of Stanton’s four major cities: Lorville, Area18, New Babbage, or Orison.',
+        text: 'You go through character creation first — your pilot name and your appearance. You then choose a starting city and wake in a hab, a small personal apartment in one of Stanton’s four major cities: Lorville, Area18, New Babbage, or Orison.',
       },
     },
     {
@@ -57,7 +57,7 @@ const faqJsonLd = {
       name: 'How do you log out of Star Citizen safely?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Find a bed — in your hab, on your ship, or at any rest location. Hold F on the bed and select Bed Log. A bedlog preserves your character’s location and inventory state. A standard logout from the Escape menu returns you to your spawn point instead.',
+        text: 'Find a bed — in your hab or on your ship. Interact with the bed (F) and choose the log out option. This is called a bedlog. After you log out, you wake at the last landing zone you flew to that has hab facilities.',
       },
     },
   ],
@@ -139,8 +139,8 @@ export default function FirstLaunchPage() {
             <h2 className="heading-display text-2xl sm:text-3xl">The hab room — your starting point</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                After character creation, you spawn in a <Term name="Hab">hab</Term> — a small
-                personal apartment assigned to you in one of{' '}
+                After character creation, you wake in a <Term name="Hab">hab</Term> — a small
+                personal apartment in one of{' '}
                 <Term name="Stanton">Stanton&rsquo;s</Term> four major cities:
               </p>
               <ul className="list-disc space-y-2 pl-6">
@@ -150,9 +150,11 @@ export default function FirstLaunchPage() {
                 <li><Term name="Orison">Orison</Term> on <Term name="Crusader">Crusader</Term></li>
               </ul>
               <p>
-                Which city you start in is determined by your game package or, if not specified,
-                assigned automatically. All cities work equally well for day one — each has an
-                ASOP terminal and a route to a spaceport where your ship is waiting.
+                The first time you load into Stanton, you choose which of the four cities to start in.
+                RSI then offers you a short tutorial called the New Player Experience. After that,
+                you wake at the last landing zone you flew to that has hab facilities. Choose
+                carefully. All four cities work for day one — each has an ASOP terminal and a
+                route to a spaceport where your ship is waiting.
               </p>
               <p>
                 The <Term name="Hab">hab</Term> is a small room with a bed, a storage terminal
@@ -178,13 +180,15 @@ export default function FirstLaunchPage() {
                   contacts, and inventory. Tap through the apps to get familiar with the layout.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Check your wallet</strong> — open the money
-                  app in <Term name="mobiGlas">mobiGlas</Term> to confirm your 50,000{' '}
-                  <Term name="UEC">UEC</Term> referral bonus is there. It appears as
-                  starting credit in your account.
+                  <strong className="text-starwhite">Check your wallet</strong> — open the Wallet
+                  app in <Term name="mobiGlas">mobiGlas</Term>. It shows your{' '}
+                  <Term name="aUEC">aUEC</Term>, the in-game money. In Alpha 4.10.2 the base
+                  starting amount is 20,000 aUEC. RSI adds any <Term name="UEC">UEC</Term> on
+                  your account that did not come bundled with a game package, such as the
+                  referral bonus.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Look at the Contracts app</strong> — this is
+                  <strong className="text-starwhite">Look at the Contracts Manager app</strong> — this is
                   where delivery missions, escort jobs, and bounties appear. On day one you will
                   see basic delivery and data-running contracts. Do not accept anything yet.
                 </li>
@@ -226,16 +230,16 @@ export default function FirstLaunchPage() {
                   missions. All your active jobs live here.
                 </li>
                 <li>
-                  <strong className="text-starwhite">StarMap</strong> — the universe map. Set
+                  <strong className="text-starwhite">Starmap</strong> — the universe map. Set
                   a destination here and your <Term name="Quantum Travel">quantum drive</Term>{' '}
                   will be able to navigate to it.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Personal Manager</strong> — your character
-                  sheet. Shows health, carried items, credits, and linked organizations.
+                  <strong className="text-starwhite">Equipment Manager</strong> — the gear you
+                  carry and wear. Your money lives in the separate Wallet app.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Vehicle Loadout Manager (VMA)</strong> — view
+                  <strong className="text-starwhite">Vehicle Loadout Manager</strong> — view
                   and manage your ships and their component loadouts. See which ships you own and
                   what they are equipped with.
                 </li>
@@ -256,23 +260,23 @@ export default function FirstLaunchPage() {
               </p>
               <ol className="list-decimal space-y-2 pl-6">
                 <li>
-                  Find a bed — in your <Term name="Hab">hab</Term>, on your ship, or at any
-                  in-game rest location.
+                  Find a bed — in your <Term name="Hab">hab</Term> or on your ship.
                 </li>
                 <li>
                   Hold <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-xs">F</kbd>{' '}
                   on the bed to interact.
                 </li>
                 <li>
-                  Select <strong className="text-starwhite">Bed Log</strong> from the options. This
-                  performs a <Term name="Bedlogging">bedlog</Term> — a safe logout that preserves
-                  your character&rsquo;s location and inventory state.
+                  Choose the log out option. This is a <Term name="Bedlogging">bedlog</Term> — logging
+                  out while lying in a bed. The game&rsquo;s own hint says to interact with
+                  your ship&rsquo;s bed to see the option.
                 </li>
               </ol>
               <p>
-                You can also use the Escape menu and log out from there — this performs a
-                standard logout that returns your character to their spawn point. Bedlogging
-                preserves location; standard logout does not.
+                After any logout, you wake at the last landing zone you flew to that has hab
+                facilities. One caution: RSI&rsquo;s Alpha 4.10.2 known issues say many players
+                reported the 30,000 error after logging out in a ship or ship bed. RSI Support
+                suggests a character repair if that happens.
               </p>
             </div>
           </section>
@@ -286,8 +290,8 @@ export default function FirstLaunchPage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   You go through character creation first — your pilot name and your
-                  appearance. You then spawn in a <Term name="Hab">hab</Term>, a small
-                  personal apartment in one of{' '}
+                  appearance. You then choose a starting city and wake in a{' '}
+                  <Term name="Hab">hab</Term>, a small personal apartment in one of{' '}
                   <Term name="Stanton">Stanton&rsquo;s</Term> four major cities.
                 </p>
               </div>
@@ -321,11 +325,10 @@ export default function FirstLaunchPage() {
                   How do you log out safely?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Find a bed — in your hab, on your ship, or at any rest location.
-                  Hold F on the bed and select Bed Log. A{' '}
-                  <Term name="Bedlogging">bedlog</Term> preserves your
-                  character&rsquo;s location and inventory state. A standard logout
-                  from the Escape menu returns you to your spawn point instead.
+                  Find a bed — in your hab or on your ship. Interact with the bed (F)
+                  and choose the log out option. This is called a{' '}
+                  <Term name="Bedlogging">bedlog</Term>. After you log out, you wake
+                  at the last landing zone you flew to that has hab facilities.
                 </p>
               </div>
             </div>

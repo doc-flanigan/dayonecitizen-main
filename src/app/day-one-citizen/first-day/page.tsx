@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen First Day Guide: What to Do First',
     description:
-      'Ten things to do on day one in Star Citizen, in order. From claiming your ship at the ASOP terminal to your first mission and safe logout.',
+      'Ten things to do on day one in Star Citizen, in order. From retrieving your ship at the ASOP terminal to your first mission and safe logout.',
     url: '/day-one-citizen/first-day',
     type: 'article',
   },
@@ -35,15 +35,15 @@ const faqJsonLd = {
       name: 'What should you do first on day one in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wake up in your hab, open your mobiGlas with F1, and check your wallet. Then get to the spaceport, claim your starter ship at an ASOP terminal, and board it in your assigned hangar.',
+        text: 'Wake up in your hab, open your mobiGlas with F1, and check your wallet. Then get to the spaceport, deliver and retrieve your ship at an ASOP terminal, and board it in your assigned hangar.',
       },
     },
     {
       '@type': 'Question',
-      name: 'How do you claim your ship in Star Citizen?',
+      name: 'How do you get your ship at the spaceport in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'At the spaceport, find an ASOP terminal — a vertical kiosk with a ship icon near the hangar bay entrance. Hold F to interact, select your starter ship, and choose Claim. The terminal assigns you a hangar number.',
+        text: 'At the spaceport, find an ASOP terminal, the ship retrieval console. Press F to interact, select your ship, choose Deliver, then Retrieve. Next, take a hangar elevator and choose your assigned hangar. RSI notes that some ASOP terminals do not show Deliver in Alpha 4.10.2.',
       },
     },
     {
@@ -119,8 +119,9 @@ export default function FirstDayPage() {
                     <p>
                       Press{' '}
                       <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F1</kbd>{' '}
-                      to open your <Term name="mobiGlas">mobiGlas</Term>. Check your wallet —
-                      your 50,000 <Term name="UEC">UEC</Term> referral bonus should be there.
+                      to open your <Term name="mobiGlas">mobiGlas</Term>. Check your wallet — it shows your{' '}
+                      <Term name="aUEC">aUEC</Term>, the in-game money. The base starting amount is 20,000, plus your referral
+                      bonus if you used a code.
                       Note your starting city. Close <Term name="mobiGlas">mobiGlas</Term> and
                       head to the door.
                     </p>
@@ -144,13 +145,9 @@ export default function FirstDayPage() {
                       </Link>.
                     </p>
                     <p>
-                      The quick version: take the elevator out of the hab tower, follow transit
-                      signage to the spaceport, and look for the hangar district once there.
-                      Hold{' '}
-                      <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd>{' '}
-                      on any kiosk or terminal for the{' '}
-                      <Term name="Inner Thought">Inner Thought</Term> context menu, which often
-                      has a &ldquo;Set Destination&rdquo; option to put a marker on your HUD.
+                      The quick version: take the elevator out of the hab tower and follow the in-game signs and markers
+                      to the spaceport. Most cities need a tram ride. You can also set a destination
+                      on the map in your <Term name="mobiGlas">mobiGlas</Term> to put a marker on your HUD.
                     </p>
                   </div>
                 </div>
@@ -162,24 +159,24 @@ export default function FirstDayPage() {
               <div className="flex items-start gap-5">
                 <span className="shrink-0 font-mono text-2xl font-bold text-gold/60">03</span>
                 <div>
-                  <h2 className="heading-display text-xl sm:text-2xl">Find the ASOP terminal and claim your ship</h2>
+                  <h2 className="heading-display text-xl sm:text-2xl">Find the ASOP terminal and retrieve your ship</h2>
                   <div className="mt-3 space-y-3 text-base leading-relaxed text-starwhite/85">
                     <p>
                       At the spaceport, look for an <Term name="ASOP">ASOP terminal</Term> — a
-                      vertical kiosk with a ship icon. These are typically near the hangar bay
-                      entrance, after a security checkpoint. Hold{' '}
+                      ship retrieval console. Each spaceport has one near its hangar elevators.
+                      Press{' '}
                       <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd>{' '}
                       to interact with it.
                     </p>
                     <p>
-                      Your starter ship will appear in the terminal&rsquo;s list. Select it and
-                      choose <strong className="text-starwhite">Claim</strong>. The terminal
-                      assigns you a hangar number (e.g., &ldquo;Hangar 7-A&rdquo;). Note this
-                      number, then walk to that hangar door.
+                      Your ship will appear in the terminal&rsquo;s list. Select it and choose{' '}
+                      <strong className="text-starwhite">Deliver</strong>, then{' '}
+                      <strong className="text-starwhite">Retrieve</strong>. Once your ship is
+                      delivered, head to your hangar to board it.
                     </p>
                     <p>
-                      If the terminal shows &ldquo;Reclaim&rdquo; instead of &ldquo;Claim,&rdquo;
-                      the ship is still spawning. Wait 30–60 seconds and try again.
+                      RSI lists a known issue in Alpha 4.10.2: some ASOP terminals do not show
+                      the Deliver option. If yours does not, try another terminal.
                     </p>
                   </div>
                 </div>
@@ -194,8 +191,8 @@ export default function FirstDayPage() {
                   <h2 className="heading-display text-xl sm:text-2xl">Board your ship</h2>
                   <div className="mt-3 space-y-3 text-base leading-relaxed text-starwhite/85">
                     <p>
-                      Walk to your assigned hangar. The door opens automatically when you
-                      approach. Your ship is inside. Walk up to the entry point — a door ramp,
+                      Take a hangar elevator near the ASOP terminals and choose your assigned
+                      hangar. Your ship is inside. Walk up to the entry point — a door ramp,
                       a ladder, or an access hatch depending on the ship.
                     </p>
                     <p>
@@ -301,8 +298,8 @@ export default function FirstDayPage() {
                     <p>
                       Hold{' '}
                       <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd>{' '}
-                      (a long press) to cycle your master mode to NAV, then middle-click to cycle into QT mode with
-                      your destination targeted (it appears as a waypoint). Point your nose
+                      (a long press) to cycle your master mode to NAV, then middle-click to cycle into QT mode. Before that, open the map (F2), pick your
+                      destination, and select Route to this Location. Point your nose
                       at it and the quantum drive auto-calibrates — a circular indicator
                       appears in your HUD. When it completes, hold left-click{' '}
                       to jump. The ship accelerates dramatically and you are transported across
@@ -392,17 +389,16 @@ export default function FirstDayPage() {
                   <h2 className="heading-display text-xl sm:text-2xl">Log out safely</h2>
                   <div className="mt-3 space-y-3 text-base leading-relaxed text-starwhite/85">
                     <p>
-                      When you are done, do not just close the game. Return to your ship or any
-                      location with a bed. Hold{' '}
+                      When you are done, do not just close the game. Return to your hab or your
+                      ship&rsquo;s bed. Press{' '}
                       <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd>{' '}
-                      on the bed and select <strong className="text-starwhite">Bed Log</strong>.
-                      This performs a <Term name="Bedlogging">bedlog</Term> — a clean save
-                      that preserves your character&rsquo;s exact location and state.
+                      on the bed and choose the log out option. This is a{' '}
+                      <Term name="Bedlogging">bedlog</Term>.
                     </p>
                     <p>
-                      If you cannot reach a bed, use the Escape menu &rarr; log out. This
-                      performs a standard logout and respawns you at your set home location
-                      next session.
+                      You can also log out from the Escape menu. Either way, you wake at the last
+                      landing zone you flew to that has hab facilities. RSI&rsquo;s known
+                      issues note many players hit the 30,000 error after logging out in a ship bed.
                     </p>
                   </div>
                 </div>
@@ -456,7 +452,7 @@ export default function FirstDayPage() {
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Wake up in your <Term name="Hab">hab</Term>, open your{' '}
                   <Term name="mobiGlas">mobiGlas</Term> with F1, and check your
-                  wallet. Then get to the spaceport, claim your starter ship at an{' '}
+                  wallet. Then get to the spaceport, deliver and retrieve your ship at an{' '}
                   <Term name="ASOP">ASOP terminal</Term>, and board it in your
                   assigned hangar.
                 </p>
@@ -464,13 +460,14 @@ export default function FirstDayPage() {
 
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  How do you claim your ship?
+                  How do you get your ship at the spaceport?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  At the spaceport, find an ASOP terminal — a vertical kiosk with a
-                  ship icon near the hangar bay entrance. Hold F to interact, select
-                  your starter ship, and choose Claim. The terminal assigns you a
-                  hangar number.
+                  At the spaceport, find an ASOP terminal, the ship retrieval console.
+                  Press F to interact, select your ship, choose Deliver, then
+                  Retrieve. Next, take a hangar elevator and choose your assigned
+                  hangar. RSI notes that some ASOP terminals do not show Deliver in
+                  Alpha 4.10.2.
                 </p>
               </div>
 

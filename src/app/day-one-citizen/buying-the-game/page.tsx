@@ -11,6 +11,7 @@ import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
+import SourceLink from '@/components/SourceLink'
 
 export const metadata: Metadata = {
   title: 'How to Buy Star Citizen — Day One Citizen',
@@ -53,7 +54,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The cheapest game packages start at $45 on sale ($60 list price, as of September 2026). A package includes access to the Star Citizen alpha, a starter ship with insurance — the Citizen Starter Pack comes with the Aurora Mk II — and 10,000 starting UEC.',
+        text: 'The cheapest game packages start at $45 on sale ($60 list price, as of September 2026). A package includes access to the Star Citizen alpha, a starter ship with insurance — the Citizen Starter Pack comes with the Aurora Mk II — and 10,000 UEC on your account.',
       },
     },
     {
@@ -69,7 +70,7 @@ const faqJsonLd = {
       name: 'When do you enter a Star Citizen referral code?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'During account creation — the referral code field appears at sign-up, and that is the only reliable window. If you miss it, you have roughly 24 hours to add it in account settings, but that path is unreliable. A referral code gives the new account 50,000 free UEC.',
+        text: 'During account creation — the referral code field appears at sign-up, and that is the best time. If you miss it, you have 24 hours after creating the account to add it yourself in your account settings. RSI support cannot add it for you after that. A referral code gives the new account 50,000 free UEC.',
       },
     },
     {
@@ -77,7 +78,7 @@ const faqJsonLd = {
       name: 'How big is the Star Citizen download?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The RSI Launcher installer is small (about 20 MB), but the game itself is over 100 GB. On a typical home connection the full download takes several hours, so start it well before you plan to play.',
+        text: 'The RSI Launcher installer is small, but the game itself needs 150 GB or more of SSD space. On a typical home connection the full download takes several hours, so start it well before you plan to play.',
       },
     },
   ],
@@ -137,9 +138,9 @@ export default function BuyingTheGamePage() {
               <div className="text-sm text-starwhite/90">
                 <strong className="text-yellow-300">Read this before you click anything:</strong>{' '}
                 The <Term name="Referral Code">referral code</Term> field appears during account
-                creation. If you miss it there, you have approximately 24 hours to add it in
-                your account settings — but this is unreliable and sometimes requires{' '}
-                <Term name="CIG">CIG</Term> support. Enter it at sign-up. The code is{' '}
+                creation. If you miss it there, you have 24 hours to add it yourself in
+                your account settings. After that, <Term name="CIG">CIG</Term> support cannot add
+                it for you. Enter it at sign-up. The code is{' '}
                 <code className="rounded bg-spaceBlack/60 px-1.5 py-0.5 font-mono text-gold">
                   STAR-GCQJ-N6NC
                 </code>{' '}
@@ -264,7 +265,7 @@ export default function BuyingTheGamePage() {
                 <li>Access to the Star Citizen alpha (the live{' '}
                   <Term name="PU">Persistent Universe</Term>)</li>
                 <li>A starter ship with standard insurance</li>
-                <li>10,000 starting <Term name="UEC">UEC</Term></li>
+                <li>10,000 <Term name="UEC">UEC</Term> on your account (Citizen Starter Pack)</li>
               </ul>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -334,10 +335,13 @@ export default function BuyingTheGamePage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 After purchase, log into your{' '}
-                <Term name="RSI">RSI</Term> account and go to your{' '}
-                <strong className="text-starwhite">Library</strong>. You will see Star Citizen
-                listed. Click <strong className="text-starwhite">Download</strong> to get the
-                RSI Launcher installer — a small executable file (around 20 MB).
+                <Term name="RSI">RSI</Term> account on the website. Find the light blue{' '}
+                <strong className="text-starwhite">DOWNLOAD</strong> button to the left of your
+                account icon, at the top right. Click it to reach the download page and get the
+                RSI Launcher installer.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/115013373508-Install-the-RSI-Star-Citizen-Launcher">
+                  Official RSI support article
+                </SourceLink>
               </p>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -353,7 +357,7 @@ export default function BuyingTheGamePage() {
               </figure>
               <p>
                 Run the installer to install the RSI Launcher on your PC. The Launcher then
-                downloads the actual game — this is where the 100 GB+ comes from. Start this
+                downloads the actual game — this is why you need 150 GB or more of SSD space. Start this
                 process well before you want to play. On a typical home connection, the full
                 download can take several hours.
               </p>
@@ -373,20 +377,26 @@ export default function BuyingTheGamePage() {
               <p>
                 If you entered a <Term name="Referral Code">referral code</Term> at sign-up,
                 your 50,000 <Term name="UEC">UEC</Term> bonus is credited to your account. This
-                appears in your wallet in-game as a starting balance. It does not expire — and
-                because it is account UEC rather than earned{' '}
-                <Term name="aUEC">aUEC</Term>, a{' '}
-                <Term name="Wipe">wipe</Term> never touches it. Your pledged ships and items
-                are never wiped either. The full survives-vs-resets breakdown is in{' '}
+                is account money, shown on the RSI website. In the game you spend{' '}
+                <Term name="aUEC">aUEC</Term>, a temporary money that a{' '}
+                <Term name="Wipe">wipe</Term> can reset. RSI says your starting aUEC is a base
+                amount plus any UEC on your account that did not come bundled with a game
+                package. The referral bonus is that kind of UEC. Your pledged ships and items
+                are never wiped.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit">
+                  Official RSI support article
+                </SourceLink> The full survives-vs-resets breakdown is in{' '}
                 <Link href="/day-one-citizen/next-wipe" className="text-gold underline-offset-4 hover:underline">
                   when is the next wipe?
                 </Link>
               </p>
               <p>
-                50,000 <Term name="UEC">UEC</Term> on day one buys you starter armor sets,
-                weapons, and consumables at shops around the{' '}
-                <Term name="PU">Persistent Universe</Term> — enough to gear up without grinding
-                for your first few sessions.
+                In the game, you spend aUEC at shops around the{' '}
+                <Term name="PU">Persistent Universe</Term>. In Alpha 4.10.2 the base starting
+                amount is 20,000 aUEC.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102">
+                  Official RSI release notes
+                </SourceLink>
               </p>
             </div>
           </section>
@@ -413,7 +423,7 @@ export default function BuyingTheGamePage() {
                   The cheapest game packages start at $45 on sale ($60 list).
                   That includes alpha access, a starter ship with insurance —
                   the Citizen Starter Pack comes with the Aurora Mk II — and
-                  10,000 starting <Term name="UEC">UEC</Term>.
+                  10,000 <Term name="UEC">UEC</Term> on your account.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
@@ -433,8 +443,8 @@ export default function BuyingTheGamePage() {
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   At sign-up — that field is the only reliable window. It
                   gives you 50,000 free <Term name="UEC">UEC</Term>. Missing
-                  it leaves a roughly 24-hour fallback that sometimes needs{' '}
-                  <Term name="CIG">CIG</Term> support.
+                  it leaves a 24-hour window to add it yourself. After that,{' '}
+                  <Term name="CIG">CIG</Term> support cannot add it.
                 </p>
               </div>
             </div>
