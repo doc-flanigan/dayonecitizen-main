@@ -8,16 +8,21 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
+// Title test (2026-10): leads with the one code that works for every NEW
+// account (signup only — never say it "always works"). `absolute` skips the
+// " | dayonecitizen.com" template so the full title fits in ~65 chars.
+const TITLE = 'Star Citizen Codes (2026): One Code Works for Every New Account'
+const DESCRIPTION =
+  'The one Star Citizen code that works for every new account: referral code STAR-GCQJ-N6NC, worth 50,000 UEC at signup. Plus gift codes, promos and fake lists.'
+
 export const metadata: Metadata = {
-  title: 'Star Citizen Redeem Codes: Gifts & Promos (2026)',
-  description:
-    'How to redeem Star Citizen gift codes and event promo codes from CIG giveaways: where to enter each one, and how to spot the fake code lists.',
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
   alternates: { canonical: '/beyond-the-basics/redeem-codes' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Star Citizen Redeem Codes: Gifts & Promos (2026)',
-    description:
-      'How to redeem Star Citizen gift codes and event promo codes from CIG giveaways: where to enter each one, and how to spot the fake code lists.',
+    title: TITLE,
+    description: DESCRIPTION,
     url: '/beyond-the-basics/redeem-codes',
   },
 }
@@ -80,13 +85,21 @@ export default function RedeemCodesPage() {
               <ArrowLeft size={12} aria-hidden /> Beyond the Basics
             </Link>
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
-              Star Citizen Redeem Codes (2026)
+              Star Citizen Redeem Codes (2026): The One Code That Works
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Redeem codes in Star Citizen mostly cover two things: a game
-              package gifted to you by someone else, and promotional codes CIG
-              hands out during events like Free Fly weeks. Both are entered in
-              your account settings after you already have an RSI account.
+              The one code that works for every new account is a referral
+              code:{' '}
+              <strong className="text-starwhite">STAR-GCQJ-N6NC</strong>. Enter
+              it when you create your{' '}
+              <Term name="RSI">RSI</Term> account and 50,000{' '}
+              <Term name="UEC">UEC</Term> is added to it, with no purchase
+              needed.
+            </p>
+            <p className="mt-3 max-w-2xl text-base text-muted">
+              Every other code is either a gift from someone who bought you a
+              game package, or a rare promo code from an event. Lists of free
+              ship and money codes are fake.
             </p>
           </div>
         </header>
@@ -108,10 +121,10 @@ export default function RedeemCodesPage() {
             {/* Referral code callout */}
             <div className="card-surface rounded-xl border border-gold/30 p-6 mb-8">
               <p className="text-starwhite/90 mb-1">
-                <strong className="text-gold">Looking for a referral code?</strong>
+                <strong className="text-gold">How to use the referral code</strong>
               </p>
               <p className="text-starwhite/80 mb-4 leading-relaxed">
-                That is a different kind of code, entered once at signup.{' '}
+                It is entered once, when you sign up for a new account.{' '}
                 <strong className="text-starwhite">
                   Star Citizen referral code: STAR-GCQJ-N6NC
                 </strong>{' '}
