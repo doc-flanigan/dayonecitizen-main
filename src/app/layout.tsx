@@ -129,7 +129,7 @@ export default function RootLayout({
     name: SITE.name,
     url: SITE.url,
     logo: `${SITE.url}/images/brand/logo-mark.png`,
-    sameAs: [],
+    sameAs: [SITE.rsiOrgUrl],
     founder: { '@type': 'Person', name: SITE.author },
     description: SITE.description,
   }
