@@ -49,6 +49,8 @@ for (const f of fs.readdirSync(LEDGER).filter((f) => f.endsWith('.md') && f !== 
   if (!c) continue;
   if (!c.id) c.id = f.replace(/\.md$/, '');
   if (!c.claim || !c.status) { console.warn(`skipping ${f} — missing claim/status`); continue; }
+  // Superseded entries stay in the ledger for history; the entry that replaced them is the public one.
+  if (c.status === 'superseded') continue;
   claims.push(c);
 }
 
