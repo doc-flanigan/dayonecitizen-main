@@ -254,7 +254,7 @@ export default function PledgeVsPurchasePage() {
                 <Term name="Hangar">hangar</Term>.
               </p>
               <p>
-                For a new player, stick to flight-ready ships in your starter package. Concept
+                For a new player, stick to flight-ready ships, such as the Aurora Mk II in the First Flight Pack. Concept
                 ships are for experienced players who want to fund something they believe in and
                 can wait months or years for delivery.
               </p>
@@ -318,7 +318,7 @@ export default function PledgeVsPurchasePage() {
               href="/day-one-citizen/starter-package"
               className="inline-flex items-center gap-2 text-muted hover:text-gold"
             >
-              Which starter package? <ArrowRight size={14} aria-hidden />
+              The First Flight Pack <ArrowRight size={14} aria-hidden />
             </Link>
           </nav>
         </div>

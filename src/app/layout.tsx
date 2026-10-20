@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     'Star Citizen system requirements',
     'how to buy Star Citizen',
     'Star Citizen starter ship',
-    'Aurora Mk II vs Mustang Alpha',
+    'Star Citizen First Flight Pack',
     'how to install Star Citizen',
     'RSI Launcher',
     'Star Citizen PTU',

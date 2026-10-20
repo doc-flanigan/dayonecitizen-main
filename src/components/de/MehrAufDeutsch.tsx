@@ -16,7 +16,7 @@ export const GERMAN_PAGES = [
   },
   {
     href: '/de/starterpaket',
-    label: 'Welches Starterpaket? Aurora oder Mustang',
+    label: 'Das Starterpaket: das First Flight Pack',
   },
   {
     href: '/de/star-citizen-auf-steam',

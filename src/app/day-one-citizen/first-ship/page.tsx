@@ -9,18 +9,19 @@ import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
+import SourceLink from '@/components/SourceLink'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Ship — Aurora or Mustang?',
+  title: 'Star Citizen First Ship: The Aurora Mk II and Three Loaners',
   description:
-    'The best first ship in Star Citizen for most new players is the Aurora Mk II from the $45-on-sale ($60 list) starter pack. Aurora vs Mustang Alpha compared, plus the upgrade path.',
+    'Your first ship in Star Citizen is the Aurora Mk II from the First Flight Pack ($60, often $45 on sale). Plus three 30-day loaners to try mining, salvage and cargo.',
   alternates: { canonical: '/day-one-citizen/first-ship' },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Star Citizen First Ship — Which Starter Ship to Fly First',
+    title: 'Star Citizen First Ship: What the First Flight Pack Gives You',
     description:
-      'Aurora Mk II vs Mustang Alpha, honestly compared — and why your first ship matters less than you think once CCUs and aUEC enter the picture.',
+      'The Aurora Mk II is your starter ship. Three 30-day loaners let you try mining, salvage and cargo. The Mustang Alpha is a separate ship to buy later.',
     url: '/day-one-citizen/first-ship',
     type: 'article',
   },
@@ -37,15 +38,15 @@ const faqJsonLd = {
       name: 'What is the best first ship in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For most new players: the Aurora Mk II. It comes with the Citizen Starter Pack — $45 on sale, 25% off its $60 list price as of September 2026. It carries cargo, which opens delivery missions from your first session, and the pack includes six months of hull insurance. Learn the game in it, then upgrade or earn other ships later.',
+        text: 'The Aurora Mk II. It is the starter ship in the Star Citizen First Flight Pack, which RSI lists at $60 and which was on sale for $45 as of October 2026. It carries cargo, which opens delivery missions from your first session, and the pack includes six months of insurance. Learn the game in it, then upgrade or earn other ships later.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Aurora Mk II or Mustang Alpha — which is better?',
+      name: 'Should I buy the Mustang Alpha instead of the Aurora Mk II?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The Aurora Mk II is the more practical first ship. It carries cargo, which unlocks delivery missions immediately. The Mustang Alpha is faster and more fun to fly, but carries almost nothing, which locks a new player out of the easiest early money.',
+        text: 'You cannot choose it inside a game package any more. RSI now sells the Mustang Alpha only as a separate ship. The Aurora Mk II is the more practical first ship because it carries cargo, which unlocks delivery missions immediately. The Mustang Alpha is faster and more fun to fly, but carries almost nothing. You can buy it later if you want it.',
       },
     },
     {
@@ -58,10 +59,18 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
+      name: 'What are the three loaner ships?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'RSI says the First Flight Pack includes 30-day loaner access to three more starter ships: the Drake Golem for mining, the MISC Fortune for salvage and the Crusader Intrepid for cargo hauling. They let you try different gameplay styles before you spend more.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Do you keep your first ship forever?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, if it came from a game package or the pledge store — real-money purchases survive every wipe. The Citizen Starter Pack Aurora ships with six months of hull insurance; the ship itself stays yours permanently either way.',
+        text: 'Yes, if it came from a game package or the pledge store — real-money purchases survive every wipe. The First Flight Pack Aurora comes with six months of insurance; the ship itself stays yours permanently either way.',
       },
     },
   ],
@@ -70,9 +79,9 @@ const faqJsonLd = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Star Citizen First Ship — Which Starter Ship to Fly First',
+  headline: 'Star Citizen First Ship: What the First Flight Pack Gives You',
   description:
-    'The Aurora Mk II from the $45-on-sale ($60 list) starter pack is the best first ship for most new players. Aurora vs Mustang Alpha, honestly compared.',
+    'The Aurora Mk II from the First Flight Pack ($60, often $45 on sale) is your starter ship. Three 30-day loaners let you try mining, salvage and cargo.',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/first-ship`,
@@ -109,9 +118,8 @@ export default function FirstShipPage() {
               Your first ship
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Which starter ship should a brand-new player actually fly first?
-              An honest comparison — and why the choice matters less than the
-              store makes it feel.
+              What will you actually fly first? The First Flight Pack gives you one
+              starter ship and three loaners to try. Here is how to use them.
             </p>
             <p className="mt-4 text-sm text-muted">
               Written by{' '}
@@ -129,30 +137,52 @@ export default function FirstShipPage() {
             <h2 className="heading-display text-2xl sm:text-3xl">The short answer</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                <strong className="text-starwhite">For most new players, your first
-                ship should be the <Term name="Aurora">Aurora Mk II</Term>. It comes
-                with the Citizen Starter Pack — $45 on sale, 25% off its $60
-                list price as of September 2026. It carries cargo, which opens
-                delivery missions from your first session, and it comes with
-                six months of hull insurance.</strong>
+                <strong className="text-starwhite">Your first ship is the{' '}
+                <Term name="Aurora">Aurora Mk II</Term>. It comes with the
+                First Flight Pack, the one starter package RSI sells. The pack
+                lists at $60 and was on sale for $45 as of October 2026. The
+                Aurora carries cargo, which opens delivery missions from your
+                first session, and the pack includes six months of
+                insurance.</strong>{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack">
+                  Official RSI store page
+                </SourceLink>
               </p>
               <p>
                 It is not the fastest ship, or the prettiest. It is the one that lets
                 you earn money, learn the game, and lose nothing when you outgrow it.
               </p>
               <p className="text-xs text-muted">
-                Page reviewed July 18, 2026. The comparison below reflects the
-                current pledge-store starter packs.
+                Updated October 2026: RSI replaced its starter packages with
+                the First Flight Pack. Older guides that compare several packs
+                are out of date.
               </p>
             </div>
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">Aurora Mk II vs Mustang Alpha</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">Three loaners to try other careers</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                These two have been the classic first-ship debate for years. The
-                honest comparison:
+                RSI&rsquo;s store says the pack also gives you thirty-day loaner
+                access to three more ships, so you can try different gameplay
+                styles. Each one suits a different career:
+              </p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li><strong className="text-starwhite"><Term name="Golem">Drake Golem</Term></strong> for mining</li>
+                <li><strong className="text-starwhite">MISC Fortune</strong> for salvage, which means stripping wrecked ships for parts</li>
+                <li><strong className="text-starwhite"><Term name="Intrepid">Crusader Intrepid</Term></strong> for cargo hauling</li>
+              </ul>
+              <p>
+                RSI does not say more about the loaners, so check the store page
+                for the exact terms. Use the Aurora to learn the basics, and the
+                loaners to find out which job you enjoy.
+              </p>
+              <h3 className="pt-2 text-lg font-semibold text-starwhite">Aurora Mk II vs Mustang Alpha</h3>
+              <p>
+                The Mustang Alpha used to be a starting choice in some game
+                packages. It no longer is. RSI still sells it as a separate
+                ship, so you can buy it later. The honest comparison:
               </p>
               <ul className="list-disc space-y-3 pl-6">
                 <li>
@@ -200,10 +230,9 @@ export default function FirstShipPage() {
                 </figure>
               </div>
               <p>
-                Today the choice mostly makes itself: the Citizen Starter Pack
-                ($45 on sale, $60 list) comes with the Aurora Mk II. The Mustang Alpha is the
-                long-running alternate, seen in older and occasional promotional
-                packages. If you are choosing between them, choose the Aurora.
+                Today the choice makes itself: the First Flight Pack comes with
+                the Aurora Mk II. The Mustang Alpha is an optional extra for
+                later, once you know you want a faster ship.
               </p>
             </div>
           </section>
@@ -236,11 +265,11 @@ export default function FirstShipPage() {
                 </li>
               </ul>
               <p>
-                That is why the cheapest package is the smart entry. Start in the
-                Aurora on the $45 sale price, fly for a few weeks, and let the game tell you what
-                you actually enjoy. If a career hooks you, the{' '}
+                That is why one starter package is enough. Start in the
+                Aurora, try the loaners, fly for a few weeks, and let the game
+                tell you what you actually enjoy. If a career hooks you, the{' '}
                 <Link href="/day-one-citizen/starter-package" className="text-gold underline-offset-4 hover:underline">
-                  role packages
+                  First Flight Pack guide
                 </Link>{' '}
                 and the in-game market are both still there — and a CCU means the
                 money you already spent is never wasted.
@@ -294,23 +323,33 @@ export default function FirstShipPage() {
                   What is the best first ship?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  For most new players: the Aurora Mk II, the ship in the
-                  Citizen Starter Pack ($45 on sale, $60 list). It carries cargo, which opens delivery
-                  missions from your first session, and the pack includes
-                  six months of hull insurance. Learn the game in it, then
+                  The Aurora Mk II, the ship in the First Flight Pack ($60
+                  list, often $45 on sale). It carries cargo, which opens
+                  delivery missions from your first session, and the pack
+                  includes six months of insurance. Learn the game in it, then
                   upgrade or earn other ships later.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  Aurora Mk II or Mustang Alpha — which is better?
+                  Should I buy the Mustang Alpha instead?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  The Aurora Mk II is the more practical first ship. It carries
-                  cargo, which unlocks delivery missions immediately. The
-                  Mustang Alpha is faster and more fun to fly, but carries
-                  almost nothing, which locks a new player out of the easiest
-                  early money.
+                  It is no longer a choice inside a game package. RSI sells the
+                  Mustang Alpha only as a separate ship. The Aurora Mk II is
+                  the more practical first ship because it carries cargo. The
+                  Mustang is faster but carries almost nothing. Buy it later
+                  if you want it.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  What are the three loaner ships?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  Thirty-day loans of the Drake Golem (mining), MISC Fortune
+                  (salvage) and Crusader Intrepid (cargo), included in the
+                  First Flight Pack according to RSI&rsquo;s store.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
@@ -330,8 +369,8 @@ export default function FirstShipPage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Yes, if it came from a game package or the pledge store —
-                  real-money purchases survive every wipe. The Citizen Starter
-                  Pack Aurora ships with six months of hull insurance; the
+                  real-money purchases survive every wipe. The First Flight
+                  Pack Aurora comes with six months of insurance; the
                   ship itself stays yours permanently either way.
                 </p>
               </div>
@@ -356,7 +395,7 @@ export default function FirstShipPage() {
               href="/day-one-citizen/starter-package"
               className="inline-flex items-center gap-2 text-muted hover:text-gold"
             >
-              Compare all starter packages <ArrowRight size={14} aria-hidden />
+              The First Flight Pack <ArrowRight size={14} aria-hidden />
             </Link>
           </nav>
         </div>

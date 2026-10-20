@@ -9,7 +9,7 @@ export default function SaleAlertCTA() {
     <aside className="card-surface rounded-lg border border-white/5 p-5">
       <h2 className="heading-display text-xl">Not buying today?</h2>
       <p className="mt-2 text-sm leading-relaxed text-starwhite/80">
-        Starter packs go on sale a few times a year. The{' '}
+        The First Flight Pack goes on sale a few times a year. The{' '}
         <Term name="IAE">Intergalactic Aerospace Expo</Term> in November is the
         big one. Join the Discord and pick the sales ping in the welcome
         questions. We post once when a sale opens, with the referral link ready.

@@ -59,9 +59,9 @@ export const DAY_ONE_STEPS: DayOneStep[] = [
     slug: 'starter-package',
     number: '05',
     short: 'Pick a package',
-    title: 'Which starter package should you buy?',
+    title: 'The First Flight Pack: the one starter package',
     action:
-      'Not sure? Get the Citizen Starter Pack — $45 on sale, $60 list as of September 2026. It is the cheapest way in.',
+      'Get the First Flight Pack, the one starter package RSI sells. It is $60, and was on sale for $45 as of October 2026.',
     link: { href: '/day-one-citizen/install', label: 'Next: install the game' },
   },
   {

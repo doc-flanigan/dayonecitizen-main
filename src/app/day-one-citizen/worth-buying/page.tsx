@@ -53,7 +53,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A starter Game Package costs from $45 on sale, 25% off its $60 list price as of September 2026, on the RSI store. It is a one-time purchase with no subscription, and includes alpha access and a starter ship.',
+        text: 'RSI sells one game package, the First Flight Pack. It lists at $60 and was on sale for $45 (25% off) as of October 2026. It is a one-time purchase with no subscription, and includes alpha access and a starter ship.',
       },
     },
     {
@@ -177,10 +177,10 @@ export default function WorthBuyingPage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 When you buy a <Term name="Game Package">Game Package</Term> from{' '}
-                <Term name="RSI">robertsspaceindustries.com</Term>, you receive a few things. The
-                cheapest one, the Citizen Starter Pack, lists at $60 and was on sale for $45 as
-                of September 2026.{' '}
-                <SourceLink href="https://robertsspaceindustries.com/pledge/game-packages">
+                <Term name="RSI">robertsspaceindustries.com</Term>, you receive a few things. RSI
+                now sells one, the First Flight Pack. It lists at $60 and was on sale for $45 as
+                of October 2026.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/store/pledge/browse/game-packages">
                   Official RSI store
                 </SourceLink>
               </p>
@@ -203,10 +203,10 @@ export default function WorthBuyingPage() {
                 </li>
                 <li>
                   <strong className="text-starwhite">Some starting money and insurance</strong> — the
-                  Citizen Starter Pack includes 10,000 <Term name="UEC">UEC</Term> on your account
+                  First Flight Pack includes 10,000 <Term name="UEC">UEC</Term> on your account
                   and six months of insurance on its ship. That account money is separate from the{' '}
                   <Term name="aUEC">aUEC</Term> you spend in the game.{' '}
-                  <SourceLink href="https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack">
+                  <SourceLink href="https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack">
                     Official RSI store page
                   </SourceLink>
                 </li>
@@ -221,7 +221,7 @@ export default function WorthBuyingPage() {
               <p>
                 <Term name="Squadron 42">Squadron 42</Term>, the single-player story game, is a
                 separate game that is not released yet. The live game has no single-player
-                campaign. A starter pack is for Star Citizen, so check what any
+                campaign. The First Flight Pack is for Star Citizen only, so check what any
                 package lists before you buy.{' '}
                 <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/12730-A-Message-From-Chris-Roberts">
                   Official RSI blog post
@@ -441,8 +441,9 @@ export default function WorthBuyingPage() {
                   How much does Star Citizen cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  A starter game package costs from $45 on sale ($60 list) on
-                  the official RSI store. One-time purchase, no subscription.
+                  The First Flight Pack, the one game package RSI sells, lists at
+                  $60 and was on sale for $45 as of October 2026 on the
+                  official RSI store. One-time purchase, no subscription.
                   It includes alpha access and a starter ship.
                 </p>
               </div>
@@ -471,7 +472,7 @@ export default function WorthBuyingPage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   No. Squadron 42 is a separate single-player game that is not
-                  released yet. A starter pack is for Star Citizen.
+                  released yet. The First Flight Pack is for Star Citizen only.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

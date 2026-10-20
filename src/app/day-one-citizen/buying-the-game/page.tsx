@@ -16,7 +16,7 @@ import SourceLink from '@/components/SourceLink'
 export const metadata: Metadata = {
   title: 'How to Buy Star Citizen — Day One Citizen',
   description:
-    'Create your RSI account, apply a referral code for 50,000 free UEC, choose a starter package, and download the launcher. Every step of buying Star Citizen.',
+    'Create your RSI account, apply a referral code for 50,000 free UEC, buy the First Flight Pack, and download the launcher. Every step of buying Star Citizen.',
   alternates: {
     canonical: '/day-one-citizen/buying-the-game',
     languages: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'How to Buy Star Citizen — Step by Step',
     description:
-      'Create an RSI account, enter a referral code for 50,000 free UEC, pick a starter package, and download the launcher. Complete walkthrough.',
+      'Create an RSI account, enter a referral code for 50,000 free UEC, buy the First Flight Pack, and download the launcher. Complete walkthrough.',
     url: '/day-one-citizen/buying-the-game',
     type: 'article',
   },
@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The cheapest game packages start at $45 on sale ($60 list price, as of September 2026). A package includes access to the Star Citizen alpha, a starter ship with insurance — the Citizen Starter Pack comes with the Aurora Mk II — and 10,000 UEC on your account.',
+        text: 'RSI sells one game package, the First Flight Pack. It lists at $60 and was on sale for $45 as of October 2026. It includes access to the Star Citizen alpha, the Aurora Mk II starter ship with six months of insurance, 30-day loans of three more ships, and 10,000 UEC on your account.',
       },
     },
     {
@@ -224,7 +224,7 @@ export default function BuyingTheGamePage() {
                 or hover over <strong className="text-starwhite">Buy Star Citizen</strong> in the
                 top nav. You are looking for{' '}
                 <strong className="text-starwhite">Game Packages</strong> — these are the starter
-                options that include Star Citizen alpha access and a starter ship.
+                package that includes Star Citizen alpha access and a starter ship.
               </p>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -235,7 +235,7 @@ export default function BuyingTheGamePage() {
                   className="h-auto w-full"
                 />
                 <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                  The STORE menu on the RSI website — Starter Packs is where new players begin.
+                  The STORE menu on the RSI website (an earlier screenshot; menu labels may differ slightly). Game Packages is where new players begin.
                 </figcaption>
               </figure>
               <p>
@@ -259,43 +259,46 @@ export default function BuyingTheGamePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">Step 3 — Choose your package</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                The cheapest game packages start at $45 on sale ($60 list) and include:
+                RSI now sells one game package, the First Flight Pack. It lists at $60
+                and was on sale for $45 as of October 2026. It includes:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Access to the Star Citizen alpha (the live{' '}
                   <Term name="PU">Persistent Universe</Term>)</li>
-                <li>A starter ship with standard insurance</li>
-                <li>10,000 <Term name="UEC">UEC</Term> on your account (Citizen Starter Pack)</li>
+                <li>The Aurora Mk II starter ship with six months of insurance</li>
+                <li>Thirty-day loans of three more ships (Drake Golem, MISC Fortune, Crusader Intrepid)</li>
+                <li>10,000 <Term name="UEC">UEC</Term> on your account</li>
               </ul>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/getting-started-game-package-starter-packs-list.jpg"
-                  alt="Grid of Star Citizen game packages on the RSI pledge store, showing the starter pack options side by side."
+                  alt="Grid of Star Citizen game packages on the RSI pledge store, from before RSI replaced its starter packs with the First Flight Pack."
                   width={1200}
                   height={561}
                   className="h-auto w-full"
                 />
                 <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                  The game package listing on the pledge store — every option here includes game access.
+                  An earlier screenshot of the game package listing. Today RSI shows a single package, the First Flight Pack, and it includes game access.
                 </figcaption>
               </figure>
               <p>
-                The Citizen Starter Pack comes with the{' '}
-                <Term name="Aurora">Aurora Mk II</Term>. Its long-running alternate, the{' '}
-                <Term name="Mustang">Mustang Alpha</Term>, now appears mainly in older and
-                occasional promotional packages. A full comparison of all the packages is in{' '}
+                The First Flight Pack comes with the{' '}
+                <Term name="Aurora">Aurora Mk II</Term>. The{' '}
+                <Term name="Mustang">Mustang Alpha</Term> is no longer a starting
+                choice. It is sold as a separate ship you can buy later. Everything in
+                the pack is covered in{' '}
                 <Link href="/day-one-citizen/starter-package" className="text-gold underline-offset-4 hover:underline">
-                  Section 05: Which starter package should you buy?
+                  Section 05: The First Flight Pack
                 </Link>
               </p>
               <p>
-                The short version: the Aurora Mk II is the more practical choice for a new player.
-                It carries cargo, which opens delivery missions immediately. The Mustang Alpha is
-                faster and more fun to fly, but carries almost nothing.{' '}
+                The short version: the Aurora Mk II carries cargo, which opens delivery
+                missions immediately. The Mustang Alpha is faster and more fun to fly, but
+                carries almost nothing.{' '}
                 <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">
                   The first-ship guide
                 </Link>{' '}
-                walks through that choice honestly.
+                covers both ships honestly.
               </p>
             </div>
           </section>
@@ -312,13 +315,13 @@ export default function BuyingTheGamePage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg"
-                  alt="The Citizen Starter Pack product page on the pledge store with its Add to Cart button."
+                  alt="An earlier starter pack's product page on the pledge store with its Add to Cart button. The First Flight Pack page works the same way."
                   width={952}
                   height={468}
                   className="h-auto w-full"
                 />
                 <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                  Adding a starter pack to your cart on the pledge store.
+                  Adding a pack to your cart on the pledge store (earlier screenshot).
                 </figcaption>
               </figure>
               <p>
@@ -420,9 +423,9 @@ export default function BuyingTheGamePage() {
                   How much does it cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  The cheapest game packages start at $45 on sale ($60 list).
-                  That includes alpha access, a starter ship with insurance —
-                  the Citizen Starter Pack comes with the Aurora Mk II — and
+                  The First Flight Pack lists at $60 and was on sale for $45
+                  as of October 2026. It includes alpha access, the Aurora Mk II
+                  with six months of insurance, and
                   10,000 <Term name="UEC">UEC</Term> on your account.
                 </p>
               </div>

@@ -84,7 +84,7 @@ const howToJsonLd = {
       '@type': 'HowToStep',
       position: 4,
       name: 'Add a game package to your cart',
-      text: 'Pick a game package, such as the Citizen Starter Pack, and press Checkout. Or wait for a Free Fly event, when anyone can play for free.',
+      text: 'Pick the game package, the Star Citizen First Flight Pack, and press Checkout. Or wait for a Free Fly event, when anyone can play for free.',
       image: `${SITE.url}/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg`,
     },
     {
@@ -338,9 +338,9 @@ export default function ReferralCodePage() {
                     4. Add a game package to your cart.
                   </strong>{' '}
                   A free account holds the bonus, but you need a game package
-                  to actually play Star Citizen. The cheapest option, the
-                  Citizen Starter Pack, was on sale for $45 (25% off its $60
-                  list price, as of September 2026). Press{' '}
+                  to actually play Star Citizen. RSI now sells one
+                  game package, the First Flight Pack. It lists at $60 and was
+                  on sale for $45 (25% off) as of October 2026. Press{' '}
                   <strong className="text-starwhite">Checkout</strong>. Not ready
                   to buy? Wait for a{' '}
                   <Term name="Free Fly">Free Fly</Term> — a limited window when
@@ -380,13 +380,13 @@ export default function ReferralCodePage() {
                 <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
                   <Image
                     src="/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg"
-                    alt="RSI store pop-up: 'Item successfully added to your cart!' showing the Citizen Starter Pack at $45.00 USD, crossed out from $60.00, with the Checkout button outlined in red"
+                    alt="RSI store pop-up: 'Item successfully added to your cart!' showing an earlier starter pack (since replaced by the First Flight Pack) at $45.00 USD, crossed out from $60.00, with the Checkout button outlined in red"
                     width={952}
                     height={468}
                     className="h-auto w-full"
                   />
                   <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                    The Citizen Starter Pack in the cart, on sale for $45.
+                    The cart pop-up. This screenshot shows an earlier starter pack; the First Flight Pack uses the same checkout steps.
                   </figcaption>
                 </figure>
               </div>

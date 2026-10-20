@@ -43,7 +43,7 @@ const faqJsonLd = {
       name: 'Lohnt sich Star Citizen 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja — zum Einstiegspreis von 60 US-Dollar (im September 2026 zum Aktionspreis von 45 US-Dollar), wenn du offene Weltraum-Sandboxes liebst und mit Alpha-Software leben kannst. Kein anderes Spiel bietet diesen Umfang. Nein — wenn du ein fertiges, poliertes Spiel erwartest: Star Citizen ist seit 2012 in Entwicklung und immer noch eine Alpha.',
+        text: 'Ja — zum Einstiegspreis von 60 US-Dollar (im Oktober 2026 zum Aktionspreis von 45 US-Dollar), wenn du offene Weltraum-Sandboxes liebst und mit Alpha-Software leben kannst. Kein anderes Spiel bietet diesen Umfang. Nein — wenn du ein fertiges, poliertes Spiel erwartest: Star Citizen ist seit 2012 in Entwicklung und immer noch eine Alpha.',
       },
     },
     {
@@ -51,7 +51,7 @@ const faqJsonLd = {
       name: 'Was kostet der Einstieg in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das günstigste Spielpaket ist das Citizen Starter Pack: Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.), im September 2026 auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro) reduziert. Einmalkauf ohne Abo, mit Alpha-Zugang, dem Starterschiff Aurora Mk II und 10.000 UEC Startgeld.',
+        text: 'RSI verkauft nur ein Spielpaket, das First Flight Pack: Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.), im Oktober 2026 auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro) reduziert. Einmalkauf ohne Abo, mit Alpha-Zugang, dem Starterschiff Aurora Mk II, drei Leihschiffen für 30 Tage und 10.000 UEC Startgeld.',
       },
     },
     {
@@ -120,7 +120,7 @@ export default function LohntSichStarCitizenPage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">
-                Ja — zum Einstiegspreis von 60 US-Dollar (im September 2026
+                Ja — zum Einstiegspreis von 60 US-Dollar (im Oktober 2026
                 zum Aktionspreis von 45 US-Dollar), wenn du offene
                 Weltraum-Sandboxes liebst und mit einer Alpha leben kannst.
                 Nein — wenn du ein fertiges, poliertes Spiel erwartest.
@@ -177,11 +177,13 @@ export default function LohntSichStarCitizenPage() {
                 Der Einstieg kostet regulär einmalig{' '}
                 <strong className="text-starwhite">60 US-Dollar</strong> (rund
                 64 bis 67 Euro inklusive Mehrwertsteuer — RSI rechnet in
-                US-Dollar ab). Stand September 2026 gibt es das Citizen Starter
-                Pack im Angebot für 45 US-Dollar (rund 48 bis 50 Euro).
-                Enthalten sind: Alpha-Zugang, das Starterschiff Aurora Mk II
-                mit sechs Monaten Versicherung, ein Rüstungsset und 10.000 UEC
-                Startgeld. Kein Abo, keine Folgekosten.
+                US-Dollar ab). Stand Oktober 2026 gibt es das First Flight
+                Pack, das einzige Spielpaket bei RSI, im Angebot für 45
+                US-Dollar (rund 48 bis 50 Euro). Enthalten sind: Alpha-Zugang,
+                das Starterschiff Aurora Mk II mit sechs Monaten Versicherung,
+                ein Self-Land-Hangar, 30 Tage Leihzugang zu drei weiteren
+                Schiffen und 10.000 UEC Startgeld. Kein Abo, keine
+                Folgekosten.
               </p>
               <p>
                 Das ist auch der einzige Kauf, den das Spiel je verlangt. Die
@@ -351,7 +353,7 @@ export default function LohntSichStarCitizenPage() {
                   Lohnt sich Star Citizen 2026?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Ja — zum Einstiegspreis von 60 US-Dollar (im September 2026
+                  Ja — zum Einstiegspreis von 60 US-Dollar (im Oktober 2026
                   zum Aktionspreis von 45 US-Dollar), wenn du offene
                   Weltraum-Sandboxes liebst und mit Alpha-Software leben kannst.
                   Nein — wenn du ein fertiges, poliertes Spiel erwartest. Das
@@ -364,9 +366,9 @@ export default function LohntSichStarCitizenPage() {
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.),
-                  im September 2026 zum Aktionspreis von 45 US-Dollar (rund
+                  im Oktober 2026 zum Aktionspreis von 45 US-Dollar (rund
                   48 bis 50 Euro). Einmalkauf ohne Abo — mit Alpha-Zugang, der
-                  Aurora Mk II und 10.000 UEC Startgeld.
+                  Aurora Mk II, drei Leihschiffen und 10.000 UEC Startgeld.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

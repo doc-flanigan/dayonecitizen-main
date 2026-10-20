@@ -343,7 +343,7 @@ export default function InstallPage() {
               href="/day-one-citizen/starter-package"
               className="inline-flex items-center gap-2 text-muted hover:text-gold"
             >
-              <ArrowLeft size={14} aria-hidden /> Starter package
+              <ArrowLeft size={14} aria-hidden /> First Flight Pack
             </Link>
             <Link
               href="/day-one-citizen/rsi-launcher"
