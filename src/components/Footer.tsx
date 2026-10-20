@@ -105,6 +105,16 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <a
+                href={SITE.rsiOrgUrl}
+                target="_blank"
+                rel="noopener"
+                className="text-starwhite/80 hover:text-gold"
+              >
+                Join our org on RSI
+              </a>
+            </li>
+            <li>
               <Link
                 href="/glossary"
                 className="text-starwhite/80 hover:text-gold"

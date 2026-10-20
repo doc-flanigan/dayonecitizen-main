@@ -3,6 +3,8 @@ export const SITE = {
   shortName: 'dayonecitizen',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dayonecitizen.com',
   hubUrl: process.env.NEXT_PUBLIC_HUB_URL ?? 'https://dayonecitizen.com',
+  /** Day One Citizen's player organization on RSI's site (tag DAYONECTZN, live 2026-10-20). */
+  rsiOrgUrl: 'https://robertsspaceindustries.com/orgs/DAYONECTZN',
   referralUrl:
     process.env.NEXT_PUBLIC_REFERRAL_URL ??
     'https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC',
