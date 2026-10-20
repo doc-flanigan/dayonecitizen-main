@@ -47,7 +47,7 @@ const faqJsonLd = {
       name: 'How do you change keybinds in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Press Escape to open the main menu, select Key Bindings, then click any binding and press the new key combination. Before making extensive changes, use the Export function to save your current bindings as a profile so you can restore the defaults.',
+        text: 'Press Escape to open the pause menu, select Options, then Keybindings, then click any binding and press the new key combination. Before making extensive changes, use the Export function to save your current bindings as a profile so you can restore the defaults.',
       },
     },
     {
@@ -283,39 +283,38 @@ export default function KeybindsPage() {
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">Capacitor management</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">Power assignments</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Your ship has three capacitors that regenerate over time. You control how fast
-                each one refills by shifting regen toward whichever system you need most:
+                You can shift your ship&rsquo;s power between three systems. Send more to whichever
+                one you need most:
               </p>
               <ul className="list-disc space-y-2 pl-6">
-                <li><strong className="text-starwhite">Weapons</strong> — faster recharge for energy weapons</li>
-                <li><strong className="text-starwhite">Engines</strong> — faster refill for the thruster boost capacitor</li>
-                <li><strong className="text-starwhite">Shields</strong> — faster shield regeneration</li>
+                <li><strong className="text-starwhite">Weapons</strong> — power for your weapons</li>
+                <li><strong className="text-starwhite">Engines</strong> — power for your engines</li>
+                <li><strong className="text-starwhite">Shields</strong> — power for your shields</li>
               </ul>
               <p>
-                Shift regen between the three with the F-key row:
+                Move power with the F-key row:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F5</kbd>{' '}
-                  — push regen toward weapons</li>
+                  — more power to weapons</li>
                 <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F6</kbd>{' '}
-                  — push regen toward engines</li>
+                  — more power to engines</li>
                 <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F7</kbd>{' '}
-                  — push regen toward shields</li>
+                  — more power to shields</li>
                 <li><kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F8</kbd>{' '}
-                  — reset to balanced (equal regen across all three)</li>
+                  — reset all three assignments</li>
               </ul>
               <p>
-                In a fight, push to shields to recover faster from hits. Trying to escape?
-                Push to engines so your thruster boost refills quickly. On a routine delivery
-                run, balanced across all three is fine.
+                On a routine delivery run, the default balance is fine. Change it only when you
+                have a reason to.
               </p>
               <p>
                 The{' '}
                 <Term name="MFD">MFD</Term> (multi-function display) in your cockpit shows the
-                current capacitor distribution. Glance at it to see where your regen is sitting.
+                current power distribution. Glance at it to see how your power is set.
               </p>
             </div>
           </section>
@@ -328,8 +327,8 @@ export default function KeybindsPage() {
                 interaction in the game. To access it:
               </p>
               <ol className="list-decimal space-y-2 pl-6">
-                <li>Press <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Escape</kbd> to open the main menu</li>
-                <li>Select <strong className="text-starwhite">Key Bindings</strong></li>
+                <li>Press <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Escape</kbd> to open the pause menu</li>
+                <li>Select <strong className="text-starwhite">Options</strong>, then <strong className="text-starwhite">Keybindings</strong></li>
                 <li>Browse categories: On Foot, Flight, Mining, etc.</li>
               </ol>
               <p>
@@ -389,7 +388,7 @@ export default function KeybindsPage() {
                   How do you change keybinds?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Press Escape, select Key Bindings, click any binding, and press
+                  Press Escape, select Options, then Keybindings, click any binding, and press
                   the new keys. Export your bindings first so you can restore the
                   defaults if something goes wrong.
                 </p>

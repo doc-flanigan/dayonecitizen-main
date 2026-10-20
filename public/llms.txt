@@ -9,13 +9,13 @@
 - [Is Star Citizen Worth Buying?](https://dayonecitizen.com/day-one-citizen/worth-buying): An honest look at whether the game is right for you before you spend anything.
 - [Is Star Citizen on Steam?](https://dayonecitizen.com/day-one-citizen/is-star-citizen-on-steam): Star Citizen is not on Steam — it is sold only at robertsspaceindustries.com for Windows PC; consoles, Game Pass, and Steam Deck answered honestly.
 - [Is Squadron 42 on Steam?](https://iheldtheline.com/steam): Squadron 42, the separate single-player game, has an official Steam page (wishlist only, live October 10, 2026, planned release Q2 2027, Windows only).
-- [Do You Have to Buy Ships With Real Money?](https://dayonecitizen.com/day-one-citizen/ships-real-money): No — one package, from $45 on sale ($60 list price, as of September 2026), is the only required purchase; every other ship can be earned in-game with aUEC.
-- [Your First Ship](https://dayonecitizen.com/day-one-citizen/first-ship): Why the Aurora Mk II from the $45-on-sale ($60 list) pack is the right first ship for most new players, compared honestly with the Mustang Alpha.
+- [Do You Have to Buy Ships With Real Money?](https://dayonecitizen.com/day-one-citizen/ships-real-money): No — one package, the First Flight Pack ($60 list, often $45 on sale), is the only required purchase; every other ship can be earned in-game with aUEC.
+- [Your First Ship](https://dayonecitizen.com/day-one-citizen/first-ship): The Aurora Mk II from the First Flight Pack is your starter ship; three 30-day loaners let you try mining, salvage and cargo, and the Mustang Alpha is a separate ship to buy later.
 - [When Is the Next Wipe?](https://dayonecitizen.com/day-one-citizen/next-wipe): No wipe is currently announced — what survives (everything bought with real money, account UEC) and what resets (aUEC, in-game items).
 - [System Requirements](https://dayonecitizen.com/day-one-citizen/system-specs): Whether your PC can run Star Citizen, in plain terms.
-- [Buying the Game](https://dayonecitizen.com/day-one-citizen/buying-the-game): How to buy Star Citizen and what a starter package includes.
+- [Buying the Game](https://dayonecitizen.com/day-one-citizen/buying-the-game): How to buy Star Citizen and what the First Flight Pack includes.
 - [Pledge vs. Purchase](https://dayonecitizen.com/day-one-citizen/pledge-vs-purchase): Why buying is called "pledging" and what that means for you.
-- [Choosing a Starter Package](https://dayonecitizen.com/day-one-citizen/starter-package): Comparing the cheapest ways to get into the game, including Aurora Mk II vs Mustang Alpha.
+- [The First Flight Pack](https://dayonecitizen.com/day-one-citizen/starter-package): RSI now sells one starter package, the First Flight Pack ($60 list, often $45 on sale): the Aurora Mk II plus three 30-day loaner ships.
 - [Installing the Game](https://dayonecitizen.com/day-one-citizen/install): Step-by-step install walkthrough.
 - [The RSI Launcher](https://dayonecitizen.com/day-one-citizen/rsi-launcher): Setting up and using the official launcher.
 - [First Launch](https://dayonecitizen.com/day-one-citizen/first-launch): What to expect the first time the game loads.
@@ -44,9 +44,9 @@
 
 ## German pages (Deutsch)
 
-- [Star Citizen kaufen](https://dayonecitizen.com/de/star-citizen-kaufen): Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar, keine Keys, kein Steam für Star Citizen. Schritt-für-Schritt-Kaufanleitung auf Deutsch.
+- [Star Citizen kaufen](https://dayonecitizen.com/de/star-citizen-kaufen): Star Citizen gibt es nur direkt bei robertsspaceindustries.com — First Flight Pack (60 US-Dollar, zeitweise 45 im Angebot), keine Keys, kein Steam für Star Citizen. Schritt-für-Schritt-Kaufanleitung auf Deutsch.
 - [Lohnt sich Star Citizen 2026?](https://dayonecitizen.com/de/lohnt-sich-star-citizen): Die ehrliche Antwort — ja zum Einstiegspreis für Fans offener Weltraum-Sandboxes, nein für alle, die ein fertiges Spiel erwarten.
-- [Welches Starterpaket?](https://dayonecitizen.com/de/starterpaket): Die Empfehlung für neue Spieler — das Citizen Starter Pack für 45 US-Dollar mit der Aurora Mk II, plus der CCU-Upgrade-Pfad erklärt.
+- [Das Starterpaket: First Flight Pack](https://dayonecitizen.com/de/starterpaket): RSI verkauft nur noch ein Starterpaket — 60 US-Dollar, zeitweise 45 im Angebot — mit der Aurora Mk II und drei Leihschiffen, plus der CCU-Upgrade-Pfad erklärt.
 - [Ist Star Citizen auf Steam?](https://dayonecitizen.com/de/star-citizen-auf-steam): Nein — Star Citizen ist nicht auf Steam, PS5, Xbox oder im Game Pass. Nur Windows-PC, verkauft direkt über robertsspaceindustries.com.
 - [Musst du Schiffe für Echtgeld kaufen?](https://dayonecitizen.com/de/echtgeld-schiffe): Nein — ein 45-US-Dollar-Paket genügt; alle Schiffe können im Spiel mit aUEC erspielt werden. Mit ehrlicher Pay-to-win-Einordnung.
 - [Gibt es Star Citizen auf Deutsch?](https://dayonecitizen.com/de/auf-deutsch): Offiziell nur Englisch — deutsche Texte gibt es nur über inoffizielle Community-Sprachdateien; auch RSI-Website und Anmeldung sind englisch.

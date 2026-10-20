@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen kaufen 2026 — Preis & Tipps',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis), keine Keys, kein Steam für Star Citizen. So kaufst du es Schritt für Schritt.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — das First Flight Pack: 60 US-Dollar Listenpreis, zeitweise 45 im Angebot. Keine Keys, kein Steam für Star Citizen. So kaufst du es Schritt für Schritt.',
   alternates: {
     canonical: '/de/star-citizen-kaufen',
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen kaufen 2026: Preis, wo, und worauf du achten musst',
     description:
-      'Nur direkt bei robertsspaceindustries.com — Starterpaket ab 45 US-Dollar im Angebot (60 US-Dollar Listenpreis). Keine Keys, kein Steam für Star Citizen. Die deutsche Schritt-für-Schritt-Anleitung.',
+      'Nur direkt bei robertsspaceindustries.com — das First Flight Pack: 60 US-Dollar Listenpreis, zeitweise 45 im Angebot. Keine Keys, kein Steam für Star Citizen. Die deutsche Schritt-für-Schritt-Anleitung.',
     url: '/de/star-citizen-kaufen',
     type: 'article',
     locale: 'de_DE',
@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: 'Was kostet Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das günstigste Starterpaket ist das Citizen Starter Pack: Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.), im September 2026 auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro) reduziert. RSI rechnet in US-Dollar ab; die deutsche Mehrwertsteuer kommt an der Kasse dazu. Es ist ein Einmalkauf ohne Abo.',
+        text: 'RSI verkauft nur ein Starterpaket, das First Flight Pack: Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.), im Oktober 2026 auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro) reduziert. RSI rechnet in US-Dollar ab; die deutsche Mehrwertsteuer kommt an der Kasse dazu. Es ist ein Einmalkauf ohne Abo.',
       },
     },
     {
@@ -68,7 +68,7 @@ const faqJsonLd = {
       name: 'Was ist im Starterpaket enthalten?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Das Citizen Starter Pack (45 US-Dollar im Angebot, 60 US-Dollar Listenpreis) enthält den Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit sechs Monaten Versicherung, ein Rüstungsset mit Waffe und 10.000 UEC Startgeld.',
+        text: 'Das First Flight Pack (60 US-Dollar Listenpreis, zeitweise 45 im Angebot) enthält den Spiel-Download mit Zugang zur laufenden Star-Citizen-Alpha, das Starterschiff Aurora Mk II mit sechs Monaten Versicherung, einen Self-Land-Hangar und 10.000 UEC Startgeld. Dazu kommen 30 Tage Leihzugang zu drei weiteren Schiffen: Drake Golem, MISC Fortune und Crusader Intrepid.',
       },
     },
     {
@@ -122,9 +122,9 @@ export default function StarCitizenKaufenPage() {
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">
                 Star Citizen kaufst du nur an einer einzigen Stelle: direkt bei
-                robertsspaceindustries.com, dem offiziellen Shop. Das günstigste
-                Starterpaket kostet 45 US-Dollar im Angebot (60 US-Dollar
-                Listenpreis, Stand September 2026). Es gibt keine Keys — auch
+                robertsspaceindustries.com, dem offiziellen Shop. Das einzige
+                Starterpaket, das First Flight Pack, kostet 60 US-Dollar
+                (Stand Oktober 2026 zeitweise 45 im Angebot). Es gibt keine Keys — auch
                 nicht bei Key-Shops.
               </strong>
             </p>
@@ -194,9 +194,9 @@ export default function StarCitizenKaufenPage() {
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Der günstigste Einstieg ist das{' '}
+                Den Einstieg bietet RSI heute mit einem einzigen Paket an: dem{' '}
                 <strong className="text-starwhite">
-                  Citizen Starter Pack, 45 US-Dollar im Angebot (60 US-Dollar Listenpreis)
+                  First Flight Pack, 60 US-Dollar Listenpreis, zeitweise 45 im Angebot
                 </strong>
                 . Darin steckt alles, was du zum Spielen brauchst:
               </p>
@@ -212,7 +212,12 @@ export default function StarCitizenKaufenPage() {
                   Schiff wird bei Verlust innerhalb dieser Frist kostenlos
                   ersetzt)
                 </li>
-                <li>Ein Rüstungsset, ein Unteranzug und eine Waffe</li>
+                <li>Einen Self-Land-Hangar für dein Schiff</li>
+                <li>
+                  30 Tage Leihzugang zu drei weiteren Starterschiffen (Drake
+                  Golem, MISC Fortune, Crusader Intrepid), mit denen du
+                  Bergbau, Bergung und Fracht ausprobieren kannst
+                </li>
                 <li>
                   10.000 UEC Startgeld — die Kontowährung, die jeden Wipe
                   übersteht (nicht zu verwechseln mit dem erspielten aUEC)
@@ -223,11 +228,11 @@ export default function StarCitizenKaufenPage() {
                 <Link href="/de/echtgeld-schiffe" className="text-gold underline-offset-4 hover:underline">
                   im Spiel erspielen
                 </Link>
-                . Und falls du zwischen den Startpaketen schwankst:{' '}
+                . Was genau im Paket steckt, erklärt{' '}
                 <Link href="/de/starterpaket" className="text-gold underline-offset-4 hover:underline">
-                  der Starterpaket-Vergleich
-                </Link>{' '}
-                nimmt dir die Entscheidung ab.
+                  die Seite zum First Flight Pack
+                </Link>
+                .
               </p>
             </div>
           </section>
@@ -249,8 +254,8 @@ export default function StarCitizenKaufenPage() {
                 <strong className="text-starwhite">
                   rund 64 bis 67 Euro inklusive Mehrwertsteuer
                 </strong>
-                . Im September 2026 läuft eine Aktion: Das Citizen Starter
-                Pack kostet dann 45 US-Dollar, rund 48 bis 50 Euro. Der genaue
+                . Im Oktober 2026 war das First Flight Pack im Angebot: 45
+                US-Dollar, rund 48 bis 50 Euro. Angebote kommen und gehen. Der genaue
                 Euro-Betrag steht erst auf deiner Abrechnung fest.
               </p>
               <p>
@@ -297,8 +302,8 @@ export default function StarCitizenKaufenPage() {
                 </li>
                 <li>
                   <strong className="text-starwhite">Paket wählen.</strong>{' '}
-                  Für die meisten Neulinge: das Citizen Starter Pack für 60
-                  US-Dollar mit der Aurora Mk II.
+                  Du nimmst das First Flight Pack für 60 US-Dollar (zeitweise
+                  45 im Angebot) mit der Aurora Mk II.
                 </li>
                 <li>
                   <strong className="text-starwhite">Bezahlen.</strong> In den
@@ -318,13 +323,13 @@ export default function StarCitizenKaufenPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/getting-started-pledge-store-starter-packs-menu.jpg"
-                  alt="Das aufgeklappte STORE-Menü auf der RSI-Website mit dem Eintrag Starter Packs in der Navigation."
+                  alt="Das aufgeklappte STORE-Menü auf der RSI-Website (älterer Screenshot) mit dem Eintrag Starter Packs in der Navigation."
                   width={1200}
                   height={654}
                   className="h-auto w-full"
                 />
                 <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                  Schritt 2: Das STORE-Menü auf der RSI-Website — hier findest du die Starter Packs.
+                  Schritt 2: Das STORE-Menü auf der RSI-Website (älterer Screenshot, Menübezeichnungen können abweichen) — hier findest du die Game Packages.
                 </figcaption>
               </figure>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
@@ -391,9 +396,9 @@ export default function StarCitizenKaufenPage() {
                   Was kostet Star Citizen?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Das günstigste Starterpaket ist das Citizen Starter Pack:
+                  RSI verkauft nur ein Starterpaket, das First Flight Pack:
                   Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.),
-                  im September 2026 auf einen Aktionspreis von 45 US-Dollar
+                  im Oktober 2026 auf einen Aktionspreis von 45 US-Dollar
                   (rund 48 bis 50 Euro) reduziert. Einmalkauf, kein Abo.
                 </p>
               </div>
@@ -414,8 +419,9 @@ export default function StarCitizenKaufenPage() {
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Zugang zur laufenden Alpha, das Starterschiff Aurora Mk II mit
-                  sechs Monaten Versicherung, ein Rüstungsset mit Waffe und
-                  10.000 UEC Startgeld.
+                  sechs Monaten Versicherung, ein Self-Land-Hangar und
+                  10.000 UEC Startgeld — dazu 30 Tage Leihzugang zu drei
+                  weiteren Schiffen.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
@@ -456,7 +462,7 @@ export default function StarCitizenKaufenPage() {
               href="/de/starterpaket"
               className="inline-flex items-center gap-2 text-muted hover:text-gold"
             >
-              Welches Starterpaket? <ArrowRight size={14} aria-hidden />
+              Das First Flight Pack <ArrowRight size={14} aria-hidden />
             </Link>
           </nav>
         </div>

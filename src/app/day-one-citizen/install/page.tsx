@@ -34,7 +34,7 @@ const faqJsonLd = {
       name: 'How big is the Star Citizen download?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Around 100 GB for the game itself, downloaded through the RSI Launcher. Plan for 150 GB of free SSD space — the game uses extra scratch space beyond the install.',
+        text: 'The installed game measures about 150 GB, downloaded through the RSI Launcher. RSI lists 150 GB or more of SSD space as the requirement, so leave extra room for updates.',
       },
     },
     {
@@ -50,7 +50,7 @@ const faqJsonLd = {
       name: 'Why does the first launch of Star Citizen take so long?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The game pre-compiles shaders on first launch — a one-time build of the rendering pipeline for your hardware. It can take 20 to 60 minutes depending on your CPU and GPU, with a progress bar. Let it finish; it also reruns after major patches that change the rendering system.',
+        text: 'The game pre-compiles shaders on first launch — a one-time build of the rendering pipeline for your hardware. It can take a while depending on your CPU and GPU, with a progress bar. Let it finish; it also reruns after major patches that change the rendering system.',
       },
     },
   ],
@@ -85,7 +85,7 @@ export default function InstallPage() {
             <p className="mt-4 max-w-2xl text-base text-muted">
               After you buy, you download a small installer that pulls down the{' '}
               <Term name="RSI">RSI</Term> Launcher. The Launcher then downloads the game itself —
-              around 100 GB. Plan ahead and pick your install location carefully.
+              about 150 GB on disk. Plan ahead and pick your install location carefully.
             </p>
           </div>
         </header>
@@ -96,9 +96,9 @@ export default function InstallPage() {
           <section>
             <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">The short version: download the
-              RSI Launcher from your account Library, install it on an SSD, and
-              let it pull down the game — around 100 GB.</strong>{' '}
-              Keep 150 GB free for scratch space. The five steps below cover
+              RSI Launcher from your account page, install it on an SSD, and
+              let it pull down the game — about 150 GB.</strong>{' '}
+              RSI lists 150 GB or more of SSD space as the requirement. The five steps below cover
               every prompt you will see along the way.
             </p>
           </section>
@@ -108,13 +108,12 @@ export default function InstallPage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 Log into your account at <strong className="text-starwhite">robertsspaceindustries.com</strong>.
-                Navigate to your <strong className="text-starwhite">Library</strong> (under your
-                account menu in the top right). Star Citizen will appear here after purchase.
+                Your account needs a game package first. Then look at the top right: next to your
+                account icon is a light-blue <strong className="text-starwhite">DOWNLOAD</strong> button.
               </p>
               <p>
-                Click the <strong className="text-starwhite">Download</strong> button next to
-                Star Citizen. This downloads the RSI Launcher installer — a small Windows
-                executable file around 20 MB. This file installs the Launcher itself, not
+                Click that button, then use the link on the download page. This gets you the
+                RSI Launcher installer — a small Windows file. This file installs the Launcher itself, not
                 the game.
               </p>
             </div>
@@ -158,9 +157,9 @@ export default function InstallPage() {
                   spinning media. Do not install on an HDD.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Free space needed: 150 GB minimum.</strong>{' '}
-                  The current install is around 100 GB. Leave an additional 50 GB buffer for
-                  the scratch space the game uses during loading and patches.
+                  <strong className="text-starwhite">Free space needed: 150 GB or more.</strong>{' '}
+                  The current install measures about 150 GB on disk. Leave extra room for
+                  updates.
                 </li>
                 <li>
                   <strong className="text-starwhite">Prefer a non-system drive.</strong> If you
@@ -170,11 +169,11 @@ export default function InstallPage() {
                 </li>
               </ul>
               <p>
-                To change the install path in the Launcher: click the{' '}
-                <strong className="text-starwhite">Settings</strong> gear icon before you begin
-                the download. There is a{' '}
-                <strong className="text-starwhite">Library Folder</strong> option that lets you
-                point to any drive.
+                To change the install path in the Launcher: open the{' '}
+                <strong className="text-starwhite">RSI</strong> drop-down at the top left of the
+                Launcher and choose <strong className="text-starwhite">Settings</strong> before you
+                begin the download. The <strong className="text-starwhite">Storage</strong> tab has
+                a Default Library setting with a Change button that lets you point to any drive.
               </p>
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
@@ -260,7 +259,7 @@ export default function InstallPage() {
                 will pre-compile shaders before showing you anything. This is normal.
               </p>
               <p>
-                Shader compilation can take 20–60 minutes depending on your GPU and CPU speeds.
+                Shader compilation can take a while, depending on your GPU and CPU speeds.
                 A progress bar will appear. The game is not frozen — it is doing a one-time
                 build of the rendering pipeline for your hardware. This process also runs after
                 major patches that change the rendering system.
@@ -311,9 +310,9 @@ export default function InstallPage() {
                   How big is the download?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Around 100 GB through the RSI Launcher. Keep 150 GB free on
-                  your SSD — the game uses extra scratch space beyond the
-                  install itself.
+                  About 150 GB on disk through the RSI Launcher. RSI lists
+                  150 GB or more of SSD space as the requirement, so leave
+                  extra room for updates.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
@@ -331,7 +330,7 @@ export default function InstallPage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   The game pre-compiles shaders the first time you launch — a
-                  one-time build for your hardware that can take 20–60 minutes,
+                  one-time build for your hardware that can take a while,
                   with a progress bar. Let it finish. It reruns after major
                   patches that change the rendering system.
                 </p>
@@ -344,7 +343,7 @@ export default function InstallPage() {
               href="/day-one-citizen/starter-package"
               className="inline-flex items-center gap-2 text-muted hover:text-gold"
             >
-              <ArrowLeft size={14} aria-hidden /> Starter package
+              <ArrowLeft size={14} aria-hidden /> First Flight Pack
             </Link>
             <Link
               href="/day-one-citizen/rsi-launcher"

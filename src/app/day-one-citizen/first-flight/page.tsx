@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
+import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ const faqJsonLd = {
       name: 'How do you take off in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Press Right Alt + R to make the ship flight ready and wait for the HUD to load. Press N to raise the landing gear, tap Space to lift off gently, then exit the hangar slowly — no more than 20–30 m/s. Clipping the door frame at speed destroys ships.',
+        text: 'Press Right Alt + R to make the ship flight ready and wait for the HUD to load. Hold Space to rise off the pad gently, then exit the hangar slowly — no more than 20–30 m/s. Clipping the door frame at speed destroys ships. Once you are clear of the hangar, press N to raise the landing gear.',
       },
     },
     {
@@ -42,7 +43,7 @@ const faqJsonLd = {
       name: 'How does quantum travel work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Hold B (a long press) to cycle your master mode to NAV, then middle-click to cycle into QT mode. Open the StarMap in your mobiGlas and select a destination, then point your nose at the waypoint — the quantum drive auto-calibrates. Hold left-click to jump. The jump ends automatically when you reach the destination.',
+        text: 'Open the map in your mobiGlas (F2), pick a destination, and select Route to this Location. Hold B briefly to switch your master mode to NAV, then middle-click to cycle the operating mode to QT. Point your nose at the destination and the quantum drive calibrates. Hold left-click to jump. The jump ends automatically when you reach the destination.',
       },
     },
     {
@@ -91,7 +92,7 @@ export default function FirstFlightPage() {
               Your first flight
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              Power on. Raise the gear. Clear the hangar door. Burn for orbit. Here is the
+              Power on. Lift off. Clear the hangar door. Burn for orbit. Here is the
               complete first-flight sequence — from the cockpit seat to your first{' '}
               <Term name="Quantum Travel">quantum jump</Term> and back to a safe landing.
             </p>
@@ -112,14 +113,11 @@ export default function FirstFlightPage() {
                 <li>
                   Press{' '}
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Right Alt + R</kbd>{' '}
-                  — this makes your ship flight ready and requests power from the ship&rsquo;s power plant. You will hear the
-                  ship coming to life: systems initializing, engines spooling, the HUD
-                  populating with information.
+                  — this makes your ship flight ready and requests power from the ship&rsquo;s power plant.
                 </li>
                 <li>
-                  Wait for the HUD to fully load. You will see your speed indicator, shields
-                  status, power levels, and target display appear. This takes 5–10 seconds.
-                  Leave the power settings alone for a first flight — the defaults are fine.
+                  Wait for the HUD to fully load. Leave the power settings alone for a first
+                  flight — the defaults are fine.
                 </li>
               </ol>
             </div>
@@ -134,16 +132,10 @@ export default function FirstFlightPage() {
               </p>
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
-                  <strong className="text-starwhite">Raise landing gear</strong> — press{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd>.
-                  You will hear a mechanical clunk and see the gear indicator on your HUD change.
-                  The ship will drop slightly as the gear retracts — this is normal.
-                </li>
-                <li>
-                  <strong className="text-starwhite">Lift off gently</strong> — tap{' '}
+                  <strong className="text-starwhite">Lift off gently</strong> — hold{' '}
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Space</kbd>{' '}
-                  briefly to apply upward thrust. Rise slowly — you only need a few meters of
-                  clearance from the pad.
+                  to strafe straight up off the pad. Rise slowly — you only need a few meters of
+                  clearance. Let go of the key to stop rising.
                 </li>
                 <li>
                   <strong className="text-starwhite">Face the hangar exit</strong> — use the mouse
@@ -155,6 +147,12 @@ export default function FirstFlightPage() {
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">W</kbd>{' '}
                   gently to add forward thrust. Exit the hangar at no more than 20–30 m/s.
                   The door frame is unforgiving. Clipping it at speed destroys ships.
+                </li>
+                <li>
+                  <strong className="text-starwhite">Raise landing gear</strong> — once you are
+                  clear of the hangar or pad, tap{' '}
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd>.{' '}
+                  <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse">Official RSI guide</SourceLink>
                 </li>
                 <li>
                   <strong className="text-starwhite">Once clear</strong> — increase speed freely.
@@ -228,29 +226,31 @@ export default function FirstFlightPage() {
                 <li>
                   <strong className="text-starwhite">Select a destination</strong> — open{' '}
                   <Term name="mobiGlas">mobiGlas</Term> (
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F1</kbd>)
-                  and go to the StarMap. Click on any planet, moon, or station. Close{' '}
-                  <Term name="mobiGlas">mobiGlas</Term>. The destination appears as a waypoint
-                  on your HUD.
-                </li>
-                <li>
-                  <strong className="text-starwhite">Point your nose at the waypoint</strong> —
-                  your quantum drive only jumps in the direction you are facing. The HUD shows
-                  a targeting reticule — align it with the quantum travel marker.
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F1</kbd>) and choose the map, or press{' '}
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F2</kbd>{' '}
+                  to go straight to it. Pick any planet, moon, or station, then select{' '}
+                  <strong className="text-starwhite">Route to this Location</strong>. Close{' '}
+                  <Term name="mobiGlas">mobiGlas</Term>.
                 </li>
                 <li>
                   <strong className="text-starwhite">Switch to NAV mode</strong> — hold{' '}
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd>{' '}
-                  (a long press) to cycle your master mode to NAV. Keep the marker lined up.
-                  A circular charge indicator appears on your HUD. Wait until the circle
-                  completes and the display flashes, indicating ready.
+                  briefly to change your master mode to NAV. Look for NAV on your HUD.
+                </li>
+                <li>
+                  <strong className="text-starwhite">Switch to quantum mode</strong> — click the
+                  middle mouse button (press the wheel in) to cycle through your operating modes.
+                  Stop when the HUD shows QT.
+                </li>
+                <li>
+                  <strong className="text-starwhite">Point your nose at the destination</strong> —
+                  your quantum drive only jumps in the direction you are facing. Once you are
+                  lined up, the drive begins to calibrate. Wait for it to finish.
                 </li>
                 <li>
                   <strong className="text-starwhite">Jump</strong> — hold{' '}
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Left Click</kbd>{' '}
-                  to engage the quantum drive. The ship lurches forward, a tunnel effect
-                  fills your vision, and you are traveling at a meaningful fraction of the
-                  speed of light. Do not touch the controls during the jump.
+                  to engage the quantum drive.
                 </li>
                 <li>
                   <strong className="text-starwhite">Arrive</strong> — the jump ends automatically
@@ -259,7 +259,7 @@ export default function FirstFlightPage() {
                 </li>
               </ol>
               <p>
-                If the quantum drive will not spool (no indicator appears), check: do you have
+                If the quantum drive will not spool, check: do you have
                 a destination selected? Are you in a quantum-safe area (not inside a hangar or
                 gravity well)? Is your quantum drive online in the power panel?
               </p>
@@ -279,10 +279,10 @@ export default function FirstFlightPage() {
                   a <Term name="Landing Pad">landing pad</Term>: a flat surface marked with
                   yellow or white paint, often illuminated, with a pad number or indicator.
                   At major stations and spaceports, pads are assigned via an automated system.
-                  If prompted for clearance, hold{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd>{' '}
-                  while looking at the pad for the{' '}
-                  <Term name="Inner Thought">Inner Thought</Term> option to request landing.
+                  To request landing, tap{' '}
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Left Alt + N</kbd>{' '}
+                  to contact landing services. You can also open{' '}
+                  <Term name="mobiGlas">mobiGlas</Term> and choose Comms to contact the spaceport.
                 </li>
                 <li>
                   <strong className="text-starwhite">Slow down well in advance</strong> —
@@ -292,9 +292,9 @@ export default function FirstFlightPage() {
                   surface is ideal.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Lower landing gear</strong> — press{' '}
+                  <strong className="text-starwhite">Lower landing gear</strong> — tap{' '}
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">N</kbd>{' '}
-                  before touchdown. Landing without gear extended damages the hull.
+                  before touchdown.
                 </li>
                 <li>
                   <strong className="text-starwhite">Descend with vertical thrust</strong> —
@@ -327,17 +327,17 @@ export default function FirstFlightPage() {
               <ul className="list-disc space-y-3 pl-6">
                 <li>
                   <strong className="text-starwhite">Leave engines running</strong> — fine for
-                  a short stop. Your ship stays on. Walk to the exit and hold{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F</kbd>{' '}
-                  to exit to the crew area or directly outside.
+                  a short stop. Your ship stays on. Press{' '}
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Y</kbd>{' '}
+                  to leave your seat, then walk to the exit.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Power down fully</strong> — hold{' '}
+                  <strong className="text-starwhite">Power down fully</strong> — tap{' '}
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">U</kbd>{' '}
-                  for 3 seconds to cut master power. The ship goes dark. This is useful when
-                  parked for a long time. To restart: press{' '}
-                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">1</kbd>{' '}
-                  again when back in the seat.
+                  to switch off all ship power. The ship goes dark. This is useful when
+                  parked for a long time. To restart, press{' '}
+                  <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Right Alt + R</kbd>{' '}
+                  when back in the seat.
                 </li>
               </ul>
               <p>
@@ -346,6 +346,93 @@ export default function FirstFlightPage() {
                 earn <Term name="aUEC">aUEC</Term>, upgrade. The{' '}
                 <Term name="the 'Verse">the &lsquo;Verse</Term> is enormous. You have barely
                 seen any of it.
+              </p>
+            </div>
+          </section>
+
+          <section id="first-week">
+            <h2 className="heading-display text-2xl sm:text-3xl">Your first week: when things go wrong</h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                Your first flight is done. In week one, a few things usually go wrong.
+                None of them are permanent. Here is how to recover from each.
+              </p>
+
+              <h3 className="heading-display pt-4 text-lg sm:text-xl">Take your first contract</h3>
+              <p>
+                A contract is a job the game pays you for. Press{' '}
+                <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">F1</kbd>{' '}
+                to open <Term name="mobiGlas">mobiGlas</Term> and choose the Contracts Manager.
+                Look for a delivery, where you move a package from one place to another. Our{' '}
+                <Link href="/day-one-citizen/first-day" className="font-semibold text-gold hover:underline">first-day guide</Link>{' '}
+                walks through one.
+              </p>
+              <p className="rounded-lg border border-white/10 bg-navyLight/60 px-4 py-3 text-sm text-starwhite/80">
+                <strong className="text-starwhite">If this goes wrong:</strong> if the list is
+                empty, wait a short while and check again. Read each contract before you accept it.
+              </p>
+
+              <h3 className="heading-display pt-4 text-lg sm:text-xl">Where you wake up after dying</h3>
+              <p>
+                When you die, you come back at your regeneration point, often called regen. By
+                default, that is your primary residence. To change it, create an imprint, the
+                game&rsquo;s record of where you come back, at a medical bed. You come back there until you reset it or make a new imprint. To
+                reset it, use a terminal at any medical bed or insurance office. Logging out in
+                a bed is a separate thing, covered in our{' '}
+                <Link href="/day-one-citizen/first-launch" className="font-semibold text-gold hover:underline">first-launch guide</Link>.
+              </p>
+              <p className="rounded-lg border border-white/10 bg-navyLight/60 px-4 py-3 text-sm text-starwhite/80">
+                <strong className="text-starwhite">If this goes wrong:</strong> if your chosen bed
+                is unavailable, you come back at the facility closest to your primary residence.
+                Regen points also have a maximum range. If you die outside it, you return somewhere else.
+              </p>
+
+              <h3 className="heading-display pt-4 text-lg sm:text-xl">When you die</h3>
+              <p>
+                If you are knocked out but not dead, hold{' '}
+                <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">M</kbd>{' '}
+                to ask other players for rescue. To give up and come back, hold{' '}
+                <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">Backspace</kbd>.
+                The armor and weapons you have equipped return with you. Your backpack and pocket
+                contents stay on your body, even if you die in a landing zone (a city or outpost).
+              </p>
+              <p className="rounded-lg border border-white/10 bg-navyLight/60 px-4 py-3 text-sm text-starwhite/80">
+                <strong className="text-starwhite">If this goes wrong:</strong> go back for your pack
+                before another player finds it. Carry less on risky trips.
+              </p>
+
+              <h3 className="heading-display pt-4 text-lg sm:text-xl">When you lose your ship</h3>
+              <p>
+                A destroyed ship is not gone for good. Go to an <Term name="ASOP">ASOP terminal</Term>,
+                find the ship, and choose Claim to file an insurance claim. You get a replacement.
+                Filing a claim can cost <Term name="aUEC">aUEC</Term>. If you added new parts, save
+                them at the terminal first, or the ship comes back with its stock parts.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs">Official RSI insurance guide</SourceLink>
+              </p>
+              <p className="rounded-lg border border-white/10 bg-navyLight/60 px-4 py-3 text-sm text-starwhite/80">
+                <strong className="text-starwhite">If this goes wrong:</strong> if your ship is stranded
+                but not destroyed, empty its <Term name="Cargo">cargo</Term> before you file a claim.
+                The old copy stops working once the replacement is made.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/40641434791959-Bricked-Items-and-Ships">Official RSI article on bricked ships</SourceLink>
+              </p>
+
+              <h3 className="heading-display pt-4 text-lg sm:text-xl">When you see &ldquo;30k&rdquo;</h3>
+              <p>
+                <Term name="30k">30k</Term> is short for error 30000. You lost your connection to the
+                game server, often because the server crashed. Close the game and fully close the RSI
+                Launcher (the app that starts the game), then start both again. Still stuck? In the Launcher, open Settings from the RSI
+                drop-down, choose Games, and click Verify. Then check our sister site&rsquo;s{' '}
+                <a href="https://starcitizenhelp.com/game-guides/error-codes" className="text-gold underline decoration-dotted hover:text-goldDark">error-code reference</a>{' '}
+                or run your log file through the{' '}
+                <a href="https://starcitizenhelp.com/tools/game-log-checker" className="text-gold underline decoration-dotted hover:text-goldDark">Game.log Checker</a>.
+              </p>
+              <p className="rounded-lg border border-white/10 bg-navyLight/60 px-4 py-3 text-sm text-starwhite/80">
+                <strong className="text-starwhite">If this goes wrong:</strong> if 30k repeats at every
+                login, RSI says it often follows logging out or crashing in a ship or ship bed. Its
+                fix is{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360041509433-Character-Repair">Character Repair</SourceLink>,
+                which can make your Personal Hangar vanish for a while. Leave your account alone
+                until it finishes. Read that page first.
               </p>
             </div>
           </section>
@@ -390,10 +477,10 @@ export default function FirstFlightPage() {
                   How do you take off in Star Citizen?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Press Right Alt + R to make the ship flight ready and wait for the HUD to load. Press N
-                  to raise the landing gear, tap Space to lift off gently, then exit
-                  the hangar slowly — no more than 20&ndash;30 m/s. Clipping the
-                  door frame at speed destroys ships.
+                  Press Right Alt + R to make the ship flight ready and wait for the HUD to load. Hold
+                  Space to rise off the pad gently, then exit the hangar slowly — no more
+                  than 20&ndash;30 m/s. Clipping the door frame at speed destroys ships.
+                  Once you are clear of the hangar, press N to raise the landing gear.
                 </p>
               </div>
 
@@ -402,11 +489,12 @@ export default function FirstFlightPage() {
                   How does quantum travel work?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Hold B (a long press) to cycle your master mode to NAV, then
-                  middle-click to cycle into QT mode. Open the StarMap in your <Term name="mobiGlas">mobiGlas</Term> and
-                  select a destination, then point your nose at the waypoint — the
-                  quantum drive auto-calibrates. Hold left-click to jump. The jump ends
-                  automatically when you reach the destination.
+                  Open the map in your <Term name="mobiGlas">mobiGlas</Term> (F2), pick a destination,
+                  and select Route to this Location. Hold B briefly to switch your master
+                  mode to NAV, then middle-click to cycle the operating mode to QT. Point
+                  your nose at the destination and the quantum drive calibrates. Hold
+                  left-click to jump. The jump ends automatically when you reach the
+                  destination.
                 </p>
               </div>
 

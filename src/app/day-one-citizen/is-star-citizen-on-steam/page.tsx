@@ -68,7 +68,7 @@ const faqJsonLd = {
       name: 'Is Star Citizen on Xbox Game Pass?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. Star Citizen is not on Game Pass or any other subscription service. The only way to play is a one-time game package from robertsspaceindustries.com. It starts at $45 on sale, 25% off its $60 list price as of September 2026.',
+        text: 'No. Star Citizen is not on Game Pass or any other subscription service. The only way to play is a one-time game package from robertsspaceindustries.com. RSI sells one, the First Flight Pack, at $60 list. It was on sale for $45 as of October 2026.',
       },
     },
     {
@@ -201,10 +201,10 @@ export default function IsStarCitizenOnSteamPage() {
                   </Link>.
                 </li>
                 <li>
-                  <strong className="text-starwhite">Buy a game package</strong> — the
-                  cheapest is the Citizen Starter Pack, $45 on sale ($60 list price, as of September 2026).{' '}
+                  <strong className="text-starwhite">Buy a game package</strong> — RSI
+                  now sells one, the First Flight Pack, $60 list and $45 on sale as of October 2026.{' '}
                   <Link href="/day-one-citizen/starter-package" className="text-gold underline-offset-4 hover:underline">
-                    All eight starter packages are compared here
+                    See what the First Flight Pack includes
                   </Link>.
                 </li>
                 <li>
@@ -381,8 +381,8 @@ export default function IsStarCitizenOnSteamPage() {
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   No. Star Citizen is not on Game Pass or any other
                   subscription service. The only way to play is a one-time game
-                  package bought from robertsspaceindustries.com, starting at
-                  $45 on sale ($60 list).
+                  package bought from robertsspaceindustries.com. RSI sells one, the
+                  First Flight Pack, at $60 list ($45 on sale as of October 2026).
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

@@ -107,8 +107,8 @@ export default function InventoryManagementPage() {
                 Press <strong className="text-starwhite">I</strong> to open the
                 inventory screen. Your personal inventory is on the left. The ship or
                 station storage is on the right. Drag items between the two panels to
-                move them. Always unload your ship before claiming it on an insurance
-                reclaim — the claim destroys whatever is left inside.
+                move them. Always unload a stranded ship before you file an insurance
+                claim on it — the old copy stops working once the replacement is made.
               </p>
             </div>
 

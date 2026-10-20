@@ -12,7 +12,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen Schiffe für Echtgeld? Nein.',
   description:
-    'Nein — ein Spielpaket ab 60 US-Dollar (2026 zeitweise reduziert auf 45) ist der einzige nötige Kauf. Alle Schiffe können im Spiel erspielt werden. Plus: die ehrliche Pay-to-win-Antwort.',
+    'Nein — das First Flight Pack für 60 US-Dollar (zeitweise reduziert auf 45) ist der einzige nötige Kauf. Alle Schiffe können im Spiel erspielt werden. Plus: die ehrliche Pay-to-win-Antwort.',
   alternates: {
     canonical: '/de/echtgeld-schiffe',
     languages: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Musst du in Star Citizen Schiffe für Echtgeld kaufen? Nein.',
     description:
-      'Ein 60-US-Dollar-Paket (im September 2026 reduziert auf 45) genügt. Alle anderen Schiffe kannst du im Spiel erspielen — mit aUEC. Die ehrliche Antwort, inklusive Pay-to-win-Debatte.',
+      'Das First-Flight-Pack für 60 US-Dollar (im Oktober 2026 reduziert auf 45) genügt. Alle anderen Schiffe kannst du im Spiel erspielen — mit aUEC. Die ehrliche Antwort, inklusive Pay-to-win-Debatte.',
     url: '/de/echtgeld-schiffe',
     type: 'article',
     locale: 'de_DE',
@@ -43,7 +43,7 @@ const faqJsonLd = {
       name: 'Muss ich in Star Citizen Schiffe für Echtgeld kaufen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Ein einziges Spielpaket für 60 US-Dollar (im September 2026 zum Aktionspreis von 45 US-Dollar) ist der einzige Kauf, den Star Citizen je verlangt. Es enthält ein Starterschiff — und alle anderen Schiffe können im Spiel mit aUEC gemietet oder gekauft werden, der Währung, die du durch Spielen verdienst.',
+        text: 'Nein. Ein einziges Spielpaket, das First Flight Pack für 60 US-Dollar (im Oktober 2026 zum Aktionspreis von 45 US-Dollar), ist der einzige Kauf, den Star Citizen je verlangt. Es enthält ein Starterschiff — und alle anderen Schiffe können im Spiel mit aUEC gemietet oder gekauft werden, der Währung, die du durch Spielen verdienst.',
       },
     },
     {
@@ -86,7 +86,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Musst du in Star Citizen Schiffe für Echtgeld kaufen? Nein.',
   description:
-    'Ein Spielpaket für 60 US-Dollar (im September 2026 reduziert auf 45) ist der einzige nötige Kauf — alle anderen Schiffe können im Spiel mit aUEC erspielt werden.',
+    'Das First Flight Pack für 60 US-Dollar (im Oktober 2026 reduziert auf 45) ist der einzige nötige Kauf — alle anderen Schiffe können im Spiel mit aUEC erspielt werden.',
   inLanguage: 'de',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
@@ -120,8 +120,8 @@ export default function EchtgeldSchiffePage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">
-                Nein. Ein einziges Spielpaket für 60 US-Dollar (im September
-                2026 zum Aktionspreis von 45 US-Dollar) ist der einzige
+                Nein. Ein einziges Spielpaket, das First Flight Pack für 60
+                US-Dollar (im Oktober 2026 zum Aktionspreis von 45 US-Dollar), ist der einzige
                 Kauf, den Star Citizen je verlangt. Alle anderen Schiffe können
                 im Spiel erspielt werden — mit aUEC, der Währung, die du durch
                 Spielen verdienst.
@@ -291,7 +291,7 @@ export default function EchtgeldSchiffePage() {
                   Muss ich Schiffe für Echtgeld kaufen?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Nein. Ein Spielpaket für 60 US-Dollar (im September 2026
+                  Nein. Das First Flight Pack für 60 US-Dollar (im Oktober 2026
                   zum Aktionspreis von 45 US-Dollar) ist der einzige nötige
                   Kauf. Es enthält ein Starterschiff — alle anderen Schiffe
                   kannst du im Spiel mit aUEC mieten oder kaufen.
@@ -361,7 +361,7 @@ export default function EchtgeldSchiffePage() {
               href="/de/starterpaket"
               className="inline-flex items-center gap-2 text-muted hover:text-gold"
             >
-              <ArrowLeft size={14} aria-hidden /> Welches Starterpaket?
+              <ArrowLeft size={14} aria-hidden /> Das First Flight Pack
             </Link>
             <Link
               href="/de/referral-code"

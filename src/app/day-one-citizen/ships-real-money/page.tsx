@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen Ships — Real Money Optional',
   description:
-    'No — one game package, $45 on sale ($60 list), is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC. Here is how that works.',
+    'No — one game package, the First Flight Pack ($60 list, often $45 on sale), is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC. Here is how that works.',
   alternates: {
     canonical: '/day-one-citizen/ships-real-money',
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: ['/images/brand/og-image.png'],
     title: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
     description:
-      'No. One package — $45 on sale, $60 list — is the only required purchase; every other ship can be rented or bought in-game with earned aUEC. The honest breakdown.',
+      'No. One package, the First Flight Pack ($60 list, often $45 on sale), is the only required purchase; every other ship can be rented or bought in-game with earned aUEC. The honest breakdown.',
     url: '/day-one-citizen/ships-real-money',
     type: 'article',
   },
@@ -43,7 +43,7 @@ const faqJsonLd = {
       name: 'Do you have to buy ships with real money in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. One game package is the only purchase Star Citizen ever requires. It is $45 on sale, 25% off its $60 list price as of September 2026. It includes a starter ship, and every other ship in the game can be rented or bought with aUEC.',
+        text: 'No. One game package is the only purchase Star Citizen ever requires. RSI now sells one, the First Flight Pack. It lists at $60 and was on sale for $45 as of October 2026. It includes a starter ship, and every other ship in the game can be rented or bought with aUEC.',
       },
     },
     {
@@ -78,7 +78,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Do You Have to Buy Ships With Real Money in Star Citizen?',
   description:
-    'No — one game package ($45 on sale, $60 list) is the only required purchase. Every other ship can be earned in-game with aUEC.',
+    'No — one game package, the First Flight Pack ($60 list, often $45 on sale), is the only required purchase. Every other ship can be earned in-game with aUEC.',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/ships-real-money`,
@@ -146,8 +146,9 @@ export default function ShipsRealMoneyPage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 <strong className="text-starwhite">No. One game package is the
-                only purchase Star Citizen ever requires. It is $45 on sale,
-                25% off its $60 list price as of September 2026. Every other
+                only purchase Star Citizen ever requires. RSI now sells
+                one, the First Flight Pack. It lists at $60 and was on sale for
+                $45 as of October 2026. Every other
                 ship in the game can be earned by playing, using{' '}
                 <Term name="aUEC">aUEC</Term> — the in-game money.</strong>
               </p>
@@ -161,27 +162,30 @@ export default function ShipsRealMoneyPage() {
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">What $45 gets you</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">What the First Flight Pack gets you</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                The Citizen Starter Pack ($45 on sale, $60 list) is the cheapest{' '}
-                <Term name="Game Package">game package</Term>, and it is a complete
-                way to play:
+                The First Flight Pack ($60 list, $45 on sale as of October 2026) is
+                the only <Term name="Game Package">game package</Term> RSI sells,
+                and it is a complete way to play:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Full access to the live Star Citizen alpha</li>
                 <li>
                   The <Term name="Aurora">Aurora Mk II</Term> starter ship with
-                  six months of hull insurance
+                  six months of insurance
                 </li>
-                <li>A starting armor set, undersuit, and weapon</li>
+                <li>
+                  Thirty-day loans of three more ships: the Drake Golem,
+                  MISC Fortune and Crusader Intrepid
+                </li>
                 <li>10,000 starting <Term name="UEC">UEC</Term></li>
               </ul>
               <p>
-                Every other package is a variation on that theme with a different
-                ship.{' '}
+                RSI used to sell several packages, each with a different ship. Now
+                there is just this one.{' '}
                 <Link href="/day-one-citizen/starter-package" className="text-gold underline-offset-4 hover:underline">
-                  The full package comparison is here
+                  The full First Flight Pack guide is here
                 </Link>
                 , and the buying walkthrough is in{' '}
                 <Link href="/day-one-citizen/buying-the-game" className="text-gold underline-offset-4 hover:underline">
@@ -262,7 +266,7 @@ export default function ShipsRealMoneyPage() {
                 </li>
               </ul>
               <p>
-                A sensible path for a new player: buy the $45-on-sale package, play for a few
+                A sensible path for a new player: buy the First Flight Pack, play for a few
                 weeks, and let aUEC pay for everything else. If you later decide to
                 support development with a bigger pledge, do it because you love the
                 game — not because you think you have to.
@@ -298,8 +302,8 @@ export default function ShipsRealMoneyPage() {
                   Do you have to buy ships with real money?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  No. One game package — $45 on sale, $60 list — is the only
-                  purchase Star Citizen ever requires. It includes a starter
+                  No. One game package, the First Flight Pack ($60 list, often
+                  $45 on sale), is the only purchase Star Citizen ever requires. It includes a starter
                   ship, and every other ship in the game can be rented or
                   bought with aUEC — the in-game money you earn by playing.
                 </p>

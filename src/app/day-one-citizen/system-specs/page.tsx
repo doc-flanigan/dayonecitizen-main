@@ -42,7 +42,7 @@ const faqJsonLd = {
       name: 'What are the recommended system requirements for Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The official recommended specs are: Windows 11, an Intel i7 or AMD Ryzen 5 or better, a DirectX 12-capable GPU with 8 GB VRAM, 32 GB RAM, and an SSD with 150 GB or more free. Players commonly report that an NVMe SSD and a stronger GPU (RTX 3070 class or better) are what actually deliver smooth results in cities.',
+        text: 'The official recommended specs are: Windows 10 (latest Service Pack) or Windows 11, an Intel i7 or AMD Ryzen 5 or better, a DirectX 12-capable GPU with 8 GB VRAM, 32 GB RAM, and an SSD with 150 GB or more free. Players commonly report that an NVMe SSD and a stronger GPU (RTX 3070 class or better) are what actually deliver smooth results in cities.',
       },
     },
     {
@@ -66,7 +66,7 @@ const faqJsonLd = {
       name: 'Does Star Citizen support DLSS or FSR?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Star Citizen supports NVIDIA DLSS (RTX cards), AMD FSR (all GPUs), and Intel XeSS, accessible through the in-game video settings. Using Quality or Balanced mode in DLSS or FSR is one of the most effective ways to gain 25–40% more performance on mid-range hardware.',
+        text: 'Yes. Star Citizen supports NVIDIA DLSS (RTX cards) and AMD FSR (all GPUs), and CIG recommends its own CIG-TSR upscaling on non-NVIDIA cards. All are accessible through the in-game video settings. Using Quality or Balanced mode in DLSS or FSR is one of the most effective ways to gain 25–40% more performance on mid-range hardware.',
       },
     },
     {
@@ -120,9 +120,9 @@ export default function SystemSpecsPage() {
               <strong className="text-starwhite">Star Citizen&rsquo;s official minimum
               requirements are Windows 10 (latest Service Pack), a quad-core CPU with
               AVX, AVX2, and FMA3 support (Intel i7 Haswell / AMD Excavator or newer),
-              a DirectX 11.1 GPU with 4 GB of VRAM, 16 GB of RAM, and an SSD with
-              150 GB or more free.</strong>{' '}
-              The official recommended specs are Windows 11, an Intel i7 / AMD Ryzen 5
+              a DirectX 11.1 GPU with 4 GB of VRAM and a driver that supports Direct3D 11.1 and Vulkan 1.2, 16 GB of RAM, and an SSD with
+              150 GB or more.</strong>{' '}
+              The official recommended specs are Windows 10 (latest Service Pack) or Windows 11, an Intel i7 / AMD Ryzen 5
               or better, a DirectX 12 GPU with 8 GB of VRAM, and 32 GB of RAM.
             </p>
           </div>
@@ -160,7 +160,7 @@ export default function SystemSpecsPage() {
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">OS</td>
                     <td className="px-4 py-3 text-sm text-starwhite/80">Windows 10, 64-bit (latest Service Pack)</td>
-                    <td className="px-4 py-3 text-sm text-starwhite/80">Windows 11</td>
+                    <td className="px-4 py-3 text-sm text-starwhite/80">Windows 10 (latest Service Pack) or Windows 11</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="px-4 py-3 text-sm font-semibold text-gold">CPU</td>
@@ -329,10 +329,10 @@ export default function SystemSpecsPage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 Star Citizen is a large install and grows with each major update. As of
-                mid-2026, expect a download of roughly 80–120 GB (compressed) and an installed
-                size of 100–130+ GB on disk. <Term name="RSI">RSI</Term>&rsquo;s official
-                requirement is an SSD with at least 150 GB of free space — the game uses
-                scratch space beyond the install itself. A 250 GB
+                mid-2026, the installed game measures about 150 GB on disk.{' '}
+                <Term name="RSI">RSI</Term>&rsquo;s official
+                requirement is an SSD with 150 GB or more of space, so leave extra room for
+                updates. A 250 GB
                 dedicated drive works; 500 GB is more comfortable. You download the free RSI
                 Launcher from robertsspaceindustries.com, and it handles all updates from
                 there.
@@ -340,7 +340,7 @@ export default function SystemSpecsPage() {
               <p>
                 <strong className="text-starwhite">Shader compilation on first launch:</strong>{' '}
                 the very first time you launch the game — and after major updates — it compiles
-                shaders on your GPU. This takes 15–45 minutes on most systems before you can
+                shaders on your GPU. This can take a while on some systems before you can
                 play. The progress bar is not frozen, even when it appears to stall. Do not
                 close the game. Later launches skip this step and load within a couple of
                 minutes.
@@ -364,8 +364,8 @@ export default function SystemSpecsPage() {
                 100ms or more you get desync — ships teleporting, shots not registering, and
                 characters behaving erratically. A stable connection under 60ms to the nearest
                 CIG server region is ideal. Avoid very high-latency connections like satellite
-                internet with 400ms+ ping. For downloads, faster is simply shorter waits — a
-                200+ Mbps connection pulls the initial 100 GB install in under an hour.
+                internet with 400ms+ ping. For downloads, faster is simply shorter waits — the
+                first install is roughly 150 GB, so a slow connection means a long first download.
               </p>
             </div>
           </section>
@@ -378,8 +378,9 @@ export default function SystemSpecsPage() {
               </p>
               <ul className="list-disc space-y-3 pl-6">
                 <li>
-                  <strong className="text-starwhite">Upscaling:</strong> enable DLSS (NVIDIA),
-                  FSR (AMD, works on all GPUs), or XeSS (Intel) in the video settings. Quality
+                  <strong className="text-starwhite">Upscaling:</strong> enable DLSS (NVIDIA)
+                  or FSR (works on all GPUs) in the video settings. On non-NVIDIA cards, CIG
+                  recommends its own CIG-TSR upscaling. Quality
                   or Balanced mode can recover 20–40% more FPS with minimal visible quality
                   loss — do this first on mid-range hardware.
                 </li>
@@ -446,7 +447,7 @@ export default function SystemSpecsPage() {
                 experience: use Windows 10 or 11.
               </p>
               <p>
-                The same goes for Steam Deck — there is no supported Star Citizen version, and community
+                The same goes for Steam Deck — there is no supported Star Citizen version, and player
                 reports describe roughly five to twenty frames per second after heavy tinkering. Consoles and
                 Game Pass are covered in{' '}
                 <Link href="/day-one-citizen/is-star-citizen-on-steam" className="text-gold underline-offset-4 hover:underline">

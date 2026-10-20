@@ -57,7 +57,7 @@ const faqJsonLd = {
       name: 'What does melting a ship mean?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Melting exchanges a pledged ship or package for RSI store credit equal to its value. The credit never expires and can be spent on anything in the RSI store, but it does not convert back to real money.',
+        text: 'Melting exchanges a pledged ship or package for RSI store credit equal to its value. The credit can be spent on certain pledge items in the RSI store, but it does not convert back to real money.',
       },
     },
     {
@@ -188,17 +188,19 @@ export default function PledgeVsPurchasePage() {
                   <strong className="text-starwhite">
                     <Term name="LTI">Lifetime Insurance (LTI)</Term>
                   </strong>{' '}
-                  — some ships from the pledge store come with LTI rather than a standard timer.
-                  LTI means the insurance never expires. For a starter ship, the practical
+                  — a few pledges come with LTI rather than a standard timer. It is rare, and RSI
+                  support cannot add it on request. LTI means the insurance never expires. For a starter ship, the practical
                   difference is minimal — insurance timers on small ships are short. LTI matters
                   more on expensive capital ships where insurance premiums are higher.
                 </li>
               </ul>
               <p>
-                In the current alpha, the full insurance claim system is not yet completely
-                implemented. For now, any destroyed ship is recovered through the ASOP terminal
-                with a waiting period. The full financial consequences of ship loss are a
-                planned feature.
+                In the current alpha, every ship has a basic insurance plan that does not expire
+                and needs no upkeep. A destroyed ship is recovered by filing a claim at an <Term name="ASOP">ASOP</Term>
+                terminal. There may be a fee in <Term name="aUEC">aUEC</Term> or a waiting period.{' '}
+                <a href="https://support.robertsspaceindustries.com/hc/en-us/articles/360000093467-Ship-Insurance-FAQs" className="text-gold underline-offset-4 hover:underline" target="_blank" rel="noopener noreferrer">
+                  Official RSI support article
+                </a>
               </p>
             </div>
           </section>
@@ -213,8 +215,11 @@ export default function PledgeVsPurchasePage() {
                 pledge as RSI store credit — it does not convert back to real money.
               </p>
               <p>
-                Store credit can be spent on anything else in the RSI store: other ships,
-                game packages, ship upgrades, paint liveries, and accessories. It never expires.
+                Store credit can be spent on certain pledge items in the RSI store, such as other
+                ships and game packages. It cannot be turned back into real money.{' '}
+                <a href="https://robertsspaceindustries.com/tos" className="text-gold underline-offset-4 hover:underline" target="_blank" rel="noopener noreferrer">
+                  Official RSI terms of service
+                </a>
               </p>
               <p>
                 Some veteran players accumulate store credit through melting older ships when
@@ -249,7 +254,7 @@ export default function PledgeVsPurchasePage() {
                 <Term name="Hangar">hangar</Term>.
               </p>
               <p>
-                For a new player, stick to flight-ready ships in your starter package. Concept
+                For a new player, stick to flight-ready ships, such as the Aurora Mk II in the First Flight Pack. Concept
                 ships are for experienced players who want to fund something they believe in and
                 can wait months or years for delivery.
               </p>
@@ -296,7 +301,7 @@ export default function PledgeVsPurchasePage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   Turns a pledge back into RSI store credit at full value. The
-                  credit never expires but never converts back to real money.
+                  credit buys certain pledge items but never converts back to real money.
                 </p>
               </div>
             </div>
@@ -313,7 +318,7 @@ export default function PledgeVsPurchasePage() {
               href="/day-one-citizen/starter-package"
               className="inline-flex items-center gap-2 text-muted hover:text-gold"
             >
-              Which starter package? <ArrowRight size={14} aria-hidden />
+              The First Flight Pack <ArrowRight size={14} aria-hidden />
             </Link>
           </nav>
         </div>

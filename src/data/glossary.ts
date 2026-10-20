@@ -149,8 +149,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Game Package',
     category: 'Community',
     definition:
-      "The minimum purchase to play Star Citizen permanently. Includes a starter ship, access to all current and future PU content, and 10,000 UEC. Starter packages begin at $45 on sale ($60 list price, as of September 2026). Squadron 42 is sold separately. Once you own a package, there is no subscription fee — ever.",
-    also: 'Starter Package, Starter Pack',
+      "The minimum purchase to play Star Citizen permanently. Includes a starter ship, access to all current and future PU content, and 10,000 UEC. RSI now sells one: the Star Citizen First Flight Pack, $60 list and $45 on sale as of October 2026. Squadron 42 is sold separately. Once you own a package, there is no subscription fee — ever.",
+    also: 'Starter Package, Starter Pack, First Flight Pack',
   },
   {
     term: 'Invictus Launch Week',
@@ -263,7 +263,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Store Credit',
     category: 'Currency',
     definition:
-      "RSI-account credit (not real money), earned by melting pledges. Spendable on any pledge in the store, never expires — but per the RSI Terms of Service it can't be converted back to cash.",
+      "RSI-account credit (not real money), earned by melting pledges. Spendable on certain pledge items in the RSI store, but per the RSI Terms of Service it can't be converted back to cash.",
   },
   {
     term: 'Melt',
@@ -1092,7 +1092,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'PMA',
     category: 'Gameplay',
     definition:
-      "Personal Manager App — the mobiGlas tab where you set your character's loadout, armor, and gear. Open with F1, then click the icon.",
+      "The mobiGlas app for your character's armor and gear. The current game calls it Equipment Manager; older guides say Personal Manager App. Open mobiGlas with F1, then pick the app.",
   },
   {
     term: 'VMA',

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -10,9 +9,9 @@ import MehrAufDeutsch from '@/components/de/MehrAufDeutsch'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Starterpaket: Aurora oder Mustang? (2026)',
+  title: 'Star Citizen First Flight Pack: Das Starterpaket (2026)',
   description:
-    'Für die meisten neuen Spieler: das Citizen Starter Pack — 45 US-Dollar im Angebot, 60 US-Dollar Listenpreis — mit der Aurora Mk II. Warum das reicht — und wie der CCU-Upgrade-Pfad funktioniert.',
+    'RSI verkauft jetzt nur noch ein Starterpaket: das First Flight Pack — 60 US-Dollar Listenpreis, zeitweise 45 im Angebot. Das steckt drin, plus drei Leihschiffe zum Ausprobieren.',
   alternates: {
     canonical: '/de/starterpaket',
     languages: {
@@ -23,9 +22,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Welches Star Citizen Starterpaket? Aurora oder Mustang (2026)',
+    title: 'Star Citizen Starterpaket: Das First Flight Pack (2026)',
     description:
-      'Die klare Empfehlung: das 60-US-Dollar-Starterpaket mit der Aurora Mk II. Klein anfangen ist nie ein Fehler — dank CCU-Upgrades.',
+      'Ein Paket, ein Starterschiff, drei Leihschiffe für Bergbau, Bergung und Fracht. Das steckt im First Flight Pack.',
     url: '/de/starterpaket',
     type: 'article',
     locale: 'de_DE',
@@ -43,15 +42,23 @@ const faqJsonLd = {
       name: 'Welches Star Citizen Starterpaket ist das beste?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Für die meisten neuen Spieler: das Citizen Starter Pack. Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.), im September 2026 auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro) reduziert. Es ist der günstigste Einstieg und enthält die Aurora Mk II mit sechs Monaten Versicherung, ein Rüstungsset mit Waffe und 10.000 UEC Startgeld. Später kannst du per CCU günstig auf ein größeres Schiff aufrüsten.',
+        text: 'Es gibt nur noch eins: das Star Citizen First Flight Pack. Listenpreis 60 US-Dollar (rund 64 bis 67 Euro inkl. MwSt.); im Oktober 2026 war es mit 45 US-Dollar (rund 48 bis 50 Euro) im Angebot. Es enthält die Aurora Mk II als Starterschiff, sechs Monate Versicherung, einen Self-Land-Hangar, 10.000 UEC Startgeld und den Spiel-Download.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Aurora Mk II oder Mustang Alpha — was ist besser für Anfänger?',
+      name: 'Was sind die drei Leihschiffe im First Flight Pack?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Die Aurora Mk II ist für Neulinge die praktischere Wahl: Sie hat einen kleinen Frachtraum und öffnet damit vom ersten Tag an Liefermissionen. Die Mustang Alpha fliegt sich schneller und spaßiger, transportiert aber fast nichts. Die Mustang taucht heute ohnehin vor allem in älteren Aktionspaketen auf.',
+        text: 'Laut RSI-Store enthält das Paket 30 Tage Leihzugang zu drei weiteren Starterschiffen: der Drake Golem für Bergbau, der MISC Fortune für Bergung und der Crusader Intrepid für Frachttransport. So kannst du verschiedene Spielstile ausprobieren.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Was ist mit den alten Starterpaketen passiert?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'RSI hat sie ersetzt. Das Citizen Starter Pack, die Mustang-Alpha-Pakete, das Aurora-MR-Paket, das Avenger-Titan-Paket und die übrigen älteren Starterpakete werden nicht mehr als Spielpakete verkauft. Die Mustang Alpha gibt es weiterhin, aber nur als einzelnes Schiff.',
       },
     },
     {
@@ -59,15 +66,15 @@ const faqJsonLd = {
       name: 'Was ist ein CCU in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'CCU steht für Cross-Chassis Upgrade. Damit tauschst du dein Schiff gegen ein teureres und zahlst nur die Preisdifferenz. Wer mit dem günstigsten Paket startet, verliert also nichts — das ausgegebene Geld wird beim Upgrade voll angerechnet.',
+        text: 'CCU steht für Cross-Chassis Upgrade. Damit tauschst du dein Schiff gegen ein teureres und zahlst nur die Preisdifferenz. Wer mit dem Starterpaket beginnt, verliert also nichts — das ausgegebene Geld wird beim Upgrade voll angerechnet.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Was enthält jedes Star Citizen Spielpaket?',
+      name: 'Was enthält das Star Citizen Spielpaket?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Jedes Spielpaket („Game Package“) enthält den Spiel-Download, vollen Zugang zur laufenden Alpha, ein Starterschiff mit Versicherung und Startgeld in UEC. Wichtig: Nur Spielpakete enthalten den Spielzugang — ein einzeln gekauftes Schiff reicht nicht.',
+        text: 'Den Spiel-Download, die Aurora Mk II, sechs Monate Versicherung, einen Self-Land-Hangar und 10.000 UEC Startgeld. Es enthält kein Squadron 42. Wichtig: Nur Spielpakete enthalten den Spielzugang — ein einzeln gekauftes Schiff reicht nicht.',
       },
     },
   ],
@@ -76,9 +83,9 @@ const faqJsonLd = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Welches Star Citizen Starterpaket? Aurora oder Mustang (2026)',
+  headline: 'Star Citizen Starterpaket: Das First Flight Pack (2026)',
   description:
-    'Die klare Empfehlung für neue Spieler: das Citizen Starter Pack — 45 US-Dollar im Angebot, 60 US-Dollar Listenpreis — mit der Aurora Mk II — plus der CCU-Upgrade-Pfad erklärt.',
+    'RSI verkauft nur noch ein Starterpaket, das First Flight Pack: 60 US-Dollar Listenpreis, zeitweise 45 im Angebot. Das ist drin, plus drei Leihschiffe und der CCU-Upgrade-Pfad.',
   inLanguage: 'de',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
@@ -108,17 +115,24 @@ export default function StarterpaketPage() {
           <div className="container-narrow">
             <p className="font-mono text-xs text-gold">Star Citizen auf Deutsch</p>
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
-              Welches Starterpaket? Aurora oder Mustang
+              Das Starterpaket: das First Flight Pack
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-starwhite/85">
               <strong className="text-starwhite">
-                Die klare Empfehlung für die meisten neuen Spieler: das Citizen
-                Starter Pack mit der Aurora Mk II.
+                Stand Oktober 2026 verkauft RSI nur noch ein Starterpaket: das
+                Star Citizen First Flight Pack.
               </strong>{' '}
-              Listenpreis 60 US-Dollar, im September 2026 auf einen
-              Aktionspreis von 45 US-Dollar reduziert. Es ist der günstigste
-              Einstieg — und dank CCU-Upgrades verlierst du nichts, wenn du
-              klein anfängst.
+              Listenpreis 60 US-Dollar, im Oktober 2026 zeitweise für 45
+              US-Dollar im Angebot. Dazu gibt es drei Leihschiffe, mit denen du
+              Bergbau, Bergung und Fracht ausprobieren kannst.{' '}
+              <a
+                href="https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack"
+                className="text-gold underline-offset-4 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Offizielle RSI-Store-Seite
+              </a>
             </p>
             <p className="mt-4 text-sm text-muted">
               von{' '}
@@ -140,37 +154,52 @@ export default function StarterpaketPage() {
         <div className="container-narrow space-y-16 py-16">
 
           <section>
+            <p className="rounded-2xl border border-gold/30 bg-gold/5 p-4 text-sm leading-relaxed text-starwhite/85">
+              <strong className="text-starwhite">Aktualisiert im Oktober 2026:</strong>{' '}
+              RSI verkauft jetzt nur noch ein Starterpaket. Das Citizen Starter
+              Pack, die Mustang-Alpha-Pakete, das Aurora-MR-Paket, das
+              Avenger-Titan-Paket und die übrigen älteren Starterpakete gibt es
+              nicht mehr als Spielpakete. Wenn dir ein älterer Ratgeber mehrere
+              Pakete zur Auswahl gezeigt hat, gilt jetzt diese Seite.
+            </p>
+          </section>
+
+          <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
-              Die Empfehlung: Citizen Starter Pack mit der Aurora Mk II
+              Das steckt im First Flight Pack
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 Wenn du noch nicht weißt, was du im Verse machen willst — und
-                das weiß am Anfang niemand — nimm das günstigste Paket. Das
-                Citizen Starter Pack — Listenpreis{' '}
+                das weiß am Anfang niemand —, ist die Wahl einfach: Es gibt nur
+                ein Paket. Listenpreis{' '}
                 <strong className="text-starwhite">60 US-Dollar</strong> (rund
-                64 bis 67 Euro inklusive Mehrwertsteuer), im September 2026
-                auf einen Aktionspreis von 45 US-Dollar (rund 48 bis 50 Euro)
-                reduziert — enthält:
+                64 bis 67 Euro inklusive Mehrwertsteuer), im Oktober 2026
+                zeitweise im Angebot für 45 US-Dollar (rund 48 bis 50 Euro).
+                Der RSI-Store listet darin:
               </p>
               <ul className="list-disc space-y-2 pl-6">
-                <li>Vollen Zugang zur laufenden Star-Citizen-Alpha</li>
                 <li>
                   Die{' '}
                   <strong className="text-starwhite">Aurora Mk II</strong> als
-                  Starterschiff — mit sechs Monaten Versicherung („Insurance“:
-                  dein Schiff wird bei Verlust innerhalb dieser Frist
-                  kostenlos ersetzt)
+                  Starterschiff
                 </li>
-                <li>Ein Rüstungsset, einen Unteranzug und eine Waffe</li>
                 <li>
-                  10.000 UEC Startgeld — die Kontowährung, die jeden Wipe
-                  übersteht (nicht zu verwechseln mit dem erspielten aUEC)
+                  Sechs Monate Versicherung („Insurance“: dein Schiff wird bei
+                  Verlust innerhalb dieser Frist kostenlos ersetzt)
                 </li>
+                <li>Einen Self-Land-Hangar, in dem dein Schiff steht</li>
+                <li>
+                  10.000 UEC Startgeld — die Kontowährung, nicht zu
+                  verwechseln mit dem erspielten aUEC
+                </li>
+                <li>Den Star-Citizen-Spiel-Download</li>
               </ul>
               <p>
-                Mit dem Rüstungsset kannst du ab der ersten Sitzung auch
-                Bodenmissionen spielen. Wie der Kauf im Detail abläuft, zeigt{' '}
+                Das Paket gilt nur für Star Citizen. Squadron 42, das
+                Einzelspieler-Spiel, ist nicht enthalten. Der Empfehlungscode
+                ist davon getrennt: Ein neues Konto mit Code bekommt zusätzlich
+                50.000 UEC. Wie der Kauf im Detail abläuft, zeigt{' '}
                 <Link href="/de/star-citizen-kaufen" className="text-gold underline-offset-4 hover:underline">
                   die Kauf-Anleitung
                 </Link>
@@ -181,65 +210,51 @@ export default function StarterpaketPage() {
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
-              Aurora oder Mustang?
+              Drei Leihschiffe zum Ausprobieren
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Die klassische Anfängerfrage. Die kurze Fassung:
+                Laut RSI-Store bekommst du außerdem 30 Tage Leihzugang zu drei
+                weiteren Starterschiffen. Damit kannst du verschiedene
+                Spielstile und Schiffshersteller kennenlernen:
               </p>
               <ul className="list-disc space-y-3 pl-6">
                 <li>
-                  <strong className="text-starwhite">Aurora Mk II</strong> — die
-                  praktischere Wahl. Sie hat einen kleinen Frachtraum, und genau
-                  der öffnet dir vom ersten Tag an Liefermissionen: die
-                  einfachste Art, im Spiel Geld zu verdienen. Gutmütig zu
-                  fliegen, verzeiht Fehler.
+                  <strong className="text-starwhite">Drake Golem</strong> — für
+                  den Bergbau (Erz aus Gestein abbauen)
                 </li>
                 <li>
-                  <strong className="text-starwhite">Mustang Alpha</strong> —
-                  schneller und spaßiger zu fliegen, transportiert aber fast
-                  nichts. Sie taucht heute vor allem in älteren und
-                  gelegentlichen Aktionspaketen auf; das reguläre
-                  Starterpaket (45 US-Dollar im Angebot, 60 US-Dollar
-                  Listenpreis) kommt mit der Aurora.
+                  <strong className="text-starwhite">MISC Fortune</strong> — für
+                  die Bergung (Wracks ausschlachten und verwerten)
+                </li>
+                <li>
+                  <strong className="text-starwhite">Crusader Intrepid</strong>{' '}
+                  — für den Frachttransport
                 </li>
               </ul>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <figure className="overflow-hidden rounded-2xl border border-white/10">
-                  <Image
-                    src="/images/ships/aurora-mr.jpg"
-                    alt="Das RSI-Aurora-MR-Starterschiff."
-                    width={1820}
-                    height={1024}
-                    className="h-auto w-full"
-                  />
-                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                    Die RSI Aurora — die praktische Wahl.
-                  </figcaption>
-                </figure>
-                <figure className="overflow-hidden rounded-2xl border border-white/10">
-                  <Image
-                    src="/images/ships/mustang-alpha.jpg"
-                    alt="Das Consolidated-Outland-Mustang-Alpha-Starterschiff."
-                    width={1820}
-                    height={1024}
-                    className="h-auto w-full"
-                  />
-                  <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                    Die Mustang Alpha — die spaßige Alternative.
-                  </figcaption>
-                </figure>
-              </div>
               <p>
-                Unsere Empfehlung deckt sich mit der{' '}
-                <Link
-                  href="/day-one-citizen/starter-package"
-                  className="text-gold underline-offset-4 hover:underline"
-                >
-                  englischen Vergleichsseite
-                </Link>
-                : Für die meisten Neulinge ist die Aurora Mk II das richtige
-                erste Schiff.
+                Mehr sagt RSI zu den Leihschiffen nicht. Die genauen
+                Bedingungen findest du auf der Store-Seite des Pakets. Nutze die
+                Aurora zum Einstieg und die Leihschiffe, um herauszufinden,
+                welcher Beruf dir liegt.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">
+              Und die Mustang Alpha?
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                Früher war die Mustang Alpha in manchen Paketen eine
+                Alternative zur Aurora. Das ist vorbei: Die Mustang Alpha wird
+                nur noch als einzelnes Schiff verkauft, nicht mehr als
+                Startschiff in einem Spielpaket. Du kannst sie später kaufen,
+                wenn du ein schnelleres Schiff willst. Sie fliegt sich flotter
+                und spaßiger, transportiert aber fast nichts. Die Aurora hat
+                einen kleinen Frachtraum und öffnet dir vom ersten Tag an
+                Liefermissionen.
               </p>
             </div>
           </section>
@@ -250,7 +265,7 @@ export default function StarterpaketPage() {
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Viele Neulinge haben Angst, sich mit dem billigsten Paket zu
+                Viele Neulinge haben Angst, sich mit dem Einstiegspaket zu
                 „verkaufen“. Musst du nicht — dafür gibt es das{' '}
                 <strong className="text-starwhite">CCU</strong> (Cross-Chassis
                 Upgrade):
@@ -279,11 +294,10 @@ export default function StarterpaketPage() {
                 </li>
               </ul>
               <p>
-                Deshalb die einfache Regel: Starte für 45 US-Dollar im
-                Angebot, lerne das Spiel, entscheide später. Der umgekehrte
-                Weg — teuer einsteigen
-                und feststellen, dass dir das Schiff nicht liegt — ist der
-                teurere Fehler.
+                Deshalb die einfache Regel: Starte mit dem First Flight Pack,
+                lerne das Spiel, entscheide später. Der umgekehrte Weg — teuer
+                einsteigen und feststellen, dass dir das Schiff nicht liegt —
+                ist der teurere Fehler.
               </p>
             </div>
           </section>
@@ -332,21 +346,30 @@ export default function StarterpaketPage() {
                   Welches Starterpaket ist das beste?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Für die meisten neuen Spieler das Citizen Starter Pack für 60
-                  US-Dollar — der günstigste Einstieg, mit der Aurora Mk II,
-                  sechs Monaten Versicherung, Rüstungsset und 10.000 UEC.
-                  Später kannst du per CCU günstig aufrüsten.
+                  Es gibt nur noch das First Flight Pack: 60 US-Dollar
+                  Listenpreis, im Oktober 2026 zeitweise für 45 im Angebot. Es
+                  enthält die Aurora Mk II, sechs Monate Versicherung, einen
+                  Self-Land-Hangar, 10.000 UEC und den Spiel-Download.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
                 <h3 className="mb-2 font-semibold text-starwhite">
-                  Aurora Mk II oder Mustang Alpha?
+                  Was sind die drei Leihschiffe?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Die Aurora ist für Neulinge praktischer: Ihr Frachtraum
-                  öffnet vom ersten Tag an Liefermissionen. Die Mustang fliegt
-                  sich spaßiger, transportiert aber fast nichts — und steckt
-                  heute vor allem in älteren Aktionspaketen.
+                  30 Tage Leihzugang zu Drake Golem (Bergbau), MISC Fortune
+                  (Bergung) und Crusader Intrepid (Fracht) — laut RSI-Store im
+                  First Flight Pack enthalten.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  Gibt es die Mustang Alpha noch?
+                </h3>
+                <p className="text-sm leading-relaxed text-starwhite/70">
+                  Ja, aber nur als einzelnes Schiff. Sie ist keine
+                  Startschiff-Auswahl in einem Spielpaket mehr. Du kannst sie
+                  später dazukaufen.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
@@ -361,12 +384,13 @@ export default function StarterpaketPage() {
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">
                 <h3 className="mb-2 font-semibold text-starwhite">
-                  Was enthält jedes Spielpaket?
+                  Was enthält das Spielpaket?
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
-                  Den Spiel-Download, vollen Alpha-Zugang, ein Starterschiff mit
-                  Versicherung und Startgeld in UEC. Nur Spielpakete enthalten
-                  den Spielzugang — ein einzeln gekauftes Schiff reicht nicht.
+                  Den Spiel-Download, die Aurora Mk II, sechs Monate
+                  Versicherung, einen Self-Land-Hangar und 10.000 UEC. Nur
+                  Spielpakete enthalten den Spielzugang — ein einzeln gekauftes
+                  Schiff reicht nicht.
                 </p>
               </div>
             </div>

@@ -12,9 +12,9 @@ import PageSources from '@/components/PageSources'
 import SourceLink from '@/components/SourceLink'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen Starter Packages 2026 Compared',
+  title: 'Star Citizen First Flight Pack: What You Get (2026)',
   description:
-    'Which Star Citizen starter package should you buy? All seven packages compared — $45-on-sale Citizen Starter to $125 Privateer.',
+    'RSI now sells one Star Citizen starter package, the First Flight Pack: $60, often on sale for $45. See what is in it and the three loaner ships.',
   alternates: {
     canonical: '/day-one-citizen/starter-package',
     languages: {
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Star Citizen Starter Packages 2026: All 7 Options Compared',
+    title: 'Star Citizen First Flight Pack: The One Starter Package',
     description:
-      'Seven packages. Six careers. One recommendation. Which starter pack is right for you?',
+      'One package. One starter ship. Three loaner ships to try mining, salvage and cargo. Here is what the First Flight Pack includes.',
     url: '/day-one-citizen/starter-package',
     type: 'article',
   },
@@ -44,7 +44,7 @@ const faqJsonLd = {
       name: 'What is the best starter package in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For most new players: the Citizen Starter Pack. It is $45 on sale, 25% off its $60 list price as of September 2026. It is the cheapest way into the game and comes with the Aurora Mk II — a forgiving starter ship with six months of hull insurance — plus a full armor set, an undersuit, and a weapon. Learn the game first, then upgrade later via a CCU for the price difference.',
+        text: 'There is only one now: the Star Citizen First Flight Pack. RSI lists it at $60, and it was on sale for $45 (25% off) as of October 2026. It includes the Aurora Mk II starter ship, six months of insurance, a self-land hangar, 10,000 UEC and the game download.',
       },
     },
     {
@@ -52,23 +52,23 @@ const faqJsonLd = {
       name: 'How much is a Star Citizen starter package?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Starter game packages run from $45 on sale (the Citizen Starter Pack, $60 list) up to $125. There are seven packages, each built around a different career ship. During sale events some carry a Warbond price — a steeper discount available only when paying with new money rather than store credit.',
+        text: "The First Flight Pack lists at $60. As of October 2026 it was on sale for $45. Sales come and go, so check the RSI pledge store for today's price. It is the only game package RSI sells.",
       },
     },
     {
       '@type': 'Question',
-      name: 'What does every Star Citizen game package include?',
+      name: 'What does the Star Citizen First Flight Pack include?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Every game package includes the Star Citizen digital download, full access to the live Persistent Universe alpha, a starter ship with at least six months of hull insurance, a self-land hangar, and 10,000 starting UEC.',
+        text: 'One Aurora Mk II starter ship, six months of insurance, a self-land hangar, 10,000 UEC and the Star Citizen digital download. RSI also adds 30-day loaner access to three more ships: the Drake Golem for mining, the MISC Fortune for salvage and the Crusader Intrepid for cargo hauling.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What is Warbond pricing in Star Citizen?',
+      name: 'What happened to the old Star Citizen starter packages?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A Warbond price is a discount that applies only when you pay with real money — store credit cannot be used. If you are buying fresh with no existing store credit, always check for a Warbond version of the package first.',
+        text: 'RSI replaced them. The Citizen Starter Pack, the Mustang Alpha packs, the Aurora MR pack, the Avenger Titan pack and the other older starter packs are no longer sold as game packages. Their store pages now return an error. The Mustang Alpha is still sold as a separate ship.',
       },
     },
     {
@@ -76,7 +76,7 @@ const faqJsonLd = {
       name: 'Should I wait for a sale to buy Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You do not have to. Starter packs are sometimes discounted, but nobody can promise when. Buy only a starter Game Package, and skip big ships bought in sale hype. If you want to try the game first, watch for a Free Fly. The Intergalactic Aerospace Expo has had one in each of the last four years.',
+        text: 'You do not have to. The First Flight Pack is sometimes discounted, but nobody can promise when. Buy only the game package, and skip big ships bought in sale hype. If you want to try the game first, watch for a Free Fly. The Intergalactic Aerospace Expo has had one in each of the last four years.',
       },
     },
     {
@@ -114,13 +114,12 @@ export default function StarterPackagePage() {
             </Link>
             <GuideProgress slug="starter-package" />
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
-              Which starter package should you buy?
+              The Star Citizen First Flight Pack
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
-              There are seven game packages under $125 in the{' '}
-              <Term name="RSI">RSI</Term> store. Each comes with a different
-              ship built for a different career. Here is the full comparison,
-              plus a clear recommendation for most new players.
+              The <Term name="RSI">RSI</Term> store now sells one starter
+              package. It is called the First Flight Pack. Here is what is in
+              it, what the three loaner ships are for, and what to buy later.
             </p>
             <p className="mt-3 text-sm">
               <Link
@@ -139,340 +138,128 @@ export default function StarterPackagePage() {
           <DoThisNow slug="starter-package" />
 
           <section>
-            <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">
-              <strong className="text-starwhite">Not sure what you want to do
-              yet? Get the Citizen Starter Pack.</strong>{' '}
-              It is $45 on sale, 25% off its $60 list price as of September
-              2026, and it is the cheapest way in. It comes with the{' '}
-              <Term name="Aurora">Aurora Mk II</Term> and six months of hull
-              insurance. The full comparison below covers all seven packages
-              if you already know your career.
+            <p className="rounded-2xl border border-gold/30 bg-gold/5 p-4 text-sm leading-relaxed text-starwhite/85">
+              <strong className="text-starwhite">Updated October 2026:</strong>{' '}
+              RSI now sells one starter package. The older Citizen Starter,
+              Mustang Alpha, Aurora MR, Avenger Titan and other starter packs
+              are no longer sold as game packages. If an older guide told you to
+              choose between several packs, this page replaces it.{' '}
+              <SourceLink href="https://robertsspaceindustries.com/en/store/pledge/browse/game-packages">
+                Official RSI pledge store
+              </SourceLink>
             </p>
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">What every package includes</h2>
+            <p className="max-w-2xl text-base leading-relaxed text-starwhite/85">
+              <strong className="text-starwhite">Want to play Star Citizen?
+              Get the First Flight Pack.</strong>{' '}
+              It lists at $60 and was on sale for $45 as of October 2026. It
+              comes with the <Term name="Aurora">Aurora Mk II</Term> and six
+              months of insurance. It also lets you try three more ships for
+              thirty days.{' '}
+              <SourceLink href="https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack">
+                Official RSI store page
+              </SourceLink>
+            </p>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">What is in the First Flight Pack</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Every game package in this list gives you the same base access:
+                RSI&rsquo;s store lists these items in the pack:
               </p>
               <ul className="list-disc space-y-2 pl-6">
-                <li>The Star Citizen digital download</li>
                 <li>
-                  Full access to the live{' '}
-                  <Term name="PU">Persistent Universe</Term> alpha
+                  One starter ship: the <Term name="Aurora">Aurora Mk II</Term>
                 </li>
-                <li>A starter ship with at least six months of hull insurance</li>
+                <li>Six months of ship insurance</li>
                 <li>A self-land hangar to store your ship</li>
                 <li>
-                  10,000 starting <Term name="UEC">UEC</Term> — the in-game
-                  currency you spend at shops and terminals
+                  10,000 <Term name="UEC">UEC</Term> on your account. This is
+                  separate from the <Term name="aUEC">aUEC</Term> you spend at
+                  in-game shops
                 </li>
+                <li>The Star Citizen digital download</li>
               </ul>
               <p>
-                During sale events, some packages carry a{' '}
-                <strong className="text-starwhite">Warbond price</strong> — a steeper
-                discount available only when paying with real money. Store credit
-                cannot be used for Warbond purchases. Warbond discounts are
-                short-lived — they usually end with the event, so treat any
-                Warbond figure you see as temporary.
+                It is Star Citizen only. It does not include Squadron 42, the
+                separate single-player story game. The download gives you access
+                to the live <Term name="PU">Persistent Universe</Term> alpha.
+              </p>
+              <p>
+                Referral codes are separate. A new account created with a code
+                gets 50,000 UEC on top of the pack&rsquo;s 10,000.
               </p>
             </div>
           </section>
 
           <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">The recommendation for most new players</h2>
+            <h2 className="heading-display text-2xl sm:text-3xl">The three loaner ships</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                <strong className="text-starwhite">
-                  If you are not sure what you want to do yet: get the Citizen Starter Pack, $45 on sale ($60 list).
-                </strong>
+                RSI&rsquo;s store says the pack also gives you thirty-day loaner
+                access to three more starter ships. The aim is to let you
+                explore different gameplay styles and ship makers.
+              </p>
+              <div className="overflow-x-auto rounded-2xl border border-white/5">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-white/10 text-left">
+                      <th className="px-4 py-3 font-semibold text-gold">Loaner ship</th>
+                      <th className="px-4 py-3 font-semibold text-gold">Made by</th>
+                      <th className="px-4 py-3 font-semibold text-gold">Try this career</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/5">
+                    <tr>
+                      <td className="px-4 py-3 font-semibold text-starwhite">
+                        <Term name="Golem">Drake Golem</Term>
+                      </td>
+                      <td className="px-4 py-3 text-starwhite/80">Drake Interplanetary</td>
+                      <td className="px-4 py-3 text-starwhite/80">Mining</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold text-starwhite">MISC Fortune</td>
+                      <td className="px-4 py-3 text-starwhite/80">MISC</td>
+                      <td className="px-4 py-3 text-starwhite/80">Salvage (stripping wrecked ships for parts)</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-3 font-semibold text-starwhite">
+                        <Term name="Intrepid">Crusader Intrepid</Term>
+                      </td>
+                      <td className="px-4 py-3 text-starwhite/80">Crusader Industries</td>
+                      <td className="px-4 py-3 text-starwhite/80">Cargo hauling</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                RSI&rsquo;s page does not say more than that. Check the store
+                page for the exact loaner terms before you buy.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="heading-display text-2xl sm:text-3xl">What happened to the old packages?</h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                RSI used to sell several starter packages. Each one came with a
+                different ship. As of October 2026, the store&rsquo;s game
+                package list shows only the First Flight Pack. The older pack
+                pages no longer load.
               </p>
               <p>
-                It is the cheapest way into the game. It comes with the{' '}
-                <Term name="Aurora">Aurora Mk II</Term> — a forgiving starter ship
-                with six months of hull insurance — plus a full armor set,
-                an undersuit, and a weapon. That kit lets you play ground missions
-                from your very first session. Learn the game first, then upgrade via
-                a <Term name="CCU">CCU</Term> later for the price difference.{' '}
+                The <Term name="Mustang">Mustang Alpha</Term> is still for sale,
+                but only as a separate ship. It is no longer a starting choice
+                inside a game package. You can buy it, or another ship, later.{' '}
                 <Link href="/day-one-citizen/first-ship" className="text-gold underline-offset-4 hover:underline">
-                  Why the Aurora is the right first ship
+                  The first-ship guide
                 </Link>{' '}
-                gets its own honest write-up.
+                explains how to think about it.
               </p>
-              <p>
-                <strong className="text-starwhite">
-                  Already know your career? Get the role pack that matches it.
-                </strong>
-              </p>
-              <p>
-                If you tried the Free Fly and found a gameplay loop you loved, the
-                six role packs at $75–$125 give you a purpose-built ship from day one.
-                They cost more, but you will not need to upgrade as quickly.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">All seven packages at a glance</h2>
-            <div className="mt-5 overflow-x-auto rounded-2xl border border-white/5">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-white/10 text-left">
-                    <th className="px-4 py-3 font-semibold text-gold">Package</th>
-                    <th className="px-4 py-3 font-semibold text-gold">Ship</th>
-                    <th className="px-4 py-3 font-semibold text-gold">Price</th>
-                    <th className="px-4 py-3 font-semibold text-gold">Insurance</th>
-                    <th className="px-4 py-3 font-semibold text-gold">Best for</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-white/5">
-                  <tr className="bg-gold/5">
-                    <td className="px-4 py-3 font-semibold text-starwhite">Citizen Starter</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Aurora">Aurora Mk II</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$45 on sale ($60 list)</td>
-                    <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Most new players ★</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Salvager</td>
-                    <td className="px-4 py-3 text-starwhite/80">RSI Salvation</td>
-                    <td className="px-4 py-3 text-starwhite/80">$75</td>
-                    <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Salvagers</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Miner</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Golem">Drake Golem</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$75</td>
-                    <td className="px-4 py-3 text-starwhite/80">24 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Miners</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Duelist</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Avenger">Avenger Titan</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$75</td>
-                    <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Combat + light cargo</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Hauler</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Intrepid">Crusader Intrepid</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$80</td>
-                    <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Delivery + hauling</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Outsider</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Syulen">Gatac Syulen</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$85</td>
-                    <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Alien-tech fans</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-starwhite">Privateer</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      <Term name="Cutlass">Cutlass Black</Term>
-                    </td>
-                    <td className="px-4 py-3 text-starwhite/80">$125</td>
-                    <td className="px-4 py-3 text-starwhite/80">6 months</td>
-                    <td className="px-4 py-3 text-starwhite/80">Combat + piracy</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="mt-3 text-xs text-muted">
-              All prices in USD. ★ = recommended pick.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">The role packs in detail</h2>
-            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
-              <p>
-                If you tried the Free Fly and found a loop you enjoyed, these
-                six packs give you a purpose-built ship from day one. They cost
-                more than the Citizen Starter, but you will not need to upgrade
-                as quickly.
-              </p>
-            </div>
-
-            <div className="mt-8 space-y-6">
-
-              <div className="rounded-2xl border border-white/5 bg-navyLight/30 p-6">
-                <h3 className="text-lg font-semibold text-starwhite">
-                  Miner Starter Pack — $75
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  Ship: <Term name="Golem">Drake Golem</Term>
-                  &ensp;·&ensp;Insurance: 24 months
-                  &ensp;·&ensp;Starting money: 20,000 <Term name="UEC">UEC</Term>
-                </p>
-                <p className="mt-3 text-base leading-relaxed text-starwhite/85">
-                  The <Term name="Golem">Drake Golem</Term> is Drake&rsquo;s dedicated solo
-                  mining ship — built to break ore in deep space and haul it back alone.
-                  This pack comes with twenty-four months of insurance, double the starting
-                  money of most other packs, a full mining-themed armor set, and a tractor
-                  beam tool. If mining is your career plan, nothing here needs to be bought
-                  separately.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/5 bg-navyLight/30 p-6">
-                <h3 className="text-lg font-semibold text-starwhite">
-                  Salvager Starter Pack — $75
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  Ship: RSI Salvation
-                  &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
-                </p>
-                <p className="mt-3 text-base leading-relaxed text-starwhite/85">
-                  The RSI Salvation — <Term name="RSI">RSI</Term>&rsquo;s purpose-built
-                  solo salvage ship — is designed to let a single pilot strip wrecked hulls
-                  for parts and materials. Salvage is a patient, methodical career. It
-                  requires no combat. It earns steady money from wreckage that other players
-                  fly past.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/5 bg-navyLight/30 p-6">
-                <h3 className="text-lg font-semibold text-starwhite">
-                  Duelist Starter Pack — $75
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  Ship: <Term name="Avenger">Aegis Avenger Titan</Term>
-                  &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
-                </p>
-                <p className="mt-3 text-base leading-relaxed text-starwhite/85">
-                  The <Term name="Avenger">Avenger Titan</Term> is a retired military
-                  ship re-fitted for civilian use, with its combat hold expanded for
-                  maximum cargo space. It handles delivery missions well and fights back
-                  when attacked. At the same price as the Salvager and Miner packs, the
-                  Titan is widely considered the best value ship at the $75 mark —
-                  versatile enough to try multiple careers before committing.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/5 bg-navyLight/30 p-6">
-                <h3 className="text-lg font-semibold text-starwhite">
-                  Hauler Starter Pack — $80
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  Ship: <Term name="Intrepid">Crusader Intrepid</Term>
-                  &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
-                </p>
-                <p className="mt-3 text-base leading-relaxed text-starwhite/85">
-                  The <Term name="Intrepid">Crusader Intrepid</Term> — a single-seat
-                  freighter by Crusader Industries — focuses on short-range hauling and
-                  courier work. Its two cargo holds can each be loaded from inside or
-                  outside the ship. It has a small visible footprint, which helps when
-                  navigating crowded landing zones. It also includes living quarters for
-                  longer trips.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/5 bg-navyLight/30 p-6">
-                <h3 className="text-lg font-semibold text-starwhite">
-                  Outsider Starter Pack — $85
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  Ship: <Term name="Syulen">Gatac Syulen</Term>
-                  &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
-                </p>
-                <p className="mt-3 text-base leading-relaxed text-starwhite/85">
-                  The <Term name="Syulen">Gatac Syulen</Term> is a Human-Xi&rsquo;an hybrid
-                  ship — built using Xi&rsquo;an design principles by Gatac Manufacture for
-                  Human pilots. It handles differently from every other ship in the store
-                  and introduces alien technology to a broader Human audience. If you want
-                  to fly something that looks and flies unlike anything else from day one,
-                  this is the only starter that delivers that.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/5 bg-navyLight/30 p-6">
-                <h3 className="text-lg font-semibold text-starwhite">
-                  Privateer Starter Pack — $125
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  Ship: <Term name="Cutlass">Drake Cutlass Black</Term>
-                  &ensp;·&ensp;Insurance: 6 months
-                  &ensp;·&ensp;Starting money: 10,000 <Term name="UEC">UEC</Term>
-                </p>
-                <p className="mt-3 text-base leading-relaxed text-starwhite/85">
-                  The <Term name="Cutlass">Cutlass Black</Term> is Drake&rsquo;s most
-                  well-known ship: fast, heavily armed for its size, and roomy enough to
-                  carry whatever you take from others. At $125 it is the most expensive
-                  starter pack by a wide margin. Only buy this if you are certain that
-                  combat and piracy is your path — the Avenger Titan does much of the same
-                  work for $50 less.
-                </p>
-              </div>
-
-            </div>
-          </section>
-
-          <section>
-            <h2 className="heading-display text-2xl sm:text-3xl">Which pack fits your plan?</h2>
-            <div className="mt-5 overflow-x-auto rounded-2xl border border-white/5">
-              <table className="w-full">
-                <tbody className="divide-y divide-white/5 text-sm">
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-gold">I have no idea yet</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      Citizen Starter Pack ($45 on sale, $60 list) — cheapest entry, most bonus gear
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-gold">I want to fight and fly</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      Duelist (<Term name="Avenger">Avenger Titan</Term>, $75) for value,
-                      or Privateer (<Term name="Cutlass">Cutlass Black</Term>, $125) if budget
-                      is not a concern
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-gold">I want to haul cargo</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      Hauler (<Term name="Intrepid">Intrepid</Term>, $80)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-gold">I want to mine</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      Miner (<Term name="Golem">Golem</Term>, $75) —
-                      the only dedicated mining starter in the store
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-gold">I want to salvage wrecks</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      Salvager (RSI Salvation, $75) — the only dedicated salvage starter
-                      in the store
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 font-semibold text-gold">I want something alien and unique</td>
-                    <td className="px-4 py-3 text-starwhite/80">
-                      Outsider (<Term name="Syulen">Syulen</Term>, $85) — Human-Xi&rsquo;an
-                      hybrid tech, unlike anything else here
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </section>
 
@@ -488,8 +275,8 @@ export default function StarterPackagePage() {
               <ul className="list-disc space-y-3 pl-6">
                 <li>
                   You do not yet know which career you will enjoy. Mining, hauling,
-                  combat, and salvage each need entirely different ships. Buy for the role
-                  you actually end up playing — not the one that looks good in a video.
+                  combat, and salvage each need entirely different ships. The three
+                  loaners let you try three of them first.
                 </li>
                 <li>
                   Many mid- and high-end ships need a crew to operate well.
@@ -506,8 +293,8 @@ export default function StarterPackagePage() {
                 </li>
                 <li>
                   Standalone ship purchases do not include game access. Do not
-                  accidentally buy only a ship. Make sure your purchase is a full game
-                  package — or that you already own one.
+                  accidentally buy only a ship. Make sure your purchase is the
+                  First Flight Pack — or that you already own a game package.
                 </li>
               </ul>
             </div>
@@ -583,14 +370,14 @@ export default function StarterPackagePage() {
 
               <h3 className="pt-2 text-lg font-semibold text-starwhite">What to buy, and what to skip</h3>
               <p>
-                If you buy, buy only a starter Game Package. The Citizen Starter
-                Pack lists at $60 and was on sale for $45 as of September 2026.
+                If you buy, buy only the game package. The First Flight Pack
+                lists at $60 and was on sale for $45 as of October 2026.
                 It comes with the <Term name="Aurora">Aurora Mk II</Term>, six
                 months of ship insurance, and 10,000 <Term name="UEC">UEC</Term>.{' '}
-                <SourceLink href="https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack">
+                <SourceLink href="https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack">
                   Official RSI store page
                 </SourceLink>{' '}
-                Starter packs do get discounted at times. We cannot say when, or
+                The pack does get discounted at times. We cannot say when, or
                 by how much, so check the RSI store for today&rsquo;s price.
               </p>
               <p>Here is what to skip while you are new:</p>
@@ -646,10 +433,10 @@ export default function StarterPackagePage() {
                   What is the best starter package?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  For most new players, the Citizen Starter Pack — $45 on
-                  sale, $60 list — the cheapest way in, with the Aurora Mk II,
-                  six months of hull insurance, and a full armor kit. Upgrade
-                  later via a CCU for the price difference.
+                  There is only one now: the First Flight Pack. It lists at
+                  $60 and was on sale for $45 as of October 2026. It includes the
+                  Aurora Mk II, six months of insurance, a self-land hangar,
+                  10,000 UEC and the game download.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
@@ -657,30 +444,28 @@ export default function StarterPackagePage() {
                   How much does a starter package cost?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Packages start at $45 on sale ($60 list), and all seven
-                  options in this guide are under $125. During sale events,
-                  check for a Warbond price if you are paying with new money —
-                  it is usually the better deal.
+                  $60 list, often on sale for $45. Sales come and go, so check
+                  the RSI pledge store for today&rsquo;s price.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  What does every package include?
+                  What does the First Flight Pack include?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  The game download, full access to the live alpha, a starter
-                  ship with at least six months of hull insurance, a self-land
-                  hangar, and 10,000 starting UEC.
+                  The Aurora Mk II, six months of insurance, a self-land
+                  hangar, 10,000 UEC and the game download. It also adds
+                  thirty-day loaner access to the Drake Golem (mining), MISC
+                  Fortune (salvage) and Crusader Intrepid (cargo).
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
                 <h3 className="font-semibold text-starwhite mb-2">
-                  What does Warbond mean?
+                  What happened to the old starter packages?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  A discount that applies only when paying with real money —
-                  store credit cannot be used. Buying fresh? Always check for a
-                  Warbond version first.
+                  RSI replaced them. They are no longer sold as game packages.
+                  The Mustang Alpha is still sold, but only as a separate ship.
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">
@@ -688,8 +473,8 @@ export default function StarterPackagePage() {
                   Should I wait for a sale to buy Star Citizen?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  You do not have to. Starter packs are sometimes discounted,
-                  but nobody can promise when. Buy only a starter Game Package,
+                  You do not have to. The pack is sometimes discounted,
+                  but nobody can promise when. Buy only the game package,
                   and skip big ships bought in sale hype. If you want to try the
                   game first, watch for a Free Fly. The Intergalactic Aerospace
                   Expo has had one in each of the last four years.{' '}

@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { DAY_ONE_STEPS, getStep } from '@/data/day-one-steps'
+import { GUIDE_VERIFICATION } from '@/data/guide-verification'
+
+const checkedOnLabel = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+  timeZone: 'UTC',
+}).format(new Date(`${GUIDE_VERIFICATION.checkedOn}T00:00:00Z`))
 
 /**
  * "Section 07 of 12" label plus a twelve-segment strip. Sits in the header of
@@ -41,6 +49,13 @@ export function GuideProgress({ slug }: { slug: string }) {
           )
         })}
       </ol>
+      <p className="mt-1 font-mono text-xs text-muted">
+        <span className="text-aurora" aria-hidden>
+          ✓
+        </span>{' '}
+        Checked against the current game version, Alpha {GUIDE_VERIFICATION.version}, on{' '}
+        <time dateTime={GUIDE_VERIFICATION.checkedOn}>{checkedOnLabel}</time>
+      </p>
     </div>
   )
 }
