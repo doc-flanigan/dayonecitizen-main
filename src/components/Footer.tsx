@@ -38,7 +38,7 @@ export default function Footer() {
               className="opacity-90"
             />
             <a
-              href="https://discord.gg/vHjvDxHQP2"
+              href="https://discord.gg/MpAUJs9xet"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Join our Discord server"
