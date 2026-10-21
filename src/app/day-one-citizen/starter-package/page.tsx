@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
+import SaleAlertCTA from '@/components/SaleAlertCTA'
 import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
@@ -424,6 +425,8 @@ export default function StarterPackagePage() {
               </p>
             </div>
           </section>
+
+          <SaleAlertCTA />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Common questions</h2>
