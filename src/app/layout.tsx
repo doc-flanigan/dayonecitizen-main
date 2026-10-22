@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Instrument_Sans, Space_Mono } from 'next/font/goog
 import { Analytics } from '@vercel/analytics/next'
 import { SITE } from '@/lib/site'
 import FreeFlyStatusProvider from '@/components/FreeFlyStatusProvider'
+import OutboundLinkTracker from '@/components/OutboundLinkTracker'
 import { getFreeFlyStatus } from '@/data/next-free-fly'
 import './globals.css'
 
@@ -163,6 +164,7 @@ export default function RootLayout({
           {children}
         </FreeFlyStatusProvider>
         <Analytics />
+        <OutboundLinkTracker />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
