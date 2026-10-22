@@ -139,10 +139,14 @@ export default function NextWipePage() {
             <h1 className="heading-display mt-2 text-3xl sm:text-5xl">
               When is the next wipe?
             </h1>
-            <p className="mt-4 max-w-2xl text-base text-muted">
-              &ldquo;Wipe&rdquo; is the scariest word a new player hears. Here
-              is what a wipe actually touches, what it never touches, and what
-              is — and is not — known about the next one.
+            <p className="mt-4 max-w-2xl text-base text-starwhite/90">
+              No <Term name="Wipe">wipe</Term> is announced. The latest update,
+              Alpha 4.10.2 (October 9, 2026), kept everyone&rsquo;s progress.
+              Anything you buy with real money survives every wipe.
+            </p>
+            <p className="mt-3 max-w-2xl text-base text-muted">
+              Below: what a wipe actually touches, what it never touches, and
+              what is known about the next one.
             </p>
             <p className="mt-4 text-sm text-muted">
               Written by{' '}
