@@ -223,17 +223,24 @@ export default function FactCheckClient({
               )}
               {c.sources.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
-                  {c.sources.map((s) => (
-                    <a
-                      key={s}
-                      href={s}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-gold underline-offset-4 hover:underline"
-                    >
-                      {sourceLabel(s)} ↗
-                    </a>
-                  ))}
+                  {c.sources.map((raw) => {
+                    const s = raw.replace(/^"(.*)"$/, '$1')
+                    return /^https?:\/\//.test(s) ? (
+                      <a
+                        key={raw}
+                        href={s}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-gold underline-offset-4 hover:underline"
+                      >
+                        {sourceLabel(s)} ↗
+                      </a>
+                    ) : (
+                      <span key={raw} className="text-xs text-gold">
+                        {s}
+                      </span>
+                    )
+                  })}
                 </div>
               )}
             </div>

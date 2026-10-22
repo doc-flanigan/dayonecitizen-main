@@ -62,17 +62,24 @@ export default function PageSources({ route }: { route: string }) {
               <li key={c.id} className="card-surface p-5">
                 <p className="text-sm text-starwhite/90">{c.claim}</p>
                 <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
-                  {c.sources.map((url) => (
-                    <a
-                      key={url}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-mono text-xs text-gold underline-offset-4 hover:underline"
-                    >
-                      {sourceLabel(url)} ↗
-                    </a>
-                  ))}
+                  {c.sources.map((raw) => {
+                    const url = raw.replace(/^"(.*)"$/, '$1')
+                    return /^https?:\/\//.test(url) ? (
+                      <a
+                        key={raw}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-xs text-gold underline-offset-4 hover:underline"
+                      >
+                        {sourceLabel(url)} ↗
+                      </a>
+                    ) : (
+                      <span key={raw} className="font-mono text-xs text-gold">
+                        {url}
+                      </span>
+                    )
+                  })}
                 </div>
               </li>
             ))}

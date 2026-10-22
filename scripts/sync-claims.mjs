@@ -29,7 +29,7 @@ function parseClaimFile(txt) {
   let listKey = null;
   for (const line of fm[1].split(/\r?\n/)) {
     const item = line.match(/^\s+-\s+(.*)$/);
-    if (listKey && item) { out[listKey].push(item[1].trim()); continue; }
+    if (listKey && item) { out[listKey].push(item[1].trim().replace(/^"(.*)"$/, '$1')); continue; }
     const kv = line.match(/^(\w+):\s*(.*)$/);
     if (!kv) continue;
     const [, key, val] = kv;

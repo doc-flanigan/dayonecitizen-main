@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20",
+  "generated": "2026-10-22",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -463,7 +463,7 @@
       "claim": "In Star Citizen's default keyboard bindings, Flight / Systems Ready is Right Alt + R (not R). Plain R reloads on foot and cycles the sub-target in a ship. U toggles power to all ship systems.",
       "status": "verified",
       "sources": [
-        "\"Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28); re-checked on sc-alpha-4.10.2 (2026-10-12), file unchanged. Extracted with sc-portfolio tools/keybinds/.\"",
+        "Star Citizen game files (CIG): Data.p4k → Data/Libs/Config/defaultProfile.xml, actions v_flightready = ralt+r (spaceship_general, vehicle_general), v_power_toggle = u; label ui_CICockpitFlightReady = 'Flight / Systems Ready' in Localization/english/global.ini. Build sc-alpha-4.10.0-hotfix (2026-08-28); re-checked on sc-alpha-4.10.2 (2026-10-12), file unchanged. Extracted with sc-portfolio tools/keybinds/.",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
       ],
       "lastVerified": "2026-10-14"
@@ -541,7 +541,7 @@
       "claim": "The wording of Star Citizen's in-game error codes (ui_error_message_<code>: 211 codes in Alpha 4.10.2, 183 with a real message, the rest developer placeholders) and of the curated in-game messages and hints on SCH's error-codes page is quoted verbatim from the game's English localization file for the current build.",
       "status": "verified",
       "sources": [
-        "\"Star Citizen game files (CIG): Data.p4k → Data/Localization/english/global.ini, keys ui_error_message_*, plus the keys listed per message in StarCitizenHelp-live src/data/game-messages.curated.json. Build sc-alpha-4.10.2 (2026-10-12). Extracted with sc-portfolio tools/datacore/cli.py extract + tools/messages/build_messages.py.\""
+        "Star Citizen game files (CIG): Data.p4k → Data/Localization/english/global.ini, keys ui_error_message_*, plus the keys listed per message in StarCitizenHelp-live src/data/game-messages.curated.json. Build sc-alpha-4.10.2 (2026-10-12). Extracted with sc-portfolio tools/datacore/cli.py extract + tools/messages/build_messages.py."
       ],
       "lastVerified": "2026-10-14"
     },
