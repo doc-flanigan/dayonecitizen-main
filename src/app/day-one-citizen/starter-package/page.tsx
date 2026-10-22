@@ -13,7 +13,7 @@ import PageSources from '@/components/PageSources'
 import SourceLink from '@/components/SourceLink'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Flight Pack: What You Get (2026)',
+  title: 'Star Citizen First Flight Pack (2026)',
   description:
     'RSI now sells one Star Citizen starter package, the First Flight Pack: $60, often on sale for $45. See what is in it and the three loaner ships.',
   alternates: {

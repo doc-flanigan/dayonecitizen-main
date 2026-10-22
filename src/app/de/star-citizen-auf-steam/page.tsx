@@ -12,7 +12,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Ist Star Citizen auf Steam? (PS5, Xbox?)',
   description:
-    'Nein — Star Citizen gibt es nicht auf Steam, PS5, Xbox oder im Game Pass. Es läuft nur auf Windows-PC, direkt über robertsspaceindustries.com. Squadron 42 hat eine Steam-Wunschliste.',
+    'Nein — Star Citizen gibt es nicht auf Steam, PS5, Xbox oder im Game Pass. Es läuft nur auf Windows-PC, direkt über robertsspaceindustries.com.',
   alternates: {
     canonical: '/de/star-citizen-auf-steam',
     languages: {

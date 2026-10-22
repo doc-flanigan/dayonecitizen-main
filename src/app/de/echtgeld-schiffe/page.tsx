@@ -12,7 +12,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen Schiffe für Echtgeld? Nein.',
   description:
-    'Nein — das First Flight Pack für 60 US-Dollar (zeitweise reduziert auf 45) ist der einzige nötige Kauf. Alle Schiffe können im Spiel erspielt werden. Plus: die ehrliche Pay-to-win-Antwort.',
+    'Nein — das First Flight Pack für 60 US-Dollar (zeitweise 45) ist der einzige nötige Kauf. Alle anderen Schiffe kannst du im Spiel erspielen. Ehrlich erklärt.',
   alternates: {
     canonical: '/de/echtgeld-schiffe',
     languages: {

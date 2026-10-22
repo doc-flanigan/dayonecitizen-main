@@ -13,7 +13,7 @@ import SourceLink from '@/components/SourceLink'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Ship: The Aurora Mk II and Three Loaners',
+  title: 'Star Citizen First Ship: The Aurora Mk II',
   description:
     'Your first ship in Star Citizen is the Aurora Mk II from the First Flight Pack ($60, often $45 on sale). Plus three 30-day loaners to try mining, salvage and cargo.',
   alternates: { canonical: '/day-one-citizen/first-ship' },

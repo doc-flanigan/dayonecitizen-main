@@ -9,9 +9,9 @@ import MehrAufDeutsch from '@/components/de/MehrAufDeutsch'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Star Citizen First Flight Pack: Das Starterpaket (2026)',
+  title: 'Star Citizen Starterpaket (2026)',
   description:
-    'RSI verkauft jetzt nur noch ein Starterpaket: das First Flight Pack — 60 US-Dollar Listenpreis, zeitweise 45 im Angebot. Das steckt drin, plus drei Leihschiffe zum Ausprobieren.',
+    'RSI verkauft nur noch ein Starterpaket: das First Flight Pack, 60 US-Dollar Listenpreis, zeitweise 45 im Angebot. Das steckt drin, plus drei Leihschiffe.',
   alternates: {
     canonical: '/de/starterpaket',
     languages: {

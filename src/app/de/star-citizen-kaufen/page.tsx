@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen kaufen 2026 — Preis & Tipps',
   description:
-    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com — das First Flight Pack: 60 US-Dollar Listenpreis, zeitweise 45 im Angebot. Keine Keys, kein Steam für Star Citizen. So kaufst du es Schritt für Schritt.',
+    'Star Citizen gibt es nur direkt bei robertsspaceindustries.com: das First Flight Pack, 60 US-Dollar, zeitweise 45. Keine Keys, kein Steam. So kaufst du es.',
   alternates: {
     canonical: '/de/star-citizen-kaufen',
     languages: {

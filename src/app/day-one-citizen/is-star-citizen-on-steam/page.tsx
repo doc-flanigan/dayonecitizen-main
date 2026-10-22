@@ -14,7 +14,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Is Star Citizen on Steam? Where to Get It',
   description:
-    'Star Citizen is not on Steam, PS5, Xbox, or Game Pass. It is sold only at robertsspaceindustries.com. Squadron 42, the separate single-player game, has a Steam wishlist page.',
+    'Star Citizen is not on Steam, PS5, Xbox, or Game Pass. It is sold only at robertsspaceindustries.com. Squadron 42, the single-player game, has a Steam page.',
   alternates: {
     canonical: '/day-one-citizen/is-star-citizen-on-steam',
     languages: {

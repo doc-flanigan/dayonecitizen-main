@@ -13,7 +13,7 @@ import { SITE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Star Citizen Ships — Real Money Optional',
   description:
-    'No — one game package, the First Flight Pack ($60 list, often $45 on sale), is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC. Here is how that works.',
+    'No. The First Flight Pack ($60 list, often $45 on sale) is the only required purchase in Star Citizen. Every other ship can be earned in-game with aUEC.',
   alternates: {
     canonical: '/day-one-citizen/ships-real-money',
     languages: {
