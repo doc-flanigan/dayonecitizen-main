@@ -118,27 +118,33 @@ export default function NavBar() {
                     className={`transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}
                   />
                 </button>
-                {expanded ? (
-                  <div id={panelId} className={`absolute top-full z-50 pt-2 ${alignRight ? 'right-0' : 'left-0'}`}>
-                    <ul className="w-72 rounded-2xl border border-gold/15 bg-navy/95 p-2 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)] backdrop-blur-xl">
-                      {group.items.map((item) => (
-                        <li key={item.href}>
-                          <Link
-                            href={item.href}
-                            className={`block rounded-xl px-4 py-2.5 transition-colors hover:bg-navyLight/80 ${
-                              isActive(item.href) ? 'text-gold' : 'text-starwhite'
-                            }`}
-                          >
-                            <span className="block text-sm font-semibold">{item.label}</span>
-                            {item.note ? (
-                              <span className="mt-0.5 block text-xs text-muted">{item.note}</span>
-                            ) : null}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
+                {/* Always rendered, hidden with CSS when closed: crawlers only
+                    follow links that are in the server HTML, and a conditional
+                    mount kept every Guides/Reference link out of it. */}
+                <div
+                  id={panelId}
+                  className={`absolute top-full z-50 pt-2 ${alignRight ? 'right-0' : 'left-0'} ${
+                    expanded ? '' : 'hidden'
+                  }`}
+                >
+                  <ul className="w-72 rounded-2xl border border-gold/15 bg-navy/95 p-2 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)] backdrop-blur-xl">
+                    {group.items.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          className={`block rounded-xl px-4 py-2.5 transition-colors hover:bg-navyLight/80 ${
+                            isActive(item.href) ? 'text-gold' : 'text-starwhite'
+                          }`}
+                        >
+                          <span className="block text-sm font-semibold">{item.label}</span>
+                          {item.note ? (
+                            <span className="mt-0.5 block text-xs text-muted">{item.note}</span>
+                          ) : null}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </li>
             )
           })}

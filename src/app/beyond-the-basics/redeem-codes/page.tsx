@@ -7,6 +7,7 @@ import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import RelatedGuides from '@/components/RelatedGuides'
 
 // Title test (2026-10): leads with the one code that works for every NEW
 // account (signup only — never say it "always works"). `absolute` skips the
@@ -270,6 +271,8 @@ export default function RedeemCodesPage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides current="redeem-codes" />
 
         {/* CTA */}
         <section className="py-14 bg-navyLight border-t border-white/5">
