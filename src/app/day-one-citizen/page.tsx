@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/Link'
 import { Compass, ArrowRight } from 'lucide-react'
 import { DAY_ONE_STEPS } from '@/data/day-one-steps'
 import NavBar from '@/components/NavBar'

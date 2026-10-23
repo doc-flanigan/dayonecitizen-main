@@ -2,10 +2,14 @@
 
 import { useEffect } from 'react'
 
-// Next's default error shell renders as an indexable 200 with generic text.
-// Google has clustered shells like that with spam sites and given our URL's
-// canonical to them. This page keeps any failed render out of the index:
-// Google's renderer runs JS and honors a robots meta added at runtime.
+// Shown when a page segment throws on the client. On this site the realistic
+// trigger is Google's renderer skipping a JS chunk (URL Inspection 2026-10-22:
+// ChunkLoadError + React #423 on /day-one-citizen/first-flight), not a broken
+// page: the server HTML was fine. So this page must NOT add noindex. An
+// earlier version did, and Google rejected Request Indexing for a healthy
+// page. The root layout (and its canonical tag) stays mounted around this
+// component, and middleware sends a canonical Link header, so a failed render
+// can no longer be clustered under another site's URL.
 export default function Error({
   error,
   reset,
@@ -14,14 +18,6 @@ export default function Error({
   reset: () => void
 }) {
   useEffect(() => {
-    if (!document.querySelector('meta[name="robots"]')) {
-      const meta = document.createElement('meta')
-      meta.name = 'robots'
-      meta.content = 'noindex'
-      document.head.appendChild(meta)
-    }
-    document.title = 'Temporary error — dayonecitizen.com'
-
     if (process.env.NODE_ENV === 'development') {
       console.error(error)
     }

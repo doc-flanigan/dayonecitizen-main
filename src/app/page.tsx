@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/Link'
 import type { ReactNode } from 'react'
 import Image from 'next/image'
 import { ArrowRight, Rocket, Coins, Globe2, Check, X } from 'lucide-react'

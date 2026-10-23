@@ -3,8 +3,25 @@
 import { useEffect } from 'react'
 import './globals.css'
 
-// Same reasoning as app/error.tsx, for a failure in the root layout itself:
-// a broken render must never be indexed or clustered with spam soft-404 pages.
+// Replaces the whole document when the root layout itself fails on the
+// client. Because it replaces <head> too, it re-emits the page's canonical:
+// pages indexed from this state previously showed "User-declared canonical:
+// None", which is how Google came to give our URLs to other sites. No
+// noindex, for the same reason as app/error.tsx: the trigger is Google's
+// renderer skipping a chunk, not a broken page.
+//
+// Canonical convention matches page metadata and middleware: apex host, no
+// trailing slash, homepage as the bare origin.
+const CANONICAL_HOST = 'https://dayonecitizen.com'
+const CROSS_DOMAIN_CANONICAL = new Set(['/day-one-citizen/keybinds'])
+
+function selfCanonical(): string | null {
+  if (typeof window === 'undefined') return null
+  const path = window.location.pathname.replace(/\/+$/, '')
+  if (CROSS_DOMAIN_CANONICAL.has(path)) return null
+  return `${CANONICAL_HOST}${path}`
+}
+
 export default function GlobalError({
   error,
   reset,
@@ -13,24 +30,18 @@ export default function GlobalError({
   reset: () => void
 }) {
   useEffect(() => {
-    if (!document.querySelector('meta[name="robots"]')) {
-      const meta = document.createElement('meta')
-      meta.name = 'robots'
-      meta.content = 'noindex'
-      document.head.appendChild(meta)
-    }
-    document.title = 'Temporary error — dayonecitizen.com'
-
     if (process.env.NODE_ENV === 'development') {
       console.error(error)
     }
   }, [error])
 
+  const canonical = selfCanonical()
+
   return (
     <html lang="en">
       <head>
-        <meta name="robots" content="noindex" />
         <title>Temporary error — dayonecitizen.com</title>
+        {canonical ? <link rel="canonical" href={canonical} /> : null}
       </head>
       <body className="bg-navy text-starwhite antialiased">
         <main className="container-wide flex min-h-[70vh] flex-col items-center justify-center py-24 text-center">
