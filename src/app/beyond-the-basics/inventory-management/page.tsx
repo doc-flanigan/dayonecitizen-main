@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import RelatedGuides from '@/components/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Inventory Guide (2026)',
@@ -319,6 +320,8 @@ export default function InventoryManagementPage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides current="inventory-management" />
 
         {/* CTA */}
         <section className="py-14 bg-navyLight border-t border-white/5">

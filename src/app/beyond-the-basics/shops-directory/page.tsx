@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import RelatedGuides from '@/components/RelatedGuides'
 import PageSources from '@/components/PageSources'
 
 export const metadata: Metadata = {
@@ -366,6 +367,8 @@ export default function ShopsDirectoryPage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides current="shops-directory" />
 
         {/* CTA */}
         <section className="py-14 bg-navyLight border-t border-white/5">

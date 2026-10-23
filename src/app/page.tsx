@@ -10,6 +10,27 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import { HERO_IMAGES, SITE } from '@/lib/site'
 import { DAY_ONE_STEPS, HOME_PATH_SLUGS } from '@/data/day-one-steps'
+import { BEYOND_THE_BASICS_GUIDES } from '@/data/beyond-the-basics'
+
+// Day One pages outside the twelve numbered sections.
+const DAY_ONE_EXTRAS = [
+  { href: '/day-one-citizen/first-ship', label: 'Your first ship: the Aurora Mk II' },
+  { href: '/day-one-citizen/ships-real-money', label: 'Do you have to buy ships with real money?' },
+  { href: '/day-one-citizen/is-star-citizen-on-steam', label: 'Is Star Citizen on Steam?' },
+  { href: '/day-one-citizen/next-wipe', label: 'When is the next wipe?' },
+]
+
+const REFERENCE_PAGES = [
+  { href: '/glossary', label: 'Glossary: every term in plain English' },
+  { href: '/quick-reference', label: 'Quick reference card' },
+  { href: '/free-fly-events', label: 'Free Fly events: play before you buy' },
+  { href: '/referral-code', label: 'Referral code: 50,000 bonus credits' },
+  { href: '/tools', label: 'Tools' },
+  { href: '/beyond-the-basics/ccu-chains', label: 'Cheaper ship upgrades, step by step' },
+  { href: '/report-a-bug', label: 'How to report a bug' },
+  { href: '/fact-check', label: 'Fact check' },
+  { href: '/about', label: 'About this site' },
+]
 
 // One still image, not a carousel: the hero's only job is to hand a new
 // visitor to the guide. (The 18-slide carousel was retired 2026-10-02.)
@@ -347,6 +368,83 @@ export default function Home() {
                   </Link>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Every guide — one plain link to each guide page, so the homepage
+            hands search engines the whole site, not just the six-step path. */}
+        <section
+          aria-labelledby="every-guide"
+          className="relative border-t border-white/5 bg-navy py-20 sm:py-24"
+        >
+          <div className="container-wide">
+            <div className="mb-10 max-w-2xl">
+              <p className="eyebrow mb-4">Every guide</p>
+              <h2 id="every-guide" className="heading-display text-3xl sm:text-4xl">
+                Everything on the site, in one place.
+              </h2>
+            </div>
+            <div className="grid gap-10 md:grid-cols-3">
+              <nav aria-label="Day One guide sections">
+                <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                  <Link href="/day-one-citizen" className="hover:text-ember">
+                    The Day One guide
+                  </Link>
+                </h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                  {DAY_ONE_STEPS.map((step) => (
+                    <li key={step.slug}>
+                      <Link
+                        href={`/day-one-citizen/${step.slug}`}
+                        className="text-starwhite/85 hover:text-gold"
+                      >
+                        <span className="font-mono text-muted">{step.number}</span> {step.title}
+                      </Link>
+                    </li>
+                  ))}
+                  {DAY_ONE_EXTRAS.map((page) => (
+                    <li key={page.href}>
+                      <Link href={page.href} className="text-starwhite/85 hover:text-gold">
+                        {page.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <nav aria-label="Beyond the Basics guides">
+                <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                  <Link href="/beyond-the-basics" className="hover:text-ember">
+                    Beyond the Basics
+                  </Link>
+                </h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                  {BEYOND_THE_BASICS_GUIDES.map((guide) => (
+                    <li key={guide.slug}>
+                      <Link
+                        href={`/beyond-the-basics/${guide.slug}`}
+                        className="text-starwhite/85 hover:text-gold"
+                      >
+                        {guide.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+              <nav aria-label="Reference pages">
+                <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                  Reference
+                </h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                  {REFERENCE_PAGES.map((page) => (
+                    <li key={page.href}>
+                      <Link href={page.href} className="text-starwhite/85 hover:text-gold">
+                        {page.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             </div>
           </div>
         </section>

@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import { ArrowRight } from 'lucide-react'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { BEYOND_THE_BASICS_GUIDES } from '@/data/beyond-the-basics'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Guides — Beyond the Basics',
@@ -19,57 +20,6 @@ export const metadata: Metadata = {
     url: '/beyond-the-basics',
   },
 }
-
-const guides = [
-  {
-    slug: 'quantum-travel',
-    title: 'How to Quantum Travel',
-    description:
-      'Hold B for NAV mode, middle-click for QT mode, then let the drive auto-calibrate before you jump. Every step explained — plus the Starmap, fuel, and interdiction.',
-  },
-  {
-    slug: 'adding-friends',
-    title: 'How to Add Friends',
-    description:
-      'Four ways to add friends in Star Citizen — via the RSI website, the main menu, your mobiGlas, and by walking up to someone in the world.',
-  },
-  {
-    slug: 'food-drink-survival',
-    title: 'Food, Drink & Survival',
-    description:
-      'Your character gets hungry and thirsty. Here is what the meters mean, what happens when they run low, and how food and drink ratings work.',
-  },
-  {
-    slug: 'party-management',
-    title: 'Creating and Managing a Party',
-    description:
-      'How to invite friends into a party, get everyone onto the same server, share mission objectives, and crew a multi-crew ship together.',
-  },
-  {
-    slug: 'shops-directory',
-    title: 'In-Game Shops Directory',
-    description:
-      'Where to buy weapons, armor, ship parts, and food in New Babbage, Area18, and Lorville — plus tips for getting the best prices.',
-  },
-  {
-    slug: 'ship-equipment',
-    title: 'Ship Equipment & Components',
-    description:
-      'Power plants, coolers, shields, weapons — what each component does, how grades affect your radar signature, and how to swap parts at a ship terminal.',
-  },
-  {
-    slug: 'inventory-management',
-    title: 'Managing Your Inventory',
-    description:
-      'Personal inventory, ship cargo hold, and local storage — how to move items between them, what persists between sessions, and why you should unload before an insurance claim.',
-  },
-  {
-    slug: 'redeem-codes',
-    title: 'Redeem Codes & Referral Codes',
-    description:
-      'The codes that actually work in Star Citizen — where to enter a referral code for 50,000 UEC, how promo codes work, and how to spot the fake code lists.',
-  },
-]
 
 export default function BeyondTheBasicsPage() {
   return (
@@ -102,7 +52,7 @@ export default function BeyondTheBasicsPage() {
         <section className="py-16">
           <div className="container-wide px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {guides.map((guide) => (
+              {BEYOND_THE_BASICS_GUIDES.map((guide) => (
                 <Link
                   key={guide.slug}
                   href={`/beyond-the-basics/${guide.slug}`}

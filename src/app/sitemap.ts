@@ -1,8 +1,17 @@
 import type { MetadataRoute } from 'next'
 import { SITE } from '@/lib/site'
+import { DAY_ONE_STEPS } from '@/data/day-one-steps'
+import { GUIDE_VERIFICATION } from '@/data/guide-verification'
+
+// Only pages with a real, known last-checked date carry <lastmod>. Stamping
+// every URL with the build time told Google all pages changed on every
+// deploy, which teaches it to ignore lastmod for the whole site.
+const VERIFIED_ROUTES = new Set([
+  '/day-one-citizen',
+  ...DAY_ONE_STEPS.map((s) => `/day-one-citizen/${s.slug}`),
+])
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
   const routes = [
     { url: '/', changeFrequency: 'weekly', priority: 1.0 },
     { url: '/day-one-citizen', changeFrequency: 'monthly', priority: 0.95 },
@@ -54,7 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((r) => ({
     url: `${SITE.url}${r.url}`,
-    lastModified: now,
+    ...(VERIFIED_ROUTES.has(r.url) ? { lastModified: GUIDE_VERIFICATION.checkedOn } : {}),
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }))
