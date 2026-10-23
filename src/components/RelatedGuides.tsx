@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/Link'
 import { ArrowRight } from 'lucide-react'
 import { BEYOND_THE_BASICS_GUIDES } from '@/data/beyond-the-basics'
 

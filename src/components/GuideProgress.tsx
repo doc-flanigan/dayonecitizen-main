@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/Link'
 import { ArrowRight } from 'lucide-react'
 import { DAY_ONE_STEPS, getStep } from '@/data/day-one-steps'
 import { GUIDE_VERIFICATION } from '@/data/guide-verification'

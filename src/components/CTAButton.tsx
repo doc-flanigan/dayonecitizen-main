@@ -1,6 +1,6 @@
 ﻿'use client'
 import { useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
+import Link from '@/components/Link'
 import { ArrowUpRight } from 'lucide-react'
 import { SITE } from '@/lib/site'
 import { getRotatedReferralUrl, FALLBACK_REFERRAL_URL } from '@/lib/referral-rotator'

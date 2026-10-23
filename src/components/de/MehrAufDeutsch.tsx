@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/Link'
 
 /**
  * Cross-link block for the German pilot pages ("Mehr auf Deutsch").
