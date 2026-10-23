@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import RelatedGuides from '@/components/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'How to Form a Party in Star Citizen (2026)',
@@ -306,6 +307,8 @@ export default function PartyManagementPage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides current="party-management" />
 
         {/* CTA */}
         <section className="py-14 bg-navyLight border-t border-white/5">

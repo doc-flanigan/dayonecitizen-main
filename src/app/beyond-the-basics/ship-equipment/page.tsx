@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import RelatedGuides from '@/components/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Ship Equipment Guide (2026)',
@@ -385,6 +386,8 @@ export default function ShipEquipmentPage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides current="ship-equipment" />
 
         {/* CTA */}
         <section className="py-14 bg-navyLight border-t border-white/5">

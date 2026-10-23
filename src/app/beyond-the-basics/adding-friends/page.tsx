@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import RelatedGuides from '@/components/RelatedGuides'
 
 export const metadata: Metadata = {
   title: 'How to Add Friends in Star Citizen (2026 Guide)',
@@ -405,6 +406,8 @@ export default function AddingFriendsPage() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides current="adding-friends" />
 
         {/* CTA */}
         <section className="py-14 bg-navyLight border-t border-white/5">

@@ -56,6 +56,15 @@ export function GuideProgress({ slug }: { slug: string }) {
         Checked against the current game version, Alpha {GUIDE_VERIFICATION.version}, on{' '}
         <time dateTime={GUIDE_VERIFICATION.checkedOn}>{checkedOnLabel}</time>
       </p>
+      {/* Text links to both hubs: the strip's bars carry no anchor text. */}
+      <p className="mt-1 flex flex-wrap gap-x-4 font-mono text-xs">
+        <Link href="/day-one-citizen" className="text-muted hover:text-gold">
+          All twelve sections
+        </Link>
+        <Link href="/beyond-the-basics" className="text-muted hover:text-gold">
+          After day one: Beyond the Basics
+        </Link>
+      </p>
     </div>
   )
 }

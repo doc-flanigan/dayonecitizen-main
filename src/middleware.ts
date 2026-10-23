@@ -29,7 +29,36 @@ const AI_BOTS: Array<[RegExp, string]> = [
   [/Applebot-Extended/i, 'applebot-extended'],
 ]
 
+// Header-level canonical alongside the <link rel="canonical"> tags from page
+// metadata. If a page fails client-side, the on-page tag can be lost; Google
+// has then clustered the broken shell with spam sites and handed our URL to
+// them (747live family on /de/auf-deutsch, marcustheatres.com on
+// /day-one-citizen/first-flight as of 2026-10-22). The same fix has been live
+// on iheldtheline and freeflyevent since 2026-08-26.
+//
+// Matches page metadata exactly: apex host, no trailing slash, homepage as the
+// bare origin. Pages whose metadata canonical points elsewhere are skipped so
+// the header never contradicts the tag.
+const CANONICAL_HOST = 'https://dayonecitizen.com'
+const CROSS_DOMAIN_CANONICAL = new Set(['/day-one-citizen/keybinds'])
+
 export function middleware(req: NextRequest, event: NextFetchEvent) {
+  const response = NextResponse.next()
+  const { pathname } = req.nextUrl
+
+  const isHtmlRoute =
+    req.method === 'GET' &&
+    !pathname.startsWith('/api/') &&
+    !pathname.startsWith('/_next/') &&
+    !/\.[^/]+$/.test(pathname)
+
+  if (isHtmlRoute) {
+    const canonicalPath = pathname === '/' ? '' : pathname.replace(/\/+$/, '')
+    if (!CROSS_DOMAIN_CANONICAL.has(canonicalPath)) {
+      response.headers.set('Link', `<${CANONICAL_HOST}${canonicalPath}>; rel="canonical"`)
+    }
+  }
+
   const ua = req.headers.get('user-agent') ?? ''
   const hit = AI_BOTS.find(([re]) => re.test(ua))
   const sheetUrl = process.env.CLICK_TRACKER_SHEET_URL
@@ -58,7 +87,7 @@ export function middleware(req: NextRequest, event: NextFetchEvent) {
     )
   }
 
-  return NextResponse.next()
+  return response
 }
 
 // Pages, llms.txt, robots.txt, and sitemaps — the fetches that mean an AI is
