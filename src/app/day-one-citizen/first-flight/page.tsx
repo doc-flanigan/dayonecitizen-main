@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from '@/components/Link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -161,6 +162,18 @@ export default function FirstFlightPage() {
                   to accelerate. Move the mouse to pitch and yaw.
                 </li>
               </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/first-flight-hangar-exit.webp"
+                  alt="Lining up a ship with the hangar exit at low speed"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  Lined up with the hangar exit at low speed — the door frame is unforgiving at higher speed.
+                </figcaption>
+              </figure>
             </div>
           </section>
 
@@ -232,6 +245,20 @@ export default function FirstFlightPage() {
                   <strong className="text-starwhite">Route to this Location</strong>. Close{' '}
                   <Term name="mobiGlas">mobiGlas</Term>.
                 </li>
+              </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/first-flight-starmap-select-destination.webp"
+                  alt="Starmap with a destination selected for quantum travel"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  Picking a destination and route on the starmap before spooling the quantum drive.
+                </figcaption>
+              </figure>
+              <ol className="list-decimal space-y-4 pl-6" start={2}>
                 <li>
                   <strong className="text-starwhite">Switch to NAV mode</strong> — hold{' '}
                   <kbd className="rounded border border-white/20 bg-navyLight px-2 py-0.5 font-mono text-sm text-gold">B</kbd>{' '}
@@ -258,6 +285,18 @@ export default function FirstFlightPage() {
                   decelerates to normal speed.
                 </li>
               </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/first-flight-qt-hud.webp"
+                  alt="HUD showing quantum travel mode with the drive calibrating"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  NAV mode switched to QT, with the quantum drive calibrating toward the destination.
+                </figcaption>
+              </figure>
               <p>
                 If the quantum drive will not spool, check: do you have
                 a destination selected? Are you in a quantum-safe area (not inside a hangar or

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from '@/components/Link'
 import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -291,6 +292,18 @@ export default function ShopsDirectoryPage() {
                 wasting a trip.
               </li>
             </ul>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/shops-kiosk-ui.webp"
+                alt="In-game shop kiosk showing item prices"
+                width={1920}
+                height={804}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                A shop kiosk price grid — this is what you are comparing across stations.
+              </figcaption>
+            </figure>
 
             {/* FAQ */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-6">

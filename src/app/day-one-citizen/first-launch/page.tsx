@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from '@/components/Link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -162,6 +163,18 @@ export default function FirstLaunchPage() {
                 point unless you change it — you will return here if your character is killed
                 and has no active medical beacon.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/first-launch-hab-room.webp"
+                  alt="Interior of a starting hab showing the bed, wardrobe terminal and door"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  A starting hab: bed, storage terminal (wardrobe), and the door out.
+                </figcaption>
+              </figure>
             </div>
           </section>
 

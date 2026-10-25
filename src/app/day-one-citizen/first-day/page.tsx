@@ -400,6 +400,18 @@ export default function FirstDayPage() {
                       landing zone you flew to that has hab facilities. RSI&rsquo;s known
                       issues note many players hit the 30,000 error after logging out in a ship bed.
                     </p>
+                    <figure className="overflow-hidden rounded-2xl border border-white/10">
+                      <Image
+                        src="/images/guides/first-day-bed-logout.webp"
+                        alt="Interacting with a bed to log out safely"
+                        width={1920}
+                        height={804}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                        Interact with a bed and choose the log out option for a clean bedlog.
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>

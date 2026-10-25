@@ -206,14 +206,14 @@ export default function FirstShipPage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <figure className="overflow-hidden rounded-2xl border border-white/10">
                   <Image
-                    src="/images/ships/aurora-mr.jpg"
-                    alt="The RSI Aurora MR starter ship."
-                    width={1820}
-                    height={1024}
+                    src="/images/ships/aurora-mk2.webp"
+                    alt="Aurora Mk II parked on a landing pad"
+                    width={1920}
+                    height={804}
                     className="h-auto w-full"
                   />
                   <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                    The RSI Aurora — the practical starter.
+                    The RSI Aurora Mk II — the practical starter.
                   </figcaption>
                 </figure>
                 <figure className="overflow-hidden rounded-2xl border border-white/10">
