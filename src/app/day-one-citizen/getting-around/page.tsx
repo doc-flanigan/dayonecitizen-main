@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from '@/components/Link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -111,6 +112,19 @@ export default function GettingAroundPage() {
             RSI&rsquo;s own &ldquo;Now Leaving&rdquo; guide for that city, linked in its section.
           </div>
 
+          <figure className="overflow-hidden rounded-2xl border border-white/10">
+            <Image
+              src="/images/guides/getting-around-interact-highlight.webp"
+              alt="Holding the interact key highlights usable doors and panels in green"
+              width={1920}
+              height={804}
+              className="h-auto w-full"
+            />
+            <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+              Hold F and every usable door, panel, or elevator nearby lights up in green.
+            </figcaption>
+          </figure>
+
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
               <Term name="Lorville">Lorville</Term> &mdash; <Term name="Hurston">Hurston</Term>
@@ -136,10 +150,38 @@ export default function GettingAroundPage() {
                   loops, so get off at the <strong className="text-starwhite">first stop</strong>.
                   Trains arrive often, so a missed one is no trouble.
                 </li>
+              </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-around-lorville-metro.webp"
+                  alt="Lorville Metro Center platform with an arriving train"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  Metro Center, Lorville — ride the Spaceport Line and get off at the first stop.
+                </figcaption>
+              </figure>
+              <ol className="list-decimal space-y-4 pl-6" start={4}>
                 <li>
                   Leave the platform, head left, and go through the Customs Area. Then climb
                   the steps to the terminal.
                 </li>
+              </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-around-lorville-customs.webp"
+                  alt="Lorville Customs Area leading up to Teasa Spaceport terminal"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The Customs Area walk-through on the way up to the Teasa Spaceport terminal.
+                </figcaption>
+              </figure>
+              <ol className="list-decimal space-y-4 pl-6" start={5}>
                 <li>
                   At the top, the Vehicle Retrieval Consoles are on your left. These are the{' '}
                   <Term name="ASOP">ASOP terminals</Term>. Choose your ship, select Deliver,
@@ -150,6 +192,18 @@ export default function GettingAroundPage() {
                   assigned hangar, and your ship is waiting when the doors open.
                 </li>
               </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-around-hangar-elevator.webp"
+                  alt="Hangar elevator panel with the assigned hangar selected"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  A hangar elevator panel — the same pattern at every spaceport, in every city.
+                </figcaption>
+              </figure>
               <p className="mt-4 text-sm text-muted">
                 Known issue in Alpha 4.10.2: on the Metro Center to Teasa Spaceport tram, the
                 doors can spin and throw you out of the tram, which may kill you. RSI says to
