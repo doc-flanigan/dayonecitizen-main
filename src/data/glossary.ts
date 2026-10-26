@@ -320,6 +320,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "A Xi'an ship manufacturer that produces the Syulen — one of the few alien-made ships new players can fly. Xi'an engineering means unusual controls and exotic aesthetics.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Kruger Intergalactic',
@@ -434,6 +435,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Anvil's iconic light fighter — the F7C series. Variants include the F7A military, F7C-M (gimbaled), F7C-R (recon), and the wider F7-Mk II refresh. The 'workhorse' fighter.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Gladius',
@@ -474,7 +476,8 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Freelancer',
     category: 'Ships',
     definition:
-      "MISC's medium freighter — DUR (explorer), MAX (cargo), MIS (combat), MAA (PvP). Popular trader ship for solo and small crews.",
+      "MISC's medium freighter — DUR (explorer), MAX (cargo), MIS (combat). Popular trader ship for solo and small crews.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Constellation',
@@ -502,6 +505,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aegis heavy gunship — six manned turrets, designed to anchor a fleet against fighter swarms. Anti-snub specialist.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Polaris',
@@ -514,12 +518,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aegis frigate — large multi-crew capital with a railgun, hangar, multiple decks. Long-promised for player ownership; very expensive when it appears.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Javelin',
     category: 'Ships',
     definition:
       "Aegis destroyer — bigger than the Idris, requires a full org to crew. Sold during anniversary sales as a rare backer pledge.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Bengal',
@@ -533,6 +539,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "MISC's modular cargo hauler line, from Hull A through Hull E. The biggest dedicated freighters in the game when fully loaded.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Reclaimer',
@@ -811,13 +818,15 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Golem',
     category: 'Ships',
     definition:
-      "Drake salvage ship that sits between the solo Vulture and the large Reclaimer. Built for small-crew salvage operations — stripping wrecks and collecting hull material for profit.",
+      "Drake mining ship designed as an entry-level option for solo miners or small crews. Carries a single mining laser for extracting ore from asteroids and surfaces.",
+    lastVerified: '2026-10-26',
   },
   {
     term: 'Herald',
     category: 'Ships',
     definition:
       "Drake data runner built entirely around fast information transport and electronic security. Bullet-shaped, very fast, used by hackers and smugglers who carry data rather than cargo.",
+    lastVerified: '2026-10-26',
   },
 
   // ─────────────── Ships — Esperia ───────────────
@@ -840,6 +849,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aopoa/Esperia Xi'an-designed light fighter that maneuvers unlike anything humans build — it can rotate its engines independently, making it extremely agile. Harder to fly but devastating in skilled hands.",
+    lastVerified: '2026-10-26',
   },
   {
     term: "San'tok.yai",
