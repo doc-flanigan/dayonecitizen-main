@@ -135,6 +135,13 @@ const TOOLS: Tool[] = [
     category: 'Exploration & Mining',
   },
   {
+    name: 'SCORG',
+    description:
+      'Free tools for mining, salvage, and fuel. See where each ore can be found, compare live fuel prices by location, and find the terminal that pays the most for salvage. A free account adds tools for running a player group and planning a fleet.',
+    url: 'https://www.scorg.org/',
+    category: 'Exploration & Mining',
+  },
+  {
     name: 'Cornerstone Item Finder',
     description:
       "Can't find a specific helmet, weapon, or ship component in-game? Cornerstone shows every shop that stocks it, with current prices. Saves hours of running between vendors.",
