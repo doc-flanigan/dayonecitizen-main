@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Bricolage_Grotesque, Instrument_Sans, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { SITE } from '@/lib/site'
 import FreeFlyStatusProvider from '@/components/FreeFlyStatusProvider'
 import OutboundLinkTracker from '@/components/OutboundLinkTracker'
@@ -164,6 +165,7 @@ export default function RootLayout({
           {children}
         </FreeFlyStatusProvider>
         <Analytics />
+        <SpeedInsights />
         <OutboundLinkTracker />
         <script
           type="application/ld+json"
