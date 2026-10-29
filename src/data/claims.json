@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22",
+  "generated": "2026-10-29",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -534,6 +534,28 @@
         "https://robertsspaceindustries.com/en/funding-goals"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "galaxy-arrives-iae-2956",
+      "claim": "CIG has said the RSI Galaxy will arrive at this year's Intergalactic Aerospace Expo (IAE 2956).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21276-RSI-Discovery-Month-Digital-Goodies-Pack",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21350-FAQ-RSI-Discovery-Month"
+      ],
+      "lastVerified": "2026-10-29"
+    },
+    {
+      "id": "galaxy-base-building-module",
+      "claim": "CIG has committed to a large base-building drone module for the RSI Galaxy. As of October 2024 it was not in active development, and the Galaxy will not be the first ship to build large structures when base building launches — it is meant to follow soon after.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/update-on-galaxy-s-base-building-capabilities/7332344",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/galaxy-clarification/7328459",
+        "https://www.youtube.com/watch?v=RJUMsq_Bdt0",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/18836-RSI-Galaxy"
+      ],
+      "lastVerified": "2026-10-29"
     },
     {
       "id": "game-messages-official-wording",
