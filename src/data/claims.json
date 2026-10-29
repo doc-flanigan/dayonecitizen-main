@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22",
+  "generated": "2026-10-29",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -534,6 +534,28 @@
         "https://robertsspaceindustries.com/en/funding-goals"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "galaxy-arrives-iae-2956",
+      "claim": "CIG has said the RSI Galaxy will arrive at this year's Intergalactic Aerospace Expo (IAE 2956).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21276-RSI-Discovery-Month-Digital-Goodies-Pack",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21350-FAQ-RSI-Discovery-Month"
+      ],
+      "lastVerified": "2026-10-29"
+    },
+    {
+      "id": "galaxy-base-building-module",
+      "claim": "CIG has committed to a large base-building drone module for the RSI Galaxy. As of October 2024 it was not in active development, and the Galaxy will not be the first ship to build large structures when base building launches — it is meant to follow soon after.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/update-on-galaxy-s-base-building-capabilities/7332344",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/galaxy-clarification/7328459",
+        "https://www.youtube.com/watch?v=RJUMsq_Bdt0",
+        "https://robertsspaceindustries.com/en/comm-link/transmission/18836-RSI-Galaxy"
+      ],
+      "lastVerified": "2026-10-29"
     },
     {
       "id": "game-messages-official-wording",
@@ -1231,18 +1253,22 @@
       "claim": "Players can gift pledges between their own RSI accounts using the same gifting restrictions as gifting to other players.",
       "status": "verified",
       "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-29"
     },
     {
       "id": "pledges-giftable-once-per-pledge",
-      "claim": "Game packages and pledge items can be gifted only once per pledge, not once per account.",
+      "claim": "Pledges bought before October 30, 2026 can be gifted once per pledge, not once per account. From October 30, a new pledge can only be gifted if it is marked as a gift at checkout, and a gift pledge can't be used by the buyer. An account's protected Game Access pledge can't be gifted at all.",
       "status": "verified",
       "sources": [
-        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-29"
     },
     {
       "id": "prowler-utility-2year-pledge-300-usd",
