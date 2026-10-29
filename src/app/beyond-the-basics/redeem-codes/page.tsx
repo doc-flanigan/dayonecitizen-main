@@ -147,7 +147,12 @@ export default function RedeemCodesPage() {
               <strong className="text-starwhite">Gift codes</strong> come from a
               game package someone else bought for you. RSI emails the code to the
               recipient, who applies it to their own RSI account through their
-              account settings to add the package.
+              account settings to add the package. From October 30, 2026, the
+              buyer has to choose{' '}
+              <strong className="text-starwhite">Buying as a gift?</strong> at
+              checkout. The buyer can&apos;t use a gift{' '}
+              <Term name="Pledge">pledge</Term> themselves. A package bought from
+              that date for your own account can&apos;t be passed on later.
             </p>
             <p className="text-starwhite/80 mb-8 leading-relaxed">
               <strong className="text-starwhite">Promo codes</strong> are
