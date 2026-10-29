@@ -83,6 +83,16 @@
     ],
     "/beyond-the-basics/redeem-codes": [
       {
+        "id": "pledges-giftable-once-per-pledge",
+        "claim": "Pledges bought before October 30, 2026 can be gifted once per pledge, not once per account. From October 30, a new pledge can only be gifted if it is marked as a gift at checkout, and a gift pledge can't be used by the buyer. An account's protected Game Access pledge can't be gifted at all.",
+        "status": "verified",
+        "sources": [
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs",
+          "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
+          "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
+        ]
+      },
+      {
         "id": "referral-bonus-no-purchase-required",
         "claim": "Claiming the 50,000 UEC enlistment bonus requires no purchase — creating the free RSI account with a referral code is enough; the bonus stays on the account permanently.",
         "status": "verified",
@@ -1408,15 +1418,19 @@
         "claim": "Players can gift pledges between their own RSI accounts using the same gifting restrictions as gifting to other players.",
         "status": "verified",
         "sources": [
-          "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs",
+          "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
+          "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
         ]
       },
       {
         "id": "pledges-giftable-once-per-pledge",
-        "claim": "Game packages and pledge items can be gifted only once per pledge, not once per account.",
+        "claim": "Pledges bought before October 30, 2026 can be gifted once per pledge, not once per account. From October 30, a new pledge can only be gifted if it is marked as a gift at checkout, and a gift pledge can't be used by the buyer. An account's protected Game Access pledge can't be gifted at all.",
         "status": "verified",
         "sources": [
-          "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs",
+          "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
+          "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
         ]
       },
       {
