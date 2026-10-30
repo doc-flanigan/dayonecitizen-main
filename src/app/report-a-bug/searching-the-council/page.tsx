@@ -9,6 +9,7 @@ import SourceLink from '@/components/SourceLink'
 import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Search the Issue Council Before Reporting',
@@ -25,6 +26,18 @@ export const metadata: Metadata = {
   },
 }
 
+// Article structured data — this page had no page-level schema at all.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Searching the Star Citizen Issue Council',
+  description:
+    'Sign in, search for your bug, filter by status, and contribute to an existing report instead of making a duplicate — the step most people skip.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/report-a-bug/searching-the-council`,
+}
+
 export default function SearchingTheCouncilPage() {
   return (
     <>
@@ -39,6 +52,10 @@ export default function SearchingTheCouncilPage() {
               url: '/report-a-bug/searching-the-council',
             },
           ]}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

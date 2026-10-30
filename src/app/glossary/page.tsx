@@ -5,6 +5,7 @@ import PageSources from '@/components/PageSources'
 import GlossaryClient from './GlossaryClient'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { SITE } from '@/lib/site'
+import { GLOSSARY } from '@/data/glossary'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Glossary — Plain English Definitions',
@@ -22,6 +23,25 @@ export const metadata: Metadata = {
   },
 }
 
+// DefinedTermSet is the semantically correct type for a glossary; Article is
+// layered on top since generic crawlers check specifically for it.
+const glossaryJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': ['Article', 'DefinedTermSet'],
+  headline: 'Star Citizen Glossary — Plain English Definitions',
+  description:
+    "Definitions of every Star Citizen term you'll encounter as a new player. Search and filter, A through Z.",
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/glossary`,
+  hasDefinedTerm: GLOSSARY.map((entry) => ({
+    '@type': 'DefinedTerm',
+    name: entry.term,
+    description: entry.definition,
+    inDefinedTermSet: `${SITE.url}/glossary`,
+  })),
+}
+
 export default function GlossaryPage() {
   return (
     <>
@@ -31,6 +51,10 @@ export default function GlossaryPage() {
           { name: 'Home', url: '/' },
           { name: 'Glossary', url: '/glossary' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(glossaryJsonLd) }}
+        />
         <GlossaryClient />
       </main>
       <PageSources route="/glossary" />

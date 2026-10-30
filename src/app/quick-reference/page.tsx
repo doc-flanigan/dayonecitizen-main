@@ -29,6 +29,18 @@ export const metadata: Metadata = {
 // /beyond-the-basics/shops-directory. If a game update changes either, update
 // BOTH pages in the same commit (ledger: keybinds-core-defaults).
 
+// Article structured data — this page had no page-level schema at all.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen Quick Reference — Keybinds & Shops Cheat Sheet',
+  description:
+    'The keybinds you need and the shop that sells what you want, on one fast mobile page. From dayonecitizen.com.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/quick-reference`,
+}
+
 const DAY_ONE_KEYS = [
   { k: 'F', action: 'Interact with doors, terminals, ships, items' },
   { k: 'F1', action: 'Open / close mobiGlas' },
@@ -182,6 +194,10 @@ export default function QuickReferencePage() {
             { name: 'Home', url: '/' },
             { name: 'Quick Reference', url: '/quick-reference' },
           ]}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
 
         {/* Branded masthead — compact so the content is one thumb-scroll away */}

@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Pledge vs Purchase Explained',
@@ -20,6 +21,19 @@ export const metadata: Metadata = {
     url: '/day-one-citizen/pledge-vs-purchase',
     type: 'article',
   },
+}
+
+// Article structured data so this page's own content, not just its FAQ, is
+// recognized as an article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen Pledge vs Purchase Explained',
+  description:
+    'What "pledge" means in Star Citizen, what you actually own, how LTI insurance works, and what melting a ship does.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/day-one-citizen/pledge-vs-purchase`,
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -84,6 +98,10 @@ export default function PledgeVsPurchasePage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

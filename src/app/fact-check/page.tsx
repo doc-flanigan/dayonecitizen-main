@@ -62,6 +62,19 @@ const faqJsonLd = {
   })),
 }
 
+// Article structured data — page already has ClaimReview + FAQPage, but
+// nothing declared the page itself as content.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen Fact Check — Verified Claims With Official Sources',
+  description:
+    'A public ledger of fact-checked Star Citizen claims, each verified against official Cloud Imperium sources. Free for creators to search and cite.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/fact-check`,
+}
+
 const claimReviewJsonLd = claimsData.claims.map((c) => ({
   '@context': 'https://schema.org',
   '@type': 'ClaimReview',
@@ -102,6 +115,10 @@ export default function FactCheckPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

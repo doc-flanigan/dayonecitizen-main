@@ -24,6 +24,27 @@ export const metadata: Metadata = {
   },
 }
 
+// This is a listing page, not an article — CollectionPage/ItemList is the
+// correct type; forcing Article here would be false structured data for a
+// page that's just cards linking to the real guides.
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Star Citizen Guides — Beyond the Basics',
+  description:
+    'Eight plain-English Star Citizen guides for players who have got the basics down: quantum travel, adding friends, food, inventory, and more.',
+  url: `${SITE.url}/beyond-the-basics`,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: BEYOND_THE_BASICS_GUIDES.map((guide, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE.url}/beyond-the-basics/${guide.slug}`,
+      name: guide.title,
+    })),
+  },
+}
+
 export default function BeyondTheBasicsPage() {
   return (
     <>
@@ -33,6 +54,10 @@ export default function BeyondTheBasicsPage() {
           { name: 'Home', url: '/' },
           { name: 'Beyond the Basics', url: '/beyond-the-basics' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+        />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">

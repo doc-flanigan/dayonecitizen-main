@@ -7,6 +7,7 @@ import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import PageSources from '@/components/PageSources'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen System Requirements 2026',
@@ -21,6 +22,19 @@ export const metadata: Metadata = {
     url: '/day-one-citizen/system-specs',
     type: 'article',
   },
+}
+
+// Article structured data so this page's own content, not just its FAQ, is
+// recognized as an article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen System Requirements 2026 — Full PC Specs',
+  description:
+    'Minimum and recommended PC specs for Star Citizen in 2026, what they mean in practice, and the hardware traps that kill performance for new players.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/day-one-citizen/system-specs`,
 }
 
 // FAQPage structured data — mirrors the "Will it run?" questions below so this
@@ -103,6 +117,10 @@ export default function SystemSpecsPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

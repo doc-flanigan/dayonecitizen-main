@@ -8,6 +8,7 @@ import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'How to Get to Your Ship in Star Citizen',
@@ -22,6 +23,19 @@ export const metadata: Metadata = {
     url: '/day-one-citizen/getting-around',
     type: 'article',
   },
+}
+
+// Article structured data so this page's own content, not just its FAQ, is
+// recognized as an article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'How to Get to Your Ship in Star Citizen',
+  description:
+    'Hab to hangar routes in Lorville, Area18, New Babbage, and Orison, step by step for every starting city in Star Citizen.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/day-one-citizen/getting-around`,
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -78,6 +92,10 @@ export default function GettingAroundPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

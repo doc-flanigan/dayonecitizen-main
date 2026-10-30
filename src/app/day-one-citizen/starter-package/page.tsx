@@ -11,6 +11,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import SourceLink from '@/components/SourceLink'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen First Flight Pack (2026)',
@@ -32,6 +33,19 @@ export const metadata: Metadata = {
     url: '/day-one-citizen/starter-package',
     type: 'article',
   },
+}
+
+// Article structured data so this page's own content, not just its FAQ, is
+// recognized as an article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen First Flight Pack: The One Starter Package',
+  description:
+    'One package. One starter ship. Three loaner ships to try mining, salvage and cargo. Here is what the First Flight Pack includes.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/day-one-citizen/starter-package`,
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -104,6 +118,10 @@ export default function StarterPackagePage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

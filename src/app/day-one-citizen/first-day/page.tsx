@@ -8,6 +8,7 @@ import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen First Day — What to Do First',
@@ -22,6 +23,19 @@ export const metadata: Metadata = {
     url: '/day-one-citizen/first-day',
     type: 'article',
   },
+}
+
+// Article structured data so this page's own content, not just its FAQ, is
+// recognized as an article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen First Day Guide: What to Do First',
+  description:
+    'Ten things to do on day one in Star Citizen, in order. From retrieving your ship at the ASOP terminal to your first mission and safe logout.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/day-one-citizen/first-day`,
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -78,6 +92,10 @@ export default function FirstDayPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

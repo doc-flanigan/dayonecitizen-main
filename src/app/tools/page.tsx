@@ -177,6 +177,26 @@ const TOOLS: Tool[] = [
 
 const CATEGORIES = ['Ships & Combat', 'Trading & Economy', 'Exploration & Mining', 'Reference']
 
+// This is a directory of external tools, not an article — CollectionPage is
+// the correct type for a page that's primarily links to third-party sites.
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Star Citizen Tools — Fleet Viewer & More',
+  description:
+    'Star Citizen fleet viewer, DPS calculator, trade routes, and more — the best fan-made tools including StarJump, Erkul, and UEX Corp.',
+  url: `${SITE.url}/tools`,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [FEATURED, ...TOOLS].map((tool, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: tool.url,
+      name: tool.name,
+    })),
+  },
+}
+
 export default function ToolsPage() {
   return (
     <>
@@ -189,6 +209,10 @@ export default function ToolsPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/30 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">

@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { NEXT_FREE_FLY, getFreeFlyStatus } from '@/data/next-free-fly'
+import { SITE } from '@/lib/site'
 
 // Status is time-dependent, so this page must not be frozen at build time.
 export const revalidate = 3600
@@ -25,6 +26,18 @@ export const metadata: Metadata = {
     url: '/free-fly-events',
     type: 'article',
   },
+}
+
+// Article structured data — this page had no page-level schema at all.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen Free Fly Events — Play Free, No Purchase Needed',
+  description:
+    'What a Star Citizen Free Fly is, how to join for free, and how to get 50,000 free UEC with a referral code.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/free-fly-events`,
 }
 
 const fmtDate = (iso: string) =>
@@ -45,6 +58,10 @@ export default function FreeFlyPage() {
           { name: 'Home', url: '/' },
           { name: 'Free Fly Events', url: '/free-fly-events' },
         ]} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/30 pb-16 pt-32 sm:pt-40">
           <div className="container-wide">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold">

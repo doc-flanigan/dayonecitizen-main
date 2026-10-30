@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen New Player Guide, Step by Step',
@@ -271,6 +272,35 @@ const faqJsonLd = {
   ],
 }
 
+// This is a listing/hub page, not an article — the twelve sections are the
+// real articles, each with their own Article schema. CollectionPage/ItemList
+// is the correct type here.
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Star Citizen New Player Guide, Step by Step',
+  description:
+    '12 guides from "should I buy this?" through your first quantum jump. Every step a brand-new Star Citizen player needs, plain English.',
+  url: `${SITE.url}/day-one-citizen`,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      ...SECTIONS.map((s, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `${SITE.url}/day-one-citizen/${s.id}`,
+        name: s.title,
+      })),
+      ...QUICK_ANSWERS.map((q, i) => ({
+        '@type': 'ListItem',
+        position: SECTIONS.length + i + 1,
+        url: `${SITE.url}/day-one-citizen/${q.id}`,
+        name: q.question,
+      })),
+    ],
+  },
+}
+
 export default function DayOneCitizenPage() {
   return (
     <>
@@ -283,6 +313,10 @@ export default function DayOneCitizenPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
         />
         <header className="relative border-b border-white/5 bg-starfield pb-16 pt-32 sm:pt-40">
           <div

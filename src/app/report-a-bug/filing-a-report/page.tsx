@@ -8,6 +8,7 @@ import SourceLink from '@/components/SourceLink'
 import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { OFFICIAL_SOURCES } from '@/data/report-a-bug-sources'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'File a Star Citizen Bug Report, Step by Step',
@@ -24,6 +25,18 @@ export const metadata: Metadata = {
   },
 }
 
+// Article structured data — this page had no page-level schema at all.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Filing a Star Citizen Bug Report',
+  description:
+    'Project, version, channel, title, reproduction steps, evidence — the complete walkthrough of filing a report the developers can reproduce.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/report-a-bug/filing-a-report`,
+}
+
 export default function FilingAReportPage() {
   return (
     <>
@@ -35,6 +48,10 @@ export default function FilingAReportPage() {
             { name: 'Report a Bug', url: '/report-a-bug' },
             { name: 'Filing a Report', url: '/report-a-bug/filing-a-report' },
           ]}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">

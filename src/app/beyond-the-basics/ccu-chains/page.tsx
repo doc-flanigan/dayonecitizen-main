@@ -26,6 +26,19 @@ export const metadata: Metadata = {
   },
 }
 
+// Article structured data so this page's own content, not just its FAQ, is
+// recognized as an article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Star Citizen CCU Chain Calculator & Savings Guide (2026)',
+  description:
+    'Save hundreds on Star Citizen ship upgrades using CCU chains. Step-by-step guide to Cross-Chassis Upgrades, Warbond CCU strategies, and worked savings examples.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/beyond-the-basics/ccu-chains`,
+}
+
 // FAQPage structured data — mirrors the visible "Common questions" section so
 // this page can earn rich results and AI answer-engine citations.
 const faqJsonLd = {
@@ -88,6 +101,10 @@ export default function CCUChainsPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
         {/* Hero */}
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">

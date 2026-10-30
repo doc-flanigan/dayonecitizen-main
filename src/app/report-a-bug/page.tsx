@@ -57,6 +57,19 @@ const steps = [
   },
 ]
 
+// Article structured data so this page's own content, not just its HowTo/FAQ,
+// is recognized as an article.
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'How to Report a Star Citizen Bug — The Issue Council Guide',
+  description:
+    'What the Issue Council is, who can use it, and how to file a Star Citizen bug report developers can actually reproduce and fix. Step by step, in plain English.',
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: `${SITE.url}/report-a-bug`,
+}
+
 // HowTo + FAQPage structured data — helps this page earn rich results for
 // "how to report a star citizen bug" and the Issue Council questions below.
 const howToJsonLd = {
@@ -139,6 +152,10 @@ export default function ReportABugPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
 
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
