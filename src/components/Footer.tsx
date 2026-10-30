@@ -144,9 +144,19 @@ export default function Footer() {
             LLC. All in-game assets © Cloud Imperium Rights LLC.
           </p>
         </div>
-        <div className="container-wide pb-8 font-mono text-xs text-muted/80">
-          © {year} {SITE.name} · Built by {SITE.author} ·{' '}
-          <span className="font-bold text-gold">o7</span>
+        <div className="container-wide flex flex-wrap items-center justify-between gap-4 pb-8 font-mono text-xs text-muted/80">
+          <span>
+            © {year} {SITE.name} · Built by {SITE.author} ·{' '}
+            <span className="font-bold text-gold">o7</span>
+          </span>
+          <span className="flex gap-4">
+            <Link href="/privacy-policy" className="hover:text-gold">
+              Privacy Policy
+            </Link>
+            <Link href="/cookie-policy" className="hover:text-gold">
+              Cookie Policy
+            </Link>
+          </span>
         </div>
       </div>
     </footer>
