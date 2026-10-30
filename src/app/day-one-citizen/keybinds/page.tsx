@@ -316,6 +316,18 @@ export default function KeybindsPage() {
                 <Term name="MFD">MFD</Term> (multi-function display) in your cockpit shows the
                 current power distribution. Glance at it to see how your power is set.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/keybinds-flight-ready-hud.webp"
+                  alt="Ship HUD after pressing the flight ready key"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The ship HUD right after Right Alt + R — flight ready, power distribution visible.
+                </figcaption>
+              </figure>
             </div>
           </section>
 

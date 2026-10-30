@@ -236,6 +236,18 @@ export default function FirstFlightPage() {
                 <Term name="IFCS">IFCS</Term>. In space, the limit is higher. You will feel
                 the difference as you climb away from the planet.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/first-flight-hud-overview.webp"
+                  alt="Flight HUD with speed, mode and IFCS readouts labelled"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The flight HUD, with speed, flight mode and IFCS readouts visible.
+                </figcaption>
+              </figure>
             </div>
           </section>
 

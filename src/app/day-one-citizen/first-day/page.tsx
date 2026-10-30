@@ -196,6 +196,18 @@ export default function FirstDayPage() {
                       RSI lists a known issue in Alpha 4.10.2: some ASOP terminals do not show
                       the Deliver option. If yours does not, try another terminal.
                     </p>
+                    <figure className="overflow-hidden rounded-2xl border border-white/10">
+                      <Image
+                        src="/images/guides/getting-around-asop-retrieve.webp"
+                        alt="ASOP terminal with Retrieve button highlighted"
+                        width={1920}
+                        height={804}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                        The ASOP terminal list with your starter ship selected — choose Deliver, then Retrieve.
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>
@@ -225,6 +237,18 @@ export default function FirstDayPage() {
                       <Term name="MFD">MFDs</Term> (multi-function displays) line the sides.
                       The central display shows your speed. You are about to fly a spaceship.
                     </p>
+                    <figure className="overflow-hidden rounded-2xl border border-white/10">
+                      <Image
+                        src="/images/guides/first-day-enter-seat.webp"
+                        alt="Interaction prompt to Enter Seat at a ship entry point"
+                        width={1920}
+                        height={804}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                        The Enter Seat prompt at the ship&rsquo;s entry point.
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>
@@ -259,6 +283,18 @@ export default function FirstDayPage() {
                         Section 12: Your first flight
                       </Link>.
                     </p>
+                    <figure className="overflow-hidden rounded-2xl border border-white/10">
+                      <Image
+                        src="/images/guides/first-day-cockpit-hud.webp"
+                        alt="Cockpit view with the HUD powered on and MFDs labelled"
+                        width={1920}
+                        height={804}
+                        className="h-auto w-full"
+                      />
+                      <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                        Cockpit HUD powered on and ready after flight-ready.
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>

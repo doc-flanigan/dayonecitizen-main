@@ -184,6 +184,18 @@ export default function QuantumTravelPage() {
                 display projected inside your cockpit.
               </li>
             </ul>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/quantum-travel-blocked-warning.webp"
+                alt="HUD warning that quantum travel is unavailable in a restricted area"
+                width={1920}
+                height={804}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The HUD warning shown when quantum travel is blocked near a station or landing zone.
+              </figcaption>
+            </figure>
             <p className="text-muted text-sm mb-8">
               Quick tip: your ship&apos;s power triangle affects calibration time.
               Sending power toward Engines calibrates the quantum drive faster. Find
@@ -363,6 +375,18 @@ export default function QuantumTravelPage() {
                 <Term name="Orison">Orison</Term>.
               </li>
             </ul>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
+              <Image
+                src="/images/guides/quantum-travel-quantum-fuel.webp"
+                alt="Ship status screen showing quantum fuel level"
+                width={1920}
+                height={804}
+                className="h-auto w-full"
+              />
+              <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                The quantum fuel gauge, separate from your ship&apos;s hydrogen fuel tank.
+              </figcaption>
+            </figure>
 
             <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
               How long trips take

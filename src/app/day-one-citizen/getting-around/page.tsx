@@ -205,6 +205,20 @@ export default function GettingAroundPage() {
                   <Term name="ASOP">ASOP terminals</Term>. Choose your ship, select Deliver,
                   then select Retrieve. Note which hangar it is sent to.
                 </li>
+              </ol>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/getting-around-asop-retrieve.webp"
+                  alt="ASOP terminal showing Deliver and Retrieve options for a selected ship"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The ASOP terminal at the Lorville Vehicle Retrieval Consoles — select Deliver, then Retrieve.
+                </figcaption>
+              </figure>
+              <ol className="list-decimal space-y-4 pl-6" start={6}>
                 <li>
                   Walk to the hangar elevators. Any elevator reaches every hangar. Pick your
                   assigned hangar, and your ship is waiting when the doors open.

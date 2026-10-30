@@ -139,6 +139,18 @@ export default function FirstLaunchPage() {
                 RSI account management, it is not instant and requires going through a process.
                 Treat it as persistent.
               </p>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/first-launch-character-creator.webp"
+                  alt="Star Citizen character creation screen with the pilot name field"
+                  width={1920}
+                  height={804}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The character creation screen, with the pilot name field visible.
+                </figcaption>
+              </figure>
               <h3 className="mt-6 text-xl font-bold text-starwhite">Appearance — what matters and what does not</h3>
               <p>
                 Star Citizen&rsquo;s character creator lets you customize facial features, hair,
