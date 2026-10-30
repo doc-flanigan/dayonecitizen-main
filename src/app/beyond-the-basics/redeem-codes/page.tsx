@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
+import { SITE } from '@/lib/site'
 
 // Title test (2026-10): leads with the one code that works for every NEW
 // account (signup only — never say it "always works"). `absolute` skips the
@@ -21,6 +22,8 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: { canonical: '/beyond-the-basics/redeem-codes' },
   openGraph: {
+    type: 'article',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: TITLE,
     description: DESCRIPTION,

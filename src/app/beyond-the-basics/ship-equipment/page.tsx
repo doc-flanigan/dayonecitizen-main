@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Ship Equipment Guide (2026)',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
     'Star Citizen ship components: power plants, coolers, quantum drives, shields, and weapons. How grades affect performance and radar signature. Updated 2026.',
   alternates: { canonical: '/beyond-the-basics/ship-equipment' },
   openGraph: {
+    type: 'article',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Ship Equipment Guide (2026)',
     description:

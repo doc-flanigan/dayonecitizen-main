@@ -6,6 +6,7 @@ import CTAButton from '@/components/CTAButton'
 import { ArrowRight } from 'lucide-react'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { BEYOND_THE_BASICS_GUIDES } from '@/data/beyond-the-basics'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Guides — Beyond the Basics',
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
     'Eight plain-English Star Citizen guides for players past the basics: quantum travel, adding friends, food, inventory, redeem codes, and more.',
   alternates: { canonical: '/beyond-the-basics' },
   openGraph: {
+    type: 'website',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'Beyond the Basics — Star Citizen Guides for Early Players',
     description:

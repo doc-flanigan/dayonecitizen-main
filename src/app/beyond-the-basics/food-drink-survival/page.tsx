@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Food & Drink Guide (2026)',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
     'Star Citizen food, drink, and survival: the Nutrition and Hydration meters, what happens when they run low, and how NDR and HEI ratings work.',
   alternates: { canonical: '/beyond-the-basics/food-drink-survival' },
   openGraph: {
+    type: 'article',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Food, Drink & Survival Guide (2026)',
     description:

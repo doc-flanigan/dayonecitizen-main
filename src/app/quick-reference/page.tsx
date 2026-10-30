@@ -7,6 +7,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Quick Reference Card',
@@ -14,6 +15,8 @@ export const metadata: Metadata = {
     'One mobile cheat sheet: day-one Star Citizen keybinds, power keys, and which shop sells weapons, armor, components, and ships.',
   alternates: { canonical: '/quick-reference' },
   openGraph: {
+    type: 'website',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Quick Reference — Keybinds & Shops Cheat Sheet',
     description:

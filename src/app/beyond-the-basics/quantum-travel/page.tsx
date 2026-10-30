@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
     'Hold B for NAV mode, middle-click into QT mode, set a Starmap route, and let the drive calibrate before you jump. A step-by-step guide for new pilots.',
   alternates: { canonical: '/beyond-the-basics/quantum-travel' },
   openGraph: {
+    type: 'article',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'How to Quantum Travel in Star Citizen (2026 Guide)',
     description:

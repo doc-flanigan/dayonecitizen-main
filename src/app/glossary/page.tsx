@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import PageSources from '@/components/PageSources'
 import GlossaryClient from './GlossaryClient'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Glossary — Plain English Definitions',
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     "New to Star Citizen? Plain-English definitions of every term, acronym, and piece of 'Verse slang you'll encounter. 150+ terms, searchable by category.",
   alternates: { canonical: '/glossary' },
   openGraph: {
+    type: 'website',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Glossary — Plain English Definitions',
     description:

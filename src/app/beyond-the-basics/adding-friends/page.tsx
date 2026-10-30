@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'How to Add Friends in Star Citizen (2026 Guide)',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
     'Press F1 to open mobiGlas, tap Contacts, search by RSI handle, and send a request. Step-by-step guide including party invites and crew tips.',
   alternates: { canonical: '/beyond-the-basics/adding-friends' },
   openGraph: {
+    type: 'article',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'How to Add Friends in Star Citizen (2026 Guide)',
     description:

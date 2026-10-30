@@ -7,6 +7,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Tools — Fleet Viewer & More',
@@ -14,6 +15,8 @@ export const metadata: Metadata = {
     'Star Citizen fleet viewer, DPS calculator, and trade route planner — the best fan-made tools for every player. StarJump, Erkul, and UEX Corp.',
   alternates: { canonical: '/tools' },
   openGraph: {
+    type: 'website',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Fleet Viewer & Tools — StarJump, Erkul & More',
     description:

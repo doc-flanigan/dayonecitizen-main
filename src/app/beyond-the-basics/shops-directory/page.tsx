@@ -9,6 +9,7 @@ import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
 import PageSources from '@/components/PageSources'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Star Citizen Shops — New Babbage & Area18',
@@ -16,6 +17,8 @@ export const metadata: Metadata = {
     'Where to buy armor, weapons, and ship parts in Star Citizen: New Babbage, Area18 (Cubby Blast), Lorville. Full shop list with what each vendor carries.',
   alternates: { canonical: '/beyond-the-basics/shops-directory' },
   openGraph: {
+    type: 'article',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'Star Citizen Shop Guide — New Babbage, Area18, Lorville (2026)',
     description:

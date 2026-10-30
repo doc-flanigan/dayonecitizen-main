@@ -8,6 +8,7 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
+import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'How to Form a Party in Star Citizen (2026)',
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
     'Press F11, open Friends tab, right-click, Invite to Party. How to send, accept, and join a party in Star Citizen so everyone lands on the same server.',
   alternates: { canonical: '/beyond-the-basics/party-management' },
   openGraph: {
+    type: 'article',
+    siteName: SITE.name,
     images: ['/images/brand/og-image.png'],
     title: 'How to Form a Party in Star Citizen — Invites & Joining (2026)',
     description:
