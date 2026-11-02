@@ -399,6 +399,15 @@ export default function StarterPackagePage() {
                 The pack does get discounted at times. We cannot say when, or
                 by how much, so check the RSI store for today&rsquo;s price.
               </p>
+              <p>
+                <strong className="text-starwhite">Buying from the UK or Europe?</strong>{' '}
+                RSI adds VAT, the sales tax used there, based on the billing
+                address of your card or payment account. Depending on your
+                store region, it may not show in the price until checkout.{' '}
+                <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360051914473-Taxes-and-the-RSI-Pledge-Store">
+                  Official RSI support article
+                </SourceLink>
+              </p>
               <p>Here is what to skip while you are new:</p>
               <ul className="list-disc space-y-3 pl-6">
                 <li>
