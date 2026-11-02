@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
+import HelpNightCard from '@/components/HelpNightCard'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { SITE } from '@/lib/site'
@@ -118,6 +119,7 @@ export default function FirstLaunchPage() {
 
         <div className="container-narrow space-y-16 py-16">
           <DoThisNow slug="first-launch" />
+          <HelpNightCard />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Character creation</h2>

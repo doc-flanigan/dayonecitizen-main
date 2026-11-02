@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
+import HelpNightCard from '@/components/HelpNightCard'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
@@ -120,6 +121,7 @@ export default function FirstFlightPage() {
 
         <div className="container-narrow space-y-16 py-16">
           <DoThisNow slug="first-flight" />
+          <HelpNightCard />
 
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">Powering on your ship</h2>
