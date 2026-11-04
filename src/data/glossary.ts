@@ -5,6 +5,8 @@ export type GlossaryCategory =
   | 'Community'
   | 'Technical'
   | 'Locations'
+  | 'Weapons'
+  | 'Components'
 
 export type GlossaryTerm = {
   term: string
@@ -1104,7 +1106,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Loadout',
     category: 'Gameplay',
     definition:
-      "Your kit — weapons, armor, ammo, healing items, mobiGlas attachments. Configurable per character via the PMA.",
+      "Your gear — weapons, armor, ammo, healing items, mobiGlas attachments. Configurable per character via the PMA.",
   },
   {
     term: 'Inner Thought',
@@ -1223,9 +1225,10 @@ export const GLOSSARY: GlossaryTerm[] = [
   },
   {
     term: 'Component',
-    category: 'Gameplay',
+    category: 'Components',
     definition:
-      "A modular ship part — power plant, shield generator, cooler, quantum drive. Each comes in size 1-3 and Civilian/Industrial/Military/Competition tiers.",
+      "A swappable ship part such as a power plant, cooler, shield generator or quantum drive. Each has a size from zero to four, a class (Civilian, Industrial, Military, Stealth or Competition) and a grade from A to D.",
+    lastVerified: '2026-11-04',
   },
   {
     term: 'Power Triangle',
@@ -1586,6 +1589,688 @@ export const GLOSSARY: GlossaryTerm[] = [
       "The internal tracking tool the developers use to manage their work. When a community bug report reaches the 'Acknowledged' stage, it has been copied into JIRA as a ticket for an internal team.",
     lastVerified: '2026-06-01',
   },
+  // ─────────────── Weapons ───────────────
+  {
+    term: 'P4-AR',
+    category: 'Weapons',
+    definition:
+      "Behring's ballistic assault rifle (a rifle that fires solid bullets). Its short barrel and folding stock suit close-quarters fights, and it is easy for beginners to handle.",
+    also: 'P4,P4-AR Rifle,Behring P4-AR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'P8-AR',
+    category: 'Weapons',
+    definition:
+      "Behring's semi-automatic ballistic rifle, sold to civilians as a simple, dependable defense weapon. It descends from the standard rifle of the UEE Marines (the empire's soldiers).",
+    also: 'P8,P8-AR Rifle,Behring P8-AR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'P8-SC',
+    category: 'Weapons',
+    definition:
+      "Behring's ballistic SMG (submachine gun, a compact rapid-fire weapon for close range). Good for tight corridors and ship interiors.",
+    also: 'P8-SC SMG,P8 SMG,Behring P8-SC',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'P6-LR',
+    category: 'Weapons',
+    definition:
+      "Behring's ballistic sniper rifle. It fires slowly, but each round hits hard at long range. A variable-zoom scope is built in.",
+    also: 'P6-LR Sniper,P6 sniper,Behring P6-LR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'S-38',
+    category: 'Weapons',
+    definition:
+      "Behring's ballistic pistol. A light polymer frame keeps recoil low, which makes it a friendly sidearm for new players.",
+    also: 'S38,S-38 Pistol,Behring S-38',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'BR-2',
+    category: 'Weapons',
+    definition:
+      "Behring's ballistic shotgun. It began as a military design and was later sold to the public after testers kept asking for it.",
+    also: 'BR2,BR-2 Shotgun,Behring BR-2',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'FS-9',
+    category: 'Weapons',
+    definition:
+      "Behring's ballistic LMG (light machine gun, a heavy rapid-fire gun). Its full-auto mode is made for laying down covering fire.",
+    also: 'FS9,FS-9 LMG,Behring FS-9',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'GP-33',
+    category: 'Weapons',
+    definition:
+      "Behring's ballistic grenade launcher. It fires 40mm grenades to clear rooms or flush out enemies hiding behind cover.",
+    also: 'GP33,GP-33 MOD,GP-33 Grenade Launcher,grenade launcher',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Gallant',
+    category: 'Weapons',
+    definition:
+      "Klaus & Werner's laser assault rifle. Laser means it fires bolts of energy instead of bullets. It is accurate out to medium range.",
+    also: 'Gallant Rifle,K&W Gallant',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Demeco',
+    category: 'Weapons',
+    definition:
+      "Klaus & Werner's laser LMG (light machine gun). It is a short-to-mid-range favorite of infantry and sees heavy use in military fights.",
+    also: 'Demeco LMG,K&W Demeco',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Arclight',
+    category: 'Weapons',
+    definition:
+      "Klaus & Werner's laser pistol. It became popular after appearing as a hero's sidearm in an in-universe vid show, The Frontier.",
+    also: 'Arclight Pistol,Arclight II,K&W Arclight',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Arrowhead',
+    category: 'Weapons',
+    definition:
+      "Klaus & Werner's long-range laser sniper rifle. Its composite body is built to withstand harsh environments.",
+    also: 'Arrowhead Sniper,Arrowhead Sniper Rifle',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Lumin V',
+    category: 'Weapons',
+    definition:
+      "Klaus & Werner's laser SMG (a compact rapid-fire weapon). Its interval autofire mode shoots short bursts while you hold the trigger.",
+    also: 'Lumin,Lumin V SMG',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Karna',
+    category: 'Weapons',
+    definition:
+      "Kastak Arms' plasma assault rifle. Plasma means superheated energy bolts. It has charged and full-auto modes for mid-range fights.",
+    also: 'Karna Rifle,Kastak Karna',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Devastator',
+    category: 'Weapons',
+    definition:
+      "Kastak Arms' pump-action plasma shotgun. It fires heavy plasma blasts for close combat and clearing rooms.",
+    also: 'Devastator Shotgun,Kastak Devastator',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Custodian',
+    category: 'Weapons',
+    definition:
+      "Kastak Arms' laser SMG (submachine gun). It favors a high rate of fire over damage and accuracy, which suits tight spaces.",
+    also: 'Custodian SMG,Kastak Custodian',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Coda',
+    category: 'Weapons',
+    definition:
+      "Kastak Arms' ballistic pistol, nicknamed the hand cannon. One .50 caliber round hits hard, but the recoil is heavy.",
+    also: 'Coda Pistol,Kastak Coda',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Scalpel',
+    category: 'Weapons',
+    definition:
+      "Kastak Arms' ballistic sniper rifle with two stacked barrels. It has two fire modes so you can match the shot to the situation.",
+    also: 'Scalpel Sniper Rifle,Kastak Scalpel',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Ravager-212',
+    category: 'Weapons',
+    definition:
+      "Kastak Arms' ballistic shotgun with two barrels. Each barrel can use a different type of ammunition.",
+    also: 'Ravager,Ravager-212 Twin,Ravager-212 Twin Shotgun',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'LH86',
+    category: 'Weapons',
+    definition:
+      "Gemini's compact ballistic pistol, built for personal defense and close-quarters fights.",
+    also: 'LH86 Pistol,Gemini LH86',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'F55',
+    category: 'Weapons',
+    definition:
+      "Gemini's ballistic LMG (light machine gun) with a very fast rate of fire.",
+    also: 'F55 LMG,Gemini F55',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Parallax',
+    category: 'Weapons',
+    definition:
+      "VOLT's energy assault rifle that fires electron bolts. It has a bigger-than-average battery and can scale up into a steady beam as it fires.",
+    also: 'Parallax Rifle,Parallax Energy Assault Rifle,VOLT Parallax',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Zenith',
+    category: 'Weapons',
+    definition:
+      "VOLT's laser sniper rifle. It can fire quick low-energy shots, or automatically charge for a much stronger, noisier, hotter blast.",
+    also: 'Zenith Sniper,Zenith Laser Sniper Rifle,VOLT Zenith',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Pulse Laser Pistol',
+    category: 'Weapons',
+    definition:
+      "VOLT's fully automatic laser pistol for close-quarters fights. It fires fast but is less accurate and can overheat.",
+    also: 'Pulse pistol,VOLT Pulse',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Yubarev',
+    category: 'Weapons',
+    definition:
+      "Lightning Bolt Co.'s electron pistol. It fires a charged electron shot that can spread to nearby conductive targets.",
+    also: 'Yubarev Pistol,Lightning Bolt Yubarev',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Atzkav',
+    category: 'Weapons',
+    definition:
+      "Lightning Bolt Co.'s electron sniper rifle. You pull a charging handle first, then it fires a charged electron that spreads to nearby conductive targets.",
+    also: 'Atzkav Sniper Rifle,Lightning Bolt Atzkav',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Animus',
+    category: 'Weapons',
+    definition:
+      "Apocalypse Arms' shoulder-mounted missile launcher with a rotating barrel that quickly fires three missiles. Good against ground forces, vehicles and small ships.",
+    also: 'Animus Missile Launcher,Apocalypse Arms Animus',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Scourge',
+    category: 'Weapons',
+    definition:
+      "Apocalypse Arms' shoulder-mounted railgun, which uses electromagnets to fire its shot. It is made for hostile vehicles and large threats.",
+    also: 'Scourge Railgun,Apocalypse Arms Scourge',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Salvo Frag Pistol',
+    category: 'Weapons',
+    definition:
+      "Hedeby Gunworks' pistol. It works as a normal sidearm, but a longer trigger pull fires fragmentation rounds that burst on impact.",
+    also: 'Salvo pistol,Salvo Frag,Hedeby Salvo',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Multi-Tool',
+    category: 'Weapons',
+    definition:
+      "Greycat Industrial's pistol-sized handheld tool. With the right attachments it can charge, cut and repair things. Attachments are sold separately.",
+    also: 'Multitool,multi tool,Pyro RYT,Pyro RYT Multi-Tool,Greycat Multi-Tool',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Cambio SRT',
+    category: 'Weapons',
+    definition:
+      "Greycat Industrial's handheld salvage and repair tool (SRT). It collects scrap and turns it into recycled material you can sell or use for repairs.",
+    also: 'Cambio,SRT,salvage repair tool,Cambio-II',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'CF-series repeaters',
+    category: 'Weapons',
+    definition:
+      "Klaus & Werner's laser repeaters, one per size: CF-117 Bulldog (size one), CF-227 Badger (two), CF-337 Panther (three) and CF-447 Rhino (four). The Bulldog is a favorite of new pilots outfitting a first ship.",
+    also: 'CF-117,CF-227,CF-337,CF-447,Bulldog,CF-117 Bulldog,Badger,CF-227 Badger,Panther,CF-337 Panther,Rhino,CF-447 Rhino,Bulldog repeater',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'M-series laser cannons',
+    category: 'Weapons',
+    definition:
+      "Behring's line of laser autocannons, sized from the M3A (size one) up to the M7A (size five). The M3A is the cheap entry-level model.",
+    also: 'M3A,M4A,M5A,M6A,M7A,M3A Cannon,M4A Cannon,M5A Cannon,M6A Cannon,M7A Cannon,Behring M-series',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Omnisky',
+    category: 'Weapons',
+    definition:
+      "Amon & Reese's family of laser cannons. The numbers run III, VI, IX and XII, matching sizes one to four. Solid, mid-grade, power-efficient weapons.",
+    also: 'Omnisky III,Omnisky VI,Omnisky IX,Omnisky XII,Omnisky cannon',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Attrition',
+    category: 'Weapons',
+    definition:
+      "Hurston Dynamics' laser repeaters, sizes one to four. Their cascade technology makes them hit harder the longer you keep firing.",
+    also: 'Attrition-1,Attrition-2,Attrition-3,Attrition-4,Attrition repeater',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Deadbolt',
+    category: 'Weapons',
+    definition:
+      "Esperia's ballistic cannons, sizes one to four. They are modern copies of a Tevarin weapon (the Tevarin are an alien species) and are feared at short range.",
+    also: 'Deadbolt I,Deadbolt II,Deadbolt III,Deadbolt IV,Deadbolt cannon',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Tarantula',
+    category: 'Weapons',
+    definition:
+      "Gallenson Tactical's GT-870 ballistic cannons, sold as Mark 1 to Mark 3. A drum feeds ammunition for a steady stream of shells and dependable durability.",
+    also: 'Tarantula GT-870,GT-870,Tarantula cannon',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Mantis GT-220',
+    category: 'Weapons',
+    definition:
+      "Gallenson Tactical's size-three ballistic Gatling. It spits out lots of small rounds very fast to shred armor on quick targets. Not the Mantis ship.",
+    also: 'Mantis gatling,GT-220,Mantis GT-220 Gatling',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Revenant',
+    category: 'Weapons',
+    definition:
+      "Apocalypse Arms' rugged ballistic Gatling, based on centuries-old designs. It is slow to spin up and cool down, but keeps firing steadily.",
+    also: 'Revenant Gatling,Revenant ballistic gatling',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Sledge',
+    category: 'Weapons',
+    definition:
+      "Klaus & Werner's mass driver cannons, sizes one to three. They fire ballistic shots slowly but accurately, using railgun technology.",
+    also: 'Sledge I,Sledge II,Sledge III,Sledge mass driver',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Suckerpunch',
+    category: 'Weapons',
+    definition:
+      "Joker Engineering's long-range distortion cannon. It drains a ship's power instead of hurting the hull, so it suits police work and disabling targets.",
+    also: 'Suckerpunch Cannon,Suckerpunch-L,Suckerpunch-XL,Suckerpunch distortion cannon',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Preacher scatterguns',
+    category: 'Weapons',
+    definition:
+      "Preacher Armament's distortion scatterguns: Salvation (size four), Absolution (five) and Condemnation (six). Built for capturing or boarding a target.",
+    also: 'Salvation,Absolution,Condemnation,Salvation scattergun,Absolution scattergun,Condemnation scattergun',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Repeater',
+    category: 'Weapons',
+    definition:
+      "A ship gun that fires many light shots very quickly. Most repeaters are lasers (energy weapons). Examples: the CF series and Attrition.",
+    also: 'laser repeater,repeaters',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Cannon',
+    category: 'Weapons',
+    definition:
+      "A ship gun that fires slower, harder-hitting shots than a repeater. It can be a laser (energy) or ballistic (solid shells). Examples: M-series, Omnisky, Deadbolt.",
+    also: 'autocannon,laser cannon,ballistic cannon,cannons',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Scattergun',
+    category: 'Weapons',
+    definition:
+      "A ship shotgun that fires a spread of projectiles. Strongest up close. Comes in ballistic, laser and distortion types.",
+    also: 'scatterguns,distortion scattergun,ballistic scattergun',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Mass Driver',
+    category: 'Weapons',
+    definition:
+      "A ship cannon that uses railgun-style technology to fire solid ballistic projectiles. Slow to fire but hits hard. Examples: Sledge and Strife.",
+    also: 'mass driver cannon,mass drivers',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Gatling',
+    category: 'Weapons',
+    definition:
+      "A ballistic ship gun with spinning barrels. It fires lots of small rounds very fast, and needs a moment to spin up. Good for shredding fast targets and shooting missiles.",
+    also: 'gatlings,ballistic gatling,rotary cannon',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Ballistic Weapon',
+    category: 'Weapons',
+    definition:
+      "A gun that fires solid projectiles. It uses ammunition but no ship power and makes little heat. Some of its damage can pass through enemy shields.",
+    also: 'ballistic weapons,ballistic gun',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Energy Weapon',
+    category: 'Weapons',
+    definition:
+      "A gun that fires beams or bolts of energy, such as lasers or plasma. It hits shields first, then the hull. Firing it draws ship power, which raises your electromagnetic (EM) signature on enemy sensors.",
+    also: 'energy weapons,energy gun',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Distortion Weapon',
+    category: 'Weapons',
+    definition:
+      "An energy weapon that disables instead of destroys. It cannot harm the hull but drains shields, then strains the ship's power and components. Police and bounty hunters like it.",
+    also: 'distortion weapons,distortion damage',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Missile',
+    category: 'Weapons',
+    definition:
+      "A guided explosive launched from a missile rack. Missiles lock on by heat (IR), electromagnetic signature (EM) or cross-section (CS), meaning how big a ship looks on sensors. Names end in a Roman numeral for size, like Pioneer I.",
+    also: 'missiles',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Torpedo',
+    category: 'Weapons',
+    definition:
+      "A very large guided missile for hitting big ships. Ship torpedoes run from size nine to twelve, far above ship missiles.",
+    also: 'torpedoes,torpedos',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Missile Rack',
+    category: 'Weapons',
+    definition:
+      "The mount that holds and launches missiles. Its size and the number and size of missiles are listed together. Example: the MSD-423 is a size-four rack for two size-three missiles.",
+    also: 'missile racks,torpedo rack,pylon',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Weapon Size',
+    category: 'Weapons',
+    definition:
+      "Ship weapons come in standard sizes (S1 and up) and must fit a matching hardpoint, which is a weapon mount on the ship. Gimballed or twin-linked weapons need a larger hardpoint.",
+    also: 'S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,weapon sizes,hardpoint size,item size',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Behring',
+    category: 'Weapons',
+    definition:
+      "A weapons consortium. Makes ballistic rifles, SMGs, shotguns and pistols (P4-AR, P8, S-38, BR-2) and ship M-series laser cannons, missiles and shields.",
+    also: 'Behring Applied Technology,BEHR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Klaus & Werner',
+    category: 'Weapons',
+    definition:
+      "An energy weapons maker. Known for laser rifles and LMGs (Gallant, Demeco), the CF-series ship repeaters and Sledge mass drivers.",
+    also: 'K&W,Klaus and Werner,KLWE',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Kastak Arms',
+    category: 'Weapons',
+    definition:
+      "Maker of inexpensive energy weapons and personal armor. Known for aggressive names: Devastator, Karna and Coda.",
+    also: 'Kastak,KSAR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Gemini',
+    category: 'Weapons',
+    definition:
+      "A personal-weapons maker. Began with ballistic guns, then added lasers. Makes the LH86 pistol, F55 LMG, S71 rifle, C54 SMG and others.",
+    also: 'Gemini weapons,GMNI',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Hurston Dynamics',
+    category: 'Weapons',
+    definition:
+      "A weapons and materials company based on Hurston, in Stanton. Sells Attrition repeaters and Dominance scatterguns. Not the planet itself.",
+    also: 'Hurston Dynamics weapons,HRST',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Lightning Bolt Co.',
+    category: 'Weapons',
+    definition:
+      "An energy weapons maker founded by a private military company CEO. Known for electron weapons like the Yubarev pistol and Atzkav sniper rifle.",
+    also: 'Lightning Bolt,Lightning Bolt Company,LBCO',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Apocalypse Arms',
+    category: 'Weapons',
+    definition:
+      "A maker of handheld and ship weapons. Every product is based on old Messer Era designs. Makes the Animus, Scourge, Revenant, Havoc and Strife.",
+    also: 'Apocalypse,APAR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Amon & Reese',
+    category: 'Weapons',
+    definition:
+      "A maker of energy weapons and ship engines. Long-time supplier of weapons to the UEE military. Known for Omnisky laser cannons and JS-series power plants.",
+    also: 'Amon and Reese,A&R,AMRS,Amon & Reese Co.',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Gallenson Tactical Systems',
+    category: 'Weapons',
+    definition:
+      "A maker of tough, lower-tech ballistic weapons built to take repeated use. Known for the Tarantula cannons and Mantis and Scorpion Gatlings.",
+    also: 'Gallenson,Gallenson Tactical,GATS',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'KnightBridge Arms',
+    category: 'Weapons',
+    definition:
+      "A maker of inexpensive, stylish ship ballistic weapons. Known for its Sword-series cannons, such as the 9-Series Longsword.",
+    also: 'Knightbridge,Knight Bridge,KBAR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Joker Engineering',
+    category: 'Weapons',
+    definition:
+      "A maker of unconventional novelty weapons and parts, based on ArcCorp. Known for the Suckerpunch distortion cannons.",
+    also: 'Joker,JOKR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Preacher Armament',
+    category: 'Weapons',
+    definition:
+      "A maker of weapons for working security. Known for scatterguns named Salvation, Absolution and Condemnation, with a religious branding theme.",
+    also: 'Preacher Armaments,Preacher,PRAR',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'VOLT',
+    category: 'Weapons',
+    definition:
+      "Verified Offworld Laser Technologies. An energy weapons maker that uses proven technology to keep prices low. Makes the Pulse, Zenith and Parallax.",
+    also: 'Verified Offworld Laser Technologies,Verified Offworld',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Hedeby Gunworks',
+    category: 'Weapons',
+    definition:
+      "A personal-weapons maker known for classic designs with Banu manufacturing techniques. Its first success was the Salvo Frag Pistol.",
+    also: 'Hedeby,HDGW',
+    lastVerified: '2026-11-04',
+  },
+  // ─────────────── Components ───────────────
+  {
+    term: 'Power Plant',
+    category: 'Components',
+    definition:
+      "The ship part that makes the energy everything else runs on. Its output depends on its size, model and type.",
+    also: 'powerplant,power plants',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Cooler',
+    category: 'Components',
+    definition:
+      "The ship part that removes heat from other parts so they don't overheat. It dumps that heat into space, so the harder it works, the easier your ship is to spot by heat.",
+    also: 'coolers',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Shield Generator',
+    category: 'Components',
+    definition:
+      "The ship part that makes the protective energy barrier around your ship. Shields deflect projectiles, explosions and debris.",
+    also: 'shield gen,shield generators',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Quantum Drive',
+    category: 'Components',
+    definition:
+      "The ship engine that lets you cross huge distances very fast. It powers quantum travel between planets, moons and stations.",
+    also: 'QD,quantum drives,Q-drive',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Radar',
+    category: 'Components',
+    definition:
+      "The ship part that detects other objects by their signature. Think of it as your ship's sensors. Better radars spot more at longer range.",
+    also: 'radars,sensors',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Component Grade',
+    category: 'Components',
+    definition:
+      "A letter from A to D that ranks a ship part. A is best, B a good upgrade, C the common default, D lower quality. Stock ships often come with C-grade parts.",
+    also: 'component grades,A grade,B grade,C grade,D grade,Grade A,Grade B,Grade C,Grade D',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Component Class',
+    category: 'Components',
+    definition:
+      "The style of a ship part. Civilian is balanced, Industrial is durable, and Military is powerful but loud. Stealth is quiet but fragile. Competition is high performance but fragile and loud.",
+    also: 'component classes,item class,Civilian class,Industrial class,Military class,Stealth class,Competition class',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Component Size',
+    category: 'Components',
+    definition:
+      "Ship parts come in five sizes: Vehicle (0), Small (1), Medium (2), Large (3) and Capital (4). A part only fits a slot of its own size.",
+    also: 'component sizes,component size',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Atlas',
+    category: 'Components',
+    definition:
+      "Roberts Space Industries' small Civilian quantum drive, rated A grade. A top-end option for small ships.",
+    also: 'Atlas quantum drive,RSI Atlas',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'XL-1',
+    category: 'Components',
+    definition:
+      "Wei-Tek's medium Military quantum drive, rated A grade. Blends performance and durability.",
+    also: 'XL1,XL-1 quantum drive,Wei-Tek XL-1',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'FR-66',
+    category: 'Components',
+    definition:
+      "Gorgon Defender Industries' small Military shield generator, rated A grade. Described as one of the most versatile small shield generators available.",
+    also: 'FR66,FR-66 shield,Gorgon FR-66',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Juno Starwerk',
+    category: 'Components',
+    definition:
+      "A very old ship component maker. Makes coolers, power plants and quantum drives. Best known for its power plant lines, such as Diligence and Endurance.",
+    also: 'Juno,JUST',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Lightning Power',
+    category: 'Components',
+    definition:
+      "A ship component maker that produces coolers and power plants.",
+    also: 'Lightning Power Ltd.,Lightning Power Ltd,LPLT',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Tyler Design & Tech',
+    category: 'Components',
+    definition:
+      "A ship component maker with stealth-focused power plants and coolers. They trade performance for harder-to-detect heat signatures.",
+    also: 'Tyler Design,Tyler Design and Tech,TYDT',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'ACOM',
+    category: 'Components',
+    definition:
+      "A racing-focused maker of batteries, coolers and power plants. Known for orange and black parts and compound names like QuikCool.",
+    also: 'ACOM components',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Gorgon Defender Industries',
+    category: 'Components',
+    definition:
+      "A shield generator maker. Founded by survivors of the Fall of Caliban to sell defensive systems to civilians. Now supplies the UEE military too. Makes the FR-66.",
+    also: 'Gorgon,Gorgon Defender,GODI',
+    lastVerified: '2026-11-04',
+  },
+  {
+    term: 'Wei-Tek',
+    category: 'Components',
+    definition:
+      "A ship component maker specializing in quantum drives and quantum interdiction (the tech that disrupts them). Makes the XL-1.",
+    also: 'Wei-Tek quantum,WETK',
+    lastVerified: '2026-11-04',
+  },
 ]
 
 export const CATEGORIES: GlossaryCategory[] = [
@@ -1595,4 +2280,6 @@ export const CATEGORIES: GlossaryCategory[] = [
   'Community',
   'Technical',
   'Locations',
+  'Weapons',
+  'Components',
 ]

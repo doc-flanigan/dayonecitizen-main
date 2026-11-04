@@ -4,8 +4,8 @@ name: glossary audit
 # sources (api.star-citizen.wiki, RSI Comm-Links). Two trigger paths:
 #
 #   workflow_dispatch — Doc kicks it off manually, picks the mode.
-#     mode=all     -> verify EVERY entry where category is Ships or
-#                     Locations (the big initial pass).
+#     mode=all     -> verify EVERY entry where category is Ships,
+#                     Locations, Weapons or Components (the big initial pass).
 #     mode=oldest  -> verify the N entries with the oldest lastVerified
 #                     timestamps, or with no timestamp at all (default).
 #
@@ -96,7 +96,7 @@ jobs:
           You are auditing src/data/glossary.ts for factual accuracy. The
           file holds GlossaryTerm records; each has term, definition,
           category (Currency, Ships, Gameplay, Community, Technical,
-          Locations), an optional 'also' alias field, and an optional
+          Locations, Weapons, Components), an optional 'also' alias field, and an optional
           'lastVerified' ISO date.
 
           Today's date is $TODAY (UTC).
@@ -107,10 +107,10 @@ jobs:
 
           1. Read src/data/glossary.ts to load every entry.
           2. Build the work list:
-             - In mode=all: every entry where category === 'Ships' OR
-               category === 'Locations'.
-             - In mode=oldest: among entries where category === 'Ships'
-               OR category === 'Locations', take the BATCH_SIZE entries
+             - In mode=all: every entry where category is 'Ships',
+               'Locations', 'Weapons' or 'Components'.
+             - In mode=oldest: among entries where category is 'Ships',
+               'Locations', 'Weapons' or 'Components', take the BATCH_SIZE entries
                with the oldest lastVerified timestamps (entries with no
                lastVerified come first, sorted alphabetically).
           3. For each entry on the work list, verify the definition's
@@ -124,7 +124,8 @@ jobs:
              Focus on facts that the definition actually asserts:
              manufacturer, role/class, crew size, chassis (wheeled vs
              tracked), ship size category, system body counts, planet
-             body type. Do not editorialize or rewrite tone.
+             body type, weapon maker/type, item size, component
+             grade/class. Do not editorialize or rewrite tone.
           4. For each verified entry:
                - If every factual claim in the definition is correct,
                  stamp lastVerified: '$TODAY' on the entry. Do not change
@@ -178,7 +179,7 @@ jobs:
             --base main \
             --head "$BRANCH" \
             --body "$(cat <<'BODY'
-          Automated factual audit of `src/data/glossary.ts` (Ships and Locations entries).
+          Automated factual audit of `src/data/glossary.ts` (Ships, Locations, Weapons and Components entries).
 
           The agent verified each entry's factual claims against `api.star-citizen.wiki` and the RSI site. Entries that checked out got a `lastVerified` timestamp; entries with wrong facts had the wrong piece corrected (preserving voice and length) plus a fresh timestamp; entries that couldn't be verified against any source were left untouched.
 
