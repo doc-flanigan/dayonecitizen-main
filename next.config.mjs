@@ -29,6 +29,13 @@ const nextConfig = {
         destination: '/day-one-citizen/:path*',
         permanent: true,
       },
+      // Short path for the starter package guide lives under /day-one-citizen
+      // (pre-IAE survey 2026-11-05); 308 so shared short links land correctly.
+      {
+        source: '/starter-package',
+        destination: '/day-one-citizen/starter-package',
+        permanent: true,
+      },
       // Old-brand domains -> new-brand domain, path-preserving (1:1).
       // This sends every backlink and Google ranking signal from the
       // o7citizen.com era to dayonecitizen.com, regardless of which path
