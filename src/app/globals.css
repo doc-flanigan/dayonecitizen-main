@@ -191,3 +191,12 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Inline links inside running text must not rely on color alone (WCAG 1.4.1).
+   Button-style links (flex/rounded/btn classes) are left alone. */
+main p a:not([class*="rounded"]):not([class*="flex"]):not([class*="btn"]):not([class*="block"]),
+main li a:not([class*="rounded"]):not([class*="flex"]):not([class*="btn"]):not([class*="block"]) {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}

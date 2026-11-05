@@ -36,7 +36,7 @@ export default function ShotPlaceholder({
         {annotate ? (
           <p className="text-xs text-muted">Annotate: {annotate}</p>
         ) : null}
-        <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-muted/70">
+        <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-muted">
           {file}
         </p>
       </div>
