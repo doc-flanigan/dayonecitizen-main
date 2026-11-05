@@ -7,6 +7,8 @@ const categoryColor: Record<GlossaryTerm['category'], string> = {
   Community: 'bg-pink-400/10 text-pink-200',
   Technical: 'bg-purple-400/10 text-purple-200',
   Locations: 'bg-orange-400/10 text-orange-200',
+  Weapons: 'bg-red-400/10 text-red-200',
+  Components: 'bg-cyan-400/10 text-cyan-200',
 }
 
 export default function GlossaryCard({ term }: { term: GlossaryTerm }) {
