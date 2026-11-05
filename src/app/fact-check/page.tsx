@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -73,6 +74,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/fact-check`,
+  ...pageDates('/fact-check'),
 }
 
 const claimReviewJsonLd = claimsData.claims.map((c) => ({

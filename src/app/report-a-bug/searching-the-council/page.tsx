@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from '@/components/Link'
@@ -36,6 +37,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/report-a-bug/searching-the-council`,
+  ...pageDates('/report-a-bug/searching-the-council'),
 }
 
 export default function SearchingTheCouncilPage() {

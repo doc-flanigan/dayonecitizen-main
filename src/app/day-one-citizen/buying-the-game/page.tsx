@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Link from '@/components/Link'
 import Image from 'next/image'
@@ -47,6 +48,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/buying-the-game`,
+  ...pageDates('/day-one-citizen/buying-the-game'),
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
