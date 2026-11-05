@@ -302,6 +302,7 @@ export default function ReferralCodePage() {
                     alt="The RSI referral panel reading 'You've been referred by Doc Flanigan' with code STAR-GCQJ-N6NC successfully applied"
                     width={1204}
                     height={568}
+                    priority
                     className="h-auto w-full"
                   />
                   <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
