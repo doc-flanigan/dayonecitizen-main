@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from '@/components/Link'
@@ -68,6 +69,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/report-a-bug`,
+  ...pageDates('/report-a-bug'),
 }
 
 // HowTo + FAQPage structured data — helps this page earn rich results for
@@ -222,7 +224,7 @@ export default function ReportABugPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/report-a-bug/issue-council-home.jpg"
-                  alt="The Issue Council landing page with its Welcome Citizen header and project cards for Star Citizen, the Launcher, and the RSI Website."
+                  alt="The Issue Council landing page with project cards for Star Citizen, the Launcher, and the RSI Website."
                   width={997}
                   height={914}
                   className="h-auto w-full"

@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from '@/components/Link'
@@ -37,6 +38,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/beyond-the-basics/adding-friends`,
+  ...pageDates('/beyond-the-basics/adding-friends'),
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -226,7 +228,7 @@ export default function AddingFriendsPage() {
             <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/sc-add-friend-server-player-list.jpg"
-                alt="The in-game Commlink chat window with the Members list open, showing every player on the server and the option to send a friend request."
+                alt="The in-game Commlink chat window with the Members list open, showing every player on the server and a friend request option."
                 width={1200}
                 height={611}
                 className="h-auto w-full"

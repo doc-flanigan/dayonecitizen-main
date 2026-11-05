@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from '@/components/Link'
@@ -37,6 +38,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/beyond-the-basics/ship-equipment`,
+  ...pageDates('/beyond-the-basics/ship-equipment'),
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -331,7 +333,7 @@ export default function ShipEquipmentPage() {
             <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/ship-equipment-loadout-screen-components.jpg"
-                alt="The ship loadout screen showing component slots for power plant, coolers, shields, and quantum drive with the installed parts listed."
+                alt="The ship loadout screen listing installed parts in the power plant, cooler, shield, and quantum drive slots."
                 width={1200}
                 height={637}
                 className="h-auto w-full"

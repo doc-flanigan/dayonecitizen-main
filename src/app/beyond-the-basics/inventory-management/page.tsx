@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from '@/components/Link'
@@ -37,6 +38,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/beyond-the-basics/inventory-management`,
+  ...pageDates('/beyond-the-basics/inventory-management'),
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -136,7 +138,7 @@ export default function InventoryManagementPage() {
             <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/inventory-management-full-screen.jpg"
-                alt="The full inventory screen with the character's personal inventory panel on one side and an external storage panel on the other."
+                alt="The full inventory screen with the personal inventory panel on one side and an external storage panel on the other."
                 width={1200}
                 height={672}
                 className="h-auto w-full"

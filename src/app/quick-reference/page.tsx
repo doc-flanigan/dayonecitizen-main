@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from '@/components/Link'
@@ -39,6 +40,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/quick-reference`,
+  ...pageDates('/quick-reference'),
 }
 
 const DAY_ONE_KEYS = [
@@ -206,7 +208,7 @@ export default function QuickReferencePage() {
             <div className="flex items-center gap-3">
               <Image
                 src="/images/brand/logo-mark.png"
-                alt="Day One Citizen logo"
+                alt=""
                 width={40}
                 height={40}
                 className="h-10 w-10"

@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Link from '@/components/Link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
@@ -35,6 +36,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/system-specs`,
+  ...pageDates('/day-one-citizen/system-specs'),
 }
 
 // FAQPage structured data — mirrors the "Will it run?" questions below so this

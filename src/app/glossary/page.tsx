@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -34,6 +35,7 @@ const glossaryJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/glossary`,
+  ...pageDates('/glossary'),
   hasDefinedTerm: GLOSSARY.map((entry) => ({
     '@type': 'DefinedTerm',
     name: entry.term,

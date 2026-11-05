@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Check, X } from 'lucide-react'
@@ -71,6 +72,7 @@ export default function AboutPage() {
     author: { '@type': 'Person', name: SITE.author },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
     mainEntityOfPage: `${SITE.url}/about`,
+    ...pageDates('/about'),
     image: `${SITE.url}/images/hero/hero-01.jpg`,
   }
 

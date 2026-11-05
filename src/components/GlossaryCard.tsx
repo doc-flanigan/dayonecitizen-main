@@ -15,7 +15,7 @@ export default function GlossaryCard({ term }: { term: GlossaryTerm }) {
   return (
     <article
       id={`term-${term.term.replace(/\s+/g, '-').toLowerCase()}`}
-      className="card-surface flex h-full flex-col p-5 transition-colors hover:border-gold/30"
+      className="card-surface flex h-full scroll-mt-24 flex-col p-5 transition-colors hover:border-gold/30"
     >
       <div className="mb-3 flex items-center justify-between gap-3">
         <h3 className="heading-display text-xl text-starwhite">

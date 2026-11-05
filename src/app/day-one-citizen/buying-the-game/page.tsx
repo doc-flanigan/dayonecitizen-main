@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Link from '@/components/Link'
 import Image from 'next/image'
@@ -47,6 +48,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/buying-the-game`,
+  ...pageDates('/day-one-citizen/buying-the-game'),
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -290,7 +292,7 @@ export default function BuyingTheGamePage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/getting-started-game-package-starter-packs-list.jpg"
-                  alt="Grid of Star Citizen game packages on the RSI pledge store, from before RSI replaced its starter packs with the First Flight Pack."
+                  alt="Grid of game packages on the RSI pledge store, from before the starter packs were replaced by the First Flight Pack."
                   width={1200}
                   height={561}
                   className="h-auto w-full"
@@ -333,7 +335,7 @@ export default function BuyingTheGamePage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg"
-                  alt="An earlier starter pack's product page on the pledge store with its Add to Cart button. The First Flight Pack page works the same way."
+                  alt="An earlier starter pack's store page with its Add to Cart button. The First Flight Pack page works the same way."
                   width={952}
                   height={468}
                   className="h-auto w-full"

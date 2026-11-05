@@ -347,7 +347,7 @@ export default function ToolsPage() {
                   >
                     <Image
                       src="/images/tools-ccu-chain-example.jpg"
-                      alt="CCU Game chain builder with six numbered, color-coded regions showing a nine-step upgrade chain from a Gladius fighter to a Corsair, costing $65 against a $250 retail price."
+                      alt="The CCU Game chain builder showing a nine-step upgrade chain from a Gladius to a Corsair for $65 instead of $250."
                       width={1054}
                       height={1125}
                       unoptimized

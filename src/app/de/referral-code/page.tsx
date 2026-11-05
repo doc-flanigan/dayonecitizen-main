@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Link from '@/components/Link'
 import Image from 'next/image'
@@ -111,6 +112,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/de/referral-code`,
+  ...pageDates('/de/referral-code'),
 }
 
 export default function ReferralCodeDePage() {

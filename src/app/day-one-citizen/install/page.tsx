@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Link from '@/components/Link'
 import Image from 'next/image'
@@ -35,6 +36,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/install`,
+  ...pageDates('/day-one-citizen/install'),
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -301,7 +303,7 @@ export default function InstallPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/launcher/rsi-launcher-settings-games-verify.jpg"
-                  alt="RSI Launcher Settings open on the Games section, showing the installed game files location and the Verify button for repairing files."
+                  alt="RSI Launcher Settings on the Games section, showing the game files location and the Verify button."
                   width={1046}
                   height={1274}
                   className="h-auto w-full"

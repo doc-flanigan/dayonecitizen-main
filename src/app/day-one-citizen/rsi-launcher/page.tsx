@@ -1,3 +1,4 @@
+import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from '@/components/Link'
@@ -35,6 +36,7 @@ const articleJsonLd = {
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/day-one-citizen/rsi-launcher`,
+  ...pageDates('/day-one-citizen/rsi-launcher'),
 }
 
 // FAQPage structured data — mirrors the visible "Common questions" section so
@@ -155,7 +157,7 @@ export default function RsiLauncherPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/launcher/rsi-launcher-home-launch-ready.jpg"
-                  alt="The RSI Launcher home screen with the game installed and the large LAUNCH GAME button ready, alongside the channel selector and patch notes area."
+                  alt="The RSI Launcher home screen with the large LAUNCH GAME button ready, next to the channel selector and update notes."
                   width={1051}
                   height={768}
                   className="h-auto w-full"
@@ -283,7 +285,7 @@ export default function RsiLauncherPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/launcher/rsi-launcher-settings-games-verify.jpg"
-                  alt="The RSI Launcher settings screen on the Games section, showing the installed game with its Verify option for repairing game files."
+                  alt="The RSI Launcher settings screen on the Games section, showing the installed game and its Verify option."
                   width={1046}
                   height={1274}
                   className="h-auto w-full"
