@@ -226,7 +226,7 @@ export default function AddingFriendsPage() {
             <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/sc-add-friend-server-player-list.jpg"
-                alt="The in-game Commlink chat window with the Members list open, showing every player on the server and the option to send a friend request."
+                alt="The in-game Commlink chat window with the Members list open, showing every player on the server and a friend request option."
                 width={1200}
                 height={611}
                 className="h-auto w-full"

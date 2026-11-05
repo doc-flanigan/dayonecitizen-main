@@ -331,7 +331,7 @@ export default function ShipEquipmentPage() {
             <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/ship-equipment-loadout-screen-components.jpg"
-                alt="The ship loadout screen showing component slots for power plant, coolers, shields, and quantum drive with the installed parts listed."
+                alt="The ship loadout screen listing installed parts in the power plant, cooler, shield, and quantum drive slots."
                 width={1200}
                 height={637}
                 className="h-auto w-full"

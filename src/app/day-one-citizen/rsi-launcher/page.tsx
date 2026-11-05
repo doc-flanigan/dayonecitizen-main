@@ -155,7 +155,7 @@ export default function RsiLauncherPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/launcher/rsi-launcher-home-launch-ready.jpg"
-                  alt="The RSI Launcher home screen with the game installed and the large LAUNCH GAME button ready, alongside the channel selector and patch notes area."
+                  alt="The RSI Launcher home screen with the large LAUNCH GAME button ready, next to the channel selector and update notes."
                   width={1051}
                   height={768}
                   className="h-auto w-full"
@@ -283,7 +283,7 @@ export default function RsiLauncherPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/launcher/rsi-launcher-settings-games-verify.jpg"
-                  alt="The RSI Launcher settings screen on the Games section, showing the installed game with its Verify option for repairing game files."
+                  alt="The RSI Launcher settings screen on the Games section, showing the installed game and its Verify option."
                   width={1046}
                   height={1274}
                   className="h-auto w-full"

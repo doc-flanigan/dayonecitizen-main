@@ -222,7 +222,7 @@ export default function ReportABugPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/report-a-bug/issue-council-home.jpg"
-                  alt="The Issue Council landing page with its Welcome Citizen header and project cards for Star Citizen, the Launcher, and the RSI Website."
+                  alt="The Issue Council landing page with project cards for Star Citizen, the Launcher, and the RSI Website."
                   width={997}
                   height={914}
                   className="h-auto w-full"

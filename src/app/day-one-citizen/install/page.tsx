@@ -301,7 +301,7 @@ export default function InstallPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/launcher/rsi-launcher-settings-games-verify.jpg"
-                  alt="RSI Launcher Settings open on the Games section, showing the installed game files location and the Verify button for repairing files."
+                  alt="RSI Launcher Settings on the Games section, showing the game files location and the Verify button."
                   width={1046}
                   height={1274}
                   className="h-auto w-full"

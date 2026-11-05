@@ -206,7 +206,7 @@ export default function QuickReferencePage() {
             <div className="flex items-center gap-3">
               <Image
                 src="/images/brand/logo-mark.png"
-                alt="Day One Citizen logo"
+                alt=""
                 width={40}
                 height={40}
                 className="h-10 w-10"

@@ -141,7 +141,7 @@ export default function SearchingTheCouncilPage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/report-a-bug/issue-council-project-search.jpg"
-                  alt="An Issue Council project page with the search bar at the top, pinned confirmed issues, and the list of recently opened reports below."
+                  alt="An Issue Council project page with the search bar at the top, pinned issues, and recently opened reports below."
                   width={1195}
                   height={1262}
                   className="h-auto w-full"

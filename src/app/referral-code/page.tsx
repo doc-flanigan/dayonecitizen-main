@@ -297,7 +297,7 @@ export default function ReferralCodePage() {
                 <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
                   <Image
                     src="/images/referral/rsi-referral-panel-applied-2026-09.jpg"
-                    alt="Close-up of the RSI referral panel reading 'You've been referred by: Doc Flanigan @Doc_Flanigan', code STAR-GCQJ-N6NC, and 'Referral code successfully applied!'"
+                    alt="Close-up of the RSI referral panel showing 'You've been referred by Doc Flanigan', code STAR-GCQJ-N6NC, and 'Referral code successfully applied!'"
                     width={1204}
                     height={568}
                     className="h-auto w-full"
@@ -326,7 +326,7 @@ export default function ReferralCodePage() {
                 <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
                   <Image
                     src="/images/referral/rsi-signup-referral-code-field.jpg"
-                    alt="A completed RSI sign-up form with a red arrow and dashed box on the referral panel showing code STAR-GCQJ-N6NC and 'Referral code successfully applied!', next to the Enlist Now button"
+                    alt="The RSI sign-up form with a red arrow pointing to the referral panel, which shows code STAR-GCQJ-N6NC applied, above the Enlist Now button"
                     width={1200}
                     height={1069}
                     className="h-auto w-full"
@@ -397,7 +397,7 @@ export default function ReferralCodePage() {
                 <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
                   <Image
                     src="/images/guides/getting-started-add-to-cart-citizen-starter-pack.jpg"
-                    alt="RSI store pop-up: 'Item successfully added to your cart!' showing an earlier starter pack (since replaced by the First Flight Pack) at $45.00 USD, crossed out from $60.00, with the Checkout button outlined in red"
+                    alt="RSI store pop-up confirming an earlier starter pack was added to the cart at $45, down from $60, with the Checkout button outlined in red"
                     width={952}
                     height={468}
                     className="h-auto w-full"
@@ -418,7 +418,7 @@ export default function ReferralCodePage() {
                 <figure className="mt-4 overflow-hidden rounded-2xl border border-white/10">
                   <Image
                     src="/images/referral/rsi-checkout-billing-proceed-to-pay.jpg"
-                    alt="RSI checkout, step 2 Address: red arrows from 'Add a new address' to the saved billing address card and on to the Proceed to Pay button"
+                    alt="RSI checkout address step with red arrows from Add a new address to the saved billing card and the Proceed to Pay button"
                     width={1200}
                     height={819}
                     className="h-auto w-full"

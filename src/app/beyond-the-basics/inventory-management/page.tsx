@@ -136,7 +136,7 @@ export default function InventoryManagementPage() {
             <figure className="overflow-hidden rounded-2xl border border-white/10 mb-8">
               <Image
                 src="/images/guides/inventory-management-full-screen.jpg"
-                alt="The full inventory screen with the character's personal inventory panel on one side and an external storage panel on the other."
+                alt="The full inventory screen with the personal inventory panel on one side and an external storage panel on the other."
                 width={1200}
                 height={672}
                 className="h-auto w-full"
