@@ -7,7 +7,7 @@ export const SITE = {
   rsiOrgUrl: 'https://robertsspaceindustries.com/orgs/DAYONECTZN',
   referralUrl:
     process.env.NEXT_PUBLIC_REFERRAL_URL ??
-    'https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC',
+    'https://robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC',
   referralCode: 'STAR-GCQJ-N6NC',
   referralBonusUEC: '50,000 UEC',
   // Bonus state lives in src/data/referral-bonus.ts and is maintained
