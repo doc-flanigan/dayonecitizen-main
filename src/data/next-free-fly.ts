@@ -6,20 +6,20 @@
  * 301s there via next.config.mjs.)
  */
 export const NEXT_FREE_FLY = {
-  id: 'foundation-festival-2026',
-  name: 'Foundation Festival 2026 Free Fly',
+  id: 'iae-2026',
+  name: 'IAE 2956 Free Fly',
   /** ISO 8601 UTC — event open for free play */
-  start: '2026-07-29T16:00:00Z',
-  /** ISO 8601 UTC — event ends. CIG published only "through August 10"
-   *  (comm-link 21211), no time — end-of-day UTC used until one is posted. */
-  end: '2026-08-10T23:59:00Z',
+  start: '2026-11-13T16:00:00Z',
+  /** ISO 8601 UTC — event ends. Time taken from the Add-to-calendar file on
+   *  comm-link 21389 ("Countdown to IAE 2956"): 2026-11-27 20:00 UTC. */
+  end: '2026-11-27T20:00:00Z',
   description:
-    'Star Citizen is free to play during Foundation Festival 2026 with five ships to try. No purchase required — create a free RSI account, download the launcher, and fly. Use a referral code at signup to receive 50,000 UEC bonus: https://dayonecitizen.com/free-fly-events',
+    'Star Citizen is free to play during the Intergalactic Aerospace Expo 2956 at New Babbage, with 200+ ships and vehicles to try. No purchase required — create a free RSI account, download the launcher, and fly. Use a referral code at signup to receive 50,000 UEC bonus: https://dayonecitizen.com/free-fly-events',
   url: 'https://dayonecitizen.com/free-fly-events',
   /** Human-readable label shown on the banner */
-  label: 'July 29 – August 10, 2026',
+  label: 'November 13 – 27, 2026',
   /** Short headline used on the banner */
-  headline: 'Foundation Festival 2026 Free Fly (July 29 – August 10, 2026).',
+  headline: 'IAE 2956 Free Fly (November 13 – 27, 2026).',
 }
 
 export type FreeFlyEvent = typeof NEXT_FREE_FLY
@@ -30,7 +30,7 @@ export type FreeFlyStatus = 'upcoming' | 'active' | 'ended'
  * Where NEXT_FREE_FLY sits relative to now.
  *
  * Pages that describe the event MUST branch on this instead of hardcoding
- * "live right now". The Foundation Festival window ended 2026-08-10 and this
+ * "live right now". An earlier Free Fly window ended and this
  * page went on claiming a live event for eight days, because the copy was
  * written by hand during the event and nobody edited it afterwards. Any page
  * using this must also set `export const revalidate` — otherwise the status is
