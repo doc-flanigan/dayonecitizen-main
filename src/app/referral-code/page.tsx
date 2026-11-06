@@ -28,7 +28,8 @@ export const revalidate = 3600
 
 const REFERRAL_FAQ =
   'https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ'
-const RSI_TOS = 'https://robertsspaceindustries.com/en/tos'
+const PAINT_SPECTRUM =
+  'https://robertsspaceindustries.com/spectrum/messages/member/Doc_Flanigan'
 const PAINT_PAGE =
   'https://robertsspaceindustries.com/en/pledge/Paint/Aurora-Mk-II-Cloudbuster-Paint'
 const PAINT_DISCORD = 'https://discord.gg/MpAUJs9xet'
@@ -199,7 +200,7 @@ const faqJsonLd = {
       name: 'Do I get anything extra for using this code?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Yes, from me. If you buy the First Flight Pack, I send you the Aurora Mk II Cloudbuster paint thirty days later. It is a personal gift, not an RSI reward. See 'A welcome gift from me' on this page.",
+        text: "Yes, from me. If you buy the First Flight Pack, I send you the Aurora Mk II Cloudbuster paint within a day of your claim. It is a personal gift, not an RSI reward. See 'A welcome gift from me' on this page.",
       },
     },
   ],
@@ -595,24 +596,23 @@ export default function ReferralCodePage() {
                     >
                       #claim-your-paint channel on our Discord
                     </TrackedExternalLink>
-                    . Nothing else is needed.
+                    . Nothing else is needed. Not on Discord? Send me a{' '}
+                    <TrackedExternalLink
+                      href={PAINT_SPECTRUM}
+                      trackingLabel="ReferralCode-paint-spectrum"
+                      className="text-gold underline-offset-4 hover:underline"
+                    >
+                      message on Spectrum
+                    </TrackedExternalLink>
+                    , RSI&apos;s own forum, with your handle instead.
                   </li>
                   <li>I check your handle against my recruit list on RSI.</li>
                   <li>
-                    Thirty days after your purchase, I buy the paint as a gift
-                    and send it to your handle. RSI emails you a code to redeem
-                    it.
+                    Within a day of your claim, I buy the paint as a gift and
+                    send it to your handle. RSI emails you a code to redeem it.
                   </li>
                 </ol>
               </div>
-              <p>
-                Why thirty days? RSI only counts a referral once the account
-                has held the pack for thirty days, and a refund inside that
-                window undoes it.{' '}
-                <SourceLink href={RSI_TOS}>
-                  Official RSI Terms of Service
-                </SourceLink>
-              </p>
               <p>
                 The offer stays open while this section is up. If it ends, I
                 will say so here.
@@ -804,8 +804,8 @@ export default function ReferralCodePage() {
                 </h3>
                 <p className="text-sm leading-relaxed text-starwhite/70">
                   Yes, from me. If you buy the First Flight Pack, I send you
-                  the Aurora Mk II Cloudbuster paint thirty days later. It is
-                  a personal gift, not an RSI reward. See &lsquo;A welcome gift
+                  the Aurora Mk II Cloudbuster paint within a day of your
+                  claim. It is a personal gift, not an RSI reward. See &lsquo;A welcome gift
                   from me&rsquo; on this page.
                 </p>
               </div>
