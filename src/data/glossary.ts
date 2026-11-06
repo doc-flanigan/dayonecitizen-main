@@ -818,7 +818,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Golem',
     category: 'Ships',
     definition:
-      "Drake light mining ship. Built for small-crew mining operations — extracting ore and processing it for profit. Positioned as an entry into group mining before moving to larger vessels.",
+      "Drake's first mining ship — an essentials-only solo miner with a single built-in mining arm that can't be swapped. A low-cost way into mining before stepping up to multi-crew ships like the Mole.",
     lastVerified: '2026-11-02',
   },
   {
