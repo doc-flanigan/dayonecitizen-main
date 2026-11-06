@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29",
+  "generated": "2026-11-02",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -629,7 +629,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042050774-Why-can-t-I-send-this-pledge-as-a-gift",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-30"
     },
     {
       "id": "iae-save-the-date-timing",
@@ -1266,7 +1266,8 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs",
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
-        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468",
+        "https://robertsspaceindustries.com/comm-link/transmission/21431-This-Week-In-Star-Citizen"
       ],
       "lastVerified": "2026-10-29"
     },
@@ -1286,7 +1287,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013195927-Public-Test-Universe-PTU-FAQ"
       ],
-      "lastVerified": "2026-10-18"
+      "lastVerified": "2026-10-30"
     },
     {
       "id": "pyro-lawless-no-uee-law-enforcement",
@@ -1526,6 +1527,16 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
       ],
       "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "rsi-vat-billing-address",
+      "claim": "RSI charges VAT to UK and EU buyers based on the billing address of their payment method; depending on store region, it may not show in the price until billing details are entered at checkout.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360051914473-Taxes-and-the-RSI-Pledge-Store",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004384414-Orders-FAQ"
+      ],
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "rsi-website-no-german-locale",
@@ -2143,7 +2154,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042050774-Why-can-t-I-send-this-pledge-as-a-gift",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-10-30"
     },
     {
       "id": "three-systems-live-stanton-pyro-nyx",
