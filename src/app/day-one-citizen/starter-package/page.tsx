@@ -101,7 +101,7 @@ const faqJsonLd = {
       name: 'When is the Star Citizen Anniversary sale?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'CIG has held an Anniversary sale in November since 2013. We have not seen official 2026 dates yet. Dates for the Intergalactic Aerospace Expo, which is also held in November, are on freeflyevent.com.',
+        text: 'CIG has held an Anniversary sale in November since 2013. We have not seen official 2026 Anniversary sale dates yet. The Intergalactic Aerospace Expo 2956 is confirmed for November 13 to 27, 2026, at New Babbage. More on freeflyevent.com.',
       },
     },
   ],
@@ -350,13 +350,13 @@ export default function StarterPackagePage() {
                 </SourceLink>
               </p>
               <p>
-                We have not seen official dates for IAE 2956 or a 2026
-                Anniversary sale yet. Last year, CIG published the IAE 2955 dates
-                on November 6, 2025.{' '}
-                <SourceLink href="https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/intergalactic-aerospace-expo-2955-save-the-date">
-                  Official forum post
+                CIG has confirmed IAE 2956 for November 13 to 27, 2026, at New
+                Babbage on microTech.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/transmission/21389-Countdown-To-IAE-2956">
+                  Official RSI blog post
                 </SourceLink>{' '}
-                For this year&rsquo;s dates, see{' '}
+                We have not seen official dates for a 2026 Anniversary sale yet.
+                For the full IAE schedule, see{' '}
                 <a
                   href="https://freeflyevent.com/next-free-fly"
                   className="text-gold underline-offset-4 hover:underline"
@@ -521,9 +521,9 @@ export default function StarterPackagePage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   CIG has held an Anniversary sale in November since 2013. We
-                  have not seen official 2026 dates yet. Dates for the
-                  Intergalactic Aerospace Expo, which is also held in November,
-                  are on{' '}
+                  have not seen official 2026 Anniversary sale dates yet. The
+                  Intergalactic Aerospace Expo 2956 is confirmed for November
+                  13 to 27, 2026, at New Babbage. More on{' '}
                   <a
                     href="https://freeflyevent.com/next-free-fly"
                     className="text-gold underline-offset-4 hover:underline"
