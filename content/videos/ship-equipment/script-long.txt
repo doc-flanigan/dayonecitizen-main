@@ -1,0 +1,21 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how the parts inside your ship work, and how swapping them changes the way it flies and fights.
+
+Every ship is built from interchangeable parts, called components. The ones your ship comes with are fine to start, but swapping them lets you tune the ship for combat, stealth, hauling cargo, or long trips.
+
+Let's start with the power plant. It generates electricity for everything else — weapons, shields, engines, all of it. Not enough power, and systems start shutting down. Components come in three grades. Grade A gives you the most power, but it gives off a strong electromagnetic signal, or E M. That signal makes you easier to spot on enemy radar. Grade B is balanced, and it's what most ships come with from the factory. Grade C gives the least power but the smallest signal, for players who want to stay hidden.
+
+Coolers work the same way, but for heat instead of power. Run hot too long without enough cooling, and your systems throttle down. An industrial cooler handles the most heat but draws more power. A stealth cooler cools less but barely shows up on infrared, or I R, scanners. A performance cooler splits the difference, and it's a solid default for most ships.
+
+Your quantum drive is what makes quantum travel possible — the faster-than-light way you cross between planets and stations. Two things matter here: spool time and fuel efficiency. Spool time is how long you wait before the jump starts, and fuel efficiency is how far the drive goes on one tank. A military drive spools fastest, good for a quick escape. A civilian drive balances both. An industrial drive spools slowest but goes farthest, great for cargo runs.
+
+Shields protect your hull. Bigger ships can redirect shield power to specific sides — front, back, left, right — using the shield display in the cockpit. Smaller ships usually spread protection evenly instead. Military shields hold the most, but recharge slowly. Civilian shields balance both. Stealth shields hold less but recharge fast and barely register on sensors.
+
+Now, weapons. Ballistic weapons fire physical ammunition, so you can run out mid-fight. But they partially bypass shields, meaning some damage gets through even with shields up, and they hit harder per shot. Energy weapons draw power straight from your power plant, so they never run dry. But they have to fully drain a shield before any damage reaches the hull. They're the fastest way to strip shields, though sustained fire builds heat that stresses your cooler.
+
+Here's something nobody tells new players. In the cockpit, there's a power triangle — a display that lets you shift power between weapons, shields, and engines on the fly. Push power to engines when you're chasing someone. Push it to shields when you're taking fire. Push it to weapons once you've got a clear shot. Good pilots are constantly adjusting that triangle mid-fight.
+
+To swap components, buy them at an equipment shop first. Dumper's Depot, found at most orbital stations, is the easiest to reach. Omega Pro in New Babbage and Apocalypse Arms in Area Eighteen carry better selections. Then head to an A S O P terminal at a spaceport, or open your ship's parts screen while on board. Drag the new part into its matching slot and confirm. One catch: components are sized, so a bigger part simply will not fit into a smaller slot.
+
+One more tip. If you want to stay off radar, component grade alone will not save you. Flying at full throttle or firing continuously spikes your heat signature no matter what you installed. Stealth means managing your throttle and trigger finger too.
+
+That's ship equipment in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.

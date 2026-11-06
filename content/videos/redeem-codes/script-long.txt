@@ -1,0 +1,21 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how redeem codes actually work in Star Citizen, and why most of the "codes" lists you find online are fake.
+
+Let's clear something up first. There is no public list of working Star Citizen codes. Nothing you paste in today will unlock a free ship or a pile of money. Real codes fall into two small buckets, and I'll walk through both.
+
+First, the one code almost everyone asks about: the referral code. Mine is STAR-GCQJ-N6NC. You enter it once, when you create your account with RSI — Roberts Space Industries, the company's account and store site. Doing that adds fifty thousand UEC to your new account. UEC is the main in-game currency, the kind that carries over between play sessions and updates. No purchase is required.
+
+Here's the important distinction. A referral code is not a "redeem code" in the giveaway sense. It's a one-time signup bonus tied to your account, not a single-use code someone hands you at an event. Keep those two ideas separate, because the rest of this video is about the other kind.
+
+Bucket one: gift codes. If a friend buys you a game package, RSI emails a code straight to you. You apply it yourself, in your own account settings, and the package gets added to your account. That's the entire process — no store, no extra steps.
+
+Bucket two: promo codes. Cloud Imperium Games, the studio building the game, occasionally issues these around a live event. You'd enter one under RSI Account, then Settings, then Apply a Promotional Code. The May fleet event each year is the one most likely to carry a promo code. It was called Invictus Launch Week in past years, and DefenseCon in 2026.
+
+Now, a few things nobody tells you. There is no code system for aUEC, the temporary test-server money you earn by playing missions or hauling cargo. It resets between major updates, and no code adds to it. If a list promises free aUEC, it's fake.
+
+Same goes for permanent free ships. Those are only ever given out in person — at community meetups called Bar Citizen, or at CitizenCon, the game's convention. It didn't run in 2026. There's no code for either one.
+
+So if "redeem code" lists are mostly fake, how do new players actually get ahead? Two legitimate paths. One: the referral program, which is the fifty-thousand-UEC bonus I mentioned. Two: Free Fly events, where the whole game opens up free for a limited window. A rotating set of ships is available to try, no purchase needed.
+
+And one real tip: if you find a code from a legitimate source, paste it into RSI Account, Settings, Apply a Promotional Code. The site tells you immediately whether it's valid, so you never have to guess.
+
+That's how redeem codes work in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.

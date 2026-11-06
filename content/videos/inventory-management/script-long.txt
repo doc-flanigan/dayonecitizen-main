@@ -1,0 +1,21 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how to manage your inventory, so your gear and cargo don't end up scattered, lost, or gone for good.
+
+Star Citizen splits your stuff into a few separate storage spaces, and knowing which is which saves a lot of frustration.
+
+First is your personal inventory — the armor, weapons, consumables, and tools your character is carrying right now. It travels with you everywhere. How much you can carry depends on your armor and whether you have a backpack equipped. A backpack is extra gear you wear that noticeably increases how much you can carry.
+
+Second is local storage — a storage terminal or locker at a specific location, like your home room, an outpost, or a city locker. It holds a lot, but the items stay there until you go back for them. The good news is local storage persists between play sessions.
+
+Third is your ship. Small personal-size items go in the ship's own inventory panel. Large trade goods go in the physical cargo hold, measured in SCU — short for Standard Cargo Unit. One SCU is just under two cubic metres. Check your ship's hold size before you buy trade goods. Overfilling it is a common beginner mistake.
+
+Now, how do you actually move items between these spaces? Press I to open the inventory screen. Your personal inventory shows on one side, and the ship or station storage shows on the other. But here's the catch — you have to be physically close to the ship or terminal for the transfer to work. Once you are, just drag an item from one panel to the other. To move a whole stack at once, right-click it and choose Transfer All.
+
+Here's the tip nobody tells new players. If your ship gets destroyed, the cargo sitting in its hold is lost. Small items in the ship's inventory panel are usually lost too. But your personal inventory — everything on your character — survives, and you keep it when you respawn.
+
+And here's the mistake that costs people the most. If you file an insurance claim on a destroyed ship, the replacement ship is a brand new copy. Anything still sitting in the old one is gone. Always unload your cargo and gear before you file that claim.
+
+One more thing worth knowing: if your inventory screen looks empty when it shouldn't, don't panic. That is almost always just your game client failing to display what the server already has saved. Close the inventory screen, wait a few seconds, and reopen it. If that does not fix it, log out and back in. Check every storage location before you assume anything is actually lost.
+
+A few habits will keep your gear under control. Pick one home base and keep your main loadout and valuables there instead of spreading them across the galaxy. Give each ship one job — do not mix your combat gear with cargo you are hauling to sell. And sell your loot regularly. Visit a Trade & Development Division terminal, called TDD for short, or any commodity kiosk, before it piles up.
+
+That's inventory management in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.

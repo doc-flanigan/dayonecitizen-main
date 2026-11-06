@@ -1,0 +1,9 @@
+Grouped up with a friend in Star Citizen but you keep landing on different servers? Here's the fix.
+
+Press F11, open the Friends tab, right-click your friend's name, and choose Invite to Party. That's it — you're in a party together.
+
+But here's the part that trips people up. Being in a party does not put you on the same server by itself. Star Citizen runs many servers at once, called shards.
+
+To land together, form your party first, while you are both still sitting at the main menu. Then have the party leader click Enter Universe, and everyone else follows right after. The game routes you all to the same shard automatically.
+
+More like this at dayonecitizen dot com. I'm Doc Flanigan.

@@ -1,0 +1,17 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how to quantum travel, the way you cross huge distances between planets, moons, and stations in seconds instead of hours.
+
+Quantum travel is faster-than-light travel inside one star system. Your ship carries a quantum drive, a physical part that flings you across space at incredible speed. You will use this every single session, so it is worth learning well.
+
+Before you can jump, a few things need to be true. You have to be in the pilot seat — only the pilot can start a jump, not a passenger or a gunner. Your quantum drive has to be undamaged. You need quantum fuel, which sits in its own tank, separate from the hydrogen fuel that feeds your thrusters. And you need to be clear of restricted areas. Landing zones, hangars, and the space around stations and planets all block quantum travel.
+
+Here is the core loop. First, take off and fly a few kilometers away from any landing area or planet surface, until the warning clears from your screen. Second, hold the B key — a real hold, not a quick tap — until your ship's flight mode reads NAV, short for navigation. Purple diamond markers appear floating around you; those are nearby destinations. Third, click your middle mouse button to switch into quantum-travel mode, then aim your ship's nose at a marker. Your screen shows the destination name and how long the trip takes. Fourth, just keep pointed at the marker. The drive calibrates itself in five to fifteen seconds, with no button holding needed. Fifth, when you see "Quantum Ready," hold down your left mouse button. Your ship shoots into the famous blue tunnel. Sixth, relax. The jump ends on its own near your destination. If you are headed to a planet's surface, you arrive about thirty kilometers above or near it. Then you fly the rest of the way yourself.
+
+For longer trips, press F2 to open the Starmap, a three-dimensional map of the whole star system. Find your destination, click it, then click "Route to this Location." Close the map, switch to quantum-travel mode, and jump. The Starmap cues up each leg of a multi-stop trip automatically.
+
+A few things nobody tells you. Sending extra power to your engines, and turning off your shields and weapons, both speed up calibration. Refuel at any Cry-Astro station, the game's refueling company, or at one of the four big landing zones. Short hops take thirty seconds to a few minutes. Crossing a whole star system can take ten to twenty minutes. Your ship flies itself the whole time, so you can step away.
+
+If the drive will not calibrate, check five things. Check your seat, your flight modes, nearby restricted areas, your drive's health, and your fuel.
+
+One danger worth knowing is interdiction. That is when another ship yanks you out of a jump with a quantum snare, usually right next to them. If it happens, do not panic. Check who is nearby, then fight if you can, boost away until the snare weakens, or comply if you have no better option.
+
+That's quantum travel in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.

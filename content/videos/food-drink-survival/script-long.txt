@@ -1,0 +1,19 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how your character's hunger and thirst actually work, and the simple habits that keep them from ever being a problem.
+
+Your character in Star Citizen gets hungry and thirsty, just like a real person. Two meters track that: Nutrition, which is hunger, and Hydration, which is thirst. Both drain slowly over time while you play.
+
+You can check them anytime. Open your mobiGlas, the wrist-mounted computer that handles your missions and inventory, by pressing F1. Or just glance at the bottom-left corner of your screen, where both meters sit quietly during normal play.
+
+Here's the part new players miss. If either meter drops too low, you start taking damage. Ignore it long enough, and you will fall unconscious. In the worst case, you can actually die from it, and the game logs that death as "Malnutrition." It's rare, and it's completely avoidable, but it is real.
+
+The fix is simple: eat and drink. There's one rule to remember first, though. You have to take your helmet off before you can eat or drink anything. So if you're sealed up in a spacesuit, pop the helmet first.
+
+Food is usually eaten in a single bite, refilling your Nutrition meter right away. Drinks work a little differently. You can take a small sip to top off a bit, or finish the whole thing in one go. Either way, try not to eat or drink when your meter is already full. Doing that wastes most of the effect, so save your supplies for when you actually need them.
+
+Now, not all food and drink are equal, and this is genuinely useful to know. Most food carries a Nutritional Density Rating, or NDR. The higher the number, the more hunger it restores. Most drinks carry a Hydration Efficacy Index, or HEI, and a higher number there means longer-lasting hydration. Plain filtered water has an HEI of eighty, which is a solid baseline. Coffee and alcohol actually lower a drink's HEI, so they hydrate you less than water does, even though they feel like a treat. Some items also carry extra effects, like Energizing on certain drinks. It's worth checking an item's effects before you use it, especially right before a fight.
+
+So where do you actually get this stuff? Shops, bars, and vending machines in any city or station sell food and drink. Look for vendor kiosks in the main common areas when you land. One habit worth building early: stock up before you leave a major hub. Smaller, remote outposts often have thin selection, and you don't want to be caught out there hungry with nothing on the shelf.
+
+A few habits that will keep this from ever becoming a problem. Always carry at least one food item and one drink in your personal inventory, just as a buffer. A cargo run means hauling goods from one station to another, and exploration trips take you far from any shop. Before either one, buy extra food and drink at a city, because you won't find much once you're out there. And get in the habit of glancing at your meters before every mission. If either one looks low, top it off before you walk out the door. It takes seconds, and it means you'll never have to think about "Malnutrition" again.
+
+That's food, drink, and survival in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.
