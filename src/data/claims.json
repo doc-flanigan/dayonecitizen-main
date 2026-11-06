@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29",
+  "generated": "2026-11-06",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -147,7 +147,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "chris-roberts-wing-commander-freelancer",
@@ -365,7 +365,7 @@
     },
     {
       "id": "event-foundation-festival-2026",
-      "claim": "The Foundation Festival 2026 Free Fly runs July 29 – August 10, 2026, with five ships free to fly (RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader Intrepid, RSI Salvation) and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
+      "claim": "The Foundation Festival 2026 Free Fly ran July 29 – August 10, 2026, with five ships free to fly (RSI Aurora Mk II, Drake Cutter, Drake Golem, Crusader Intrepid, RSI Salvation) and no purchase required. The companion referral bonus (Comm-Link 21225) runs until August 12, 2026, 20:00 UTC: the recruiter earns an Argo ATLS (LTI, non-meltable, non-giftable, one per player) and the recruited player earns a 'Ready for Anything' Career Kit — both granted only when the new player uses a referral code AND pledges for a starter pack or ship; the standard 50,000 UEC signup bonus still requires no purchase. Twitch Drops run July 29 – August 12.",
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/en/comm-link/transmission/21211-Foundation-Festival-2026",
@@ -629,7 +629,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042050774-Why-can-t-I-send-this-pledge-as-a-gift",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "iae-save-the-date-timing",
@@ -667,7 +667,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "included-vessels-loaner-system",
@@ -1013,7 +1013,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "misc-raptor-not-real-ship",
@@ -1209,7 +1209,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "pledge-buyback-token-quarterly-limit",
@@ -1237,7 +1237,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013193627-Reclaim-a-Pledge"
       ],
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "pledge-refund-30-day-withdrawal-period",
@@ -1257,7 +1257,7 @@
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
       ],
-      "lastVerified": "2026-10-29"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "pledges-giftable-once-per-pledge",
@@ -1266,9 +1266,10 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs",
         "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-and-game-access/9103776",
-        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468"
+        "https://robertsspaceindustries.com/spectrum/community/SC/forum/1/thread/updates-to-pledge-gifting-faq/9195468",
+        "https://robertsspaceindustries.com/comm-link/transmission/21431-This-Week-In-Star-Citizen"
       ],
-      "lastVerified": "2026-10-29"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "prowler-utility-2year-pledge-300-usd",
@@ -1286,7 +1287,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013195927-Public-Test-Universe-PTU-FAQ"
       ],
-      "lastVerified": "2026-10-18"
+      "lastVerified": "2026-10-30"
     },
     {
       "id": "pyro-lawless-no-uee-law-enforcement",
@@ -1526,6 +1527,16 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
       ],
       "lastVerified": "2026-08-27"
+    },
+    {
+      "id": "rsi-vat-billing-address",
+      "claim": "RSI charges VAT to UK and EU buyers based on the billing address of their payment method; depending on store region, it may not show in the price until billing details are entered at checkout.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360051914473-Taxes-and-the-RSI-Pledge-Store",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360004384414-Orders-FAQ"
+      ],
+      "lastVerified": "2026-11-02"
     },
     {
       "id": "rsi-website-no-german-locale",
@@ -1801,6 +1812,15 @@
         "https://robertsspaceindustries.com/pledge/Standalone-Ships/Shiv-2-Year"
       ],
       "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "shroud-of-the-avatar-backer-crossbow-variant",
+      "claim": "Star Citizen backers who also supported Shroud of the Avatar at the Immortal Adventurer pledge level or above between 2012 and 2014 are eligible for a special variant of the Novian Crossbow in Star Citizen.",
+      "status": "verified",
+      "sources": [
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/40271309406871-Shroud-of-the-Avatar-Crossbow-Redemption"
+      ],
+      "lastVerified": "2026-11-05"
     },
     {
       "id": "sq42-2016-window-missed",
@@ -2143,7 +2163,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360042050774-Why-can-t-I-send-this-pledge-as-a-gift",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013325608-Gifting-FAQs"
       ],
-      "lastVerified": "2026-10-02"
+      "lastVerified": "2026-11-04"
     },
     {
       "id": "three-systems-live-stanton-pyro-nyx",
