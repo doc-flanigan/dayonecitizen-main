@@ -12,6 +12,7 @@ import SourceLink from '@/components/SourceLink'
 import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
+import TrackedExternalLink from '@/components/TrackedExternalLink'
 import { SITE } from '@/lib/site'
 import { REFERRAL_BONUS, isReferralBonusActive } from '@/data/referral-bonus'
 import { NEXT_FREE_FLY, getFreeFlyStatus } from '@/data/next-free-fly'
@@ -27,6 +28,10 @@ export const revalidate = 3600
 
 const REFERRAL_FAQ =
   'https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ'
+const RSI_TOS = 'https://robertsspaceindustries.com/en/tos'
+const PAINT_PAGE =
+  'https://robertsspaceindustries.com/en/pledge/Paint/Aurora-Mk-II-Cloudbuster-Paint'
+const PAINT_DISCORD = 'https://discord.gg/MpAUJs9xet'
 const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program'
 
 export const metadata: Metadata = {
@@ -187,6 +192,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'The referral code is applied to your RSI account, and the 50,000 UEC bonus is spent inside Star Citizen. Squadron 42 is a separate single-player game on the same account, so the bonus does not change the campaign itself.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I get anything extra for using this code?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Yes, from me. If you buy the First Flight Pack, I send you the Aurora Mk II Cloudbuster paint thirty days later. It is a personal gift, not an RSI reward. See 'A welcome gift from me' on this page.",
       },
     },
   ],
@@ -553,6 +566,60 @@ export default function ReferralCodePage() {
             </div>
           </section>
 
+          <section id="welcome-gift">
+            <h2 className="heading-display text-2xl sm:text-3xl">
+              A welcome gift from me
+            </h2>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
+              <p>
+                Join with this code, buy the First Flight Pack, and I will send
+                you the Aurora Mk II Cloudbuster paint for your new ship. RSI
+                sells that paint only to its Concierge backers, so a new
+                account cannot buy it.{' '}
+                <SourceLink href={PAINT_PAGE}>Official RSI paint page</SourceLink>{' '}
+                It is a personal gift from me, bought with my own money. It is
+                not an RSI reward, and it does not change your 50,000 UEC
+                bonus.
+              </p>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  How to claim it
+                </h3>
+                <ol className="list-decimal space-y-2 pl-5">
+                  <li>
+                    After you buy the pack, post your RSI handle in the{' '}
+                    <TrackedExternalLink
+                      href={PAINT_DISCORD}
+                      trackingLabel="ReferralCode-paint"
+                      className="text-gold underline-offset-4 hover:underline"
+                    >
+                      #claim-your-paint channel on our Discord
+                    </TrackedExternalLink>
+                    . Nothing else is needed.
+                  </li>
+                  <li>I check your handle against my recruit list on RSI.</li>
+                  <li>
+                    Thirty days after your purchase, I buy the paint as a gift
+                    and send it to your handle. RSI emails you a code to redeem
+                    it.
+                  </li>
+                </ol>
+              </div>
+              <p>
+                Why thirty days? RSI only counts a referral once the account
+                has held the pack for thirty days, and a refund inside that
+                window undoes it.{' '}
+                <SourceLink href={RSI_TOS}>
+                  Official RSI Terms of Service
+                </SourceLink>
+              </p>
+              <p>
+                The offer stays open while this section is up. If it ends, I
+                will say so here.
+              </p>
+            </div>
+          </section>
+
           <section>
             <h2 className="heading-display text-2xl sm:text-3xl">
               Any bonus event running right now?
@@ -729,6 +796,17 @@ export default function ReferralCodePage() {
                   <Term name="Squadron 42">Squadron 42</Term> is a separate
                   single-player game on the same account, so the bonus does not
                   change the campaign.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg border border-white/5 p-5">
+                <h3 className="mb-2 font-semibold text-starwhite">
+                  Do I get anything extra for using this code?
+                </h3>
+                <p className="text-sm leading-relaxed text-starwhite/70">
+                  Yes, from me. If you buy the First Flight Pack, I send you
+                  the Aurora Mk II Cloudbuster paint thirty days later. It is
+                  a personal gift, not an RSI reward. See &lsquo;A welcome gift
+                  from me&rsquo; on this page.
                 </p>
               </div>
             </div>
