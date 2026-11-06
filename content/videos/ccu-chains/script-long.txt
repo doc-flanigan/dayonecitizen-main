@@ -1,0 +1,19 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how backers trade a cheap starter ship for a far bigger one, paying only a fraction of its full price.
+
+Let's start with the basic building block. A CCU — short for Cross-Chassis Upgrade — is a token sold through the RSI pledge store, where backers buy ships with real money. A CCU swaps one ship pledge for a more expensive one. You don't pay the new ship's full price. You only pay the difference between the two.
+
+Here's a simple example. Say you own a ship worth fifty dollars, and you want one worth eighty dollars. A CCU between those two ships costs thirty dollars. Once you apply it, your old ship is gone, and you own the new one instead.
+
+A CCU chain is just several of those swaps stacked together. Instead of buying an expensive ship outright, you start cheap and climb one small step at a time. You might begin with a budget starter pack, then apply five or six CCUs in a row until you reach your dream ship.
+
+The real savings come from something called a Warbond CCU. Warbond means you pay with new real money instead of store credit — that's account credit you earn by returning, or melting, an old pledge. Warbond CCUs go on sale during big events, sometimes fifty to ninety percent off. Those events are IAE, the ship show every November, and the May fleet event — called Invictus Launch Week in past years, DefenseCon this year. Standard CCUs are available year-round, cost full price, and accept store credit.
+
+So here's the actual process. First, pick a cheap base ship, ideally one with Lifetime Insurance, so you can reclaim it free forever if it's destroyed. Second, use a free tool called ccugame.app to map a path from your base ship to your target, one step at a time. Third, buy the Warbond steps when they go on sale during an event, and the standard steps whenever you like.
+
+Here's the part nobody warns you about. Do not apply any CCU until every single step is sitting in your hangar. Each application is permanent — there is no undo. Apply step three before you own step four, and you could get stuck halfway there. Once the full chain is ready, apply the CCUs one at a time from My Hangar, choosing Apply Upgrade, until you reach your target.
+
+One real chain from ccugame.app: eight CCUs took a Gladius all the way to a Drake Corsair, a mid-size explorer with heavy firepower. The Corsair normally costs two hundred fifty dollars. This chain reached it for just sixty-five dollars total — a saving of ninety-five dollars, or thirty-eight percent.
+
+Two last warnings. CCUs only move up in price, never down. And a handful of rare capital ships — including the Drake Kraken, the Idris, and the Pioneer — can't be reached by CCU at all. Those need a direct purchase during a special sale.
+
+That's CCU chains in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.

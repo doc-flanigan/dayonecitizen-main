@@ -6,7 +6,7 @@ The RSI Launcher is Roberts Space Industries' own application. Think of it like 
 
 Before you click anything, look at the version number. Star Citizen is still in alpha, which means the game is being built while people play it. Right now it starts with four point ten. Patches arrive every few weeks, and that's normal.
 
-Near the big Launch button you'll see a channel selector. Live is the stable public version, and that's where almost every player is. The test servers are for trying upcoming patches. They're buggier, they have fewer players, and they install as a separate copy of the game. Stick to Live for now.
+Near the big Launch button you'll see a channel selector. The Live channel is the stable public version, and that's where almost every player is. The test servers are for trying upcoming patches. They're buggier, they have fewer players, and they install as a separate copy of the game. Stick to the Live channel for now.
 
 Click Launch. The first load can take several minutes. That's normal too. Grab a drink.
 

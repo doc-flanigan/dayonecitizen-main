@@ -1,0 +1,5 @@
+How do you quantum travel in Star Citizen? Four steps. Hold the B key — a real hold, not a tap — until your ship's flight mode reads NAV. Middle-click to switch into quantum-travel mode, then aim your nose at a purple marker. Wait five to fifteen seconds while the drive calibrates on its own. Then hold your left mouse button to jump.
+
+If the drive won't calibrate, you're probably still in a restricted area, or out of quantum fuel. Quantum fuel is a separate tank from your regular fuel, refueled at any Cry-Astro station.
+
+More like this at dayonecitizen dot com. I'm Doc Flanigan.

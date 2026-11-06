@@ -1,0 +1,23 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how to group up with friends in a party, and make sure you all land on the same server together.
+
+A party is just a group of friends linked together inside the game. Before you can invite anyone, you need to already be friends in-game. If you have not added them yet, check our Adding Friends guide first. Once you are friends, forming a party takes about thirty seconds.
+
+Here is the fastest way to do it. Press F11 to open the Commlink, the game's friends and messaging screen. Click the Friends tab. Right-click your friend's name, and choose Invite to Party. They will see the invite on their end, and once they accept, you are grouped up.
+
+There is a second way, too. Press F1 to open your mobiGlas, your wrist computer. Open the Contacts Manager app, find your friend, and click Invite to Party. Same result, different screen.
+
+So what does being in a party actually get you? Five things. Your friends show up as friendly markers on your screen, so you always know where they are. Everyone can be routed onto the same server together. You can start a quantum jump as a group, which I will explain in a second. You all see the same mission objectives. And you get a private party chat channel in the Commlink.
+
+Now, here is the part nobody explains well. Just being in a party does not put you on the same server. Star Citizen runs many servers at once, called shards — separate copies of the universe running in parallel. If you don't do things in the right order, you can end up next to your friend's name on the party list. You still won't be anywhere near them in the game.
+
+The reliable method is simple. Form your party before anyone enters the game, while you are both still sitting at the main menu. Have the party leader click Enter Universe first, then everyone else follows right after. The game routes you all to the same shard automatically.
+
+If you are already in-game and discover you are on different shards, both of you leave to the main menu. Confirm the party is still active, then re-enter. You should land with the party leader this time. If that still doesn't work, disband the party, re-form it, and enter together again from the main menu.
+
+One more thing worth knowing. The party leader is automatically whoever created the party — it isn't something you choose separately. That person controls quantum jumps for the group and can share missions with everyone. They can hand off leadership to someone else from the party screen if needed.
+
+If you want friends to help fly your ship, that takes an extra step. By default, only you, the owner, can touch critical systems like turrets, co-pilot seats, or engineering stations. Open the vehicle management screen from your mobiGlas and set access permissions to Friends or Party to let others take those seats.
+
+Last piece: quantum linking. Quantum travel is how ships cross long distances fast — a faster-than-light jump that takes a few seconds to spool up. When your party leader starts that jump, nearby members get a prompt to lock onto the link. That includes anyone aboard the same ship or flying close by in their own. Accept it, and when the leader jumps, your whole group arrives together at the same moment.
+
+That's party management in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.

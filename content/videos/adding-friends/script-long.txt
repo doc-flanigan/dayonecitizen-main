@@ -1,0 +1,23 @@
+Hi, I'm Doc Flanigan from Day One Citizen, a plain-English guide to Star Citizen. In this video: how to add a friend, accept their request, and actually end up playing in the same game world together.
+
+Before we start, one quick fact. Your RSI handle is the username you picked when you created your account, and it's also your identity inside the game. To add someone as a friend, you either need their exact handle, or you need to be standing right next to them.
+
+There are four ways to send a friend request, and you can use whichever is easiest in the moment.
+
+The first works even when the game isn't running. Head to robertsspaceindustries dot com and sign in to Spectrum, the official Star Citizen forum. Click the search icon, type your friend's exact handle, open their profile, and click Add Friend. That's it.
+
+The second works from the main menu, before you click Enter Universe. Look for the Friends panel on the right side of the screen. Click the plus Add Friend button at the top, type the handle, and confirm.
+
+The third method works once you're inside the Persistent Universe — the live, always-online Star Citizen world where you spend most of your time. Press F11 to open the Commlink, or press F1 for your mobiGlas, your wrist computer, and open the Commlink app from there. Select Global Chat from the sidebar, click the Members tab, and you'll see everyone currently in that channel. Click a name and choose Send Friend Request.
+
+The fourth method is the fastest when your friend is physically standing next to you. Then you don't even need their handle. Hold F to open the Inner Thought wheel, the interaction menu that pops up for whatever you're looking at. Aim at your friend and select Add Contact.
+
+Now, accepting a request. It shows up in three places, so just use whichever one you see first: on Spectrum, under your avatar menu, then Settings, then Friends; in the main menu's Friends panel, where pending requests sit above your accepted contacts; or in-game, by pressing F11 and opening the Contacts tab.
+
+Here's the part nobody explains clearly. Adding someone as a friend and actually playing with them are two separate things. Star Citizen splits every player across multiple server shards. Think of each shard as its own copy of the universe, running at the same time. Being friends does not put you on the same one automatically.
+
+To fix that, form a party before either of you enters the universe. Press F11, right-click your friend's name in the Contacts tab, and choose Invite to Party. Once they accept, whoever leads the party clicks Enter Universe, and the game routes both of you to the same shard.
+
+One more tip: if your friends list looks empty, don't panic. Check Spectrum first — if they show up there, your account data is fine, and it's just the in-game display that's out of sync. Closing and reopening the Commlink with F11 usually fixes it.
+
+That's adding friends in Star Citizen, plain and simple. For more beginner guides, head to dayonecitizen dot com. If you're starting fresh, a referral code gets you fifty thousand UEC free at sign-up — mine's in the description. I'm Doc Flanigan, and I'll see you in the 'verse.
