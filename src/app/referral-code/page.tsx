@@ -13,6 +13,7 @@ import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import TrackedExternalLink from '@/components/TrackedExternalLink'
+import { PaintLightbox, PaintLightboxImageButton, PaintLightboxLink } from '@/components/PaintLightbox'
 import { SITE } from '@/lib/site'
 import { REFERRAL_BONUS, isReferralBonusActive } from '@/data/referral-bonus'
 import { NEXT_FREE_FLY, getFreeFlyStatus } from '@/data/next-free-fly'
@@ -571,6 +572,25 @@ export default function ReferralCodePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">
               A welcome gift from me
             </h2>
+            <PaintLightbox label="PaintGift-view-referral">
+              <figure className="mt-5">
+                <PaintLightboxImageButton className="block w-full overflow-hidden rounded-xl border border-white/5">
+                  <Image
+                    src="/images/aurora-mk2-cloudbuster.webp"
+                    alt="RSI Aurora Mk II starter ship in the Cloudbuster paint, parked in a hangar"
+                    width={1600}
+                    height={900}
+                    loading="lazy"
+                    sizes="(min-width: 768px) 768px, 100vw"
+                    className="aspect-video h-auto w-full object-cover"
+                  />
+                </PaintLightboxImageButton>
+                <figcaption className="mt-2 text-sm text-starwhite/60">
+                  Image: Cloud Imperium Games ·{' '}
+                  <PaintLightboxLink className="text-gold underline-offset-4" />
+                </figcaption>
+              </figure>
+            </PaintLightbox>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 Join with this code, buy the First Flight Pack, and I will send
