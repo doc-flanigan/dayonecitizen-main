@@ -292,13 +292,13 @@ export default function BuyingTheGamePage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/getting-started-game-package-starter-packs-list.jpg"
-                  alt="Grid of game packages on the RSI pledge store, from before the starter packs were replaced by the First Flight Pack."
+                  alt="RSI pledge store Game Packages listing showing the single Star Citizen First Flight Pack at $45, on sale from $60, November 2026."
                   width={1200}
                   height={561}
                   className="h-auto w-full"
                 />
                 <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                  An earlier screenshot of the game package listing. Today RSI shows a single package, the First Flight Pack, and it includes game access.
+                  The game package listing as of November 2026. RSI shows a single package, the First Flight Pack, and it includes game access.
                 </figcaption>
               </figure>
               <p>
