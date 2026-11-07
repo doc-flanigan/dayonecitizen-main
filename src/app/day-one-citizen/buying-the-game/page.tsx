@@ -70,7 +70,7 @@ const faqJsonLd = {
       name: 'How much does Star Citizen cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'RSI sells one game package, the First Flight Pack. It lists at $60 and was on sale for $45 as of October 2026. It includes access to the Star Citizen alpha, the Aurora Mk II starter ship with six months of insurance, 30-day loans of three more ships, and 10,000 UEC on your account.',
+        text: 'RSI sells one game package, the First Flight Pack. It lists at $60 and was on sale for $45 as of November 2026. It includes access to the Star Citizen alpha, the Aurora Mk II starter ship with six months of insurance, 30-day loans of three more ships, and 10,000 UEC on your account.',
       },
     },
     {
@@ -280,7 +280,7 @@ export default function BuyingTheGamePage() {
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
                 RSI now sells one game package, the First Flight Pack. It lists at $60
-                and was on sale for $45 as of October 2026. It includes:
+                and was on sale for $45 as of November 2026. It includes:
               </p>
               <ul className="list-disc space-y-2 pl-6">
                 <li>Access to the Star Citizen alpha (the live{' '}
@@ -292,13 +292,13 @@ export default function BuyingTheGamePage() {
               <figure className="overflow-hidden rounded-2xl border border-white/10">
                 <Image
                   src="/images/guides/getting-started-game-package-starter-packs-list.jpg"
-                  alt="Grid of game packages on the RSI pledge store, from before the starter packs were replaced by the First Flight Pack."
+                  alt="RSI pledge store Game Packages listing showing the single Star Citizen First Flight Pack at $45, on sale from $60, November 2026."
                   width={1200}
                   height={561}
                   className="h-auto w-full"
                 />
                 <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
-                  An earlier screenshot of the game package listing. Today RSI shows a single package, the First Flight Pack, and it includes game access.
+                  The game package listing as of November 2026. RSI shows a single package, the First Flight Pack, and it includes game access.
                 </figcaption>
               </figure>
               <p>
@@ -444,7 +444,7 @@ export default function BuyingTheGamePage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   The First Flight Pack lists at $60 and was on sale for $45
-                  as of October 2026. It includes alpha access, the Aurora Mk II
+                  as of November 2026. It includes alpha access, the Aurora Mk II
                   with six months of insurance, and
                   10,000 <Term name="UEC">UEC</Term> on your account.
                 </p>
