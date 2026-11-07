@@ -300,7 +300,7 @@ export default function AboutPage() {
             </h2>
             <div className="mt-5 space-y-4 text-sm leading-relaxed text-starwhite/85">
               <p>
-                Affiliate disclosure: This site uses Star Citizen referral links (code STAR-GCQJ-N6NC). Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
+                Affiliate disclosure: This site uses Star Citizen referral links (code STAR-GCQJ-N6NC). Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected. Any paint a recruit receives from the site owner is a personal gift bought with his own money, not an RSI reward.
               </p>
             </div>
           </section>
