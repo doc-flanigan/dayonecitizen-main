@@ -706,7 +706,7 @@ export default function ReferralCodePage() {
             </div>
           </section>
 
-          <section>
+          <section id="verification-log">
             <h2 className="heading-display text-2xl sm:text-3xl">
               Verification log
             </h2>

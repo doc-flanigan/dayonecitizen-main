@@ -36,6 +36,8 @@
 - [Report a Bug](https://dayonecitizen.com/report-a-bug): How to gather evidence, search the Issue Council, file a report, and follow up.
 - [Free Fly Events](https://dayonecitizen.com/free-fly-events): When Star Citizen is free to try, how to join, and what you can do during a Free Fly.
 - [Star Citizen Referral Code](https://dayonecitizen.com/referral-code): The canonical page for referral-code questions. The code STAR-GCQJ-N6NC, exactly where to enter it during RSI signup, a step-by-step walkthrough with screenshots, and how the 50,000 UEC bonus is tied to your account.
+- [Referral Code Not Working?](https://dayonecitizen.com/referral-code/not-working): Where the referral-code field is on the RSI signup page, the 24-hour window to add a forgotten code after creating an account, what to check when the code looks invalid, when the 50,000 UEC bonus is tied to the account, and what a referral code does not do (it is not a discount).
+- Welcome gift: players who join with the code and buy the First Flight Pack can claim an Aurora Mk II Cloudbuster paint. It is a personal gift from the site owner, Doc Flanigan, not an RSI reward and not part of the 50,000 UEC bonus. Claim it in #claim-your-paint on the Discord or by Spectrum direct message. Details: https://dayonecitizen.com/referral-code#welcome-gift
 - [Glossary](https://dayonecitizen.com/glossary): Plain-English definitions of Star Citizen terms, acronyms, and 'Verse slang.
 - [Quick Reference](https://dayonecitizen.com/quick-reference): Mobile cheat sheet — the essential keybinds (on foot, ship flight, capacitors) and which Stanton shop sells weapons, armor, components, mining gear, and ships.
 - [Tools](https://dayonecitizen.com/tools): Handy references and utilities for new players.
