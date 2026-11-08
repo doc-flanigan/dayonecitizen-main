@@ -8,6 +8,7 @@ import { NAV_GROUPS, NAV_PRIMARY } from '@/lib/site'
 import CTAButton from './CTAButton'
 import FreeFlyBanner from './FreeFlyBanner'
 import StarterPackBanner from './StarterPackBanner'
+import ReferralBar from './ReferralBar'
 
 export default function NavBar() {
   const pathname = usePathname()
@@ -67,6 +68,7 @@ export default function NavBar() {
     >
       <FreeFlyBanner />
       <StarterPackBanner />
+      <ReferralBar />
       <nav
         className="container-wide flex h-16 items-center justify-between"
         aria-label="Primary"
