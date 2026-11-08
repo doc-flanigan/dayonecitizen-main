@@ -11,6 +11,8 @@ import {
   REFERRAL_BAR_DISMISS_DAYS,
   REFERRAL_BAR_HIDDEN_PREFIXES,
 } from '@/data/referral-bar'
+import { getFreeFlyStatus } from '../data/next-free-fly'
+import { useServerFreeFlyActive } from './FreeFlyStatusProvider'
 
 const STORAGE_KEY = 'referral_bar_dismissed_until'
 
@@ -23,6 +25,17 @@ const STORAGE_KEY = 'referral_bar_dismissed_until'
 export default function ReferralBar() {
   const pathname = usePathname() ?? ''
   const [dismissed, setDismissed] = useState(false)
+  // Yield to the Free Fly banner while an event is live: two promo bars in
+  // the fixed header is too much on a phone, and freeflyevent.com (where the
+  // banner points) carries the same code. Same server-first pattern as
+  // FreeFlyBanner so hydration matches.
+  const [freeFlyActive, setFreeFlyActive] = useState(useServerFreeFlyActive())
+  useEffect(() => {
+    const check = () => setFreeFlyActive(getFreeFlyStatus() === 'active')
+    check()
+    const id = setInterval(check, 60_000)
+    return () => clearInterval(id)
+  }, [])
 
   useEffect(() => {
     try {
@@ -33,7 +46,7 @@ export default function ReferralBar() {
     }
   }, [])
 
-  if (!SHOW_REFERRAL_BAR || dismissed) return null
+  if (!SHOW_REFERRAL_BAR || dismissed || freeFlyActive) return null
   if (REFERRAL_BAR_HIDDEN_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`))) {
     return null
   }
