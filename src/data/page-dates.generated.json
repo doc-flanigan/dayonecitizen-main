@@ -29,7 +29,7 @@
   },
   "/beyond-the-basics/redeem-codes": {
     "datePublished": "2026-07-03T21:08:19-05:00",
-    "dateModified": "2026-11-05T11:44:03-06:00"
+    "dateModified": "2026-11-07T18:42:39-06:00"
   },
   "/beyond-the-basics/ship-equipment": {
     "datePublished": "2026-05-20T00:04:17-05:00",
@@ -141,7 +141,11 @@
   },
   "/referral-code": {
     "datePublished": "2026-07-07T12:16:42-05:00",
-    "dateModified": "2026-11-06T18:42:34-06:00"
+    "dateModified": "2026-11-07T18:42:39-06:00"
+  },
+  "/referral-code/not-working": {
+    "datePublished": "2026-11-07T18:42:39-06:00",
+    "dateModified": "2026-11-07T18:42:39-06:00"
   },
   "/report-a-bug": {
     "datePublished": "2026-06-12T10:46:36-05:00",

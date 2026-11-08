@@ -13,6 +13,7 @@ import ShotPlaceholder from '@/components/ShotPlaceholder'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
 import TrackedExternalLink from '@/components/TrackedExternalLink'
+import ReferralStickyBar from '@/components/ReferralStickyBar'
 import { PaintLightbox, PaintLightboxImageButton, PaintLightboxLink } from '@/components/PaintLightbox'
 import { SITE } from '@/lib/site'
 import { REFERRAL_BONUS, isReferralBonusActive } from '@/data/referral-bonus'
@@ -36,10 +37,14 @@ const PAINT_PAGE =
 const PAINT_DISCORD = 'https://discord.gg/MpAUJs9xet'
 const REFERRAL_PROGRAM = 'https://robertsspaceindustries.com/en/referral-program'
 
+// The month comes from src/data/verification.ts (VERIFIED_MONTH), which the
+// monthly verify ritual advances after a real check on the live RSI page.
+// The root layout template appends " | dayonecitizen.com".
+const TITLE = `Star Citizen Referral Code (${VERIFIED_MONTH}): STAR-GCQJ-N6NC`
+
 export const metadata: Metadata = {
-  title: 'Star Citizen Referral Code: STAR-GCQJ-N6NC',
-  description:
-    'The Star Citizen referral code is STAR-GCQJ-N6NC. This step-by-step guide with real signup screenshots shows how it ties 50,000 UEC to your account.',
+  title: TITLE,
+  description: `The Star Citizen referral code is STAR-GCQJ-N6NC, verified working in ${VERIFIED_MONTH} on the live RSI signup page. Step-by-step guide with real screenshots for the 50,000 UEC bonus.`,
   alternates: {
     canonical: '/referral-code',
     languages: {
@@ -50,7 +55,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: ['/images/brand/og-image.png'],
-    title: 'Star Citizen Referral Code: STAR-GCQJ-N6NC',
+    title: TITLE,
     description:
       'The Star Citizen referral code is STAR-GCQJ-N6NC. Enter it when you create your RSI account to tie a 50,000 UEC bonus to it — step-by-step, with screenshots.',
     url: '/referral-code',
@@ -63,7 +68,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Star Citizen Referral Code: STAR-GCQJ-N6NC',
+  headline: TITLE,
   description:
     'The Star Citizen referral code is STAR-GCQJ-N6NC. Enter it when you create your RSI account to tie a 50,000 UEC bonus to it — step-by-step, with screenshots.',
   author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about` },
@@ -374,8 +379,10 @@ export default function ReferralCodePage() {
                   </strong>{' '}
                   A free account holds the bonus, but you need a game package
                   to actually play Star Citizen. RSI now sells one
-                  game package, the First Flight Pack. It lists at $60 and was
-                  on sale for $45 (25% off) as of October 2026. Press{' '}
+                  game package, the First Flight Pack. It lists at $60. RSI often
+                  discounts its packs during big sales, and IAE 2956 runs
+                  November 13 to 27, 2026, so check the live store price before
+                  you buy. Press{' '}
                   <strong className="text-starwhite">Checkout</strong>. Not ready
                   to buy? Wait for a{' '}
                   <Term name="Free Fly">Free Fly</Term> — a limited window when
@@ -470,6 +477,23 @@ export default function ReferralCodePage() {
                 </figure>
               </div>
 
+              <p className="text-sm">
+                <Link
+                  href="/referral-code/not-working"
+                  className="font-semibold text-gold underline-offset-4 hover:underline"
+                >
+                  Code not working or forgot to add it?
+                </Link>{' '}
+                Start there. Also, the same code and the paint gift are on{' '}
+                <TrackedExternalLink
+                  href="https://starcitizenhelp.com/enlist"
+                  trackingLabel="ReferralCode-sch-enlist"
+                  className="text-gold underline-offset-4 hover:underline"
+                >
+                  starcitizenhelp.com/enlist
+                </TrackedExternalLink>
+                .
+              </p>
               <p className="text-sm">
                 Enter the code at signup if you can. If you forget, you can
                 still add it in your account settings within about{' '}
@@ -682,7 +706,7 @@ export default function ReferralCodePage() {
             </div>
           </section>
 
-          <section>
+          <section id="verification-log">
             <h2 className="heading-display text-2xl sm:text-3xl">
               Verification log
             </h2>
@@ -862,6 +886,9 @@ export default function ReferralCodePage() {
         <PageSources route="/referral-code" />
       </main>
       <Footer />
+      {/* Spacer so the fixed mobile bar never covers the footer's last line */}
+      <div className="h-16 md:hidden" aria-hidden />
+      <ReferralStickyBar />
     </>
   )
 }

@@ -12,6 +12,7 @@ export default function CopyCode({
   trackingLabel = 'referral-code-copy',
   copyLabel = 'Copy',
   copiedLabel = 'Copied',
+  compact = false,
 }: {
   code: string
   trackingLabel?: string
@@ -19,6 +20,8 @@ export default function CopyCode({
   copyLabel?: string
   /** Visible label shown after a successful copy (override for localized pages). */
   copiedLabel?: string
+  /** Small single-line chip for bars; the default is the large hero chip. */
+  compact?: boolean
 }) {
   const [copied, setCopied] = useState(false)
 
@@ -50,16 +53,18 @@ export default function CopyCode({
       type="button"
       onClick={onCopy}
       aria-label={`Copy referral code ${code}`}
-      className="group inline-flex items-center gap-3 rounded-xl border border-gold/40 bg-navyLight px-5 py-3 font-mono text-lg tracking-wider text-gold transition-all hover:border-gold hover:bg-navyLight/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+      className={`group inline-flex items-center rounded-xl border border-gold/40 bg-navyLight font-mono text-gold transition-all hover:border-gold hover:bg-navyLight/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy ${
+        compact ? 'gap-2 rounded-lg px-2.5 py-1 text-xs tracking-normal' : 'gap-3 px-5 py-3 text-lg tracking-wider'
+      }`}
     >
-      <span>{code}</span>
+      {compact ? null : <span>{code}</span>}
       {copied ? (
-        <span className="inline-flex items-center gap-1 text-sm text-green-400">
-          <Check size={16} aria-hidden /> {copiedLabel}
+        <span className={`inline-flex items-center gap-1 text-green-400 ${compact ? 'text-xs' : 'text-sm'}`}>
+          <Check size={compact ? 12 : 16} aria-hidden /> {copiedLabel}
         </span>
       ) : (
-        <span className="inline-flex items-center gap-1 text-sm text-starwhite/70 group-hover:text-gold">
-          <Copy size={16} aria-hidden /> {copyLabel}
+        <span className={`inline-flex items-center gap-1 text-starwhite/70 group-hover:text-gold ${compact ? 'text-xs' : 'text-sm'}`}>
+          <Copy size={compact ? 12 : 16} aria-hidden /> {copyLabel}
         </span>
       )}
     </button>

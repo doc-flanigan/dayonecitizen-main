@@ -6,6 +6,8 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import PageSources from '@/components/PageSources'
 import CTAButton from '@/components/CTAButton'
+import CopyCode from '@/components/CopyCode'
+import TrackedExternalLink from '@/components/TrackedExternalLink'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
@@ -58,6 +60,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'No. A referral code is entered once, at account signup, and ties a 50,000 UEC bonus to your account. See dayonecitizen.com/referral-code for the code and a step-by-step walkthrough with screenshots. Redeem codes on this page cover gifts and event promotions instead.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'My referral code is not working. What now?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Check that you typed it exactly as STAR-GCQJ-N6NC, with the dashes. If you already made your account without it, RSI's Referral Program page says you have a 24-hour grace period after account creation to add a code. See dayonecitizen.com/referral-code/not-working for the walkthrough.",
       },
     },
     {
@@ -152,13 +162,43 @@ export default function RedeemCodesPage() {
                 </strong>{' '}
                 — get the full step-by-step walkthrough with screenshots.
               </p>
+              <div className="mb-4">
+                <CopyCode code={SITE.referralCode} trackingLabel="redeem-codes-copy" />
+              </div>
               <Link
                 href="/referral-code"
                 className="inline-flex items-center gap-1.5 text-gold underline-offset-4 hover:underline font-semibold"
               >
                 Go to the referral code guide →
               </Link>
+              <p className="mt-4 text-sm text-starwhite/70 leading-relaxed">
+                Already tried it and it did not take?{' '}
+                <Link href="/referral-code/not-working" className="text-gold hover:underline">
+                  Here is where to enter it and what to do if you forgot
+                </Link>
+                . The same code and the paint gift are also on{' '}
+                <TrackedExternalLink
+                  href="https://starcitizenhelp.com/enlist"
+                  trackingLabel="redeem-codes-sch-enlist"
+                  className="text-gold hover:underline"
+                >
+                  starcitizenhelp.com/enlist
+                </TrackedExternalLink>
+                .
+              </p>
             </div>
+
+            {/* Welcome gift */}
+            <p className="text-starwhite/80 mb-8 leading-relaxed">
+              <strong className="text-starwhite">A welcome gift from me.</strong>{' '}
+              Join with this code, buy the First Flight Pack, and I will send you
+              the Aurora Mk II Cloudbuster paint for your new ship. It is a
+              personal gift from me, bought with my own money, not an RSI reward.{' '}
+              <Link href="/referral-code#welcome-gift" className="text-gold hover:underline">
+                How to claim it
+              </Link>
+              .
+            </p>
 
             {/* Gift vs promo */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
@@ -182,12 +222,12 @@ export default function RedeemCodesPage() {
               <strong className="text-starwhite">
                 RSI Account &rarr; Settings &rarr; Apply a Promotional Code
               </strong>
-              . The May fleet event (Invictus Launch Week in past years,
-              DefenseCon in 2026) is the event most likely to carry one.
+              . Watch the official RSI blog during an event for any code
+              it announces.
             </p>
 
             <p className="text-muted text-sm mb-8">
-              Looking for a Pirate Week 2026 code? The{' '}
+              Looked for a Pirate Week 2026 code? The{' '}
               <a
                 href="https://robertsspaceindustries.com/en/comm-link/transmission/21285-Pirate-Week-2026"
                 target="_blank"
@@ -196,9 +236,10 @@ export default function RedeemCodesPage() {
               >
                 official RSI blog post
               </a>{' '}
-              for Pirate Week, which began September 9, 2026, lists themed starter
-              packs, paint schemes and pirate gear. It does not include a redeem
-              code. Promo and event codes will be added here as RSI announces them. Found
+              for Pirate Week, which began September 9, 2026 and has since ended,
+              listed themed starter packs, paint schemes and pirate gear. It did
+              not include a redeem code. Promo and event codes will be added here
+              as RSI announces them. Found
               a code somewhere else? Paste it into RSI Account &rarr; Settings
               &rarr; Apply a Promotional Code — the website tells you immediately
               whether it is valid.
@@ -230,8 +271,17 @@ export default function RedeemCodesPage() {
                   <Term name="Free Fly">Free Fly</Term> events.
                 </strong>{' '}
                 CIG runs several free-play weeks per year, where promo codes unlock
-                the full game and a rotating set of ships to try. The most reliable
-                one runs at the May fleet event (Invictus in past years, DefenseCon in 2026). Our{' '}
+                the full game and a rotating set of ships to try. The{' '}
+                <a
+                  href="https://freeflyevent.com/iae-2956"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold hover:underline"
+                >
+                  IAE 2956 Free Fly
+                </a>{' '}
+                is announced for November 13 to 27, 2026. Earlier ones ran at the
+                May fleet event. Our{' '}
                 <Link href="/free-fly-events" className="text-gold hover:underline">
                   Free Fly events page
                 </Link>{' '}
@@ -255,6 +305,20 @@ export default function RedeemCodesPage() {
               </Link>{' '}
               for the code and a step-by-step walkthrough with screenshots.
               Redeem codes on this page cover gifts and event promotions instead.
+            </p>
+
+            <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
+              My referral code is not working. What now?
+            </h3>
+            <p className="text-starwhite/80 mb-6 leading-relaxed">
+              Check that you typed it exactly as STAR-GCQJ-N6NC, with the dashes.
+              If you already made your account without it, RSI&apos;s Referral
+              Program page says you have a 24-hour grace period after account
+              creation to add a code. The{' '}
+              <Link href="/referral-code/not-working" className="text-gold hover:underline">
+                code not working guide
+              </Link>{' '}
+              walks through it.
             </p>
 
             <h3 className="font-display text-lg font-bold text-starwhite mt-8 mb-3">
