@@ -1,5 +1,6 @@
 import { pageDates } from '@/lib/page-dates'
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from '@/components/Link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import NavBar from '@/components/NavBar'
@@ -204,6 +205,18 @@ export default function StarterPackagePage() {
                 </li>
                 <li>The Star Citizen digital download</li>
               </ul>
+              <figure className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src="/images/guides/first-flight-pack-store-page-2026-11.webp"
+                  alt="The RSI store page for the Star Citizen First Flight Pack: $45 on sale from $60, with the Includes list, November 2026."
+                  width={1200}
+                  height={742}
+                  className="h-auto w-full"
+                />
+                <figcaption className="bg-navyLight px-4 py-3 text-xs text-muted">
+                  The First Flight Pack store page as of November 2026. The Includes list matches the items above.
+                </figcaption>
+              </figure>
               <p>
                 It is Star Citizen only. It does not include Squadron 42, the
                 separate single-player story game. The download gives you access
