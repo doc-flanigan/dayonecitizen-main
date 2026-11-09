@@ -682,12 +682,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Anvil compact fighter with a built-in prisoner transport cell. Popular with bounty hunters because you can chase down a target, disable their ship, and bring them back alive.",
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Hurricane',
     category: 'Ships',
     definition:
       "Anvil two-seat heavy fighter with a manned top turret. The gunner handles rear defense while the pilot flies — it punches far above its weight class for the size.",
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Paladin',
@@ -769,6 +771,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Crusader Industries massive military transport line. The C2 hauls cargo, the M2 moves troops and vehicles, and the A2 is a strategic bomber. Big enough to drive a tank inside.",
     also: 'C2 Hercules, M2 Hercules, A2 Hercules, Herc',
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Ares Star Fighter',
@@ -851,6 +854,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aopoa/Esperia Xi'an-designed light fighter that maneuvers unlike anything humans build — it can rotate its engines independently, making it extremely agile. Harder to fly but devastating in skilled hands.",
+    lastVerified: '2026-11-09',
   },
   {
     term: "San'tok.yai",
@@ -1320,6 +1324,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "The capital city of Hurston — heavy industrial dome under a polluted sky. Central Business District is the in-city hub. Locked behind security at the gates.",
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Area18',
@@ -1346,12 +1351,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "An outlaw station in an asteroid hollow near Yela. No questions asked, no laws enforced. The unofficial pirate hub of Stanton.",
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Klescher',
     category: 'Locations',
     definition:
       "A maximum-security prison on Aberdeen. Players with high CrimeStat get sent here on death. Mine prison ore to pay off your sentence — or escape through the tunnels.",
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Yela',
@@ -1411,6 +1418,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "microTech moon — frozen scientific outposts and a few abandoned facilities. Mostly cosmetic with light gameplay activity.",
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Pyro V',
@@ -1450,6 +1458,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A wormhole between star systems. The Pyro jumpgate from Stanton is the first one open to players. Eventually all systems will be linked this way.",
     also: 'Jump Point',
+    lastVerified: '2026-11-09',
   },
   {
     term: 'Jumptown',
@@ -1457,6 +1466,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "An outlaw drug lab on Yela. Site of regular community-organized 'Jumptown 2.0' raid events — buy product, fight everyone else, profit. Pure chaos.",
     also: 'JT',
+    lastVerified: '2026-11-09',
   },
 
   // ─────────────── Technical / Patches ───────────────
