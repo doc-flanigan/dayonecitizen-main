@@ -415,9 +415,9 @@ export default function BuyingTheGamePage() {
               </p>
               <p>
                 In the game, you spend aUEC at shops around the{' '}
-                <Term name="PU">Persistent Universe</Term>. In Alpha 4.10.2 the base starting
+                <Term name="PU">Persistent Universe</Term>. In Alpha 4.10.3 the base starting
                 amount is 20,000 aUEC.{' '}
-                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102">
+                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103">
                   Official RSI release notes
                 </SourceLink>
               </p>

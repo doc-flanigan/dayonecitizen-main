@@ -9,6 +9,7 @@ import { DiscordCTA } from '@/components/DiscordCTA'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import PageSources from '@/components/PageSources'
+import SourceLink from '@/components/SourceLink'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -37,7 +38,7 @@ const faqJsonLd = {
       name: 'When is the next Star Citizen wipe?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No wipe is currently announced. The latest update, Alpha 4.10.2 (October 9, 2026), did not wipe — its release notes list Long Term Persistence as preserved. Alpha 4.10.1 (September 16, 2026) did not wipe either. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
+        text: 'No wipe is currently announced. The latest update, Alpha 4.10.3 (November 12, 2026), did not wipe — its release notes list Long Term Persistence as preserved. Alpha 4.10.2 (October 9, 2026) did not wipe either. CIG states whether progress carries over in the patch notes of each update, and says it generally tries to avoid wipes.',
       },
     },
     {
@@ -86,6 +87,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'No. Alpha 4.10.2 released on October 9, 2026 as build 4.10.2-live.12881860. Its official release notes list Long Term Persistence as preserved. New accounts still start with 20,000 aUEC.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Did Alpha 4.10.3 wipe Star Citizen progress?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Alpha 4.10.3 released on November 12, 2026 as build 4.10.3-live.13165946. Its official release notes list Long Term Persistence as preserved. New accounts still start with 20,000 aUEC.',
       },
     },
     {
@@ -143,7 +152,8 @@ export default function NextWipePage() {
             </h1>
             <p className="mt-4 max-w-2xl text-base text-starwhite/90">
               No <Term name="Wipe">wipe</Term> is announced. The latest update,
-              Alpha 4.10.2 (October 9, 2026), kept everyone&rsquo;s progress.
+              Alpha 4.10.3 (November 12, 2026), kept everyone&rsquo;s progress.{' '}
+              <SourceLink href="https://robertsspaceindustries.com/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103">Official RSI release notes</SourceLink>{' '}
               Anything you buy with real money survives every wipe.
             </p>
             <p className="mt-3 max-w-2xl text-base text-muted">
@@ -275,11 +285,13 @@ export default function NextWipePage() {
             <h2 className="heading-display text-2xl sm:text-3xl">So — when is the next one?</h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-starwhite/85">
               <p>
-                Not announced. The latest update, Alpha 4.10.2, was released
-                on October 9, 2026 <em>without</em> a wipe. Its release notes
-                list Long Term Persistence as preserved. Alpha 4.10.1
+                Not announced. The latest update, Alpha 4.10.3, was released
+                on November 12, 2026 <em>without</em> a wipe. Its release notes
+                list Long Term Persistence as preserved.{' '}
+                <SourceLink href="https://robertsspaceindustries.com/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103">Official RSI release notes</SourceLink>{' '}
+                Alpha 4.10.2 (October 9, 2026), Alpha 4.10.1
                 (September 16, 2026) and Alpha 4.10 (August 26, 2026) did not
-                wipe either. As of October 2026, no wipe is announced for any upcoming update.
+                wipe either. As of November 2026, no wipe is announced for any upcoming update.
                 The last full wipe came with Alpha 4.8 in May 2026.
               </p>
               <p>
@@ -313,9 +325,9 @@ export default function NextWipePage() {
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
                   No wipe is currently announced. The latest update, Alpha
-                  4.10.2 (October 9, 2026), did not wipe — its release notes
-                  list Long Term Persistence as preserved. Alpha 4.10.1
-                  (September 16, 2026) did not wipe either. CIG
+                  4.10.3 (November 12, 2026), did not wipe — its release notes
+                  list Long Term Persistence as preserved. Alpha 4.10.2
+                  (October 9, 2026) did not wipe either. CIG
                   states whether progress carries over in the patch notes of
                   each update, and says it generally tries to avoid wipes.
                   Heard a wipe rumor? Check it against our{' '}
@@ -391,6 +403,17 @@ export default function NextWipePage() {
                   No. Alpha 4.10.2 released on October 9, 2026 as build
                   4.10.2-live.12881860. Its official release notes list Long
                   Term Persistence as preserved. New accounts still start with 20,000 aUEC.
+                </p>
+              </div>
+              <div className="card-surface rounded-lg p-5 border border-white/5">
+                <h3 className="font-semibold text-starwhite mb-2">
+                  Did Alpha 4.10.3 wipe progress?
+                </h3>
+                <p className="text-starwhite/70 text-sm leading-relaxed">
+                  No. Alpha 4.10.3 released on November 12, 2026 as build
+                  4.10.3-live.13165946. Its official release notes list Long
+                  Term Persistence as preserved. New accounts still start with 20,000 aUEC.{' '}
+                  <SourceLink href="https://robertsspaceindustries.com/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103">Official RSI release notes</SourceLink>
                 </p>
               </div>
               <div className="card-surface rounded-lg p-5 border border-white/5">

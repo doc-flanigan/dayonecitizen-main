@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import { GuideProgress, DoThisNow } from '@/components/GuideProgress'
 import HelpNightCard from '@/components/HelpNightCard'
 import Term from '@/components/Term'
+import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import { SITE } from '@/lib/site'
 
@@ -229,8 +230,12 @@ export default function FirstLaunchPage() {
                 <li>
                   <strong className="text-starwhite">Check your wallet</strong> — open the Wallet
                   app in <Term name="mobiGlas">mobiGlas</Term>. It shows your{' '}
-                  <Term name="aUEC">aUEC</Term>, the in-game money. In Alpha 4.10.2 the base
-                  starting amount is 20,000 aUEC. RSI adds any <Term name="UEC">UEC</Term> on
+                  <Term name="aUEC">aUEC</Term>, the in-game money. In Alpha 4.10.3 the base
+                  starting amount is 20,000 aUEC.{' '}
+                  <SourceLink href="https://robertsspaceindustries.com/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103">
+                    Official RSI release notes
+                  </SourceLink>{' '}
+                  RSI adds any <Term name="UEC">UEC</Term> on
                   your account that did not come bundled with a game package, such as the
                   referral bonus.
                 </li>
