@@ -332,7 +332,8 @@
       "status": "verified",
       "sources": [
         "https://robertsspaceindustries.com/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103",
-        "https://robertsspaceindustries.com/patch-notes"
+        "https://robertsspaceindustries.com/patch-notes",
+        "https://status.robertsspaceindustries.com/issues/2026-11-12_live-deployment/index.html"
       ],
       "lastVerified": "2026-11-12"
     },
@@ -918,7 +919,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
       ],
-      "lastVerified": "2026-08-27"
+      "lastVerified": "2026-11-12"
     },
     {
       "id": "loaner-vessels-do-not-stack",
@@ -928,7 +929,7 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/4408770370455-Included-Vessels-Snub-Fighters-and-Rovers",
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
       ],
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-11-12"
     },
     {
       "id": "loaners-not-permanent-except-included-vessels",
@@ -937,7 +938,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
       ],
-      "lastVerified": "2026-08-27"
+      "lastVerified": "2026-11-12"
     },
     {
       "id": "lore-odin-coil-debris-field",
@@ -1102,22 +1103,13 @@
       "lastVerified": "2026-09-28"
     },
     {
-      "id": "new-player-guide-start-city-choice",
-      "claim": "A first-time Persistent Universe player can accept the New Player Mission and choose Lorville, Orison, Area18 or New Babbage as the starting location (not Area18 by default).",
-      "status": "verified",
-      "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/21160-New-Player-Guide"
-      ],
-      "lastVerified": "2026-11-09"
-    },
-    {
       "id": "new-player-starting-city-and-last-landing-zone",
       "claim": "On first load into Stanton a new player chooses a starting city (New Babbage, Area18, Lorville or Orison), and afterwards wakes at the last landing zone they flew to that has hab facilities.",
       "status": "verified",
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
       ],
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-10-18"
     },
     {
       "id": "no-free-trial-only-freefly",
@@ -1344,7 +1336,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013195927-Public-Test-Universe-PTU-FAQ"
       ],
-      "lastVerified": "2026-11-10"
+      "lastVerified": "2026-11-12"
     },
     {
       "id": "pyro-lawless-no-uee-law-enforcement",
@@ -1366,7 +1358,7 @@
     },
     {
       "id": "quantum-travel-sequence",
-      "claim": "In current Star Citizen (Alpha 4.10.2), quantum travel works by holding B briefly (a short hold, about a quarter second; a quick tap does nothing) to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate, then holding the left mouse button briefly to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
+      "claim": "In current Star Citizen (Alpha 4.10), quantum travel works by holding B briefly (a short hold, about a quarter second; a quick tap does nothing) to switch Master Mode to NAV, middle-clicking to cycle Operating Mode to QT, setting a route (Starmap or a destination marker), letting the quantum drive auto-calibrate, then holding the left mouse button briefly to begin the jump, which ends automatically at the destination (planetside arrivals land about 30 km above/near the surface location).",
       "status": "verified",
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360019449994-How-to-Quantum-Travel"
@@ -1601,7 +1593,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360003093114-Loaner-Ship-Matrix"
       ],
-      "lastVerified": "2026-08-27"
+      "lastVerified": "2026-11-12"
     },
     {
       "id": "rsi-vat-billing-address",
@@ -2228,7 +2220,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
       ],
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-10-18"
     },
     {
       "id": "store-credit-pledges-cannot-be-gifted",
