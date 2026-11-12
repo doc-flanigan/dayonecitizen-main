@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: 'Verliere ich bei einem Wipe alles?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.10.1 (16. September 2026) hat den Fortschritt behalten (Long Term Persistence erhalten) — genau wie schon Alpha 4.10 (26. August 2026) davor.',
+        text: 'Nein. Ein Wipe setzt nur erspieltes aUEC, Gegenstände und Fortschritt zurück. Alles, was du mit Echtgeld gekauft hast, und dein Account-UEC (etwa das 50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe; das aktuelle Update Alpha 4.10.3 (12. November 2026) hat den Fortschritt behalten (Long Term Persistence erhalten) — genau wie schon Alpha 4.10.2 (9. Oktober 2026) davor.',
       },
     },
     {
@@ -240,13 +240,14 @@ export default function LohntSichStarCitizenPage() {
                 </li>
               </ul>
               <p>
-                Zum aktuellen Stand: Seit dem 16. September 2026 läuft Alpha
-                4.10.1 auf den Live-Servern — ohne Wipe, der Spielfortschritt
-                (Long Term Persistence) wurde übernommen. Schon die
-                vorherige Version, Alpha 4.10 (26. August 2026), hatte den
+                Zum aktuellen Stand: Seit dem 12. November 2026 läuft Alpha
+                4.10.3 auf den Live-Servern — ohne Wipe, der Spielfortschritt
+                (Long Term Persistence) wurde übernommen. Auch die
+                vorherigen Versionen, Alpha 4.10.2 (9. Oktober 2026) und
+                Alpha 4.10.1 (16. September 2026), hatten den
                 Fortschritt behalten.{' '}
-                <SourceLink href="https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101">
-                  Offizielle RSI-Patch-Notes zu Alpha 4.10.1 (Englisch)
+                <SourceLink href="https://robertsspaceindustries.com/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103">
+                  Offizielle RSI-Patch-Notes zu Alpha 4.10.3 (Englisch)
                 </SourceLink>
               </p>
             </div>
@@ -313,8 +314,8 @@ export default function LohntSichStarCitizenPage() {
                   <strong className="text-starwhite">Wer entscheidet:</strong>{' '}
                   die Patch Notes der jeweiligen Version. CIG kündigt dort an,
                   was übernommen wird (Stichwort „Long Term Persistence”). Das
-                  aktuelle Update Alpha 4.10.1 (16. September 2026) brachte
-                  keinen Wipe, genau wie schon Alpha 4.10 (26. August 2026)
+                  aktuelle Update Alpha 4.10.3 (12. November 2026) brachte
+                  keinen Wipe, genau wie schon Alpha 4.10.2 (9. Oktober 2026)
                   davor — die Patch Notes bestätigen in beiden Fällen die
                   erhaltene Long Term Persistence.
                 </li>
@@ -382,9 +383,9 @@ export default function LohntSichStarCitizenPage() {
                   Fortschritt zurück. Echtgeld-Käufe und Account-UEC (auch das
                   50.000-UEC-Startguthaben) überleben jeden Wipe. Zuletzt gab es
                   mit Alpha 4.8 am 14. Mai 2026 einen vollständigen Wipe — das
-                  aktuelle Update Alpha 4.10.1 (16. September 2026) hat den
+                  aktuelle Update Alpha 4.10.3 (12. November 2026) hat den
                   Fortschritt behalten (Long Term Persistence erhalten), genau
-                  wie schon Alpha 4.10 (26. August 2026) davor.
+                  wie schon Alpha 4.10.2 (9. Oktober 2026) davor.
                 </p>
               </div>
               <div className="card-surface rounded-lg border border-white/5 p-5">

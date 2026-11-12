@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06",
+  "generated": "2026-11-12",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -73,6 +73,15 @@
         "https://robertsspaceindustries.com/pledge/Standalone-Ships/Aurora-Mk-II-2-Year"
       ],
       "lastVerified": "2026-09-28"
+    },
+    {
+      "id": "aurora-mk2-cloudbuster-paint-concierge-only",
+      "claim": "RSI sells the Aurora Mk II Cloudbuster Paint only to Concierge members; it offers the 'Buying as a gift?' option at checkout.",
+      "status": "unverifiable",
+      "sources": [
+        "https://robertsspaceindustries.com/en/pledge/Paint/Aurora-Mk-II-Cloudbuster-Paint"
+      ],
+      "lastVerified": "2026-11-06"
     },
     {
       "id": "aurora-mk2-launch-alpha-4-7",
@@ -318,6 +327,16 @@
       "lastVerified": "2026-10-09"
     },
     {
+      "id": "current-alpha-version-4-10-3",
+      "claim": "The current live Star Citizen build is Alpha 4.10.3, released November 12, 2026 as build 4.10.3-LIVE.13165946; its release notes list Long Term Persistence as preserved (no wipe), with new accounts starting on 20,000 aUEC.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/comm-link/Patch-Notes/21429-Star-Citizen-Alpha-4103",
+        "https://robertsspaceindustries.com/patch-notes"
+      ],
+      "lastVerified": "2026-11-12"
+    },
+    {
       "id": "current-alpha-version-4-9-0",
       "claim": "Star Citizen Alpha 4.9.0 (Frontier Tensions) was released July 15, 2026 and did not wipe saved progress — its patch notes state Long Term Persistence was Preserved. Superseded as the live build by Alpha 4.10.0 on August 26, 2026.",
       "status": "verified",
@@ -353,6 +372,15 @@
         "https://robertsspaceindustries.com/pledge/Packages/Generalist-Starter-Pack"
       ],
       "lastVerified": "2026-08-12"
+    },
+    {
+      "id": "epoque-geist-bundle-warbond-contents",
+      "claim": "The Epoque Geist Bundle Warbond includes the Kilgore and Poole Geist armor, the Gemini C54 SMG, and a matching paint for the RSI Meteor.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Gear/Epoque-Geist-Bundle-Warbond"
+      ],
+      "lastVerified": "2026-11-10"
     },
     {
       "id": "event-defensecon-2956",
@@ -572,6 +600,16 @@
       "status": "unverifiable",
       "sources": [],
       "lastVerified": "2026-10-22"
+    },
+    {
+      "id": "gifts-allowed-to-referred-players",
+      "claim": "RSI permits a backer to send a gift to players they referred; a gift received does not count toward the $40 the recruit must pledge from their own funds for the referral to count.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/tos",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/115013102847-Referral-Program-FAQ"
+      ],
+      "lastVerified": "2026-11-06"
     },
     {
       "id": "guide-system-category-limit",
@@ -1064,13 +1102,22 @@
       "lastVerified": "2026-09-28"
     },
     {
+      "id": "new-player-guide-start-city-choice",
+      "claim": "A first-time Persistent Universe player can accept the New Player Mission and choose Lorville, Orison, Area18 or New Babbage as the starting location (not Area18 by default).",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21160-New-Player-Guide"
+      ],
+      "lastVerified": "2026-11-09"
+    },
+    {
       "id": "new-player-starting-city-and-last-landing-zone",
       "claim": "On first load into Stanton a new player chooses a starting city (New Babbage, Area18, Lorville or Orison), and afterwards wakes at the last landing zone they flew to that has hab facilities.",
       "status": "verified",
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
       ],
-      "lastVerified": "2026-10-18"
+      "lastVerified": "2026-11-09"
     },
     {
       "id": "no-free-trial-only-freefly",
@@ -1297,7 +1344,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115013195927-Public-Test-Universe-PTU-FAQ"
       ],
-      "lastVerified": "2026-10-30"
+      "lastVerified": "2026-11-10"
     },
     {
       "id": "pyro-lawless-no-uee-law-enforcement",
@@ -1418,6 +1465,15 @@
       "lastVerified": "2026-09-21"
     },
     {
+      "id": "referral-valid-30-days",
+      "claim": "Referral rewards stay credited to the recruiter only if the referral transaction remains valid for 30 days; a valid referral is an account established by a new player with a value of at least $40 USD for at least 30 days.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/en/tos"
+      ],
+      "lastVerified": "2026-11-06"
+    },
+    {
       "id": "regen-point-primary-residence-medical-bed",
       "claim": "By default a player regenerates at their primary residence; creating an imprint at a medical bed sets that bed as the regen point, and the location can be reset to the primary residence at a terminal at any medical bed or insurance office.",
       "status": "verified",
@@ -1528,6 +1584,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/34409251540887-Error-Code-65000"
       ],
       "lastVerified": "2026-10-14"
+    },
+    {
+      "id": "rsi-meteor-10year-pledge-260-usd",
+      "claim": "The Meteor 10-Year standalone pledge costs $260 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Meteor-10-Year"
+      ],
+      "lastVerified": "2026-11-10"
     },
     {
       "id": "rsi-support-cannot-swap-loaners",
@@ -2163,7 +2228,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
       ],
-      "lastVerified": "2026-10-18"
+      "lastVerified": "2026-11-09"
     },
     {
       "id": "store-credit-pledges-cannot-be-gifted",
