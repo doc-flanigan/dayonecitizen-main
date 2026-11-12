@@ -82,6 +82,11 @@ const nextConfig = {
       // Both 308 to the homepage; visitors land on a useful page.
       { source: '/weekly-update', destination: '/', permanent: true },
       { source: '/weekly-update/:path*', destination: '/', permanent: true },
+      // Short, brandable Discord link for videos, shorts and narration (Doc 2026-11-12).
+      // Temporary (307), not permanent, so the invite can be swapped here without
+      // browsers caching the old target.
+      { source: '/discord', destination: 'https://discord.gg/MpAUJs9xet', permanent: false },
+      { source: '/discord/', destination: 'https://discord.gg/MpAUJs9xet', permanent: false },
       // /o7-meaning is now /about. 301 passes SEO equity to the new URL.
       { source: '/o7-meaning', destination: '/about', permanent: true },
       { source: '/o7-meaning/', destination: '/about', permanent: true },
