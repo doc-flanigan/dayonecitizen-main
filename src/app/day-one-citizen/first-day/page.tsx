@@ -10,6 +10,8 @@ import HelpNightCard from '@/components/HelpNightCard'
 import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import VideoEmbed from '@/components/VideoEmbed'
+import { AREA18_TUTORIAL, videoJsonLd } from '@/data/videos'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -100,6 +102,10 @@ export default function FirstDayPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd(AREA18_TUTORIAL, SITE.url)) }}
+        />
         <header className="border-b border-white/5 bg-gradient-to-b from-navy to-navyLight/40 pb-12 pt-32 sm:pt-40">
           <div className="container-narrow">
             <Link
@@ -122,6 +128,19 @@ export default function FirstDayPage() {
 
         <div className="container-narrow space-y-12 py-16">
           <DoThisNow slug="first-day" />
+
+          <section aria-labelledby="watch-tutorial" className="space-y-4">
+            <h2 id="watch-tutorial" className="heading-display text-xl sm:text-2xl">
+              Watch the whole tutorial first
+            </h2>
+            <p className="text-muted">
+              Prefer to watch? This video plays the game&rsquo;s own new-player tutorial in
+              Area 18, start to finish. It runs just under twelve minutes, and every key
+              press is explained.
+            </p>
+            <VideoEmbed video={AREA18_TUTORIAL} />
+          </section>
+
           <HelpNightCard />
 
           <div className="space-y-8">

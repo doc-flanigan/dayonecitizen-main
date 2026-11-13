@@ -11,6 +11,8 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import SourceLink from '@/components/SourceLink'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
+import WatchAt from '@/components/WatchAt'
+import { AREA18_TUTORIAL } from '@/data/videos'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -153,6 +155,7 @@ export default function FirstFlightPage() {
                 This is where new pilots crash most often. The hangar is enclosed — walls,
                 ceiling, door frame. Take it slowly.
               </p>
+              <WatchAt video={AREA18_TUTORIAL} at={496} label="Watch a full takeoff" />
               <ol className="list-decimal space-y-4 pl-6">
                 <li>
                   <strong className="text-starwhite">Lift off gently</strong> — hold{' '}
@@ -266,6 +269,7 @@ export default function FirstFlightPage() {
                 <Term name="Stanton">Stanton</Term> system. Without it, even nearby destinations
                 take hours to reach at normal speeds.
               </p>
+              <WatchAt video={AREA18_TUTORIAL} at={603} label="Watch a quantum jump" />
               <p>
                 Here is how to initiate your first jump:
               </p>
