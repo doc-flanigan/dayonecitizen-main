@@ -138,6 +138,11 @@ export default function PrivacyPolicyPage() {
               collect data about you under its own privacy policy. We do not
               control those sites and encourage you to read their policies.
             </p>
+            <p className="mt-4">
+              Some guides include our own YouTube videos. Nothing loads from YouTube until
+              you press play. The video then plays in YouTube&rsquo;s privacy-enhanced mode,
+              and YouTube&rsquo;s own privacy policy applies to the playback.
+            </p>
           </section>
 
           <section className="border-t border-white/5 pt-10">

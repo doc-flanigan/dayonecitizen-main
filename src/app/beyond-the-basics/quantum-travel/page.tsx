@@ -9,6 +9,8 @@ import CTAButton from '@/components/CTAButton'
 import Term from '@/components/Term'
 import BreadcrumbsJsonLd from '@/components/BreadcrumbsJsonLd'
 import RelatedGuides from '@/components/RelatedGuides'
+import WatchAt from '@/components/WatchAt'
+import { AREA18_TUTORIAL } from '@/data/videos'
 import { SITE } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -149,6 +151,8 @@ export default function QuantumTravelPage() {
               Alpha 4.x controls.
             </p>
 
+
+            <WatchAt video={AREA18_TUTORIAL} at={603} label="See a first quantum jump" />
 
             {/* Prerequisites */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
