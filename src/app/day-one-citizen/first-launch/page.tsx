@@ -326,7 +326,7 @@ export default function FirstLaunchPage() {
               </ol>
               <p>
                 After any logout, you wake at the last landing zone you flew to that has hab
-                facilities. One caution: RSI&rsquo;s Alpha 4.10.2 known issues say many players
+                facilities. One caution: RSI&rsquo;s Alpha 4.10.3 known issues say many players
                 reported the 30,000 error after logging out in a ship or ship bed. RSI Support
                 suggests a character repair if that happens.
               </p>
