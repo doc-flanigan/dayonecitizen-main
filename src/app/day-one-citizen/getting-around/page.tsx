@@ -67,7 +67,7 @@ const faqJsonLd = {
       name: 'Is there a known problem with the Lorville tram?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. In Alpha 4.10.2, the tram from Metro Center to Teasa Spaceport in Lorville can throw you out of the tram and may kill you. RSI says to move well away from the doors after you board.',
+        text: 'Yes. In Alpha 4.10.3, the tram from Metro Center to Teasa Spaceport in Lorville can throw you out of the tram and may kill you. RSI says to move well away from the doors after you board.',
       },
     },
     {
@@ -239,7 +239,7 @@ export default function GettingAroundPage() {
                 </figcaption>
               </figure>
               <p className="mt-4 text-sm text-muted">
-                Known issue in Alpha 4.10.2: on the Metro Center to Teasa Spaceport tram, the
+                Known issue in Alpha 4.10.3: on the Metro Center to Teasa Spaceport tram, the
                 doors can spin and throw you out of the tram, which may kill you. RSI says to
                 move well away from the doors after you board.{' '}
                 <SourceLink href="https://support.robertsspaceindustries.com/hc/en-us/articles/360056254754">Official known issues</SourceLink>
@@ -453,7 +453,7 @@ export default function GettingAroundPage() {
                   Is there a known problem with the Lorville tram?
                 </h3>
                 <p className="text-starwhite/70 text-sm leading-relaxed">
-                  Yes. In Alpha 4.10.2, the tram from Metro Center to Teasa Spaceport in
+                  Yes. In Alpha 4.10.3, the tram from Metro Center to Teasa Spaceport in
                   Lorville can throw you out of the tram and may kill you. RSI says to move
                   well away from the doors after you board.
                 </p>

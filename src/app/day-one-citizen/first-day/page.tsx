@@ -62,7 +62,7 @@ const faqJsonLd = {
       name: 'How do you get your ship at the spaceport in Star Citizen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'At the spaceport, find an ASOP terminal, the ship retrieval console. Press F to interact, select your ship, choose Deliver, then Retrieve. Next, take a hangar elevator and choose your assigned hangar. RSI notes that some ASOP terminals do not show Deliver in Alpha 4.10.2.',
+        text: 'At the spaceport, find an ASOP terminal, the ship retrieval console. Press F to interact, select your ship, choose Deliver, then Retrieve. Next, take a hangar elevator and choose your assigned hangar. RSI notes that some ASOP terminals do not show Deliver in Alpha 4.10.3.',
       },
     },
     {
@@ -216,7 +216,7 @@ export default function FirstDayPage() {
                       delivered, head to your hangar to board it.
                     </p>
                     <p>
-                      RSI lists a known issue in Alpha 4.10.2: some ASOP terminals do not show
+                      RSI lists a known issue in Alpha 4.10.3: some ASOP terminals do not show
                       the Deliver option. If yours does not, try another terminal.
                     </p>
                     <figure className="overflow-hidden rounded-2xl border border-white/10">
@@ -556,7 +556,7 @@ export default function FirstDayPage() {
                   Press F to interact, select your ship, choose Deliver, then
                   Retrieve. Next, take a hangar elevator and choose your assigned
                   hangar. RSI notes that some ASOP terminals do not show Deliver in
-                  Alpha 4.10.2.
+                  Alpha 4.10.3.
                 </p>
               </div>
 
