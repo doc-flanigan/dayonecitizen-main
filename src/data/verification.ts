@@ -4,8 +4,8 @@
 // via the "referral check" GitHub workflow — avoid hand-editing dates. That
 // workflow also opens a reminder issue when VERIFIED_ON is over 30 days old.
 
-export const VERIFIED_ON = '2026-11-07'
-export const VERIFIED_DISPLAY = 'November 7, 2026'
+export const VERIFIED_ON = '2026-11-17'
+export const VERIFIED_DISPLAY = 'November 17, 2026'
 export const VERIFIED_MONTH = 'November 2026'
 
 export type VerificationEntry = {
@@ -16,6 +16,10 @@ export type VerificationEntry = {
 
 export const VERIFICATION_LOG: VerificationEntry[] = [
   // __VERIFY_LOG_INSERT__ (newest first — the verify script prepends here)
+  {
+    display: 'November 17, 2026',
+    text: 'STAR-GCQJ-N6NC entered on the live RSI enlist page. The panel showed “You’ve been referred by: Doc Flanigan” and “Referral code successfully applied!” (manual check in a real browser)',
+  },
   {
     display: 'November 7, 2026',
     text: 'STAR-GCQJ-N6NC entered on the live RSI enlist page. The panel showed “You’ve been referred by: Doc Flanigan” and “Referral code successfully applied!” (manual check in a real browser)',
