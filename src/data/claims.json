@@ -1,6 +1,51 @@
 {
-  "generated": "2026-11-13",
+  "generated": "2026-11-19",
   "claims": [
+    {
+      "id": "100i-10-year-pledge-50-usd",
+      "claim": "The 100i 10-Year standalone pledge costs 50 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/100i-10-Year"
+      ],
+      "lastVerified": "2026-11-17"
+    },
+    {
+      "id": "350r-10-year-pledge-125-usd",
+      "claim": "The Origin 350R 10-Year standalone ship pledge costs $125 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/350r-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "600i-explorer-10-year-pledge-475-usd",
+      "claim": "The 600i Explorer 10-Year standalone pledge costs 475 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/600i-Explorer-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "600i-touring-10-year-pledge-435-usd",
+      "claim": "The 600i Touring 10-Year standalone pledge costs 435 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/600i-Touring-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "600i-touring-prefitted-touring-module",
+      "claim": "The 600i Touring is sold pre-fitted with the Touring Module, a lounge area for the owner and guests.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/600i-Touring-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
     {
       "id": "anniversary-sale-recurring-november",
       "claim": "CIG has held an Anniversary sale in late November since 2013.",
@@ -28,6 +73,33 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/21133-Anvil-Odin"
       ],
       "lastVerified": "2026-07-15"
+    },
+    {
+      "id": "apollo-medivac-10-year-pledge-290-usd",
+      "claim": "The Apollo Medivac 10-Year standalone pledge costs 290 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Apollo-Medivac-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "apollo-triage-10-year-pledge-260-usd",
+      "claim": "The Apollo Triage 10-Year standalone pledge costs 260 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Apollo-Triage-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "arrastra-10-year-pledge-575-usd",
+      "claim": "The Arrastra 10-Year standalone pledge costs $575 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Arrastra-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
     },
     {
       "id": "asgard-anvil-dropship-spec",
@@ -445,9 +517,10 @@
       "claim": "Intergalactic Aerospace Expo 2956 runs 13–27 November 2026 at New Babbage, microTech (Free Fly 13 Nov 16:00 UTC – 27 Nov 20:00 UTC); Star Citizen is free to play for the whole event, with 200+ ships and ground vehicles to try via show-floor kiosks on a manufacturer schedule (RSI Nov 13–14, Origin 14–15, Anvil 15–16, Crusader + Tumbril 16–17, Drake 17–18, Argo / Consolidated Outland / Greycat / Grey's Market 18–19, Kruger / Mirai / MISC 19–20, Aegis 20–21, Aopoa / Banu / Esperia / Gatac 21–22, Best in Show Nov 22, Finale Nov 23–27 with every IAE vehicle free).",
       "status": "verified",
       "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/21389-Countdown-To-IAE-2956"
+        "https://robertsspaceindustries.com/en/comm-link/transmission/21389-Countdown-To-IAE-2956",
+        "https://support.robertsspaceindustries.com/hc/en-us/articles/360056530134-Welcome-to-the-Intergalactic-Aerospace-Expo-2956"
       ],
-      "lastVerified": "2026-11-06"
+      "lastVerified": "2026-11-17"
     },
     {
       "id": "event-invictus-2953",
@@ -574,6 +647,51 @@
       "lastVerified": "2026-07-12"
     },
     {
+      "id": "g12-10-year-pledge-60-usd",
+      "claim": "The G12 10-Year standalone pledge costs 60 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/G12-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "g12a-10-year-pledge-65-usd",
+      "claim": "The G12a 10-Year standalone ship pledge costs 65 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/G12a-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "g12r-10-year-pledge-60-usd",
+      "claim": "The G12r 10-Year standalone ship pledge costs 60 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/G12r-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "galaxy-10-year-pledge-360-usd",
+      "claim": "The Galaxy 10-Year standalone warbond pledge costs $360 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Galaxy-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "galaxy-10-year-pledge-400-usd",
+      "claim": "The Galaxy 10-Year standalone pledge (the standard listing, not the Warbond one) costs $400 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Galaxy-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
       "id": "galaxy-arrives-iae-2956",
       "claim": "CIG has said the RSI Galaxy will arrive at this year's Intergalactic Aerospace Expo (IAE 2956).",
       "status": "verified",
@@ -594,6 +712,87 @@
         "https://robertsspaceindustries.com/en/comm-link/transmission/18836-RSI-Galaxy"
       ],
       "lastVerified": "2026-10-29"
+    },
+    {
+      "id": "galaxy-cargo-module-10-year-pledge-70-usd",
+      "claim": "The Galaxy Cargo Module 10-Year add-on pledge costs $70 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Galaxy-Cargo-Module-10-Year"
+      ],
+      "lastVerified": "2026-11-16"
+    },
+    {
+      "id": "galaxy-complete-10-year-pledge-550-usd",
+      "claim": "The Galaxy Complete 10-Year standalone pledge costs $550 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Galaxy-Complete-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "galaxy-complete-10-year-pledge-includes-three-modules",
+      "claim": "The Galaxy Complete 10-Year standalone pledge includes three Galaxy modules: Freight, Medical, and Refinery.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Galaxy-Complete-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "galaxy-freighter-10-year-pledge-425-usd",
+      "claim": "The Galaxy Freighter 10-Year standalone warbond pledge costs $425 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Galaxy-Freighter-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "galaxy-hospital-10-year-pledge-445-usd",
+      "claim": "The Galaxy Hospital 10-Year standalone warbond pledge costs $445 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Galaxy-Hospital-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "galaxy-med-bay-module-10-year-pledge-90-usd",
+      "claim": "The Galaxy Med Bay Module 10-Year add-on pledge costs $90 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Galaxy-Med-Bay-Module-10-Year"
+      ],
+      "lastVerified": "2026-11-16"
+    },
+    {
+      "id": "galaxy-med-bay-module-adds-medical-suite",
+      "claim": "The Galaxy Med Bay Module adds a full medical suite to the RSI Galaxy, turning it into a field hospital for excursions into dangerous territory.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Galaxy-Med-Bay-Module-10-Year"
+      ],
+      "lastVerified": "2026-11-16"
+    },
+    {
+      "id": "galaxy-refinery-10-year-pledge-435-usd",
+      "claim": "The Galaxy Refinery 10-Year standalone warbond pledge costs $435 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Galaxy-Refinery-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "galaxy-refinery-module-10-year-pledge-80-usd",
+      "claim": "The Galaxy Refinery Module 10-Year add-on pledge costs $80 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Add-Ons/Galaxy-Refinery-Module-10-Year"
+      ],
+      "lastVerified": "2026-11-16"
     },
     {
       "id": "game-messages-official-wording",
@@ -650,6 +849,15 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/42678242845591-Deprecation-of-Hardware-Promotional-Codes"
       ],
       "lastVerified": "2026-08-17"
+    },
+    {
+      "id": "hermes-10-year-pledge-220-usd",
+      "claim": "The RSI Hermes standalone pledge with 10-Year insurance costs 220 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Hermes-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
     },
     {
       "id": "hermes-2year-pledge-220-usd",
@@ -998,6 +1206,33 @@
       "lastVerified": "2026-07-29"
     },
     {
+      "id": "lynx-10-year-pledge-60-usd",
+      "claim": "The Lynx 10-Year standalone pledge costs 60 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Lynx-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "m50-10-year-pledge-100-usd",
+      "claim": "The M50 10-Year standalone pledge costs 100 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/M50-10-Year"
+      ],
+      "lastVerified": "2026-11-19"
+    },
+    {
+      "id": "m80-10-year-pledge-300-usd",
+      "claim": "The Origin M80 standalone pledge with 10-Year insurance costs $300 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/M80-10-Year"
+      ],
+      "lastVerified": "2026-11-19"
+    },
+    {
       "id": "m80-2year-pledge-300-usd",
       "claim": "The Origin M80 standalone pledge with 2-Year insurance costs $300 USD.",
       "status": "verified",
@@ -1005,6 +1240,24 @@
         "https://robertsspaceindustries.com/pledge/Standalone-Ships/M80-2-Year"
       ],
       "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "mantis-10-year-pledge-150-usd",
+      "claim": "The Mantis 10-Year standalone pledge costs 150 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Mantis-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
+      "id": "mantis-quantum-enforcement-snare-dampener",
+      "claim": "The Mantis is a Quantum Enforcement ship whose Quantum Enforcement Device can pull ships out of quantum travel with its Quantum Snare and block their escape with its Quantum Dampener.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Mantis-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
     },
     {
       "id": "medical-cmt-controls-right-mouse-f-key",
@@ -1103,22 +1356,13 @@
       "lastVerified": "2026-09-28"
     },
     {
-      "id": "new-player-guide-start-city-choice",
-      "claim": "A first-time Persistent Universe player can accept the New Player Mission and choose Lorville, Orison, Area18 or New Babbage as the starting location (not Area18 by default).",
-      "status": "verified",
-      "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/21160-New-Player-Guide"
-      ],
-      "lastVerified": "2026-11-09"
-    },
-    {
       "id": "new-player-starting-city-and-last-landing-zone",
       "claim": "On first load into Stanton a new player chooses a starting city (New Babbage, Area18, Lorville or Orison), and afterwards wakes at the last landing zone they flew to that has hab facilities.",
       "status": "verified",
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
       ],
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-10-18"
     },
     {
       "id": "no-free-trial-only-freefly",
@@ -1219,6 +1463,88 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/115010675447-Organizations"
       ],
       "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "origin-125a-10-year-pledge-60-usd",
+      "claim": "The Origin 125a 10-Year standalone pledge costs 60 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/125a-10-Year"
+      ],
+      "lastVerified": "2026-11-17"
+    },
+    {
+      "id": "origin-300i-10-year-pledge-60-usd",
+      "claim": "The Origin 300i 10-Year standalone pledge costs 60 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/300i-10-Year"
+      ],
+      "lastVerified": "2026-11-17"
+    },
+    {
+      "id": "origin-315p-10-year-pledge-65-usd",
+      "claim": "The Origin 315p 10-Year standalone pledge costs 65 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/315p-10-Year"
+      ],
+      "lastVerified": "2026-11-17"
+    },
+    {
+      "id": "origin-325a-10-year-pledge-70-usd",
+      "claim": "The Origin 325a 10-Year standalone ship pledge costs 70 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/325a-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "origin-400i-10-year-pledge-250-usd",
+      "claim": "The Origin 400i 10-Year standalone pledge costs 250 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/400i-10-Year"
+      ],
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "origin-85x-10-year-pledge-50-usd",
+      "claim": "The Origin 85x 10-Year standalone pledge costs 50 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/85x-10-Year"
+      ],
+      "lastVerified": "2026-11-17"
+    },
+    {
+      "id": "origin-890-jump-10-year-pledge-890-usd",
+      "claim": "The Origin 890 Jump 10-Year standalone ship pledge (890 Jump 10 Year Warbond) costs 890 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/890-Jump-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-17"
+    },
+    {
+      "id": "origin-890-jump-10-year-standard-pledge-950-usd",
+      "claim": "The standard (non-Warbond) Origin 890 Jump 10-Year standalone ship pledge costs 950 USD, while the Warbond version costs 890 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/890-Jump-10-Year",
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/890-Jump-10-Year-Warbond"
+      ],
+      "lastVerified": "2026-11-17"
+    },
+    {
+      "id": "orion-10-year-pledge-650-usd",
+      "claim": "The Orion 10-Year standalone pledge costs 650 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Orion-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
     },
     {
       "id": "paint-stored-at-primary-residence",
@@ -1664,6 +1990,15 @@
       "lastVerified": "2026-09-27"
     },
     {
+      "id": "salvation-10-year-pledge-60-usd",
+      "claim": "The Salvation 10-Year standalone pledge costs 60 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Salvation-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
       "id": "sc-1-0-no-official-release-date",
       "claim": "Star Citizen 1.0 has no CIG-announced release date; any 2027-2028 estimate comes from press interviews with Chris Roberts, not an official Comm-Link.",
       "status": "unverifiable",
@@ -1719,6 +2054,33 @@
         "https://robertsspaceindustries.com/en/funding-goals"
       ],
       "lastVerified": "2026-07-12"
+    },
+    {
+      "id": "scorpius-10-year-pledge-240-usd",
+      "claim": "The Scorpius 10-Year standalone pledge costs 240 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Scorpius-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
+      "id": "scorpius-antares-10-year-pledge-230-usd",
+      "claim": "The Scorpius Antares 10-Year standalone pledge costs 230 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Scorpius-Antares-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
+      "id": "scorpius-heavy-fighter-bi-wing-remote-turret",
+      "claim": "The RSI Scorpius is a heavy combat, interception and defense ship with an adaptable bi-wing configuration and a rail-mounted remote turret.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Scorpius-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
     },
     {
       "id": "server-meshing-static-live-dynamic-dev",
@@ -1897,6 +2259,33 @@
         "https://support.robertsspaceindustries.com/hc/en-us/articles/40271309406871-Shroud-of-the-Avatar-Crossbow-Redemption"
       ],
       "lastVerified": "2026-11-05"
+    },
+    {
+      "id": "skylark-10-year-pledge-45-usd",
+      "claim": "The Skylark 10-Year standalone pledge costs 45 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Skylark-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "skylark-convergence-paint-3-usd",
+      "claim": "The Skylark Convergence paint is sold as a standalone pledge in the RSI store for 3 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Paint/Skylark-Convergence-Paint"
+      ],
+      "lastVerified": "2026-11-16"
+    },
+    {
+      "id": "skylark-warbond-40-usd",
+      "claim": "The Skylark standalone ship pledge (Skylark Warbond) costs 40 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Skylark-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
     },
     {
       "id": "sq42-2016-window-missed",
@@ -2229,7 +2618,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
       ],
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-10-18"
     },
     {
       "id": "store-credit-pledges-cannot-be-gifted",
@@ -2271,6 +2660,24 @@
       "lastVerified": "2026-07-15"
     },
     {
+      "id": "ursa-medivac-10-year-pledge-60-usd",
+      "claim": "The Ursa Medivac 10-Year standalone pledge costs 60 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Ursa-Medivac-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
+      "id": "ursa-rover-10-year-pledge-50-usd",
+      "claim": "The Ursa Rover 10-Year standalone pledge costs 50 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Ursa-Rover-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
       "id": "utv-2year-pledge-40-usd",
       "claim": "The Greycat Industrial UTV standalone pledge with 2-Year insurance costs $40 USD.",
       "status": "verified",
@@ -2305,6 +2712,87 @@
         "https://robertsspaceindustries.com/pledge/Standalone-Ships/Vulture"
       ],
       "lastVerified": "2026-08-18"
+    },
+    {
+      "id": "x1-10-year-pledge-45-usd",
+      "claim": "The X1 10-Year standalone pledge costs 45 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/X1-10-Year"
+      ],
+      "lastVerified": "2026-11-19"
+    },
+    {
+      "id": "x1-force-10-year-pledge-55-usd",
+      "claim": "The X1 Force 10-Year standalone pledge costs 55 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/X1-Force-10-Year"
+      ],
+      "lastVerified": "2026-11-19"
+    },
+    {
+      "id": "x1-force-modified-x1-defensive-variant",
+      "claim": "The X1 Force is a modified version of the base X1 with additional defensive elements, intended for exploration and security infiltration roles.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/X1-Force-10-Year"
+      ],
+      "lastVerified": "2026-11-19"
+    },
+    {
+      "id": "x1-velocity-10-year-pledge-50-usd",
+      "claim": "The X1 Velocity 10-Year standalone pledge costs 50 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/X1-Velocity-10-Year"
+      ],
+      "lastVerified": "2026-11-19"
+    },
+    {
+      "id": "x1-velocity-unarmed-lighter-variant",
+      "claim": "The X1 Velocity is a stripped-down variant of the base X1 with no weapon mount and a lighter Syntek composite chassis, built for speed.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/X1-Velocity-10-Year"
+      ],
+      "lastVerified": "2026-11-19"
+    },
+    {
+      "id": "zeus-mk-ii-cl-10-year-pledge-175-usd",
+      "claim": "The Zeus Mk II CL 10-Year standalone pledge costs 175 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Zeus-Mk-II-CL-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
+      "id": "zeus-mk-ii-es-10-year-pledge-175-usd",
+      "claim": "The Zeus Mk II ES 10-Year standalone pledge costs 175 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Zeus-Mk-II-ES-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
+      "id": "zeus-mk-ii-mr-10-year-pledge-190-usd",
+      "claim": "The Zeus Mk II MR 10-Year standalone pledge costs 190 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Zeus-Mk-II-MR-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
+    },
+    {
+      "id": "zeus-mk-ii-mr-emp-and-quantum-dampener",
+      "claim": "The Zeus Mk II MR edition comes with an EMP device and a quantum dampener.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Zeus-Mk-II-MR-10-Year"
+      ],
+      "lastVerified": "2026-11-15"
     }
   ]
 }
