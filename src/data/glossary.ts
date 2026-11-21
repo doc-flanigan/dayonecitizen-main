@@ -431,6 +431,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A starter ship from Consolidated Outland. Slightly nimbler than the Aurora, popular with new pilots who want to dogfight early.",
     also: 'Mustang Alpha, Mustang Beta, Mustang Delta, Mustang Gamma',
+    lastVerified: '2026-11-16',
   },
   {
     term: 'Hornet',
@@ -565,6 +566,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Argo Multi-Operator Laser Extractor — three-mining-laser group ship. Higher yield than the Prospector, but needs friends.",
+    lastVerified: '2026-11-16',
   },
   {
     term: 'ROC',
@@ -696,6 +698,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Anvil gunship designed for sustained combat with a small crew. Sits between a fighter and a capital ship — lots of guns, solid armor, and crew stations for a tight team.",
+    lastVerified: '2026-11-16',
   },
   {
     term: 'Terrapin',
@@ -755,6 +758,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Consolidated Outland small multi-role ship — can haul a little cargo, do light exploration, and hold its own in a fight. A good step up from the starter ships.",
+    lastVerified: '2026-11-16',
   },
 
   // ─────────────── Ships — Crusader Industries ───────────────
@@ -979,6 +983,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "One of the fastest small ships in the game. Built to intercept and chase down targets; also a popular racing ship because almost nothing can keep up with it.",
     also: 'M50',
+    lastVerified: '2026-11-16',
   },
   {
     term: 'X1',
@@ -1002,6 +1007,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "RSI interdiction ship — its quantum snare can pull other ships out of quantum travel mid-flight. Used by bounty hunters and pirates to stop targets from escaping before they can be caught.",
+    lastVerified: '2026-11-16',
   },
   {
     term: 'Perseus',
@@ -1318,6 +1324,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "Stanton IV — a frozen tundra planet owned by the microTech corporation. Home of New Babbage. Three moons: Calliope, Clio, Euterpe.",
+    lastVerified: '2026-11-16',
   },
   {
     term: 'Lorville',
@@ -1339,12 +1346,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "The capital city of microTech — Apple-store-clean, glass and white walls. Home of microTech HQ and the Reach observatory. The most polished landing zone.",
+    lastVerified: '2026-11-16',
   },
   {
     term: 'Orison',
     category: 'Locations',
     definition:
       "Crusader Industries' floating city in the gas-giant atmosphere of Crusader. A series of platforms connected by skybridges. Stunning sunsets, weak structural integrity.",
+    lastVerified: '2026-11-16',
   },
   {
     term: 'GrimHEX',
@@ -1385,6 +1394,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "ArcCorp's icy moon — frozen tundra surface, scattered outposts. Mining sites for gemstone-rich rocks.",
+    lastVerified: '2026-11-16',
   },
   {
     term: 'Wala',
