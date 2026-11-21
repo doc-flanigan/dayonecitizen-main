@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13",
+  "generated": "2026-11-14",
   "claims": [
     {
       "id": "anniversary-sale-recurring-november",
@@ -1103,22 +1103,13 @@
       "lastVerified": "2026-09-28"
     },
     {
-      "id": "new-player-guide-start-city-choice",
-      "claim": "A first-time Persistent Universe player can accept the New Player Mission and choose Lorville, Orison, Area18 or New Babbage as the starting location (not Area18 by default).",
-      "status": "verified",
-      "sources": [
-        "https://robertsspaceindustries.com/en/comm-link/transmission/21160-New-Player-Guide"
-      ],
-      "lastVerified": "2026-11-09"
-    },
-    {
       "id": "new-player-starting-city-and-last-landing-zone",
       "claim": "On first load into Stanton a new player chooses a starting city (New Babbage, Area18, Lorville or Orison), and afterwards wakes at the last landing zone they flew to that has hab facilities.",
       "status": "verified",
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360025028633-Getting-Started-in-the-Verse"
       ],
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-10-18"
     },
     {
       "id": "no-free-trial-only-freefly",
@@ -1899,6 +1890,24 @@
       "lastVerified": "2026-11-05"
     },
     {
+      "id": "skylark-10-year-pledge-45-usd",
+      "claim": "The Skylark 10-Year standalone pledge costs 45 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Skylark-10-Year"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
+      "id": "skylark-warbond-40-usd",
+      "claim": "The Skylark standalone ship pledge (Skylark Warbond) costs 40 USD.",
+      "status": "verified",
+      "sources": [
+        "https://robertsspaceindustries.com/pledge/Standalone-Ships/Skylark-Warbond"
+      ],
+      "lastVerified": "2026-11-14"
+    },
+    {
       "id": "sq42-2016-window-missed",
       "claim": "A 2016 release window for Squadron 42 was promoted at CitizenCon 2015; the game did not ship in 2016, its expected CitizenCon 2946 demo was pulled, and CIG adopted a no-hard-dates stance thereafter.",
       "status": "verified",
@@ -2229,7 +2238,7 @@
       "sources": [
         "https://support.robertsspaceindustries.com/hc/en-us/articles/360006492734-Currencies-of-Star-Citizen-UEC-aUEC-REC-Store-Credit"
       ],
-      "lastVerified": "2026-11-09"
+      "lastVerified": "2026-10-18"
     },
     {
       "id": "store-credit-pledges-cannot-be-gifted",
