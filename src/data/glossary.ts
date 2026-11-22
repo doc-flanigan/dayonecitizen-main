@@ -762,7 +762,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     term: 'Spirit',
     category: 'Ships',
     definition:
-      "Crusader Industries medium ship line — the C1 is a sleek light freighter, the A1 is a light bomber, and the E1 is an exploration variant. A versatile trio sharing the same hull.",
+      "Crusader Industries medium ship line — the C1 is a sleek light freighter, the A1 is a mid-size multi-purpose starship, and the E1 is an exploration variant. A versatile trio sharing the same hull.",
     also: 'C1 Spirit, A1 Spirit, E1 Spirit',
   },
   {
