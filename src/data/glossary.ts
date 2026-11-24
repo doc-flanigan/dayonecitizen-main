@@ -431,6 +431,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "A starter ship from Consolidated Outland. Slightly nimbler than the Aurora, popular with new pilots who want to dogfight early.",
     also: 'Mustang Alpha, Mustang Beta, Mustang Delta, Mustang Gamma',
+    lastVerified: '2026-11-24',
   },
   {
     term: 'Hornet',
@@ -617,6 +618,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Aopoa Nox — a Xi'an-design hover bike. Quick, exposed, a popular racing and recon vehicle.",
+    lastVerified: '2026-11-24',
   },
   {
     term: 'Ursa Rover',
@@ -755,6 +757,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "Consolidated Outland small multi-role ship — can haul a little cargo, do light exploration, and hold its own in a fight. A good step up from the starter ships.",
+    lastVerified: '2026-11-24',
   },
 
   // ─────────────── Ships — Crusader Industries ───────────────
@@ -885,6 +888,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "Kruger light interceptor designed to hunt down fleeing targets. More maneuverable than it looks and a relatively affordable option for solo combat pilots who like to give chase.",
     also: 'Wolf',
+    lastVerified: '2026-11-24',
   },
 
   // ─────────────── Ships — Mirai ───────────────
@@ -979,6 +983,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition:
       "One of the fastest small ships in the game. Built to intercept and chase down targets; also a popular racing ship because almost nothing can keep up with it.",
     also: 'M50',
+    lastVerified: '2026-11-24',
   },
   {
     term: 'X1',
@@ -1002,6 +1007,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Ships',
     definition:
       "RSI interdiction ship — its quantum snare can pull other ships out of quantum travel mid-flight. Used by bounty hunters and pirates to stop targets from escaping before they can be caught.",
+    lastVerified: '2026-11-24',
   },
   {
     term: 'Perseus',
@@ -1339,12 +1345,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "The capital city of microTech — Apple-store-clean, glass and white walls. Home of microTech HQ and the Reach observatory. The most polished landing zone.",
+    lastVerified: '2026-11-24',
   },
   {
     term: 'Orison',
     category: 'Locations',
     definition:
       "Crusader Industries' floating city in the gas-giant atmosphere of Crusader. A series of platforms connected by skybridges. Stunning sunsets, weak structural integrity.",
+    lastVerified: '2026-11-24',
   },
   {
     term: 'GrimHEX',
@@ -1385,6 +1393,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     category: 'Locations',
     definition:
       "ArcCorp's icy moon — frozen tundra surface, scattered outposts. Mining sites for gemstone-rich rocks.",
+    lastVerified: '2026-11-24',
   },
   {
     term: 'Wala',
