@@ -188,18 +188,6 @@ export default function RedeemCodesPage() {
               </p>
             </div>
 
-            {/* Welcome gift */}
-            <p className="text-starwhite/80 mb-8 leading-relaxed">
-              <strong className="text-starwhite">A welcome gift from me.</strong>{' '}
-              Join with this code, buy the First Flight Pack, and I will send you
-              the Aurora Mk II Cloudbuster paint for your new ship. It is a
-              personal gift from me, bought with my own money, not an RSI reward.{' '}
-              <Link href="/referral-code#welcome-gift" className="text-gold hover:underline">
-                How to claim it
-              </Link>
-              .
-            </p>
-
             {/* Gift vs promo */}
             <h2 className="font-display text-2xl font-bold text-gold mt-10 mb-4">
               Gift codes vs. promo codes

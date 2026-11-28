@@ -253,14 +253,6 @@ export default function ReferralNotWorkingPage() {
                 Sign up with the code applied
               </CTAButton>
             </div>
-            <p className="text-sm text-starwhite/75">
-              Join with this code and buy the First Flight Pack, and I will send you the Aurora Mk II
-              Cloudbuster paint as a personal gift.{' '}
-              <Link href="/referral-code#welcome-gift" className={link}>
-                How to claim it
-              </Link>
-              .
-            </p>
           </div>
 
           <nav className="text-sm">
